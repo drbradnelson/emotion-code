@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915EEC3E1D460CE1005CC318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
+				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 			);
 			path = EmotionCode;
 			sourceTree = "<group>";
