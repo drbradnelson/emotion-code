@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915EEC3E1D460CE1005CC318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
+				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 			);
 			path = EmotionCode;
 			sourceTree = "<group>";
@@ -103,6 +105,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 915EEC561D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCode" */;
 			buildPhases = (
+				9141D9081D48A256009173A9 /* Run SwiftLint */,
+				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
 				915EEC351D460CE1005CC318 /* Sources */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
@@ -191,6 +195,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9141D9081D48A256009173A9 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint lint --strict";
+			showEnvVarsInLog = 0;
+		};
+		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run StoryboardLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PROJECT_NAME\"/StoryboardLint.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		915EEC351D460CE1005CC318 /* Sources */ = {
@@ -388,6 +425,7 @@
 				915EEC581D460CE1005CC318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		915EEC591D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +434,7 @@
 				915EEC5B1D460CE1005CC318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
