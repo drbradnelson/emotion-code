@@ -63,6 +63,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F28D0BE1D4E7624002C98E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				915EEC3E1D460CE1005CC318 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0F28D0BF1D4E763B002C98E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */,
+				915EEC401D460CE1005CC318 /* TabBar.storyboard */,
+				0F28D0B51D4E74E3002C98E7 /* Book.storyboard */,
+				0F28D0B81D4E7501002C98E7 /* Chart.storyboard */,
+				0F28D0BB1D4E755B002C98E7 /* Help.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0F28D0C01D4E7659002C98E7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		915EEC301D460CE1005CC318 = {
 			isa = PBXGroup;
 			children = (
@@ -85,15 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
-				915EEC3E1D460CE1005CC318 /* ViewController.swift */,
-				915EEC401D460CE1005CC318 /* TabBar.storyboard */,
-				0F28D0B51D4E74E3002C98E7 /* Book.storyboard */,
-				0F28D0B81D4E7501002C98E7 /* Chart.storyboard */,
-				0F28D0BB1D4E755B002C98E7 /* Help.storyboard */,
+				0F28D0BE1D4E7624002C98E7 /* Controllers */,
+				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
+				0F28D0C01D4E7659002C98E7 /* Shared */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
-				915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
-				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 			);
 			path = EmotionCode;
 			sourceTree = "<group>";
