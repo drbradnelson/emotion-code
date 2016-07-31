@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC3F1D460CE1005CC318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3E1D460CE1005CC318 /* ViewController.swift */; };
-		915EEC421D460CE1005CC318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* Main.storyboard */; };
+		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
 		915EEC521D460CE1005CC318 /* EmotionCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */; };
@@ -30,7 +30,7 @@
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915EEC3E1D460CE1005CC318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		915EEC411D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		915EEC411D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		915EEC431D460CE1005CC318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915EEC461D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			children = (
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				915EEC3E1D460CE1005CC318 /* ViewController.swift */,
-				915EEC401D460CE1005CC318 /* Main.storyboard */,
+				915EEC401D460CE1005CC318 /* TabBar.storyboard */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
@@ -183,7 +183,7 @@
 			files = (
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
-				915EEC421D460CE1005CC318 /* Main.storyboard in Resources */,
+				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +258,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		915EEC401D460CE1005CC318 /* Main.storyboard */ = {
+		915EEC401D460CE1005CC318 /* TabBar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				915EEC411D460CE1005CC318 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabBar.storyboard;
 			sourceTree = "<group>";
 		};
 		915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */ = {
