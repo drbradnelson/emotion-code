@@ -5,63 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Chart-->
-        <scene sceneID="SLh-DE-o7h">
-            <objects>
-                <viewController id="NJr-vB-XRf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="r3m-ds-jz3"/>
-                        <viewControllerLayoutGuide type="bottom" id="KEl-2v-8Iz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sHF-hw-VyN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chart" image="oval" id="xSv-EC-Guf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4oX-Tv-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1361" y="526"/>
-        </scene>
-        <!--Help-->
-        <scene sceneID="1Vu-m9-WHz">
-            <objects>
-                <viewController id="XeI-x0-qS4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="V3g-Ob-ISO"/>
-                        <viewControllerLayoutGuide type="bottom" id="J0n-4N-W8i"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sTR-LK-AC9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Help" image="oval" id="jFO-Qr-akh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4iz-Hb-5o1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1361" y="1214"/>
-        </scene>
-        <!--Book-->
-        <scene sceneID="zqv-gR-d65">
-            <objects>
-                <viewController id="nMa-7V-2zv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pMI-1m-Ueq"/>
-                        <viewControllerLayoutGuide type="bottom" id="UKh-U5-bu4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RbL-Fm-sB2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Book" image="oval" id="DvA-Rv-bTe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dGT-jS-nor" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1361" y="-135"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="P1P-jM-gcF">
             <objects>
@@ -72,17 +15,44 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="nMa-7V-2zv" kind="relationship" relationship="viewControllers" id="2uY-Bp-UoR"/>
-                        <segue destination="NJr-vB-XRf" kind="relationship" relationship="viewControllers" id="Jof-RD-Ghe"/>
-                        <segue destination="XeI-x0-qS4" kind="relationship" relationship="viewControllers" id="wgp-Ae-KiN"/>
+                        <segue destination="up5-Uw-uR4" kind="relationship" relationship="viewControllers" id="2uY-Bp-UoR"/>
+                        <segue destination="cKz-TF-n3S" kind="relationship" relationship="viewControllers" id="Jof-RD-Ghe"/>
+                        <segue destination="V8a-Ih-XXe" kind="relationship" relationship="viewControllers" id="wgp-Ae-KiN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wum-Gl-DKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="351" y="526"/>
         </scene>
+        <!--Book-->
+        <scene sceneID="GIH-J5-djj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Book" id="up5-Uw-uR4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OCg-Ub-nlF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBF-pb-MrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.5" y="459"/>
+        </scene>
+        <!--Chart-->
+        <scene sceneID="Fj9-j5-eYq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chart" id="cKz-TF-n3S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="aQd-97-a3b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5l-pm-4po" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.5" y="526"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="MOB-hL-t7Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Help" id="V8a-Ih-XXe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DrF-au-M3o"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWb-XJ-rcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="591"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="oval" width="19" height="19"/>
-    </resources>
 </document>
