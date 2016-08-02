@@ -15,6 +15,7 @@
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
 		915EEC521D460CE1005CC318 /* EmotionCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */; };
+		E7BF74AF1D4F606E00AF6198 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7BF74AE1D4F606E00AF6198 /* EmotionCodeChart.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCodeUITests.swift; sourceTree = "<group>"; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BF74AE1D4F606E00AF6198 /* EmotionCodeChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmotionCodeChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
+				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
 				0F28D0C01D4E7659002C98E7 /* Shared */,
@@ -126,6 +129,14 @@
 				915EEC531D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCodeUITests;
+			sourceTree = "<group>";
+		};
+		E7BF74B01D4F607300AF6198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7BF74AE1D4F606E00AF6198 /* EmotionCodeChart.plist */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
+				E7BF74AF1D4F606E00AF6198 /* EmotionCodeChart.plist in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
