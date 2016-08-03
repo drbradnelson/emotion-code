@@ -44,6 +44,7 @@
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7ED2B5E1D52135600F85992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
+		E7ED2B611D5213DF00F85992 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +207,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 915EEC301D460CE1005CC318;
 			productRefGroup = 915EEC3A1D460CE1005CC318 /* Products */;
@@ -348,6 +350,7 @@
 			children = (
 				E7ED2B5E1D52135600F85992 /* Base */,
 				E7ED2B601D52135B00F85992 /* en */,
+				E7ED2B611D5213DF00F85992 /* es */,
 			);
 			name = EmotionCodeChart.plist;
 			sourceTree = "<group>";
