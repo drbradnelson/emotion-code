@@ -14,7 +14,14 @@
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
-		915EEC521D460CE1005CC318 /* EmotionCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */; };
+		91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */; };
+		91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */; };
+		91AD7CE41D534D2500FBEBF7 /* TabNavigationBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */; };
+		91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */; };
+		91AD7CE81D534D3400FBEBF7 /* TabNavigationHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */; };
+		91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */; };
+		91AD7CEC1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */; };
+		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,17 @@
 		915EEC461D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCodeUITests.swift; sourceTree = "<group>"; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
+		E7ED2B5E1D52135600F85992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
+		91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
+		91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationBookTests.swift; sourceTree = "<group>"; };
+		91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationChartTests.swift; sourceTree = "<group>"; };
+		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
+		91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationHelpTests.swift; sourceTree = "<group>"; };
+		91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+App.swift"; sourceTree = "<group>"; };
+		91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+SafeLaunch.swift"; sourceTree = "<group>"; };
+		E7ED2B611D5213DF00F85992 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
+				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
 				0F28D0C01D4E7659002C98E7 /* Shared */,
@@ -122,10 +139,24 @@
 		915EEC501D460CE1005CC318 /* EmotionCodeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */,
+				91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */,
+				91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */,
+				91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */,
+				91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */,
+				91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */,
+				91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */,
+				91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */,
 				915EEC531D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCodeUITests;
+			sourceTree = "<group>";
+		};
+		E7BF74B01D4F607300AF6198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +207,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = TBD;
+				ORGANIZATIONNAME = DiscoverHealing.com;
 				TargetAttributes = {
 					915EEC381D460CE1005CC318 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -194,6 +225,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 915EEC301D460CE1005CC318;
 			productRefGroup = 915EEC3A1D460CE1005CC318 /* Products */;
@@ -214,6 +246,7 @@
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
+				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
@@ -275,7 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915EEC521D460CE1005CC318 /* EmotionCodeUITests.swift in Sources */,
+				91AD7CE41D534D2500FBEBF7 /* TabNavigationBookTests.swift in Sources */,
+				91AD7CEC1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift in Sources */,
+				91AD7CE81D534D3400FBEBF7 /* TabNavigationHelpTests.swift in Sources */,
+				91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */,
+				91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */,
+				91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */,
+				91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +367,16 @@
 				915EEC461D460CE1005CC318 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7ED2B5E1D52135600F85992 /* Base */,
+				E7ED2B601D52135B00F85992 /* en */,
+				E7ED2B611D5213DF00F85992 /* es */,
+			);
+			name = EmotionCodeChart.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TBD.EmotionCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TBD.EmotionCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
