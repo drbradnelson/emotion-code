@@ -176,7 +176,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = TBD;
+				ORGANIZATIONNAME = DiscoverHealing.com;
 				TargetAttributes = {
 					915EEC381D460CE1005CC318 = {
 						CreatedOnToolsVersion = 7.3.1;
