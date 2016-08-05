@@ -8,7 +8,7 @@
         <!--Chart-->
         <scene sceneID="SLh-DE-o7h">
             <objects>
-                <viewController id="NJr-vB-XRf" sceneMemberID="viewController">
+                <viewController id="NJr-vB-XRf" customClass="ChartViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r3m-ds-jz3"/>
                         <viewControllerLayoutGuide type="bottom" id="KEl-2v-8Iz"/>
@@ -16,9 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="sHF-hw-VyN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yEC-um-ZmN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="p4U-iz-thD">
+                                    <size key="itemSize" width="150" height="36"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Yfu-sL-xSc" customClass="ChartCell" customModule="EmotionCode" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="150" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnq-Zf-cXh">
+                                                    <rect key="frame" x="8" y="8" width="134" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Hnq-Zf-cXh" secondAttribute="bottom" constant="8" id="6er-1t-YcV"/>
+                                            <constraint firstItem="Hnq-Zf-cXh" firstAttribute="leading" secondItem="Yfu-sL-xSc" secondAttribute="leading" constant="8" id="7hD-gz-7Vy"/>
+                                            <constraint firstItem="Hnq-Zf-cXh" firstAttribute="top" secondItem="Yfu-sL-xSc" secondAttribute="top" constant="8" id="jSS-8a-fLy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hnq-Zf-cXh" secondAttribute="trailing" constant="8" id="sUe-Xe-Xfs"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="emotionCode" destination="Hnq-Zf-cXh" id="Fwx-Lm-m0j"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NJr-vB-XRf" id="4vc-VQ-oNW"/>
+                                    <outlet property="delegate" destination="NJr-vB-XRf" id="4JT-C7-cHu"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yEC-um-ZmN" secondAttribute="trailing" id="1E3-G6-Y3O"/>
+                            <constraint firstItem="yEC-um-ZmN" firstAttribute="top" secondItem="sHF-hw-VyN" secondAttribute="top" id="mWG-SV-8U2"/>
+                            <constraint firstAttribute="bottom" secondItem="yEC-um-ZmN" secondAttribute="bottom" id="phX-wh-Ofe"/>
+                            <constraint firstItem="yEC-um-ZmN" firstAttribute="leading" secondItem="sHF-hw-VyN" secondAttribute="leading" id="uLB-8X-9eU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chart" id="pkG-bX-Aih"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="yEC-um-ZmN" id="Xw1-ab-yNy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oX-Tv-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

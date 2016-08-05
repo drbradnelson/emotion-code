@@ -15,6 +15,9 @@
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
 		915EEC521D460CE1005CC318 /* EmotionCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */; };
+		E724EF301D533FEC00285B39 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724EF2F1D533FEC00285B39 /* ChartViewController.swift */; };
+		E7B758A81D53795A0094E200 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B758A71D53795A0094E200 /* ChartCell.swift */; };
+		E7B758AA1D537B640094E200 /* ChartFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B758A91D537B640094E200 /* ChartFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC511D460CE1005CC318 /* EmotionCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCodeUITests.swift; sourceTree = "<group>"; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E724EF2F1D533FEC00285B39 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		E7B758A71D53795A0094E200 /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		E7B758A91D537B640094E200 /* ChartFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		0F28D0BE1D4E7624002C98E7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E724EF2F1D533FEC00285B39 /* ChartViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
+				E7B758A61D5374B60094E200 /* Views */,
 				0F28D0C01D4E7659002C98E7 /* Shared */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
@@ -126,6 +134,15 @@
 				915EEC531D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCodeUITests;
+			sourceTree = "<group>";
+		};
+		E7B758A61D5374B60094E200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7B758A91D537B640094E200 /* ChartFlowLayout.swift */,
+				E7B758A71D53795A0094E200 /* ChartCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
+				E7B758AA1D537B640094E200 /* ChartFlowLayout.swift in Sources */,
+				E7B758A81D53795A0094E200 /* ChartCell.swift in Sources */,
+				E724EF301D533FEC00285B39 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
