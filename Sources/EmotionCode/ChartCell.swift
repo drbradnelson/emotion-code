@@ -4,6 +4,6 @@ import UIKit
 
 final class ChartCell: UICollectionViewCell {
 
-    @IBOutlet private weak var emotionCode: UILabel!
+    @IBOutlet private weak var emotionLabel: UILabel!
 
 }
