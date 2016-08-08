@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: Main
 
-final class ChartViewController: UIViewController, UICollectionViewDelegate {
+final class ChartViewController: UIViewController, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -20,7 +20,7 @@ extension ChartViewController {
 
 }
 
-// MARK: Table view data source
+// MARK: Collection view data source
 
 extension ChartViewController {
 
