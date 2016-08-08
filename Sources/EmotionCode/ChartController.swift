@@ -44,11 +44,18 @@ private extension ChartController {
     }
 
     static func chartItemWithDictionary(dictionary: NSDictionary) -> ChartItem {
-        guard let title = dictionary["Title"] as? String, description = dictionary["Description"] as? String else {
+        guard let title = dictionary[itemTitleKey] as? String, description = dictionary[itemDescriptionKey] as? String else {
             preconditionFailure("Unable to parse chart item")
         }
         return ChartItem(title: title, description: description)
     }
+
+}
+
+private extension ChartController {
+
+    static let itemTitleKey = "Title"
+    static let itemDescriptionKey = "Description"
 
 }
 
