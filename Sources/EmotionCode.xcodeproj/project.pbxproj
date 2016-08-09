@@ -227,7 +227,7 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
-		0F78F72D1D596F2200DAE36A /* BookChapters */ = {
+		0F78F72D1D596F2200DAE36A /* Book */ = {
 			isa = PBXGroup;
 			children = (
 				0F78F7321D596F3D00DAE36A /* chapter1.html */,
@@ -245,7 +245,7 @@
 				0F78F80C1D597C6700DAE36A /* images */,
 				0FF641871D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md */,
 			);
-			path = BookChapters;
+			path = Book;
 			sourceTree = "<group>";
 		};
 		0F78F80C1D597C6700DAE36A /* images */ = {
@@ -310,7 +310,6 @@
 		915EEC3B1D460CE1005CC318 /* EmotionCode */ = {
 			isa = PBXGroup;
 			children = (
-				0F78F72D1D596F2200DAE36A /* BookChapters */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
@@ -341,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				91B88ACC1D58B8E600DFCDB2 /* Chart.swift */,
+				0F78F72D1D596F2200DAE36A /* Book */,
 				E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */,
 			);
 			name = Models;
