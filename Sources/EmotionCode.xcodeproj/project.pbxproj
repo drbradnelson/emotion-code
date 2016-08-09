@@ -158,6 +158,7 @@
 		0F78F8121D597D9900DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = en; path = en.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8131D597D9A00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = es; path = es.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0FF641871D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = InstructionsToCutBookIntoChapters.md; sourceTree = "<group>"; };
+		0FF6418A1D5A725500EDF903 /* Book.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Book.sh; sourceTree = "<group>"; };
 		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
+				0FF6418A1D5A725500EDF903 /* Book.sh */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -355,6 +357,7 @@
 			buildPhases = (
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
+				0FF641891D5A6A3100EDF903 /* Run Book Validation */,
 				915EEC351D460CE1005CC318 /* Sources */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
@@ -496,6 +499,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0FF641891D5A6A3100EDF903 /* Run Book Validation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Book Validation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PROJECT_NAME\"/Book.sh";
+			showEnvVarsInLog = 0;
+		};
 		9141D9081D48A256009173A9 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
