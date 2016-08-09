@@ -56,6 +56,7 @@
 		0F78F8031D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FE1D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png */; };
 		0F78F8041D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FF1D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png */; };
 		0F78F80F1D597D9700DAE36A /* idGeneratedStyles.css in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */; };
+		0FF641881D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FF641871D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md */; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
@@ -156,6 +157,7 @@
 		0F78F8101D597D9700DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = Base; path = Base.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8121D597D9900DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = en; path = en.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8131D597D9A00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = es; path = es.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
+		0FF641871D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = InstructionsToCutBookIntoChapters.md; sourceTree = "<group>"; };
 		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				0F78F7F81D5971F800DAE36A /* about-author.html */,
 				0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */,
 				0F78F80C1D597C6700DAE36A /* images */,
+				0FF641871D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md */,
 			);
 			path = BookChapters;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 			files = (
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
+				0FF641881D5A476B00EDF903 /* InstructionsToCutBookIntoChapters.md in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
