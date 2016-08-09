@@ -5,7 +5,7 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 }
 body {
 	-epub-hyphens:auto;
-	padding:10px;
+    padding: 10px;
 }
 a._idGenColorInherit {
 	color:inherit;
@@ -55,13 +55,12 @@ td.No-Table-Style {
 li.Bulleted-List {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	list-style-position:inside;
 	list-style-type:disc;
 	margin-bottom:0;
@@ -81,13 +80,12 @@ li.Bulleted-List {
 p.Captions {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:10px;
 	font-style:italic;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-caption1;
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
@@ -104,13 +102,12 @@ p.Captions {
 p.Chapter-Intro-Stmt {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:Herculanum, serif;
+	font-family:Herculanum, serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-caption1;
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
@@ -126,13 +123,12 @@ p.Chapter-Intro-Stmt {
 }
 p.Chapter-Name {
 	color:#000000;
-	/*font-family:Herculanum, serif;
+	font-family:Herculanum, serif;
 	font-size:18px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-headline;
+	line-height:1.2;
 	margin-bottom:36px;
 	margin-left:0;
 	margin-right:0;
@@ -148,13 +144,12 @@ p.Chapter-Name {
 }
 p.Chapter-Number {
 	color:#000000;
-	/*font-family:Herculanum, serif;
+	font-family:Herculanum, serif;
 	font-size:48px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-headline;
+	line-height:1.2;
 	margin-bottom:36px;
 	margin-left:0;
 	margin-right:0;
@@ -171,12 +166,11 @@ p.Chapter-Number {
 p.Default {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Book Antiqua", serif;
+	font-family:"Book Antiqua", serif;
 	font-size:12px;
 	font-style:normal;
 	font-variant:normal;
-	font-weight:normal;*/
-	font: -apple-system-body;
+	font-weight:normal;
 	line-height:1.2;
 	margin-bottom:0;
 	margin-left:0;
@@ -193,13 +187,12 @@ p.Default {
 }
 p.Drop-Capped-List {
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-caption1;
+	line-height:1.2;
 	margin-bottom:4px;
 	margin-left:0;
 	margin-right:0;
@@ -215,13 +208,12 @@ p.Drop-Capped-List {
 }
 p.Footnote-text {
 	color:#000000;
-	/*font-family:"Arial Narrow", sans-serif;
+	font-family:"Arial Narrow", sans-serif;
 	font-size:9px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-footnote;
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
@@ -238,13 +230,12 @@ p.Footnote-text {
 p.Hyperlink {
 	-epub-hyphens:none;
 	color:#0000ff;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:11px;
 	font-style:italic;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
@@ -260,12 +251,12 @@ p.Hyperlink {
 }
 p.Index {
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:9px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
@@ -282,13 +273,12 @@ p.Index {
 p.Manuscript-Text, li.Manuscript-Text {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
@@ -305,13 +295,12 @@ p.Manuscript-Text, li.Manuscript-Text {
 }
 p.Basic-Paragraph {
 	color:#000000;
-	/*font-family:Times, serif;
+	font-family:Times, serif;
 	font-size:12px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
@@ -328,13 +317,12 @@ p.Basic-Paragraph {
 p.Paragraph-Header {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Myriad Pro Light", sans-serif;
+	font-family:"Myriad Pro Light", sans-serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:600;
-	line-height:1.2;*/
-	font: -apple-system-headline;
+	line-height:1.2;
 	margin-bottom:9px;
 	margin-left:0;
 	margin-right:0;
@@ -351,13 +339,12 @@ p.Paragraph-Header {
 p.Paragraph-Sub {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Myriad Pro Light", sans-serif;
+	font-family:"Myriad Pro Light", sans-serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:600;
-	line-height:1.2;*/
-	font: -apple-system-subheadline;
+	line-height:1.2;
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
@@ -374,13 +361,12 @@ p.Paragraph-Sub {
 p.Part {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:Herculanum, serif;
+	font-family:Herculanum, serif;
 	font-size:22px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-headline;
+	line-height:1.2;
 	margin-bottom:12px;
 	margin-left:0;
 	margin-right:0;
@@ -397,13 +383,12 @@ p.Part {
 p.Popout-Text {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Myriad Pro Light", sans-serif;
+	font-family:"Myriad Pro Light", sans-serif;
 	font-size:10px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:600;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:12px;
 	margin-left:0;
 	margin-right:0;
@@ -421,13 +406,12 @@ p.Popout-Text {
 p.Positive-Emotions {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Myriad Pro", sans-serif;
+	font-family:"Myriad Pro", sans-serif;
 	font-size:11px;
 	font-style:normal;
 	font-variant:small-caps;
 	font-weight:normal;
-	line-height:1.091;*/
-	font: -apple-system-body;
+	line-height:1.091;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
@@ -445,13 +429,12 @@ p.Positive-Emotions {
 p.Quotation {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro", serif;
+	font-family:"Adobe Jenson Pro", serif;
 	font-size:11px;
 	font-style:italic;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-caption1;
+	line-height:1.2;
 	margin-bottom:3px;
 	margin-left:14px;
 	margin-right:14px;
@@ -469,13 +452,12 @@ p.Quotation {
 p.Quote-from-Media {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Arial Narrow", sans-serif;
+	font-family:"Arial Narrow", sans-serif;
 	font-size:10px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:0.9;*/
-	font: -apple-system-caption1;
+	line-height:0.9;
 	margin-bottom:3px;
 	margin-left:14px;
 	margin-right:14px;
@@ -493,13 +475,12 @@ p.Quote-from-Media {
 p.Scripture-Quote {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-size:11px;
 	font-style:italic;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-caption1;
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:14px;
 	margin-right:0;
@@ -516,13 +497,12 @@ p.Scripture-Quote {
 p.Table-Header-Text {
 	-epub-hyphens:none;
 	color:#ffffff;
-	/*font-family:"Myriad Pro", sans-serif;
+	font-family:"Myriad Pro", sans-serif;
 	font-size:12px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-subheadline;
+	line-height:1.2;
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
@@ -540,12 +520,11 @@ p.Table-Text- {
 	-epub-hyphens:none;
 	color:#000000;
 	font-family:"Myriad Pro", sans-serif;
-	/*font-size:11px;
+	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
@@ -562,13 +541,12 @@ p.Table-Text- {
 p.toc-Part {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:Herculanum, serif;
+	font-family:Herculanum, serif;
 	font-size:12px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:6px;
 	margin-left:0;
 	margin-right:0;
@@ -586,13 +564,12 @@ p.toc-Part {
 p.toc-chapter {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:Herculanum, serif;
+	font-family:Herculanum, serif;
 	font-size:10px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:3px;
 	margin-left:29px;
 	margin-right:0;
@@ -609,13 +586,12 @@ p.toc-chapter {
 p.toc-headline {
 	-epub-hyphens:none;
 	color:#000000;
-	/*font-family:"Myriad Pro Light", sans-serif;
+	font-family:"Myriad Pro Light", sans-serif;
 	font-size:10px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:300;
-	line-height:1.2;*/
-	font: -apple-system-body;
+	line-height:1.2;
 	margin-bottom:0;
 	margin-left:29px;
 	margin-right:0;
@@ -634,7 +610,7 @@ span.Drop-Cap-First-Paragraph {
 	font-weight:bold;
 }
 span.Drop-Capped-Greyscale-50- {
-	/*font-family:Herculanum, serif;*/
+	font-family:Herculanum, serif;
 	font-style:normal;
 	font-weight:normal;
 }
@@ -648,11 +624,10 @@ span.Hyperlink {
 	text-decoration:underline;
 }
 span.Toc-Headline-Numbers {
-	/*font-family:"Myriad Pro Light", sans-serif;
+	font-family:"Myriad Pro Light", sans-serif;
 	font-size:11px;
 	font-style:normal;
-	font-weight:300;*/
-	font: -apple-system-body;
+	font-weight:300;
 }
 table.TableOverride-1 {
 	border-collapse:collapse;
@@ -731,59 +706,75 @@ li.ParaOverride-6 {
 	text-indent:0px;
 }
 span.CharOverride-1 {
-	/*font-family:"Trajan Pro", serif;
+	font-family:"Trajan Pro", serif;
 	font-size:24px;
 	font-style:normal;
-	font-weight:normal;*/
-	font: -apple-system-headline;
+	font-weight:normal;
 }
 span.CharOverride-2 {
-	/*font-family:"Adobe Jenson Pro Lt", serif;
+	font-family:"Adobe Jenson Pro Lt", serif;
 	font-style:normal;
-	font-weight:600;*/
-	font: -apple-system-subheadline;
+	font-weight:600;
 }
 span.CharOverride-3 {
-	/*font-family:"Adobe Jenson Pro", serif;
+	font-family:"Adobe Jenson Pro", serif;
 	font-style:normal;
-	font-weight:normal;*/
-	font: -apple-system-body;
+	font-weight:normal;
 }
 span.CharOverride-4 {
-	font: -apple-system-body;
+	font-family:"Adobe Jenson Pro Lt", serif;
+	font-style:normal;
+	font-weight:300;
 }
 span.CharOverride-5 {
-	font: -apple-system-body;
+	font-family:"Adobe Jenson Pro Lt", serif;
+	font-size:9px;
+	font-style:normal;
+	font-weight:300;
 }
 span.CharOverride-6 {
-	font: -apple-system-body;
+	font-family:"Adobe Jenson Pro Lt", serif;
+	font-size:8px;
+	font-style:normal;
+	font-weight:300;
 }
 span.CharOverride-7 {
-	font: -apple-system-body;
+	font-size:10px;
+	font-style:italic;
+	font-weight:normal;
 }
 span.CharOverride-8 {
-	font: -apple-system-body;
+	font-size:10px;
 }
 span.CharOverride-9 {
-	font: -apple-system-body;
+	font-size:5px;
 }
 span.CharOverride-10 {
 	color:#939598;
-	font: -apple-system-body;
+	font-style:normal;
+	font-weight:bold;
 }
 span.CharOverride-11 {
 	color:#333333;
-	font: -apple-system-body;
+	font-family:"Verdana (TT)", sans-serif;
+	font-size:8px;
+	font-style:normal;
+	font-weight:normal;
 }
 span.CharOverride-12 {
 	color:#333333;
-	font: -apple-system-body;
+	font-family:Helvetica, sans-serif;
+	font-size:8px;
+	font-style:normal;
+	font-weight:normal;
 }
 span.CharOverride-13 {
-	font: -apple-system-body;
+	font-family:Times, serif;
+	font-style:normal;
+	font-weight:normal;
 }
 span.CharOverride-14 {
-	font: -apple-system-body;
+	font-size:58%;
 	vertical-align:super;
 }
 span.CharOverride-15 {
@@ -791,17 +782,22 @@ span.CharOverride-15 {
 }
 span.CharOverride-16 {
 	font-style:italic;
-	font: -apple-system-body;
+	font-weight:bold;
 }
 span.CharOverride-17 {
 	font-style:italic;
 	font-weight:normal;
 }
 span.CharOverride-18 {
-	font: -apple-system-body;
+	font-family:"Arial Narrow", sans-serif;
+	font-style:normal;
+	font-weight:normal;
 }
 span.CharOverride-19 {
-	font: -apple-system-body;
+	font-family:"Arial Narrow", sans-serif;
+	font-size:58%;
+	font-style:normal;
+	font-weight:normal;
 	vertical-align:super;
 }
 span.CharOverride-20 {
@@ -809,11 +805,11 @@ span.CharOverride-20 {
 }
 span.CharOverride-21 {
 	color:#211d1e;
-	font: -apple-system-body;
+	font-size:58%;
 	vertical-align:super;
 }
 span.CharOverride-22 {
-	font: -apple-system-body;
+	font-size:11px;
 }
 span.CharOverride-23 {
 	font-style:normal;
@@ -821,13 +817,13 @@ span.CharOverride-23 {
 }
 span.CharOverride-24 {
 	color:#ffffff;
-	font: -apple-system-body;
+	font-size:9px;
 }
 span.CharOverride-25 {
-	font: -apple-system-body;
+	font-size:9px;
 }
 span.CharOverride-26 {
-	font: -apple-system-body;
+	font-size:7px;
 }
 p._idGenParaOverride-1 {
 	page-break-after:always;
@@ -835,7 +831,11 @@ p._idGenParaOverride-1 {
 ._idGenDropcap-1 {
 	color:#939598;
 	float:left;
-	font: -apple-system-body;
+	font-family:Herculanum, serif;
+	font-size:3.265em;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
 	margin-bottom:-0.215em;
 	margin-right:0.05em;
 	margin-top:-0.178em;
@@ -843,7 +843,11 @@ p._idGenParaOverride-1 {
 ._idGenDropcap-2 {
 	color:#939598;
 	float:left;
-	font: -apple-system-body;
+	font-family:Herculanum, serif;
+	font-size:2.993em;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
 	margin-bottom:-0.215em;
 	margin-right:0.05em;
 	margin-top:-0.18em;
