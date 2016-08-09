@@ -4,7 +4,7 @@ import UIKit
 
 class ChartFlowLayout: UICollectionViewFlowLayout {
 
-    let itemHeight: CGFloat = 36
+    let proportionalRatio: CGFloat = 5
     let numberOfColumns: CGFloat = 2
 
     override init() {
@@ -33,12 +33,16 @@ extension ChartFlowLayout {
         return ((collectionView!.frame).width / numberOfColumns) - 1
     }
 
+    func itemHeight() -> CGFloat {
+        return itemWidth() / proportionalRatio
+    }
+
     override var itemSize: CGSize {
         set {
-            self.itemSize = CGSize(width: itemWidth(), height: itemHeight)
+            self.itemSize = CGSize(width: itemWidth(), height: itemHeight())
         }
         get {
-            return CGSize(width: itemWidth(), height: itemHeight)
+            return CGSize(width: itemWidth(), height: itemHeight())
         }
     }
 
