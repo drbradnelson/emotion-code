@@ -10,7 +10,7 @@
 		0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B51D4E74E3002C98E7 /* Book.storyboard */; };
 		0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B81D4E7501002C98E7 /* Chart.storyboard */; };
 		0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0BB1D4E755B002C98E7 /* Help.storyboard */; };
-		0FF8F9E31D5AC919008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E21D5AC919008666E8 /* BookChapters.plist */; };
+		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
@@ -41,7 +41,9 @@
 		0F28D0B61D4E74E3002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Book.storyboard; sourceTree = "<group>"; };
 		0F28D0B91D4E7501002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.storyboard; sourceTree = "<group>"; };
 		0F28D0BC1D4E755B002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Help.storyboard; sourceTree = "<group>"; };
-		0FF8F9E21D5AC919008666E8 /* BookChapters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BookChapters.plist; sourceTree = "<group>"; };
+		0FF8F9E51D5ACD2D008666E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/BookChapters.plist; sourceTree = "<group>"; };
+		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
+		0FF8F9E81D5ACD2F008666E8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,7 +165,7 @@
 			children = (
 				91B88ACC1D58B8E600DFCDB2 /* Chart.swift */,
 				E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */,
-				0FF8F9E21D5AC919008666E8 /* BookChapters.plist */,
+				0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -253,7 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
-				0FF8F9E31D5AC919008666E8 /* BookChapters.plist in Resources */,
+				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
@@ -363,6 +365,16 @@
 				0F28D0BC1D4E755B002C98E7 /* Base */,
 			);
 			name = Help.storyboard;
+			sourceTree = "<group>";
+		};
+		0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FF8F9E51D5ACD2D008666E8 /* Base */,
+				0FF8F9E71D5ACD2E008666E8 /* en */,
+				0FF8F9E81D5ACD2F008666E8 /* es */,
+			);
+			name = BookChapters.plist;
 			sourceTree = "<group>";
 		};
 		915EEC401D460CE1005CC318 /* TabBar.storyboard */ = {
