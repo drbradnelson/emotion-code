@@ -10,6 +10,7 @@
 		0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B51D4E74E3002C98E7 /* Book.storyboard */; };
 		0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B81D4E7501002C98E7 /* Chart.storyboard */; };
 		0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0BB1D4E755B002C98E7 /* Help.storyboard */; };
+		0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3936631D5B9374003CC6C0 /* BookController.swift */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		0F28D0B61D4E74E3002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Book.storyboard; sourceTree = "<group>"; };
 		0F28D0B91D4E7501002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.storyboard; sourceTree = "<group>"; };
 		0F28D0BC1D4E755B002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Help.storyboard; sourceTree = "<group>"; };
+		0F3936631D5B9374003CC6C0 /* BookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
 		0FF8F9E51D5ACD2D008666E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E81D5ACD2F008666E8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */,
+				0F3936631D5B9374003CC6C0 /* BookController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
+				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
