@@ -9,6 +9,7 @@ Tidy is being used to validate HTML files in the project and needs to be updated
 * Fink: `fink install tidy`
 * Homebrew: `brew install tidy-html5`
 * MacPorts: `sudo port install tidy`
+
 For more info please visit http://www.html-tidy.org
 
 ## Instructions for cutting book into chapters
