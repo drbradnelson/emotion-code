@@ -1,7 +1,7 @@
 #!/usr/bin/env bash -e
 
+tidy --help | grep 'This is modern HTML Tidy' || { echo "Tidy needs to be updated to support HTML5"; exit 1; }
 echo "Looking for invalid markup files:"
-tidy --help | grep -q 'This is modern HTML Tidy'
 find * -iname '*.html' -type f | while read FILE
 do
     echo "Linting: $FILE"
