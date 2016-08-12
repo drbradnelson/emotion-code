@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>EMOCIONES ATRAPADAS: LA EPIDEMIA INVISIBLE</string>
+		<key>Filename</key>
+		<string>chapter1</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>EL MUNDO SECRETO DE LAS EMOCIONES ATRAPADAS</string>
+		<key>Filename</key>
+		<string>chapter2</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>MISTERIOS DE LOS ANTIGUOS CURANDEROS DE ENERGIA</string>
+		<key>Filename</key>
+		<string>chapter3</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>SANACIÓN CON IMANES</string>
+		<key>Filename</key>
+		<string>chapter4</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>CÓMO OBTENER RESPUESTAS DE LA MENTE INTERIOR</string>
+		<key>Filename</key>
+		<string>chapter5</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>CÓMO LIBERAR EMOCIONES ATRAPADAS</string>
+		<key>Filename</key>
+		<string>chapter6</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>LOS MUROS ALREDEDOR DE NUESTROS CORAZONES</string>
+		<key>Filename</key>
+		<string>chapter7</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>SUSTITUTOS, REPRESENTANTES Y SANACIÓN A DISTANCIA</string>
+		<key>Filename</key>
+		<string>chapter8</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>EL CÓDIGO DE LA EMOCIÓN Y LOS ANIMALES</string>
+		<key>Filename</key>
+		<string>chapter9</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>LA VIDA SIN EMOCIONES ATRAPADAS</string>
+		<key>Filename</key>
+		<string>chapter10</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>ACERCA DEL AUTOR</string>
+		<key>Filename</key>
+		<string>about-author</string>
+	</dict>
+</array>
+</plist>
