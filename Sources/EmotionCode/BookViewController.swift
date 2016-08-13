@@ -19,6 +19,20 @@ extension BookViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createButtonForNavigationBarTitle()
+        loadChapter(0)
+    }
+
+}
+
+private extension BookViewController {
+
+    func loadChapter(chapterIndex: Int) {
+        let chapter = bookController.book.chapters[chapterIndex]
+        let request = NSURLRequest(URL: chapter.fileURL)
+        webView.loadRequest(request)
+        currentBookChapter = chapter
+        currentBookChapterIndex = chapterIndex
+        setNavigationBarTitleButtonTitle()
     }
 
 }
