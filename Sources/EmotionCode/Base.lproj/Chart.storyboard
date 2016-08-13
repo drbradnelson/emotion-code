@@ -22,13 +22,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="p4U-iz-thD">
                                     <size key="itemSize" width="150" height="36"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="50" height="50"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Yfu-sL-xSc" customClass="ChartCell" customModule="EmotionCode" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="150" height="36"/>
+                                        <rect key="frame" x="0.0" y="114" width="150" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
@@ -54,8 +54,37 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="columnHeader" id="3bl-lo-NJj">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-FW-eJv">
+                                            <rect key="frame" x="300" y="0.0" width="300" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkL-De-k61">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gK2-FW-eJv" secondAttribute="trailing" id="8nu-c1-JHI"/>
+                                        <constraint firstItem="hkL-De-k61" firstAttribute="leading" secondItem="3bl-lo-NJj" secondAttribute="leading" id="EXW-Mi-tn5"/>
+                                        <constraint firstAttribute="bottom" secondItem="hkL-De-k61" secondAttribute="bottom" id="MYe-Mu-Y3W"/>
+                                        <constraint firstItem="hkL-De-k61" firstAttribute="top" secondItem="3bl-lo-NJj" secondAttribute="top" id="RSc-cQ-6to"/>
+                                        <constraint firstItem="gK2-FW-eJv" firstAttribute="top" secondItem="3bl-lo-NJj" secondAttribute="top" id="XMm-wA-DFY"/>
+                                        <constraint firstItem="hkL-De-k61" firstAttribute="width" secondItem="gK2-FW-eJv" secondAttribute="width" id="ZIa-2c-vXe"/>
+                                        <constraint firstAttribute="bottom" secondItem="gK2-FW-eJv" secondAttribute="bottom" id="cNk-EE-EzF"/>
+                                        <constraint firstItem="gK2-FW-eJv" firstAttribute="leading" secondItem="hkL-De-k61" secondAttribute="trailing" id="hAm-Oh-N2r"/>
+                                        <constraint firstItem="hkL-De-k61" firstAttribute="height" secondItem="gK2-FW-eJv" secondAttribute="height" id="qc4-2w-Ldb"/>
+                                    </constraints>
+                                </collectionReusableView>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rowHeader" id="euQ-Oq-Uee">
-                                    <rect key="frame" x="0.0" y="100" width="600" height="50"/>
+                                    <rect key="frame" x="0.0" y="150" width="600" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIa-Ta-6QE">

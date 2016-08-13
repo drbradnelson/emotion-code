@@ -5,6 +5,7 @@ import UIKit
 class ChartFlowLayout: UICollectionViewLayout {
 
     private var cellAttributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
+    private var headerAttributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
     private var footerAttributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
     private var contentSize: CGSize?
 
@@ -54,6 +55,14 @@ extension ChartFlowLayout {
                 }
             }
 
+        let headerIndexPath = NSIndexPath(forItem: 0, inSection: 0)
+        let headerCellAttributes =
+            UICollectionViewLayoutAttributes(
+                forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                withIndexPath: headerIndexPath)
+        headerAttributes[headerIndexPath] = headerCellAttributes
+        headerCellAttributes.frame = CGRect(x: headerWidth + verticalDividerWidth, y: 0, width: (collectionView!.bounds.width - headerWidth - verticalDividerWidth), height: rowHeight)
+
         let maxY = rowY + rowHeight
         contentSize = CGSize(width: collectionView!.bounds.width, height: maxY)
     }
@@ -61,10 +70,18 @@ extension ChartFlowLayout {
     override func collectionViewContentSize() -> CGSize {
         return contentSize!
     }
-
+    //swiftlint:disable cyclomatic_complexity
     override func layoutAttributesForElementsInRect(rect: CGRect) ->
         [UICollectionViewLayoutAttributes]? {
+
             var attributes = [UICollectionViewLayoutAttributes]()
+
+            for attribute in headerAttributes.values {
+                if attribute.frame.intersects(rect) {
+                    attributes.append(attribute)
+                }
+            }
+
             for attribute in footerAttributes.values {
                 if attribute.frame.intersects(rect) {
                     attributes.append(attribute)

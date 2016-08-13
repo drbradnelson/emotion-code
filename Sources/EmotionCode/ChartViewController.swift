@@ -40,6 +40,9 @@ extension ChartViewController {
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
 
         switch kind {
+        case UICollectionElementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "columnHeader", forIndexPath: indexPath)
+            return headerView
         case UICollectionElementKindSectionFooter:
             let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "rowHeader", forIndexPath: indexPath)
             return footerView
