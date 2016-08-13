@@ -4,4 +4,6 @@ import UIKit
 
 final class BookViewController: UIViewController {
 
+    @IBOutlet private var webView: UIWebView!
+
 }
