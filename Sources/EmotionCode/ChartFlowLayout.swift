@@ -2,48 +2,86 @@ import UIKit
 
 // MARK: Main
 
-class ChartFlowLayout: UICollectionViewFlowLayout {
+class ChartFlowLayout: UICollectionViewLayout {
 
-    let proportionalRatio: CGFloat = 5
-    let numberOfColumns: CGFloat = 2
+    private var cellAttributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
+    private var footerAttributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
+    private var contentSize: CGSize?
 
-    override init() {
-        super.init()
-        setupLayout()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupLayout()
-    }
+    private let numberOfVisibleRows = 20
+    private let headerWidth = CGFloat(80)
+    private let verticalDividerWidth = CGFloat(2)
+    private let horizontalDividerHeight = CGFloat(2)
 
 }
 
-// MARK: Layout
+// MARK: Layout setup
 
 extension ChartFlowLayout {
+//swiftlint:disable function_body_length
+    override func prepareLayout() {
+        var rowY: CGFloat = 0
 
-    func setupLayout() {
-        minimumInteritemSpacing = 1
-        minimumLineSpacing = 5
-        scrollDirection = .Vertical
+        let availableHeight = collectionView!.bounds.height
+            - CGFloat(numberOfVisibleRows - 1) * horizontalDividerHeight
+        let rowHeight = availableHeight / CGFloat(numberOfVisibleRows)
+
+        for section in 0..<self.collectionView!.numberOfSections() {
+            rowY = CGFloat(section) * (rowHeight + horizontalDividerHeight) + rowHeight
+            var cellX = headerWidth
+
+            if section%5 == 0 {
+                let rowHeaderHeight = (rowHeight * 5) + (horizontalDividerHeight * 4 )
+                let footerIndexPath = NSIndexPath(forItem: 0, inSection: section)
+                let footerRowAttributes =
+                UICollectionViewLayoutAttributes(
+                    forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
+                    withIndexPath: footerIndexPath)
+                footerRowAttributes.frame = CGRect(x: 0, y: rowY, width: headerWidth, height: rowHeaderHeight)
+                footerAttributes[footerIndexPath] = footerRowAttributes
+            }
+
+            for item in 0..<self.collectionView!.numberOfItemsInSection(section) {
+                let cellWidth = CGFloat(collectionView!.bounds.width - headerWidth - verticalDividerWidth) / 2
+
+                let cellIndexPath = NSIndexPath(forItem: item, inSection: section)
+                let timeEntryCellAttributes =
+                    UICollectionViewLayoutAttributes(forCellWithIndexPath: cellIndexPath)
+                cellAttributes[cellIndexPath] = timeEntryCellAttributes
+                timeEntryCellAttributes.frame = CGRect(x: cellX, y: rowY, width: cellWidth, height: rowHeight)
+
+                cellX += cellWidth + verticalDividerWidth
+                }
+            }
+
+        let maxY = rowY + rowHeight
+        contentSize = CGSize(width: collectionView!.bounds.width, height: maxY)
     }
 
-    func itemWidth() -> CGFloat {
-        return ((collectionView!.frame).width / numberOfColumns) - 1
+    override func collectionViewContentSize() -> CGSize {
+        return contentSize!
     }
 
-    func itemHeight() -> CGFloat {
-        return itemWidth() / proportionalRatio
+    override func layoutAttributesForElementsInRect(rect: CGRect) ->
+        [UICollectionViewLayoutAttributes]? {
+            var attributes = [UICollectionViewLayoutAttributes]()
+            for attribute in footerAttributes.values {
+                if attribute.frame.intersects(rect) {
+                    attributes.append(attribute)
+                }
+            }
+
+            for attribute in cellAttributes.values {
+                if attribute.frame.intersects(rect) {
+                    attributes.append(attribute)
+                }
+            }
+            return attributes
     }
 
-    override var itemSize: CGSize {
-        set {
-            self.itemSize = CGSize(width: itemWidth(), height: itemHeight())
-        }
-        get {
-            return CGSize(width: itemWidth(), height: itemHeight())
-        }
+    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) ->
+        UICollectionViewLayoutAttributes? {
+            return cellAttributes[indexPath]
     }
 
 }
