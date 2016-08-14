@@ -30,7 +30,18 @@
                             <constraint firstAttribute="bottom" secondItem="hUP-2p-L9V" secondAttribute="bottom" id="b2v-Sh-Y0a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Book" id="Hph-GW-P0O"/>
+                    <navigationItem key="navigationItem" title="Book" id="Hph-GW-P0O">
+                        <barButtonItem key="leftBarButtonItem" title="〈" id="zm9-YF-wM9">
+                            <connections>
+                                <action selector="userDidTapLeftBarButtonItem" destination="nMa-7V-2zv" id="X7F-eN-00q"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="〉" id="0hc-9p-Hch">
+                            <connections>
+                                <action selector="userDidTapRightBarButtonItem" destination="nMa-7V-2zv" id="BJ0-89-mfe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="hUP-2p-L9V" id="o8P-pQ-6S9"/>
                     </connections>

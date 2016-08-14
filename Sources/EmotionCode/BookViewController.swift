@@ -47,6 +47,7 @@ private extension BookViewController {
 
     func setNavigationBarTitleButtonTitle() {
         navigationBarTitleButton.setTitle("Chapter \(currentBookChapterIndex + 1) ▽", forState: .Normal)
+        navigationBarTitleButton.sizeToFit()
     }
 
 }
@@ -57,6 +58,16 @@ private extension BookViewController {
 
     @objc func userDidTapNavigationBarTitleButton() {
         print("title tapped")
+    }
+
+    @IBAction func userDidTapLeftBarButtonItem() {
+        guard currentBookChapterIndex > 0 else { return }
+        loadChapter(currentBookChapterIndex - 1)
+    }
+
+    @IBAction func userDidTapRightBarButtonItem() {
+        guard currentBookChapterIndex < bookController.book.chapters.count - 1 else { return }
+        loadChapter(currentBookChapterIndex + 1)
     }
 
 }
