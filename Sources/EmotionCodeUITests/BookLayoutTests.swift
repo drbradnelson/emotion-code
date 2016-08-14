@@ -12,13 +12,3 @@ final class BookLayoutTests: XCTestCase {
     }
 
 }
-
-// MARK: Tests
-
-extension BookLayoutTests {
-
-    func testWebViewFrame() {
-        XCTAssertEqual(app.webViews.element.frame, app.mainWindow.frame)
-    }
-
-}
