@@ -57,6 +57,7 @@
 		0F78F8031D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FE1D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png */; };
 		0F78F8041D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FF1D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png */; };
 		0F78F80F1D597D9700DAE36A /* idGeneratedStyles.css in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */; };
+		0FCA00FB1D60EA130020018A /* BookLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FA1D60EA130020018A /* BookLayoutTests.swift */; };
 		0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */; };
 		0FDC50321D5FA00C007E5EE8 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC50311D5FA00C007E5EE8 /* BookViewController.swift */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
@@ -162,6 +163,7 @@
 		0F78F8101D597D9700DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = Base; path = Base.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8121D597D9900DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = en; path = en.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8131D597D9A00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = es; path = es.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
+		0FCA00FA1D60EA130020018A /* BookLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookLayoutTests.swift; sourceTree = "<group>"; };
 		0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Window.swift"; sourceTree = "<group>"; };
 		0FDC50311D5FA00C007E5EE8 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 				91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */,
 				91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */,
 				91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */,
+				0FCA00FA1D60EA130020018A /* BookLayoutTests.swift */,
 				91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */,
 				0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */,
 				91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */,
@@ -583,6 +586,7 @@
 				91AD7CEC1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift in Sources */,
 				91AD7CE81D534D3400FBEBF7 /* TabNavigationHelpTests.swift in Sources */,
 				91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */,
+				0FCA00FB1D60EA130020018A /* BookLayoutTests.swift in Sources */,
 				0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */,
 				91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */,
 				91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */,
