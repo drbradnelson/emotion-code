@@ -7,7 +7,6 @@ final class BookViewController: UIViewController {
     @IBOutlet private var webView: UIWebView!
     private var navigationBarTitleButton: UIButton!
     private let bookController = BookController()
-    private var currentBookChapter: BookChapter?
     private var currentBookChapterIndex = 0
 
 }
@@ -30,7 +29,6 @@ private extension BookViewController {
         let chapter = bookController.book.chapters[chapterIndex]
         let request = NSURLRequest(URL: chapter.fileURL)
         webView.loadRequest(request)
-        currentBookChapter = chapter
         currentBookChapterIndex = chapterIndex
         setNavigationBarTitleButtonTitle()
     }
