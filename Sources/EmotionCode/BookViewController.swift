@@ -33,6 +33,16 @@ private extension BookViewController {
         setNavigationBarTitleButtonTitle()
     }
 
+    func loadNextChapter() {
+        guard currentBookChapterIndex < bookController.book.chapters.count - 1 else { return }
+        loadChapter(currentBookChapterIndex + 1)
+    }
+
+    func loadPreviousChapter() {
+        guard currentBookChapterIndex > 0 else { return }
+        loadChapter(currentBookChapterIndex - 1)
+    }
+
 }
 
 // MARK: Navigation bar title
@@ -61,13 +71,11 @@ private extension BookViewController {
     }
 
     @IBAction func userDidTapLeftBarButtonItem() {
-        guard currentBookChapterIndex > 0 else { return }
-        loadChapter(currentBookChapterIndex - 1)
+        loadPreviousChapter()
     }
 
     @IBAction func userDidTapRightBarButtonItem() {
-        guard currentBookChapterIndex < bookController.book.chapters.count - 1 else { return }
-        loadChapter(currentBookChapterIndex + 1)
+        loadNextChapter()
     }
 
 }
@@ -77,8 +85,11 @@ private extension BookViewController {
 private extension BookViewController {
 
     @IBAction func userDidSwipeLeft() {
+        loadNextChapter()
     }
+
     @IBAction func userDidSwipeRight() {
+        loadPreviousChapter()
     }
 
 }
