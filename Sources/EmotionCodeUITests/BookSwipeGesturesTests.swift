@@ -19,22 +19,20 @@ extension BookSwipeGesturesTests {
 
     func testRightSwipeOnFirtsChapter() {
         XCTAssert(app.navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
-        app.swipeRight()
+        app.mainWindow.swipeRight()
         XCTAssert(app.navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
     }
 
     func testRightSwipe() {
         XCTAssert(app.navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
-        app.swipeLeft()
-        app.swipeRight()
+        app.mainWindow.swipeLeft()
+        app.mainWindow.swipeRight()
         XCTAssert(app.navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
     }
 
     func testLeftBarButton() {
         XCTAssert(app.navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
-        print(app.webViews.elementBoundByIndex(0))
-        XCTAssert(app.webViews.elementBoundByIndex(0).exists)
-        app.webViews.elementBoundByIndex(0).swipeLeft()
+        app.mainWindow.swipeLeft()
         XCTAssert(app.navigationBars["Book"].buttons["Chapter 2 ▽"].hittable)
     }
 
