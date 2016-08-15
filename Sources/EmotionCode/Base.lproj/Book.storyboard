@@ -48,6 +48,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="leftBarButtonItem" destination="zm9-YF-wM9" id="Cnf-Ax-N4z"/>
+                        <outlet property="rightBarButtonItem" destination="0hc-9p-Hch" id="iSC-FX-HYL"/>
                         <outlet property="webView" destination="hUP-2p-L9V" id="o8P-pQ-6S9"/>
                     </connections>
                 </viewController>

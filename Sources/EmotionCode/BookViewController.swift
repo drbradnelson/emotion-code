@@ -5,6 +5,8 @@ import UIKit
 final class BookViewController: UIViewController {
 
     @IBOutlet private var webView: UIWebView!
+    @IBOutlet private var leftBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var rightBarButtonItem: UIBarButtonItem!
     private var navigationBarTitleButton: UIButton!
     private let bookController = BookController()
     private var currentBookChapterIndex = 0
@@ -18,6 +20,7 @@ extension BookViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createButtonForNavigationBarTitle()
+        setAccessibilityLabelForNavigationBarButtons()
         loadChapter(0)
     }
 
@@ -63,7 +66,19 @@ private extension BookViewController {
 
     func setNavigationBarTitleButtonTitle() {
         navigationBarTitleButton.setTitle("Chapter \(currentBookChapterIndex + 1) ▽", forState: .Normal)
+        navigationBarTitleButton.accessibilityLabel = "Chapter \(currentBookChapterIndex + 1)"
         navigationBarTitleButton.sizeToFit()
+    }
+
+}
+
+// MARK: Navigation bar buttons accessibility
+
+private extension BookViewController {
+
+    func setAccessibilityLabelForNavigationBarButtons() {
+        leftBarButtonItem.accessibilityLabel = "Previous Chapter"
+        rightBarButtonItem.accessibilityLabel = "Next Chapter"
     }
 
 }
