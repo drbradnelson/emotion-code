@@ -40,11 +40,13 @@ private extension BookViewController {
     func loadNextChapter() {
         guard currentBookChapterIndex < bookController.book.chapters.count - 1 else { return }
         loadChapter(currentBookChapterIndex + 1)
+        UIView.transitionWithView(webView, duration: 0.5, options: [.TransitionCurlUp], animations: nil, completion: nil)
     }
 
     func loadPreviousChapter() {
         guard currentBookChapterIndex > 0 else { return }
         loadChapter(currentBookChapterIndex - 1)
+        UIView.transitionWithView(webView, duration: 0.5, options: [.TransitionCurlDown], animations: nil, completion: nil)
     }
 
 }
