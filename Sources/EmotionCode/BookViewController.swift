@@ -71,3 +71,14 @@ private extension BookViewController {
     }
 
 }
+
+// MARK: Swipe gesture recognizer actions
+
+private extension BookViewController {
+
+    @IBAction func userDidSwipeLeft() {
+    }
+    @IBAction func userDidSwipeRight() {
+    }
+
+}
