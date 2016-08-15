@@ -27,10 +27,14 @@ private extension BookViewController {
 
     func loadChapter(chapterIndex: Int) {
         let chapter = bookController.book.chapters[chapterIndex]
-        let request = NSURLRequest(URL: chapter.fileURL)
-        webView.loadRequest(request)
-        currentBookChapterIndex = chapterIndex
-        setNavigationBarTitleButtonTitle()
+        do {
+            let htmlString = try String(contentsOfURL: chapter.fileURL)
+            webView.loadHTMLString(htmlString, baseURL: chapter.fileURL)
+            currentBookChapterIndex = chapterIndex
+            setNavigationBarTitleButtonTitle()
+        } catch {
+            print(error)
+        }
     }
 
     func loadNextChapter() {
