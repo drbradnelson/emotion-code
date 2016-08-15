@@ -17,12 +17,23 @@ final class BookNavigationBarButtonTests: XCTestCase {
 
 extension BookNavigationBarButtonTests {
 
-    func testLeftBarButton() {
-        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["〈"].hittable)
+    func testLeftBarButtonActionOnFirtsChapter() {
+        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
+        XCUIApplication().navigationBars["Book"].buttons["〈"].tap()
+        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
+    }
+
+    func testLeftBarButtonAction() {
+        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
+        XCUIApplication().navigationBars["Book"].buttons["〉"].tap()
+        XCUIApplication().navigationBars["Book"].buttons["〈"].tap()
+        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
     }
 
     func testRightBarButton() {
-        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["〉"].hittable)
+        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["Chapter 1 ▽"].hittable)
+        XCUIApplication().navigationBars["Book"].buttons["〉"].tap()
+        XCTAssert(XCUIApplication().navigationBars["Book"].buttons["Chapter 2 ▽"].hittable)
     }
 
 }
