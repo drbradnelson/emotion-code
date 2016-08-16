@@ -65,7 +65,65 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2077" y="-135"/>
+            <point key="canvasLocation" x="2461" y="586"/>
+        </scene>
+        <!--Book-->
+        <scene sceneID="ReO-jZ-k3q">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Book" id="MB2-yp-Fj1">
+                        <barButtonItem key="leftBarButtonItem" title="〈" id="V6E-dN-fbf">
+                            <connections>
+                                <action selector="userDidTapLeftBarButtonItem" destination="PGN-AK-z9e" id="gWT-vu-VLz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="〉" id="pD0-t1-PtU">
+                            <connections>
+                                <action selector="userDidTapRightBarButtonItem" destination="PGN-AK-z9e" id="2NK-8V-SbU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftBarButtonItem" destination="V6E-dN-fbf" id="nbK-rK-bQp"/>
+                        <outlet property="rightBarButtonItem" destination="pD0-t1-PtU" id="hyj-DC-Nmj"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X25-7F-9Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="-135"/>
+        </scene>
+        <!--Book Chapter View Controller-->
+        <scene sceneID="bo4-8Q-k5e">
+            <objects>
+                <viewController storyboardIdentifier="BookChapterViewController" id="ypO-iY-5D6" customClass="BookChapterViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QUW-Rw-k4J"/>
+                        <viewControllerLayoutGuide type="bottom" id="xgq-bc-mMu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kjV-K7-8I9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sC-i3-jsU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1sC-i3-jsU" secondAttribute="bottom" id="33i-QU-yFE"/>
+                            <constraint firstItem="1sC-i3-jsU" firstAttribute="leading" secondItem="kjV-K7-8I9" secondAttribute="leading" id="6yx-NC-bxF"/>
+                            <constraint firstItem="1sC-i3-jsU" firstAttribute="top" secondItem="kjV-K7-8I9" secondAttribute="top" id="MDQ-Wv-hgI"/>
+                            <constraint firstAttribute="trailing" secondItem="1sC-i3-jsU" secondAttribute="trailing" id="efp-qa-CLy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="1sC-i3-jsU" id="Scr-ti-byB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XE5-ab-8Se" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819" y="-152"/>
         </scene>
         <!--Book-->
         <scene sceneID="Mqy-5i-NmU">
@@ -80,7 +138,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="nMa-7V-2zv" kind="relationship" relationship="rootViewController" id="hJe-Um-Tm3"/>
+                        <segue destination="PGN-AK-z9e" kind="relationship" relationship="rootViewController" id="wGW-3X-0hC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdX-cx-qqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
