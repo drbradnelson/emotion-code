@@ -5,6 +5,7 @@ final class BookChapterViewController: UIViewController {
     @IBOutlet private(set) var webView: UIWebView!
     var chapterIndex = 0
     var chapterURL: NSURL?
+    var preferredTopLayoutGuide: CGFloat = 0.0
 
 }
 
@@ -15,6 +16,11 @@ extension BookChapterViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadChapter()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.scrollView.contentInset.top = preferredTopLayoutGuide
     }
 
 }
