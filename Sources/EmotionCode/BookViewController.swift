@@ -87,9 +87,7 @@ private extension BookViewController {
 
 private extension BookViewController {
 
-    @objc func userDidTapNavigationBarTitleButton() {
-        print("title tapped")
-    }
+    @objc func userDidTapNavigationBarTitleButton() {}
 
     @IBAction func userDidTapLeftBarButtonItem() {
         loadPreviousChapter()
