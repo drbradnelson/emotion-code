@@ -6,68 +6,6 @@
     </dependencies>
     <scenes>
         <!--Book-->
-        <scene sceneID="zqv-gR-d65">
-            <objects>
-                <viewController id="nMa-7V-2zv" customClass="BookViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pMI-1m-Ueq"/>
-                        <viewControllerLayoutGuide type="bottom" id="UKh-U5-bu4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RbL-Fm-sB2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUP-2p-L9V">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="W34-CO-40h" appends="YES" id="sw7-MU-nWq"/>
-                                    <outletCollection property="gestureRecognizers" destination="j9S-Zj-uud" appends="YES" id="Z7e-zw-yGv"/>
-                                </connections>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hUP-2p-L9V" secondAttribute="trailing" id="0a6-Su-zsA"/>
-                            <constraint firstItem="hUP-2p-L9V" firstAttribute="top" secondItem="RbL-Fm-sB2" secondAttribute="top" id="MRu-6c-j47"/>
-                            <constraint firstItem="hUP-2p-L9V" firstAttribute="leading" secondItem="RbL-Fm-sB2" secondAttribute="leading" id="N5W-ti-Dq2"/>
-                            <constraint firstAttribute="bottom" secondItem="hUP-2p-L9V" secondAttribute="bottom" id="b2v-Sh-Y0a"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Book" id="Hph-GW-P0O">
-                        <barButtonItem key="leftBarButtonItem" title="〈" id="zm9-YF-wM9">
-                            <connections>
-                                <action selector="userDidTapLeftBarButtonItem" destination="nMa-7V-2zv" id="X7F-eN-00q"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="〉" id="0hc-9p-Hch">
-                            <connections>
-                                <action selector="userDidTapRightBarButtonItem" destination="nMa-7V-2zv" id="BJ0-89-mfe"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="leftBarButtonItem" destination="zm9-YF-wM9" id="Cnf-Ax-N4z"/>
-                        <outlet property="rightBarButtonItem" destination="0hc-9p-Hch" id="iSC-FX-HYL"/>
-                        <outlet property="webView" destination="hUP-2p-L9V" id="o8P-pQ-6S9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dGT-jS-nor" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="W34-CO-40h">
-                    <connections>
-                        <action selector="userDidSwipeRight" destination="nMa-7V-2zv" id="f8M-9d-YUr"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="j9S-Zj-uud">
-                    <connections>
-                        <action selector="userDidSwipeLeft" destination="nMa-7V-2zv" id="k1o-vd-Otk"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="2461" y="586"/>
-        </scene>
-        <!--Book-->
         <scene sceneID="ReO-jZ-k3q">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XE5-ab-8Se" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2819" y="-152"/>
+            <point key="canvasLocation" x="2803" y="-135"/>
         </scene>
         <!--Book-->
         <scene sceneID="Mqy-5i-NmU">
