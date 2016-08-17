@@ -5,7 +5,7 @@ final class BookChapterViewController: UIViewController {
     @IBOutlet private var webView: UIWebView!
     var chapterIndex = 0
     var chapterURL: NSURL?
-    var preferredTopLayoutGuide: CGFloat = 0.0
+    var preferredTopLayoutGuide: CGFloat = 0
 
 }
 
