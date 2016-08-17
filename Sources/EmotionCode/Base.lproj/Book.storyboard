@@ -8,7 +8,7 @@
         <!--Book-->
         <scene sceneID="ReO-jZ-k3q">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Book" id="MB2-yp-Fj1">
                         <barButtonItem key="leftBarButtonItem" title="〈" id="V6E-dN-fbf">
                             <connections>
