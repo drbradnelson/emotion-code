@@ -19,6 +19,7 @@ extension BookPageViewController {
         super.viewDidLoad()
         dataSource = self
         delegate = self
+        view.backgroundColor = UIColor.whiteColor()
         createButtonForNavigationBarTitle()
         setAccessibilityLabelForNavigationBarButtons()
         showChapterAtIndex(0, direction: .Forward, animated: false)
