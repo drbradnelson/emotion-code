@@ -37,15 +37,13 @@ extension BookPageViewController {
 extension BookPageViewController: UIPageViewControllerDataSource {
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        guard let chapterViewController = viewController as? BookChapterViewController
-            where chapterViewController.chapterIndex > 0 else { return nil }
+        guard let chapterViewController = viewController as? BookChapterViewController where chapterViewController.chapterIndex > 0 else { return nil }
         let previousChapterViewController = chapterViewControllerWithChapterIndex(chapterViewController.chapterIndex - 1)
         return previousChapterViewController
     }
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        guard let chapterViewController = viewController as? BookChapterViewController
-            where chapterViewController.chapterIndex < bookController.book.chapters.count - 1 else { return nil }
+        guard let chapterViewController = viewController as? BookChapterViewController where chapterViewController.chapterIndex < bookController.book.chapters.count - 1 else { return nil }
         let nextChapterViewController = chapterViewControllerWithChapterIndex(chapterViewController.chapterIndex + 1)
         return nextChapterViewController
     }
@@ -120,14 +118,12 @@ private extension BookPageViewController {
     @objc func userDidTapNavigationBarTitleButton() {}
 
     @IBAction func userDidTapLeftBarButtonItem() {
-        guard let chapterViewController = viewControllers?.first as? BookChapterViewController
-            where chapterViewController.chapterIndex > 0 else { return }
+        guard let chapterViewController = viewControllers?.first as? BookChapterViewController where chapterViewController.chapterIndex > 0 else { return }
         showChapterAtIndex(chapterViewController.chapterIndex - 1, direction: .Reverse, animated: true)
     }
 
     @IBAction func userDidTapRightBarButtonItem() {
-        guard let chapterViewController = viewControllers?.first as? BookChapterViewController
-            where chapterViewController.chapterIndex < bookController.book.chapters.count - 1 else { return }
+        guard let chapterViewController = viewControllers?.first as? BookChapterViewController where chapterViewController.chapterIndex < bookController.book.chapters.count - 1 else { return }
         showChapterAtIndex(chapterViewController.chapterIndex + 1, direction: .Forward, animated: true)
     }
 
