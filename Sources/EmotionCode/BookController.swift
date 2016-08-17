@@ -25,8 +25,11 @@ private extension BookController {
     }
 
     static func chapterWithDictionary(dictionary: [String: String]) -> BookChapter {
-        guard let title = dictionary[chapterTitleKey], fileName = dictionary[chapterFileNameKey], fileURL =  NSBundle.mainBundle().URLForResource(fileName, withExtension: "html") else {
+        guard let title = dictionary[chapterTitleKey], fileName = dictionary[chapterFileNameKey] else {
             preconditionFailure("Unable to parse book chapter")
+        }
+        guard let fileURL =  NSBundle.mainBundle().URLForResource(fileName, withExtension: "html") else {
+            preconditionFailure("Unable to create book chapter URL")
         }
         return BookChapter(title: title, fileURL: fileURL)
     }
