@@ -93,7 +93,7 @@ private extension BookPageViewController {
     }
 
     func setNavigationBarTitleButtonTitleForChapterAtIndex(chapterIndex: Int) {
-        navigationBarTitleButton.setTitle("Chapter \(chapterIndex + 1) ▽", forState: .Normal)
+        navigationBarTitleButton.setTitle("Chapter \(chapterIndex + 1) ▼", forState: .Normal)
         navigationBarTitleButton.accessibilityLabel = "Chapter \(chapterIndex + 1)"
         navigationBarTitleButton.sizeToFit()
     }
