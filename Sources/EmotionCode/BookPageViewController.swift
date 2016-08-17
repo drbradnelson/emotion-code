@@ -66,7 +66,7 @@ extension BookPageViewController: UIPageViewControllerDelegate {
 private extension BookPageViewController {
 
     func chapterViewControllerWithChapterIndex(chapterIndex: Int) -> BookChapterViewController {
-        guard let chapterViewController = storyboard?.instantiateViewControllerWithIdentifier("BookChapterViewController") as? BookChapterViewController else { fatalError("") }
+        let chapterViewController = BookChapterViewController.instantiateFromStoryboard()
         let chapter = bookController.book.chapters[chapterIndex]
         chapterViewController.chapterURL = chapter.fileURL
         chapterViewController.chapterIndex = chapterIndex
