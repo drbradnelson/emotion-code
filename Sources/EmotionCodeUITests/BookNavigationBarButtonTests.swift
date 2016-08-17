@@ -33,4 +33,9 @@ extension BookNavigationBarButtonTests {
         XCTAssert(app.buttons["Chapter 2"].hittable)
     }
 
+    func testRightBarButtonActionToLastChapter() {
+        app.buttons["Next Chapter"].tapWithNumberOfTaps(10, numberOfTouches: 1)
+        XCTAssert(app.buttons["Chapter 11"].hittable)
+    }
+
 }
