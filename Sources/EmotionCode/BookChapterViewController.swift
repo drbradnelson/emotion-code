@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 final class BookChapterViewController: UIViewController {
 
     @IBOutlet private var webView: UIWebView!
@@ -25,7 +27,7 @@ extension BookChapterViewController {
 
 }
 
-// MARK: Load chapter html
+// MARK: Load chapter HTML
 
 private extension BookChapterViewController {
 

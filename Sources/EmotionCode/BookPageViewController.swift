@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 final class BookPageViewController: UIPageViewController {
 
     @IBOutlet private var leftBarButtonItem: UIBarButtonItem!
