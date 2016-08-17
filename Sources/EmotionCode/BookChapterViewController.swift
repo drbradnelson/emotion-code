@@ -37,7 +37,7 @@ private extension BookChapterViewController {
             let htmlString = try String(contentsOfURL: chapterURL)
             webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
-            print(error)
+            preconditionFailure("Couldn't load chapter HTML file")
         }
     }
 
