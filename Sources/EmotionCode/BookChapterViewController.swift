@@ -11,6 +11,20 @@ final class BookChapterViewController: UIViewController {
 
 }
 
+// MARK: Factory method
+
+extension BookChapterViewController {
+
+    static func instantiateFromStoryboard() -> BookChapterViewController {
+        let storyboard = UIStoryboard(name: "Book", bundle: nil)
+        guard let bookChapterViewController = storyboard.instantiateViewControllerWithIdentifier(String(BookChapterViewController.self)) as? BookChapterViewController else {
+            preconditionFailure("Couldn't instantiate BookChapterViewController")
+        }
+        return bookChapterViewController
+    }
+
+}
+
 // MARK: View lifecycle
 
 extension BookChapterViewController {
