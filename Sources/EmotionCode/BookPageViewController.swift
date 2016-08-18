@@ -20,7 +20,6 @@ extension BookPageViewController {
         dataSource = self
         delegate = self
         view.backgroundColor = UIColor.whiteColor()
-        createButtonForNavigationBarTitle()
         setAccessibilityLabelForNavigationBarButtons()
         showChapterAtIndex(0, direction: .Forward, animated: false)
     }
@@ -86,12 +85,6 @@ private extension BookPageViewController {
 // MARK: Navigation bar title
 
 private extension BookPageViewController {
-
-    func createButtonForNavigationBarTitle() {
-        navigationBarTitleButton = UIButton(type: .System)
-        navigationBarTitleButton.addTarget(self, action: #selector(userDidTapNavigationBarTitleButton), forControlEvents: .TouchUpInside)
-        navigationItem.titleView = navigationBarTitleButton
-    }
 
     func setNavigationBarTitleButtonTitleForChapterAtIndex(chapterIndex: Int) {
         navigationBarTitleButton.setTitle("Chapter \(chapterIndex + 1) ▼", forState: .Normal)
