@@ -15,6 +15,10 @@
                                 <action selector="userDidTapLeftBarButtonItem" destination="PGN-AK-z9e" id="gWT-vu-VLz"/>
                             </connections>
                         </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hpy-SJ-jeB">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </button>
                         <barButtonItem key="rightBarButtonItem" title="〉" id="pD0-t1-PtU">
                             <connections>
                                 <action selector="userDidTapRightBarButtonItem" destination="PGN-AK-z9e" id="2NK-8V-SbU"/>
@@ -23,6 +27,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="leftBarButtonItem" destination="V6E-dN-fbf" id="nbK-rK-bQp"/>
+                        <outlet property="navigationBarTitleButton" destination="hpy-SJ-jeB" id="88F-hz-2NE"/>
                         <outlet property="rightBarButtonItem" destination="pD0-t1-PtU" id="hyj-DC-Nmj"/>
                     </connections>
                 </pageViewController>

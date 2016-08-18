@@ -6,7 +6,7 @@ final class BookPageViewController: UIPageViewController {
 
     @IBOutlet private var leftBarButtonItem: UIBarButtonItem!
     @IBOutlet private var rightBarButtonItem: UIBarButtonItem!
-    private var navigationBarTitleButton: UIButton!
+    @IBOutlet private var navigationBarTitleButton: UIButton!
     private let bookController = BookController()
 
 }
