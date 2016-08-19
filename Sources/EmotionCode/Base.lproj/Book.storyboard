@@ -5,20 +5,39 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Book-->
+        <!--Book Page View Controller-->
         <scene sceneID="ReO-jZ-k3q">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Book" id="MB2-yp-Fj1">
+                    <navigationItem key="navigationItem" id="MB2-yp-Fj1">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="〈" id="V6E-dN-fbf">
                             <connections>
                                 <action selector="userDidTapLeftBarButtonItem" destination="PGN-AK-z9e" id="gWT-vu-VLz"/>
                             </connections>
                         </barButtonItem>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hpy-SJ-jeB">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                        <view key="titleView" contentMode="scaleToFill" id="pXr-Nk-9Ei" customClass="ChapterTitleView" customModule="EmotionCode" customModuleProvider="target">
+                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </button>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpy-SJ-jeB">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dRs-Se-HEv"/>
+                                    </constraints>
+                                    <state key="normal" title="Chapter"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="hpy-SJ-jeB" secondAttribute="bottom" id="FpE-Bj-GnD"/>
+                                <constraint firstItem="hpy-SJ-jeB" firstAttribute="leading" secondItem="pXr-Nk-9Ei" secondAttribute="leading" id="gbE-VN-5c7"/>
+                                <constraint firstAttribute="trailing" secondItem="hpy-SJ-jeB" secondAttribute="trailing" id="iMn-pT-E21"/>
+                                <constraint firstItem="hpy-SJ-jeB" firstAttribute="top" secondItem="pXr-Nk-9Ei" secondAttribute="top" id="rsC-Bp-R1p"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="chapterTitleButton" destination="hpy-SJ-jeB" id="ldI-Ny-Nkk"/>
+                            </connections>
+                        </view>
                         <barButtonItem key="rightBarButtonItem" title="〉" id="pD0-t1-PtU">
                             <connections>
                                 <action selector="userDidTapRightBarButtonItem" destination="PGN-AK-z9e" id="2NK-8V-SbU"/>
@@ -26,8 +45,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="chapterTitleView" destination="pXr-Nk-9Ei" id="gRz-Qm-bbU"/>
                         <outlet property="leftBarButtonItem" destination="V6E-dN-fbf" id="nbK-rK-bQp"/>
-                        <outlet property="navigationBarTitleButton" destination="hpy-SJ-jeB" id="88F-hz-2NE"/>
                         <outlet property="rightBarButtonItem" destination="pD0-t1-PtU" id="hyj-DC-Nmj"/>
                     </connections>
                 </pageViewController>

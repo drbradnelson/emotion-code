@@ -6,7 +6,8 @@ final class BookPageViewController: UIPageViewController {
 
     @IBOutlet private var leftBarButtonItem: UIBarButtonItem!
     @IBOutlet private var rightBarButtonItem: UIBarButtonItem!
-    @IBOutlet private var navigationBarTitleButton: UIButton!
+    @IBOutlet private var chapterTitleView: ChapterTitleView!
+
     private let bookController = BookController()
 
 }
@@ -66,7 +67,7 @@ extension BookPageViewController: UIPageViewControllerDelegate {
 
     func pageViewController(pageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
         guard let nextChapterViewController = pendingViewControllers.first as? BookChapterViewController else { return }
-        setNavigationBarTitleButtonTitleForChapterAtIndex(nextChapterViewController.chapterIndex)
+        chapterTitleView.setChapterIndex(nextChapterViewController.chapterIndex)
     }
 
 }
@@ -86,20 +87,8 @@ private extension BookPageViewController {
 
     func showChapterAtIndex(chapterIndex: Int, direction: UIPageViewControllerNavigationDirection, animated: Bool) {
         let chapterViewController = chapterViewControllerWithChapterIndex(chapterIndex)
-        setNavigationBarTitleButtonTitleForChapterAtIndex(chapterIndex)
+        chapterTitleView.setChapterIndex(chapterViewController.chapterIndex)
         setViewControllers([chapterViewController], direction: direction, animated: animated, completion: nil)
-    }
-
-}
-
-// MARK: Navigation bar title
-
-private extension BookPageViewController {
-
-    func setNavigationBarTitleButtonTitleForChapterAtIndex(chapterIndex: Int) {
-        navigationBarTitleButton.setTitle("Chapter \(chapterIndex + 1) ▼", forState: .Normal)
-        navigationBarTitleButton.accessibilityLabel = "Chapter \(chapterIndex + 1)"
-        navigationBarTitleButton.sizeToFit()
     }
 
 }
