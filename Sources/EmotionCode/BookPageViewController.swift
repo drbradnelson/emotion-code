@@ -119,8 +119,6 @@ private extension BookPageViewController {
 
 private extension BookPageViewController {
 
-    @objc func userDidTapNavigationBarTitleButton() {}
-
     @IBAction func userDidTapLeftBarButtonItem() {
         guard bookController.hasChapter(currentBookChapterViewController.chapterIndex - 1) else { return }
         showChapterAtIndex(currentBookChapterViewController.chapterIndex - 1, direction: .Reverse, animated: true)
