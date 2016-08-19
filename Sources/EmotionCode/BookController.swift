@@ -37,7 +37,7 @@ private extension BookController {
             preconditionFailure("Unable to parse book chapter")
         }
         guard let fileURL =  NSBundle.mainBundle().URLForResource(fileName, withExtension: "html") else {
-            preconditionFailure("Unable to create book chapter URL")
+            preconditionFailure("Unable to find book chapter file")
         }
         return BookChapter(title: title, fileURL: fileURL)
     }
