@@ -26,8 +26,18 @@ extension BookPageViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        guard let chapterViewController = viewControllers?.first as? BookChapterViewController else { return }
-        chapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
+        currentBookChapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
+    }
+
+}
+
+private extension BookPageViewController {
+
+    var currentBookChapterViewController: BookChapterViewController {
+        guard let chapterViewController = viewControllers?.first as? BookChapterViewController else {
+            preconditionFailure("Unable to find chapterViewController")
+        }
+        return chapterViewController
     }
 
 }
@@ -112,13 +122,13 @@ private extension BookPageViewController {
     @objc func userDidTapNavigationBarTitleButton() {}
 
     @IBAction func userDidTapLeftBarButtonItem() {
-        guard let chapterViewController = viewControllers?.first as? BookChapterViewController where bookController.hasChapter(chapterViewController.chapterIndex - 1) else { return }
-        showChapterAtIndex(chapterViewController.chapterIndex - 1, direction: .Reverse, animated: true)
+        guard bookController.hasChapter(currentBookChapterViewController.chapterIndex - 1) else { return }
+        showChapterAtIndex(currentBookChapterViewController.chapterIndex - 1, direction: .Reverse, animated: true)
     }
 
     @IBAction func userDidTapRightBarButtonItem() {
-        guard let chapterViewController = viewControllers?.first as? BookChapterViewController where bookController.hasChapter(chapterViewController.chapterIndex + 1) else { return }
-        showChapterAtIndex(chapterViewController.chapterIndex + 1, direction: .Forward, animated: true)
+        guard bookController.hasChapter(currentBookChapterViewController.chapterIndex + 1) else { return }
+        showChapterAtIndex(currentBookChapterViewController.chapterIndex + 1, direction: .Forward, animated: true)
     }
 
 }
