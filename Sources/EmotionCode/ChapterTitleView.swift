@@ -41,7 +41,8 @@ private extension ChapterTitleView {
 extension ChapterTitleView {
 
     func titleOfChapterWithIndex(index: Int) -> String {
-        return NSString(format: "Chapter %i", index + 1) as String
+        let format = NSLocalizedString("Chapter %i", comment: "")
+        return NSString.localizedStringWithFormat(format, index + 1) as String
     }
 
 }
