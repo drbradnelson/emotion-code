@@ -8,6 +8,14 @@ final class BookController {
 
 }
 
+extension BookController {
+
+    func hasChapter(chapterIndex: Int) -> Bool {
+        return book.chapters.indices.contains(chapterIndex)
+    }
+
+}
+
 // MARK: Parser
 
 private extension BookController {
