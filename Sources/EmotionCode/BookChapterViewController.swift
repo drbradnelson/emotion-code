@@ -37,6 +37,7 @@ extension BookChapterViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         webView.scrollView.contentInset.top = preferredTopLayoutGuide
+        webView.scrollView.scrollIndicatorInsets.top = preferredTopLayoutGuide
     }
 
 }
