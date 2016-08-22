@@ -8,6 +8,7 @@ final class BookChapterViewController: UIViewController {
     var chapterIndex = 0
     var chapterURL: NSURL?
     var preferredTopLayoutGuide: CGFloat = 0
+    var preferredBottomLayoutGuide: CGFloat = 0
 
 }
 
@@ -36,8 +37,8 @@ extension BookChapterViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        webView.scrollView.contentInset.top = preferredTopLayoutGuide
-        webView.scrollView.scrollIndicatorInsets.top = preferredTopLayoutGuide
+        webView.scrollView.contentInset = UIEdgeInsets(top: preferredTopLayoutGuide, left: webView.scrollView.contentInset.left, bottom: preferredBottomLayoutGuide, right: webView.scrollView.contentInset.right)
+        webView.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: preferredTopLayoutGuide, left: webView.scrollView.scrollIndicatorInsets.left, bottom: preferredBottomLayoutGuide, right: webView.scrollView.scrollIndicatorInsets.right)
     }
 
 }
