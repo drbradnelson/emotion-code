@@ -66,12 +66,15 @@
 		91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */; };
 		91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */; };
 		91AD7CE41D534D2500FBEBF7 /* TabNavigationBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */; };
+		E724EF301D533FEC00285B39 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724EF2F1D533FEC00285B39 /* ChartViewController.swift */; };
+		E7B758A81D53795A0094E200 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B758A71D53795A0094E200 /* ChartCell.swift */; };
 		91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */; };
 		91AD7CE81D534D3400FBEBF7 /* TabNavigationHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */; };
 		91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */; };
 		91AD7CEC1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */; };
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
+		E7B758AA1D537B640094E200 /* ChartFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B758A91D537B640094E200 /* ChartFlowLayout.swift */; };
 		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +181,10 @@
 		91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
 		91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationBookTests.swift; sourceTree = "<group>"; };
 		91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationChartTests.swift; sourceTree = "<group>"; };
+		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
+		E724EF2F1D533FEC00285B39 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		E7B758A71D53795A0094E200 /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		E7B758A91D537B640094E200 /* ChartFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFlowLayout.swift; sourceTree = "<group>"; };
 		91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationHelpTests.swift; sourceTree = "<group>"; };
 		91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+App.swift"; sourceTree = "<group>"; };
 		91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+SafeLaunch.swift"; sourceTree = "<group>"; };
@@ -210,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */,
+				E724EF2F1D533FEC00285B39 /* ChartViewController.swift */,
 				0F3936631D5B9374003CC6C0 /* BookController.swift */,
 			);
 			name = Controllers;
@@ -322,6 +330,7 @@
 				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
+				E7B758A61D5374B60094E200 /* Views */,
 				0F28D0C01D4E7659002C98E7 /* Shared */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
@@ -342,6 +351,15 @@
 				915EEC531D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCodeUITests;
+			sourceTree = "<group>";
+		};
+		E7B758A61D5374B60094E200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7B758A91D537B640094E200 /* ChartFlowLayout.swift */,
+				E7B758A71D53795A0094E200 /* ChartCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E7BF74B01D4F607300AF6198 /* Models */ = {
@@ -566,6 +584,9 @@
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
+				E7B758AA1D537B640094E200 /* ChartFlowLayout.swift in Sources */,
+				E7B758A81D53795A0094E200 /* ChartCell.swift in Sources */,
+				E724EF301D533FEC00285B39 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
