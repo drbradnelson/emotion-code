@@ -65,9 +65,8 @@ extension BookPageViewController: UIPageViewControllerDataSource {
 
 extension BookPageViewController: UIPageViewControllerDelegate {
 
-    func pageViewController(pageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
-        guard let nextChapterViewController = pendingViewControllers.first as? BookChapterViewController else { return }
-        chapterTitleView.setChapterIndex(nextChapterViewController.chapterIndex)
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        chapterTitleView.setChapterIndex(currentBookChapterViewController.chapterIndex)
     }
 
 }
