@@ -351,6 +351,7 @@
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
 				0F28D0C01D4E7659002C98E7 /* Shared */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
+				910C68421D6AE193004E7E7F /* TabIcons.xcassets */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCode;
@@ -441,6 +442,7 @@
 				TargetAttributes = {
 					915EEC381D460CE1005CC318 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 977T8AV26N;
 					};
 					915EEC4C1D460CE1005CC318 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -492,6 +494,7 @@
 				0F78F76B1D59703100DAE36A /* MT-surrogate_testing_adult.png in Resources */,
 				0F78F8011D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png in Resources */,
 				0F78F7CE1D5971BB00DAE36A /* chapter3.html in Resources */,
+				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
 				0F78F75D1D59703100DAE36A /* governing-back.png in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
@@ -905,6 +908,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
@@ -916,6 +920,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
