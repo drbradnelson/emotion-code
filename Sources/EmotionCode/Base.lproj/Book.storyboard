@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AVR-qB-fiv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AVR-qB-fiv">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,7 +10,6 @@
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="MB2-yp-Fj1">
-                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="〈" id="V6E-dN-fbf">
                             <connections>
                                 <action selector="userDidTapLeftBarButtonItem" destination="PGN-AK-z9e" id="gWT-vu-VLz"/>
@@ -22,6 +21,9 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpy-SJ-jeB">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" button="YES" header="YES"/>
+                                    </accessibility>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dRs-Se-HEv"/>
                                     </constraints>
