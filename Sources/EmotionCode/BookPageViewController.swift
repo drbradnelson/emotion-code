@@ -99,8 +99,8 @@ private extension BookPageViewController {
 private extension BookPageViewController {
 
     func setAccessibilityLabelForNavigationBarButtons() {
-        leftBarButtonItem.accessibilityLabel = "Previous Chapter"
-        rightBarButtonItem.accessibilityLabel = "Next Chapter"
+        leftBarButtonItem.accessibilityLabel = NSLocalizedString("Previous Chapter", comment: "")
+        rightBarButtonItem.accessibilityLabel = NSLocalizedString("Next Chapter", comment: "")
     }
 
 }
