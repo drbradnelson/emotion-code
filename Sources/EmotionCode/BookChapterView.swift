@@ -4,7 +4,7 @@ import UIKit
 
 final class BookChapterView: UIView {
 
-    @IBOutlet var webView: UIWebView!
+    @IBOutlet private(set) var webView: UIWebView!
 
 }
 
