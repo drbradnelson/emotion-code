@@ -13,6 +13,7 @@
 		0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0BB1D4E755B002C98E7 /* Help.storyboard */; };
 		0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3936631D5B9374003CC6C0 /* BookController.swift */; };
 		0F3EAFDE1D6CA34B0059C312 /* XCUIElementQuery+First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3EAFDD1D6CA34B0059C312 /* XCUIElementQuery+First.swift */; };
+		0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */; };
 		0F464FB41D621D4E0036D762 /* BookSwipeGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */; };
 		0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */; };
 		0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */; };
@@ -102,6 +103,7 @@
 		0F28D0BC1D4E755B002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Help.storyboard; sourceTree = "<group>"; };
 		0F3936631D5B9374003CC6C0 /* BookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
 		0F3EAFDD1D6CA34B0059C312 /* XCUIElementQuery+First.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+First.swift"; sourceTree = "<group>"; };
+		0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterView.swift; sourceTree = "<group>"; };
 		0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSwipeGesturesTests.swift; sourceTree = "<group>"; };
 		0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageViewController.swift; sourceTree = "<group>"; };
 		0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterViewController.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				91187B221D6776A00098A881 /* ChapterTitleView.swift */,
+				0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
+				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,

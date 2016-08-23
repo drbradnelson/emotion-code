@@ -4,11 +4,9 @@ import UIKit
 
 final class BookChapterViewController: UIViewController {
 
-    @IBOutlet private var webView: UIWebView!
+    @IBOutlet private var bookChapterView: BookChapterView!
     var chapterIndex = 0
     var chapterURL: NSURL?
-    var preferredTopLayoutGuide: CGFloat = 0
-    var preferredBottomLayoutGuide: CGFloat = 0
 
 }
 
@@ -36,10 +34,15 @@ extension BookChapterViewController {
         loadChapter()
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        webView.scrollView.contentInset = UIEdgeInsets(top: preferredTopLayoutGuide, left: webView.scrollView.contentInset.left, bottom: preferredBottomLayoutGuide, right: webView.scrollView.contentInset.right)
-        webView.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: preferredTopLayoutGuide, left: webView.scrollView.scrollIndicatorInsets.left, bottom: preferredBottomLayoutGuide, right: webView.scrollView.scrollIndicatorInsets.right)
+}
+
+// MARK: Preferred layout guides
+
+extension BookChapterViewController {
+
+    func setPreferredLayoutGuidesForTop(top: CGFloat, forBottom bottom: CGFloat) {
+        bookChapterView?.preferredTopLayoutGuide = top
+        bookChapterView?.preferredBottomLayoutGuide = bottom
     }
 
 }
@@ -52,7 +55,7 @@ private extension BookChapterViewController {
         guard let chapterURL = chapterURL else { return }
         do {
             let htmlString = try String(contentsOfURL: chapterURL)
-            webView.loadHTMLString(htmlString, baseURL: chapterURL)
+            bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
             preconditionFailure("Unable to load chapter HTML file")
         }

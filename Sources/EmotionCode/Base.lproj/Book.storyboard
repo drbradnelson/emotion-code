@@ -64,7 +64,7 @@
                         <viewControllerLayoutGuide type="top" id="QUW-Rw-k4J"/>
                         <viewControllerLayoutGuide type="bottom" id="xgq-bc-mMu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kjV-K7-8I9">
+                    <view key="view" contentMode="scaleToFill" id="kjV-K7-8I9" customClass="BookChapterView" customModule="EmotionCode" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -80,9 +80,12 @@
                             <constraint firstItem="1sC-i3-jsU" firstAttribute="top" secondItem="kjV-K7-8I9" secondAttribute="top" id="MDQ-Wv-hgI"/>
                             <constraint firstAttribute="trailing" secondItem="1sC-i3-jsU" secondAttribute="trailing" id="efp-qa-CLy"/>
                         </constraints>
+                        <connections>
+                            <outlet property="webView" destination="1sC-i3-jsU" id="82h-Ig-zev"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="1sC-i3-jsU" id="Scr-ti-byB"/>
+                        <outlet property="bookChapterView" destination="kjV-K7-8I9" id="Psr-BW-OoM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XE5-ab-8Se" userLabel="First Responder" sceneMemberID="firstResponder"/>
