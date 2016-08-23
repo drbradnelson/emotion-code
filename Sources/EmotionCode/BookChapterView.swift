@@ -6,19 +6,15 @@ final class BookChapterView: UIView {
 
     @IBOutlet var webView: UIWebView!
 
-    var preferredTopLayoutGuide: CGFloat = 0
-    var preferredBottomLayoutGuide: CGFloat = 0
-
 }
 
 // MARK: Layout
 
 extension BookChapterView {
 
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        webView.scrollView.contentInset = UIEdgeInsets(top: preferredTopLayoutGuide, left: webView.scrollView.contentInset.left, bottom: preferredBottomLayoutGuide, right: webView.scrollView.contentInset.right)
-        webView.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: preferredTopLayoutGuide, left: webView.scrollView.scrollIndicatorInsets.left, bottom: preferredBottomLayoutGuide, right: webView.scrollView.scrollIndicatorInsets.right)
+    func setPreferredLayoutGuidesForTop(top: CGFloat, forBottom bottom: CGFloat) {
+        webView.scrollView.contentInset = UIEdgeInsets(top: top, left: webView.scrollView.contentInset.left, bottom: bottom, right: webView.scrollView.contentInset.right)
+        webView.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: top, left: webView.scrollView.scrollIndicatorInsets.left, bottom: bottom, right: webView.scrollView.scrollIndicatorInsets.right)
     }
 
 }

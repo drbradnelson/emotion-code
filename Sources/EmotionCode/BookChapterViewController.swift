@@ -7,6 +7,8 @@ final class BookChapterViewController: UIViewController {
     @IBOutlet private var bookChapterView: BookChapterView!
     var chapterIndex = 0
     var chapterURL: NSURL?
+    var preferredTopLayoutGuide: CGFloat = 0
+    var preferredBottomLayoutGuide: CGFloat = 0
 
 }
 
@@ -34,15 +36,9 @@ extension BookChapterViewController {
         loadChapter()
     }
 
-}
-
-// MARK: Preferred layout guides
-
-extension BookChapterViewController {
-
-    func setPreferredLayoutGuidesForTop(top: CGFloat, forBottom bottom: CGFloat) {
-        bookChapterView?.preferredTopLayoutGuide = top
-        bookChapterView?.preferredBottomLayoutGuide = bottom
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        bookChapterView?.setPreferredLayoutGuidesForTop(preferredTopLayoutGuide, forBottom: preferredBottomLayoutGuide)
     }
 
 }

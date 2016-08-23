@@ -27,9 +27,8 @@ extension BookPageViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        currentBookChapterViewController.setPreferredLayoutGuidesForTop(topLayoutGuide.length, forBottom: bottomLayoutGuide.length)
-//        currentBookChapterViewController.preferredTopLayoutGuide =
-//        currentBookChapterViewController.preferredBottomLayoutGuide =
+        currentBookChapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
+        currentBookChapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
     }
 
 }
@@ -82,9 +81,8 @@ private extension BookPageViewController {
         let chapter = bookController.book.chapters[chapterIndex]
         chapterViewController.chapterURL = chapter.fileURL
         chapterViewController.chapterIndex = chapterIndex
-        chapterViewController.setPreferredLayoutGuidesForTop(topLayoutGuide.length, forBottom: bottomLayoutGuide.length)
-//        chapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
-//        chapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+        chapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
+        chapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
         return chapterViewController
     }
 
