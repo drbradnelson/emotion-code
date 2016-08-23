@@ -24,7 +24,7 @@ extension TabNavigationBookTests {
 
     func testBookTitle() {
         app.buttons["Book"].tap()
-        XCTAssert(app.navigationBars["Book"].exists)
+        XCTAssert(app.navigationBars.first.exists)
     }
 
     func testBookDeselection() {
