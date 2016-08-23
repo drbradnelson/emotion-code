@@ -37,7 +37,7 @@ private extension BookPageViewController {
 
     var currentBookChapterViewController: BookChapterViewController {
         guard let chapterViewController = viewControllers?.first as? BookChapterViewController else {
-            preconditionFailure("Unable to find chapterViewController")
+            preconditionFailure("Unable to find chapter view controller")
         }
         return chapterViewController
     }
