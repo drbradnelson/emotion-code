@@ -20,7 +20,7 @@ extension BookChapterViewController {
         let storyboard = UIStoryboard(name: "Book", bundle: nil)
         let storyboardIdentifier = String(BookChapterViewController.self)
         guard let bookChapterViewController = storyboard.instantiateViewControllerWithIdentifier(storyboardIdentifier) as? BookChapterViewController else {
-            preconditionFailure("Couldn't instantiate BookChapterViewController")
+            preconditionFailure("Unable to instantiate BookChapterViewController")
         }
         return bookChapterViewController
     }
@@ -54,7 +54,7 @@ private extension BookChapterViewController {
             let htmlString = try String(contentsOfURL: chapterURL)
             webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
-            preconditionFailure("Couldn't load chapter HTML file")
+            preconditionFailure("Unable to load chapter HTML file")
         }
     }
 
