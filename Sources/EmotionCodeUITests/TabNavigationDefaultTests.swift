@@ -22,7 +22,7 @@ extension TabNavigationDefaultTests {
     }
 
     func testDefaultTitle() {
-        XCTAssert(app.navigationBars["Book"].exists)
+        XCTAssert(app.navigationBars.first.exists)
     }
 
 }
