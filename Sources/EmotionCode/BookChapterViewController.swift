@@ -18,7 +18,8 @@ extension BookChapterViewController {
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
         let storyboard = UIStoryboard(name: "Book", bundle: nil)
-        guard let bookChapterViewController = storyboard.instantiateViewControllerWithIdentifier(String(BookChapterViewController.self)) as? BookChapterViewController else {
+        let storyboardIdentifier = String(BookChapterViewController.self)
+        guard let bookChapterViewController = storyboard.instantiateViewControllerWithIdentifier(storyboardIdentifier) as? BookChapterViewController else {
             preconditionFailure("Couldn't instantiate BookChapterViewController")
         }
         return bookChapterViewController
