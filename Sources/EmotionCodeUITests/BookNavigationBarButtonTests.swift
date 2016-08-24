@@ -18,8 +18,7 @@ final class BookNavigationBarButtonTests: XCTestCase {
 extension BookNavigationBarButtonTests {
 
     func testLeftBarButtonActionOnFirtsChapter() {
-        app.buttons["Previous Chapter"].tap()
-        XCTAssert(app.buttons["Chapter 1"].hittable)
+        XCTAssertFalse(app.buttons["Previous Chapter"].enabled)
     }
 
     func testLeftBarButtonAction() {
@@ -36,6 +35,7 @@ extension BookNavigationBarButtonTests {
     func testRightBarButtonActionToLastChapter() {
         app.buttons["Next Chapter"].tapWithNumberOfTaps(10, numberOfTouches: 1)
         XCTAssert(app.buttons["Chapter 11"].hittable)
+        XCTAssertFalse(app.buttons["Next Chapter"].enabled)
     }
 
 }
