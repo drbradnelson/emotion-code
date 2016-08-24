@@ -45,8 +45,7 @@ extension ChapterSelectionTableViewController {
         }
         let chapter = bookChapters[indexPath.row]
         cell.setChapterNumber(String(indexPath.row + 1), chapterTitle: chapter.title)
-        let selected = indexPath.row == selectedChapterIndex
-        if selected {
+        if indexPath.row == selectedChapterIndex {
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
             cell.accessoryType = indexPath.row == selectedChapterIndex ? .Checkmark : .None
         }
