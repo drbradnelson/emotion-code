@@ -1,11 +1,21 @@
 import UIKit
 
+// MARK: Delegate
+
+protocol ChapterSelectionTableViewControllerDelegate: class {
+
+    func chapterSelectionTableViewController(chapterSelectionTableViewController: ChapterSelectionTableViewController, didSelectChapterAtIndex index: Int)
+    func chapterSelectionTableViewControllerDidCancelChapterSelection(chapterSelectionTableViewController: ChapterSelectionTableViewController)
+
+}
+
 // MARK: Main
 
 final class ChapterSelectionTableViewController: UITableViewController {
 
     var bookChapters: [BookChapter] = []
     var selectedChapterIndex = 0
+    weak var delegate: ChapterSelectionTableViewControllerDelegate?
 
 }
 
@@ -54,6 +64,7 @@ extension ChapterSelectionTableViewController {
         previousSelectedCell?.accessoryType = .None
         cell?.accessoryType = .Checkmark
         tableView.endUpdates()
+        delegate?.chapterSelectionTableViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
     }
 
 }
@@ -63,6 +74,7 @@ extension ChapterSelectionTableViewController {
 private extension ChapterSelectionTableViewController {
 
     @IBAction func userDidTapCancelButton() {
+        delegate?.chapterSelectionTableViewControllerDidCancelChapterSelection(self)
     }
 
 }
