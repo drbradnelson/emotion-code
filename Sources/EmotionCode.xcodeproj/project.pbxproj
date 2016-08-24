@@ -63,6 +63,7 @@
 		0F78F8031D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FE1D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png */; };
 		0F78F8041D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FF1D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png */; };
 		0F78F80F1D597D9700DAE36A /* idGeneratedStyles.css in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */; };
+		0FA620E61D6D3AA900E48335 /* ChapterSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA620E51D6D3AA900E48335 /* ChapterSelectionTableViewController.swift */; };
 		0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */; };
 		0FCA00FF1D60EEBD0020018A /* BookNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
@@ -177,6 +178,7 @@
 		0F78F8101D597D9700DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = Base; path = Base.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8121D597D9900DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = en; path = en.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0F78F8131D597D9A00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = es; path = es.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
+		0FA620E51D6D3AA900E48335 /* ChapterSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterSelectionTableViewController.swift; sourceTree = "<group>"; };
 		0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Window.swift"; sourceTree = "<group>"; };
 		0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarButtonTests.swift; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				0F3936631D5B9374003CC6C0 /* BookController.swift */,
 				0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */,
 				0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */,
+				0FA620E51D6D3AA900E48335 /* ChapterSelectionTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
+				0FA620E61D6D3AA900E48335 /* ChapterSelectionTableViewController.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
