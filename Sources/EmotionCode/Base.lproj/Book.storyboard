@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="2097" y="-135"/>
         </scene>
-        <!--Chapter Selection Table View Controller-->
+        <!--Table of Contents-->
         <scene sceneID="GAZ-BA-Lme">
             <objects>
                 <tableViewController id="Fa1-R9-9bY" customClass="ChapterSelectionTableViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,7 +136,7 @@
                             <outlet property="delegate" destination="Fa1-R9-9bY" id="gt3-3q-I8D"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="foR-ly-6qR">
+                    <navigationItem key="navigationItem" title="Table of Contents" id="foR-ly-6qR">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="DAU-vF-QeD">
                             <connections>
                                 <action selector="userDidTapCancelButton" destination="Fa1-R9-9bY" id="Ak8-0j-yTD"/>
