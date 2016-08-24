@@ -8,7 +8,8 @@ final class BookPageViewController: UIPageViewController {
     @IBOutlet private var rightBarButtonItem: UIBarButtonItem!
     @IBOutlet private var chapterTitleView: ChapterTitleView!
 
-    private let bookController = BookController()
+    let bookController = BookController()
+    private lazy var bookSegueController: BookSegueController = BookSegueController(bookPageViewController: self)
 
 }
 
@@ -33,7 +34,7 @@ extension BookPageViewController {
 
 }
 
-private extension BookPageViewController {
+extension BookPageViewController {
 
     var currentBookChapterViewController: BookChapterViewController {
         guard let chapterViewController = viewControllers?.first as? BookChapterViewController else {
@@ -126,22 +127,12 @@ private extension BookPageViewController {
 extension BookPageViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let navigationController = segue.destinationViewController as? UINavigationController else {
-            preconditionFailure()
-        }
-        prepareForSegueToNavigationController(navigationController)
+        bookSegueController.prepareForSegueToDestinationViewController(segue.destinationViewController)
     }
 
 }
 
-private extension BookPageViewController {
 
-    func prepareForSegueToNavigationController(navigationController: UINavigationController) {
-        guard let chapterSelectionTableViewController = navigationController.topViewController as? ChapterSelectionTableViewController else {
-            preconditionFailure()
-        }
-        chapterSelectionTableViewController.bookChapters = bookController.book.chapters
-        chapterSelectionTableViewController.selectedChapterIndex = currentBookChapterViewController.chapterIndex
     }
 
 }
