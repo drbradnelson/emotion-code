@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
+		0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */; };
 		0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B51D4E74E3002C98E7 /* Book.storyboard */; };
 		0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B81D4E7501002C98E7 /* Chart.storyboard */; };
 		0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0BB1D4E755B002C98E7 /* Help.storyboard */; };
@@ -102,6 +103,7 @@
 /* Begin PBXFileReference section */
 		0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarLayoutTests.swift; sourceTree = "<group>"; };
 		0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSegueController.swift; sourceTree = "<group>"; };
+		0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterSelectionLayoutTests.swift; sourceTree = "<group>"; };
 		0F28D0B61D4E74E3002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Book.storyboard; sourceTree = "<group>"; };
 		0F28D0B91D4E7501002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.storyboard; sourceTree = "<group>"; };
 		0F28D0BC1D4E755B002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Help.storyboard; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 				0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */,
 				0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */,
 				91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */,
+				0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */,
 				91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */,
 				0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */,
 				91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */,
@@ -642,6 +645,7 @@
 				91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */,
 				91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */,
 				0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */,
+				0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */,
 				0F464FB41D621D4E0036D762 /* BookSwipeGesturesTests.swift in Sources */,
 				91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */,
 			);
