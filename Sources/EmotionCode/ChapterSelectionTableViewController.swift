@@ -45,7 +45,11 @@ extension ChapterSelectionTableViewController {
         }
         let chapter = bookChapters[indexPath.row]
         cell.setChapterNumber(String(indexPath.row + 1), chapterTitle: chapter.title)
-        cell.accessoryType = indexPath.row == selectedChapterIndex ? .Checkmark : .None
+        let selected = indexPath.row == selectedChapterIndex
+        if selected {
+            tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
+            cell.accessoryType = indexPath.row == selectedChapterIndex ? .Checkmark : .None
+        }
         return cell
     }
 
@@ -56,15 +60,19 @@ extension ChapterSelectionTableViewController {
 extension ChapterSelectionTableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let previousSelectedIndexPath = NSIndexPath(forRow: selectedChapterIndex, inSection: 0)
-        let previousSelectedCell = tableView.cellForRowAtIndexPath(previousSelectedIndexPath)
         selectedChapterIndex = indexPath.row
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         tableView.beginUpdates()
-        previousSelectedCell?.accessoryType = .None
         cell?.accessoryType = .Checkmark
         tableView.endUpdates()
         delegate?.chapterSelectionTableViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
+    }
+
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        tableView.beginUpdates()
+        cell?.accessoryType = .None
+        tableView.endUpdates()
     }
 
 }
