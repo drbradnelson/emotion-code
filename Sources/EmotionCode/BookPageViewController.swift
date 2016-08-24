@@ -120,3 +120,28 @@ private extension BookPageViewController {
     }
 
 }
+
+// MARK: Storyboard segues
+
+extension BookPageViewController {
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let navigationController = segue.destinationViewController as? UINavigationController else {
+            preconditionFailure()
+        }
+        prepareForSegueToNavigationController(navigationController)
+    }
+
+}
+
+private extension BookPageViewController {
+
+    func prepareForSegueToNavigationController(navigationController: UINavigationController) {
+        guard let chapterSelectionTableViewController = navigationController.topViewController as? ChapterSelectionTableViewController else {
+            preconditionFailure()
+        }
+        chapterSelectionTableViewController.bookChapters = bookController.book.chapters
+        chapterSelectionTableViewController.selectedChapterIndex = currentBookChapterViewController.chapterIndex
+    }
+
+}
