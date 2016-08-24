@@ -30,7 +30,7 @@
                                     </constraints>
                                     <state key="normal" title="Chapter"/>
                                     <connections>
-                                        <segue destination="0M1-OL-JCf" kind="presentation" id="OHk-3O-gIM"/>
+                                        <segue destination="0M1-OL-JCf" kind="presentation" identifier="ShowChapterSelectionSegue" id="OHk-3O-gIM"/>
                                     </connections>
                                 </button>
                             </subviews>
