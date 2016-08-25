@@ -13,21 +13,11 @@ protocol BookChapterListViewControllerDelegate: class {
 
 final class BookChapterListViewController: UITableViewController {
 
+    @IBOutlet private var bookChaptersTableView: BookChaptersTableView!
+
     var bookChapters: [BookChapter] = []
     var selectedChapterIndex = 0
     weak var delegate: BookChapterListViewControllerDelegate?
-
-}
-
-// MARK: View lifecycle
-
-extension BookChapterListViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.estimatedRowHeight = 44
-        tableView.rowHeight = UITableViewAutomaticDimension
-    }
 
 }
 
@@ -40,10 +30,8 @@ extension BookChapterListViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCellWithIdentifier(ChapterTableViewCell.preferredReuseIdentifier, forIndexPath: indexPath) as? ChapterTableViewCell else {
-            preconditionFailure("Chapter cell not found")
-        }
         let chapter = bookChapters[indexPath.row]
+        let cell = bookChaptersTableView.dequeueReusableChapterCellForIndexPath(indexPath)
         cell.setChapterNumber(String(indexPath.row + 1), chapterTitle: chapter.title)
         if indexPath.row == selectedChapterIndex {
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
