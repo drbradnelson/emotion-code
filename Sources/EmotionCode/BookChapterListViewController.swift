@@ -35,7 +35,7 @@ extension BookChapterListViewController {
         cell.setChapterNumber(indexPath.row + 1, chapterTitle: chapter.title)
         if indexPath.row == selectedChapterIndex {
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
-            cell.setChapterSelected(indexPath.row == selectedChapterIndex)
+            cell.setChapterSelected(true)
         }
         return cell
     }
