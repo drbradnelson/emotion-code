@@ -63,7 +63,7 @@
         <!--Table of Contents-->
         <scene sceneID="GAZ-BA-Lme">
             <objects>
-                <tableViewController id="Fa1-R9-9bY" customClass="ChapterSelectionTableViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Fa1-R9-9bY" customClass="BookChapterListViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tNg-Au-maq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

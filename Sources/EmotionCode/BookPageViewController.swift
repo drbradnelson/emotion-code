@@ -134,14 +134,14 @@ extension BookPageViewController {
 
 // MARK: Chapter selection table view controller delegate
 
-extension BookPageViewController: ChapterSelectionTableViewControllerDelegate {
+extension BookPageViewController: BookChapterListViewControllerDelegate {
 
-    func chapterSelectionTableViewController(chapterSelectionTableViewController: ChapterSelectionTableViewController, didSelectChapterAtIndex index: Int) {
+    func bookChapterListViewController(bookChapterListViewController: BookChapterListViewController, didSelectChapterAtIndex index: Int) {
         showChapterAtIndex(index, direction: .Forward, animated: false)
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    func chapterSelectionTableViewControllerDidCancelChapterSelection(chapterSelectionTableViewController: ChapterSelectionTableViewController) {
+    func bookChapterListViewControllerDidCancelChapterSelection(bookChapterListViewController: BookChapterListViewController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 

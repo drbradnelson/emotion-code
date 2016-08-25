@@ -2,26 +2,26 @@ import UIKit
 
 // MARK: Delegate
 
-protocol ChapterSelectionTableViewControllerDelegate: class {
+protocol BookChapterListViewControllerDelegate: class {
 
-    func chapterSelectionTableViewController(chapterSelectionTableViewController: ChapterSelectionTableViewController, didSelectChapterAtIndex index: Int)
-    func chapterSelectionTableViewControllerDidCancelChapterSelection(chapterSelectionTableViewController: ChapterSelectionTableViewController)
+    func bookChapterListViewController(bookChapterListViewController: BookChapterListViewController, didSelectChapterAtIndex index: Int)
+    func bookChapterListViewControllerDidCancelChapterSelection(bookChapterListViewController: BookChapterListViewController)
 
 }
 
 // MARK: Main
 
-final class ChapterSelectionTableViewController: UITableViewController {
+final class BookChapterListViewController: UITableViewController {
 
     var bookChapters: [BookChapter] = []
     var selectedChapterIndex = 0
-    weak var delegate: ChapterSelectionTableViewControllerDelegate?
+    weak var delegate: BookChapterListViewControllerDelegate?
 
 }
 
 // MARK: View lifecycle
 
-extension ChapterSelectionTableViewController {
+extension BookChapterListViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ extension ChapterSelectionTableViewController {
 
 // MARK: Table view data source
 
-extension ChapterSelectionTableViewController {
+extension BookChapterListViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bookChapters.count
@@ -56,7 +56,7 @@ extension ChapterSelectionTableViewController {
 
 // MARK: Table view delegate
 
-extension ChapterSelectionTableViewController {
+extension BookChapterListViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedChapterIndex = indexPath.row
@@ -64,7 +64,7 @@ extension ChapterSelectionTableViewController {
         tableView.beginUpdates()
         cell?.accessoryType = .Checkmark
         tableView.endUpdates()
-        delegate?.chapterSelectionTableViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
+        delegate?.bookChapterListViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
     }
 
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
@@ -78,10 +78,10 @@ extension ChapterSelectionTableViewController {
 
 // MARK: Navigation bar button actions
 
-private extension ChapterSelectionTableViewController {
+private extension BookChapterListViewController {
 
     @IBAction func userDidTapCancelButton() {
-        delegate?.chapterSelectionTableViewControllerDidCancelChapterSelection(self)
+        delegate?.bookChapterListViewControllerDidCancelChapterSelection(self)
     }
 
 }

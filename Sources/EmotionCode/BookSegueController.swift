@@ -26,12 +26,12 @@ extension BookSegueController {
 private extension BookSegueController {
 
     func prepareForSegueToNavigationController(navigationController: UINavigationController) {
-        guard let chapterSelectionTableViewController = navigationController.topViewController as? ChapterSelectionTableViewController else {
+        guard let bookChapterListViewController = navigationController.topViewController as? BookChapterListViewController else {
             preconditionFailure()
         }
-        chapterSelectionTableViewController.bookChapters = bookPageViewController.bookController.book.chapters
-        chapterSelectionTableViewController.selectedChapterIndex = bookPageViewController.currentBookChapterViewController.chapterIndex
-        chapterSelectionTableViewController.delegate = bookPageViewController
+        bookChapterListViewController.bookChapters = bookPageViewController.bookController.book.chapters
+        bookChapterListViewController.selectedChapterIndex = bookPageViewController.currentBookChapterViewController.chapterIndex
+        bookChapterListViewController.delegate = bookPageViewController
     }
 
 }
