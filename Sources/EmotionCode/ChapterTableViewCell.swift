@@ -20,6 +20,16 @@ extension ChapterTableViewCell {
 
 }
 
+// MARK: Accessory type
+
+extension ChapterTableViewCell {
+
+    func setChapterSelected(selected: Bool) {
+        accessoryType = selected ? .Checkmark : .None
+    }
+
+}
+
 // MARK: Reuse identifier
 
 extension ChapterTableViewCell {

@@ -35,7 +35,7 @@ extension BookChapterListViewController {
         cell.setChapterNumber(String(indexPath.row + 1), chapterTitle: chapter.title)
         if indexPath.row == selectedChapterIndex {
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
-            cell.accessoryType = indexPath.row == selectedChapterIndex ? .Checkmark : .None
+            cell.setChapterSelected(indexPath.row == selectedChapterIndex)
         }
         return cell
     }
@@ -47,18 +47,18 @@ extension BookChapterListViewController {
 extension BookChapterListViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else { return }
         selectedChapterIndex = indexPath.row
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
         tableView.beginUpdates()
-        cell?.accessoryType = .Checkmark
+        cell.setChapterSelected(true)
         tableView.endUpdates()
         delegate?.bookChapterListViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
     }
 
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else { return }
         tableView.beginUpdates()
-        cell?.accessoryType = .None
+        cell.setChapterSelected(false)
         tableView.endUpdates()
     }
 
