@@ -13,10 +13,19 @@ final class ChapterTableViewCell: UITableViewCell {
 
 extension ChapterTableViewCell {
 
-    func setChapterNumber(chapterNumber: String, chapterTitle: String) {
-        chapterNumberLabel.text = chapterNumber
+    func setChapterNumber(chapterNumber: Int, chapterTitle: String) {
+        chapterNumberLabel.text = ChapterTableViewCell.numberFormatter.stringFromNumber(chapterNumber)
         chapterTitleLabel.text = chapterTitle
     }
+
+}
+
+private extension ChapterTableViewCell {
+
+    static let numberFormatter: NSNumberFormatter = {
+        let formatter = NSNumberFormatter()
+        return formatter
+    }()
 
 }
 

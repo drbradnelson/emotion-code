@@ -32,7 +32,7 @@ extension BookChapterListViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let chapter = bookChapters[indexPath.row]
         let cell = bookChaptersTableView.dequeueReusableChapterCellForIndexPath(indexPath)
-        cell.setChapterNumber(String(indexPath.row + 1), chapterTitle: chapter.title)
+        cell.setChapterNumber(indexPath.row + 1, chapterTitle: chapter.title)
         if indexPath.row == selectedChapterIndex {
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
             cell.setChapterSelected(indexPath.row == selectedChapterIndex)
