@@ -17,7 +17,7 @@ final class BookNavigationBarButtonTests: XCTestCase {
 
 extension BookNavigationBarButtonTests {
 
-    func testLeftBarButtonAction() {
+    func testPreviousChapterButtonStates() {
         let expectedChapterIndices = Array(0...10)
         expectedChapterIndices.forEach { chapterIndex in
             let hasPreviousChapter = chapterIndex > expectedChapterIndices.first
@@ -26,7 +26,7 @@ extension BookNavigationBarButtonTests {
         }
     }
 
-    func testRightBarButtonAction() {
+    func testNextChapterButtonStates() {
         let expectedChapterIndices = Array(0...10)
         expectedChapterIndices.forEach { chapterIndex in
             let hasNextChapter = chapterIndex < expectedChapterIndices.last
