@@ -113,8 +113,8 @@ private extension BookPageViewController {
 private extension BookPageViewController {
 
     func setNavigationBarButtonsStateForChapterAtIndex(index: Int) {
-        leftBarButtonItem.enabled = index > 0
-        rightBarButtonItem.enabled = index < bookController.book.chapters.count - 1
+        leftBarButtonItem.enabled = bookController.hasChapter(index - 1)
+        rightBarButtonItem.enabled = bookController.hasChapter(index + 1)
     }
 
 }
