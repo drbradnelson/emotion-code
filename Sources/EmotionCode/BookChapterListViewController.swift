@@ -47,11 +47,7 @@ extension BookChapterListViewController {
 extension BookChapterListViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else { return }
         selectedChapterIndex = indexPath.row
-        tableView.beginUpdates()
-        cell.setChapterSelected(true)
-        tableView.endUpdates()
         delegate?.bookChapterListViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
     }
 
