@@ -35,4 +35,12 @@ extension BookNavigationBarButtonTests {
         }
     }
 
+    func testChapterTitleButton() {
+        let expectedChapterIndices = Array(0...10)
+        expectedChapterIndices.forEach { chapterIndex in
+            XCTAssert(app.buttons["Chapter \(chapterIndex + 1)"].hittable)
+            app.buttons["Next Chapter"].tap()
+        }
+    }
+
 }
