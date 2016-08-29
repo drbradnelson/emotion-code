@@ -57,12 +57,18 @@ extension BookChapterListViewController {
 
 }
 
-// MARK: Navigation bar button actions
+// MARK: Storyboard segues
 
-private extension BookChapterListViewController {
+extension BookChapterListViewController {
 
-    @IBAction func userDidTapCancelButton() {
-        delegate?.bookChapterListViewControllerDidCancelChapterSelection(self)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let bookPageViewConrtoller = segue.destinationViewController as? BookPageViewController else {
+            preconditionFailure()
+        }
+        guard let selectedChapterIndex = bookChaptersTableView.indexPathForSelectedRow?.row else { return }
+        if bookPageViewConrtoller.currentBookChapterViewController.chapterURL != selectedChapterIndex {
+            bookPageViewConrtoller.showChapterAtIndex(selectedChapterIndex, direction: .Forward, animated: false)
+        }
     }
 
 }

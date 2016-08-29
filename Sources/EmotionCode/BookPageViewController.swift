@@ -89,6 +89,10 @@ private extension BookPageViewController {
         return chapterViewController
     }
 
+}
+
+extension BookPageViewController {
+
     func showChapterAtIndex(chapterIndex: Int, direction: UIPageViewControllerNavigationDirection, animated: Bool) {
         let chapterViewController = chapterViewControllerWithChapterIndex(chapterIndex)
         chapterTitleView.setChapterIndex(chapterViewController.chapterIndex)
@@ -158,5 +162,6 @@ extension BookPageViewController: BookChapterListViewControllerDelegate {
     func bookChapterListViewControllerDidCancelChapterSelection(bookChapterListViewController: BookChapterListViewController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    @IBAction func unwindToBookPageViewController(segue: UIStoryboardSegue) {}
 
 }

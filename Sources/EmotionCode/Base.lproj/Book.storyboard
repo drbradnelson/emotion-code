@@ -128,6 +128,7 @@
                                 <connections>
                                     <outlet property="chapterNumberLabel" destination="kAG-mS-xbb" id="pNh-Ff-Q8Z"/>
                                     <outlet property="chapterTitleLabel" destination="eqF-QX-Xli" id="qqw-zv-9tB"/>
+                                    <segue destination="Utw-3T-POo" kind="unwind" unwindAction="unwindToBookPageViewController:" id="bCk-4a-WXn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -139,7 +140,7 @@
                     <navigationItem key="navigationItem" title="Table of Contents" id="foR-ly-6qR">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="DAU-vF-QeD">
                             <connections>
-                                <action selector="userDidTapCancelButton" destination="Fa1-R9-9bY" id="Ak8-0j-yTD"/>
+                                <segue destination="Utw-3T-POo" kind="unwind" unwindAction="unwindToBookPageViewController:" id="hv5-zK-JEB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -148,6 +149,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kL2-jN-Qj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Utw-3T-POo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2803" y="554"/>
         </scene>
