@@ -17,25 +17,30 @@ final class BookNavigationBarButtonTests: XCTestCase {
 
 extension BookNavigationBarButtonTests {
 
-    func testLeftBarButtonActionOnFirtsChapter() {
-        app.buttons["Previous Chapter"].tap()
-        XCTAssert(app.buttons["Chapter 1"].hittable)
+    func testPreviousChapterButtonStates() {
+        let expectedChapterIndices = Array(0...10)
+        expectedChapterIndices.forEach { chapterIndex in
+            let hasPreviousChapter = chapterIndex > expectedChapterIndices.first
+            XCTAssertEqual(app.buttons["Previous Chapter"].enabled, hasPreviousChapter)
+            app.buttons["Next Chapter"].tap()
+        }
     }
 
-    func testLeftBarButtonAction() {
-        app.buttons["Next Chapter"].tap()
-        app.buttons["Previous Chapter"].tap()
-        XCTAssert(app.buttons["Chapter 1"].hittable)
+    func testNextChapterButtonStates() {
+        let expectedChapterIndices = Array(0...10)
+        expectedChapterIndices.forEach { chapterIndex in
+            let hasNextChapter = chapterIndex < expectedChapterIndices.last
+            XCTAssertEqual(app.buttons["Next Chapter"].enabled, hasNextChapter)
+            app.buttons["Next Chapter"].tap()
+        }
     }
 
-    func testRightBarButtonAction() {
-        app.buttons["Next Chapter"].tap()
-        XCTAssert(app.buttons["Chapter 2"].hittable)
-    }
-
-    func testRightBarButtonActionToLastChapter() {
-        app.buttons["Next Chapter"].tapWithNumberOfTaps(10, numberOfTouches: 1)
-        XCTAssert(app.buttons["Chapter 11"].hittable)
+    func testChapterTitleButton() {
+        let expectedChapterIndices = Array(0...10)
+        expectedChapterIndices.forEach { chapterIndex in
+            XCTAssert(app.buttons["Chapter \(chapterIndex + 1)"].hittable)
+            app.buttons["Next Chapter"].tap()
+        }
     }
 
 }

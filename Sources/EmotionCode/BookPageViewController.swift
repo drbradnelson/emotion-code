@@ -67,7 +67,9 @@ extension BookPageViewController: UIPageViewControllerDataSource {
 extension BookPageViewController: UIPageViewControllerDelegate {
 
     func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        chapterTitleView.setChapterIndex(currentBookChapterViewController.chapterIndex)
+        let chapterIndex = currentBookChapterViewController.chapterIndex
+        chapterTitleView.setChapterIndex(chapterIndex)
+        setNavigationBarButtonsStateForChapterAtIndex(chapterIndex)
     }
 
 }
@@ -90,6 +92,7 @@ private extension BookPageViewController {
         let chapterViewController = chapterViewControllerWithChapterIndex(chapterIndex)
         chapterTitleView.setChapterIndex(chapterViewController.chapterIndex)
         setViewControllers([chapterViewController], direction: direction, animated: animated, completion: nil)
+        setNavigationBarButtonsStateForChapterAtIndex(chapterViewController.chapterIndex)
     }
 
 }
@@ -101,6 +104,17 @@ private extension BookPageViewController {
     func setAccessibilityLabelForNavigationBarButtons() {
         leftBarButtonItem.accessibilityLabel = NSLocalizedString("Previous Chapter", comment: "")
         rightBarButtonItem.accessibilityLabel = NSLocalizedString("Next Chapter", comment: "")
+    }
+
+}
+
+// MARK: Navigation bar buttons state
+
+private extension BookPageViewController {
+
+    func setNavigationBarButtonsStateForChapterAtIndex(index: Int) {
+        leftBarButtonItem.enabled = bookController.hasChapter(index - 1)
+        rightBarButtonItem.enabled = bookController.hasChapter(index + 1)
     }
 
 }
