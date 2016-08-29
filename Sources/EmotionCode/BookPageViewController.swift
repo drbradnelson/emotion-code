@@ -148,20 +148,6 @@ extension BookPageViewController {
         bookSegueController.prepareForSegueToDestinationViewController(segue.destinationViewController)
     }
 
-}
-
-// MARK: Chapter selection table view controller delegate
-
-extension BookPageViewController: BookChapterListViewControllerDelegate {
-
-    func bookChapterListViewController(bookChapterListViewController: BookChapterListViewController, didSelectChapterAtIndex index: Int) {
-        showChapterAtIndex(index, direction: .Forward, animated: false)
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-
-    func bookChapterListViewControllerDidCancelChapterSelection(bookChapterListViewController: BookChapterListViewController) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
     @IBAction func unwindToBookPageViewController(segue: UIStoryboardSegue) {}
 
 }

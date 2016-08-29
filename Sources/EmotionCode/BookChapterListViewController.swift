@@ -1,14 +1,5 @@
 import UIKit
 
-// MARK: Delegate
-
-protocol BookChapterListViewControllerDelegate: class {
-
-    func bookChapterListViewController(bookChapterListViewController: BookChapterListViewController, didSelectChapterAtIndex index: Int)
-    func bookChapterListViewControllerDidCancelChapterSelection(bookChapterListViewController: BookChapterListViewController)
-
-}
-
 // MARK: Main
 
 final class BookChapterListViewController: UITableViewController {
@@ -17,7 +8,6 @@ final class BookChapterListViewController: UITableViewController {
 
     var bookChapters: [BookChapter] = []
     var selectedChapterIndex = 0
-    weak var delegate: BookChapterListViewControllerDelegate?
 
 }
 
@@ -42,11 +32,6 @@ extension BookChapterListViewController {
 // MARK: Table view delegate
 
 extension BookChapterListViewController {
-
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedChapterIndex = indexPath.row
-        delegate?.bookChapterListViewController(self, didSelectChapterAtIndex: selectedChapterIndex)
-    }
 
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else {

@@ -35,7 +35,6 @@ private extension BookSegueController {
     func prepareForSegueToBookChapterListViewController(bookChapterListViewController: BookChapterListViewController) {
         bookChapterListViewController.bookChapters = bookPageViewController.bookController.book.chapters
         bookChapterListViewController.selectedChapterIndex = bookPageViewController.currentBookChapterViewController.chapterIndex
-        bookChapterListViewController.delegate = bookPageViewController
     }
 
 }
