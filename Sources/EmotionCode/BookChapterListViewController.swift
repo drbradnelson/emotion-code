@@ -49,7 +49,9 @@ extension BookChapterListViewController {
     }
 
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else { return }
+        guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else {
+            preconditionFailure()
+        }
         cell.setChapterSelected(false)
     }
 
