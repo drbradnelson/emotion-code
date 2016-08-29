@@ -22,10 +22,7 @@ extension ChapterTableViewCell {
 
 private extension ChapterTableViewCell {
 
-    static let numberFormatter: NSNumberFormatter = {
-        let formatter = NSNumberFormatter()
-        return formatter
-    }()
+    static let numberFormatter = NSNumberFormatter()
 
 }
 
