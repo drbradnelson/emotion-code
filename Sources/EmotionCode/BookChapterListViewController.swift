@@ -33,10 +33,7 @@ extension BookChapterListViewController {
         let chapter = bookChapters[indexPath.row]
         let cell = bookChaptersTableView.dequeueReusableChapterCellForIndexPath(indexPath)
         cell.setChapterNumber(indexPath.row + 1, chapterTitle: chapter.title)
-        if indexPath.row == selectedChapterIndex {
-            tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
-            cell.setChapterSelected(true)
-        }
+        cell.setChapterSelected(indexPath.row == selectedChapterIndex)
         return cell
     }
 
