@@ -29,6 +29,10 @@ private extension BookSegueController {
         guard let bookChapterListViewController = navigationController.topViewController as? BookChapterListViewController else {
             preconditionFailure()
         }
+        prepareForSegueToBookChapterListViewController(bookChapterListViewController)
+    }
+
+    func prepareForSegueToBookChapterListViewController(bookChapterListViewController: BookChapterListViewController) {
         bookChapterListViewController.bookChapters = bookPageViewController.bookController.book.chapters
         bookChapterListViewController.selectedChapterIndex = bookPageViewController.currentBookChapterViewController.chapterIndex
         bookChapterListViewController.delegate = bookPageViewController
