@@ -73,6 +73,16 @@
 		0FCA00FF1D60EEBD0020018A /* BookNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
+		1B8B03951D7584DD001CE349 /* ChartOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */; };
+		1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalulator.swift */; };
+		1B8B03991D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */; };
+		1B8B039B1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B039A1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift */; };
+		1B8B039D1D75DA00001CE349 /* ChartOverviewDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B039C1D75DA00001CE349 /* ChartOverviewDataAdapter.swift */; };
+		1B8B03A11D75DE77001CE349 /* ChartOverviewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A01D75DE77001CE349 /* ChartOverviewItemCell.swift */; };
+		1B8B03A31D75DEBA001CE349 /* ChartOverviewRowCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A21D75DEBA001CE349 /* ChartOverviewRowCounterView.swift */; };
+		1B8B03A51D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A41D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift */; };
+		1B8B03A71D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A61D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift */; };
+		42E8C47E622AA5E0763190A5 /* ChartOverviewCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8C0D9E64B043032716A15 /* ChartOverviewCollectionLayout.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
 		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
@@ -196,6 +206,16 @@
 		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E81D5ACD2F008666E8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E91D5ACFE4008666E8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewViewController.swift; sourceTree = "<group>"; };
+		1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAttributesCalulator.swift; sourceTree = "<group>"; };
+		1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAreaAllocator.swift; sourceTree = "<group>"; };
+		1B8B039A1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewCollectionLayoutDataAdapter.swift; sourceTree = "<group>"; };
+		1B8B039C1D75DA00001CE349 /* ChartOverviewDataAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewDataAdapter.swift; sourceTree = "<group>"; };
+		1B8B03A01D75DE77001CE349 /* ChartOverviewItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewItemCell.swift; sourceTree = "<group>"; };
+		1B8B03A21D75DEBA001CE349 /* ChartOverviewRowCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewRowCounterView.swift; sourceTree = "<group>"; };
+		1B8B03A41D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewColumnHeaderView.swift; sourceTree = "<group>"; };
+		1B8B03A61D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewCollectionLayoutOther.swift; sourceTree = "<group>"; };
+		42E8C0D9E64B043032716A15 /* ChartOverviewCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewCollectionLayout.swift; sourceTree = "<group>"; };
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
 		91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterLayoutTests.swift; sourceTree = "<group>"; };
 		91187B221D6776A00098A881 /* ChapterTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleView.swift; sourceTree = "<group>"; };
@@ -243,6 +263,7 @@
 		0F28D0BE1D4E7624002C98E7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B8B03931D7584B3001CE349 /* Chart */,
 				91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */,
 				0F3936631D5B9374003CC6C0 /* BookController.swift */,
 				0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */,
@@ -335,6 +356,46 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		1B8B03931D7584B3001CE349 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */,
+				1B8B039C1D75DA00001CE349 /* ChartOverviewDataAdapter.swift */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
+		1B8B039E1D75DE5D001CE349 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				42E8C0D9E64B043032716A15 /* ChartOverviewCollectionLayout.swift */,
+				1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalulator.swift */,
+				1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */,
+				1B8B039A1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift */,
+				1B8B03A61D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		1B8B039F1D75DE6C001CE349 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B8B03A01D75DE77001CE349 /* ChartOverviewItemCell.swift */,
+				1B8B03A21D75DEBA001CE349 /* ChartOverviewRowCounterView.swift */,
+				1B8B03A41D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		42E8C3A94EC8B17EB08D5DFC /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				1B8B039F1D75DE6C001CE349 /* Views */,
+				1B8B039E1D75DE5D001CE349 /* Layout */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
 		91187B211D67768C0098A881 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +403,7 @@
 				0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */,
 				0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */,
 				0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */,
+				42E8C3A94EC8B17EB08D5DFC /* Chart */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -586,7 +648,7 @@
 		};
 		9141D9081D48A256009173A9 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -621,19 +683,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8B03951D7584DD001CE349 /* ChartOverviewViewController.swift in Sources */,
 				91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */,
 				0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */,
+				1B8B03991D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift in Sources */,
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
+				1B8B03A71D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
+				1B8B03A31D75DEBA001CE349 /* ChartOverviewRowCounterView.swift in Sources */,
+				1B8B039D1D75DA00001CE349 /* ChartOverviewDataAdapter.swift in Sources */,
+				1B8B039B1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */,
+				1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalulator.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 				0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
+				1B8B03A11D75DE77001CE349 /* ChartOverviewItemCell.swift in Sources */,
+				42E8C47E622AA5E0763190A5 /* ChartOverviewCollectionLayout.swift in Sources */,
+				1B8B03A51D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

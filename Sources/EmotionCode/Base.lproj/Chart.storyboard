@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--Chart-->
         <scene sceneID="SLh-DE-o7h">
             <objects>
-                <viewController id="NJr-vB-XRf" sceneMemberID="viewController">
+                <viewController id="NJr-vB-XRf" customClass="ChartOverviewViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r3m-ds-jz3"/>
                         <viewControllerLayoutGuide type="bottom" id="KEl-2v-8Iz"/>
@@ -16,13 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="sHF-hw-VyN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-rU-nuA" userLabel="Chart Overview View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" red="0.046403672829999999" green="0.73885110170000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="u9q-Do-qaJ" customClass="ChartOverviewCollectionLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2i0-J6-Dz8">
+                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hNB-rU-nuA" secondAttribute="trailing" id="3We-eo-TmM"/>
+                            <constraint firstItem="hNB-rU-nuA" firstAttribute="leading" secondItem="sHF-hw-VyN" secondAttribute="leading" id="6WX-Bf-pFX"/>
+                            <constraint firstItem="KEl-2v-8Iz" firstAttribute="top" secondItem="hNB-rU-nuA" secondAttribute="bottom" id="I08-ee-CdM"/>
+                            <constraint firstItem="hNB-rU-nuA" firstAttribute="top" secondItem="r3m-ds-jz3" secondAttribute="bottom" id="WFh-8J-TbB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chart" id="pkG-bX-Aih"/>
+                    <connections>
+                        <outlet property="chartView" destination="hNB-rU-nuA" id="OxG-st-LBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oX-Tv-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="526"/>
+            <point key="canvasLocation" x="1949" y="482"/>
         </scene>
         <!--Chart-->
         <scene sceneID="v46-gz-OvS">
