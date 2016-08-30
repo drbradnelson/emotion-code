@@ -8,7 +8,8 @@ final class BookPageViewController: UIPageViewController {
     @IBOutlet private var rightBarButtonItem: UIBarButtonItem!
     @IBOutlet private var chapterTitleView: ChapterTitleView!
 
-    private let bookController = BookController()
+    let bookController = BookController()
+    private lazy var bookSegueController: BookSegueController = BookSegueController(bookPageViewController: self)
 
 }
 
@@ -33,7 +34,7 @@ extension BookPageViewController {
 
 }
 
-private extension BookPageViewController {
+extension BookPageViewController {
 
     var currentBookChapterViewController: BookChapterViewController {
         guard let chapterViewController = viewControllers?.first as? BookChapterViewController else {
@@ -88,6 +89,10 @@ private extension BookPageViewController {
         return chapterViewController
     }
 
+}
+
+extension BookPageViewController {
+
     func showChapterAtIndex(chapterIndex: Int, direction: UIPageViewControllerNavigationDirection, animated: Bool) {
         let chapterViewController = chapterViewControllerWithChapterIndex(chapterIndex)
         chapterTitleView.setChapterIndex(chapterViewController.chapterIndex)
@@ -132,5 +137,17 @@ private extension BookPageViewController {
         guard bookController.hasChapter(currentBookChapterViewController.chapterIndex + 1) else { return }
         showChapterAtIndex(currentBookChapterViewController.chapterIndex + 1, direction: .Forward, animated: true)
     }
+
+}
+
+// MARK: Storyboard segues
+
+extension BookPageViewController {
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        bookSegueController.prepareForSegueToDestinationViewController(segue.destinationViewController)
+    }
+
+    @IBAction func unwindToBookPageViewController(segue: UIStoryboardSegue) {}
 
 }
