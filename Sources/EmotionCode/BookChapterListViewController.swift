@@ -47,13 +47,20 @@ extension BookChapterListViewController {
 extension BookChapterListViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let bookPageViewConrtoller = segue.destinationViewController as? BookPageViewController else {
+        guard let bookPageViewController = segue.destinationViewController as? BookPageViewController else {
             preconditionFailure()
         }
+        prepareForSegueToBookPageViewController(bookPageViewController)
+    }
+
+}
+
+private extension BookChapterListViewController {
+
+    func prepareForSegueToBookPageViewController(bookPageViewController: BookPageViewController) {
         guard let selectedChapterIndex = bookChaptersTableView.indexPathForSelectedRow?.row else { return }
-        if bookPageViewConrtoller.currentBookChapterViewController.chapterURL != selectedChapterIndex {
-            bookPageViewConrtoller.showChapterAtIndex(selectedChapterIndex, direction: .Forward, animated: false)
-        }
+        guard bookPageViewController.currentBookChapterViewController.chapterIndex != selectedChapterIndex else { return }
+        bookPageViewController.showChapterAtIndex(selectedChapterIndex, direction: .Forward, animated: false)
     }
 
 }
