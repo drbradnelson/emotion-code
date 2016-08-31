@@ -3,7 +3,6 @@
 struct Chart {
 
     let columns: [ChartColumn]
-
 }
 
 // MARK: Column
@@ -22,6 +21,25 @@ struct ChartRow {
 
 }
 
+// MARK: Row Position
+
+struct ChartRowPosition {
+    let columnIndex: Int
+    let rowIndex: Int
+
+
+    init(column: Int, row: Int) {
+        self.columnIndex = column
+        self.rowIndex = row
+    }
+}
+
+extension Chart {
+    func row(forPosition rowPosition: ChartRowPosition) -> ChartRow {
+        return self.columns[rowPosition.columnIndex].rows[rowPosition.rowIndex]
+    }
+}
+
 // MARK: Item
 
 struct ChartItem {
@@ -34,44 +52,20 @@ struct ChartItem {
 // MARK: Item Position
 
 struct ChartItemPosition {
-    let columnPosition: Int
-    let rowPosition: Int
-    let itemPosition: Int
+    let columnIndex: Int
+    let rowIndex: Int
+    let itemIndex: Int
 
     init(column: Int, row: Int, item: Int) {
-        self.columnPosition = column
-        self.rowPosition = row
-        self.itemPosition = item
+        self.columnIndex = column
+        self.rowIndex = row
+        self.itemIndex = item
     }
 }
 
 extension Chart {
-    
+
     func item(forPosition itemPosition: ChartItemPosition) -> ChartItem {
-        return self.columns[itemPosition.columnPosition].rows[itemPosition.rowPosition].items[itemPosition.itemPosition]
+        return self.columns[itemPosition.columnIndex].rows[itemPosition.rowIndex].items[itemPosition.itemIndex]
     }
-}
-
-// MARK: Items Count
-
-private extension Chart {
-
-    var itemsCount: Int  {
-        get {
-            return self.calculateItemsCount()
-        }
-    }
-    
-    func calculateItemsCount() -> Int {
-        var counter = 0
-        
-        self.columns.forEach { (column) in
-            counter += column.rows.reduce(0, combine: { (itemsInRowCounter, row) -> Int in
-                return itemsInRowCounter + row.items.count
-            })
-        }
-        
-        return counter
-    }
-
 }
