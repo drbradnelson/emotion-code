@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-final class ChartOverviewLayoutAttributesCalculator {
+class ChartOverviewLayoutAttributesCalculator {
 
     private let adapter: ChartOverviewCollectionLayoutDataAdapter
     private let layoutParams: ChartOverviewLayoutParams
@@ -19,14 +19,14 @@ final class ChartOverviewLayoutAttributesCalculator {
 extension ChartOverviewLayoutAttributesCalculator {
 
     func calculateAttributesForColumnElementHeader() -> [NSIndexPath : UICollectionViewLayoutAttributes] {
-        let columnHeaderElementHeight = layoutParams.heightForColumnHeaderElement
-        let area = areaAllocator.allocateArea(withHeight: columnHeaderElementHeight)
+        let columnHeaderElementHeight = self.layoutParams.heightForColumnHeaderElement
+        let area = self.areaAllocator.allocateArea(withHeight: columnHeaderElementHeight)
 
         var attributes = [NSIndexPath : UICollectionViewLayoutAttributes]()
         for columnIndex in 0 ..< adapter.numberOfColumns() {
 
-            let frame = calculateFrame(forColumntHeaderAtPosition: columnIndex, inArea:area)
-            let indexPath = adapter.indexPath(forColumnIndex: columnIndex)
+            let frame = self.calculateFrame(forColumntHeaderAtPosition: columnIndex, inArea:area)
+            let indexPath = self.adapter.indexPath(forColumnIndex: columnIndex)
 
             let layoutAttribute = UICollectionViewLayoutAttributes.init(forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier, withIndexPath: indexPath)
             layoutAttribute.frame = frame
@@ -38,16 +38,16 @@ extension ChartOverviewLayoutAttributesCalculator {
     }
 
     func calculateAttributes(forSection section: Int) -> [String: [NSIndexPath : UICollectionViewLayoutAttributes]] {
-        let sectionHeight = calculateHeight(forSection: section)
-        let area = areaAllocator.allocateArea(withHeight: sectionHeight)
+        let sectionHeight = self.calculateHeight(forSection: section)
+        let area = self.areaAllocator.allocateArea(withHeight: sectionHeight)
 
         var rowElementAttributes = [NSIndexPath : UICollectionViewLayoutAttributes]()
-        let counterAttributes = calculateAttributesForRowCounterElement(forSection: section, inArea: area)
+        let counterAttributes = self.calculateAttributesForRowCounterElement(forSection: section, inArea: area)
 
-        for columnIndex in 0 ..< adapter.numberOfColumns() {
+        for columnIndex in 0 ..< self.adapter.numberOfColumns() {
             let rowPosition = ChartRowPosition.init(column: columnIndex, row: section)
-            let rowElementFrame = calculateFrameForRowElement(forRowPosition: rowPosition, inArea:area)
-            let rowElementIndexPath = adapter.indexPath(forRowPosition: rowPosition)
+            let rowElementFrame = self.calculateFrameForRowElement(forRowPosition: rowPosition, inArea:area)
+            let rowElementIndexPath = self.adapter.indexPath(forRowPosition: rowPosition)
 
             let rowAttributes = UICollectionViewLayoutAttributes.init(forCellWithIndexPath: rowElementIndexPath)
             rowAttributes.frame = rowElementFrame
@@ -66,8 +66,8 @@ extension ChartOverviewLayoutAttributesCalculator {
         let rowIndex = section
 
         var counterAttributes: UICollectionViewLayoutAttributes
-        let counterElementAttributeFrame = calculateFrameForCounterElement(atPosition: section, inArea:area)
-        let counterElementIndexPath = adapter.indexPath(forRowIndex: rowIndex)
+        let counterElementAttributeFrame = self.calculateFrameForCounterElement(atPosition: section, inArea:area)
+        let counterElementIndexPath = self.adapter.indexPath(forRowIndex: rowIndex)
         counterAttributes = UICollectionViewLayoutAttributes.init(
             forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier,
             withIndexPath: counterElementIndexPath
@@ -79,31 +79,33 @@ extension ChartOverviewLayoutAttributesCalculator {
     }
 
     private func calculateFrame(forColumntHeaderAtPosition position: Int, inArea area: CGRect) -> CGRect {
-        let offset = calculateColumnOffset(forColumnIndex: position)
-        let columnWidth = calculateColumnWidth()
-        let headerHeight = layoutParams.heightForColumnHeaderElement
+        let offset = self.calculateColumnOffset()
+        let columnWidth = self.calculateColumnWidth()
+        let headerHeight = self.layoutParams.heightForColumnHeaderElement
 
-        let frame = CGRect.init(x: area.minX + offset, y: area.minY, width: columnWidth, height: headerHeight)
+        let startPosition = offset + CGFloat(position) * (self.layoutParams.spacingBetweenColumns + columnWidth)
+
+        let frame = CGRect.init(x: CGRectGetMinX(area) + startPosition, y: CGRectGetMinY(area), width: columnWidth, height: headerHeight)
         return frame
     }
 
     private func calculateFrameForCounterElement(atPosition position: Int, inArea area: CGRect) -> CGRect {
-        let counterElementWidth = layoutParams.widthForRowCounterElement
+        let counterElementWidth = self.layoutParams.widthForRowCounterElement
 
-        let frame = CGRect.init (x: 0, y: area.minY, width: counterElementWidth, height: area.height)
+        let frame = CGRect.init (x: 0, y: CGRectGetMinY(area), width: counterElementWidth, height: CGRectGetHeight(area))
         return frame
     }
 
     private func calculateFrameForRowElement(forRowPosition position: ChartRowPosition, inArea area: CGRect) -> CGRect {
-        let horizontalOffset = calculateHorizontalOffsetForRow(atPosition: position)
-        let verticalOffset = calculateVerticalOffsetForRow(atPosition: position)
+        let horizontalOffset = self.calculateHorizontalOffsetForRow(atPosition: position)
+        let verticalOffset = self.calculateVerticalOffsetForRow(atPosition: position)
 
-        let rowHeight = layoutParams.heightForRowElement(forRow: position.rowIndex)
-        let rowWidth = calculateColumnWidth()
+        let rowHeight = self.layoutParams.heightForRowElement(forRow: position.rowIndex)
+        let rowWidth = self.calculateColumnWidth()
 
         let frame = CGRect.init(
-            x: area.minX + horizontalOffset,
-            y: area.minY + verticalOffset,
+            x: CGRectGetMinX(area) + horizontalOffset,
+            y: CGRectGetMinY(area) + verticalOffset,
             width: rowWidth,
             height: rowHeight
         )
@@ -111,18 +113,16 @@ extension ChartOverviewLayoutAttributesCalculator {
         return frame
     }
 
-    private func calculateColumnOffset(forColumnIndex column: Int) -> CGFloat {
-
-        let initialOffset = layoutParams.widthForRowCounterElement
-        let columnWidth = calculateColumnWidth()
-        let spacing = layoutParams.spacingBetweenColumns
-
-        let startPosition = initialOffset + CGFloat(column) * (spacing + columnWidth)
-        return startPosition
+    private func calculateColumnOffset() -> CGFloat {
+        return self.layoutParams.widthForRowCounterElement
     }
 
     private func calculateHorizontalOffsetForRow(atPosition position: ChartRowPosition) -> CGFloat {
-        let offset = self.calculateColumnOffset(forColumnIndex: position.columnIndex)
+        let columnWidth = self.calculateColumnWidth()
+        let columnSpacing = self.layoutParams.spacingBetweenRows
+        let rowCounterWidth = self.layoutParams.widthForRowCounterElement
+
+        let offset = rowCounterWidth + (columnSpacing + columnWidth) * CGFloat(position.columnIndex)
         return offset
     }
 
@@ -133,10 +133,10 @@ extension ChartOverviewLayoutAttributesCalculator {
 
     private func calculateColumnWidth() -> CGFloat {
         if _columnWidth == nil {
-            let rowCounterElementWidth = layoutParams.widthForRowCounterElement
-            let numberOfColumns = adapter.numberOfColumns()
-            let interColumnsSpacing = layoutParams.spacingBetweenColumns
-            let availableColumnsWidth = (layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing - layoutParams.contentInsets.left - layoutParams.contentInsets.right
+            let rowCounterElementWidth = self.layoutParams.widthForRowCounterElement
+            let numberOfColumns = self.adapter.numberOfColumns()
+            let interColumnsSpacing = self.layoutParams.spacingBetweenColumns
+            let availableColumnsWidth = (self.layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing
             _columnWidth = availableColumnsWidth / CGFloat(numberOfColumns)
 
         }
@@ -145,7 +145,7 @@ extension ChartOverviewLayoutAttributesCalculator {
     }
     private func calculateHeight(forSection section: Int) -> CGFloat {
         let rowIndex = section
-        let rowHeight = layoutParams.heightForRowElement(forRow: rowIndex)
+        let rowHeight = self.layoutParams.heightForRowElement(forRow: rowIndex)
         return rowHeight
     }
 }
