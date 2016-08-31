@@ -5,6 +5,7 @@
 * set link to css in template file to `./idGeneratedStyles.css`
 * create html file for each chapter
 * add `padding: 10px;` to `body` in css
+* change `margin-bottom` to `14px` for `p.Chapter-Intro-Stmt` in css
 * change source of all images in all html files to `../image_name`
 * run `tidy` on each chapter html file
 * fix any errors or warnings from tidy output
