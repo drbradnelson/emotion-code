@@ -1,0 +1,53 @@
+//
+//  ChartOverviewItemCell.swift
+//  EmotionCode
+//
+//  Created by Andre Lami on 30/08/16.
+//  Copyright © 2016 DiscoverHealing.com. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class ChartOverviewItemView: UIView {
+
+    private (set) var titleLabel: UILabel
+
+    override init(frame: CGRect) {
+        self.titleLabel = UILabel.init()
+        super.init(frame: frame)
+
+        self.setup()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        self.titleLabel = UILabel.init()
+        super.init(coder: aDecoder)
+
+        self.setup()
+    }
+}
+
+// MARK: View with title
+
+extension ChartOverviewItemView : ViewWithTitle {}
+
+// MARK: Setup
+
+private extension ChartOverviewItemView {
+
+    func setup() {
+        self.addSubview(self.titleLabel)
+        self.titleLabel.textAlignment = .Center
+    }
+}
+
+// MARK: Layout calculation
+
+extension ChartOverviewItemView {
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.titleLabel.frame = self.bounds
+    }
+}

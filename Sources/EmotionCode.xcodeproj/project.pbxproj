@@ -74,14 +74,18 @@
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		1B8B03951D7584DD001CE349 /* ChartOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */; };
-		1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalulator.swift */; };
+		1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */; };
 		1B8B03991D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */; };
 		1B8B039B1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B039A1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift */; };
-		1B8B039D1D75DA00001CE349 /* ChartOverviewDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B039C1D75DA00001CE349 /* ChartOverviewDataAdapter.swift */; };
-		1B8B03A11D75DE77001CE349 /* ChartOverviewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A01D75DE77001CE349 /* ChartOverviewItemCell.swift */; };
-		1B8B03A31D75DEBA001CE349 /* ChartOverviewRowCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A21D75DEBA001CE349 /* ChartOverviewRowCounterView.swift */; };
-		1B8B03A51D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A41D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift */; };
+		1B8B039D1D75DA00001CE349 /* ChartOverviewSimpleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B039C1D75DA00001CE349 /* ChartOverviewSimpleAdapter.swift */; };
+		1B8B03A11D75DE77001CE349 /* ChartOverviewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A01D75DE77001CE349 /* ChartOverviewItemView.swift */; };
 		1B8B03A71D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03A61D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift */; };
+		1BCB62011D76C94700DA81DE /* ChartOverviewRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB62001D76C94700DA81DE /* ChartOverviewRowCell.swift */; };
+		1BCB62201D76CDAD00DA81DE /* ChartOverviewRowCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB621F1D76CDAD00DA81DE /* ChartOverviewRowCellLayout.swift */; };
+		1BCB62221D76D4B600DA81DE /* ChartOverviewLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB62211D76D4B600DA81DE /* ChartOverviewLayoutParams.swift */; };
+		1BCB622F1D77042500DA81DE /* CollectionViewCellWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB622E1D77042500DA81DE /* CollectionViewCellWithTitle.swift */; };
+		1BCB62311D7706A600DA81DE /* ViewWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB62301D7706A600DA81DE /* ViewWithTitle.swift */; };
+		1BCB62331D7706EA00DA81DE /* CollectionViewReusableViewWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB62321D7706EA00DA81DE /* CollectionViewReusableViewWithTitle.swift */; };
 		42E8C47E622AA5E0763190A5 /* ChartOverviewCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8C0D9E64B043032716A15 /* ChartOverviewCollectionLayout.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
 		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
@@ -207,14 +211,18 @@
 		0FF8F9E81D5ACD2F008666E8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E91D5ACFE4008666E8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewViewController.swift; sourceTree = "<group>"; };
-		1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAttributesCalulator.swift; sourceTree = "<group>"; };
+		1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAttributesCalculator.swift; sourceTree = "<group>"; };
 		1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAreaAllocator.swift; sourceTree = "<group>"; };
 		1B8B039A1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewCollectionLayoutDataAdapter.swift; sourceTree = "<group>"; };
-		1B8B039C1D75DA00001CE349 /* ChartOverviewDataAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewDataAdapter.swift; sourceTree = "<group>"; };
-		1B8B03A01D75DE77001CE349 /* ChartOverviewItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewItemCell.swift; sourceTree = "<group>"; };
-		1B8B03A21D75DEBA001CE349 /* ChartOverviewRowCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewRowCounterView.swift; sourceTree = "<group>"; };
-		1B8B03A41D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewColumnHeaderView.swift; sourceTree = "<group>"; };
+		1B8B039C1D75DA00001CE349 /* ChartOverviewSimpleAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewSimpleAdapter.swift; sourceTree = "<group>"; };
+		1B8B03A01D75DE77001CE349 /* ChartOverviewItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewItemView.swift; sourceTree = "<group>"; };
 		1B8B03A61D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewCollectionLayoutOther.swift; sourceTree = "<group>"; };
+		1BCB62001D76C94700DA81DE /* ChartOverviewRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewRowCell.swift; sourceTree = "<group>"; };
+		1BCB621F1D76CDAD00DA81DE /* ChartOverviewRowCellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewRowCellLayout.swift; sourceTree = "<group>"; };
+		1BCB62211D76D4B600DA81DE /* ChartOverviewLayoutParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutParams.swift; sourceTree = "<group>"; };
+		1BCB622E1D77042500DA81DE /* CollectionViewCellWithTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellWithTitle.swift; sourceTree = "<group>"; };
+		1BCB62301D7706A600DA81DE /* ViewWithTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTitle.swift; sourceTree = "<group>"; };
+		1BCB62321D7706EA00DA81DE /* CollectionViewReusableViewWithTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewReusableViewWithTitle.swift; sourceTree = "<group>"; };
 		42E8C0D9E64B043032716A15 /* ChartOverviewCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewCollectionLayout.swift; sourceTree = "<group>"; };
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
 		91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterLayoutTests.swift; sourceTree = "<group>"; };
@@ -359,8 +367,7 @@
 		1B8B03931D7584B3001CE349 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */,
-				1B8B039C1D75DA00001CE349 /* ChartOverviewDataAdapter.swift */,
+				1BCB62231D76F66600DA81DE /* Overview */,
 			);
 			name = Chart;
 			sourceTree = "<group>";
@@ -369,29 +376,64 @@
 			isa = PBXGroup;
 			children = (
 				42E8C0D9E64B043032716A15 /* ChartOverviewCollectionLayout.swift */,
-				1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalulator.swift */,
+				1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */,
 				1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */,
 				1B8B039A1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift */,
 				1B8B03A61D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift */,
+				1BCB62211D76D4B600DA81DE /* ChartOverviewLayoutParams.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
 		};
-		1B8B039F1D75DE6C001CE349 /* Views */ = {
+		1BCB61FF1D76C8D700DA81DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1B8B03A01D75DE77001CE349 /* ChartOverviewItemCell.swift */,
-				1B8B03A21D75DEBA001CE349 /* ChartOverviewRowCounterView.swift */,
-				1B8B03A41D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift */,
+				1B8B03A01D75DE77001CE349 /* ChartOverviewItemView.swift */,
+				1BCB62001D76C94700DA81DE /* ChartOverviewRowCell.swift */,
+				1BCB621F1D76CDAD00DA81DE /* ChartOverviewRowCellLayout.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		1BCB62231D76F66600DA81DE /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */,
+				1B8B039C1D75DA00001CE349 /* ChartOverviewSimpleAdapter.swift */,
+			);
+			name = Overview;
+			sourceTree = "<group>";
+		};
+		1BCB62271D76F75F00DA81DE /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB61FF1D76C8D700DA81DE /* Views */,
+				1B8B039E1D75DE5D001CE349 /* Layout */,
+			);
+			name = Overview;
+			sourceTree = "<group>";
+		};
+		1BCB622C1D76FC8A00DA81DE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		1BCB622D1D77041A00DA81DE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB622E1D77042500DA81DE /* CollectionViewCellWithTitle.swift */,
+				1BCB62301D7706A600DA81DE /* ViewWithTitle.swift */,
+				1BCB62321D7706EA00DA81DE /* CollectionViewReusableViewWithTitle.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		42E8C3A94EC8B17EB08D5DFC /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				1B8B039F1D75DE6C001CE349 /* Views */,
-				1B8B039E1D75DE5D001CE349 /* Layout */,
+				1BCB62271D76F75F00DA81DE /* Overview */,
 			);
 			name = Chart;
 			sourceTree = "<group>";
@@ -399,6 +441,7 @@
 		91187B211D67768C0098A881 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1BCB622D1D77041A00DA81DE /* Common */,
 				91187B221D6776A00098A881 /* ChapterTitleView.swift */,
 				0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */,
 				0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */,
@@ -429,6 +472,7 @@
 		915EEC3B1D460CE1005CC318 /* EmotionCode */ = {
 			isa = PBXGroup;
 			children = (
+				1BCB622C1D76FC8A00DA81DE /* Navigation */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
@@ -690,22 +734,26 @@
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
 				1B8B03A71D75DFD6001CE349 /* ChartOverviewCollectionLayoutOther.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
-				1B8B03A31D75DEBA001CE349 /* ChartOverviewRowCounterView.swift in Sources */,
-				1B8B039D1D75DA00001CE349 /* ChartOverviewDataAdapter.swift in Sources */,
+				1BCB62311D7706A600DA81DE /* ViewWithTitle.swift in Sources */,
+				1B8B039D1D75DA00001CE349 /* ChartOverviewSimpleAdapter.swift in Sources */,
 				1B8B039B1D75D791001CE349 /* ChartOverviewCollectionLayoutDataAdapter.swift in Sources */,
+				1BCB62331D7706EA00DA81DE /* CollectionViewReusableViewWithTitle.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */,
-				1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalulator.swift in Sources */,
-				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 				0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */,
+				1BCB62201D76CDAD00DA81DE /* ChartOverviewRowCellLayout.swift in Sources */,
+				1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalculator.swift in Sources */,
+				1BCB62221D76D4B600DA81DE /* ChartOverviewLayoutParams.swift in Sources */,
+				1BCB62011D76C94700DA81DE /* ChartOverviewRowCell.swift in Sources */,
+				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
+				1BCB622F1D77042500DA81DE /* CollectionViewCellWithTitle.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
-				1B8B03A11D75DE77001CE349 /* ChartOverviewItemCell.swift in Sources */,
+				1B8B03A11D75DE77001CE349 /* ChartOverviewItemView.swift in Sources */,
 				42E8C47E622AA5E0763190A5 /* ChartOverviewCollectionLayout.swift in Sources */,
-				1B8B03A51D75DEDD001CE349 /* ChartOverviewColumnHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
