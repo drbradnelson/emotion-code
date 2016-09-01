@@ -82,6 +82,7 @@
 		1B78FB0D1D780AE300F499B8 /* TabNavigationHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FB041D780AE300F499B8 /* TabNavigationHelpTests.swift */; };
 		1B78FB0E1D780AE300F499B8 /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FB051D780AE300F499B8 /* TabNavigationLayoutTests.swift */; };
 		1B78FB101D78145D00F499B8 /* ChartOverviewLayoutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FB0F1D78145D00F499B8 /* ChartOverviewLayoutTest.swift */; };
+		1B78FB131D7816F400F499B8 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FB121D7816F400F499B8 /* DictionaryExtensions.swift */; };
 		1B8B03951D7584DD001CE349 /* ChartOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */; };
 		1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */; };
 		1B8B03991D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */; };
@@ -222,6 +223,7 @@
 		1B78FB041D780AE300F499B8 /* TabNavigationHelpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationHelpTests.swift; sourceTree = "<group>"; };
 		1B78FB051D780AE300F499B8 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
 		1B78FB0F1D78145D00F499B8 /* ChartOverviewLayoutTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutTest.swift; sourceTree = "<group>"; };
+		1B78FB121D7816F400F499B8 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewViewController.swift; sourceTree = "<group>"; };
 		1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAttributesCalculator.swift; sourceTree = "<group>"; };
 		1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAreaAllocator.swift; sourceTree = "<group>"; };
@@ -370,6 +372,14 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		1B78FB111D7816E100F499B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B78FB121D7816F400F499B8 /* DictionaryExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		1B8B03931D7584B3001CE349 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,13 +428,6 @@
 				1B8B039E1D75DE5D001CE349 /* Layout */,
 			);
 			name = Overview;
-			sourceTree = "<group>";
-		};
-		1BCB622C1D76FC8A00DA81DE /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		1BCB622D1D77041A00DA81DE /* Common */ = {
@@ -479,7 +482,7 @@
 		915EEC3B1D460CE1005CC318 /* EmotionCode */ = {
 			isa = PBXGroup;
 			children = (
-				1BCB622C1D76FC8A00DA81DE /* Navigation */,
+				1B78FB111D7816E100F499B8 /* Extensions */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
@@ -759,6 +762,7 @@
 				1BCB62221D76D4B600DA81DE /* ChartOverviewLayoutParams.swift in Sources */,
 				1BCB62011D76C94700DA81DE /* ChartOverviewRowCell.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
+				1B78FB131D7816F400F499B8 /* DictionaryExtensions.swift in Sources */,
 				1BCB622F1D77042500DA81DE /* CollectionViewCellWithTitle.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 				1B8B03A11D75DE77001CE349 /* ChartOverviewItemView.swift in Sources */,
