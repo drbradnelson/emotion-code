@@ -48,6 +48,7 @@ extension ChartOverviewViewController {
         self.chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kRowCounterElementIdentifier)
 
         self.chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.kRowElementIdentifier)
+        ChartOverviewAccessibilityController.setupAccessibilit(forChartOverviewView: self.chartView)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -79,6 +80,8 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
         cell.update(withItems: items)
         cell.update(itemBackgroundColor: UIColor.lightGrayColor())
 
+        ChartOverviewAccessibilityController.setupAccessibility(forRowCell: cell, forRow: row, atRowPosition: rowPosition)
+
         return cell
     }
 
@@ -96,9 +99,11 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
         if kind == ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier {
             let columnIndex = self.chartAdapter.columnIndex(forIndexPath: indexPath)
             view.title = "\(columnIndex)"
+            ChartOverviewAccessibilityController.setupAccessibility(forColumnHeader: view, forColumn: self.chart.columns[columnIndex], atIndex: columnIndex)
         } else {
             let rowIndex = self.chartAdapter.rowIndex(forIndexPath: indexPath)
             view.title = "\(rowIndex)"
+            ChartOverviewAccessibilityController.setupAccessibility(forRowCounterView: view, atRowIndex: rowIndex)
         }
 
         return view
