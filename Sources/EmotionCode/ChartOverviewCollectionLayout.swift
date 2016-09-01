@@ -8,12 +8,6 @@ import UIKit
 
 // MARK: Delegate
 
-extension Dictionary {
-    mutating func mergeWith(dictionary: Dictionary) {
-        dictionary.forEach { self.updateValue($1, forKey: $0) }
-    }
-}
-
 protocol ChartOverviewCollectionLayoutDelegate: NSObjectProtocol {
     func widthForRowCounterElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
     func heightForColumnHeaderElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
