@@ -48,6 +48,7 @@
 		0F669F4B1D78ABD9003AD410 /* chapter9.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3D1D78ABD9003AD410 /* chapter9.patch */; };
 		0F669F4C1D78ABD9003AD410 /* chapter10.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3E1D78ABD9003AD410 /* chapter10.patch */; };
 		0F669F4D1D78ABD9003AD410 /* chapter11.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3F1D78ABD9003AD410 /* chapter11.patch */; };
+		0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F4E1D78AC33003AD410 /* PatchBook.sh */; };
 		0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */; };
 		0F78F7301D596F3D00DAE36A /* chapter1.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7321D596F3D00DAE36A /* chapter1.html */; };
 		0F78F7591D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F73C1D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png */; };
@@ -172,6 +173,7 @@
 		0F669F3D1D78ABD9003AD410 /* chapter9.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter9.patch; sourceTree = "<group>"; };
 		0F669F3E1D78ABD9003AD410 /* chapter10.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter10.patch; sourceTree = "<group>"; };
 		0F669F3F1D78ABD9003AD410 /* chapter11.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter11.patch; sourceTree = "<group>"; };
+		0F669F4E1D78AC33003AD410 /* PatchBook.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = PatchBook.sh; sourceTree = "<group>"; };
 		0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersTableView.swift; sourceTree = "<group>"; };
 		0F78F7311D596F3D00DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter1.html; sourceTree = "<group>"; };
 		0F78F7331D596F3E00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter1.html; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 				0FF6418A1D5A725500EDF903 /* MarkupLint.sh */,
+				0F669F4E1D78AC33003AD410 /* PatchBook.sh */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 			buildPhases = (
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
+				0F669F501D78AD32003AD410 /* Run Book Patch */,
 				0FF641891D5A6A3100EDF903 /* Run MarkupLint */,
 				915EEC351D460CE1005CC318 /* Sources */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
@@ -667,6 +671,7 @@
 				0F669F271D78ABAA003AD410 /* chapter1.patch in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
 				0F78F7621D59703100DAE36A /* MT-Falling_Log_UP.png in Resources */,
+				0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				0F669F481D78ABD9003AD410 /* chapter6.patch in Resources */,
 				0F78F75A1D59703100DAE36A /* FLowChart.jpg in Resources */,
@@ -705,6 +710,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F669F501D78AD32003AD410 /* Run Book Patch */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Book Patch";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PROJECT_NAME\"/PatchBook.sh";
+		};
 		0FF641891D5A6A3100EDF903 /* Run MarkupLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
