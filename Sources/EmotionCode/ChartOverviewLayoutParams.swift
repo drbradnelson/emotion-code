@@ -37,7 +37,7 @@ extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
 
     var availableWidth: CGFloat {
         get {
-            return CGRectGetWidth(collectionView!.bounds)
+            return collectionView!.bounds.width
         }
     }
 
