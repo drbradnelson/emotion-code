@@ -19,4 +19,18 @@ patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapte
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter8.patch --output=EmotionCode/chapter8.html
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter9.patch --output=EmotionCode/chapter9.html
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter10.patch --output=EmotionCode/chapter10.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter11.patch --output=EmotionCode/chapter11.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter11.patch --output=EmotionCode/about-author.html
+
+rm EmotionCode/book-fixed.html
+
+cp EmotionCode/chapter1.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter2.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter3.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter4.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter5.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter6.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter7.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter8.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter9.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/chapter10.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+cp EmotionCode/about-author.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
