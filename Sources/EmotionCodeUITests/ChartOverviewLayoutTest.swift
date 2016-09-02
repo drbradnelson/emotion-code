@@ -1,11 +1,3 @@
-//
-//  ChartOverviewLayoutTest.swift
-//  EmotionCode
-//
-//  Created by Andre Lami on 31/08/16.
-//  Copyright © 2016 DiscoverHealing.com. All rights reserved.
-//
-
 import XCTest
 
 // MARK: Main
@@ -113,7 +105,6 @@ extension ChartOverviewLayoutTest {
         XCTAssertEqual(leftAligned && rightAligned, true)
     }
 }
-
 
 // MARK: Helpers
 
