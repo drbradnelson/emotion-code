@@ -8,7 +8,10 @@ final class ChartOverviewViewController: UIViewController {
         return ChartController().chart
     }()
 
-    private var chartAdapter: ChartOverviewCollectionLayoutDataAdapter!
+    private (set) var chartAdapter: ChartOverviewCollectionLayoutDataAdapter!
+    private var selectedRowPosition: ChartRowPosition?
+
+    private let transitionController = ChartOverviewTransitionController()
 }
 
 // MARK: View lifecycle callbacks
@@ -52,6 +55,17 @@ extension ChartOverviewViewController {
 // MARK: UICollectionViewDelegate
 
 extension ChartOverviewViewController : UICollectionViewDelegate {}
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let selectedRowPosition = self.chartAdapter.rowPosition(forIndexPath: indexPath)
+        self.transitionController.goToRowDetails(self, forRowPosition: selectedRowPosition)
+    }
+}
+
+extension ChartOverviewViewController {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        self.transitionController.finishTransition(forSegue: segue)
+    }
+}
 
 // MARK: UICollectionViewDataSource
 

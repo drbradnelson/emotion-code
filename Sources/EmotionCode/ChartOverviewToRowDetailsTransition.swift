@@ -10,14 +10,37 @@ import Foundation
 import UIKit
 
 class ChartOverviewToRowDetailsTransition: NSObject {
-    private var overviewController: ChartOverviewViewController!
-    private var rowController: ChartRowDetailsViewController!
-    private var containerView: UIView!
+    
+    private (set) var overviewController: ChartOverviewViewController!
+    private (set) var rowDetailsController: ChartRowDetailsViewController!
+    private (set) var containerView: UIView!
+    private (set) var direction: TransitionDirection!
+    private (set) var duration: NSTimeInterval!
+    
+    init(direction: TransitionDirection) {
+        self.direction = direction
+    }
 }
+
+extension ChartOverviewToRowDetailsTransition {
+    func value<ValType>(forData:ChartOverviewToRowDetailsTransitionData, forward: ValType, back: ValType) -> ValType {
+        return TransitionValueSelector.selectVal(forDirection: forData.direction, forwarVal: forward, backwardVal: back)
+    }
+}
+
+protocol ChartOverviewToRowDetailsTransitionData {
+    var overviewController: ChartOverviewViewController! {get}
+    var rowDetailsController: ChartRowDetailsViewController!  {get}
+    var containerView: UIView! {get}
+    var direction: TransitionDirection! {get}
+    var duration: NSTimeInterval! {get}
+}
+
+extension ChartOverviewToRowDetailsTransition: ChartOverviewToRowDetailsTransitionData {}
 
 extension ChartOverviewToRowDetailsTransition: UIViewControllerAnimatedTransitioning {
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 2
+        return 2.6
     }
 
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -25,68 +48,73 @@ extension ChartOverviewToRowDetailsTransition: UIViewControllerAnimatedTransitio
 
         let executors = self.createExecutors()
         executors.forEach { (executor) in
-            executor.prepareBlock?()
+            executor.prepare()
         }
-
-        UIView.animateWithDuration(self.transitionDuration(transitionContext), animations: {
+        
+        UIView.animateWithDuration(self.transitionDuration(transitionContext), delay: 0, options: .CurveEaseOut, animations: {
             executors.forEach { (executor) in
-                executor.executeBlock()
+                executor.execute()
             }
-        }, completion: {(complete) in
-            transitionContext.completeTransition(complete)
-        })
+        }) { (finished) in
+            executors.forEach { (executor) in
+                executor.complete(finished)
+            }
+            
+            transitionContext.completeTransition(finished)
+        }   
+    }
+}
+
+extension ChartOverviewToRowDetailsTransition {
+    func snp(view: UIView) -> UIView {
+        
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext();
+        
+        return UIImageView.init(image: img);
     }
 }
 
 // MARK: Main cell transition
 
 private extension ChartOverviewToRowDetailsTransition {
-    func createExecutors() -> [TrasitionExecutor] {
-        return [self.controllerTransition()]
-    }
-}
-
-// MARK: Main controller transition
-
-private extension ChartOverviewToRowDetailsTransition {
-
-    func controllerTransition() -> TrasitionExecutor {
-
-        let prepareBlock = {
-
-            self.containerView.addSubview(self.rowController.view)
-            self.rowController.view.alpha = 0
+    func createExecutors() -> [TransitionExecutor] {
+        if self.direction == TransitionDirection.Forward {
+        return [self.createControllersTransition(withData: self), self.createMainRowTransition(withData: self), self.createNeighboursTransition(withData: self)]
+        } else {
+            return [self.createControllersTransition(withData: self), self.createMainRowTransition(withData: self), self.createNeighboursTransition(withData: self)]
         }
-
-        let animationBlock = {
-            self.rowController.view.alpha = 1
-        }
-
-        let transitionExecutor = TrasitionExecutor.init(prepareBlock: prepareBlock, executeBlock: animationBlock)
-        return transitionExecutor
-    }
-}
-
-private extension ChartOverviewToRowDetailsTransition {
-    private class TrasitionExecutor {
-        let prepareBlock: (() -> ())?
-        let executeBlock: () -> ()
-
-        init(prepareBlock: (() -> ())?, executeBlock: () -> ()) {
-            self.prepareBlock = prepareBlock
-            self.executeBlock = executeBlock
-        }
+        
     }
 }
 
 private extension ChartOverviewToRowDetailsTransition {
     private func prepare(withTransitionContex context: UIViewControllerContextTransitioning) {
-        self.overviewController = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ChartOverviewViewController
-        self.rowController = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! ChartRowDetailsViewController
+        if self.direction == TransitionDirection.Forward {
+            self.overviewController = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ChartOverviewViewController
+            self.rowDetailsController = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! ChartRowDetailsViewController
+        } else {
+            self.overviewController = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! ChartOverviewViewController
+            self.rowDetailsController = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ChartRowDetailsViewController
+        }
+        
 
         self.containerView = context.containerView()
-
-        // will trigger view drawing
-        self.rowController.view.snapshotViewAfterScreenUpdates(true)
+        self.duration = self.transitionDuration(context)
+        
+        let controller = self.value(self, forward: self.rowDetailsController, back: self.overviewController)
+        let collectionView = self.value(self, forward: self.rowDetailsController.rowDetailsView, back: self.overviewController.chartView)
+        
+        // will trigger view drawing and correct layout
+        self.containerView.addSubview(controller.view)
+        controller.view.snapshotViewAfterScreenUpdates(true)
+        controller.view.removeFromSuperview()
+        
+        collectionView.setNeedsLayout()
+        collectionView.layoutIfNeeded()
     }
 }
