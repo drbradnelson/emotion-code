@@ -4,17 +4,17 @@ class CollectionViewReusableViewWithTitle: UICollectionReusableView {
 
     private (set) var titleLabel: UILabel
     override init(frame: CGRect) {
-        self.titleLabel = UILabel.init()
+        titleLabel = UILabel.init()
         super.init(frame: frame)
 
-        self.setup()
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        self.titleLabel = UILabel.init()
+        titleLabel = UILabel.init()
         super.init(coder: aDecoder)
 
-        self.setup()
+        setup()
     }
 }
 
@@ -28,11 +28,11 @@ private extension CollectionViewReusableViewWithTitle {
 
     func setup() {
 
-        self.addSubview(self.titleLabel)
+        addSubview(titleLabel)
 
-        self.titleLabel.font = UIFont.systemFontOfSize(20)
-        self.titleLabel.numberOfLines = 0
-        self.titleLabel.textAlignment = .Center
+        titleLabel.font = UIFont.systemFontOfSize(20)
+        titleLabel.numberOfLines = 0
+        titleLabel.textAlignment = .Center
     }
 }
 
@@ -42,6 +42,6 @@ extension CollectionViewReusableViewWithTitle {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.titleLabel.frame = self.bounds
+        titleLabel.frame = bounds
     }
 }

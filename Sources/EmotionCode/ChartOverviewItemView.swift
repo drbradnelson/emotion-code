@@ -6,17 +6,17 @@ final class ChartOverviewItemView: UIView {
     private (set) var titleLabel: UILabel
 
     override init(frame: CGRect) {
-        self.titleLabel = UILabel.init()
+        titleLabel = UILabel.init()
         super.init(frame: frame)
 
-        self.setup()
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        self.titleLabel = UILabel.init()
+        titleLabel = UILabel.init()
         super.init(coder: aDecoder)
 
-        self.setup()
+        setup()
     }
 }
 
@@ -29,8 +29,8 @@ extension ChartOverviewItemView : ViewWithTitle {}
 private extension ChartOverviewItemView {
 
     func setup() {
-        self.addSubview(self.titleLabel)
-        self.titleLabel.textAlignment = .Center
+        addSubview(titleLabel)
+        titleLabel.textAlignment = .Center
     }
 }
 
@@ -40,6 +40,6 @@ extension ChartOverviewItemView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.titleLabel.frame = self.bounds
+        titleLabel.frame = bounds
     }
 }

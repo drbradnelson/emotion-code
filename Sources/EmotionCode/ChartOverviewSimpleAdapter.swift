@@ -15,21 +15,21 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func numberOfRows(forColumnIndex column: Int) -> Int {
-        return self.chart.columns[column].rows.count
+        return chart.columns[column].rows.count
     }
 
     func numberOfItems(forColumnIndex column: Int, forRowIndex row: Int) -> Int {
-        return self.chart.columns[column].rows[row].items.count
+        return chart.columns[column].rows[row].items.count
     }
 
     func numberOfItems(inSection section: Int) -> Int {
-        return self.chart.columns.count
+        return chart.columns.count
     }
 
     func numberOfSections() -> Int {
         var maxRowsCount = 0
-        for columnPosition in 0 ..< self.numberOfColumns() {
-            let rows = self.chart.columns[columnPosition].rows
+        for columnPosition in 0 ..< numberOfColumns() {
+            let rows = chart.columns[columnPosition].rows
             if maxRowsCount < rows.count {
                 maxRowsCount = rows.count
             }

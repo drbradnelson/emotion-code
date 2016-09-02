@@ -10,13 +10,13 @@ final class ChartOverviewRowCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        self.setup()
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        self.setup()
+        setup()
     }
 }
 
@@ -31,11 +31,11 @@ private extension ChartOverviewRowCell {
 extension ChartOverviewRowCell {
 
     func update(withItems items: [ChartItem]) {
-        self.itemViews?.forEach({ (view) in
+        itemViews?.forEach({ (view) in
             view.removeFromSuperview()
         })
 
-        self.itemViews = [ChartOverviewItemView]()
+        itemViews = [ChartOverviewItemView]()
 
 
         let contentView = self.contentView
@@ -44,18 +44,18 @@ extension ChartOverviewRowCell {
 
             var itemView = ChartOverviewItemView.init(frame: CGRect.zero)
             itemView.title = item.title
-            itemView.backgroundColor = self.itemBackgroundColor
+            itemView.backgroundColor = itemBackgroundColor
 
             contentView.addSubview(itemView)
-            self.itemViews?.append(itemView)
+            itemViews?.append(itemView)
         }
 
-        self.setNeedsLayout()
+        setNeedsLayout()
     }
 
     func update(itemBackgroundColor color: UIColor) {
-        self.itemBackgroundColor = color
-        self.itemViews?.forEach({ (view) in
+        itemBackgroundColor = color
+        itemViews?.forEach({ (view) in
             view.backgroundColor = color
         })
     }
@@ -67,6 +67,6 @@ extension ChartOverviewRowCell {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        ChartOverviewRowCellLayout.layout(itemViews: self.itemViews!, inContainer: self)
+        ChartOverviewRowCellLayout.layout(itemViews: itemViews!, inContainer: self)
     }
 }
