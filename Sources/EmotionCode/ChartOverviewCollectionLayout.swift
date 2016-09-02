@@ -36,11 +36,11 @@ extension ChartOverviewCollectionLayout {
     override func prepareLayout() {
         var layoutAttributesList = [UICollectionViewLayoutAttributes]()
 
-        let allocator = ChartOverviewLayoutAreaAllocator.init(areaWidth: self.layoutParams.availableWidth)
-        let calculator = ChartOverviewLayoutAttributesCalculator.init(adapter: self.adapter, layoutParams: self.layoutParams, areaAllocator: allocator)
+        let allocator = ChartOverviewLayoutAreaAllocator.init(areaWidth: layoutParams.availableWidth)
+        let calculator = ChartOverviewLayoutAttributesCalculator.init(adapter: adapter, layoutParams: layoutParams, areaAllocator: allocator)
 
-        let columnHeaderElementAttributesMap = self.calculateAttributesForColumnElementHeader(withCalculator: calculator)
-        let (rowCounterElementsAttributes, rowElementsAttributes) = self.calculateSectionsAttributes(withCalculator: calculator, andAllocator: allocator)
+        let columnHeaderElementAttributesMap = calculateAttributesForColumnElementHeader(withCalculator: calculator)
+        let (rowCounterElementsAttributes, rowElementsAttributes) = calculateSectionsAttributes(withCalculator: calculator, andAllocator: allocator)
 
         [columnHeaderElementAttributesMap, rowCounterElementsAttributes, rowElementsAttributes].forEach { (attributesMap) in
             layoutAttributesList.appendContentsOf(attributesMap.values)
@@ -48,13 +48,13 @@ extension ChartOverviewCollectionLayout {
 
         self.layoutAttributesList = layoutAttributesList
 
-        self.layoutAttributesMap = [
+        layoutAttributesMap = [
             ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier : columnHeaderElementAttributesMap,
             ChartOverviewCollectionLayout.kRowCounterElementIdentifier : rowCounterElementsAttributes,
             ChartOverviewCollectionLayout.kRowElementIdentifier : rowElementsAttributes,
         ]
 
-        self.calculatedContentSize = CGSize.init(width: CGRectGetWidth(allocator.allocatedArea()), height: CGRectGetHeight(allocator.allocatedArea()))
+        calculatedContentSize = CGSize.init(width: CGRectGetWidth(allocator.allocatedArea()), height: CGRectGetHeight(allocator.allocatedArea()))
     }
 
     private func calculateAttributesForColumnElementHeader(withCalculator calculator: ChartOverviewLayoutAttributesCalculator) -> [NSIndexPath: UICollectionViewLayoutAttributes] {
@@ -67,8 +67,8 @@ extension ChartOverviewCollectionLayout {
         var rowCounterElementAttributesMap = [NSIndexPath: UICollectionViewLayoutAttributes]()
         var rowElementAttributesMap = [NSIndexPath: UICollectionViewLayoutAttributes]()
 
-        let interRowSpacing = self.layoutParams.spacingBetweenRows
-        for section in 0 ..< self.adapter.numberOfSections() {
+        let interRowSpacing = layoutParams.spacingBetweenRows
+        for section in 0 ..< adapter.numberOfSections() {
             let sectionAttributes = calculator.calculateAttributes(forSection: section)
 
             let sectionRowCounterAttributes = sectionAttributes[ChartOverviewCollectionLayout.kRowCounterElementIdentifier]!
@@ -88,7 +88,7 @@ extension ChartOverviewCollectionLayout {
     }
 
     override func collectionViewContentSize() -> CGSize {
-        return self.calculatedContentSize
+        return calculatedContentSize
     }
 }
 
@@ -96,7 +96,7 @@ extension ChartOverviewCollectionLayout {
 
 extension ChartOverviewCollectionLayout {
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        let attributes = self.layoutAttributesList?.filter({ (attribute) -> Bool in
+        let attributes = layoutAttributesList?.filter({ (attribute) -> Bool in
             CGRectIntersectsRect(attribute.frame, rect)
         })
 
@@ -104,12 +104,12 @@ extension ChartOverviewCollectionLayout {
     }
 
     override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
-        let attributes = self.layoutAttributesMap![ChartOverviewCollectionLayout.kRowElementIdentifier]![indexPath]
+        let attributes = layoutAttributesMap![ChartOverviewCollectionLayout.kRowElementIdentifier]![indexPath]
         return attributes
     }
 
     override func layoutAttributesForSupplementaryViewOfKind(elementKind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
-        let attributes = self.layoutAttributesMap![elementKind]![indexPath]
+        let attributes = layoutAttributesMap![elementKind]![indexPath]
         return attributes
     }
 }

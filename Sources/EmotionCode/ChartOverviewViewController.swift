@@ -17,35 +17,35 @@ extension ChartOverviewViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.prepareData()
-        self.prepareUI()
+        prepareData()
+        prepareUI()
     }
 
     private func prepareData() {
-        self.chartAdapter = ChartOverviewSimpleAdapter.init(chart: self.chart)
+        chartAdapter = ChartOverviewSimpleAdapter.init(chart: chart)
     }
 
     private func prepareUI() {
-        self.chartView.delegate = self
-        self.chartView.dataSource = self
+        chartView.delegate = self
+        chartView.dataSource = self
 
-        self.chartOverviewLayout = ChartOverviewCollectionLayout.init()
-        self.chartOverviewLayout.adapter = self.chartAdapter
-        self.chartOverviewLayout.delegate = self
+        chartOverviewLayout = ChartOverviewCollectionLayout.init()
+        chartOverviewLayout.adapter = chartAdapter
+        chartOverviewLayout.delegate = self
 
-        self.chartView.setCollectionViewLayout(self.chartOverviewLayout, animated: false)
+        chartView.setCollectionViewLayout(chartOverviewLayout, animated: false)
 
-        self.chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier)
-        self.chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kRowCounterElementIdentifier)
+        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier)
+        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kRowCounterElementIdentifier)
 
-        self.chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.kRowElementIdentifier)
-        ChartOverviewAccessibilityController.setupAccessibilit(forChartOverviewView: self.chartView)
+        chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.kRowElementIdentifier)
+        ChartOverviewAccessibilityController.setupAccessibilit(forChartOverviewView: chartView)
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        self.chartView.reloadData()
+        chartView.reloadData()
     }
 }
 
@@ -58,14 +58,14 @@ extension ChartOverviewViewController : UICollectionViewDelegate {}
 extension ChartOverviewViewController : UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.chartOverviewLayout.adapter.numberOfItems(inSection: section)
+        return chartOverviewLayout.adapter.numberOfItems(inSection: section)
     }
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ChartOverviewCollectionLayout.kRowElementIdentifier, forIndexPath: indexPath) as! ChartOverviewRowCell
 
-        let rowPosition = self.chartAdapter.rowPosition(forIndexPath: indexPath)
-        let row = self.chart.row(forPosition: rowPosition)
+        let rowPosition = chartAdapter.rowPosition(forIndexPath: indexPath)
+        let row = chart.row(forPosition: rowPosition)
         let items = row.items
 
         cell.update(withItems: items)
@@ -78,7 +78,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return self.chartOverviewLayout.adapter.numberOfSections()
+        return chartOverviewLayout.adapter.numberOfSections()
     }
 
 
@@ -88,11 +88,11 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
         var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: identifier, forIndexPath: indexPath) as! CollectionViewReusableViewWithTitle
 
         if kind == ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier {
-            let columnIndex = self.chartAdapter.columnIndex(forIndexPath: indexPath)
+            let columnIndex = chartAdapter.columnIndex(forIndexPath: indexPath)
             view.title = "\(columnIndex)"
-            ChartOverviewAccessibilityController.setupAccessibility(forColumnHeader: view, forColumn: self.chart.columns[columnIndex], atIndex: columnIndex)
+            ChartOverviewAccessibilityController.setupAccessibility(forColumnHeader: view, forColumn: chart.columns[columnIndex], atIndex: columnIndex)
         } else {
-            let rowIndex = self.chartAdapter.rowIndex(forIndexPath: indexPath)
+            let rowIndex = chartAdapter.rowIndex(forIndexPath: indexPath)
             view.title = "\(rowIndex)"
             ChartOverviewAccessibilityController.setupAccessibility(forRowCounterView: view, atRowIndex: rowIndex)
         }
@@ -132,8 +132,8 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     func heightForRowElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout, forRow row: Int) -> CGFloat {
 
         var maxItems = 0
-        for columnIndex in 0 ..< self.chartAdapter.numberOfColumns() {
-            let rowItemsNumber = self.chartAdapter.numberOfItems(forColumnIndex: columnIndex, forRowIndex: row)
+        for columnIndex in 0 ..< chartAdapter.numberOfColumns() {
+            let rowItemsNumber = chartAdapter.numberOfItems(forColumnIndex: columnIndex, forRowIndex: row)
             if rowItemsNumber > maxItems {
                 maxItems = rowItemsNumber
             }

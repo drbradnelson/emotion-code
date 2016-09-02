@@ -5,17 +5,17 @@ class CollectionViewCellWithTitle: UICollectionViewCell {
 
     private (set) var titleLabel: UILabel
     override init(frame: CGRect) {
-        self.titleLabel = UILabel.init()
+        titleLabel = UILabel.init()
         super.init(frame: frame)
 
-        self.setup()
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        self.titleLabel = UILabel.init()
+        titleLabel = UILabel.init()
         super.init(coder: aDecoder)
 
-        self.setup()
+        setup()
     }
 }
 
@@ -28,11 +28,11 @@ extension CollectionViewCellWithTitle : ViewWithTitle {}
 private extension CollectionViewCellWithTitle {
 
     func setup() {
-        self.contentView.addSubview(self.titleLabel)
+        contentView.addSubview(titleLabel)
 
-        self.titleLabel.font = UIFont.systemFontOfSize(20)
-        self.titleLabel.numberOfLines = 0
-        self.titleLabel.textAlignment = .Center
+        titleLabel.font = UIFont.systemFontOfSize(20)
+        titleLabel.numberOfLines = 0
+        titleLabel.textAlignment = .Center
     }
 }
 
@@ -42,6 +42,6 @@ extension CollectionViewCellWithTitle {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.titleLabel.frame = self.contentView.bounds
+        titleLabel.frame = contentView.bounds
     }
 }

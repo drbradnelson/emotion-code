@@ -9,37 +9,37 @@ extension ViewWithTitle {
 
     var title: String? {
         get {
-            return self.titleLabel.text
+            return titleLabel.text
         }
         set (newTitle) {
-            self.titleLabel.text = newTitle!
+            titleLabel.text = newTitle!
         }
     }
 
     var font: UIFont {
         get {
-            return self.titleLabel.font
+            return titleLabel.font
         }
         set (newFont) {
-            self.titleLabel.font = font
+            titleLabel.font = font
         }
     }
 
     var textColor: UIColor {
         get {
-            return self.titleLabel.textColor
+            return titleLabel.textColor
         }
         set (newFont) {
-            self.titleLabel.textColor = textColor
+            titleLabel.textColor = textColor
         }
     }
 
     var textAlighnment: NSTextAlignment {
         get {
-            return self.titleLabel.textAlignment
+            return titleLabel.textAlignment
         }
         set (newTextAlignment) {
-            self.titleLabel.textAlignment = newTextAlignment
+            titleLabel.textAlignment = newTextAlignment
         }
     }
 }
