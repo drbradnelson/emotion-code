@@ -20,34 +20,34 @@
 		0F464FB41D621D4E0036D762 /* BookSwipeGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */; };
 		0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */; };
 		0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */; };
-		0F669F241D78ABAA003AD410 /* book-add-chapters.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F161D78ABAA003AD410 /* book-add-chapters.patch */; };
-		0F669F251D78ABAA003AD410 /* book-fix-warnings.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F171D78ABAA003AD410 /* book-fix-warnings.patch */; };
-		0F669F261D78ABAA003AD410 /* book-remove-chapter-numbers.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F181D78ABAA003AD410 /* book-remove-chapter-numbers.patch */; };
-		0F669F271D78ABAA003AD410 /* chapter1.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F191D78ABAA003AD410 /* chapter1.patch */; };
-		0F669F281D78ABAA003AD410 /* chapter2.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1A1D78ABAA003AD410 /* chapter2.patch */; };
-		0F669F291D78ABAA003AD410 /* chapter3.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1B1D78ABAA003AD410 /* chapter3.patch */; };
-		0F669F2A1D78ABAA003AD410 /* chapter4.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1C1D78ABAA003AD410 /* chapter4.patch */; };
-		0F669F2B1D78ABAA003AD410 /* chapter5.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1D1D78ABAA003AD410 /* chapter5.patch */; };
-		0F669F2C1D78ABAA003AD410 /* chapter6.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1E1D78ABAA003AD410 /* chapter6.patch */; };
-		0F669F2D1D78ABAA003AD410 /* chapter7.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1F1D78ABAA003AD410 /* chapter7.patch */; };
-		0F669F2E1D78ABAA003AD410 /* chapter8.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F201D78ABAA003AD410 /* chapter8.patch */; };
-		0F669F2F1D78ABAA003AD410 /* chapter9.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F211D78ABAA003AD410 /* chapter9.patch */; };
-		0F669F301D78ABAA003AD410 /* chapter10.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F221D78ABAA003AD410 /* chapter10.patch */; };
-		0F669F311D78ABAA003AD410 /* chapter11.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F231D78ABAA003AD410 /* chapter11.patch */; };
-		0F669F401D78ABD9003AD410 /* book-add-chapters.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F321D78ABD9003AD410 /* book-add-chapters.patch */; };
-		0F669F411D78ABD9003AD410 /* book-fix-warnings.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F331D78ABD9003AD410 /* book-fix-warnings.patch */; };
-		0F669F421D78ABD9003AD410 /* book-remove-chapter-numbers.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F341D78ABD9003AD410 /* book-remove-chapter-numbers.patch */; };
-		0F669F431D78ABD9003AD410 /* chapter1.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F351D78ABD9003AD410 /* chapter1.patch */; };
-		0F669F441D78ABD9003AD410 /* chapter2.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F361D78ABD9003AD410 /* chapter2.patch */; };
-		0F669F451D78ABD9003AD410 /* chapter3.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F371D78ABD9003AD410 /* chapter3.patch */; };
-		0F669F461D78ABD9003AD410 /* chapter4.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F381D78ABD9003AD410 /* chapter4.patch */; };
-		0F669F471D78ABD9003AD410 /* chapter5.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F391D78ABD9003AD410 /* chapter5.patch */; };
-		0F669F481D78ABD9003AD410 /* chapter6.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3A1D78ABD9003AD410 /* chapter6.patch */; };
-		0F669F491D78ABD9003AD410 /* chapter7.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3B1D78ABD9003AD410 /* chapter7.patch */; };
-		0F669F4A1D78ABD9003AD410 /* chapter8.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3C1D78ABD9003AD410 /* chapter8.patch */; };
-		0F669F4B1D78ABD9003AD410 /* chapter9.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3D1D78ABD9003AD410 /* chapter9.patch */; };
-		0F669F4C1D78ABD9003AD410 /* chapter10.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3E1D78ABD9003AD410 /* chapter10.patch */; };
-		0F669F4D1D78ABD9003AD410 /* chapter11.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3F1D78ABD9003AD410 /* chapter11.patch */; };
+		0F669F241D78ABAA003AD410 /* book-add-chapters-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F161D78ABAA003AD410 /* book-add-chapters-en.patch */; };
+		0F669F251D78ABAA003AD410 /* book-fix-warnings-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F171D78ABAA003AD410 /* book-fix-warnings-en.patch */; };
+		0F669F261D78ABAA003AD410 /* book-remove-chapter-numbers-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F181D78ABAA003AD410 /* book-remove-chapter-numbers-en.patch */; };
+		0F669F271D78ABAA003AD410 /* chapter1-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F191D78ABAA003AD410 /* chapter1-en.patch */; };
+		0F669F281D78ABAA003AD410 /* chapter2-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1A1D78ABAA003AD410 /* chapter2-en.patch */; };
+		0F669F291D78ABAA003AD410 /* chapter3-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1B1D78ABAA003AD410 /* chapter3-en.patch */; };
+		0F669F2A1D78ABAA003AD410 /* chapter4-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1C1D78ABAA003AD410 /* chapter4-en.patch */; };
+		0F669F2B1D78ABAA003AD410 /* chapter5-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1D1D78ABAA003AD410 /* chapter5-en.patch */; };
+		0F669F2C1D78ABAA003AD410 /* chapter6-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1E1D78ABAA003AD410 /* chapter6-en.patch */; };
+		0F669F2D1D78ABAA003AD410 /* chapter7-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F1F1D78ABAA003AD410 /* chapter7-en.patch */; };
+		0F669F2E1D78ABAA003AD410 /* chapter8-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F201D78ABAA003AD410 /* chapter8-en.patch */; };
+		0F669F2F1D78ABAA003AD410 /* chapter9-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F211D78ABAA003AD410 /* chapter9-en.patch */; };
+		0F669F301D78ABAA003AD410 /* chapter10-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F221D78ABAA003AD410 /* chapter10-en.patch */; };
+		0F669F311D78ABAA003AD410 /* chapter11-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F231D78ABAA003AD410 /* chapter11-en.patch */; };
+		0F669F401D78ABD9003AD410 /* book-add-chapters-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F321D78ABD9003AD410 /* book-add-chapters-es.patch */; };
+		0F669F411D78ABD9003AD410 /* book-fix-warnings-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F331D78ABD9003AD410 /* book-fix-warnings-es.patch */; };
+		0F669F421D78ABD9003AD410 /* book-remove-chapter-numbers-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F341D78ABD9003AD410 /* book-remove-chapter-numbers-es.patch */; };
+		0F669F431D78ABD9003AD410 /* chapter1-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F351D78ABD9003AD410 /* chapter1-es.patch */; };
+		0F669F441D78ABD9003AD410 /* chapter2-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F361D78ABD9003AD410 /* chapter2-es.patch */; };
+		0F669F451D78ABD9003AD410 /* chapter3-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F371D78ABD9003AD410 /* chapter3-es.patch */; };
+		0F669F461D78ABD9003AD410 /* chapter4-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F381D78ABD9003AD410 /* chapter4-es.patch */; };
+		0F669F471D78ABD9003AD410 /* chapter5-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F391D78ABD9003AD410 /* chapter5-es.patch */; };
+		0F669F481D78ABD9003AD410 /* chapter6-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3A1D78ABD9003AD410 /* chapter6-es.patch */; };
+		0F669F491D78ABD9003AD410 /* chapter7-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3B1D78ABD9003AD410 /* chapter7-es.patch */; };
+		0F669F4A1D78ABD9003AD410 /* chapter8-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3C1D78ABD9003AD410 /* chapter8-es.patch */; };
+		0F669F4B1D78ABD9003AD410 /* chapter9-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3D1D78ABD9003AD410 /* chapter9-es.patch */; };
+		0F669F4C1D78ABD9003AD410 /* chapter10-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3E1D78ABD9003AD410 /* chapter10-es.patch */; };
+		0F669F4D1D78ABD9003AD410 /* chapter11-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F3F1D78ABD9003AD410 /* chapter11-es.patch */; };
 		0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F4E1D78AC33003AD410 /* PatchBook.sh */; };
 		0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */; };
 		0F78F7301D596F3D00DAE36A /* chapter1.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7321D596F3D00DAE36A /* chapter1.html */; };
@@ -145,34 +145,34 @@
 		0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSwipeGesturesTests.swift; sourceTree = "<group>"; };
 		0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageViewController.swift; sourceTree = "<group>"; };
 		0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterViewController.swift; sourceTree = "<group>"; };
-		0F669F161D78ABAA003AD410 /* book-add-chapters.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-add-chapters.patch"; sourceTree = "<group>"; };
-		0F669F171D78ABAA003AD410 /* book-fix-warnings.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-fix-warnings.patch"; sourceTree = "<group>"; };
-		0F669F181D78ABAA003AD410 /* book-remove-chapter-numbers.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-remove-chapter-numbers.patch"; sourceTree = "<group>"; };
-		0F669F191D78ABAA003AD410 /* chapter1.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter1.patch; sourceTree = "<group>"; };
-		0F669F1A1D78ABAA003AD410 /* chapter2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter2.patch; sourceTree = "<group>"; };
-		0F669F1B1D78ABAA003AD410 /* chapter3.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter3.patch; sourceTree = "<group>"; };
-		0F669F1C1D78ABAA003AD410 /* chapter4.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter4.patch; sourceTree = "<group>"; };
-		0F669F1D1D78ABAA003AD410 /* chapter5.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter5.patch; sourceTree = "<group>"; };
-		0F669F1E1D78ABAA003AD410 /* chapter6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter6.patch; sourceTree = "<group>"; };
-		0F669F1F1D78ABAA003AD410 /* chapter7.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter7.patch; sourceTree = "<group>"; };
-		0F669F201D78ABAA003AD410 /* chapter8.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter8.patch; sourceTree = "<group>"; };
-		0F669F211D78ABAA003AD410 /* chapter9.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter9.patch; sourceTree = "<group>"; };
-		0F669F221D78ABAA003AD410 /* chapter10.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter10.patch; sourceTree = "<group>"; };
-		0F669F231D78ABAA003AD410 /* chapter11.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter11.patch; sourceTree = "<group>"; };
-		0F669F321D78ABD9003AD410 /* book-add-chapters.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-add-chapters.patch"; sourceTree = "<group>"; };
-		0F669F331D78ABD9003AD410 /* book-fix-warnings.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-fix-warnings.patch"; sourceTree = "<group>"; };
-		0F669F341D78ABD9003AD410 /* book-remove-chapter-numbers.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-remove-chapter-numbers.patch"; sourceTree = "<group>"; };
-		0F669F351D78ABD9003AD410 /* chapter1.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter1.patch; sourceTree = "<group>"; };
-		0F669F361D78ABD9003AD410 /* chapter2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter2.patch; sourceTree = "<group>"; };
-		0F669F371D78ABD9003AD410 /* chapter3.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter3.patch; sourceTree = "<group>"; };
-		0F669F381D78ABD9003AD410 /* chapter4.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter4.patch; sourceTree = "<group>"; };
-		0F669F391D78ABD9003AD410 /* chapter5.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter5.patch; sourceTree = "<group>"; };
-		0F669F3A1D78ABD9003AD410 /* chapter6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter6.patch; sourceTree = "<group>"; };
-		0F669F3B1D78ABD9003AD410 /* chapter7.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter7.patch; sourceTree = "<group>"; };
-		0F669F3C1D78ABD9003AD410 /* chapter8.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter8.patch; sourceTree = "<group>"; };
-		0F669F3D1D78ABD9003AD410 /* chapter9.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter9.patch; sourceTree = "<group>"; };
-		0F669F3E1D78ABD9003AD410 /* chapter10.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter10.patch; sourceTree = "<group>"; };
-		0F669F3F1D78ABD9003AD410 /* chapter11.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chapter11.patch; sourceTree = "<group>"; };
+		0F669F161D78ABAA003AD410 /* book-add-chapters-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-add-chapters-en.patch"; sourceTree = "<group>"; };
+		0F669F171D78ABAA003AD410 /* book-fix-warnings-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-fix-warnings-en.patch"; sourceTree = "<group>"; };
+		0F669F181D78ABAA003AD410 /* book-remove-chapter-numbers-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-remove-chapter-numbers-en.patch"; sourceTree = "<group>"; };
+		0F669F191D78ABAA003AD410 /* chapter1-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter1-en.patch"; sourceTree = "<group>"; };
+		0F669F1A1D78ABAA003AD410 /* chapter2-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter2-en.patch"; sourceTree = "<group>"; };
+		0F669F1B1D78ABAA003AD410 /* chapter3-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter3-en.patch"; sourceTree = "<group>"; };
+		0F669F1C1D78ABAA003AD410 /* chapter4-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter4-en.patch"; sourceTree = "<group>"; };
+		0F669F1D1D78ABAA003AD410 /* chapter5-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter5-en.patch"; sourceTree = "<group>"; };
+		0F669F1E1D78ABAA003AD410 /* chapter6-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter6-en.patch"; sourceTree = "<group>"; };
+		0F669F1F1D78ABAA003AD410 /* chapter7-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter7-en.patch"; sourceTree = "<group>"; };
+		0F669F201D78ABAA003AD410 /* chapter8-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter8-en.patch"; sourceTree = "<group>"; };
+		0F669F211D78ABAA003AD410 /* chapter9-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter9-en.patch"; sourceTree = "<group>"; };
+		0F669F221D78ABAA003AD410 /* chapter10-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter10-en.patch"; sourceTree = "<group>"; };
+		0F669F231D78ABAA003AD410 /* chapter11-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter11-en.patch"; sourceTree = "<group>"; };
+		0F669F321D78ABD9003AD410 /* book-add-chapters-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-add-chapters-es.patch"; sourceTree = "<group>"; };
+		0F669F331D78ABD9003AD410 /* book-fix-warnings-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-fix-warnings-es.patch"; sourceTree = "<group>"; };
+		0F669F341D78ABD9003AD410 /* book-remove-chapter-numbers-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-remove-chapter-numbers-es.patch"; sourceTree = "<group>"; };
+		0F669F351D78ABD9003AD410 /* chapter1-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter1-es.patch"; sourceTree = "<group>"; };
+		0F669F361D78ABD9003AD410 /* chapter2-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter2-es.patch"; sourceTree = "<group>"; };
+		0F669F371D78ABD9003AD410 /* chapter3-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter3-es.patch"; sourceTree = "<group>"; };
+		0F669F381D78ABD9003AD410 /* chapter4-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter4-es.patch"; sourceTree = "<group>"; };
+		0F669F391D78ABD9003AD410 /* chapter5-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter5-es.patch"; sourceTree = "<group>"; };
+		0F669F3A1D78ABD9003AD410 /* chapter6-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter6-es.patch"; sourceTree = "<group>"; };
+		0F669F3B1D78ABD9003AD410 /* chapter7-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter7-es.patch"; sourceTree = "<group>"; };
+		0F669F3C1D78ABD9003AD410 /* chapter8-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter8-es.patch"; sourceTree = "<group>"; };
+		0F669F3D1D78ABD9003AD410 /* chapter9-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter9-es.patch"; sourceTree = "<group>"; };
+		0F669F3E1D78ABD9003AD410 /* chapter10-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter10-es.patch"; sourceTree = "<group>"; };
+		0F669F3F1D78ABD9003AD410 /* chapter11-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter11-es.patch"; sourceTree = "<group>"; };
 		0F669F4E1D78AC33003AD410 /* PatchBook.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = PatchBook.sh; sourceTree = "<group>"; };
 		0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersTableView.swift; sourceTree = "<group>"; };
 		0F78F7311D596F3D00DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter1.html; sourceTree = "<group>"; };
@@ -345,20 +345,20 @@
 		0F669F141D78AB7C003AD410 /* English */ = {
 			isa = PBXGroup;
 			children = (
-				0F669F161D78ABAA003AD410 /* book-add-chapters.patch */,
-				0F669F171D78ABAA003AD410 /* book-fix-warnings.patch */,
-				0F669F181D78ABAA003AD410 /* book-remove-chapter-numbers.patch */,
-				0F669F191D78ABAA003AD410 /* chapter1.patch */,
-				0F669F1A1D78ABAA003AD410 /* chapter2.patch */,
-				0F669F1B1D78ABAA003AD410 /* chapter3.patch */,
-				0F669F1C1D78ABAA003AD410 /* chapter4.patch */,
-				0F669F1D1D78ABAA003AD410 /* chapter5.patch */,
-				0F669F1E1D78ABAA003AD410 /* chapter6.patch */,
-				0F669F1F1D78ABAA003AD410 /* chapter7.patch */,
-				0F669F201D78ABAA003AD410 /* chapter8.patch */,
-				0F669F211D78ABAA003AD410 /* chapter9.patch */,
-				0F669F221D78ABAA003AD410 /* chapter10.patch */,
-				0F669F231D78ABAA003AD410 /* chapter11.patch */,
+				0F669F161D78ABAA003AD410 /* book-add-chapters-en.patch */,
+				0F669F171D78ABAA003AD410 /* book-fix-warnings-en.patch */,
+				0F669F181D78ABAA003AD410 /* book-remove-chapter-numbers-en.patch */,
+				0F669F191D78ABAA003AD410 /* chapter1-en.patch */,
+				0F669F1A1D78ABAA003AD410 /* chapter2-en.patch */,
+				0F669F1B1D78ABAA003AD410 /* chapter3-en.patch */,
+				0F669F1C1D78ABAA003AD410 /* chapter4-en.patch */,
+				0F669F1D1D78ABAA003AD410 /* chapter5-en.patch */,
+				0F669F1E1D78ABAA003AD410 /* chapter6-en.patch */,
+				0F669F1F1D78ABAA003AD410 /* chapter7-en.patch */,
+				0F669F201D78ABAA003AD410 /* chapter8-en.patch */,
+				0F669F211D78ABAA003AD410 /* chapter9-en.patch */,
+				0F669F221D78ABAA003AD410 /* chapter10-en.patch */,
+				0F669F231D78ABAA003AD410 /* chapter11-en.patch */,
 			);
 			path = English;
 			sourceTree = "<group>";
@@ -366,20 +366,20 @@
 		0F669F151D78AB92003AD410 /* Spanish */ = {
 			isa = PBXGroup;
 			children = (
-				0F669F321D78ABD9003AD410 /* book-add-chapters.patch */,
-				0F669F331D78ABD9003AD410 /* book-fix-warnings.patch */,
-				0F669F341D78ABD9003AD410 /* book-remove-chapter-numbers.patch */,
-				0F669F351D78ABD9003AD410 /* chapter1.patch */,
-				0F669F361D78ABD9003AD410 /* chapter2.patch */,
-				0F669F371D78ABD9003AD410 /* chapter3.patch */,
-				0F669F381D78ABD9003AD410 /* chapter4.patch */,
-				0F669F391D78ABD9003AD410 /* chapter5.patch */,
-				0F669F3A1D78ABD9003AD410 /* chapter6.patch */,
-				0F669F3B1D78ABD9003AD410 /* chapter7.patch */,
-				0F669F3C1D78ABD9003AD410 /* chapter8.patch */,
-				0F669F3D1D78ABD9003AD410 /* chapter9.patch */,
-				0F669F3E1D78ABD9003AD410 /* chapter10.patch */,
-				0F669F3F1D78ABD9003AD410 /* chapter11.patch */,
+				0F669F321D78ABD9003AD410 /* book-add-chapters-es.patch */,
+				0F669F331D78ABD9003AD410 /* book-fix-warnings-es.patch */,
+				0F669F341D78ABD9003AD410 /* book-remove-chapter-numbers-es.patch */,
+				0F669F351D78ABD9003AD410 /* chapter1-es.patch */,
+				0F669F361D78ABD9003AD410 /* chapter2-es.patch */,
+				0F669F371D78ABD9003AD410 /* chapter3-es.patch */,
+				0F669F381D78ABD9003AD410 /* chapter4-es.patch */,
+				0F669F391D78ABD9003AD410 /* chapter5-es.patch */,
+				0F669F3A1D78ABD9003AD410 /* chapter6-es.patch */,
+				0F669F3B1D78ABD9003AD410 /* chapter7-es.patch */,
+				0F669F3C1D78ABD9003AD410 /* chapter8-es.patch */,
+				0F669F3D1D78ABD9003AD410 /* chapter9-es.patch */,
+				0F669F3E1D78ABD9003AD410 /* chapter10-es.patch */,
+				0F669F3F1D78ABD9003AD410 /* chapter11-es.patch */,
 			);
 			path = Spanish;
 			sourceTree = "<group>";
@@ -614,17 +614,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F78F7301D596F3D00DAE36A /* chapter1.html in Resources */,
-				0F669F451D78ABD9003AD410 /* chapter3.patch in Resources */,
-				0F669F491D78ABD9003AD410 /* chapter7.patch in Resources */,
-				0F669F281D78ABAA003AD410 /* chapter2.patch in Resources */,
+				0F669F451D78ABD9003AD410 /* chapter3-es.patch in Resources */,
+				0F669F491D78ABD9003AD410 /* chapter7-es.patch in Resources */,
+				0F669F281D78ABAA003AD410 /* chapter2-en.patch in Resources */,
 				0F78F7C91D5971B500DAE36A /* chapter2.html in Resources */,
 				0F78F7611D59703100DAE36A /* MT-Falling_Log_DOWN.png in Resources */,
 				0F78F7F61D5971F800DAE36A /* about-author.html in Resources */,
 				0F78F75B1D59703100DAE36A /* governing_front.png in Resources */,
-				0F669F311D78ABAA003AD410 /* chapter11.patch in Resources */,
-				0F669F431D78ABD9003AD410 /* chapter1.patch in Resources */,
-				0F669F2D1D78ABAA003AD410 /* chapter7.patch in Resources */,
-				0F669F4A1D78ABD9003AD410 /* chapter8.patch in Resources */,
+				0F669F311D78ABAA003AD410 /* chapter11-en.patch in Resources */,
+				0F669F431D78ABD9003AD410 /* chapter1-es.patch in Resources */,
+				0F669F2D1D78ABAA003AD410 /* chapter7-en.patch in Resources */,
+				0F669F4A1D78ABD9003AD410 /* chapter8-es.patch in Resources */,
 				0F78F7DD1D5971D200DAE36A /* chapter6.html in Resources */,
 				0F78F75C1D59703100DAE36A /* governing_front1.png in Resources */,
 				0F78F7721D59703100DAE36A /* Revised_Emotion_Chart,_sample.png in Resources */,
@@ -633,54 +633,54 @@
 				0F78F7641D59703100DAE36A /* MT-Hand_Solo_UP.png in Resources */,
 				0F78F7E21D5971D900DAE36A /* chapter7.html in Resources */,
 				0F78F7D81D5971CA00DAE36A /* chapter5.html in Resources */,
-				0F669F241D78ABAA003AD410 /* book-add-chapters.patch in Resources */,
+				0F669F241D78ABAA003AD410 /* book-add-chapters-en.patch in Resources */,
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				0F78F7741D59703100DAE36A /* Trapped_Emotion_FlowChart_rev_4-1-2010.png in Resources */,
 				0F78F75E1D59703100DAE36A /* governing-back1.png in Resources */,
 				0F78F76B1D59703100DAE36A /* MT-surrogate_testing_adult.png in Resources */,
-				0F669F461D78ABD9003AD410 /* chapter4.patch in Resources */,
-				0F669F411D78ABD9003AD410 /* book-fix-warnings.patch in Resources */,
+				0F669F461D78ABD9003AD410 /* chapter4-es.patch in Resources */,
+				0F669F411D78ABD9003AD410 /* book-fix-warnings-es.patch in Resources */,
 				0F78F8011D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png in Resources */,
 				0F78F7CE1D5971BB00DAE36A /* chapter3.html in Resources */,
 				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
 				0F78F75D1D59703100DAE36A /* governing-back.png in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
-				0F669F2B1D78ABAA003AD410 /* chapter5.patch in Resources */,
+				0F669F2B1D78ABAA003AD410 /* chapter5-en.patch in Resources */,
 				0F78F7661D59703100DAE36A /* MT-Hole_in_One_OPEN.png in Resources */,
-				0F669F4C1D78ABD9003AD410 /* chapter10.patch in Resources */,
+				0F669F4C1D78ABD9003AD410 /* chapter10-es.patch in Resources */,
 				0F78F7701D59703100DAE36A /* Revised_Emotion_Chart,_full.png in Resources */,
-				0F669F2A1D78ABAA003AD410 /* chapter4.patch in Resources */,
+				0F669F2A1D78ABAA003AD410 /* chapter4-en.patch in Resources */,
 				0F78F7711D59703100DAE36A /* Revised_Emotion_Chart,_full1.png in Resources */,
 				0F78F7E71D5971E400DAE36A /* chapter8.html in Resources */,
 				0F78F76D1D59703100DAE36A /* MT-Sway_Backward.png in Resources */,
 				0F78F7F11D5971F200DAE36A /* chapter10.html in Resources */,
-				0F669F261D78ABAA003AD410 /* book-remove-chapter-numbers.patch in Resources */,
+				0F669F261D78ABAA003AD410 /* book-remove-chapter-numbers-en.patch in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
-				0F669F291D78ABAA003AD410 /* chapter3.patch in Resources */,
+				0F669F291D78ABAA003AD410 /* chapter3-en.patch in Resources */,
 				0F78F8001D59777F00DAE36A /* FLowChart-Spanish.jpg in Resources */,
-				0F669F441D78ABD9003AD410 /* chapter2.patch in Resources */,
-				0F669F251D78ABAA003AD410 /* book-fix-warnings.patch in Resources */,
+				0F669F441D78ABD9003AD410 /* chapter2-es.patch in Resources */,
+				0F669F251D78ABAA003AD410 /* book-fix-warnings-en.patch in Resources */,
 				0F78F7691D59703100DAE36A /* MT-Ring_in_Ring_CLOSED.png in Resources */,
 				0F78F7591D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png in Resources */,
-				0F669F301D78ABAA003AD410 /* chapter10.patch in Resources */,
+				0F669F301D78ABAA003AD410 /* chapter10-en.patch in Resources */,
 				0F78F76F1D59703100DAE36A /* Proxy_Scene.png in Resources */,
-				0F669F2C1D78ABAA003AD410 /* chapter6.patch in Resources */,
-				0F669F4D1D78ABD9003AD410 /* chapter11.patch in Resources */,
-				0F669F421D78ABD9003AD410 /* book-remove-chapter-numbers.patch in Resources */,
-				0F669F271D78ABAA003AD410 /* chapter1.patch in Resources */,
+				0F669F2C1D78ABAA003AD410 /* chapter6-en.patch in Resources */,
+				0F669F4D1D78ABD9003AD410 /* chapter11-es.patch in Resources */,
+				0F669F421D78ABD9003AD410 /* book-remove-chapter-numbers-es.patch in Resources */,
+				0F669F271D78ABAA003AD410 /* chapter1-en.patch in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
 				0F78F7621D59703100DAE36A /* MT-Falling_Log_UP.png in Resources */,
 				0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
-				0F669F481D78ABD9003AD410 /* chapter6.patch in Resources */,
+				0F669F481D78ABD9003AD410 /* chapter6-es.patch in Resources */,
 				0F78F75A1D59703100DAE36A /* FLowChart.jpg in Resources */,
 				0F78F8041D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
 				0F78F7681D59703100DAE36A /* MT-Placement.png in Resources */,
 				0F78F7751D59703100DAE36A /* Tuning_Forks.png in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
-				0F669F401D78ABD9003AD410 /* book-add-chapters.patch in Resources */,
+				0F669F401D78ABD9003AD410 /* book-add-chapters-es.patch in Resources */,
 				0F78F7631D59703100DAE36A /* MT-Hand_Solo_DOWN.png in Resources */,
 				0F78F80F1D597D9700DAE36A /* idGeneratedStyles.css in Resources */,
 				0F78F8021D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish1.png in Resources */,
@@ -689,13 +689,13 @@
 				0F78F7601D59703100DAE36A /* kirlian_halvblad.png in Resources */,
 				0F78F7731D59703100DAE36A /* Smiling_face.png in Resources */,
 				0F78F8031D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png in Resources */,
-				0F669F2E1D78ABAA003AD410 /* chapter8.patch in Resources */,
+				0F669F2E1D78ABAA003AD410 /* chapter8-en.patch in Resources */,
 				0F78F76C1D59703100DAE36A /* MT-surrogate_testing.png in Resources */,
 				0F78F76A1D59703100DAE36A /* MT-Ring_in_Ring_OPEN.png in Resources */,
-				0F669F2F1D78ABAA003AD410 /* chapter9.patch in Resources */,
-				0F669F471D78ABD9003AD410 /* chapter5.patch in Resources */,
+				0F669F2F1D78ABAA003AD410 /* chapter9-en.patch in Resources */,
+				0F669F471D78ABD9003AD410 /* chapter5-es.patch in Resources */,
 				0F78F75F1D59703100DAE36A /* Heart-Wall_FlowChart_rev_4-1-2010.png in Resources */,
-				0F669F4B1D78ABD9003AD410 /* chapter9.patch in Resources */,
+				0F669F4B1D78ABD9003AD410 /* chapter9-es.patch in Resources */,
 				0F78F7EC1D5971EB00DAE36A /* chapter9.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
