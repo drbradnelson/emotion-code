@@ -79,13 +79,11 @@ extension ChartOverviewLayoutAttributesCalculator {
     }
 
     private func calculateFrame(forColumntHeaderAtPosition position: Int, inArea area: CGRect) -> CGRect {
-        let offset = calculateColumnOffset()
+        let offset = calculateColumnOffset(forColumnIndex: position)
         let columnWidth = calculateColumnWidth()
         let headerHeight = layoutParams.heightForColumnHeaderElement
 
-        let startPosition = offset + CGFloat(position) * (layoutParams.spacingBetweenColumns + columnWidth)
-
-        let frame = CGRect.init(x: area.minX + startPosition, y: area.minY, width: columnWidth, height: headerHeight)
+        let frame = CGRect.init(x: area.minX + offset, y: area.minY, width: columnWidth, height: headerHeight)
         return frame
     }
 
@@ -113,16 +111,18 @@ extension ChartOverviewLayoutAttributesCalculator {
         return frame
     }
 
-    private func calculateColumnOffset() -> CGFloat {
-        return layoutParams.widthForRowCounterElement
+    private func calculateColumnOffset(forColumnIndex column: Int) -> CGFloat {
+
+        let initialOffset = layoutParams.widthForRowCounterElement
+        let columnWidth = calculateColumnWidth()
+        let spacing = layoutParams.spacingBetweenColumns
+
+        let startPosition = initialOffset + CGFloat(column) * (spacing + columnWidth)
+        return startPosition
     }
 
     private func calculateHorizontalOffsetForRow(atPosition position: ChartRowPosition) -> CGFloat {
-        let columnWidth = calculateColumnWidth()
-        let columnSpacing = layoutParams.spacingBetweenRows
-        let rowCounterWidth = layoutParams.widthForRowCounterElement
-
-        let offset = rowCounterWidth + (columnSpacing + columnWidth) * CGFloat(position.columnIndex)
+        let offset = self.calculateColumnOffset(forColumnIndex: position.columnIndex)
         return offset
     }
 
