@@ -1,10 +1,6 @@
-import Foundation
 import UIKit
 
-struct ChartOverviewRowCellLayout {
-
-
-}
+struct ChartOverviewRowCellLayout {}
 
 extension ChartOverviewRowCellLayout {
 
