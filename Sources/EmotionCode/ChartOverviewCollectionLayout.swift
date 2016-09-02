@@ -53,7 +53,7 @@ extension ChartOverviewCollectionLayout {
             ChartOverviewCollectionLayout.kRowElementIdentifier : rowElementsAttributes,
         ]
 
-        calculatedContentSize = CGSize.init(width: CGRectGetWidth(allocator.allocatedArea()), height: CGRectGetHeight(allocator.allocatedArea()))
+        calculatedContentSize = CGSize.init(width: allocator.allocatedArea().width, height: allocator.allocatedArea().height)
     }
 
     private func calculateAttributesForColumnElementHeader(withCalculator calculator: ChartOverviewLayoutAttributesCalculator) -> [NSIndexPath: UICollectionViewLayoutAttributes] {
@@ -96,7 +96,7 @@ extension ChartOverviewCollectionLayout {
 extension ChartOverviewCollectionLayout {
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let attributes = layoutAttributesList?.filter({ (attribute) -> Bool in
-            CGRectIntersectsRect(attribute.frame, rect)
+            return attribute.frame.intersects(rect)
         })
 
         return attributes
