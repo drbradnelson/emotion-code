@@ -142,4 +142,8 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
         let height = ChartOverviewRowCellLayout.height(forItems: maxItems)
         return height
     }
+
+    func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 10)
+    }
 }
