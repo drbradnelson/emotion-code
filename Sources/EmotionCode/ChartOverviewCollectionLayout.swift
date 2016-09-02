@@ -1,8 +1,3 @@
-//
-// Created by Marlon Meuters on 30/08/16.
-// Copyright (c) 2016 DiscoverHealing.com. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
