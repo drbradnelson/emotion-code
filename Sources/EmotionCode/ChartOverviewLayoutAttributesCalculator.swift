@@ -136,7 +136,7 @@ extension ChartOverviewLayoutAttributesCalculator {
             let rowCounterElementWidth = layoutParams.widthForRowCounterElement
             let numberOfColumns = adapter.numberOfColumns()
             let interColumnsSpacing = layoutParams.spacingBetweenColumns
-            let availableColumnsWidth = (layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing
+            let availableColumnsWidth = (layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing - layoutParams.contentInsets.left - layoutParams.contentInsets.right
             _columnWidth = availableColumnsWidth / CGFloat(numberOfColumns)
 
         }

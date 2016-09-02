@@ -6,6 +6,7 @@ protocol ChartOverviewLayoutParams {
     var spacingBetweenColumns: CGFloat {get}
     var spacingBetweenRows: CGFloat {get}
     var availableWidth: CGFloat {get}
+    var contentInsets: UIEdgeInsets {get}
 
     func heightForRowElement(forRow row: Int) -> CGFloat
 }
@@ -48,6 +49,12 @@ extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
     var layoutParams: ChartOverviewLayoutParams {
         get {
             return self
+        }
+    }
+
+    var contentInsets: UIEdgeInsets {
+        get {
+            return delegate.insetsForContent(inCollectionView: collectionView!, layout: self)
         }
     }
 }

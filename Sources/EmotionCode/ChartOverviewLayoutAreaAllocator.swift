@@ -2,22 +2,25 @@ import UIKit
 
 final class ChartOverviewLayoutAreaAllocator {
 
+    let insets: UIEdgeInsets
     let areaWidth: CGFloat
     var areaCurrentHeight: CGFloat = 0
 
-    init(areaWidth: CGFloat) {
+    init(areaWidth: CGFloat, andInsets insets: UIEdgeInsets) {
         self.areaWidth = areaWidth
+        self.insets = insets
+        areaCurrentHeight = insets.top
     }
 
     func allocateArea(withHeight height: CGFloat) -> CGRect {
         let startY = areaCurrentHeight
         areaCurrentHeight += height
 
-        let area = CGRect.init(x: 0, y: startY, width: areaWidth, height: height)
+        let area = CGRect.init(x: insets.left, y: startY, width: areaWidth - insets.right - insets.right, height: height)
         return area
     }
 
     func allocatedArea() -> CGRect {
-        return CGRect.init(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight)
+        return CGRect.init(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
     }
 }

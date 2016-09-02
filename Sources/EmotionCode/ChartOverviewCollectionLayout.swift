@@ -11,6 +11,8 @@ protocol ChartOverviewCollectionLayoutDelegate: NSObjectProtocol {
     func spacingBetweenColumns(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
     func spacingBetweenRows(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
     func spacingBetweenItems(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
+
+    func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets
 }
 
 // MARK: Main
@@ -35,7 +37,8 @@ extension ChartOverviewCollectionLayout {
     override func prepareLayout() {
         var layoutAttributesList = [UICollectionViewLayoutAttributes]()
 
-        let allocator = ChartOverviewLayoutAreaAllocator.init(areaWidth: layoutParams.availableWidth)
+        let contentInsets = delegate.insetsForContent(inCollectionView: self.collectionView!, layout: self)
+        let allocator = ChartOverviewLayoutAreaAllocator.init(areaWidth: layoutParams.availableWidth, andInsets: contentInsets)
         let calculator = ChartOverviewLayoutAttributesCalculator.init(adapter: adapter, layoutParams: layoutParams, areaAllocator: allocator)
 
         let columnHeaderElementAttributesMap = calculateAttributesForColumnElementHeader(withCalculator: calculator)
