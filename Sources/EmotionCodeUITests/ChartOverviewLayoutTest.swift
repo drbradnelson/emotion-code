@@ -11,7 +11,6 @@ final class ChartOverviewLayoutTest: XCTestCase {
         sleep(1)
         app.buttons["Chart"].tap()
     }
-
 }
 
 // MARK: Tests
@@ -29,6 +28,18 @@ extension ChartOverviewLayoutTest {
             let rowCellElement = app.collectionViews.first.childrenMatchingType(.Any).matchingIdentifier("RowCell_\(index)_0")
 
             let result = columnHeader.element.frame.maxY >= rowCellElement.element.frame.minY
+            XCTAssertEqual(result, true)
+        }
+    }
+
+    func testAllCoumnHeadersAreHorizontallyAligned() {
+        for index in 0 ..< 2 {
+            let columnHeader = app.collectionViews.first.childrenMatchingType(.Other).matchingIdentifier("ColumnHeader_\(index)")
+            let rowCellElement = app.collectionViews.first.childrenMatchingType(.Any).matchingIdentifier("RowCell_\(index)_0")
+
+            let leftAligned = columnHeader.element.frame.minX == rowCellElement.element.frame.minX
+            let rightAligned = columnHeader.element.frame.maxX == rowCellElement.element.frame.maxX
+            let result = leftAligned && rightAligned
             XCTAssertEqual(result, true)
         }
     }
