@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ChartOverviewLayoutAttributesCalculator {
+final class ChartOverviewLayoutAttributesCalculator {
 
     private let adapter: ChartOverviewCollectionLayoutDataAdapter
     private let layoutParams: ChartOverviewLayoutParams

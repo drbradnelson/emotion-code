@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 
-class ChartOverviewLayoutAreaAllocator {
+final class ChartOverviewLayoutAreaAllocator {
 
     let areaWidth: CGFloat
     var areaCurrentHeight: CGFloat = 0
