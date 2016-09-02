@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ChartOverviewItemView: UIView {
+final class ChartOverviewItemView: UIView {
 
     private (set) var titleLabel: UILabel
 

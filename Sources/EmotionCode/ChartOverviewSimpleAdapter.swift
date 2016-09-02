@@ -1,6 +1,6 @@
 import Foundation
 
-class ChartOverviewSimpleAdapter {
+final class ChartOverviewSimpleAdapter {
 
     private var chart: Chart
     init(chart: Chart) {

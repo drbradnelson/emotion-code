@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ChartOverviewRowCell: UICollectionViewCell {
+final class ChartOverviewRowCell: UICollectionViewCell {
 
     var itemViews: [ChartOverviewItemView]?
 

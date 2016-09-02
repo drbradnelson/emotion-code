@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ChartOverviewAccessibilityController {
+final class ChartOverviewAccessibilityController {
 }
 
 // MARK: Setup Accessibility
