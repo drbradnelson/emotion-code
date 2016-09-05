@@ -8,7 +8,7 @@ final class ChartRowDetailsAccessibilityController {
 
 extension ChartRowDetailsAccessibilityController {
     static func setupAccessibilit(forChartOverviewView view: UIView) {
-        view.accessibilityIdentifier = ChartOverviewAccessibilityController.chartOverviewViewIdentifier
+        view.accessibilityIdentifier = ChartRowDetailsAccessibilityController.chartRowDetailsViewIdentifier
     }
 
     static func setupAccessibility(forRowCounterView view: UIView, atRowIndex rowIndex: Int) {
@@ -20,6 +20,6 @@ extension ChartRowDetailsAccessibilityController {
 // MARK: Constants
 
 extension ChartRowDetailsAccessibilityController {
-    static let chartOverviewViewIdentifier = "ChartRowDetailsView"
+    static let chartRowDetailsViewIdentifier = "ChartRowDetailsView"
     static let rowCellIdentifierPrefix = "RowCell"
 }
