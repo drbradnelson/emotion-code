@@ -9,7 +9,10 @@ sed -E -e's,<a href="">(.*)</a>,\1,g' -e's,<span.*> +</span>,,g' <EmotionCode/bo
 rm EmotionCode/book-with-chapters.html
 rm EmotionCode/book-no-chapter-numbers.html
 
-ENGLISH_LOCALIZATION_FOLDER_PATH=${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj/
+mkdir -p ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj/
+
+UNLOCALIZED_RESOURCES_FOLDER_PATH=${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}
+ENGLISH_LOCALIZATION_FOLDER_PATH=$UNLOCALIZED_RESOURCES_FOLDER_PATH/en.lproj
 
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter1-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter1.html
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter2-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter2.html
