@@ -16,12 +16,10 @@ class ChartRowDetailsViewController: UIViewController {
     @IBOutlet weak var chartRowTitleLabel: UILabel!
     @IBOutlet weak var rowDetailsView: UICollectionView!
 
-    var chartRowPosition: ChartRowPosition?
-    var interactionInProgress = false
-    var runningTrans: UIPercentDrivenInteractiveTransition?
     
-    private var shouldCompleteTransition = false
+    private var transitionController: ChartRowDetailsTransitionController!
 
+    var chartRowPosition: ChartRowPosition!
     private let chart = { () -> Chart in
         return ChartController().chart
     }()
@@ -37,83 +35,12 @@ extension ChartRowDetailsViewController {
 
         self.prepareData()
         self.prepareUI()
-        
-        let gr = UIScreenEdgePanGestureRecognizer.init(target: self, action: #selector(panGR(_:)))
-        gr.edges = UIRectEdge.Left
-        self.view.addGestureRecognizer(gr)
-    }
-    
-    func panGR(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
-        let translation = gestureRecognizer.translationInView(gestureRecognizer.view!.superview!)
-        var progress = (translation.x / 200)
-        progress = CGFloat(fminf(fmaxf(Float(progress), 0.0), 1.0))
-        
-        switch gestureRecognizer.state {
-            
-            
-        case .Began:
-            interactionInProgress = true
-//            viewController.dismissViewControllerAnimated(true, completion: nil)
-            self.navigationController!.popViewControllerAnimated(true)
-        case .Changed:
-            shouldCompleteTransition = progress > 0.5
-            self.runningTrans?.updateInteractiveTransition(progress)
-            
-            
-        case .Cancelled:
-            interactionInProgress = false
-            self.runningTrans?.cancelInteractiveTransition()
-            
-            
-        case .Ended:
-            interactionInProgress = false
-            
-            if !shouldCompleteTransition {
-                self.runningTrans?.cancelInteractiveTransition()
-                
-            } else {
-                self.runningTrans?.finishInteractiveTransition()
-                
-            }
-            
-            self.runningTrans = nil
-            
-        default:
-            print("Unsupported")
-        }
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
         self.rowDetailsView.reloadData()
-        
-        self.navigationController!.delegate = self
-    }
-}
-
-// MARK: UINavigationController delegate
-
-extension ChartRowDetailsViewController: UINavigationControllerDelegate {
-    
-    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        var transition: UIViewControllerAnimatedTransitioning? = nil
-        if fromVC is ChartRowDetailsViewController && toVC is ChartOverviewViewController {
-            transition = ChartOverviewToRowDetailsTransition.init(direction: .Backward)
-        }
-        
-        return transition
-    }
-    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        if interactionInProgress {
-            self.runningTrans = UIPercentDrivenInteractiveTransition.init()
-            return self.runningTrans
-        } else {
-            return nil
-        }
-        
-        
     }
 }
 
@@ -122,6 +49,7 @@ extension ChartRowDetailsViewController: UINavigationControllerDelegate {
 extension ChartRowDetailsViewController {
     private func prepareData() {
         self.chartRow = self.chart.row(forPosition: self.chartRowPosition!)
+        self.transitionController = ChartRowDetailsTransitionController.init(chartRowDetailsViewController: self)
     }
 
     private func prepareUI() {
@@ -131,7 +59,7 @@ extension ChartRowDetailsViewController {
         self.rowDetailsView.delegate = self
         self.rowDetailsView.dataSource = self
 
-        self.rowDetailsView.registerClass(CollectionViewCellWithTitle.self, forCellWithReuseIdentifier: ChartRowDetailsViewController.kRowDetailsCellIdentifier)
+        self.rowDetailsView.registerClass(CollectionViewCellWithTitle.self, forCellWithReuseIdentifier: ChartRowDetailsViewController.rowDetailsCellIdentifier)
     }
 }
 
@@ -145,7 +73,7 @@ extension ChartRowDetailsViewController: UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier(ChartRowDetailsViewController.kRowDetailsCellIdentifier, forIndexPath: indexPath) as! CollectionViewCellWithTitle
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier(ChartRowDetailsViewController.rowDetailsCellIdentifier, forIndexPath: indexPath) as! CollectionViewCellWithTitle
 
         let item = self.chartRow!.items[indexPath.item]
         cell.title = item.title
@@ -183,7 +111,7 @@ extension ChartRowDetailsViewController: UICollectionViewDelegateFlowLayout {
 // MARK: Constants
 
 private extension ChartRowDetailsViewController {
-    static let kRowDetailsCellIdentifier = "RowDetailsCell"
+    static let rowDetailsCellIdentifier = "RowDetailsCell"
 
     static let sectionInsets = UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: 10)
     static let spacingBetweenItems: CGFloat = 5

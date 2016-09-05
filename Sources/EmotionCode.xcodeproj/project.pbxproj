@@ -80,6 +80,7 @@
 		1B25270B1D798920005DF51C /* TabNavigationDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2526FF1D798920005DF51C /* TabNavigationDefaultTests.swift */; };
 		1B25270C1D798920005DF51C /* TabNavigationHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2527001D798920005DF51C /* TabNavigationHelpTests.swift */; };
 		1B25270D1D798920005DF51C /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2527011D798920005DF51C /* TabNavigationLayoutTests.swift */; };
+		1B1A43191D7D35F700C7DD1E /* ChartRowDetailsTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1A43181D7D35F700C7DD1E /* ChartRowDetailsTransitionController.swift */; };
 		1B25267F1D797D3B005DF51C /* TransitionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25267E1D797D3B005DF51C /* TransitionExecutor.swift */; };
 		1B25270F1D79A5C9005DF51C /* ChartOverviewToRowDetailsMainRowTransitionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25270E1D79A5C9005DF51C /* ChartOverviewToRowDetailsMainRowTransitionExecutor.swift */; };
 		1B2527111D79B2A3005DF51C /* ChartOverviewToRowDetailsControllerTransitionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2527101D79B2A3005DF51C /* ChartOverviewToRowDetailsControllerTransitionExecutor.swift */; };
@@ -228,6 +229,7 @@
 		1B2526FF1D798920005DF51C /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
 		1B2527001D798920005DF51C /* TabNavigationHelpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationHelpTests.swift; sourceTree = "<group>"; };
 		1B2527011D798920005DF51C /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
+		1B1A43181D7D35F700C7DD1E /* ChartRowDetailsTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowDetailsTransitionController.swift; sourceTree = "<group>"; };
 		1B25267E1D797D3B005DF51C /* TransitionExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionExecutor.swift; sourceTree = "<group>"; };
 		1B25270E1D79A5C9005DF51C /* ChartOverviewToRowDetailsMainRowTransitionExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewToRowDetailsMainRowTransitionExecutor.swift; sourceTree = "<group>"; };
 		1B2527101D79B2A3005DF51C /* ChartOverviewToRowDetailsControllerTransitionExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewToRowDetailsControllerTransitionExecutor.swift; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				1B78FB151D7818F600F499B8 /* ChartRowDetialsViewController.swift */,
+				1B1A43181D7D35F700C7DD1E /* ChartRowDetailsTransitionController.swift */,
 			);
 			name = RowDetails;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 				1B8B03A11D75DE77001CE349 /* ChartOverviewItemView.swift in Sources */,
 				42E8C47E622AA5E0763190A5 /* ChartOverviewCollectionLayout.swift in Sources */,
+				1B1A43191D7D35F700C7DD1E /* ChartRowDetailsTransitionController.swift in Sources */,
 				1B78FB161D7818F600F499B8 /* ChartRowDetialsViewController.swift in Sources */,
 				1B2527111D79B2A3005DF51C /* ChartOverviewToRowDetailsControllerTransitionExecutor.swift in Sources */,
 				1B25267F1D797D3B005DF51C /* TransitionExecutor.swift in Sources */,
