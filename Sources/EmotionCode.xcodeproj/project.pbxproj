@@ -601,6 +601,7 @@
 				915EEC351D460CE1005CC318 /* Sources */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
+				1B1A431A1D7D40FE00C7DD1E /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -755,6 +756,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PROJECT_NAME\"/MarkupLint.sh";
+			showEnvVarsInLog = 0;
+		};
+		1B1A431A1D7D40FE00C7DD1E /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint lint --strict";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
