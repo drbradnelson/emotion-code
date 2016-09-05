@@ -7,6 +7,8 @@ SPANISH_LOCALIZATION_FOLDER_PATH=$UNLOCALIZED_RESOURCES_FOLDER_PATH/es.lproj
 mkdir -p $ENGLISH_LOCALIZATION_FOLDER_PATH
 mkdir -p $SPANISH_LOCALIZATION_FOLDER_PATH
 
+EMPTY_SPAN_REGEX="<span[^>]*>[[:space:]]*</span>"
+
 #English version
 pushd ../
 patch Resources/English/The\ Emotion\ Code\,\ November\ 2015.html  --input=Sources/EmotionCode/BookPatches/English/book-add-chapters-en.patch --output=Sources/EmotionCode/book-with-chapters.html
@@ -14,7 +16,7 @@ popd
 patch EmotionCode/book-with-chapters.html --input=EmotionCode/BookPatches/English/book-remove-chapter-numbers-en.patch --output=EmotionCode/book-no-chapter-numbers.html
 patch EmotionCode/book-no-chapter-numbers.html --input=EmotionCode/BookPatches/English/book-fix-chapter-quote-en.patch --output=EmotionCode/book-fixed-quote.html
 
-EMPTY_SPAN_REGEX="<span[^>]*>[[:space:]]*</span>"
+
 sed -E -e's,<a href="">(.*)</a>,\1,g' -e s,$EMPTY_SPAN_REGEX,,g <EmotionCode/book-fixed-quote.html >EmotionCode/book-fixed.html
 
 rm EmotionCode/book-with-chapters.html
@@ -45,7 +47,6 @@ popd
 patch EmotionCode/book-with-chapters.html --input=EmotionCode/BookPatches/Spanish/book-remove-chapter-numbers-es.patch --output=EmotionCode/book-no-chapter-numbers.html
 patch EmotionCode/book-no-chapter-numbers.html --input=EmotionCode/BookPatches/Spanish/book-fix-chapter-quote-es.patch --output=EmotionCode/book-fixed-quote.html
 
-EMPTY_SPAN_REGEX="<span[^>]*>[[:space:]]*</span>"
 sed -E -e's,<a href="">(.*)</a>,\1,g' -e s,$EMPTY_SPAN_REGEX,,g <EmotionCode/book-fixed-quote.html >EmotionCode/book-fixed.html
 
 rm EmotionCode/book-with-chapters.html
