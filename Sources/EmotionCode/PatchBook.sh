@@ -9,28 +9,21 @@ sed -E -e's,<a href="">(.*)</a>,\1,g' -e's,<span.*> +</span>,,g' <EmotionCode/bo
 rm EmotionCode/book-with-chapters.html
 rm EmotionCode/book-no-chapter-numbers.html
 
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter1-en.patch --output=EmotionCode/chapter1.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter2-en.patch --output=EmotionCode/chapter2.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter3-en.patch --output=EmotionCode/chapter3.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter4-en.patch --output=EmotionCode/chapter4.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter5-en.patch --output=EmotionCode/chapter5.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter6-en.patch --output=EmotionCode/chapter6.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter7-en.patch --output=EmotionCode/chapter7.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter8-en.patch --output=EmotionCode/chapter8.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter9-en.patch --output=EmotionCode/chapter9.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter10-en.patch --output=EmotionCode/chapter10.html
-patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter11-en.patch --output=EmotionCode/about-author.html
+ENGLISH_LOCALIZATION_FOLDER_PATH=${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj/
+
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter1-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter1.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter2-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter2.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter3-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter3.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter4-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter4.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter5-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter5.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter6-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter6.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter7-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter7.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter8-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter8.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter9-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter9.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter10-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter10.html
+patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter11-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/about-author.html
+
 
 rm EmotionCode/book-fixed.html
 
-cp EmotionCode/chapter1.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter2.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter3.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter4.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter5.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter6.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter7.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter8.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter9.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/chapter10.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
-cp EmotionCode/about-author.html ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/
+
