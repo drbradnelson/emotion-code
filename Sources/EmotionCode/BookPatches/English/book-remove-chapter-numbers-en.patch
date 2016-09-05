@@ -8,8 +8,11 @@
 < 			<p class="Chapter-Number">4</p>
 1166d1161
 < 			<p class="Chapter-Number">5</p>
-1381d1375
+1380,1381c1375
+< 			<p class="Chapter-Number"><span class="CharOverride-22">Faith is to believe what we do not see; <br />and the reward of this faith <br />is to see what we believe.<br /> <br />-</span><span class="CharOverride-22"> </span><span class="CharOverride-22">Saint Augustine <br /></span></p>
 < 			<p class="Chapter-Number">6</p>
+---
+> 			<p class="Chapter-Intro-Stmt"><span class="CharOverride-22">Faith is to believe what we do not see; <br />and the reward of this faith <br />is to see what we believe.<br /> <br />-</span><span class="CharOverride-22"> </span><span class="CharOverride-22">Saint Augustine <br /></span></p>
 1754d1747
 < 			<p class="Chapter-Number">7</p>
 2075d2067

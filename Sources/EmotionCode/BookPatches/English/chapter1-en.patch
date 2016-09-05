@@ -2,6 +2,10 @@
 < 		<div class="chapter" id="0">
 ---
 > 		<div class="chapter" id="0" style="display: none;">
+489c489
+< 		<div class="_idGenObjectLayout-1">
+---
+> 		<div class="_idGenObjectLayout-1" style="display: none;">
 493c493
 < 		<div class="chapter" id="2">
 ---
