@@ -23,6 +23,8 @@ patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapte
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter10-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter10.html
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter11-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/about-author.html
 
+cp -r ../Resources/English/Resources $ENGLISH_LOCALIZATION_FOLDER_PATH
+patch $ENGLISH_LOCALIZATION_FOLDER_PATH/Resources/css/idGeneratedStyles.css --input=${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/css_en.patch
 
 rm EmotionCode/book-fixed.html
 
