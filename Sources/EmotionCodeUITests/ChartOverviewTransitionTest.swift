@@ -24,8 +24,8 @@ extension ChartOverviewTransitionTest {
 
         sleep(1)
 
-        let view = app.collectionViews.matchingIdentifier("ChartRowDetailsView")
+        let chartRowDetailsView = app.collectionViews.matchingIdentifier("ChartRowDetailsView")
 
-        XCTAssertEqual(view.count, 1)
+        XCTAssertEqual(chartRowDetailsView.count, 1)
     }
 }
