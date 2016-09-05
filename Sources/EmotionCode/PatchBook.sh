@@ -12,7 +12,8 @@ pushd ../
 patch Resources/English/The\ Emotion\ Code\,\ November\ 2015.html  --input=Sources/EmotionCode/BookPatches/English/book-add-chapters-en.patch --output=Sources/EmotionCode/book-with-chapters.html
 popd
 patch EmotionCode/book-with-chapters.html --input=EmotionCode/BookPatches/English/book-remove-chapter-numbers-en.patch --output=EmotionCode/book-no-chapter-numbers.html
-sed -E -e's,<a href="">(.*)</a>,\1,g' -e's,<span.*> +</span>,,g' <EmotionCode/book-no-chapter-numbers.html >EmotionCode/book-fixed.html
+EMPTY_SPAN_REGEX="<span[^>]*>[[:space:]]*</span>"
+sed -E -e's,<a href="">(.*)</a>,\1,g' -e s,$EMPTY_SPAN_REGEX,,g <EmotionCode/book-no-chapter-numbers.html >EmotionCode/book-fixed.html
 
 rm EmotionCode/book-with-chapters.html
 rm EmotionCode/book-no-chapter-numbers.html
@@ -39,7 +40,8 @@ pushd ../
 patch Resources/Spanish/The\ Emotion\ Code\,\ Revision\ 9-13.html  --input=Sources/EmotionCode/BookPatches/Spanish/book-add-chapters-es.patch --output=Sources/EmotionCode/book-with-chapters.html
 popd
 patch EmotionCode/book-with-chapters.html --input=EmotionCode/BookPatches/Spanish/book-remove-chapter-numbers-es.patch --output=EmotionCode/book-no-chapter-numbers.html
-sed -E -e's,<a href="">(.*)</a>,\1,g' -e's,<span.*> +</span>,,g' <EmotionCode/book-no-chapter-numbers.html >EmotionCode/book-fixed.html
+EMPTY_SPAN_REGEX="<span[^>]*>[[:space:]]*</span>"
+sed -E -e's,<a href="">(.*)</a>,\1,g' -e s,$EMPTY_SPAN_REGEX,,g <EmotionCode/book-no-chapter-numbers.html >EmotionCode/book-fixed.html
 
 rm EmotionCode/book-with-chapters.html
 rm EmotionCode/book-no-chapter-numbers.html
