@@ -17,6 +17,10 @@ class ChartRowDetailsViewController: UIViewController {
     @IBOutlet weak var rowDetailsView: UICollectionView!
 
     var chartRowPosition: ChartRowPosition?
+    var interactionInProgress = false
+    var runningTrans: UIPercentDrivenInteractiveTransition?
+    
+    private var shouldCompleteTransition = false
 
     private let chart = { () -> Chart in
         return ChartController().chart
@@ -33,6 +37,50 @@ extension ChartRowDetailsViewController {
 
         self.prepareData()
         self.prepareUI()
+        
+        let gr = UIScreenEdgePanGestureRecognizer.init(target: self, action: #selector(panGR(_:)))
+        gr.edges = UIRectEdge.Left
+        self.view.addGestureRecognizer(gr)
+    }
+    
+    func panGR(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+        let translation = gestureRecognizer.translationInView(gestureRecognizer.view!.superview!)
+        var progress = (translation.x / 200)
+        progress = CGFloat(fminf(fmaxf(Float(progress), 0.0), 1.0))
+        
+        switch gestureRecognizer.state {
+            
+            
+        case .Began:
+            interactionInProgress = true
+//            viewController.dismissViewControllerAnimated(true, completion: nil)
+            self.navigationController!.popViewControllerAnimated(true)
+        case .Changed:
+            shouldCompleteTransition = progress > 0.5
+            self.runningTrans?.updateInteractiveTransition(progress)
+            
+            
+        case .Cancelled:
+            interactionInProgress = false
+            self.runningTrans?.cancelInteractiveTransition()
+            
+            
+        case .Ended:
+            interactionInProgress = false
+            
+            if !shouldCompleteTransition {
+                self.runningTrans?.cancelInteractiveTransition()
+                
+            } else {
+                self.runningTrans?.finishInteractiveTransition()
+                
+            }
+            
+            self.runningTrans = nil
+            
+        default:
+            print("Unsupported")
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -56,6 +104,16 @@ extension ChartRowDetailsViewController: UINavigationControllerDelegate {
         }
         
         return transition
+    }
+    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        if interactionInProgress {
+            self.runningTrans = UIPercentDrivenInteractiveTransition.init()
+            return self.runningTrans
+        } else {
+            return nil
+        }
+        
+        
     }
 }
 

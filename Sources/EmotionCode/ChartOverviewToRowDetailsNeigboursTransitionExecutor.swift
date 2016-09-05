@@ -11,7 +11,7 @@ import UIKit
 
 extension ChartOverviewToRowDetailsTransition {
     
-    func createNeighboursTransition(withData data:ChartOverviewToRowDetailsTransitionData) -> TransitionExecutor {
+    func createNeighboursTransition(forData data:ChartOverviewToRowDetailsTransitionData) -> TransitionExecutor {
         let chatRowPosition = rowDetailsController.chartRowPosition!
         let indexPath = overviewController.chartAdapter.indexPath(forRowPosition: chatRowPosition)
         let overviewRowCell = data.overviewController.chartView.cellForItemAtIndexPath(indexPath) as! ChartOverviewRowCell
@@ -24,73 +24,44 @@ extension ChartOverviewToRowDetailsTransition {
         let sizeAspect =  self.calculateItemsSizeAspec(forData: data)
         
         var executors = [TransitionExecutor]()
+        
+        let translationVector = CGPoint.init(x: rowDetailsFrame.midX - overviewTransitionRowCellFrame.midX, y: rowDetailsFrame.midY - overviewTransitionRowCellFrame.midY)
+        let translation = CGAffineTransformMakeTranslation(translationVector.x, translationVector.y)
+        let transform = CGAffineTransformScale(translation, sizeAspect, sizeAspect)
+        
         for overviewVisibleView in overviewVisibleViews {
             
             if overviewVisibleView == overviewRowCell {
                 continue
             }
             
-            let overviewVisibleViewSnapshot = UIView.init()//overviewVisibleView.snapshotViewAfterScreenUpdates(self.value(data, forward: false, back: true))
+            let overviewVisibleSnapshotContainer = UIView.init()
             let overviewVisibleViewFrame = data.overviewController.chartView.convertRect(overviewVisibleView.frame, toView: data.containerView)
 
             let overviewVisibleViewAnchorPoint = self.calculateOverviewVisibleViewAnchorPoint(forData: data, view: overviewVisibleView, andTransitionRowCellFrame: overviewTransitionRowCellFrame)
             
-            let translationVector = CGPoint.init(x: rowDetailsFrame.midX - overviewTransitionRowCellFrame.midX, y: rowDetailsFrame.midY - overviewTransitionRowCellFrame.midY)
-            let translation = CGAffineTransformMakeTranslation(translationVector.x, translationVector.y)
-            let transform = CGAffineTransformScale(translation, sizeAspect, sizeAspect)
+            data.containerView.addSubview(overviewVisibleSnapshotContainer)
             
-            data.containerView.addSubview(overviewVisibleViewSnapshot)
+            let overviewVisibleSnapshot = overviewVisibleView.snapshotViewAfterScreenUpdates(self.value(data, forward: false, back: true))
+            overviewVisibleSnapshotContainer.addSubview(overviewVisibleSnapshot)
+            overviewVisibleSnapshot.frame = CGRect.init(origin:CGPoint.init(x: 0, y: 0), size: overviewVisibleViewFrame.size)
             
-            
-//            if data.direction != TransitionDirection.Backward {
-            
-//            }
-            
-            let m = overviewVisibleView.snapshotViewAfterScreenUpdates(self.value(data, forward: false, back: true))
-            overviewVisibleViewSnapshot.addSubview(m)
-//            overviewVisibleViewSnapshot.backgroundColor = UIColor.redColor()
-            m.frame = CGRect.init(origin:CGPoint.init(x: 0, y: 0), size: overviewVisibleViewFrame.size)
-            
-            
-            
-            overviewVisibleViewSnapshot.layer.anchorPoint = overviewVisibleViewAnchorPoint
-            overviewVisibleViewSnapshot.frame = overviewVisibleViewFrame
-            
-//            overviewVisibleViewSnapshot.transform = transform
-//            if (data.direction == TransitionDirection.Forward) {
-//                
-//                
-//                
-//                
-////                overviewVisibleViewSnapshot.center.x += 100
-//            } else {
-//                overviewVisibleViewSnapshot.layer.anchorPoint = overviewVisibleViewAnchorPoint
-//                overviewVisibleViewSnapshot.frame = overviewVisibleViewFrame
-//            }
+            overviewVisibleSnapshotContainer.layer.anchorPoint = overviewVisibleViewAnchorPoint
+            overviewVisibleSnapshotContainer.frame = overviewVisibleViewFrame
+
             
             let prepareBlock = {
-                overviewVisibleView.hidden = false
-                
-//                if (data.direction == TransitionDirection.Forward) {
-                    overviewVisibleViewSnapshot.transform = self.value(data, forward: CGAffineTransformIdentity, back: transform)
-                
-//                }
-                
-                overviewVisibleViewSnapshot.alpha = self.value(data, forward: 1, back: 0)
+                overviewVisibleSnapshotContainer.transform = self.value(data, forward: CGAffineTransformIdentity, back: transform)
+                overviewVisibleSnapshotContainer.alpha = self.value(data, forward: 1, back: 0)
             }
 
             let animationBlock = {
-                
-//                if (data.direction == TransitionDirection.Forward) {
-                    overviewVisibleViewSnapshot.transform = self.value(data, forward: transform, back: CGAffineTransformIdentity)
-                
-//                }
-                
-                overviewVisibleViewSnapshot.alpha = self.value(data, forward: 0, back: 1)
+                overviewVisibleSnapshotContainer.transform = self.value(data, forward: transform, back: CGAffineTransformIdentity)
+                overviewVisibleSnapshotContainer.alpha = self.value(data, forward: 0, back: 1)
             }
             
-            let completionBlock = { (finished: Bool) -> () in
-                overviewVisibleViewSnapshot.removeFromSuperview()
+            let completionBlock = { (cancelled: Bool) -> () in
+                overviewVisibleSnapshotContainer.removeFromSuperview()
                 overviewVisibleView.hidden = false
             }
             

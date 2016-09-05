@@ -1,13 +1,7 @@
-//
-//  ChartOverviewTransition.swift
-//  EmotionCode
-//
-//  Created by Andre Lami on 01/09/16.
-//  Copyright © 2016 DiscoverHealing.com. All rights reserved.
-//
-
 import Foundation
 import UIKit
+
+// MARK: Main
 
 class ChartOverviewToRowDetailsTransition: NSObject {
     
@@ -22,11 +16,7 @@ class ChartOverviewToRowDetailsTransition: NSObject {
     }
 }
 
-extension ChartOverviewToRowDetailsTransition {
-    func value<ValType>(forData:ChartOverviewToRowDetailsTransitionData, forward: ValType, back: ValType) -> ValType {
-        return TransitionValueSelector.selectVal(forDirection: forData.direction, forwarVal: forward, backwardVal: back)
-    }
-}
+// MARK: Transition params and data properties
 
 protocol ChartOverviewToRowDetailsTransitionData {
     var overviewController: ChartOverviewViewController! {get}
@@ -38,79 +28,71 @@ protocol ChartOverviewToRowDetailsTransitionData {
 
 extension ChartOverviewToRowDetailsTransition: ChartOverviewToRowDetailsTransitionData {}
 
+// MARK: UIViewControllerAnimatedTransitioning
+
 extension ChartOverviewToRowDetailsTransition: UIViewControllerAnimatedTransitioning {
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 2.6
+        return 0.6
     }
 
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        self.prepare(withTransitionContex: transitionContext)
+        let transitionData = self.prepare(withTransitionContex: transitionContext)
 
-        let executors = self.createExecutors()
-        executors.forEach { (executor) in
-            executor.prepare()
-        }
+        let executors = self.createExecutors(forData: transitionData)
+        executors.forEach { $0.prepare() }
         
         UIView.animateWithDuration(self.transitionDuration(transitionContext), delay: 0, options: .CurveEaseOut, animations: {
-            executors.forEach { (executor) in
-                executor.execute()
-            }
+            executors.forEach { $0.execute() }
         }) { (finished) in
-            executors.forEach { (executor) in
-                executor.complete(finished)
+            if !transitionContext.transitionWasCancelled() {
+                executors.forEach { $0.complete() }
+            } else {
+                executors.forEach { $0.cancel() }
             }
             
-            transitionContext.completeTransition(finished)
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         }   
     }
 }
 
-extension ChartOverviewToRowDetailsTransition {
-    func snp(view: UIView) -> UIView {
-        
-        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0)
-        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
-        
-        let img = UIGraphicsGetImageFromCurrentImageContext()
-        
-        UIGraphicsEndImageContext();
-        
-        return UIImageView.init(image: img);
-    }
-}
-
-// MARK: Main cell transition
+// MARK: Create executors
 
 private extension ChartOverviewToRowDetailsTransition {
-    func createExecutors() -> [TransitionExecutor] {
-        if self.direction == TransitionDirection.Forward {
-        return [self.createControllersTransition(withData: self), self.createMainRowTransition(withData: self), self.createNeighboursTransition(withData: self)]
-        } else {
-            return [self.createControllersTransition(withData: self), self.createMainRowTransition(withData: self), self.createNeighboursTransition(withData: self)]
-        }
+    func createExecutors(forData data: ChartOverviewToRowDetailsTransitionData) -> [TransitionExecutor] {
+        
+        // Alas, order of executors is important, they will add views to container view in correct order.
+        // Controllers views are added in correct order, and then transition elements snapshots
+        return [self.createControllersTransition(forData: data), self.createMainRowTransition(forData: data), self.createNeighboursTransition(forData: data)]
         
     }
 }
 
+// MARK: Prepare transition data and layout
+
 private extension ChartOverviewToRowDetailsTransition {
-    private func prepare(withTransitionContex context: UIViewControllerContextTransitioning) {
+    private func prepare(withTransitionContex context: UIViewControllerContextTransitioning) -> ChartOverviewToRowDetailsTransitionData {
+        self.containerView = context.containerView()
+        self.duration = self.transitionDuration(context)
+        
         if self.direction == TransitionDirection.Forward {
             self.overviewController = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ChartOverviewViewController
             self.rowDetailsController = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! ChartRowDetailsViewController
         } else {
             self.overviewController = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! ChartOverviewViewController
             self.rowDetailsController = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ChartRowDetailsViewController
+            
         }
         
-
-        self.containerView = context.containerView()
-        self.duration = self.transitionDuration(context)
-        
-        let controller = self.value(self, forward: self.rowDetailsController, back: self.overviewController)
-        let collectionView = self.value(self, forward: self.rowDetailsController.rowDetailsView, back: self.overviewController.chartView)
+        self.prepareLayoutForTranstion(forData: self)
+        return self
+    }
+    
+    private func prepareLayoutForTranstion(forData data: ChartOverviewToRowDetailsTransitionData) {
+        let controller = self.value(data, forward: data.rowDetailsController, back: data.overviewController)
+        let collectionView = self.value(data, forward: data.rowDetailsController.rowDetailsView, back: data.overviewController.chartView)
         
         // will trigger view drawing and correct layout
-        self.containerView.addSubview(controller.view)
+        data.containerView.addSubview(controller.view)
         controller.view.snapshotViewAfterScreenUpdates(true)
         controller.view.removeFromSuperview()
         
@@ -118,3 +100,12 @@ private extension ChartOverviewToRowDetailsTransition {
         collectionView.layoutIfNeeded()
     }
 }
+
+// MARK: Helper methods
+
+extension ChartOverviewToRowDetailsTransition {
+    func value<ValType>(forData:ChartOverviewToRowDetailsTransitionData, forward: ValType, back: ValType) -> ValType {
+        return TransitionValueSelector.selectVal(forDirection: forData.direction, forwarVal: forward, backwardVal: back)
+    }
+}
+
