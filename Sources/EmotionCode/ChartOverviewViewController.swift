@@ -4,9 +4,7 @@ final class ChartOverviewViewController: UIViewController {
     @IBOutlet weak var chartView: UICollectionView!
     private var chartOverviewLayout: ChartOverviewCollectionLayout!
 
-    private let chart = { () -> Chart in
-        return ChartController().chart
-    }()
+    private let chart = ChartController().chart
 
     private var chartAdapter: ChartOverviewCollectionLayoutDataAdapter!
 }
