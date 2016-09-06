@@ -29,8 +29,8 @@ struct ChartRowPosition {
 
 
     init(column: Int, row: Int) {
-        self.columnIndex = column
-        self.rowIndex = row
+        columnIndex = column
+        rowIndex = row
     }
 }
 
