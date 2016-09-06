@@ -29,8 +29,8 @@ struct ChartRowPosition {
 
 
     init(column: Int, row: Int) {
-        self.columnIndex = column
-        self.rowIndex = row
+        columnIndex = column
+        rowIndex = row
     }
 }
 
@@ -57,9 +57,9 @@ struct ChartItemPosition {
     let itemIndex: Int
 
     init(column: Int, row: Int, item: Int) {
-        self.columnIndex = column
-        self.rowIndex = row
-        self.itemIndex = item
+        columnIndex = column
+        rowIndex = row
+        itemIndex = item
     }
 }
 
