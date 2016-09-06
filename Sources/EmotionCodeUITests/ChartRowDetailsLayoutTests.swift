@@ -30,6 +30,6 @@ extension ChartRowDetailsLayoutTests {
         let leftAligned = rowCounterElementTop.element.frame.minX == rowCounterElementBottom.element.frame.minX
         let rightAligned = rowCounterElementTop.element.frame.maxX == rowCounterElementBottom.element.frame.maxX
 
-        XCTAssertEqual(leftAligned && rightAligned, true)
+        XCTAssert(leftAligned && rightAligned)
     }
 }

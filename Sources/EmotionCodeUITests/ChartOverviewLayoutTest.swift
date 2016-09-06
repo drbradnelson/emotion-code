@@ -28,7 +28,7 @@ extension ChartOverviewLayoutTest {
             let rowCellElement = app.collectionViews.first.childrenMatchingType(.Any).matchingIdentifier("RowCell_\(index)_0")
 
             let result = columnHeader.element.frame.maxY >= rowCellElement.element.frame.minY
-            XCTAssertEqual(result, true)
+            XCTAssert(result)
         }
     }
 
@@ -40,7 +40,7 @@ extension ChartOverviewLayoutTest {
             let leftAligned = columnHeader.element.frame.minX == rowCellElement.element.frame.minX
             let rightAligned = columnHeader.element.frame.maxX == rowCellElement.element.frame.maxX
             let result = leftAligned && rightAligned
-            XCTAssertEqual(result, true)
+            XCTAssert(result)
         }
     }
 
@@ -55,7 +55,7 @@ extension ChartOverviewLayoutTest {
 
         let result = rowCounterElement.element.frame.maxX <= rowCellElement.element.frame.minX
 
-        XCTAssertEqual(result, true)
+        XCTAssert(result)
     }
 
     func testRowCounterIsAlignedHorizontally() {
@@ -65,7 +65,7 @@ extension ChartOverviewLayoutTest {
         let topAligned = rowCounterElement.element.frame.minY == rowCellElement.element.frame.minY
         let botAligned = rowCounterElement.element.frame.maxY == rowCellElement.element.frame.maxY
 
-        XCTAssertEqual(topAligned && botAligned, true)
+        XCTAssert(topAligned && botAligned)
     }
 
     func testRowCounterIsAlignedVertically() {
@@ -75,7 +75,7 @@ extension ChartOverviewLayoutTest {
         let leftAligned = rowCounterElementTop.element.frame.minX == rowCounterElementBottom.element.frame.minX
         let rightAligned = rowCounterElementTop.element.frame.maxX == rowCounterElementBottom.element.frame.maxX
 
-        XCTAssertEqual(leftAligned && rightAligned, true)
+        XCTAssert(leftAligned && rightAligned)
     }
 
     func testRowCellElementsHaveHorizontalSpacing() {
@@ -84,7 +84,7 @@ extension ChartOverviewLayoutTest {
 
         let result = rowCellElementLeft.element.frame.maxX < rowCellElementRight.element.frame.minX
 
-        XCTAssertEqual(result, true)
+        XCTAssert(result)
     }
 
     func testRowCellElementsHaveVerticalSpacing() {
@@ -93,7 +93,7 @@ extension ChartOverviewLayoutTest {
 
         let result = rowCellElementTop.element.frame.maxY <= rowCellElementBottom.element.frame.minY
 
-        XCTAssertEqual(result, true)
+        XCTAssert(result)
     }
 
     func testRowCellElementsAreAllignedHorizontally() {
@@ -103,7 +103,7 @@ extension ChartOverviewLayoutTest {
         let topAligned = rowCellElementLeft.element.frame.minY == rowCellElementRight.element.frame.minY
         let bottomAligned = rowCellElementLeft.element.frame.maxY == rowCellElementRight.element.frame.maxY
 
-        XCTAssertEqual(topAligned && bottomAligned, true)
+        XCTAssert(topAligned && bottomAligned)
     }
 
     func testRowCellElementsAreAllignedVertically() {
@@ -113,7 +113,7 @@ extension ChartOverviewLayoutTest {
         let leftAligned = rowCellElementTop.element.frame.minX == rowCellElementBottom.element.frame.minX
         let rightAligned = rowCellElementTop.element.frame.maxX == rowCellElementBottom.element.frame.maxX
 
-        XCTAssertEqual(leftAligned && rightAligned, true)
+        XCTAssert(leftAligned && rightAligned)
     }
 }
 
