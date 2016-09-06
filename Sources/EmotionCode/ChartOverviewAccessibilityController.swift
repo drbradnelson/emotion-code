@@ -5,7 +5,7 @@ final class ChartOverviewAccessibilityController {}
 // MARK: Setup Accessibility
 
 extension ChartOverviewAccessibilityController {
-    static func setupAccessibilit(forChartOverviewView view: UIView) {
+    static func setupAccessibility(forChartOverviewView view: UIView) {
         view.accessibilityIdentifier = ChartOverviewAccessibilityController.chartOverviewViewIdentifier
     }
 
