@@ -39,7 +39,7 @@ struct ChartRowPosition {
 extension Chart {
 
     func row(forPosition rowPosition: ChartRowPosition) -> ChartRow {
-        return self.columns[rowPosition.columnIndex].rows[rowPosition.rowIndex]
+        return columns[rowPosition.columnIndex].rows[rowPosition.rowIndex]
     }
 
 }
@@ -72,7 +72,7 @@ struct ChartItemPosition {
 extension Chart {
 
     func item(forPosition itemPosition: ChartItemPosition) -> ChartItem {
-        return self.columns[itemPosition.columnIndex].rows[itemPosition.rowIndex].items[itemPosition.itemIndex]
+        return columns[itemPosition.columnIndex].rows[itemPosition.rowIndex].items[itemPosition.itemIndex]
     }
 
 }
