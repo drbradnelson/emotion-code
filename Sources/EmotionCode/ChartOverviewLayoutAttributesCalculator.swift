@@ -144,6 +144,7 @@ extension ChartOverviewLayoutAttributesCalculator {
 
         return _columnWidth!
     }
+
     private func calculateHeight(forSection section: Int) -> CGFloat {
         let rowIndex = section
         let rowHeight = layoutParams.heightForRowElement(forRow: rowIndex)

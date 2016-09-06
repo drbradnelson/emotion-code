@@ -1,6 +1,7 @@
 import UIKit
 
 protocol ChartOverviewLayoutParams {
+
     var widthForRowCounterElement: CGFloat {get}
     var heightForColumnHeaderElement: CGFloat {get}
     var spacingBetweenColumns: CGFloat {get}
@@ -12,6 +13,7 @@ protocol ChartOverviewLayoutParams {
 }
 
 extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
+
     var widthForRowCounterElement: CGFloat {
         get {
             return delegate.widthForRowCounterElement(inCollectionView: collectionView!, layout: self)
@@ -57,4 +59,5 @@ extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
             return delegate.insetsForContent(inCollectionView: collectionView!, layout: self)
         }
     }
+
 }

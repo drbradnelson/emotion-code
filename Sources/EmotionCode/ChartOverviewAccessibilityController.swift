@@ -5,6 +5,7 @@ final class ChartOverviewAccessibilityController {}
 // MARK: Setup Accessibility
 
 extension ChartOverviewAccessibilityController {
+
     static func setupAccessibility(forChartOverviewView view: UIView) {
         view.accessibilityIdentifier = ChartOverviewAccessibilityController.chartOverviewViewIdentifier
     }
@@ -23,13 +24,16 @@ extension ChartOverviewAccessibilityController {
         let idenitifer = "\(ChartOverviewAccessibilityController.rowCellIdentifierPrefix)_\(rowPosition.columnIndex)_\(rowPosition.rowIndex)"
         view.accessibilityIdentifier = idenitifer
     }
+
 }
 
 // MARK: Constants
 
 extension ChartOverviewAccessibilityController {
+
     static let chartOverviewViewIdentifier = "ChartOverviewView"
     static let columnHeaderIdentifierPrefix = "ColumnHeader"
     static let rowCounterIdentifierPrefix = "RowCounter"
     static let rowCellIdentifierPrefix = "RowCell"
+
 }

@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 
 protocol ChartOverviewCollectionLayoutDataAdapter {
+
     func numberOfColumns() -> Int
     func numberOfRows(forColumnIndex column: Int) -> Int
     func numberOfItems(forColumnIndex column: Int, forRowIndex row: Int) -> Int
@@ -17,4 +18,5 @@ protocol ChartOverviewCollectionLayoutDataAdapter {
 
     func indexPath(forRowPosition rowPosition: ChartRowPosition) -> NSIndexPath
     func rowPosition(forIndexPath indexPath: NSIndexPath) -> ChartRowPosition
+
 }
