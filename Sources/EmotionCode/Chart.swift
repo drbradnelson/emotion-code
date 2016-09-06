@@ -68,4 +68,5 @@ extension Chart {
     func item(forPosition itemPosition: ChartItemPosition) -> ChartItem {
         return self.columns[itemPosition.columnIndex].rows[itemPosition.rowIndex].items[itemPosition.itemIndex]
     }
+
 }
