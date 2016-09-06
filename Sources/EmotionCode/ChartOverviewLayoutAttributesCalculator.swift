@@ -122,7 +122,7 @@ extension ChartOverviewLayoutAttributesCalculator {
     }
 
     private func calculateHorizontalOffsetForRow(atPosition position: ChartRowPosition) -> CGFloat {
-        let offset = self.calculateColumnOffset(forColumnIndex: position.columnIndex)
+        let offset = calculateColumnOffset(forColumnIndex: position.columnIndex)
         return offset
     }
 
