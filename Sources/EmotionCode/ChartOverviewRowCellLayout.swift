@@ -11,15 +11,14 @@ extension ChartOverviewRowCellLayout {
 
         let bounds = container.bounds
 
-        let spacing: CGFloat = spacingBetweenItems
-        let itemHeight = (bounds.height - spacing * CGFloat(itemViews.count - 1)) / CGFloat(itemViews.count)
+        let itemHeight = (bounds.height - spacingBetweenItems * CGFloat(itemViews.count - 1)) / CGFloat(itemViews.count)
         let itemWidth = bounds.width
 
         var verticalOffset: CGFloat = 0
 
         for view in itemViews {
             view.frame = CGRect.init(x: 0, y: verticalOffset, width: itemWidth, height: itemHeight)
-            verticalOffset += itemHeight + spacing
+            verticalOffset += itemHeight + spacingBetweenItems
         }
     }
 
