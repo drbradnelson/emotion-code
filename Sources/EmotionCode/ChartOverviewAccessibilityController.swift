@@ -1,7 +1,6 @@
 import UIKit
 
-final class ChartOverviewAccessibilityController {
-}
+final class ChartOverviewAccessibilityController {}
 
 // MARK: Setup Accessibility
 
