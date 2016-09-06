@@ -38,8 +38,8 @@ extension ChartOverviewCollectionLayout {
         var layoutAttributesList = [UICollectionViewLayoutAttributes]()
 
         let contentInsets = delegate.insetsForContent(inCollectionView: collectionView!, layout: self)
-        let allocator = ChartOverviewLayoutAreaAllocator.init(areaWidth: layoutParams.availableWidth, andInsets: contentInsets)
-        let calculator = ChartOverviewLayoutAttributesCalculator.init(adapter: adapter, layoutParams: layoutParams, areaAllocator: allocator)
+        let allocator = ChartOverviewLayoutAreaAllocator(areaWidth: layoutParams.availableWidth, andInsets: contentInsets)
+        let calculator = ChartOverviewLayoutAttributesCalculator(adapter: adapter, layoutParams: layoutParams, areaAllocator: allocator)
 
         let columnHeaderElementAttributesMap = calculateAttributesForColumnElementHeader(withCalculator: calculator)
         let (rowCounterElementsAttributes, rowElementsAttributes) = calculateSectionsAttributes(withCalculator: calculator, andAllocator: allocator)
@@ -56,7 +56,7 @@ extension ChartOverviewCollectionLayout {
             ChartOverviewCollectionLayout.kRowElementIdentifier : rowElementsAttributes,
         ]
 
-        calculatedContentSize = CGSize.init(width: allocator.allocatedArea().width, height: allocator.allocatedArea().height)
+        calculatedContentSize = CGSize(width: allocator.allocatedArea().width, height: allocator.allocatedArea().height)
     }
 
     private func calculateAttributesForColumnElementHeader(withCalculator calculator: ChartOverviewLayoutAttributesCalculator) -> [NSIndexPath: UICollectionViewLayoutAttributes] {
