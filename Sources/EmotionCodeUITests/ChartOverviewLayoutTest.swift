@@ -18,7 +18,7 @@ final class ChartOverviewLayoutTest: XCTestCase {
 extension ChartOverviewLayoutTest {
 
     func testAllCoumnsHaveHeaders() {
-        let columnHeaders = self.getColumnHeaders()
+        let columnHeaders = getColumnHeaders()
         XCTAssertEqual(columnHeaders.count, 2)
     }
 
