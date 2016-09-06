@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: Delegate
 
-protocol ChartOverviewCollectionLayoutDelegate: NSObjectProtocol {
+protocol ChartOverviewCollectionLayoutDelegate: class {
     func widthForRowCounterElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
     func heightForColumnHeaderElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
 
@@ -37,7 +37,7 @@ extension ChartOverviewCollectionLayout {
     override func prepareLayout() {
         var layoutAttributesList = [UICollectionViewLayoutAttributes]()
 
-        let contentInsets = delegate.insetsForContent(inCollectionView: self.collectionView!, layout: self)
+        let contentInsets = delegate.insetsForContent(inCollectionView: collectionView!, layout: self)
         let allocator = ChartOverviewLayoutAreaAllocator.init(areaWidth: layoutParams.availableWidth, andInsets: contentInsets)
         let calculator = ChartOverviewLayoutAttributesCalculator.init(adapter: adapter, layoutParams: layoutParams, areaAllocator: allocator)
 
