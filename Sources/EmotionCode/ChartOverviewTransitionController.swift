@@ -12,12 +12,15 @@ import UIKit
 // MARK: Main
 
 class ChartOverviewTransitionController: NSObject {
+
     private var rowDetailsRowPosition: ChartRowPosition?
+
 }
 
 // MARK: Transition
 
 extension ChartOverviewTransitionController {
+
     func goToRowDetails(fromViewController: ChartOverviewViewController, forRowPosition: ChartRowPosition) {
 
         self.rowDetailsRowPosition = forRowPosition
@@ -35,6 +38,7 @@ extension ChartOverviewTransitionController {
             preconditionFailure("unsuported transition")
         }
     }
+
 }
 
 // MARK: UINavigationController delegate
@@ -50,10 +54,13 @@ extension ChartOverviewTransitionController: UINavigationControllerDelegate {
 
         return transition
     }
+
 }
 
 // MARK: Constants
 
 extension ChartOverviewTransitionController {
+
     static private let rowDetailsSegueIdentifier = "ShowRowDetails"
+
 }

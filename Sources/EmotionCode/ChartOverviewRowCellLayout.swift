@@ -26,4 +26,5 @@ extension ChartOverviewRowCellLayout {
 
         return desiredItemHeight * CGFloat(numberOfItems) + CGFloat(numberOfItems - 1) * spacingBetweenItems
     }
+
 }

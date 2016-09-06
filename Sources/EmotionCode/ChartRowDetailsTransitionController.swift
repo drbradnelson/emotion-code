@@ -23,6 +23,7 @@ class ChartRowDetailsTransitionController: NSObject {
 // MARK: Setup
 
 private extension ChartRowDetailsTransitionController {
+
     func setup() {
         self.chartRowDetailsViewController.navigationController?.delegate = self
 
@@ -30,12 +31,14 @@ private extension ChartRowDetailsTransitionController {
         transitionGR.edges = UIRectEdge.Left
         self.chartRowDetailsViewController.view.addGestureRecognizer(transitionGR)
     }
+
 }
 
 
 // MARK: Transition
 
 extension ChartRowDetailsTransitionController {
+
     func goToOverview(fromViewController: ChartRowDetailsViewController) {
         fromViewController.navigationController!.popViewControllerAnimated(true)
     }
@@ -84,6 +87,7 @@ extension ChartRowDetailsTransitionController {
 
         self.runningTransition = nil
     }
+
 }
 
 // MARK: UINavigationController delegate
@@ -108,21 +112,26 @@ extension ChartRowDetailsTransitionController: UINavigationControllerDelegate {
             return nil
         }
     }
+
 }
 
 // MARK: Constants
 
 extension ChartRowDetailsTransitionController {
+
     static private let rowDetailsSegueIdentifier = "ShowRowDetails"
+
 }
 
 // MARK: Helper methods
 
 extension ChartRowDetailsTransitionController {
+
     func calculateProgress(forTransitionGesture gestureRecognizer: UIScreenEdgePanGestureRecognizer) -> CGFloat {
         let translation = gestureRecognizer.translationInView(gestureRecognizer.view!.superview!)
         var progress = (translation.x / self.transitionProgressCoefficient)
         progress = CGFloat(fminf(fmaxf(Float(progress), 0.0), 1.0))
         return progress
     }
+
 }

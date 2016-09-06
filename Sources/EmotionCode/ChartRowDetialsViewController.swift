@@ -16,20 +16,17 @@ class ChartRowDetailsViewController: UIViewController {
     @IBOutlet weak var chartRowTitleLabel: UILabel!
     @IBOutlet weak var rowDetailsView: UICollectionView!
 
-
     private var transitionController: ChartRowDetailsTransitionController!
+    private let chart = ChartController().chart
+    private var chartRow: ChartRow?
 
     var chartRowPosition: ChartRowPosition!
-    private let chart = { () -> Chart in
-        return ChartController().chart
-    }()
-
-    private var chartRow: ChartRow?
 }
 
 // MARK: View lifecycle callbacks
 
 extension ChartRowDetailsViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,11 +39,13 @@ extension ChartRowDetailsViewController {
 
         self.rowDetailsView.reloadData()
     }
+
 }
 
 // MARK: Setup
 
 extension ChartRowDetailsViewController {
+
     private func prepareData() {
         self.chartRow = self.chart.row(forPosition: self.chartRowPosition!)
         self.transitionController = ChartRowDetailsTransitionController(chartRowDetailsViewController: self)
@@ -63,6 +62,7 @@ extension ChartRowDetailsViewController {
 
         ChartRowDetailsAccessibilityController.setupAccessibilit(forChartOverviewView: rowDetailsView)
     }
+
 }
 
 // MARK: UICollectionViewDataSource methods
@@ -85,11 +85,13 @@ extension ChartRowDetailsViewController: UICollectionViewDataSource {
 
         return cell
     }
+
 }
 
 // MARK: UICollectionViewDelegateFlowLayout methods
 
 extension ChartRowDetailsViewController: UICollectionViewDelegateFlowLayout {
+
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
         let horizontalInsets = ChartRowDetailsViewController.sectionInsets.left + ChartRowDetailsViewController.sectionInsets.right
@@ -110,14 +112,17 @@ extension ChartRowDetailsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         return 0
     }
+
 }
 
 // MARK: Constants
 
 private extension ChartRowDetailsViewController {
+
     static let rowDetailsCellIdentifier = "RowDetailsCell"
 
     static let sectionInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
     static let spacingBetweenItems: CGFloat = 5
     static let itemHeight: CGFloat = 50
+
 }

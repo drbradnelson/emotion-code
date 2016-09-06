@@ -22,7 +22,9 @@ final class ChartOverviewRowCell: UICollectionViewCell {
 // MARK: Setup
 
 private extension ChartOverviewRowCell {
+
     func setup() {}
+
 }
 
 // MARK: Updating items
@@ -58,14 +60,17 @@ extension ChartOverviewRowCell {
             view.backgroundColor = color
         })
     }
+
 }
 
 // MARK: Layouting
 
 extension ChartOverviewRowCell {
+
     override func layoutSubviews() {
         super.layoutSubviews()
 
         ChartOverviewRowCellLayout.layout(itemViews: itemViews!, inContainer: self)
     }
+
 }

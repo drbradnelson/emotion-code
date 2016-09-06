@@ -19,11 +19,13 @@ class ChartOverviewToRowDetailsTransition: NSObject {
 // MARK: Transition params and data properties
 
 protocol ChartOverviewToRowDetailsTransitionData {
+
     var overviewController: ChartOverviewViewController! {get}
     var rowDetailsController: ChartRowDetailsViewController! {get}
     var containerView: UIView! {get}
     var direction: TransitionDirection! {get}
     var duration: NSTimeInterval! {get}
+
 }
 
 extension ChartOverviewToRowDetailsTransition: ChartOverviewToRowDetailsTransitionData {}
@@ -31,6 +33,7 @@ extension ChartOverviewToRowDetailsTransition: ChartOverviewToRowDetailsTransiti
 // MARK: UIViewControllerAnimatedTransitioning
 
 extension ChartOverviewToRowDetailsTransition: UIViewControllerAnimatedTransitioning {
+
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.6
     }
@@ -53,11 +56,13 @@ extension ChartOverviewToRowDetailsTransition: UIViewControllerAnimatedTransitio
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         }
     }
+
 }
 
 // MARK: Create executors
 
 private extension ChartOverviewToRowDetailsTransition {
+
     func createExecutors(forData data: ChartOverviewToRowDetailsTransitionData) -> [TransitionExecutor] {
 
         // Alas, order of executors is important, they will add views to container view in correct order.
@@ -65,11 +70,13 @@ private extension ChartOverviewToRowDetailsTransition {
         return [self.createControllersTransition(forData: data), self.createMainRowTransition(forData: data), self.createNeighboursTransition(forData: data)]
 
     }
+
 }
 
 // MARK: Prepare transition data and layout
 
 private extension ChartOverviewToRowDetailsTransition {
+
     private func prepare(withTransitionContex context: UIViewControllerContextTransitioning) -> ChartOverviewToRowDetailsTransitionData {
         self.containerView = context.containerView()
         self.duration = self.transitionDuration(context)
@@ -99,12 +106,15 @@ private extension ChartOverviewToRowDetailsTransition {
         collectionView.setNeedsLayout()
         collectionView.layoutIfNeeded()
     }
+
 }
 
 // MARK: Helper methods
 
 extension ChartOverviewToRowDetailsTransition {
+
     func value<ValType>(forData: ChartOverviewToRowDetailsTransitionData, forward: ValType, back: ValType) -> ValType {
         return TransitionValueSelector.selectVal(forDirection: forData.direction, forwarVal: forward, backwardVal: back)
     }
+
 }

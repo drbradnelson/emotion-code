@@ -32,11 +32,13 @@ extension ChartOverviewToRowDetailsTransition {
         let transitionExecutor = TransitionExecutorFactory.transitionExecutor(withExecutors: executors)
         return transitionExecutor
     }
+
 }
 
 // MARK: Helpers
 
 extension ChartOverviewToRowDetailsTransition {
+
     private func createTransitionInfo(forData data: ChartOverviewToRowDetailsTransitionData) -> NeigboursTransitionInfo {
         var info: NeigboursTransitionInfo = NeigboursTransitionInfo()
         info.chatRowPosition = rowDetailsController.chartRowPosition!
@@ -149,4 +151,5 @@ extension ChartOverviewToRowDetailsTransition {
 
         return normAnchorPoint
     }
+
 }

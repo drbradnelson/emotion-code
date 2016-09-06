@@ -23,4 +23,5 @@ final class ChartOverviewLayoutAreaAllocator {
     func allocatedArea() -> CGRect {
         return CGRect(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
     }
+
 }

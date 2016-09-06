@@ -17,6 +17,7 @@ final class ChartOverviewItemView: UIView {
 
         setup()
     }
+
 }
 
 // MARK: View with title
@@ -31,6 +32,7 @@ private extension ChartOverviewItemView {
         addSubview(titleLabel)
         titleLabel.textAlignment = .Center
     }
+
 }
 
 // MARK: Layout calculation
@@ -41,4 +43,5 @@ extension ChartOverviewItemView {
         super.layoutSubviews()
         titleLabel.frame = bounds
     }
+
 }

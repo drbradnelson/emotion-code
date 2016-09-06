@@ -41,6 +41,7 @@ extension ChartOverviewToRowDetailsTransition {
         let transitionExecutor = TransitionExecutorFactory.transitionExecutor(withExecutors: executors)
         return transitionExecutor
     }
+
 }
 
 // MARK: Helper methods
@@ -133,4 +134,5 @@ private extension ChartOverviewToRowDetailsTransition {
 
         return transitionInfo
     }
+
 }

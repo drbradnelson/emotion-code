@@ -56,4 +56,5 @@ extension ChartOverviewToRowDetailsTransition {
 
         return transitionExecutor
     }
+
 }

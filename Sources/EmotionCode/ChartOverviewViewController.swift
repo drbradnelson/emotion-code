@@ -1,14 +1,13 @@
 import UIKit
 
 final class ChartOverviewViewController: UIViewController {
+
     @IBOutlet weak var chartView: UICollectionView!
+
     private var chartOverviewLayout: ChartOverviewCollectionLayout!
-
     private let chart = ChartController().chart
-
     private (set) var chartAdapter: ChartOverviewCollectionLayoutDataAdapter!
     private var selectedRowPosition: ChartRowPosition?
-
     private let transitionController = ChartOverviewTransitionController()
 }
 
@@ -35,10 +34,8 @@ extension ChartOverviewViewController {
         chartOverviewLayout.delegate = self
 
         chartView.setCollectionViewLayout(chartOverviewLayout, animated: false)
-
         chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier)
         chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kRowCounterElementIdentifier)
-
         chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.kRowElementIdentifier)
         ChartOverviewAccessibilityController.setupAccessibility(forChartOverviewView: chartView)
     }
@@ -53,16 +50,20 @@ extension ChartOverviewViewController {
 // MARK: UICollectionViewDelegate
 
 extension ChartOverviewViewController : UICollectionViewDelegate {
+
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let selectedRowPosition = chartAdapter.rowPosition(forIndexPath: indexPath)
         self.transitionController.goToRowDetails(self, forRowPosition: selectedRowPosition)
     }
+
 }
 
 extension ChartOverviewViewController {
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         self.transitionController.finishTransition(forSegue: segue)
     }
+
 }
 
 // MARK: UICollectionViewDataSource
@@ -107,6 +108,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
         return view
     }
+
 }
 
 // MARK: ChartOverviewCollectionLayoutDelegate
@@ -154,4 +156,5 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
+
 }
