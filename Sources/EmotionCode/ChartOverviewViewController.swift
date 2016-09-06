@@ -20,14 +20,14 @@ extension ChartOverviewViewController {
     }
 
     private func prepareData() {
-        chartAdapter = ChartOverviewSimpleAdapter.init(chart: chart)
+        chartAdapter = ChartOverviewSimpleAdapter(chart: chart)
     }
 
     private func prepareUI() {
         chartView.delegate = self
         chartView.dataSource = self
 
-        chartOverviewLayout = ChartOverviewCollectionLayout.init()
+        chartOverviewLayout = ChartOverviewCollectionLayout()
         chartOverviewLayout.adapter = chartAdapter
         chartOverviewLayout.delegate = self
 
@@ -142,6 +142,6 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     }
 
     func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets {
-        return UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 10)
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
 }
