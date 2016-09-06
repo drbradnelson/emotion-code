@@ -6,6 +6,7 @@ final class ChartOverviewSimpleAdapter {
     init(chart: Chart) {
         self.chart = chart
     }
+
 }
 
 extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter {
@@ -61,4 +62,5 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     func rowPosition(forIndexPath indexPath: NSIndexPath) -> ChartRowPosition {
         return ChartRowPosition(column: indexPath.item, row: indexPath.section)
     }
+
 }

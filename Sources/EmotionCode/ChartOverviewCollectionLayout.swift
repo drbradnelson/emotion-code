@@ -3,6 +3,7 @@ import UIKit
 // MARK: Delegate
 
 protocol ChartOverviewCollectionLayoutDelegate: class {
+
     func widthForRowCounterElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
     func heightForColumnHeaderElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
 
@@ -13,11 +14,13 @@ protocol ChartOverviewCollectionLayoutDelegate: class {
     func spacingBetweenItems(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> CGFloat
 
     func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets
+
 }
 
 // MARK: Main
 
 class ChartOverviewCollectionLayout: UICollectionViewLayout {
+
     static let kColumnHeaderElementIdentifier = "ColumnHeader"
     static let kRowCounterElementIdentifier = "RowCounter"
     static let kRowElementIdentifier = "ChartRow"
@@ -29,11 +32,13 @@ class ChartOverviewCollectionLayout: UICollectionViewLayout {
     private var layoutAttributesMap: [String : [NSIndexPath: UICollectionViewLayoutAttributes]]?
 
     private var calculatedContentSize: CGSize!
+
 }
 
 // MARK: Calculating layout
 
 extension ChartOverviewCollectionLayout {
+
     override func prepareLayout() {
         var layoutAttributesList = [UICollectionViewLayoutAttributes]()
 
@@ -92,11 +97,13 @@ extension ChartOverviewCollectionLayout {
     override func collectionViewContentSize() -> CGSize {
         return calculatedContentSize
     }
+
 }
 
 // MARK: Providing layout attributes
 
 extension ChartOverviewCollectionLayout {
+
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let attributes = layoutAttributesList?.filter({ (attribute) -> Bool in
             return attribute.frame.intersects(rect)
@@ -114,4 +121,5 @@ extension ChartOverviewCollectionLayout {
         let attributes = layoutAttributesMap![elementKind]![indexPath]
         return attributes
     }
+
 }
