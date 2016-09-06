@@ -36,7 +36,7 @@ patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapte
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/English/chapter11-en.patch --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/about-author.html
 
 cp -r ../Resources/English/Resources $ENGLISH_LOCALIZATION_FOLDER_PATH
-patch $ENGLISH_LOCALIZATION_FOLDER_PATH/Resources/css/idGeneratedStyles.css --input=EmotionCode/BookPatches/English/css_en.patch
+patch $ENGLISH_LOCALIZATION_FOLDER_PATH/Resources/css/idGeneratedStyles.css --input=EmotionCode/BookPatches/English/css-en.patch
 
 rm EmotionCode/book-fixed.html
 
@@ -66,6 +66,6 @@ patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/Spanish/chapte
 patch EmotionCode/book-fixed.html --input=EmotionCode/BookPatches/Spanish/chapter11-es.patch --output=$SPANISH_LOCALIZATION_FOLDER_PATH/about-author.html
 
 cp -r ../Resources/Spanish/Resources $SPANISH_LOCALIZATION_FOLDER_PATH
-patch $SPANISH_LOCALIZATION_FOLDER_PATH/Resources/css/idGeneratedStyles.css --input=EmotionCode/BookPatches/Spanish/css_es.patch
+patch $SPANISH_LOCALIZATION_FOLDER_PATH/Resources/css/idGeneratedStyles.css --input=EmotionCode/BookPatches/Spanish/css-es.patch
 
 rm EmotionCode/book-fixed.html

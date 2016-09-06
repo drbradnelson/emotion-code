@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F0FB5971D7DE65800546BD0 /* css_en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5961D7DE65800546BD0 /* css_en.patch */; };
-		0F0FB5991D7DE7B100546BD0 /* css_es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5981D7DE7B100546BD0 /* css_es.patch */; };
+		0F0FB5971D7DE65800546BD0 /* css-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5961D7DE65800546BD0 /* css-en.patch */; };
+		0F0FB5991D7DE7B100546BD0 /* css-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5981D7DE7B100546BD0 /* css-es.patch */; };
 		0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
 		0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */; };
@@ -88,8 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F0FB5961D7DE65800546BD0 /* css_en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css_en.patch; sourceTree = "<group>"; };
-		0F0FB5981D7DE7B100546BD0 /* css_es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = css_es.patch; sourceTree = "<group>"; };
+		0F0FB5961D7DE65800546BD0 /* css-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-en.patch"; sourceTree = "<group>"; };
+		0F0FB5981D7DE7B100546BD0 /* css-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-es.patch"; sourceTree = "<group>"; };
 		0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarLayoutTests.swift; sourceTree = "<group>"; };
 		0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSegueController.swift; sourceTree = "<group>"; };
 		0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterSelectionLayoutTests.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 				0FD7E5EF1D7F19390061BD18 /* chapter9-en.patch */,
 				0FD7E5F01D7F19390061BD18 /* chapter10-en.patch */,
 				0FD7E5F11D7F19390061BD18 /* chapter11-en.patch */,
-				0F0FB5961D7DE65800546BD0 /* css_en.patch */,
+				0F0FB5961D7DE65800546BD0 /* css-en.patch */,
 			);
 			path = English;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				0FD7E60B1D7F1D2D0061BD18 /* chapter9-es.patch */,
 				0FD7E60C1D7F1D2D0061BD18 /* chapter10-es.patch */,
 				0FD7E60D1D7F1D2D0061BD18 /* chapter11-es.patch */,
-				0F0FB5981D7DE7B100546BD0 /* css_es.patch */,
+				0F0FB5981D7DE7B100546BD0 /* css-es.patch */,
 			);
 			path = Spanish;
 			sourceTree = "<group>";
@@ -462,7 +462,7 @@
 				0FD7E5FE1D7F19390061BD18 /* chapter10-en.patch in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
 				0FD7E5F81D7F19390061BD18 /* chapter4-en.patch in Resources */,
-				0F0FB5991D7DE7B100546BD0 /* css_es.patch in Resources */,
+				0F0FB5991D7DE7B100546BD0 /* css-es.patch in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
 				0FD7E6151D7F1D2D0061BD18 /* chapter5-es.patch in Resources */,
 				0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */,
@@ -475,7 +475,7 @@
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
 				0FD7E5F31D7F19390061BD18 /* book-fix-chapter-quote-en.patch in Resources */,
 				0FD7E5FF1D7F19390061BD18 /* chapter11-en.patch in Resources */,
-				0F0FB5971D7DE65800546BD0 /* css_en.patch in Resources */,
+				0F0FB5971D7DE65800546BD0 /* css-en.patch in Resources */,
 				0FD7E6111D7F1D2D0061BD18 /* chapter1-es.patch in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
 				0FD7E5FA1D7F19390061BD18 /* chapter6-en.patch in Resources */,
