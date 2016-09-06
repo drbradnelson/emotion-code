@@ -24,6 +24,7 @@ struct ChartRow {
 // MARK: Row Position
 
 struct ChartRowPosition {
+
     let columnIndex: Int
     let rowIndex: Int
 
