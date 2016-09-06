@@ -16,11 +16,11 @@ final class ChartOverviewLayoutAreaAllocator {
         let startY = areaCurrentHeight
         areaCurrentHeight += height
 
-        let area = CGRect.init(x: insets.left, y: startY, width: areaWidth - insets.right - insets.right, height: height)
+        let area = CGRect(x: insets.left, y: startY, width: areaWidth - insets.right - insets.right, height: height)
         return area
     }
 
     func allocatedArea() -> CGRect {
-        return CGRect.init(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
+        return CGRect(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
     }
 }
