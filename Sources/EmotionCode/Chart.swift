@@ -33,12 +33,15 @@ struct ChartRowPosition {
         columnIndex = column
         rowIndex = row
     }
+
 }
 
 extension Chart {
+
     func row(forPosition rowPosition: ChartRowPosition) -> ChartRow {
         return self.columns[rowPosition.columnIndex].rows[rowPosition.rowIndex]
     }
+
 }
 
 // MARK: Item
@@ -53,6 +56,7 @@ struct ChartItem {
 // MARK: Item Position
 
 struct ChartItemPosition {
+
     let columnIndex: Int
     let rowIndex: Int
     let itemIndex: Int
@@ -62,6 +66,7 @@ struct ChartItemPosition {
         rowIndex = row
         itemIndex = item
     }
+
 }
 
 extension Chart {
