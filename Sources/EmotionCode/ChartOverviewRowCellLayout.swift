@@ -17,7 +17,7 @@ extension ChartOverviewRowCellLayout {
         var verticalOffset: CGFloat = 0
 
         for view in itemViews {
-            view.frame = CGRect.init(x: 0, y: verticalOffset, width: itemWidth, height: itemHeight)
+            view.frame = CGRect(x: 0, y: verticalOffset, width: itemWidth, height: itemHeight)
             verticalOffset += itemHeight + spacingBetweenItems
         }
     }

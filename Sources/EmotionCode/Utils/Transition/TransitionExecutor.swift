@@ -10,11 +10,11 @@ protocol TransitionExecutor {
 class TransitionExecutorFactory {
 
     static func transitionExecutor(withPrepareBlock prepareBlock: (() -> ())?, executeBlock: () -> (), completionBlock: ((cancelled: Bool) -> ())?) -> TransitionExecutor {
-        return BlockTransitionExecutor.init(prepareBlock: prepareBlock, executeBlock: executeBlock, completionBlock: completionBlock)
+        return BlockTransitionExecutor(prepareBlock: prepareBlock, executeBlock: executeBlock, completionBlock: completionBlock)
     }
 
     static func transitionExecutor(withExecutors executors: [TransitionExecutor]) -> TransitionExecutor {
-        return GroupTransitionExecutor.init(executors: executors)
+        return GroupTransitionExecutor(executors: executors)
     }
 
 }

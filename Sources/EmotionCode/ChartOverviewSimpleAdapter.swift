@@ -39,7 +39,7 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func indexPath(forColumnIndex columnIndex: Int) -> NSIndexPath {
-        return NSIndexPath.init(forItem: 0, inSection: columnIndex)
+        return NSIndexPath(forItem: 0, inSection: columnIndex)
     }
 
     func columnIndex(forIndexPath indexPath: NSIndexPath) -> Int {
@@ -47,7 +47,7 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func indexPath(forRowIndex rowIndex: Int) -> NSIndexPath {
-        return NSIndexPath.init(forItem: 0, inSection: rowIndex)
+        return NSIndexPath(forItem: 0, inSection: rowIndex)
     }
 
     func rowIndex(forIndexPath indexPath: NSIndexPath) -> Int {
@@ -55,10 +55,10 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func indexPath(forRowPosition rowPosition: ChartRowPosition) -> NSIndexPath {
-        return NSIndexPath.init(forItem: rowPosition.columnIndex, inSection: rowPosition.rowIndex)
+        return NSIndexPath(forItem: rowPosition.columnIndex, inSection: rowPosition.rowIndex)
     }
 
     func rowPosition(forIndexPath indexPath: NSIndexPath) -> ChartRowPosition {
-        return ChartRowPosition.init(column: indexPath.item, row: indexPath.section)
+        return ChartRowPosition(column: indexPath.item, row: indexPath.section)
     }
 }

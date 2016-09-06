@@ -50,14 +50,14 @@ extension ChartOverviewToRowDetailsTransition {
 
         info.sizeAspect =  self.calculateItemsSizeAspec(forData: data)
 
-        let translationVector = CGPoint.init(x: rowDetailsFrame.midX - info.overviewTransitionRowCellFrame.midX, y: rowDetailsFrame.midY - info.overviewTransitionRowCellFrame.midY)
+        let translationVector = CGPoint(x: rowDetailsFrame.midX - info.overviewTransitionRowCellFrame.midX, y: rowDetailsFrame.midY - info.overviewTransitionRowCellFrame.midY)
         let translation = CGAffineTransformMakeTranslation(translationVector.x, translationVector.y)
         info.transform = CGAffineTransformScale(translation, info.sizeAspect, info.sizeAspect)
         return info
     }
 
     private func createOverviewTransitionContainer(forView overviewView: UIView, data: ChartOverviewToRowDetailsTransitionData, andInfo info: NeigboursTransitionInfo) -> UIView {
-        let overviewVisibleTransitionContainer = UIView.init()
+        let overviewVisibleTransitionContainer = UIView()
         let overviewVisibleViewFrame = data.overviewController.chartView.convertRect(overviewView.frame, toView: data.containerView)
 
         let overviewVisibleViewAnchorPoint = self.calculateOverviewVisibleViewAnchorPoint(forData: data, view: overviewView, andTransitionRowCellFrame: info.overviewTransitionRowCellFrame)
@@ -66,7 +66,7 @@ extension ChartOverviewToRowDetailsTransition {
 
         let overviewVisibleSnapshot = overviewView.snapshotViewAfterScreenUpdates(self.value(data, forward: false, back: true))
         overviewVisibleTransitionContainer.addSubview(overviewVisibleSnapshot)
-        overviewVisibleSnapshot.frame = CGRect.init(origin:CGPoint.init(x: 0, y: 0), size: overviewVisibleViewFrame.size)
+        overviewVisibleSnapshot.frame = CGRect(origin:CGPoint(x: 0, y: 0), size: overviewVisibleViewFrame.size)
 
         overviewVisibleTransitionContainer.layer.anchorPoint = overviewVisibleViewAnchorPoint
         overviewVisibleTransitionContainer.frame = overviewVisibleViewFrame
@@ -99,7 +99,7 @@ extension ChartOverviewToRowDetailsTransition {
         let rowDetailsTopItemView = rowDetailsItems.first!
         let rowDetailsBotItemView = rowDetailsItems.last!
 
-        let rawFrame = CGRect.init(x: rowDetailsTopItemView.frame.minX, y: rowDetailsTopItemView.frame.minY, width: rowDetailsTopItemView.frame.width, height: rowDetailsBotItemView.frame.maxY - rowDetailsTopItemView.frame.minY)
+        let rawFrame = CGRect(x: rowDetailsTopItemView.frame.minX, y: rowDetailsTopItemView.frame.minY, width: rowDetailsTopItemView.frame.width, height: rowDetailsBotItemView.frame.maxY - rowDetailsTopItemView.frame.minY)
         let frame = data.rowDetailsController.rowDetailsView.convertRect(rawFrame, toView: data.containerView)
 
         return frame
@@ -143,9 +143,9 @@ extension ChartOverviewToRowDetailsTransition {
     }
 
     private func calculateOverviewVisibleViewAnchorPoint(forData data: ChartOverviewToRowDetailsTransitionData, view: UIView, andTransitionRowCellFrame frame: CGRect) -> CGPoint {
-        let globAnchorPoint = CGPoint.init(x: frame.midX, y: frame.midY)
+        let globAnchorPoint = CGPoint(x: frame.midX, y: frame.midY)
         let localAnchorPoint = data.containerView.convertPoint(globAnchorPoint, toView: view)
-        let normAnchorPoint = CGPoint.init(x: localAnchorPoint.x / view.bounds.width, y: localAnchorPoint.y / view.bounds.height)
+        let normAnchorPoint = CGPoint(x: localAnchorPoint.x / view.bounds.width, y: localAnchorPoint.y / view.bounds.height)
 
         return normAnchorPoint
     }

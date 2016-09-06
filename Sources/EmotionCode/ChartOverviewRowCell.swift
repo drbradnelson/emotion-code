@@ -41,7 +41,7 @@ extension ChartOverviewRowCell {
 
         for item in items {
 
-            var itemView = ChartOverviewItemView.init(frame: CGRect.zero)
+            var itemView = ChartOverviewItemView(frame: CGRect.zero)
             itemView.title = item.title
             itemView.backgroundColor = itemBackgroundColor
 

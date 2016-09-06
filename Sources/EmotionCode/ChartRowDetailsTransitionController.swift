@@ -26,7 +26,7 @@ private extension ChartRowDetailsTransitionController {
     func setup() {
         self.chartRowDetailsViewController.navigationController?.delegate = self
 
-        let transitionGR = UIScreenEdgePanGestureRecognizer.init(target: self, action: #selector(handleTransition(_:)))
+        let transitionGR = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleTransition(_:)))
         transitionGR.edges = UIRectEdge.Left
         self.chartRowDetailsViewController.view.addGestureRecognizer(transitionGR)
     }
@@ -94,7 +94,7 @@ extension ChartRowDetailsTransitionController: UINavigationControllerDelegate {
 
         var transition: UIViewControllerAnimatedTransitioning? = nil
         if fromVC is ChartRowDetailsViewController && toVC is ChartOverviewViewController {
-            transition = ChartOverviewToRowDetailsTransition.init(direction: .Backward)
+            transition = ChartOverviewToRowDetailsTransition(direction: .Backward)
         }
 
         return transition
@@ -102,7 +102,7 @@ extension ChartRowDetailsTransitionController: UINavigationControllerDelegate {
 
     func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         if interactionInProgress {
-            self.runningTransition = UIPercentDrivenInteractiveTransition.init()
+            self.runningTransition = UIPercentDrivenInteractiveTransition()
             return self.runningTransition
         } else {
             return nil

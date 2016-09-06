@@ -13,7 +13,7 @@ extension ChartOverviewToRowDetailsTransition {
     }
 
     private func createOverviewControllerExecutor(forData data: ChartOverviewToRowDetailsTransitionData) -> TransitionExecutor {
-        let overviewTransitionCoverView = UIView.init()
+        let overviewTransitionCoverView = UIView()
         overviewTransitionCoverView.frame = data.containerView.bounds
         overviewTransitionCoverView.backgroundColor = data.overviewController.view.backgroundColor
 

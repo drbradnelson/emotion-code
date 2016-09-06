@@ -4,14 +4,14 @@ class CollectionViewCellWithTitle: UICollectionViewCell {
 
     private (set) var titleLabel: UILabel
     override init(frame: CGRect) {
-        titleLabel = UILabel.init()
+        titleLabel = UILabel()
         super.init(frame: frame)
 
         setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        titleLabel = UILabel.init()
+        titleLabel = UILabel()
         super.init(coder: aDecoder)
 
         setup()

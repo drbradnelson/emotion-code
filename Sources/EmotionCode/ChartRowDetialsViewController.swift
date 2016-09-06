@@ -49,7 +49,7 @@ extension ChartRowDetailsViewController {
 extension ChartRowDetailsViewController {
     private func prepareData() {
         self.chartRow = self.chart.row(forPosition: self.chartRowPosition!)
-        self.transitionController = ChartRowDetailsTransitionController.init(chartRowDetailsViewController: self)
+        self.transitionController = ChartRowDetailsTransitionController(chartRowDetailsViewController: self)
     }
 
     private func prepareUI() {
@@ -95,7 +95,7 @@ extension ChartRowDetailsViewController: UICollectionViewDelegateFlowLayout {
         let horizontalInsets = ChartRowDetailsViewController.sectionInsets.left + ChartRowDetailsViewController.sectionInsets.right
         let availableSpace = collectionView.bounds.width - horizontalInsets
 
-        let size = CGSize.init(width: availableSpace, height: ChartRowDetailsViewController.itemHeight)
+        let size = CGSize(width: availableSpace, height: ChartRowDetailsViewController.itemHeight)
         return size
     }
 
@@ -117,7 +117,7 @@ extension ChartRowDetailsViewController: UICollectionViewDelegateFlowLayout {
 private extension ChartRowDetailsViewController {
     static let rowDetailsCellIdentifier = "RowDetailsCell"
 
-    static let sectionInsets = UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: 10)
+    static let sectionInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
     static let spacingBetweenItems: CGFloat = 5
     static let itemHeight: CGFloat = 50
 }

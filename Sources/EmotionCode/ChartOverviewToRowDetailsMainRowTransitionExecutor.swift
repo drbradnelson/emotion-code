@@ -28,7 +28,7 @@ extension ChartOverviewToRowDetailsTransition {
         var executors = [TransitionExecutor]()
         for (index, _) in overviewRowCell.itemViews!.enumerate() {
 
-            let rowDetailsItemIndexPath = NSIndexPath.init(forItem: index, inSection: 0)
+            let rowDetailsItemIndexPath = NSIndexPath(forItem: index, inSection: 0)
             let rowDetailsItemView = data.rowDetailsController.rowDetailsView.cellForItemAtIndexPath(rowDetailsItemIndexPath)!
 
             let itemTransitionViews = createItemTransitionViews(forOverviewRowCell: overviewRowCell, forItemAtIndex: index, forData: data)
@@ -82,8 +82,8 @@ private extension ChartOverviewToRowDetailsTransition {
 
         let centerFrame = value(data, forward: info.overviewItemFrame, back: info.rowDetailsItemFrame)
 
-        transitionViews.overviewItemTransitionView.frame = CGRect.init(origin: CGPoint.zero, size: info.overviewItemFrame.size)
-        transitionViews.overviewItemTransitionView.center = CGPoint.init(x: centerFrame.width / 2, y: centerFrame.height / 2)
+        transitionViews.overviewItemTransitionView.frame = CGRect(origin: CGPoint.zero, size: info.overviewItemFrame.size)
+        transitionViews.overviewItemTransitionView.center = CGPoint(x: centerFrame.width / 2, y: centerFrame.height / 2)
         transitionViews.overviewItemTransitionView.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
 
         transitionViews.overviewItemTransitionView.alpha = value(data, forward: 1, back: 0)
@@ -92,8 +92,8 @@ private extension ChartOverviewToRowDetailsTransition {
     func prepareRowDetailsItemTransitionView(forData data: ChartOverviewToRowDetailsTransitionData, transitionViews: ItemTransitionViews, andTransitionInfo info: ItemTransitionInfo) {
 
         let centerFrame = value(data, forward: info.overviewItemFrame, back: info.rowDetailsItemFrame)
-        transitionViews.rowDetailsItemTransitionView.frame = CGRect.init(origin: CGPoint.zero, size: info.rowDetailsItemFrame.size)
-        transitionViews.rowDetailsItemTransitionView.center = CGPoint.init(x: centerFrame.width / 2, y: centerFrame.height / 2)
+        transitionViews.rowDetailsItemTransitionView.frame = CGRect(origin: CGPoint.zero, size: info.rowDetailsItemFrame.size)
+        transitionViews.rowDetailsItemTransitionView.center = CGPoint(x: centerFrame.width / 2, y: centerFrame.height / 2)
         transitionViews.rowDetailsItemTransitionView.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
 
         transitionViews.rowDetailsItemTransitionView.alpha = value(data, forward: 0, back: 1)
@@ -105,10 +105,10 @@ private extension ChartOverviewToRowDetailsTransition {
 
         let overviewItemView = overviewRowCell.itemViews![index]
 
-        let rowDetailsItemIndexPath = NSIndexPath.init(forItem: index, inSection: 0)
+        let rowDetailsItemIndexPath = NSIndexPath(forItem: index, inSection: 0)
         let rowDetailsItemView = data.rowDetailsController.rowDetailsView.cellForItemAtIndexPath(rowDetailsItemIndexPath)!
 
-        transitionViews.itemTransitionContainer = UIView.init()
+        transitionViews.itemTransitionContainer = UIView()
         transitionViews.itemTransitionContainer.clipsToBounds = true
 
         transitionViews.overviewItemTransitionView = overviewItemView.snapshotViewAfterScreenUpdates(value(data, forward: false, back: true))

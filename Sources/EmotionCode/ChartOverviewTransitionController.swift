@@ -45,7 +45,7 @@ extension ChartOverviewTransitionController: UINavigationControllerDelegate {
 
         var transition: UIViewControllerAnimatedTransitioning? = nil
         if fromVC is ChartOverviewViewController && toVC is ChartRowDetailsViewController {
-            transition = ChartOverviewToRowDetailsTransition.init(direction: .Forward)
+            transition = ChartOverviewToRowDetailsTransition(direction: .Forward)
         }
 
         return transition
