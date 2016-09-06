@@ -4,7 +4,7 @@ final class ChartOverviewLayoutAreaAllocator {
 
     let insets: UIEdgeInsets
     let areaWidth: CGFloat
-    var areaCurrentHeight: CGFloat = 0
+    var areaCurrentHeight: CGFloat
 
     init(areaWidth: CGFloat, andInsets insets: UIEdgeInsets) {
         self.areaWidth = areaWidth
