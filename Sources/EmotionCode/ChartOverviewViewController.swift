@@ -42,7 +42,7 @@ extension ChartOverviewViewController {
         chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kRowCounterElementIdentifier)
 
         chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.kRowElementIdentifier)
-        ChartOverviewAccessibilityController.setupAccessibilit(forChartOverviewView: chartView)
+        ChartOverviewAccessibilityController.setupAccessibility(forChartOverviewView: chartView)
     }
 
     override func viewWillAppear(animated: Bool) {
