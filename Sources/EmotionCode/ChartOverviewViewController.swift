@@ -22,11 +22,23 @@ extension ChartOverviewViewController {
         prepareUI()
     }
 
-    private func prepareData() {
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        chartView.reloadData()
+    }
+
+}
+
+// MARK: Preparation
+
+private extension ChartOverviewViewController {
+
+    func prepareData() {
         chartAdapter = ChartOverviewSimpleAdapter(chart: chart)
     }
 
-    private func prepareUI() {
+    func prepareUI() {
         chartView.delegate = self
         chartView.dataSource = self
 
@@ -41,12 +53,6 @@ extension ChartOverviewViewController {
 
         chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.rowElementIdentifier)
         ChartOverviewAccessibilityController.setupAccessibility(forChartOverviewView: chartView)
-    }
-
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-
-        chartView.reloadData()
     }
 
 }
