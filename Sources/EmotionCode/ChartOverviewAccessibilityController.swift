@@ -7,21 +7,21 @@ final class ChartOverviewAccessibilityController {}
 extension ChartOverviewAccessibilityController {
 
     static func setupAccessibility(forChartOverviewView view: UIView) {
-        view.accessibilityIdentifier = ChartOverviewAccessibilityController.chartOverviewViewIdentifier
+        view.accessibilityIdentifier = self.chartOverviewViewIdentifier
     }
 
     static func setupAccessibility(forColumnHeader view: UIView, forColumn column: ChartColumn, atIndex columnIndex: Int) {
-        let idenitifer = "\(ChartOverviewAccessibilityController.columnHeaderIdentifierPrefix)_\(columnIndex)"
+        let idenitifer = "\(self.columnHeaderIdentifierPrefix)_\(columnIndex)"
         view.accessibilityIdentifier = idenitifer
     }
 
     static func setupAccessibility(forRowCounterView view: UIView, atRowIndex rowIndex: Int) {
-        let idenitifer = "\(ChartOverviewAccessibilityController.rowCounterIdentifierPrefix)_\(rowIndex)"
+        let idenitifer = "\(self.rowCounterIdentifierPrefix)_\(rowIndex)"
         view.accessibilityIdentifier = idenitifer
     }
 
     static func setupAccessibility(forRowCell view: UIView, forRow row: ChartRow, atRowPosition rowPosition: ChartRowPosition) {
-        let idenitifer = "\(ChartOverviewAccessibilityController.rowCellIdentifierPrefix)_\(rowPosition.columnIndex)_\(rowPosition.rowIndex)"
+        let idenitifer = "\(self.rowCellIdentifierPrefix)_\(rowPosition.columnIndex)_\(rowPosition.rowIndex)"
         view.accessibilityIdentifier = idenitifer
     }
 
@@ -29,7 +29,7 @@ extension ChartOverviewAccessibilityController {
 
 // MARK: Constants
 
-extension ChartOverviewAccessibilityController {
+private extension ChartOverviewAccessibilityController {
 
     static let chartOverviewViewIdentifier = "ChartOverviewView"
     static let columnHeaderIdentifierPrefix = "ColumnHeader"
