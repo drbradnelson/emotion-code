@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 final class ChartOverviewItemView: UIView {
 
     private (set) var titleLabel: UILabel

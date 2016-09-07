@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 final class ChartOverviewLayoutAreaAllocator {
 
     let insets: UIEdgeInsets

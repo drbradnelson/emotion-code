@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 struct ChartOverviewRowCellLayout {}
 
 extension ChartOverviewRowCellLayout {

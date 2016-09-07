@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 final class ChartOverviewRowCell: UICollectionViewCell {
 
     var itemViews: [ChartOverviewItemView]?
