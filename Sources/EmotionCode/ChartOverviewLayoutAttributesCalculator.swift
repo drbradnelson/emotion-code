@@ -84,7 +84,7 @@ extension ChartOverviewLayoutAttributesCalculator {
 
 private extension ChartOverviewLayoutAttributesCalculator {
 
-    func calculateFrame(forColumntHeaderAtPosition position: Int, inArea area: CGRect) -> CGRect {
+    func calculateFrame(forColumnHeaderAtPosition position: Int, inArea area: CGRect) -> CGRect {
         let offset = calculateColumnOffset(forColumnIndex: position)
         let columnWidth = calculateColumnWidth()
         let headerHeight = layoutParams.heightForColumnHeaderElement

@@ -11,18 +11,18 @@ extension ChartOverviewAccessibilityController {
     }
 
     static func setupAccessibility(forColumnHeader view: UIView, forColumn column: ChartColumn, atIndex columnIndex: Int) {
-        let idenitifer = "\(self.columnHeaderIdentifierPrefix)_\(columnIndex)"
-        view.accessibilityIdentifier = idenitifer
+        let identifier = "\(self.columnHeaderIdentifierPrefix)_\(columnIndex)"
+        view.accessibilityIdentifier = identifier
     }
 
     static func setupAccessibility(forRowCounterView view: UIView, atRowIndex rowIndex: Int) {
-        let idenitifer = "\(self.rowCounterIdentifierPrefix)_\(rowIndex)"
-        view.accessibilityIdentifier = idenitifer
+        let identifier = "\(self.rowCounterIdentifierPrefix)_\(rowIndex)"
+        view.accessibilityIdentifier = identifier
     }
 
     static func setupAccessibility(forRowCell view: UIView, forRow row: ChartRow, atRowPosition rowPosition: ChartRowPosition) {
-        let idenitifer = "\(self.rowCellIdentifierPrefix)_\(rowPosition.columnIndex)_\(rowPosition.rowIndex)"
-        view.accessibilityIdentifier = idenitifer
+        let identifier = "\(self.rowCellIdentifierPrefix)_\(rowPosition.columnIndex)_\(rowPosition.rowIndex)"
+        view.accessibilityIdentifier = identifier
     }
 
 }
