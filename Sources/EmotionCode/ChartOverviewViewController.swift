@@ -50,9 +50,10 @@ extension ChartOverviewViewController {
     }
 }
 
+
 // MARK: UICollectionViewDelegate
 
-extension ChartOverviewViewController : UICollectionViewDelegate {}
+extension ChartOverviewViewController : UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let selectedRowPosition = self.chartAdapter.rowPosition(forIndexPath: indexPath)
         self.transitionController.goToRowDetails(self, forRowPosition: selectedRowPosition)
