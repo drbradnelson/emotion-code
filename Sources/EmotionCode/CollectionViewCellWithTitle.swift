@@ -18,6 +18,7 @@ class CollectionViewCellWithTitle: UICollectionViewCell {
 
         setup()
     }
+
 }
 
 // MARK: ViewWithTitle
@@ -35,6 +36,7 @@ private extension CollectionViewCellWithTitle {
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .Center
     }
+
 }
 
 // MARK: Layout calculation
@@ -45,4 +47,5 @@ extension CollectionViewCellWithTitle {
         super.layoutSubviews()
         titleLabel.frame = contentView.bounds
     }
+
 }
