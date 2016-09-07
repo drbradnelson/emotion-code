@@ -35,9 +35,9 @@ private extension ChartOverviewRowCell {
 extension ChartOverviewRowCell {
 
     func update(withItems items: [ChartItem]) {
-        itemViews?.forEach({ (view) in
+        itemViews?.forEach { (view) in
             view.removeFromSuperview()
-        })
+        }
 
         itemViews = [ChartOverviewItemView]()
 
@@ -59,9 +59,9 @@ extension ChartOverviewRowCell {
 
     func update(itemBackgroundColor color: UIColor) {
         itemBackgroundColor = color
-        itemViews?.forEach({ (view) in
+        itemViews?.forEach { (view) in
             view.backgroundColor = color
-        })
+        }
     }
 
 }

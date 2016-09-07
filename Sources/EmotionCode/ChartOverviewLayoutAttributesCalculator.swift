@@ -26,7 +26,7 @@ extension ChartOverviewLayoutAttributesCalculator {
         var attributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
         for columnIndex in 0 ..< adapter.numberOfColumns() {
 
-            let frame = calculateFrame(forColumntHeaderAtPosition: columnIndex, inArea: area)
+            let frame = calculateFrame(forColumnHeaderAtPosition: columnIndex, inArea: area)
             let indexPath = adapter.indexPath(forColumnIndex: columnIndex)
 
             let layoutAttribute = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartOverviewCollectionLayout.columnHeaderElementIdentifier, withIndexPath: indexPath)
