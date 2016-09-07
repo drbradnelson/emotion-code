@@ -29,7 +29,23 @@ extension ChartRowDetailsViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        rowDetailsView.reloadData()
+        self.rowDetailsView.reloadData()
+        
+        self.navigationController!.delegate = self
+    }
+}
+
+// MARK: UINavigationController delegate
+
+extension ChartRowDetailsViewController: UINavigationControllerDelegate {
+    
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        var transition: UIViewControllerAnimatedTransitioning? = nil
+        if fromVC is ChartRowDetailsViewController && toVC is ChartOverviewViewController {
+            transition = ChartOverviewToRowDetailsTransition.init(direction: .Backward)
+        }
+        
     }
 
 }
@@ -68,7 +84,7 @@ extension ChartRowDetailsViewController: UICollectionViewDataSource {
 
         let item = chartRow!.items[indexPath.item]
         cell.title = item.title
-        cell.backgroundColor = UIColor.grayColor()
+        cell.backgroundColor = UIColor.lightGrayColor()
 
         return cell
     }
@@ -110,6 +126,6 @@ private extension ChartRowDetailsViewController {
 
     static let sectionInsets = UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: 10)
     static let spacingBetweenItems: CGFloat = 5
-    static let itemHeight: CGFloat = 40
+    static let itemHeight: CGFloat = 50
 
 }
