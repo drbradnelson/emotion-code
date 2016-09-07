@@ -42,7 +42,7 @@ extension BookNavigationBarButtonTests {
             app.buttons["Next Chapter"].tap()
         }
     }
-    
+
     func testPreviousChapterButtonStateAfterFirstChapterSelection() {
         app.buttons["Chapter 1"].tap()
         app.cells.first.tap()
