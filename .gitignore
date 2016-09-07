@@ -8,3 +8,4 @@
 *.xcscmblueprint
 project.xcworkspace/
 xcuserdata/
+.idea/
