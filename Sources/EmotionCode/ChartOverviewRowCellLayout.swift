@@ -10,7 +10,6 @@ extension ChartOverviewRowCellLayout {
     static let spacingBetweenItems: CGFloat = 5
 
     static func layout(itemViews itemViews: [ChartOverviewItemView], inContainer container: UIView) {
-
         let bounds = container.bounds
 
         let itemHeight = (bounds.height - spacingBetweenItems * CGFloat(itemViews.count - 1)) / CGFloat(itemViews.count)
@@ -25,7 +24,6 @@ extension ChartOverviewRowCellLayout {
     }
 
     static func height(forItems numberOfItems: Int) -> CGFloat {
-
         return desiredItemHeight * CGFloat(numberOfItems) + CGFloat(numberOfItems - 1) * spacingBetweenItems
     }
 

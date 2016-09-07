@@ -25,7 +25,6 @@ extension ChartOverviewLayoutAttributesCalculator {
 
         var attributes = [NSIndexPath: UICollectionViewLayoutAttributes]()
         for columnIndex in 0 ..< adapter.numberOfColumns() {
-
             let frame = calculateFrame(forColumnHeaderAtPosition: columnIndex, inArea: area)
             let indexPath = adapter.indexPath(forColumnIndex: columnIndex)
 
@@ -119,7 +118,6 @@ private extension ChartOverviewLayoutAttributesCalculator {
     }
 
     func calculateColumnOffset(forColumnIndex column: Int) -> CGFloat {
-
         let initialOffset = layoutParams.widthForRowCounterElement
         let columnWidth = calculateColumnWidth()
         let spacing = layoutParams.spacingBetweenColumns

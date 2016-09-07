@@ -84,7 +84,6 @@ private extension ChartOverviewCollectionLayout {
     }
 
     func calculateSectionsAttributes(withCalculator calculator: ChartOverviewLayoutAttributesCalculator, andAllocator allocator: ChartOverviewLayoutAreaAllocator) -> (rowCounterElementsAttributes: [NSIndexPath: UICollectionViewLayoutAttributes], rowElementsAttributes: [NSIndexPath: UICollectionViewLayoutAttributes]) {
-
         var rowCounterElementAttributesMap = [NSIndexPath: UICollectionViewLayoutAttributes]()
         var rowElementAttributesMap = [NSIndexPath: UICollectionViewLayoutAttributes]()
 

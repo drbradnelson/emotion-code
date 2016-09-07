@@ -30,7 +30,6 @@ extension CollectionViewReusableViewWithTitle : ViewWithTitle {}
 private extension CollectionViewReusableViewWithTitle {
 
     func setup() {
-
         addSubview(titleLabel)
 
         titleLabel.font = UIFont.systemFontOfSize(20)

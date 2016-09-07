@@ -85,7 +85,6 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
 
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-
         let identifier = kind
         var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: identifier, forIndexPath: indexPath) as! CollectionViewReusableViewWithTitle
 
@@ -133,7 +132,6 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     }
 
     func heightForRowElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout, forRow row: Int) -> CGFloat {
-
         var maxItems = 0
         for columnIndex in 0 ..< chartAdapter.numberOfColumns() {
             let rowItemsNumber = chartAdapter.numberOfItems(forColumnIndex: columnIndex, forRowIndex: row)

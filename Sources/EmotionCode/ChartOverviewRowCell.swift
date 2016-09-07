@@ -45,7 +45,6 @@ extension ChartOverviewRowCell {
         let contentView = self.contentView
 
         for item in items {
-
             var itemView = ChartOverviewItemView(frame: CGRect.zero)
             itemView.title = item.title
             itemView.backgroundColor = itemBackgroundColor
