@@ -3,7 +3,7 @@ import UIKit
 
 extension ChartOverviewToRowDetailsTransition {
     
-    func createMainRowTransition(withData data:ChartOverviewToRowDetailsTransitionData) -> TransitionExecutor {
+    func createMainRowTransition(forData data:ChartOverviewToRowDetailsTransitionData) -> TransitionExecutor {
         let chartRowPosition = data.rowDetailsController.chartRowPosition!
         let overviewRowCellIndexPath = data.overviewController.chartAdapter.indexPath(forRowPosition: chartRowPosition)
         let overviewRowCell = data.overviewController.chartView.cellForItemAtIndexPath(overviewRowCellIndexPath) as! ChartOverviewRowCell
@@ -24,7 +24,7 @@ extension ChartOverviewToRowDetailsTransition {
             itemTransitionContainerView.addSubview(overviewItemViewSnapshot)
             itemTransitionContainerView.frame = overviewItemFrame
             overviewItemViewSnapshot.frame = itemTransitionContainerView.bounds
-            overviewItemViewSnapshot.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin]
+            overviewItemViewSnapshot.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
 
             let rowDetailsItemViewSnapshot = rowDetailsItemView.snapshotViewAfterScreenUpdates(self.value(data, forward: true, back: false))
             itemTransitionContainerView.addSubview(rowDetailsItemViewSnapshot)
@@ -33,11 +33,11 @@ extension ChartOverviewToRowDetailsTransition {
             rowDetailsItemViewSnapshot.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
             
             let prepareBlock = {
+                
                 data.containerView.addSubview(itemTransitionContainerView)
 
                 rowDetailsItemViewSnapshot.alpha = self.value(data, forward: 0, back: 1)
                 overviewItemViewSnapshot.alpha = self.value(data, forward: 1, back: 0)
-                overviewItemView.hidden = true
 
                 itemTransitionContainerView.backgroundColor = self.value(data, forward: overviewItemView.backgroundColor, back: rowDetailsItemView.backgroundColor)
                 itemTransitionContainerView.frame = self.value(data, forward: overviewItemFrame, back: rowDetailsItemFrame)
@@ -51,9 +51,8 @@ extension ChartOverviewToRowDetailsTransition {
                 itemTransitionContainerView.frame = self.value(data, forward: rowDetailsItemFrame, back: overviewItemFrame)
             }
             
-            let completionBlock: (Bool) -> () = { (frinished) -> () in
+            let completionBlock: (Bool) -> () = { (cancelled) -> () in
                 itemTransitionContainerView.removeFromSuperview()
-                overviewItemView.hidden = false
             }
             
             let executor = TransitionExecutorFactory.transitionExecutor(withPrepareBlock: prepareBlock, executeBlock: animationBlock, completionBlock: completionBlock)

@@ -1,14 +1,15 @@
 protocol TransitionExecutor {
     func prepare()
     func execute()
-    func complete(finished: Bool)
+    func complete()
+    func cancel()
 }
 
 // MARK: Factory methods
 
 class TransitionExecutorFactory {
     
-    static func transitionExecutor(withPrepareBlock prepareBlock: (() -> ())?, executeBlock: () -> (), completionBlock: ((finished: Bool) -> ())?) -> TransitionExecutor {
+    static func transitionExecutor(withPrepareBlock prepareBlock: (() -> ())?, executeBlock: () -> (), completionBlock: ((cancelled: Bool) -> ())?) -> TransitionExecutor {
         return BlockTransitionExecutor.init(prepareBlock: prepareBlock, executeBlock: executeBlock, completionBlock: completionBlock)
     }
     
@@ -30,9 +31,9 @@ extension TransitionExecutor {
 private class BlockTransitionExecutor {
     let prepareBlock: (() -> ())?
     let executeBlock: () -> ()
-    let completionBlock: ((finished: Bool) -> ())?
+    let completionBlock: ((cancelled: Bool) -> ())?
     
-    init(prepareBlock: (() -> ())?, executeBlock: () -> (), completionBlock: ((finished: Bool) -> ())?) {
+    init(prepareBlock: (() -> ())?, executeBlock: () -> (), completionBlock: ((cancelled: Bool) -> ())?) {
         self.prepareBlock = prepareBlock
         self.executeBlock = executeBlock
         self.completionBlock = completionBlock
@@ -50,8 +51,12 @@ extension BlockTransitionExecutor: TransitionExecutor {
         self.executeBlock()
     }
     
-    func complete(finish: Bool) {
-        self.completionBlock?(finished: finish)
+    func complete() {
+        self.completionBlock?(cancelled: false)
+    }
+    
+    func cancel() {
+        self.completionBlock?(cancelled: true)
     }
 }
 
@@ -80,9 +85,15 @@ extension GroupTransitionExecutor: TransitionExecutor {
         }
     }
     
-    func complete(finished: Bool) {
+    func complete() {
         executors.forEach { (executor) in
-            executor.complete(finished)
+            executor.complete()
+        }
+    }
+    
+    func cancel() {
+        executors.forEach { (executor) in
+            executor.cancel()
         }
     }
 }
