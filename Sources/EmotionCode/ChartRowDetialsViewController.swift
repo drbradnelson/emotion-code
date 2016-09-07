@@ -21,6 +21,9 @@ class ChartRowDetailsViewController: UIViewController {
     private var chartRow: ChartRow?
 
     var chartRowPosition: ChartRowPosition!
+
+    private var transitionToItemDetailsController: ChartRowToItemTransitionController!
+    private (set) var chartAdapter: ChartOverviewCollectionLayoutDataAdapter!
 }
 
 // MARK: View lifecycle callbacks
@@ -47,8 +50,10 @@ extension ChartRowDetailsViewController {
 extension ChartRowDetailsViewController {
 
     private func prepareData() {
+        self.chartAdapter = ChartOverviewSimpleAdapter(chart: chart)
         self.chartRow = self.chart.row(forPosition: self.chartRowPosition!)
         self.transitionController = ChartRowDetailsTransitionController(chartRowDetailsViewController: self)
+        self.transitionToItemDetailsController = ChartRowToItemTransitionController()
     }
 
     private func prepareUI() {
@@ -61,6 +66,28 @@ extension ChartRowDetailsViewController {
         self.rowDetailsView.registerClass(CollectionViewCellWithTitle.self, forCellWithReuseIdentifier: ChartRowDetailsViewController.rowDetailsCellIdentifier)
 
         ChartRowDetailsAccessibilityController.setupAccessibilit(forChartOverviewView: rowDetailsView)
+    }
+
+}
+
+
+extension ChartRowDetailsViewController {
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        self.transitionToItemDetailsController.finishTransition(forSegue: segue)
+    }
+
+}
+
+// MARK: UICollectionViewDelegate methods
+
+extension ChartRowDetailsViewController {
+
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+
+        let itemPosition = ChartItemPosition.init(column: self.chartRowPosition.columnIndex, row: self.chartRowPosition.rowIndex, item: indexPath.item)
+        self.transitionToItemDetailsController.goToRowDetails(self, forItemPosition: itemPosition)
     }
 
 }
@@ -124,5 +151,7 @@ private extension ChartRowDetailsViewController {
     static let sectionInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
     static let spacingBetweenItems: CGFloat = 5
     static let itemHeight: CGFloat = 50
+
+    static let itemBackgroundColor = UIColor(red: 216.0/255.0, green: 216.0/255.0, blue: 216.0/255.0, alpha: 1.0)
 
 }
