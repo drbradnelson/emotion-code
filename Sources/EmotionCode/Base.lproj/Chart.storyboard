@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Chart-->
         <scene sceneID="SLh-DE-o7h">
             <objects>
-                <viewController id="NJr-vB-XRf" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NJr-vB-XRf" customClass="ChartOverviewViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r3m-ds-jz3"/>
                         <viewControllerLayoutGuide type="bottom" id="KEl-2v-8Iz"/>
@@ -16,13 +15,31 @@
                     <view key="view" contentMode="scaleToFill" id="sHF-hw-VyN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-rU-nuA" userLabel="Chart Overview View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="u9q-Do-qaJ" customClass="ChartOverviewCollectionLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hNB-rU-nuA" secondAttribute="trailing" id="3We-eo-TmM"/>
+                            <constraint firstItem="hNB-rU-nuA" firstAttribute="leading" secondItem="sHF-hw-VyN" secondAttribute="leading" id="6WX-Bf-pFX"/>
+                            <constraint firstItem="KEl-2v-8Iz" firstAttribute="top" secondItem="hNB-rU-nuA" secondAttribute="bottom" id="I08-ee-CdM"/>
+                            <constraint firstItem="hNB-rU-nuA" firstAttribute="top" secondItem="r3m-ds-jz3" secondAttribute="bottom" id="WFh-8J-TbB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chart" id="pkG-bX-Aih"/>
+                    <connections>
+                        <outlet property="chartView" destination="hNB-rU-nuA" id="OxG-st-LBX"/>
+                        <segue destination="mbQ-kI-7cF" kind="show" identifier="ShowRowDetails" id="PCZ-pu-EgE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oX-Tv-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="526"/>
+            <point key="canvasLocation" x="2107" y="526"/>
         </scene>
         <!--Chart-->
         <scene sceneID="v46-gz-OvS">
@@ -43,6 +60,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ops-Lz-xwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1361" y="526"/>
+        </scene>
+        <!--Chart Row Details View Controller-->
+        <scene sceneID="ynI-uQ-4fj">
+            <objects>
+                <viewController id="mbQ-kI-7cF" customClass="ChartRowDetailsViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="709-lr-vn1"/>
+                        <viewControllerLayoutGuide type="bottom" id="sF3-en-lVN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vhc-EP-Cc9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-59-PWN">
+                                <rect key="frame" x="264.5" y="74" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xwe-Bz-VEM">
+                                <rect key="frame" x="0.0" y="105" width="600" height="446"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sDT-oT-GIf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xwe-Bz-VEM" firstAttribute="leading" secondItem="vhc-EP-Cc9" secondAttribute="leading" id="7H6-Fq-R84"/>
+                            <constraint firstItem="sF3-en-lVN" firstAttribute="top" secondItem="Xwe-Bz-VEM" secondAttribute="bottom" id="9cT-9U-Zlm"/>
+                            <constraint firstItem="jcb-59-PWN" firstAttribute="centerX" secondItem="vhc-EP-Cc9" secondAttribute="centerX" id="IL3-iu-Zcz"/>
+                            <constraint firstItem="Xwe-Bz-VEM" firstAttribute="top" secondItem="jcb-59-PWN" secondAttribute="bottom" constant="10" id="Pv6-OE-jN5"/>
+                            <constraint firstItem="jcb-59-PWN" firstAttribute="top" secondItem="709-lr-vn1" secondAttribute="bottom" constant="10" id="eo6-wf-gwu"/>
+                            <constraint firstAttribute="trailing" secondItem="Xwe-Bz-VEM" secondAttribute="trailing" id="rB8-1M-cts"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartRowTitleLabel" destination="jcb-59-PWN" id="tKD-Hq-77M"/>
+                        <outlet property="rowDetailsView" destination="Xwe-Bz-VEM" id="XjP-j8-jrW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5Y-O2-8pr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="526"/>
         </scene>
     </scenes>
     <resources>
