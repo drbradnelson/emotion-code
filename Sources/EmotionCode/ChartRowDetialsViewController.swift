@@ -7,7 +7,7 @@ final class ChartRowDetailsViewController: UIViewController {
     @IBOutlet weak var chartRowTitleLabel: UILabel!
     @IBOutlet weak var rowDetailsView: UICollectionView!
 
-    
+
     private var transitionController: ChartRowDetailsTransitionController!
 
     var chartRowPosition: ChartRowPosition!

@@ -55,7 +55,7 @@ extension ChartOverviewViewController {
 
 extension ChartOverviewViewController : UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let selectedRowPosition = self.chartAdapter.rowPosition(forIndexPath: indexPath)
+        let selectedRowPosition = chartAdapter.rowPosition(forIndexPath: indexPath)
         self.transitionController.goToRowDetails(self, forRowPosition: selectedRowPosition)
     }
 }
@@ -89,11 +89,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
         return cell
     }
 
-
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return chartOverviewLayout.adapter.numberOfSections()
-    }
-
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int { return chartOverviewLayout.adapter.numberOfSections() }
 
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
 
