@@ -14,6 +14,12 @@ final class ChartOverviewLayoutAreaAllocator {
         areaCurrentHeight = insets.top
     }
 
+}
+
+// MARK: Area allocation and calculation
+
+extension ChartOverviewLayoutAreaAllocator {
+
     func allocateArea(withHeight height: CGFloat) -> CGRect {
         let startY = areaCurrentHeight
         areaCurrentHeight += height
