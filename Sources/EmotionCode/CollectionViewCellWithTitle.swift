@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 class CollectionViewCellWithTitle: UICollectionViewCell {
 
     private (set) var titleLabel: UILabel

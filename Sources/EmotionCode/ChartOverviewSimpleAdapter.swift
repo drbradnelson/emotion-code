@@ -1,5 +1,7 @@
 import Foundation
 
+// MARK: Main
+
 final class ChartOverviewSimpleAdapter {
 
     private var chart: Chart
@@ -8,6 +10,8 @@ final class ChartOverviewSimpleAdapter {
     }
 
 }
+
+// MARK: Adapter methods
 
 extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter {
 

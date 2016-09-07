@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 protocol ViewWithTitle {
     var titleLabel: UILabel {get}
 }

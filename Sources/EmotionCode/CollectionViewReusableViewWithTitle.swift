@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: Main
+
 class CollectionViewReusableViewWithTitle: UICollectionReusableView {
 
     private (set) var titleLabel: UILabel
