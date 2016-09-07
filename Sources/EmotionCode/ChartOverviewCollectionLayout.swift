@@ -64,12 +64,26 @@ extension ChartOverviewCollectionLayout {
         calculatedContentSize = CGSize(width: allocator.allocatedArea().width, height: allocator.allocatedArea().height)
     }
 
-    private func calculateAttributesForColumnElementHeader(withCalculator calculator: ChartOverviewLayoutAttributesCalculator) -> [NSIndexPath: UICollectionViewLayoutAttributes] {
+    override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+        return true
+    }
+
+    override func collectionViewContentSize() -> CGSize {
+        return calculatedContentSize
+    }
+
+}
+
+// MARK: Calculating layout attributes
+
+private extension ChartOverviewCollectionLayout {
+
+    func calculateAttributesForColumnElementHeader(withCalculator calculator: ChartOverviewLayoutAttributesCalculator) -> [NSIndexPath: UICollectionViewLayoutAttributes] {
         let columnHeaderElementAttributesMap = calculator.calculateAttributesForColumnElementHeader()
         return columnHeaderElementAttributesMap
     }
 
-    private func calculateSectionsAttributes(withCalculator calculator: ChartOverviewLayoutAttributesCalculator, andAllocator allocator: ChartOverviewLayoutAreaAllocator) -> (rowCounterElementsAttributes: [NSIndexPath: UICollectionViewLayoutAttributes], rowElementsAttributes: [NSIndexPath: UICollectionViewLayoutAttributes]) {
+    func calculateSectionsAttributes(withCalculator calculator: ChartOverviewLayoutAttributesCalculator, andAllocator allocator: ChartOverviewLayoutAreaAllocator) -> (rowCounterElementsAttributes: [NSIndexPath: UICollectionViewLayoutAttributes], rowElementsAttributes: [NSIndexPath: UICollectionViewLayoutAttributes]) {
 
         var rowCounterElementAttributesMap = [NSIndexPath: UICollectionViewLayoutAttributes]()
         var rowElementAttributesMap = [NSIndexPath: UICollectionViewLayoutAttributes]()
@@ -88,14 +102,6 @@ extension ChartOverviewCollectionLayout {
         }
 
         return (rowCounterElementAttributesMap, rowElementAttributesMap)
-    }
-
-    override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
-        return true
-    }
-
-    override func collectionViewContentSize() -> CGSize {
-        return calculatedContentSize
     }
 
 }
