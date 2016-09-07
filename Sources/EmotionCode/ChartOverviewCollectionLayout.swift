@@ -21,9 +21,9 @@ protocol ChartOverviewCollectionLayoutDelegate: class {
 
 class ChartOverviewCollectionLayout: UICollectionViewLayout {
 
-    static let kColumnHeaderElementIdentifier = "ColumnHeader"
-    static let kRowCounterElementIdentifier = "RowCounter"
-    static let kRowElementIdentifier = "ChartRow"
+    static let columnHeaderElementIdentifier = "ColumnHeader"
+    static let cowCounterElementIdentifier = "RowCounter"
+    static let rowElementIdentifier = "ChartRow"
 
     weak var delegate: ChartOverviewCollectionLayoutDelegate!
     var adapter: ChartOverviewCollectionLayoutDataAdapter!
@@ -56,9 +56,9 @@ extension ChartOverviewCollectionLayout {
         self.layoutAttributesList = layoutAttributesList
 
         layoutAttributesMap = [
-            ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier : columnHeaderElementAttributesMap,
-            ChartOverviewCollectionLayout.kRowCounterElementIdentifier : rowCounterElementsAttributes,
-            ChartOverviewCollectionLayout.kRowElementIdentifier : rowElementsAttributes,
+            ChartOverviewCollectionLayout.columnHeaderElementIdentifier: columnHeaderElementAttributesMap,
+            ChartOverviewCollectionLayout.cowCounterElementIdentifier: rowCounterElementsAttributes,
+            ChartOverviewCollectionLayout.rowElementIdentifier: rowElementsAttributes,
         ]
 
         calculatedContentSize = CGSize(width: allocator.allocatedArea().width, height: allocator.allocatedArea().height)
@@ -92,8 +92,8 @@ private extension ChartOverviewCollectionLayout {
         for section in 0 ..< adapter.numberOfSections() {
             let sectionAttributes = calculator.calculateAttributes(forSection: section)
 
-            let sectionRowCounterAttributes = sectionAttributes[ChartOverviewCollectionLayout.kRowCounterElementIdentifier]!
-            let sectionRowAttributes = sectionAttributes[ChartOverviewCollectionLayout.kRowElementIdentifier]!
+            let sectionRowCounterAttributes = sectionAttributes[ChartOverviewCollectionLayout.cowCounterElementIdentifier]!
+            let sectionRowAttributes = sectionAttributes[ChartOverviewCollectionLayout.rowElementIdentifier]!
 
             rowCounterElementAttributesMap.mergeWith(sectionRowCounterAttributes)
             rowElementAttributesMap.mergeWith(sectionRowAttributes)
@@ -119,7 +119,7 @@ extension ChartOverviewCollectionLayout {
     }
 
     override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
-        let attributes = layoutAttributesMap![ChartOverviewCollectionLayout.kRowElementIdentifier]![indexPath]
+        let attributes = layoutAttributesMap![ChartOverviewCollectionLayout.rowElementIdentifier]![indexPath]
         return attributes
     }
 

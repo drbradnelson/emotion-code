@@ -36,10 +36,10 @@ extension ChartOverviewViewController {
 
         chartView.setCollectionViewLayout(chartOverviewLayout, animated: false)
 
-        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier)
-        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.kRowCounterElementIdentifier)
+        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.columnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.columnHeaderElementIdentifier)
+        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.cowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.cowCounterElementIdentifier)
 
-        chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.kRowElementIdentifier)
+        chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.rowElementIdentifier)
         ChartOverviewAccessibilityController.setupAccessibility(forChartOverviewView: chartView)
     }
 
@@ -63,7 +63,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
     }
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ChartOverviewCollectionLayout.kRowElementIdentifier, forIndexPath: indexPath) as! ChartOverviewRowCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ChartOverviewCollectionLayout.rowElementIdentifier, forIndexPath: indexPath) as! ChartOverviewRowCell
 
         let rowPosition = chartAdapter.rowPosition(forIndexPath: indexPath)
         let row = chart.row(forPosition: rowPosition)
@@ -88,7 +88,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
         let identifier = kind
         var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: identifier, forIndexPath: indexPath) as! CollectionViewReusableViewWithTitle
 
-        if kind == ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier {
+        if kind == ChartOverviewCollectionLayout.columnHeaderElementIdentifier {
             let columnIndex = chartAdapter.columnIndex(forIndexPath: indexPath)
             view.title = "\(columnIndex)"
             ChartOverviewAccessibilityController.setupAccessibility(forColumnHeader: view, forColumn: chart.columns[columnIndex], atIndex: columnIndex)

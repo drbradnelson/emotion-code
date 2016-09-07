@@ -29,7 +29,7 @@ extension ChartOverviewLayoutAttributesCalculator {
             let frame = calculateFrame(forColumntHeaderAtPosition: columnIndex, inArea:area)
             let indexPath = adapter.indexPath(forColumnIndex: columnIndex)
 
-            let layoutAttribute = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kColumnHeaderElementIdentifier, withIndexPath: indexPath)
+            let layoutAttribute = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartOverviewCollectionLayout.columnHeaderElementIdentifier, withIndexPath: indexPath)
             layoutAttribute.frame = frame
 
             attributes[indexPath] = layoutAttribute
@@ -56,8 +56,8 @@ extension ChartOverviewLayoutAttributesCalculator {
         }
 
         let attributes = [
-            ChartOverviewCollectionLayout.kRowCounterElementIdentifier : counterAttributes,
-            ChartOverviewCollectionLayout.kRowElementIdentifier : rowElementAttributes
+            ChartOverviewCollectionLayout.cowCounterElementIdentifier: counterAttributes,
+            ChartOverviewCollectionLayout.rowElementIdentifier: rowElementAttributes
         ]
 
         return attributes
@@ -70,7 +70,7 @@ extension ChartOverviewLayoutAttributesCalculator {
         let counterElementAttributeFrame = calculateFrameForCounterElement(atPosition: section, inArea:area)
         let counterElementIndexPath = adapter.indexPath(forRowIndex: rowIndex)
         counterAttributes = UICollectionViewLayoutAttributes(
-            forSupplementaryViewOfKind: ChartOverviewCollectionLayout.kRowCounterElementIdentifier,
+            forSupplementaryViewOfKind: ChartOverviewCollectionLayout.cowCounterElementIdentifier,
             withIndexPath: counterElementIndexPath
         )
 
