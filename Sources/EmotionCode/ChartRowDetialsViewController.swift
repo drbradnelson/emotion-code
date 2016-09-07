@@ -26,23 +26,25 @@ extension ChartRowDetailsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.prepareData()
-        self.prepareUI()
+        prepareData()
+        prepareUI()
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-        self.rowDetailsView.reloadData()
+        rowDetailsView.reloadData()
     }
+
 }
 
 // MARK: Setup
 
-extension ChartRowDetailsViewController {
-    private func prepareData() {
-        self.chartRow = self.chart.row(forPosition: self.chartRowPosition!)
-        self.transitionController = ChartRowDetailsTransitionController.init(chartRowDetailsViewController: self)
+private extension ChartRowDetailsViewController {
+
+    func prepareData() {
+        chartRow = chart.row(forPosition: chartRowPosition!)
+        transitionController = ChartRowDetailsTransitionController.init(chartRowDetailsViewController: self)
     }
 
     func prepareUI() {
@@ -52,7 +54,7 @@ extension ChartRowDetailsViewController {
         rowDetailsView.delegate = self
         rowDetailsView.dataSource = self
 
-        self.rowDetailsView.registerClass(CollectionViewCellWithTitle.self, forCellWithReuseIdentifier: ChartRowDetailsViewController.rowDetailsCellIdentifier)
+        rowDetailsView.registerClass(CollectionViewCellWithTitle.self, forCellWithReuseIdentifier: ChartRowDetailsViewController.rowDetailsCellIdentifier)
     }
 
 }
@@ -108,6 +110,7 @@ extension ChartRowDetailsViewController: UICollectionViewDelegateFlowLayout {
 // MARK: Constants
 
 private extension ChartRowDetailsViewController {
+
     static let rowDetailsCellIdentifier = "RowDetailsCell"
 
     static let sectionInsets = UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: 10)
