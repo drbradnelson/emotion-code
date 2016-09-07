@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Chart-->
         <scene sceneID="SLh-DE-o7h">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NJr-vB-XRf" customClass="ChartOverviewViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NJr-vB-XRf" customClass="ChartOverviewViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r3m-ds-jz3"/>
                         <viewControllerLayoutGuide type="bottom" id="KEl-2v-8Iz"/>
@@ -17,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-rU-nuA" userLabel="Chart Overview View">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="u9q-Do-qaJ" customClass="ChartOverviewCollectionLayout" customModule="EmotionCode" customModuleProvider="target"/>
                                 <cells/>
@@ -28,8 +30,20 @@
                             <constraint firstAttribute="trailing" secondItem="hNB-rU-nuA" secondAttribute="trailing" id="3We-eo-TmM"/>
                             <constraint firstItem="hNB-rU-nuA" firstAttribute="leading" secondItem="sHF-hw-VyN" secondAttribute="leading" id="6WX-Bf-pFX"/>
                             <constraint firstItem="KEl-2v-8Iz" firstAttribute="top" secondItem="hNB-rU-nuA" secondAttribute="bottom" id="I08-ee-CdM"/>
+                            <constraint firstItem="hNB-rU-nuA" firstAttribute="top" secondItem="r3m-ds-jz3" secondAttribute="bottom" id="Spl-hv-3uh"/>
                             <constraint firstItem="hNB-rU-nuA" firstAttribute="top" secondItem="r3m-ds-jz3" secondAttribute="bottom" id="WFh-8J-TbB"/>
+                            <constraint firstItem="KEl-2v-8Iz" firstAttribute="top" secondItem="hNB-rU-nuA" secondAttribute="bottom" id="gZ6-jf-Xwv"/>
+                            <constraint firstItem="hNB-rU-nuA" firstAttribute="top" secondItem="sHF-hw-VyN" secondAttribute="topMargin" id="mDg-R6-LNh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hNB-rU-nuA" secondAttribute="bottom" id="qTW-kk-K9e"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Spl-hv-3uh"/>
+                                <exclude reference="WFh-8J-TbB"/>
+                                <exclude reference="I08-ee-CdM"/>
+                                <exclude reference="gZ6-jf-Xwv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Chart" id="pkG-bX-Aih"/>
                     <connections>
