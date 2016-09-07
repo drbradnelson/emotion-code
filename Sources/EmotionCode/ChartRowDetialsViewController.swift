@@ -55,6 +55,8 @@ private extension ChartRowDetailsViewController {
         rowDetailsView.dataSource = self
 
         rowDetailsView.registerClass(CollectionViewCellWithTitle.self, forCellWithReuseIdentifier: ChartRowDetailsViewController.rowDetailsCellIdentifier)
+
+        ChartRowDetailsAccessibilityController.setupAccessibilit(forChartOverviewView: rowDetailsView)
     }
 
 }
@@ -74,6 +76,8 @@ extension ChartRowDetailsViewController: UICollectionViewDataSource {
         let item = chartRow!.items[indexPath.item]
         cell.title = item.title
         cell.backgroundColor = UIColor.lightGrayColor()
+
+        ChartRowDetailsAccessibilityController.setupAccessibility(forRowCounterView: cell, atRowIndex: indexPath.row)
 
         return cell
     }
