@@ -61,7 +61,7 @@ extension ChartOverviewCollectionLayout {
             ChartOverviewCollectionLayout.rowElementIdentifier: rowElementsAttributes,
         ]
 
-        calculatedContentSize = CGSize(width: allocator.allocatedArea().width, height: allocator.allocatedArea().height)
+        calculatedContentSize = CGSize(width: allocator.allocatedArea.width, height: allocator.allocatedArea.height)
     }
 
     override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {

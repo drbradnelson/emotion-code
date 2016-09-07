@@ -28,8 +28,10 @@ extension ChartOverviewLayoutAreaAllocator {
         return area
     }
 
-    func allocatedArea() -> CGRect {
-        return CGRect(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
+    var allocatedArea: CGRect {
+        get {
+            return CGRect(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
+        }
     }
 
 }
