@@ -78,6 +78,7 @@ extension ChartOverviewLayoutAttributesCalculator {
 
         return [counterElementIndexPath: counterAttributes]
     }
+
 }
 
 // MARK: Helper calculation methods

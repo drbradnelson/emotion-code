@@ -48,6 +48,7 @@ extension ChartOverviewViewController {
 
         chartView.reloadData()
     }
+
 }
 
 // MARK: UICollectionViewDelegate
@@ -100,6 +101,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
         return view
     }
+
 }
 
 // MARK: ChartOverviewCollectionLayoutDelegate
@@ -147,4 +149,5 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
+
 }

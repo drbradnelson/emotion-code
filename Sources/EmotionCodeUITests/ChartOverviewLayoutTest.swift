@@ -11,6 +11,7 @@ final class ChartOverviewLayoutTest: XCTestCase {
         sleep(1)
         app.buttons["Chart"].tap()
     }
+
 }
 
 // MARK: Tests
@@ -115,6 +116,7 @@ extension ChartOverviewLayoutTest {
 
         XCTAssert(leftAligned && rightAligned)
     }
+
 }
 
 // MARK: Helpers
@@ -131,4 +133,5 @@ extension ChartOverviewLayoutTest {
         let columnHeaders = childerent.matchingPredicate(columnHeadersPreddicate)
         return columnHeaders
     }
+
 }

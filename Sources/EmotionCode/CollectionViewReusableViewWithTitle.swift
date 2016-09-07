@@ -18,6 +18,7 @@ class CollectionViewReusableViewWithTitle: UICollectionReusableView {
 
         setup()
     }
+
 }
 
 // MARK: ViewWithTitle
@@ -36,6 +37,7 @@ private extension CollectionViewReusableViewWithTitle {
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .Center
     }
+
 }
 
 // MARK: Layout calculation
@@ -46,4 +48,5 @@ extension CollectionViewReusableViewWithTitle {
         super.layoutSubviews()
         titleLabel.frame = bounds
     }
+
 }

@@ -19,6 +19,7 @@ final class ChartOverviewRowCell: UICollectionViewCell {
 
         setup()
     }
+
 }
 
 // MARK: Setup

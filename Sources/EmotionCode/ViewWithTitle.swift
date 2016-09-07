@@ -35,7 +35,7 @@ extension ViewWithTitle {
         }
     }
 
-    var textAlighnment: NSTextAlignment {
+    var textAlignment: NSTextAlignment {
         get {
             return titleLabel.textAlignment
         }
@@ -43,4 +43,5 @@ extension ViewWithTitle {
             titleLabel.textAlignment = newTextAlignment
         }
     }
+
 }
