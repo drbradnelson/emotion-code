@@ -10,6 +10,7 @@ protocol ChartOverviewLayoutParams {
     var contentInsets: UIEdgeInsets {get}
 
     func heightForRowElement(forRow row: Int) -> CGFloat
+
 }
 
 extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
