@@ -107,6 +107,7 @@
 		42E8CE4D19CE0C666244CD84 /* TransitionDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8CE03DD16CE70B6EE0174 /* TransitionDirection.swift */; };
 		75061C6F1D7DAB8200F2FC52 /* ChartOverviewTransitionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061C6E1D7DAB8200F2FC52 /* ChartOverviewTransitionTest.swift */; };
 		75061C711D7DAC0000F2FC52 /* ChartRowDetailsTransitionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75061C701D7DAC0000F2FC52 /* ChartRowDetailsTransitionTest.swift */; };
+		756A2D781D7ECBD200E8FB63 /* ChartItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A2D771D7ECBD200E8FB63 /* ChartItemDetailsViewController.swift */; };
 		756F64DB1D7D959700D4FD39 /* ChartRowDetailsAccessibilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F64DA1D7D959700D4FD39 /* ChartRowDetailsAccessibilityController.swift */; };
 		756F64DD1D7D990C00D4FD39 /* ChartRowDetailsLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F64DC1D7D990C00D4FD39 /* ChartRowDetailsLayoutTests.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
@@ -260,6 +261,7 @@
 		42E8CE03DD16CE70B6EE0174 /* TransitionDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDirection.swift; sourceTree = "<group>"; };
 		75061C6E1D7DAB8200F2FC52 /* ChartOverviewTransitionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewTransitionTest.swift; sourceTree = "<group>"; };
 		75061C701D7DAC0000F2FC52 /* ChartRowDetailsTransitionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowDetailsTransitionTest.swift; sourceTree = "<group>"; };
+		756A2D771D7ECBD200E8FB63 /* ChartItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartItemDetailsViewController.swift; sourceTree = "<group>"; };
 		756F64DA1D7D959700D4FD39 /* ChartRowDetailsAccessibilityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowDetailsAccessibilityController.swift; sourceTree = "<group>"; };
 		756F64DC1D7D990C00D4FD39 /* ChartRowDetailsLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowDetailsLayoutTests.swift; sourceTree = "<group>"; };
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 		1B8B03931D7584B3001CE349 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				756A2D761D7ECBC700E8FB63 /* ItemDetails */,
 				1B78FB141D7818E600F499B8 /* RowDetails */,
 				1BCB62231D76F66600DA81DE /* Overview */,
 			);
@@ -511,6 +514,14 @@
 				1BCB62271D76F75F00DA81DE /* Overview */,
 			);
 			name = Chart;
+			sourceTree = "<group>";
+		};
+		756A2D761D7ECBC700E8FB63 /* ItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				756A2D771D7ECBD200E8FB63 /* ChartItemDetailsViewController.swift */,
+			);
+			name = ItemDetails;
 			sourceTree = "<group>";
 		};
 		91187B211D67768C0098A881 /* Views */ = {
@@ -844,6 +855,7 @@
 				1B78FB401D783C5D00F499B8 /* ChartOverviewTransitionController.swift in Sources */,
 				1B2527131D79B4AF005DF51C /* ChartOverviewToRowDetailsNeigboursTransitionExecutor.swift in Sources */,
 				42E8CD82C5EB48095C693C4E /* TransitionValueSelector.swift in Sources */,
+				756A2D781D7ECBD200E8FB63 /* ChartItemDetailsViewController.swift in Sources */,
 				756F64DB1D7D959700D4FD39 /* ChartRowDetailsAccessibilityController.swift in Sources */,
 				42E8CE4D19CE0C666244CD84 /* TransitionDirection.swift in Sources */,
 			);
