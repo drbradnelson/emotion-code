@@ -7,7 +7,7 @@ final class ChartOverviewLayoutAttributesCalculator {
     private let layoutParams: ChartOverviewLayoutParams
     private let areaAllocator: ChartOverviewLayoutAreaAllocator
 
-    private var _columnWidth: CGFloat?
+    private var columnWidth: CGFloat?
 
     init(adapter: ChartOverviewCollectionLayoutDataAdapter, layoutParams: ChartOverviewLayoutParams, areaAllocator: ChartOverviewLayoutAreaAllocator) {
         self.adapter = adapter
@@ -138,16 +138,16 @@ private extension ChartOverviewLayoutAttributesCalculator {
     }
 
     func calculateColumnWidth() -> CGFloat {
-        if _columnWidth == nil {
+        if columnWidth == nil {
             let rowCounterElementWidth = layoutParams.widthForRowCounterElement
             let numberOfColumns = adapter.numberOfColumns()
             let interColumnsSpacing = layoutParams.spacingBetweenColumns
             let availableColumnsWidth = (layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing - layoutParams.contentInsets.left - layoutParams.contentInsets.right
-            _columnWidth = availableColumnsWidth / CGFloat(numberOfColumns)
+            columnWidth = availableColumnsWidth / CGFloat(numberOfColumns)
 
         }
 
-        return _columnWidth!
+        return columnWidth!
     }
 
     func calculateHeight(forSection section: Int) -> CGFloat {
