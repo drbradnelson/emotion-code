@@ -82,6 +82,7 @@
 		1B25270D1D798920005DF51C /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2527011D798920005DF51C /* TabNavigationLayoutTests.swift */; };
 		1B78FAE91D7722E800F499B8 /* ChartOverviewAccessibilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FAE81D7722E800F499B8 /* ChartOverviewAccessibilityController.swift */; };
 		1B78FB131D7816F400F499B8 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FB121D7816F400F499B8 /* DictionaryExtensions.swift */; };
+		1B78FB161D7818F600F499B8 /* ChartRowDetialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78FB151D7818F600F499B8 /* ChartRowDetialsViewController.swift */; };
 		1B8B03951D7584DD001CE349 /* ChartOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */; };
 		1B8B03971D75D6C3001CE349 /* ChartOverviewLayoutAttributesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */; };
 		1B8B03991D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */; };
@@ -221,6 +222,7 @@
 		1B2527011D798920005DF51C /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
 		1B78FAE81D7722E800F499B8 /* ChartOverviewAccessibilityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewAccessibilityController.swift; sourceTree = "<group>"; };
 		1B78FB121D7816F400F499B8 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		1B78FB151D7818F600F499B8 /* ChartRowDetialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowDetialsViewController.swift; sourceTree = "<group>"; };
 		1B8B03941D7584DD001CE349 /* ChartOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewViewController.swift; sourceTree = "<group>"; };
 		1B8B03961D75D6C2001CE349 /* ChartOverviewLayoutAttributesCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAttributesCalculator.swift; sourceTree = "<group>"; };
 		1B8B03981D75D727001CE349 /* ChartOverviewLayoutAreaAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartOverviewLayoutAreaAllocator.swift; sourceTree = "<group>"; };
@@ -376,9 +378,18 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		1B78FB141D7818E600F499B8 /* RowDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1B78FB151D7818F600F499B8 /* ChartRowDetialsViewController.swift */,
+			);
+			name = RowDetails;
+			sourceTree = "<group>";
+		};
 		1B8B03931D7584B3001CE349 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				1B78FB141D7818E600F499B8 /* RowDetails */,
 				1BCB62231D76F66600DA81DE /* Overview */,
 			);
 			name = Chart;
@@ -761,6 +772,7 @@
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 				1B8B03A11D75DE77001CE349 /* ChartOverviewItemView.swift in Sources */,
 				42E8C47E622AA5E0763190A5 /* ChartOverviewCollectionLayout.swift in Sources */,
+				1B78FB161D7818F600F499B8 /* ChartRowDetialsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
