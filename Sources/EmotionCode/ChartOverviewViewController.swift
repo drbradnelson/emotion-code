@@ -17,14 +17,12 @@ extension ChartOverviewViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         prepareData()
         prepareUI()
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
         chartView.reloadData()
     }
 
