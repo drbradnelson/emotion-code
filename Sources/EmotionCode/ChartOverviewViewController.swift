@@ -136,16 +136,14 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     }
 
     func heightForRowElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout, forRow row: Int) -> CGFloat {
-        var maxItems = 0
-        for columnIndex in 0 ..< chartAdapter.numberOfColumns() {
-            let rowItemsNumber = chartAdapter.numberOfItems(forColumnIndex: columnIndex, forRowIndex: row)
+        return ChartOverviewRowCellLayout.height(forItems: chart.columns.enumerate().reduce(0, combine: { (maxItems, column) -> Int in
+            let rowItemsNumber = chartAdapter.numberOfItems(forColumnIndex: column.index, forRowIndex: row)
             if rowItemsNumber > maxItems {
-                maxItems = rowItemsNumber
+                return rowItemsNumber
+            } else {
+                return maxItems
             }
-        }
-
-        let height = ChartOverviewRowCellLayout.height(forItems: maxItems)
-        return height
+        }))
     }
 
     func insetsForContent(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout) -> UIEdgeInsets {
