@@ -9,14 +9,12 @@ final class ChartOverviewItemView: UIView {
     override init(frame: CGRect) {
         titleLabel = UILabel()
         super.init(frame: frame)
-
         setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         titleLabel = UILabel()
         super.init(coder: aDecoder)
-
         setup()
     }
 
