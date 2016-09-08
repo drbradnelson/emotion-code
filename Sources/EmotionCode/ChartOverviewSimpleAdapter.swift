@@ -5,6 +5,7 @@ import Foundation
 final class ChartOverviewSimpleAdapter {
 
     private var chart: Chart
+
     init(chart: Chart) {
         self.chart = chart
     }

@@ -10,6 +10,7 @@ final class ChartOverviewViewController: UIViewController {
     private let chart = ChartController().chart
 
     private var chartAdapter: ChartOverviewCollectionLayoutDataAdapter!
+
 }
 
 // MARK: View lifecycle callbacks

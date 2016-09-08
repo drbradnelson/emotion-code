@@ -5,6 +5,7 @@ import UIKit
 class CollectionViewReusableViewWithTitle: UICollectionReusableView {
 
     private (set) var titleLabel: UILabel
+
     override init(frame: CGRect) {
         titleLabel = UILabel()
         super.init(frame: frame)
