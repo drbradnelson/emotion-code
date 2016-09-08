@@ -54,10 +54,7 @@ extension ChartOverviewLayoutAttributesCalculator {
             rowElementAttributes[rowElementIndexPath] = rowAttributes
         }
 
-        let attributes = [
-                ChartOverviewCollectionLayout.cowCounterElementIdentifier: counterAttributes,
-                ChartOverviewCollectionLayout.rowElementIdentifier: rowElementAttributes
-        ]
+        let attributes = [ChartOverviewCollectionLayout.cowCounterElementIdentifier: counterAttributes, ChartOverviewCollectionLayout.rowElementIdentifier: rowElementAttributes]
 
         return attributes
     }
