@@ -32,14 +32,14 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func numberOfSections() -> Int {
-        var maxRowsCount = 0
-        for columnPosition in 0 ..< numberOfColumns() {
-            let rows = chart.columns[columnPosition].rows
+        return chart.columns.reduce(0, combine: { (maxRowsCount, column) -> Int in
+            let rows = column.rows
             if maxRowsCount < rows.count {
-                maxRowsCount = rows.count
+                return rows.count
+            } else {
+                return maxRowsCount
             }
-        }
-        return maxRowsCount
+        })
     }
 
     func indexPath(forColumnIndex columnIndex: Int) -> NSIndexPath {
