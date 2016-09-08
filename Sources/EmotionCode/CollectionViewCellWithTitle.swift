@@ -5,6 +5,7 @@ import UIKit
 class CollectionViewCellWithTitle: UICollectionViewCell {
 
     private (set) var titleLabel: UILabel
+
     override init(frame: CGRect) {
         titleLabel = UILabel()
         super.init(frame: frame)
