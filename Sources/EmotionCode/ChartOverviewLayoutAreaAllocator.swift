@@ -29,9 +29,7 @@ extension ChartOverviewLayoutAreaAllocator {
     }
 
     var allocatedArea: CGRect {
-        get {
-            return CGRect(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
-        }
+        return CGRect(x: 0, y: 0, width: areaWidth, height: areaCurrentHeight + insets.bottom)
     }
 
 }

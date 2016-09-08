@@ -16,33 +16,23 @@ protocol ChartOverviewLayoutParams {
 extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
 
     var widthForRowCounterElement: CGFloat {
-        get {
-            return delegate.widthForRowCounterElement(inCollectionView: collectionView!, layout: self)
-        }
+        return delegate.widthForRowCounterElement(inCollectionView: collectionView!, layout: self)
     }
 
     var heightForColumnHeaderElement: CGFloat {
-        get {
-            return delegate.heightForColumnHeaderElement(inCollectionView: collectionView!, layout: self)
-        }
+        return delegate.heightForColumnHeaderElement(inCollectionView: collectionView!, layout: self)
     }
 
     var spacingBetweenColumns: CGFloat {
-        get {
-            return delegate.spacingBetweenColumns(inCollectionView: collectionView!, layout: self)
-        }
+        return delegate.spacingBetweenColumns(inCollectionView: collectionView!, layout: self)
     }
 
     var spacingBetweenRows: CGFloat {
-        get {
-            return delegate.spacingBetweenRows(inCollectionView: collectionView!, layout: self)
-        }
+        return delegate.spacingBetweenRows(inCollectionView: collectionView!, layout: self)
     }
 
     var availableWidth: CGFloat {
-        get {
-            return collectionView!.bounds.width
-        }
+        return collectionView!.bounds.width
     }
 
     func heightForRowElement(forRow row: Int) -> CGFloat {
@@ -50,15 +40,11 @@ extension ChartOverviewCollectionLayout: ChartOverviewLayoutParams {
     }
 
     var layoutParams: ChartOverviewLayoutParams {
-        get {
-            return self
-        }
+        return self
     }
 
     var contentInsets: UIEdgeInsets {
-        get {
-            return delegate.insetsForContent(inCollectionView: collectionView!, layout: self)
-        }
+        return delegate.insetsForContent(inCollectionView: collectionView!, layout: self)
     }
 
 }
