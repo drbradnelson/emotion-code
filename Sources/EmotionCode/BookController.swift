@@ -8,6 +8,14 @@ final class BookController {
 
 }
 
+extension BookController {
+
+    func hasChapter(chapterIndex: Int) -> Bool {
+        return book.chapters.indices.contains(chapterIndex)
+    }
+
+}
+
 // MARK: Parser
 
 private extension BookController {
@@ -25,8 +33,11 @@ private extension BookController {
     }
 
     static func chapterWithDictionary(dictionary: [String: String]) -> BookChapter {
-        guard let title = dictionary[chapterTitleKey], fileName = dictionary[chapterFileNameKey], fileURL = NSURL(string: fileName) else {
+        guard let title = dictionary[chapterTitleKey], fileName = dictionary[chapterFileNameKey] else {
             preconditionFailure("Unable to parse book chapter")
+        }
+        guard let fileURL =  NSBundle.mainBundle().URLForResource(fileName, withExtension: "html") else {
+            preconditionFailure("Unable to find book chapter file")
         }
         return BookChapter(title: title, fileURL: fileURL)
     }

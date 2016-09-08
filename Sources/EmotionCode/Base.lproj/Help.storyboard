@@ -28,7 +28,7 @@
         <scene sceneID="OY9-9x-09T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1v-0o-LEL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Help" image="oval" id="jFO-Qr-akh"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="Standard/Help" selectedImage="Selected/Help" id="jFO-Qr-akh"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jac-GK-A6w">
@@ -46,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="oval" width="19" height="19"/>
+        <image name="Selected/Help" width="32" height="32"/>
+        <image name="Standard/Help" width="32" height="32"/>
     </resources>
 </document>
