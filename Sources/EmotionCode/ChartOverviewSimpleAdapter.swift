@@ -39,7 +39,6 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
                 maxRowsCount = rows.count
             }
         }
-
         return maxRowsCount
     }
 
