@@ -3,6 +3,7 @@ import UIKit
 // MARK: Main
 
 final class ChartOverviewViewController: UIViewController {
+
     @IBOutlet weak var chartView: UICollectionView!
     private var chartOverviewLayout: ChartOverviewCollectionLayout!
 

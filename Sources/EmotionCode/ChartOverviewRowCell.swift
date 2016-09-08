@@ -10,13 +10,11 @@ final class ChartOverviewRowCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
         setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
         setup()
     }
 
@@ -40,7 +38,6 @@ extension ChartOverviewRowCell {
         }
 
         itemViews = [ChartOverviewItemView]()
-
 
         let contentView = self.contentView
 
