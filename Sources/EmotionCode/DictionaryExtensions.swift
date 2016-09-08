@@ -1,5 +1,3 @@
-import Foundation
-
 extension Dictionary {
 
     mutating func mergeWith(dictionary: Dictionary) {

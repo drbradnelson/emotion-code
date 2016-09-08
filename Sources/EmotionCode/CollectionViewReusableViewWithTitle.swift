@@ -8,14 +8,12 @@ class CollectionViewReusableViewWithTitle: UICollectionReusableView {
     override init(frame: CGRect) {
         titleLabel = UILabel()
         super.init(frame: frame)
-
         setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         titleLabel = UILabel()
         super.init(coder: aDecoder)
-
         setup()
     }
 
@@ -31,7 +29,6 @@ private extension CollectionViewReusableViewWithTitle {
 
     func setup() {
         addSubview(titleLabel)
-
         titleLabel.font = UIFont.systemFontOfSize(20)
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .Center
