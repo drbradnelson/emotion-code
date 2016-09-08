@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: Main
 
-class CollectionViewCellWithTitle: UICollectionViewCell {
+final class CollectionViewCellWithTitle: UICollectionViewCell {
 
     private (set) var titleLabel: UILabel
 
