@@ -140,7 +140,6 @@ private extension ChartOverviewLayoutAttributesCalculator {
             let interColumnsSpacing = layoutParams.spacingBetweenColumns
             let availableColumnsWidth = (layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing - layoutParams.contentInsets.left - layoutParams.contentInsets.right
             columnWidth = availableColumnsWidth / CGFloat(numberOfColumns)
-
         }
 
         return columnWidth!
