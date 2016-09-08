@@ -2,12 +2,12 @@ import UIKit
 
 protocol ChartOverviewLayoutParams {
 
-    var widthForRowCounterElement: CGFloat {get}
-    var heightForColumnHeaderElement: CGFloat {get}
-    var spacingBetweenColumns: CGFloat {get}
-    var spacingBetweenRows: CGFloat {get}
-    var availableWidth: CGFloat {get}
-    var contentInsets: UIEdgeInsets {get}
+    var widthForRowCounterElement: CGFloat { get }
+    var heightForColumnHeaderElement: CGFloat { get }
+    var spacingBetweenColumns: CGFloat { get }
+    var spacingBetweenRows: CGFloat { get }
+    var availableWidth: CGFloat { get }
+    var contentInsets: UIEdgeInsets { get }
 
     func heightForRowElement(forRow row: Int) -> CGFloat
 
