@@ -110,9 +110,9 @@ private extension ChartOverviewCollectionLayout {
 extension ChartOverviewCollectionLayout {
 
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        let attributes = layoutAttributesList?.filter({ (attribute) -> Bool in
+        let attributes = layoutAttributesList?.filter { (attribute) -> Bool in
             return attribute.frame.intersects(rect)
-        })
+        }
 
         return attributes
     }
