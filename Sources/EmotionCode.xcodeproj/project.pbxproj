@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0FB5971D7DE65800546BD0 /* css-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5961D7DE65800546BD0 /* css-en.patch */; };
+		0F0FB5991D7DE7B100546BD0 /* css-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5981D7DE7B100546BD0 /* css-es.patch */; };
 		0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
 		0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */; };
@@ -20,57 +22,40 @@
 		0F464FB41D621D4E0036D762 /* BookSwipeGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */; };
 		0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */; };
 		0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */; };
+		0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0F669F4E1D78AC33003AD410 /* PatchBook.sh */; };
 		0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */; };
-		0F78F7301D596F3D00DAE36A /* chapter1.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7321D596F3D00DAE36A /* chapter1.html */; };
-		0F78F7591D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F73C1D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png */; };
-		0F78F75A1D59703100DAE36A /* FLowChart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F73D1D59703100DAE36A /* FLowChart.jpg */; };
-		0F78F75B1D59703100DAE36A /* governing_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F73E1D59703100DAE36A /* governing_front.png */; };
-		0F78F75C1D59703100DAE36A /* governing_front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F73F1D59703100DAE36A /* governing_front1.png */; };
-		0F78F75D1D59703100DAE36A /* governing-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7401D59703100DAE36A /* governing-back.png */; };
-		0F78F75E1D59703100DAE36A /* governing-back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7411D59703100DAE36A /* governing-back1.png */; };
-		0F78F75F1D59703100DAE36A /* Heart-Wall_FlowChart_rev_4-1-2010.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7421D59703100DAE36A /* Heart-Wall_FlowChart_rev_4-1-2010.png */; };
-		0F78F7601D59703100DAE36A /* kirlian_halvblad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7431D59703100DAE36A /* kirlian_halvblad.png */; };
-		0F78F7611D59703100DAE36A /* MT-Falling_Log_DOWN.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7441D59703100DAE36A /* MT-Falling_Log_DOWN.png */; };
-		0F78F7621D59703100DAE36A /* MT-Falling_Log_UP.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7451D59703100DAE36A /* MT-Falling_Log_UP.png */; };
-		0F78F7631D59703100DAE36A /* MT-Hand_Solo_DOWN.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7461D59703100DAE36A /* MT-Hand_Solo_DOWN.png */; };
-		0F78F7641D59703100DAE36A /* MT-Hand_Solo_UP.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7471D59703100DAE36A /* MT-Hand_Solo_UP.png */; };
-		0F78F7651D59703100DAE36A /* MT-Hole_in_One_CLOSED.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7481D59703100DAE36A /* MT-Hole_in_One_CLOSED.png */; };
-		0F78F7661D59703100DAE36A /* MT-Hole_in_One_OPEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7491D59703100DAE36A /* MT-Hole_in_One_OPEN.png */; };
-		0F78F7671D59703100DAE36A /* MT-Hole_in_One_Placement.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F74A1D59703100DAE36A /* MT-Hole_in_One_Placement.png */; };
-		0F78F7681D59703100DAE36A /* MT-Placement.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F74B1D59703100DAE36A /* MT-Placement.png */; };
-		0F78F7691D59703100DAE36A /* MT-Ring_in_Ring_CLOSED.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F74C1D59703100DAE36A /* MT-Ring_in_Ring_CLOSED.png */; };
-		0F78F76A1D59703100DAE36A /* MT-Ring_in_Ring_OPEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F74D1D59703100DAE36A /* MT-Ring_in_Ring_OPEN.png */; };
-		0F78F76B1D59703100DAE36A /* MT-surrogate_testing_adult.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F74E1D59703100DAE36A /* MT-surrogate_testing_adult.png */; };
-		0F78F76C1D59703100DAE36A /* MT-surrogate_testing.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F74F1D59703100DAE36A /* MT-surrogate_testing.png */; };
-		0F78F76D1D59703100DAE36A /* MT-Sway_Backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7501D59703100DAE36A /* MT-Sway_Backward.png */; };
-		0F78F76E1D59703100DAE36A /* MT-Sway_Forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7511D59703100DAE36A /* MT-Sway_Forward.png */; };
-		0F78F76F1D59703100DAE36A /* Proxy_Scene.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7521D59703100DAE36A /* Proxy_Scene.png */; };
-		0F78F7701D59703100DAE36A /* Revised_Emotion_Chart,_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7531D59703100DAE36A /* Revised_Emotion_Chart,_full.png */; };
-		0F78F7711D59703100DAE36A /* Revised_Emotion_Chart,_full1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7541D59703100DAE36A /* Revised_Emotion_Chart,_full1.png */; };
-		0F78F7721D59703100DAE36A /* Revised_Emotion_Chart,_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7551D59703100DAE36A /* Revised_Emotion_Chart,_sample.png */; };
-		0F78F7731D59703100DAE36A /* Smiling_face.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7561D59703100DAE36A /* Smiling_face.png */; };
-		0F78F7741D59703100DAE36A /* Trapped_Emotion_FlowChart_rev_4-1-2010.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7571D59703100DAE36A /* Trapped_Emotion_FlowChart_rev_4-1-2010.png */; };
-		0F78F7751D59703100DAE36A /* Tuning_Forks.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7581D59703100DAE36A /* Tuning_Forks.png */; };
-		0F78F7C91D5971B500DAE36A /* chapter2.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7CB1D5971B500DAE36A /* chapter2.html */; };
-		0F78F7CE1D5971BB00DAE36A /* chapter3.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7D01D5971BB00DAE36A /* chapter3.html */; };
-		0F78F7D31D5971C200DAE36A /* chapter4.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7D51D5971C200DAE36A /* chapter4.html */; };
-		0F78F7D81D5971CA00DAE36A /* chapter5.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7DA1D5971CA00DAE36A /* chapter5.html */; };
-		0F78F7DD1D5971D200DAE36A /* chapter6.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7DF1D5971D200DAE36A /* chapter6.html */; };
-		0F78F7E21D5971D900DAE36A /* chapter7.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7E41D5971D900DAE36A /* chapter7.html */; };
-		0F78F7E71D5971E400DAE36A /* chapter8.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7E91D5971E400DAE36A /* chapter8.html */; };
-		0F78F7EC1D5971EB00DAE36A /* chapter9.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7EE1D5971EB00DAE36A /* chapter9.html */; };
-		0F78F7F11D5971F200DAE36A /* chapter10.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7F31D5971F200DAE36A /* chapter10.html */; };
-		0F78F7F61D5971F800DAE36A /* about-author.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7F81D5971F800DAE36A /* about-author.html */; };
-		0F78F8001D59777F00DAE36A /* FLowChart-Spanish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FB1D59777F00DAE36A /* FLowChart-Spanish.jpg */; };
-		0F78F8011D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FC1D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png */; };
-		0F78F8021D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FD1D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish1.png */; };
-		0F78F8031D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FE1D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png */; };
-		0F78F8041D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F7FF1D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png */; };
-		0F78F80F1D597D9700DAE36A /* idGeneratedStyles.css in Resources */ = {isa = PBXBuildFile; fileRef = 0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */; };
 		0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */; };
 		0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */; };
 		0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */; };
 		0FCA00FF1D60EEBD0020018A /* BookNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */; };
+		0FD7E5F21D7F19390061BD18 /* book-add-chapters-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5E41D7F19390061BD18 /* book-add-chapters-en.patch */; };
+		0FD7E5F31D7F19390061BD18 /* book-fix-chapter-quote-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5E51D7F19390061BD18 /* book-fix-chapter-quote-en.patch */; };
+		0FD7E5F41D7F19390061BD18 /* book-remove-chapter-numbers-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5E61D7F19390061BD18 /* book-remove-chapter-numbers-en.patch */; };
+		0FD7E5F51D7F19390061BD18 /* chapter1-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5E71D7F19390061BD18 /* chapter1-en.patch */; };
+		0FD7E5F61D7F19390061BD18 /* chapter2-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5E81D7F19390061BD18 /* chapter2-en.patch */; };
+		0FD7E5F71D7F19390061BD18 /* chapter3-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5E91D7F19390061BD18 /* chapter3-en.patch */; };
+		0FD7E5F81D7F19390061BD18 /* chapter4-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5EA1D7F19390061BD18 /* chapter4-en.patch */; };
+		0FD7E5F91D7F19390061BD18 /* chapter5-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5EB1D7F19390061BD18 /* chapter5-en.patch */; };
+		0FD7E5FA1D7F19390061BD18 /* chapter6-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5EC1D7F19390061BD18 /* chapter6-en.patch */; };
+		0FD7E5FB1D7F19390061BD18 /* chapter7-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5ED1D7F19390061BD18 /* chapter7-en.patch */; };
+		0FD7E5FC1D7F19390061BD18 /* chapter8-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5EE1D7F19390061BD18 /* chapter8-en.patch */; };
+		0FD7E5FD1D7F19390061BD18 /* chapter9-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5EF1D7F19390061BD18 /* chapter9-en.patch */; };
+		0FD7E5FE1D7F19390061BD18 /* chapter10-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5F01D7F19390061BD18 /* chapter10-en.patch */; };
+		0FD7E5FF1D7F19390061BD18 /* chapter11-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E5F11D7F19390061BD18 /* chapter11-en.patch */; };
+		0FD7E60E1D7F1D2D0061BD18 /* book-add-chapters-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6001D7F1D2D0061BD18 /* book-add-chapters-es.patch */; };
+		0FD7E60F1D7F1D2D0061BD18 /* book-fix-chapter-quote-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6011D7F1D2D0061BD18 /* book-fix-chapter-quote-es.patch */; };
+		0FD7E6101D7F1D2D0061BD18 /* book-remove-chapter-numbers-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6021D7F1D2D0061BD18 /* book-remove-chapter-numbers-es.patch */; };
+		0FD7E6111D7F1D2D0061BD18 /* chapter1-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6031D7F1D2D0061BD18 /* chapter1-es.patch */; };
+		0FD7E6121D7F1D2D0061BD18 /* chapter2-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6041D7F1D2D0061BD18 /* chapter2-es.patch */; };
+		0FD7E6131D7F1D2D0061BD18 /* chapter3-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6051D7F1D2D0061BD18 /* chapter3-es.patch */; };
+		0FD7E6141D7F1D2D0061BD18 /* chapter4-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6061D7F1D2D0061BD18 /* chapter4-es.patch */; };
+		0FD7E6151D7F1D2D0061BD18 /* chapter5-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6071D7F1D2D0061BD18 /* chapter5-es.patch */; };
+		0FD7E6161D7F1D2D0061BD18 /* chapter6-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6081D7F1D2D0061BD18 /* chapter6-es.patch */; };
+		0FD7E6171D7F1D2D0061BD18 /* chapter7-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E6091D7F1D2D0061BD18 /* chapter7-es.patch */; };
+		0FD7E6181D7F1D2D0061BD18 /* chapter8-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60A1D7F1D2D0061BD18 /* chapter8-es.patch */; };
+		0FD7E6191D7F1D2D0061BD18 /* chapter9-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60B1D7F1D2D0061BD18 /* chapter9-es.patch */; };
+		0FD7E61A1D7F1D2D0061BD18 /* chapter10-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60C1D7F1D2D0061BD18 /* chapter10-es.patch */; };
+		0FD7E61B1D7F1D2D0061BD18 /* chapter11-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60D1D7F1D2D0061BD18 /* chapter11-es.patch */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
@@ -103,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0FB5961D7DE65800546BD0 /* css-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-en.patch"; sourceTree = "<group>"; };
+		0F0FB5981D7DE7B100546BD0 /* css-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-es.patch"; sourceTree = "<group>"; };
 		0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarLayoutTests.swift; sourceTree = "<group>"; };
 		0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSegueController.swift; sourceTree = "<group>"; };
 		0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterSelectionLayoutTests.swift; sourceTree = "<group>"; };
@@ -116,81 +103,40 @@
 		0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSwipeGesturesTests.swift; sourceTree = "<group>"; };
 		0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageViewController.swift; sourceTree = "<group>"; };
 		0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterViewController.swift; sourceTree = "<group>"; };
+		0F669F4E1D78AC33003AD410 /* PatchBook.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = PatchBook.sh; sourceTree = "<group>"; };
 		0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersTableView.swift; sourceTree = "<group>"; };
-		0F78F7311D596F3D00DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter1.html; sourceTree = "<group>"; };
-		0F78F7331D596F3E00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter1.html; sourceTree = "<group>"; };
-		0F78F7341D596F3F00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter1.html; sourceTree = "<group>"; };
-		0F78F73C1D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Body-Code-Digital-Glory-2.0_Render.png"; sourceTree = "<group>"; };
-		0F78F73D1D59703100DAE36A /* FLowChart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FLowChart.jpg; sourceTree = "<group>"; };
-		0F78F73E1D59703100DAE36A /* governing_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = governing_front.png; sourceTree = "<group>"; };
-		0F78F73F1D59703100DAE36A /* governing_front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = governing_front1.png; sourceTree = "<group>"; };
-		0F78F7401D59703100DAE36A /* governing-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "governing-back.png"; sourceTree = "<group>"; };
-		0F78F7411D59703100DAE36A /* governing-back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "governing-back1.png"; sourceTree = "<group>"; };
-		0F78F7421D59703100DAE36A /* Heart-Wall_FlowChart_rev_4-1-2010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart-Wall_FlowChart_rev_4-1-2010.png"; sourceTree = "<group>"; };
-		0F78F7431D59703100DAE36A /* kirlian_halvblad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kirlian_halvblad.png; sourceTree = "<group>"; };
-		0F78F7441D59703100DAE36A /* MT-Falling_Log_DOWN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Falling_Log_DOWN.png"; sourceTree = "<group>"; };
-		0F78F7451D59703100DAE36A /* MT-Falling_Log_UP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Falling_Log_UP.png"; sourceTree = "<group>"; };
-		0F78F7461D59703100DAE36A /* MT-Hand_Solo_DOWN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Hand_Solo_DOWN.png"; sourceTree = "<group>"; };
-		0F78F7471D59703100DAE36A /* MT-Hand_Solo_UP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Hand_Solo_UP.png"; sourceTree = "<group>"; };
-		0F78F7481D59703100DAE36A /* MT-Hole_in_One_CLOSED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Hole_in_One_CLOSED.png"; sourceTree = "<group>"; };
-		0F78F7491D59703100DAE36A /* MT-Hole_in_One_OPEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Hole_in_One_OPEN.png"; sourceTree = "<group>"; };
-		0F78F74A1D59703100DAE36A /* MT-Hole_in_One_Placement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Hole_in_One_Placement.png"; sourceTree = "<group>"; };
-		0F78F74B1D59703100DAE36A /* MT-Placement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Placement.png"; sourceTree = "<group>"; };
-		0F78F74C1D59703100DAE36A /* MT-Ring_in_Ring_CLOSED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Ring_in_Ring_CLOSED.png"; sourceTree = "<group>"; };
-		0F78F74D1D59703100DAE36A /* MT-Ring_in_Ring_OPEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Ring_in_Ring_OPEN.png"; sourceTree = "<group>"; };
-		0F78F74E1D59703100DAE36A /* MT-surrogate_testing_adult.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-surrogate_testing_adult.png"; sourceTree = "<group>"; };
-		0F78F74F1D59703100DAE36A /* MT-surrogate_testing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-surrogate_testing.png"; sourceTree = "<group>"; };
-		0F78F7501D59703100DAE36A /* MT-Sway_Backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Sway_Backward.png"; sourceTree = "<group>"; };
-		0F78F7511D59703100DAE36A /* MT-Sway_Forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MT-Sway_Forward.png"; sourceTree = "<group>"; };
-		0F78F7521D59703100DAE36A /* Proxy_Scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Proxy_Scene.png; sourceTree = "<group>"; };
-		0F78F7531D59703100DAE36A /* Revised_Emotion_Chart,_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Revised_Emotion_Chart,_full.png"; sourceTree = "<group>"; };
-		0F78F7541D59703100DAE36A /* Revised_Emotion_Chart,_full1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Revised_Emotion_Chart,_full1.png"; sourceTree = "<group>"; };
-		0F78F7551D59703100DAE36A /* Revised_Emotion_Chart,_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Revised_Emotion_Chart,_sample.png"; sourceTree = "<group>"; };
-		0F78F7561D59703100DAE36A /* Smiling_face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smiling_face.png; sourceTree = "<group>"; };
-		0F78F7571D59703100DAE36A /* Trapped_Emotion_FlowChart_rev_4-1-2010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trapped_Emotion_FlowChart_rev_4-1-2010.png"; sourceTree = "<group>"; };
-		0F78F7581D59703100DAE36A /* Tuning_Forks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tuning_Forks.png; sourceTree = "<group>"; };
-		0F78F7CA1D5971B500DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter2.html; sourceTree = "<group>"; };
-		0F78F7CC1D5971B600DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter2.html; sourceTree = "<group>"; };
-		0F78F7CD1D5971B700DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter2.html; sourceTree = "<group>"; };
-		0F78F7CF1D5971BB00DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter3.html; sourceTree = "<group>"; };
-		0F78F7D11D5971BD00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter3.html; sourceTree = "<group>"; };
-		0F78F7D21D5971BE00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter3.html; sourceTree = "<group>"; };
-		0F78F7D41D5971C200DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter4.html; sourceTree = "<group>"; };
-		0F78F7D61D5971C300DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter4.html; sourceTree = "<group>"; };
-		0F78F7D71D5971C500DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter4.html; sourceTree = "<group>"; };
-		0F78F7D91D5971CA00DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter5.html; sourceTree = "<group>"; };
-		0F78F7DB1D5971CC00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter5.html; sourceTree = "<group>"; };
-		0F78F7DC1D5971CD00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter5.html; sourceTree = "<group>"; };
-		0F78F7DE1D5971D200DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter6.html; sourceTree = "<group>"; };
-		0F78F7E01D5971D400DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter6.html; sourceTree = "<group>"; };
-		0F78F7E11D5971D500DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter6.html; sourceTree = "<group>"; };
-		0F78F7E31D5971D900DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter7.html; sourceTree = "<group>"; };
-		0F78F7E51D5971DB00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter7.html; sourceTree = "<group>"; };
-		0F78F7E61D5971DC00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter7.html; sourceTree = "<group>"; };
-		0F78F7E81D5971E400DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter8.html; sourceTree = "<group>"; };
-		0F78F7EA1D5971E500DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter8.html; sourceTree = "<group>"; };
-		0F78F7EB1D5971E600DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter8.html; sourceTree = "<group>"; };
-		0F78F7ED1D5971EB00DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter9.html; sourceTree = "<group>"; };
-		0F78F7EF1D5971EC00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter9.html; sourceTree = "<group>"; };
-		0F78F7F01D5971ED00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter9.html; sourceTree = "<group>"; };
-		0F78F7F21D5971F200DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/chapter10.html; sourceTree = "<group>"; };
-		0F78F7F41D5971F300DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/chapter10.html; sourceTree = "<group>"; };
-		0F78F7F51D5971F400DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = es.lproj/chapter10.html; sourceTree = "<group>"; };
-		0F78F7F71D5971F800DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = "Base.lproj/about-author.html"; sourceTree = "<group>"; };
-		0F78F7F91D5971FA00DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = "en.lproj/about-author.html"; sourceTree = "<group>"; };
-		0F78F7FA1D5971FB00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = es; path = "es.lproj/about-author.html"; sourceTree = "<group>"; };
-		0F78F7FB1D59777F00DAE36A /* FLowChart-Spanish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "FLowChart-Spanish.jpg"; sourceTree = "<group>"; };
-		0F78F7FC1D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TEC_Chart_of_Emotions_Spanish.png; sourceTree = "<group>"; };
-		0F78F7FD1D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TEC_Chart_of_Emotions_Spanish1.png; sourceTree = "<group>"; };
-		0F78F7FE1D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEC_Heart-Wall_Flowchart-Spanish.png"; sourceTree = "<group>"; };
-		0F78F7FF1D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trapped_Emotion_Flowchart_-_Spanish.png"; sourceTree = "<group>"; };
-		0F78F8101D597D9700DAE36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = Base; path = Base.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
-		0F78F8121D597D9900DAE36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = en; path = en.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
-		0F78F8131D597D9A00DAE36A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = es; path = es.lproj/idGeneratedStyles.css; sourceTree = "<group>"; };
 		0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
 		0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterListViewController.swift; sourceTree = "<group>"; };
 		0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Window.swift"; sourceTree = "<group>"; };
 		0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarButtonTests.swift; sourceTree = "<group>"; };
+		0FD7E5E41D7F19390061BD18 /* book-add-chapters-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-add-chapters-en.patch"; sourceTree = "<group>"; };
+		0FD7E5E51D7F19390061BD18 /* book-fix-chapter-quote-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-fix-chapter-quote-en.patch"; sourceTree = "<group>"; };
+		0FD7E5E61D7F19390061BD18 /* book-remove-chapter-numbers-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-remove-chapter-numbers-en.patch"; sourceTree = "<group>"; };
+		0FD7E5E71D7F19390061BD18 /* chapter1-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter1-en.patch"; sourceTree = "<group>"; };
+		0FD7E5E81D7F19390061BD18 /* chapter2-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter2-en.patch"; sourceTree = "<group>"; };
+		0FD7E5E91D7F19390061BD18 /* chapter3-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter3-en.patch"; sourceTree = "<group>"; };
+		0FD7E5EA1D7F19390061BD18 /* chapter4-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter4-en.patch"; sourceTree = "<group>"; };
+		0FD7E5EB1D7F19390061BD18 /* chapter5-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter5-en.patch"; sourceTree = "<group>"; };
+		0FD7E5EC1D7F19390061BD18 /* chapter6-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter6-en.patch"; sourceTree = "<group>"; };
+		0FD7E5ED1D7F19390061BD18 /* chapter7-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter7-en.patch"; sourceTree = "<group>"; };
+		0FD7E5EE1D7F19390061BD18 /* chapter8-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter8-en.patch"; sourceTree = "<group>"; };
+		0FD7E5EF1D7F19390061BD18 /* chapter9-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter9-en.patch"; sourceTree = "<group>"; };
+		0FD7E5F01D7F19390061BD18 /* chapter10-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter10-en.patch"; sourceTree = "<group>"; };
+		0FD7E5F11D7F19390061BD18 /* chapter11-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter11-en.patch"; sourceTree = "<group>"; };
+		0FD7E6001D7F1D2D0061BD18 /* book-add-chapters-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-add-chapters-es.patch"; sourceTree = "<group>"; };
+		0FD7E6011D7F1D2D0061BD18 /* book-fix-chapter-quote-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-fix-chapter-quote-es.patch"; sourceTree = "<group>"; };
+		0FD7E6021D7F1D2D0061BD18 /* book-remove-chapter-numbers-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book-remove-chapter-numbers-es.patch"; sourceTree = "<group>"; };
+		0FD7E6031D7F1D2D0061BD18 /* chapter1-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter1-es.patch"; sourceTree = "<group>"; };
+		0FD7E6041D7F1D2D0061BD18 /* chapter2-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter2-es.patch"; sourceTree = "<group>"; };
+		0FD7E6051D7F1D2D0061BD18 /* chapter3-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter3-es.patch"; sourceTree = "<group>"; };
+		0FD7E6061D7F1D2D0061BD18 /* chapter4-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter4-es.patch"; sourceTree = "<group>"; };
+		0FD7E6071D7F1D2D0061BD18 /* chapter5-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter5-es.patch"; sourceTree = "<group>"; };
+		0FD7E6081D7F1D2D0061BD18 /* chapter6-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter6-es.patch"; sourceTree = "<group>"; };
+		0FD7E6091D7F1D2D0061BD18 /* chapter7-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter7-es.patch"; sourceTree = "<group>"; };
+		0FD7E60A1D7F1D2D0061BD18 /* chapter8-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter8-es.patch"; sourceTree = "<group>"; };
+		0FD7E60B1D7F1D2D0061BD18 /* chapter9-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter9-es.patch"; sourceTree = "<group>"; };
+		0FD7E60C1D7F1D2D0061BD18 /* chapter10-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter10-es.patch"; sourceTree = "<group>"; };
+		0FD7E60D1D7F1D2D0061BD18 /* chapter11-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter11-es.patch"; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
 		0FF8F9E51D5ACD2D008666E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
@@ -270,69 +216,62 @@
 			children = (
 				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 				0FF6418A1D5A725500EDF903 /* MarkupLint.sh */,
+				0F669F4E1D78AC33003AD410 /* PatchBook.sh */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
 		};
-		0F78F72D1D596F2200DAE36A /* Book */ = {
+		0F669F131D78AB66003AD410 /* BookPatches */ = {
 			isa = PBXGroup;
 			children = (
-				0F78F7321D596F3D00DAE36A /* chapter1.html */,
-				0F78F7CB1D5971B500DAE36A /* chapter2.html */,
-				0F78F7D01D5971BB00DAE36A /* chapter3.html */,
-				0F78F7D51D5971C200DAE36A /* chapter4.html */,
-				0F78F7DA1D5971CA00DAE36A /* chapter5.html */,
-				0F78F7DF1D5971D200DAE36A /* chapter6.html */,
-				0F78F7E41D5971D900DAE36A /* chapter7.html */,
-				0F78F7E91D5971E400DAE36A /* chapter8.html */,
-				0F78F7EE1D5971EB00DAE36A /* chapter9.html */,
-				0F78F7F31D5971F200DAE36A /* chapter10.html */,
-				0F78F7F81D5971F800DAE36A /* about-author.html */,
-				0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */,
-				0F78F80C1D597C6700DAE36A /* images */,
+				0F669F141D78AB7C003AD410 /* English */,
+				0F669F151D78AB92003AD410 /* Spanish */,
 			);
-			path = Book;
+			path = BookPatches;
 			sourceTree = "<group>";
 		};
-		0F78F80C1D597C6700DAE36A /* images */ = {
+		0F669F141D78AB7C003AD410 /* English */ = {
 			isa = PBXGroup;
 			children = (
-				0F78F73C1D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png */,
-				0F78F73D1D59703100DAE36A /* FLowChart.jpg */,
-				0F78F7FB1D59777F00DAE36A /* FLowChart-Spanish.jpg */,
-				0F78F7FC1D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png */,
-				0F78F7FD1D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish1.png */,
-				0F78F7FE1D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png */,
-				0F78F7FF1D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png */,
-				0F78F73E1D59703100DAE36A /* governing_front.png */,
-				0F78F73F1D59703100DAE36A /* governing_front1.png */,
-				0F78F7401D59703100DAE36A /* governing-back.png */,
-				0F78F7411D59703100DAE36A /* governing-back1.png */,
-				0F78F7421D59703100DAE36A /* Heart-Wall_FlowChart_rev_4-1-2010.png */,
-				0F78F7431D59703100DAE36A /* kirlian_halvblad.png */,
-				0F78F7441D59703100DAE36A /* MT-Falling_Log_DOWN.png */,
-				0F78F7451D59703100DAE36A /* MT-Falling_Log_UP.png */,
-				0F78F7461D59703100DAE36A /* MT-Hand_Solo_DOWN.png */,
-				0F78F7471D59703100DAE36A /* MT-Hand_Solo_UP.png */,
-				0F78F7481D59703100DAE36A /* MT-Hole_in_One_CLOSED.png */,
-				0F78F7491D59703100DAE36A /* MT-Hole_in_One_OPEN.png */,
-				0F78F74A1D59703100DAE36A /* MT-Hole_in_One_Placement.png */,
-				0F78F74B1D59703100DAE36A /* MT-Placement.png */,
-				0F78F74C1D59703100DAE36A /* MT-Ring_in_Ring_CLOSED.png */,
-				0F78F74D1D59703100DAE36A /* MT-Ring_in_Ring_OPEN.png */,
-				0F78F74E1D59703100DAE36A /* MT-surrogate_testing_adult.png */,
-				0F78F74F1D59703100DAE36A /* MT-surrogate_testing.png */,
-				0F78F7501D59703100DAE36A /* MT-Sway_Backward.png */,
-				0F78F7511D59703100DAE36A /* MT-Sway_Forward.png */,
-				0F78F7521D59703100DAE36A /* Proxy_Scene.png */,
-				0F78F7531D59703100DAE36A /* Revised_Emotion_Chart,_full.png */,
-				0F78F7541D59703100DAE36A /* Revised_Emotion_Chart,_full1.png */,
-				0F78F7551D59703100DAE36A /* Revised_Emotion_Chart,_sample.png */,
-				0F78F7561D59703100DAE36A /* Smiling_face.png */,
-				0F78F7571D59703100DAE36A /* Trapped_Emotion_FlowChart_rev_4-1-2010.png */,
-				0F78F7581D59703100DAE36A /* Tuning_Forks.png */,
+				0FD7E5E41D7F19390061BD18 /* book-add-chapters-en.patch */,
+				0FD7E5E61D7F19390061BD18 /* book-remove-chapter-numbers-en.patch */,
+				0FD7E5E51D7F19390061BD18 /* book-fix-chapter-quote-en.patch */,
+				0FD7E5E71D7F19390061BD18 /* chapter1-en.patch */,
+				0FD7E5E81D7F19390061BD18 /* chapter2-en.patch */,
+				0FD7E5E91D7F19390061BD18 /* chapter3-en.patch */,
+				0FD7E5EA1D7F19390061BD18 /* chapter4-en.patch */,
+				0FD7E5EB1D7F19390061BD18 /* chapter5-en.patch */,
+				0FD7E5EC1D7F19390061BD18 /* chapter6-en.patch */,
+				0FD7E5ED1D7F19390061BD18 /* chapter7-en.patch */,
+				0FD7E5EE1D7F19390061BD18 /* chapter8-en.patch */,
+				0FD7E5EF1D7F19390061BD18 /* chapter9-en.patch */,
+				0FD7E5F01D7F19390061BD18 /* chapter10-en.patch */,
+				0FD7E5F11D7F19390061BD18 /* chapter11-en.patch */,
+				0F0FB5961D7DE65800546BD0 /* css-en.patch */,
 			);
-			name = images;
+			path = English;
+			sourceTree = "<group>";
+		};
+		0F669F151D78AB92003AD410 /* Spanish */ = {
+			isa = PBXGroup;
+			children = (
+				0FD7E6001D7F1D2D0061BD18 /* book-add-chapters-es.patch */,
+				0FD7E6021D7F1D2D0061BD18 /* book-remove-chapter-numbers-es.patch */,
+				0FD7E6011D7F1D2D0061BD18 /* book-fix-chapter-quote-es.patch */,
+				0FD7E6031D7F1D2D0061BD18 /* chapter1-es.patch */,
+				0FD7E6041D7F1D2D0061BD18 /* chapter2-es.patch */,
+				0FD7E6051D7F1D2D0061BD18 /* chapter3-es.patch */,
+				0FD7E6061D7F1D2D0061BD18 /* chapter4-es.patch */,
+				0FD7E6071D7F1D2D0061BD18 /* chapter5-es.patch */,
+				0FD7E6081D7F1D2D0061BD18 /* chapter6-es.patch */,
+				0FD7E6091D7F1D2D0061BD18 /* chapter7-es.patch */,
+				0FD7E60A1D7F1D2D0061BD18 /* chapter8-es.patch */,
+				0FD7E60B1D7F1D2D0061BD18 /* chapter9-es.patch */,
+				0FD7E60C1D7F1D2D0061BD18 /* chapter10-es.patch */,
+				0FD7E60D1D7F1D2D0061BD18 /* chapter11-es.patch */,
+				0F0FB5981D7DE7B100546BD0 /* css-es.patch */,
+			);
+			path = Spanish;
 			sourceTree = "<group>";
 		};
 		91187B211D67768C0098A881 /* Views */ = {
@@ -367,6 +306,7 @@
 		915EEC3B1D460CE1005CC318 /* EmotionCode */ = {
 			isa = PBXGroup;
 			children = (
+				0F669F131D78AB66003AD410 /* BookPatches */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
@@ -407,7 +347,6 @@
 			isa = PBXGroup;
 			children = (
 				91B88ACC1D58B8E600DFCDB2 /* Chart.swift */,
-				0F78F72D1D596F2200DAE36A /* Book */,
 				E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */,
 				0FF8F9E91D5ACFE4008666E8 /* Book.swift */,
 				0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */,
@@ -424,6 +363,7 @@
 			buildPhases = (
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
+				0F669F501D78AD32003AD410 /* Run PatchBook */,
 				0FF641891D5A6A3100EDF903 /* Run MarkupLint */,
 				915EEC351D460CE1005CC318 /* Sources */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
@@ -501,61 +441,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F78F7301D596F3D00DAE36A /* chapter1.html in Resources */,
-				0F78F7C91D5971B500DAE36A /* chapter2.html in Resources */,
-				0F78F7611D59703100DAE36A /* MT-Falling_Log_DOWN.png in Resources */,
-				0F78F7F61D5971F800DAE36A /* about-author.html in Resources */,
-				0F78F75B1D59703100DAE36A /* governing_front.png in Resources */,
-				0F78F7DD1D5971D200DAE36A /* chapter6.html in Resources */,
-				0F78F75C1D59703100DAE36A /* governing_front1.png in Resources */,
-				0F78F7721D59703100DAE36A /* Revised_Emotion_Chart,_sample.png in Resources */,
-				0F78F7671D59703100DAE36A /* MT-Hole_in_One_Placement.png in Resources */,
-				0F78F7651D59703100DAE36A /* MT-Hole_in_One_CLOSED.png in Resources */,
-				0F78F7641D59703100DAE36A /* MT-Hand_Solo_UP.png in Resources */,
-				0F78F7E21D5971D900DAE36A /* chapter7.html in Resources */,
-				0F78F7D81D5971CA00DAE36A /* chapter5.html in Resources */,
+				0FD7E60F1D7F1D2D0061BD18 /* book-fix-chapter-quote-es.patch in Resources */,
+				0FD7E5F41D7F19390061BD18 /* book-remove-chapter-numbers-en.patch in Resources */,
+				0FD7E5F61D7F19390061BD18 /* chapter2-en.patch in Resources */,
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
-				0F78F7741D59703100DAE36A /* Trapped_Emotion_FlowChart_rev_4-1-2010.png in Resources */,
-				0F78F75E1D59703100DAE36A /* governing-back1.png in Resources */,
-				0F78F76B1D59703100DAE36A /* MT-surrogate_testing_adult.png in Resources */,
-				0F78F8011D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish.png in Resources */,
-				0F78F7CE1D5971BB00DAE36A /* chapter3.html in Resources */,
+				0FD7E5FD1D7F19390061BD18 /* chapter9-en.patch in Resources */,
+				0FD7E6101D7F1D2D0061BD18 /* book-remove-chapter-numbers-es.patch in Resources */,
 				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
-				0F78F75D1D59703100DAE36A /* governing-back.png in Resources */,
+				0FD7E5F91D7F19390061BD18 /* chapter5-en.patch in Resources */,
+				0FD7E6141D7F1D2D0061BD18 /* chapter4-es.patch in Resources */,
+				0FD7E60E1D7F1D2D0061BD18 /* book-add-chapters-es.patch in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
+				0FD7E5F21D7F19390061BD18 /* book-add-chapters-en.patch in Resources */,
+				0FD7E5F71D7F19390061BD18 /* chapter3-en.patch in Resources */,
+				0FD7E5FC1D7F19390061BD18 /* chapter8-en.patch in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
-				0F78F7661D59703100DAE36A /* MT-Hole_in_One_OPEN.png in Resources */,
-				0F78F7701D59703100DAE36A /* Revised_Emotion_Chart,_full.png in Resources */,
-				0F78F7711D59703100DAE36A /* Revised_Emotion_Chart,_full1.png in Resources */,
-				0F78F7E71D5971E400DAE36A /* chapter8.html in Resources */,
-				0F78F76D1D59703100DAE36A /* MT-Sway_Backward.png in Resources */,
-				0F78F7F11D5971F200DAE36A /* chapter10.html in Resources */,
+				0FD7E6131D7F1D2D0061BD18 /* chapter3-es.patch in Resources */,
+				0FD7E5F51D7F19390061BD18 /* chapter1-en.patch in Resources */,
+				0FD7E61A1D7F1D2D0061BD18 /* chapter10-es.patch in Resources */,
+				0FD7E5FE1D7F19390061BD18 /* chapter10-en.patch in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
-				0F78F8001D59777F00DAE36A /* FLowChart-Spanish.jpg in Resources */,
-				0F78F7691D59703100DAE36A /* MT-Ring_in_Ring_CLOSED.png in Resources */,
-				0F78F7591D59703100DAE36A /* Body-Code-Digital-Glory-2.0_Render.png in Resources */,
-				0F78F76F1D59703100DAE36A /* Proxy_Scene.png in Resources */,
+				0FD7E5F81D7F19390061BD18 /* chapter4-en.patch in Resources */,
+				0F0FB5991D7DE7B100546BD0 /* css-es.patch in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
-				0F78F7621D59703100DAE36A /* MT-Falling_Log_UP.png in Resources */,
+				0FD7E6151D7F1D2D0061BD18 /* chapter5-es.patch in Resources */,
+				0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */,
+				0FD7E6191D7F1D2D0061BD18 /* chapter9-es.patch in Resources */,
+				0FD7E6121D7F1D2D0061BD18 /* chapter2-es.patch in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
-				0F78F75A1D59703100DAE36A /* FLowChart.jpg in Resources */,
-				0F78F8041D59777F00DAE36A /* Trapped_Emotion_Flowchart_-_Spanish.png in Resources */,
+				0FD7E6171D7F1D2D0061BD18 /* chapter7-es.patch in Resources */,
+				0FD7E6181D7F1D2D0061BD18 /* chapter8-es.patch in Resources */,
+				0FD7E6161D7F1D2D0061BD18 /* chapter6-es.patch in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
-				0F78F7681D59703100DAE36A /* MT-Placement.png in Resources */,
-				0F78F7751D59703100DAE36A /* Tuning_Forks.png in Resources */,
+				0FD7E5F31D7F19390061BD18 /* book-fix-chapter-quote-en.patch in Resources */,
+				0FD7E5FF1D7F19390061BD18 /* chapter11-en.patch in Resources */,
+				0F0FB5971D7DE65800546BD0 /* css-en.patch in Resources */,
+				0FD7E6111D7F1D2D0061BD18 /* chapter1-es.patch in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
-				0F78F7631D59703100DAE36A /* MT-Hand_Solo_DOWN.png in Resources */,
-				0F78F80F1D597D9700DAE36A /* idGeneratedStyles.css in Resources */,
-				0F78F8021D59777F00DAE36A /* TEC_Chart_of_Emotions_Spanish1.png in Resources */,
-				0F78F76E1D59703100DAE36A /* MT-Sway_Forward.png in Resources */,
-				0F78F7D31D5971C200DAE36A /* chapter4.html in Resources */,
-				0F78F7601D59703100DAE36A /* kirlian_halvblad.png in Resources */,
-				0F78F7731D59703100DAE36A /* Smiling_face.png in Resources */,
-				0F78F8031D59777F00DAE36A /* TEC_Heart-Wall_Flowchart-Spanish.png in Resources */,
-				0F78F76C1D59703100DAE36A /* MT-surrogate_testing.png in Resources */,
-				0F78F76A1D59703100DAE36A /* MT-Ring_in_Ring_OPEN.png in Resources */,
-				0F78F75F1D59703100DAE36A /* Heart-Wall_FlowChart_rev_4-1-2010.png in Resources */,
-				0F78F7EC1D5971EB00DAE36A /* chapter9.html in Resources */,
+				0FD7E5FA1D7F19390061BD18 /* chapter6-en.patch in Resources */,
+				0FD7E61B1D7F1D2D0061BD18 /* chapter11-es.patch in Resources */,
+				0FD7E5FB1D7F19390061BD18 /* chapter7-en.patch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +494,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F669F501D78AD32003AD410 /* Run PatchBook */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run PatchBook";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PROJECT_NAME\"/PatchBook.sh";
+		};
 		0FF641891D5A6A3100EDF903 /* Run MarkupLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -692,126 +631,6 @@
 				0F28D0BC1D4E755B002C98E7 /* Base */,
 			);
 			name = Help.storyboard;
-			sourceTree = "<group>";
-		};
-		0F78F7321D596F3D00DAE36A /* chapter1.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7311D596F3D00DAE36A /* Base */,
-				0F78F7331D596F3E00DAE36A /* en */,
-				0F78F7341D596F3F00DAE36A /* es */,
-			);
-			name = chapter1.html;
-			sourceTree = "<group>";
-		};
-		0F78F7CB1D5971B500DAE36A /* chapter2.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7CA1D5971B500DAE36A /* Base */,
-				0F78F7CC1D5971B600DAE36A /* en */,
-				0F78F7CD1D5971B700DAE36A /* es */,
-			);
-			name = chapter2.html;
-			sourceTree = "<group>";
-		};
-		0F78F7D01D5971BB00DAE36A /* chapter3.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7CF1D5971BB00DAE36A /* Base */,
-				0F78F7D11D5971BD00DAE36A /* en */,
-				0F78F7D21D5971BE00DAE36A /* es */,
-			);
-			name = chapter3.html;
-			sourceTree = "<group>";
-		};
-		0F78F7D51D5971C200DAE36A /* chapter4.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7D41D5971C200DAE36A /* Base */,
-				0F78F7D61D5971C300DAE36A /* en */,
-				0F78F7D71D5971C500DAE36A /* es */,
-			);
-			name = chapter4.html;
-			sourceTree = "<group>";
-		};
-		0F78F7DA1D5971CA00DAE36A /* chapter5.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7D91D5971CA00DAE36A /* Base */,
-				0F78F7DB1D5971CC00DAE36A /* en */,
-				0F78F7DC1D5971CD00DAE36A /* es */,
-			);
-			name = chapter5.html;
-			sourceTree = "<group>";
-		};
-		0F78F7DF1D5971D200DAE36A /* chapter6.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7DE1D5971D200DAE36A /* Base */,
-				0F78F7E01D5971D400DAE36A /* en */,
-				0F78F7E11D5971D500DAE36A /* es */,
-			);
-			name = chapter6.html;
-			sourceTree = "<group>";
-		};
-		0F78F7E41D5971D900DAE36A /* chapter7.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7E31D5971D900DAE36A /* Base */,
-				0F78F7E51D5971DB00DAE36A /* en */,
-				0F78F7E61D5971DC00DAE36A /* es */,
-			);
-			name = chapter7.html;
-			sourceTree = "<group>";
-		};
-		0F78F7E91D5971E400DAE36A /* chapter8.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7E81D5971E400DAE36A /* Base */,
-				0F78F7EA1D5971E500DAE36A /* en */,
-				0F78F7EB1D5971E600DAE36A /* es */,
-			);
-			name = chapter8.html;
-			sourceTree = "<group>";
-		};
-		0F78F7EE1D5971EB00DAE36A /* chapter9.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7ED1D5971EB00DAE36A /* Base */,
-				0F78F7EF1D5971EC00DAE36A /* en */,
-				0F78F7F01D5971ED00DAE36A /* es */,
-			);
-			name = chapter9.html;
-			sourceTree = "<group>";
-		};
-		0F78F7F31D5971F200DAE36A /* chapter10.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7F21D5971F200DAE36A /* Base */,
-				0F78F7F41D5971F300DAE36A /* en */,
-				0F78F7F51D5971F400DAE36A /* es */,
-			);
-			name = chapter10.html;
-			sourceTree = "<group>";
-		};
-		0F78F7F81D5971F800DAE36A /* about-author.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F7F71D5971F800DAE36A /* Base */,
-				0F78F7F91D5971FA00DAE36A /* en */,
-				0F78F7FA1D5971FB00DAE36A /* es */,
-			);
-			name = "about-author.html";
-			sourceTree = "<group>";
-		};
-		0F78F8111D597D9700DAE36A /* idGeneratedStyles.css */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F78F8101D597D9700DAE36A /* Base */,
-				0F78F8121D597D9900DAE36A /* en */,
-				0F78F8131D597D9A00DAE36A /* es */,
-			);
-			name = idGeneratedStyles.css;
 			sourceTree = "<group>";
 		};
 		0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */ = {
