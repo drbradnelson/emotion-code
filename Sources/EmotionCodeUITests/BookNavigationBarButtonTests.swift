@@ -43,4 +43,18 @@ extension BookNavigationBarButtonTests {
         }
     }
 
+    func testPreviousChapterButtonStateAfterFirstChapterSelection() {
+        app.buttons["Chapter 1"].tap()
+        let firstChapterCell = app.cells.first
+        firstChapterCell.tap()
+        XCTAssertFalse(app.buttons["Previous Chapter"].enabled)
+    }
+
+    func testNextChapterButtonStateAfterLastChapterSelection() {
+        app.buttons["Chapter 1"].tap()
+        let lastChapterCell = app.cells.last
+        lastChapterCell.tap()
+        XCTAssertFalse(app.buttons["Next Chapter"].enabled)
+    }
+
 }
