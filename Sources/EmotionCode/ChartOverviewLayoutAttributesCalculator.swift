@@ -84,14 +84,12 @@ private extension ChartOverviewLayoutAttributesCalculator {
         let offset = calculateColumnOffset(forColumnIndex: position)
         let columnWidth = calculateColumnWidth()
         let headerHeight = layoutParams.heightForColumnHeaderElement
-
         let frame = CGRect(x: area.minX + offset, y: area.minY, width: columnWidth, height: headerHeight)
         return frame
     }
 
     func calculateFrameForCounterElement(atPosition position: Int, inArea area: CGRect) -> CGRect {
         let counterElementWidth = layoutParams.widthForRowCounterElement
-
         let frame = CGRect(x: 0, y: area.minY, width: counterElementWidth, height: area.height)
         return frame
     }
@@ -117,7 +115,6 @@ private extension ChartOverviewLayoutAttributesCalculator {
         let initialOffset = layoutParams.widthForRowCounterElement
         let columnWidth = calculateColumnWidth()
         let spacing = layoutParams.spacingBetweenColumns
-
         let startPosition = initialOffset + CGFloat(column) * (spacing + columnWidth)
         return startPosition
     }
@@ -140,7 +137,6 @@ private extension ChartOverviewLayoutAttributesCalculator {
             let availableColumnsWidth = (layoutParams.availableWidth - rowCounterElementWidth) - CGFloat(numberOfColumns - 1) * interColumnsSpacing - layoutParams.contentInsets.left - layoutParams.contentInsets.right
             columnWidth = availableColumnsWidth / CGFloat(numberOfColumns)
         }
-
         return columnWidth!
     }
 
