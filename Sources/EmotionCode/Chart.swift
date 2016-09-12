@@ -28,11 +28,6 @@ struct ChartRowPosition {
     let columnIndex: Int
     let rowIndex: Int
 
-    init(column: Int, row: Int) {
-        columnIndex = column
-        rowIndex = row
-    }
-
 }
 
 extension Chart {
@@ -59,12 +54,6 @@ struct ChartItemPosition {
     let columnIndex: Int
     let rowIndex: Int
     let itemIndex: Int
-
-    init(column: Int, row: Int, item: Int) {
-        columnIndex = column
-        rowIndex = row
-        itemIndex = item
-    }
 
 }
 

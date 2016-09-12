@@ -45,7 +45,7 @@ extension ChartOverviewLayoutAttributesCalculator {
         let counterAttributes = calculateAttributesForRowCounterElement(forSection: section, inArea: area)
 
         for columnIndex in 0 ..< adapter.numberOfColumns() {
-            let rowPosition = ChartRowPosition(column: columnIndex, row: section)
+            let rowPosition = ChartRowPosition(columnIndex: columnIndex, rowIndex: section)
             let rowElementFrame = calculateFrameForRowElement(forRowPosition: rowPosition, inArea: area)
             let rowElementIndexPath = adapter.indexPath(forRowPosition: rowPosition)
 

@@ -64,7 +64,7 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func rowPosition(forIndexPath indexPath: NSIndexPath) -> ChartRowPosition {
-        return ChartRowPosition(column: indexPath.item, row: indexPath.section)
+        return ChartRowPosition(columnIndex: indexPath.item, rowIndex: indexPath.section)
     }
 
 }
