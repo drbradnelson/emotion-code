@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 final class ChartOverviewLayoutAttributesCalculator {
@@ -59,7 +58,7 @@ extension ChartOverviewLayoutAttributesCalculator {
         return attributes
     }
 
-    func calculateAttributesForRowCounterElement(forSection section: Int, inArea area: CGRect) -> [NSIndexPath:UICollectionViewLayoutAttributes] {
+    func calculateAttributesForRowCounterElement(forSection section: Int, inArea area: CGRect) -> [NSIndexPath : UICollectionViewLayoutAttributes] {
         let rowIndex = section
 
         var counterAttributes: UICollectionViewLayoutAttributes
