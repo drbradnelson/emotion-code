@@ -4,7 +4,7 @@ import Foundation
 
 final class ChartOverviewSimpleAdapter {
 
-    private var chart: Chart
+    private let chart: Chart
 
     init(chart: Chart) {
         self.chart = chart
