@@ -20,7 +20,7 @@ class CollectionViewReusableViewWithTitle: UICollectionReusableView {
 
 }
 
-// MARK: ViewWithTitle
+// MARK: View with title
 
 extension CollectionViewReusableViewWithTitle : ViewWithTitle {}
 

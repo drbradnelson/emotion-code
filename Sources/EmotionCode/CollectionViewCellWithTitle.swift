@@ -20,7 +20,7 @@ final class CollectionViewCellWithTitle: UICollectionViewCell {
 
 }
 
-// MARK: ViewWithTitle
+// MARK: View with title
 
 extension CollectionViewCellWithTitle : ViewWithTitle {}
 

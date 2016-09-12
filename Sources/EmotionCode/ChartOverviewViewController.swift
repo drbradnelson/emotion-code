@@ -57,11 +57,11 @@ private extension ChartOverviewViewController {
 
 }
 
-// MARK: UICollectionViewDelegate
+// MARK: Collection view delegate
 
 extension ChartOverviewViewController : UICollectionViewDelegate {}
 
-// MARK: UICollectionViewDataSource
+// MARK: Collection view data source
 
 extension ChartOverviewViewController : UICollectionViewDataSource {
 
@@ -109,7 +109,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
 }
 
-// MARK: ChartOverviewCollectionLayoutDelegate
+// MARK: Chart overview collection layout delegate
 
 extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
 

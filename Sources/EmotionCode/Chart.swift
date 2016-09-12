@@ -47,7 +47,7 @@ struct ChartItem {
 
 }
 
-// MARK: Item Position
+// MARK: Item position
 
 struct ChartItemPosition {
 

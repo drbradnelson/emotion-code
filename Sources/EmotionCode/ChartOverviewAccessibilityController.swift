@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartOverviewAccessibilityController {}
 
-// MARK: Setup Accessibility
+// MARK: Setup accessibility
 
 extension ChartOverviewAccessibilityController {
 
