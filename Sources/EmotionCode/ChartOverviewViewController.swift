@@ -96,11 +96,11 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
         if kind == ChartOverviewCollectionLayout.columnHeaderElementIdentifier {
             let columnIndex = chartAdapter.columnIndex(forIndexPath: indexPath)
-            view.title = "\(columnIndex)"
+            view.title = NSLocalizedString("\(columnIndex)", comment: "")
             ChartOverviewAccessibilityController.setupAccessibility(forColumnHeader: view, forColumn: chart.columns[columnIndex], atIndex: columnIndex)
         } else {
             let rowIndex = chartAdapter.rowIndex(forIndexPath: indexPath)
-            view.title = "\(rowIndex)"
+            view.title = NSLocalizedString("\(rowIndex)", comment: "")
             ChartOverviewAccessibilityController.setupAccessibility(forRowCounterView: view, atRowIndex: rowIndex)
         }
 

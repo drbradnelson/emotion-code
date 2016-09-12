@@ -29,7 +29,7 @@ private extension ChartReusableTitleView {
     func setup() {
         addSubview(titleLabel)
         titleLabel.font = UIFont.systemFontOfSize(20)
-        titleLabel.numberOfLines = 0
+        titleLabel.numberOfLines = 2
         titleLabel.textAlignment = .Center
     }
 
