@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: Main
 
-class CollectionViewReusableViewWithTitle: UICollectionReusableView {
+class ChartReusableTitleView: UICollectionReusableView {
 
     private (set) var titleLabel: UILabel
 
@@ -20,11 +20,11 @@ class CollectionViewReusableViewWithTitle: UICollectionReusableView {
 
 // MARK: View with title
 
-extension CollectionViewReusableViewWithTitle : ViewWithTitle {}
+extension ChartReusableTitleView : ViewWithTitle {}
 
 // MARK: Setup
 
-private extension CollectionViewReusableViewWithTitle {
+private extension ChartReusableTitleView {
 
     func setup() {
         addSubview(titleLabel)
@@ -37,7 +37,7 @@ private extension CollectionViewReusableViewWithTitle {
 
 // MARK: Layout calculation
 
-extension CollectionViewReusableViewWithTitle {
+extension ChartReusableTitleView {
 
     override func layoutSubviews() {
         super.layoutSubviews()

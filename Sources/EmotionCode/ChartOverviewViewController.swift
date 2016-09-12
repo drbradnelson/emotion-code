@@ -48,8 +48,8 @@ private extension ChartOverviewViewController {
 
         chartView.setCollectionViewLayout(chartOverviewLayout, animated: false)
 
-        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.columnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.columnHeaderElementIdentifier)
-        chartView.registerClass(CollectionViewReusableViewWithTitle.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.cowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.cowCounterElementIdentifier)
+        chartView.registerClass(ChartReusableTitleView.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.columnHeaderElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.columnHeaderElementIdentifier)
+        chartView.registerClass(ChartReusableTitleView.self, forSupplementaryViewOfKind: ChartOverviewCollectionLayout.cowCounterElementIdentifier, withReuseIdentifier: ChartOverviewCollectionLayout.cowCounterElementIdentifier)
 
         chartView.registerClass(ChartOverviewRowCell.self, forCellWithReuseIdentifier: ChartOverviewCollectionLayout.rowElementIdentifier)
         ChartOverviewAccessibilityController.setupAccessibility(forChartOverviewView: chartView)
@@ -92,7 +92,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         let identifier = kind
-        var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: identifier, forIndexPath: indexPath) as! CollectionViewReusableViewWithTitle
+        var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: identifier, forIndexPath: indexPath) as! ChartReusableTitleView
 
         if kind == ChartOverviewCollectionLayout.columnHeaderElementIdentifier {
             let columnIndex = chartAdapter.columnIndex(forIndexPath: indexPath)
