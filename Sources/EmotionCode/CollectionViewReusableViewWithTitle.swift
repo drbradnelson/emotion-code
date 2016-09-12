@@ -13,9 +13,7 @@ class CollectionViewReusableViewWithTitle: UICollectionReusableView {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        titleLabel = UILabel()
-        super.init(coder: aDecoder)
-        setup()
+        return nil
     }
 
 }

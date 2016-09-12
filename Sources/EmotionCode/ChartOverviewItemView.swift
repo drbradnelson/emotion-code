@@ -13,9 +13,7 @@ final class ChartOverviewItemView: UIView {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        titleLabel = UILabel()
-        super.init(coder: aDecoder)
-        setup()
+        return nil
     }
 
 }
