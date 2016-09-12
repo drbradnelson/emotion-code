@@ -33,7 +33,7 @@ extension ChartOverviewSimpleAdapter : ChartOverviewCollectionLayoutDataAdapter 
     }
 
     func numberOfSections() -> Int {
-        return chart.columns.reduce(0, combine: { (maxRowsCount, column) -> Int in
+        return chart.columns.reduce(0, combine: { maxRowsCount, column -> Int in
             let rows = column.rows
             if maxRowsCount < rows.count {
                 return rows.count

@@ -138,7 +138,7 @@ extension ChartOverviewViewController : ChartOverviewCollectionLayoutDelegate {
     }
 
     func heightForRowElement(inCollectionView collectionView: UICollectionView, layout: ChartOverviewCollectionLayout, forRow row: Int) -> CGFloat {
-        return ChartOverviewRowCellLayout.height(forItems: chart.columns.enumerate().reduce(0, combine: { (maxItems, column) -> Int in
+        return ChartOverviewRowCellLayout.height(forItems: chart.columns.enumerate().reduce(0, combine: { maxItems, column -> Int in
             let rowItemsNumber = chartAdapter.numberOfItems(forColumnIndex: column.index, forRowIndex: row)
             if rowItemsNumber > maxItems {
                 return rowItemsNumber
