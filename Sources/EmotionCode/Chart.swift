@@ -28,7 +28,6 @@ struct ChartRowPosition {
     let columnIndex: Int
     let rowIndex: Int
 
-
     init(column: Int, row: Int) {
         columnIndex = column
         rowIndex = row
