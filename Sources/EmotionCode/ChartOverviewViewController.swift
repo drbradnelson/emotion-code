@@ -77,7 +77,7 @@ extension ChartOverviewViewController : UICollectionViewDataSource {
         let items = row.items
 
         cell.update(withItems: items)
-        cell.update(itemBackgroundColor: UIColor.lightGrayColor())
+        cell.update(itemBackgroundColor: .lightGrayColor())
 
         ChartOverviewAccessibilityController.setupAccessibility(forRowCell: cell, forRow: row, atRowPosition: rowPosition)
 
