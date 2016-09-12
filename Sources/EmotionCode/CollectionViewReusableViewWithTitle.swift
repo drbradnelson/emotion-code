@@ -2,7 +2,7 @@ import UIKit
 
 // MARK: Main
 
-class ChartReusableTitleView: UICollectionReusableView {
+final class ChartReusableTitleView: UICollectionReusableView {
 
     private (set) var titleLabel: UILabel
 
