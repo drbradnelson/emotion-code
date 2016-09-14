@@ -23,5 +23,5 @@ final class BookChapterLayoutTests: XCTestCase {
         let topMargin: CGFloat = 10
         XCTAssertEqual(beginningText.frame.minY, topLayoutGuide + topMargin)
     }
-    
+
 }

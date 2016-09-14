@@ -28,5 +28,5 @@ final class TabNavigationBookTests: XCTestCase {
         XCTAssertFalse(app.buttons["Chart"].isSelected)
         XCTAssertFalse(app.buttons["Help"].isSelected)
     }
-    
+
 }

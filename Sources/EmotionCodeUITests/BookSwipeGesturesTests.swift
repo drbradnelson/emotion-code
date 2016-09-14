@@ -28,5 +28,5 @@ final class BookSwipeGesturesTests: XCTestCase {
         app.mainWindow.swipeLeft()
         XCTAssert(app.buttons["Chapter 2"].isHittable)
     }
-    
+
 }

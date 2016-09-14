@@ -52,5 +52,5 @@ final class BookNavigationBarButtonTests: XCTestCase {
         lastChapterCell.tap()
         XCTAssertFalse(app.buttons["Next Chapter"].isEnabled)
     }
-    
+
 }

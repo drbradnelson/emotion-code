@@ -30,5 +30,5 @@ final class BookChapterSelectionTests: XCTestCase {
         app.cells.element(boundBy: 3).tap()
         XCTAssert(app.buttons["Chapter 4"].isHittable)
     }
-    
+
 }

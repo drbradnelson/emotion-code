@@ -20,5 +20,5 @@ final class TabNavigationDefaultTests: XCTestCase {
     func testDefaultTitle() {
         XCTAssert(app.navigationBars.first.exists)
     }
-    
+
 }
