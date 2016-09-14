@@ -16,7 +16,7 @@ final class BookChaptersTableView: UITableView {
 
     func dequeueReusableChapterCell(for indexPath: IndexPath) -> ChapterTableViewCell {
         guard let chapterCell = dequeueReusableCell(withIdentifier: ChapterTableViewCell.preferredReuseIdentifier, for: indexPath) as? ChapterTableViewCell else {
-            preconditionFailure("Chapter cell not found")
+            preconditionFailure()
         }
         return chapterCell
     }

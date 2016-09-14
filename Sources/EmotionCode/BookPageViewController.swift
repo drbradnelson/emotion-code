@@ -61,7 +61,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
 
     var currentBookChapterViewController: BookChapterViewController {
         guard let chapterViewController = viewControllers?.first as? BookChapterViewController else {
-            preconditionFailure("Unable to find chapter view controller")
+            preconditionFailure()
         }
         return chapterViewController
     }

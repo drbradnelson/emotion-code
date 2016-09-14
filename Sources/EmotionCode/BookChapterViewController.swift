@@ -15,7 +15,7 @@ final class BookChapterViewController: UIViewController {
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
         guard let bookChapterViewController = BookChapterViewController.preferredStoryboard.instantiateViewController(withIdentifier: BookChapterViewController.preferredStoryboardIdentifier) as? BookChapterViewController else {
-            preconditionFailure("Unable to instantiate BookChapterViewController")
+            preconditionFailure()
         }
         return bookChapterViewController
     }
@@ -43,7 +43,7 @@ final class BookChapterViewController: UIViewController {
             let htmlString = try String(contentsOf: chapterURL)
             bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
-            preconditionFailure("Unable to load chapter HTML file")
+            preconditionFailure()
         }
     }
 
