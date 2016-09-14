@@ -1,7 +1,5 @@
 import UIKit
 
-// MARK: Main
-
 final class BookChapterViewController: UIViewController {
 
     @IBOutlet private var bookChapterView: BookChapterView!

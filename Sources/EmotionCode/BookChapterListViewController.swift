@@ -1,7 +1,5 @@
 import UIKit
 
-// MARK: Main
-
 final class BookChapterListViewController: UITableViewController {
 
     var bookChapters: [Book.Chapter] = []

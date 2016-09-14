@@ -1,7 +1,5 @@
 import UIKit
 
-// MARK: Main
-
 final class BookChaptersTableView: UITableView {
 
     // MARK: Initialization
