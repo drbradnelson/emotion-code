@@ -2,11 +2,9 @@ import UIKit
 
 // MARK: Main
 
-final class BookChaptersTableView: UITableView {}
+final class BookChaptersTableView: UITableView {
 
-// MARK: Initialization
-
-extension BookChaptersTableView {
+    // MARK: Initialization
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -14,14 +12,10 @@ extension BookChaptersTableView {
         rowHeight = UITableViewAutomaticDimension
     }
 
-}
+    // MARK: Dequeing cells
 
-// MARK: Dequeing cells
-
-extension BookChaptersTableView {
-
-    func dequeueReusableChapterCellForIndexPath(indexPath: NSIndexPath) -> ChapterTableViewCell {
-        guard let chapterCell = dequeueReusableCellWithIdentifier(ChapterTableViewCell.preferredReuseIdentifier, forIndexPath: indexPath) as? ChapterTableViewCell else {
+    func dequeueReusableChapterCell(for indexPath: IndexPath) -> ChapterTableViewCell {
+        guard let chapterCell = dequeueReusableCell(withIdentifier: ChapterTableViewCell.preferredReuseIdentifier, for: indexPath) as? ChapterTableViewCell else {
             preconditionFailure("Chapter cell not found")
         }
         return chapterCell

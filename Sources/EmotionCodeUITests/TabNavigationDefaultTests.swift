@@ -18,7 +18,7 @@ final class TabNavigationDefaultTests: XCTestCase {
 extension TabNavigationDefaultTests {
 
     func testDefaultSelection() {
-        XCTAssert(app.buttons["Book"].selected)
+        XCTAssert(app.buttons["Book"].isSelected)
     }
 
     func testDefaultTitle() {

@@ -19,7 +19,7 @@ extension TabNavigationHelpTests {
 
     func testHelpSelection() {
         app.buttons["Help"].tap()
-        XCTAssert(app.buttons["Help"].selected)
+        XCTAssert(app.buttons["Help"].isSelected)
     }
 
     func testHelpTitle() {
@@ -29,8 +29,8 @@ extension TabNavigationHelpTests {
 
     func testHelpDeselection() {
         app.buttons["Help"].tap()
-        XCTAssertFalse(app.buttons["Book"].selected)
-        XCTAssertFalse(app.buttons["Chart"].selected)
+        XCTAssertFalse(app.buttons["Book"].isSelected)
+        XCTAssertFalse(app.buttons["Chart"].isSelected)
     }
 
 }

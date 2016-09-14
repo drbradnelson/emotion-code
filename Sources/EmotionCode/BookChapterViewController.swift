@@ -5,31 +5,25 @@ import UIKit
 final class BookChapterViewController: UIViewController {
 
     @IBOutlet private var bookChapterView: BookChapterView!
+
     var chapterIndex = 0
-    var chapterURL: NSURL?
+    var chapterURL: URL?
     var preferredTopLayoutGuide: CGFloat = 0
     var preferredBottomLayoutGuide: CGFloat = 0
 
-}
-
-// MARK: Factory method
-
-extension BookChapterViewController {
+    // MARK: Instantiating from storyboard
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
-        let storyboard = UIStoryboard(name: "Book", bundle: nil)
-        let storyboardIdentifier = String(BookChapterViewController.self)
-        guard let bookChapterViewController = storyboard.instantiateViewControllerWithIdentifier(storyboardIdentifier) as? BookChapterViewController else {
+        guard let bookChapterViewController = BookChapterViewController.preferredStoryboard.instantiateViewController(withIdentifier: BookChapterViewController.preferredStoryboardIdentifier) as? BookChapterViewController else {
             preconditionFailure("Unable to instantiate BookChapterViewController")
         }
         return bookChapterViewController
     }
 
-}
+    static let preferredStoryboard = UIStoryboard(name: "Book", bundle: nil)
+    static let preferredStoryboardIdentifier = String(describing: BookChapterViewController.self)
 
-// MARK: View lifecycle
-
-extension BookChapterViewController {
+    // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,16 +35,12 @@ extension BookChapterViewController {
         bookChapterView?.setPreferredLayoutGuidesForTop(preferredTopLayoutGuide, forBottom: preferredBottomLayoutGuide)
     }
 
-}
-
-// MARK: Load chapter HTML
-
-private extension BookChapterViewController {
+    // MARK: Load chapter HTML
 
     func loadChapter() {
         guard let chapterURL = chapterURL else { return }
         do {
-            let htmlString = try String(contentsOfURL: chapterURL)
+            let htmlString = try String(contentsOf: chapterURL)
             bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
             preconditionFailure("Unable to load chapter HTML file")

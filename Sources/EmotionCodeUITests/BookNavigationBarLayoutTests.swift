@@ -16,15 +16,15 @@ final class BookNavigationBarLayoutTests: XCTestCase {
 extension BookNavigationBarLayoutTests {
 
     func testChapterButton() {
-        XCTAssert(app.navigationBars.first.buttons["Chapter 1"].hittable)
+        XCTAssert(app.navigationBars.first.buttons["Chapter 1"].isHittable)
     }
 
     func testPreviousChapterButton() {
-        XCTAssert(app.navigationBars.first.buttons["Previous Chapter"].hittable)
+        XCTAssert(app.navigationBars.first.buttons["Previous Chapter"].isHittable)
     }
 
     func testNextChapterButton() {
-        XCTAssert(app.navigationBars.first.buttons["Next Chapter"].hittable)
+        XCTAssert(app.navigationBars.first.buttons["Next Chapter"].isHittable)
     }
 
 }

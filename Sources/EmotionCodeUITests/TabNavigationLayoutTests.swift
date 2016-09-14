@@ -22,15 +22,15 @@ extension TabNavigationLayoutTests {
     }
 
     func testHasBookTab() {
-        XCTAssertEqual(app.tabBars.buttons.elementBoundByIndex(0).label, "Book")
+        XCTAssertEqual(app.tabBars.buttons.element(boundBy: 0).label, "Book")
     }
 
     func testHasChartTab() {
-        XCTAssertEqual(app.tabBars.buttons.elementBoundByIndex(1).label, "Chart")
+        XCTAssertEqual(app.tabBars.buttons.element(boundBy: 1).label, "Chart")
     }
 
     func testHasHelpTab() {
-        XCTAssertEqual(app.tabBars.buttons.elementBoundByIndex(2).label, "Help")
+        XCTAssertEqual(app.tabBars.buttons.element(boundBy: 2).label, "Help")
     }
 
 }

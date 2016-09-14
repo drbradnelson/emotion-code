@@ -19,7 +19,7 @@ extension TabNavigationChartTests {
 
     func testChartSelection() {
         app.buttons["Chart"].tap()
-        XCTAssert(app.buttons["Chart"].selected)
+        XCTAssert(app.buttons["Chart"].isSelected)
     }
 
     func testChartTitle() {
@@ -29,8 +29,8 @@ extension TabNavigationChartTests {
 
     func testChartDeselection() {
         app.buttons["Chart"].tap()
-        XCTAssertFalse(app.buttons["Book"].selected)
-        XCTAssertFalse(app.buttons["Help"].selected)
+        XCTAssertFalse(app.buttons["Book"].isSelected)
+        XCTAssertFalse(app.buttons["Help"].isSelected)
     }
 
 }

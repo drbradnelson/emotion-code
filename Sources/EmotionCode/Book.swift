@@ -1,6 +1,6 @@
 import Foundation
 
-// MARK: Main
+// MARK: Book
 
 struct Book {
 
@@ -13,6 +13,6 @@ struct Book {
 struct BookChapter {
 
     let title: String
-    let fileURL: NSURL
+    let fileURL: URL
 
 }

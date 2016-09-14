@@ -1,4 +1,4 @@
-// MARK: Main
+// MARK: Chart
 
 struct Chart {
 

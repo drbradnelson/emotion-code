@@ -4,63 +4,49 @@ import UIKit
 
 final class BookChapterListViewController: UITableViewController {
 
-    @IBOutlet private var bookChaptersTableView: BookChaptersTableView!
-
     var bookChapters: [BookChapter] = []
     var selectedChapterIndex = 0
 
-}
+    // MARK: Table view
 
-// MARK: Table view data source
+    @IBOutlet private var bookChaptersTableView: BookChaptersTableView!
 
-extension BookChapterListViewController {
+    // MARK: Table view data source
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bookChapters.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let chapter = bookChapters[indexPath.row]
-        let cell = bookChaptersTableView.dequeueReusableChapterCellForIndexPath(indexPath)
+        let cell = bookChaptersTableView.dequeueReusableChapterCell(for: indexPath)
         cell.setChapterNumber(indexPath.row + 1, chapterTitle: chapter.title)
         cell.setChapterSelected(indexPath.row == selectedChapterIndex)
         return cell
     }
 
-}
+    // MARK: Table view delegate
 
-// MARK: Table view delegate
-
-extension BookChapterListViewController {
-
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let cell = tableView.cellForRowAtIndexPath(indexPath) as? ChapterTableViewCell else {
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? ChapterTableViewCell else {
             preconditionFailure()
         }
         cell.setChapterSelected(false)
     }
 
-}
+    // MARK: Storyboard segues
 
-// MARK: Storyboard segues
-
-extension BookChapterListViewController {
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let bookPageViewController = segue.destinationViewController as? BookPageViewController else {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let bookPageViewController = segue.destination as? BookPageViewController else {
             preconditionFailure()
         }
-        prepareForSegueToBookPageViewController(bookPageViewController)
+        prepare(for: bookPageViewController)
     }
 
-}
-
-private extension BookChapterListViewController {
-
-    func prepareForSegueToBookPageViewController(bookPageViewController: BookPageViewController) {
+    private func prepare(for bookPageViewController: BookPageViewController) {
         guard let selectedChapterIndex = bookChaptersTableView.indexPathForSelectedRow?.row else { return }
         guard bookPageViewController.currentBookChapterViewController.chapterIndex != selectedChapterIndex else { return }
-        bookPageViewController.showChapterAtIndex(selectedChapterIndex, direction: .Forward, animated: false)
+        bookPageViewController.showChapter(at: selectedChapterIndex, direction: .forward, animated: false)
     }
 
 }

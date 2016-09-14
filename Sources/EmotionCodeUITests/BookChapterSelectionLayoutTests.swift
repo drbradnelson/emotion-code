@@ -19,7 +19,7 @@ final class BookChapterSelectionLayoutTests: XCTestCase {
 extension BookChapterSelectionLayoutTests {
 
     func testCancelButton() {
-        XCTAssert(app.navigationBars["Table of Contents"].buttons["Cancel"].hittable)
+        XCTAssert(app.navigationBars["Table of Contents"].buttons["Cancel"].isHittable)
     }
 
 }
