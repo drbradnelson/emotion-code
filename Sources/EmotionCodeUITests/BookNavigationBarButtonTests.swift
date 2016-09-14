@@ -20,7 +20,7 @@ extension BookNavigationBarButtonTests {
     func testPreviousChapterButtonStates() {
         let expectedChapterIndices = Array(0...10)
         expectedChapterIndices.forEach { chapterIndex in
-            let hasPreviousChapter = chapterIndex > expectedChapterIndices.first
+            let hasPreviousChapter = chapterIndex > expectedChapterIndices.first!
             XCTAssertEqual(app.buttons["Previous Chapter"].isEnabled, hasPreviousChapter)
             app.buttons["Next Chapter"].tap()
         }
@@ -29,7 +29,7 @@ extension BookNavigationBarButtonTests {
     func testNextChapterButtonStates() {
         let expectedChapterIndices = Array(0...10)
         expectedChapterIndices.forEach { chapterIndex in
-            let hasNextChapter = chapterIndex < expectedChapterIndices.last
+            let hasNextChapter = chapterIndex < expectedChapterIndices.last!
             XCTAssertEqual(app.buttons["Next Chapter"].isEnabled, hasNextChapter)
             app.buttons["Next Chapter"].tap()
         }
