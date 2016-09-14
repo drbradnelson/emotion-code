@@ -40,15 +40,13 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     // MARK: Page view controller data source
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let chapterViewController = viewController as? BookChapterViewController, bookController.hasChapter(at: chapterViewController.chapterIndex - 1) else { return nil }
-        let previousChapterViewController = chapterViewControllerWithChapter(at: chapterViewController.chapterIndex - 1)
-        return previousChapterViewController
+        guard let bookChapterViewController = viewController as? BookChapterViewController, bookController.hasChapter(at: bookChapterViewController.chapterIndex - 1) else { return nil }
+        return chapterViewControllerWithChapter(at: bookChapterViewController.chapterIndex - 1)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let chapterViewController = viewController as? BookChapterViewController, bookController.hasChapter(at: chapterViewController.chapterIndex + 1) else { return nil }
-        let nextChapterViewController = chapterViewControllerWithChapter(at: chapterViewController.chapterIndex + 1)
-        return nextChapterViewController
+        guard let bookChapterViewController = viewController as? BookChapterViewController, bookController.hasChapter(at: bookChapterViewController.chapterIndex + 1) else { return nil }
+        return chapterViewControllerWithChapter(at: bookChapterViewController.chapterIndex + 1)
     }
 
     // MARK: Page view controller delegate

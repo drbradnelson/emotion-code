@@ -35,7 +35,7 @@ final class BookChapterViewController: UIViewController {
         bookChapterView?.setPreferredLayoutGuidesForTop(preferredTopLayoutGuide, forBottom: preferredBottomLayoutGuide)
     }
 
-    // MARK: Load chapter HTML
+    // MARK: Load chapter
 
     func loadChapter() {
         guard let chapterURL = chapterURL else { return }
