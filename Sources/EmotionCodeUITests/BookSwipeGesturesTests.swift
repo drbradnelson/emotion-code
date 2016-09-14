@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class BookSwipeGesturesTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,11 +11,7 @@ final class BookSwipeGesturesTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension BookSwipeGesturesTests {
+    // MARK: Tests
 
     func testRightSwipeOnFirtsChapter() {
         app.mainWindow.swipeRight()
@@ -32,5 +28,5 @@ extension BookSwipeGesturesTests {
         app.mainWindow.swipeLeft()
         XCTAssert(app.buttons["Chapter 2"].isHittable)
     }
-
+    
 }

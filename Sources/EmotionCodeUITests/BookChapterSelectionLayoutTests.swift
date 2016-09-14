@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class BookChapterSelectionLayoutTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -12,14 +12,10 @@ final class BookChapterSelectionLayoutTests: XCTestCase {
         app.buttons["Chapter 1"].tap()
     }
 
-}
-
-// MARK: Tests
-
-extension BookChapterSelectionLayoutTests {
+    // MARK: Tests
 
     func testCancelButton() {
         XCTAssert(app.navigationBars["Table of Contents"].buttons["Cancel"].isHittable)
     }
-
+    
 }

@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class BookNavigationBarButtonTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,11 +11,7 @@ final class BookNavigationBarButtonTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension BookNavigationBarButtonTests {
+    // MARK: Tests
 
     func testPreviousChapterButtonStates() {
         let expectedChapterIndices = Array(0...10)
@@ -56,5 +52,5 @@ extension BookNavigationBarButtonTests {
         lastChapterCell.tap()
         XCTAssertFalse(app.buttons["Next Chapter"].isEnabled)
     }
-
+    
 }

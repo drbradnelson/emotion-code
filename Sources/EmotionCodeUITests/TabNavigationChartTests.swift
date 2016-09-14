@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class TabNavigationChartTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,11 +11,7 @@ final class TabNavigationChartTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension TabNavigationChartTests {
+    // MARK: Tests
 
     func testChartSelection() {
         app.buttons["Chart"].tap()
@@ -32,5 +28,5 @@ extension TabNavigationChartTests {
         XCTAssertFalse(app.buttons["Book"].isSelected)
         XCTAssertFalse(app.buttons["Help"].isSelected)
     }
-
+    
 }

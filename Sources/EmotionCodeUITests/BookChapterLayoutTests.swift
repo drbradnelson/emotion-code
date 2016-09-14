@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class BookChapterLayoutTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,11 +11,7 @@ final class BookChapterLayoutTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension BookChapterLayoutTests {
+    // MARK: Tests
 
     func testTopLayoutGuide() {
         let beginningPredicate = NSPredicate { staticText, _ -> Bool in
@@ -27,5 +23,5 @@ extension BookChapterLayoutTests {
         let topMargin: CGFloat = 10
         XCTAssertEqual(beginningText.frame.minY, topLayoutGuide + topMargin)
     }
-
+    
 }

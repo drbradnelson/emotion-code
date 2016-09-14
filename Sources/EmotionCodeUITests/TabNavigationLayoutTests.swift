@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class TabNavigationLayoutTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,11 +11,7 @@ final class TabNavigationLayoutTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension TabNavigationLayoutTests {
+    // MARK: Tests
 
     func testHasThreeTabs() {
         XCTAssertEqual(app.tabBars.buttons.count, 3)

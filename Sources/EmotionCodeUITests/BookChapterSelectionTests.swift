@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class BookChapterSelectionTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,11 +11,7 @@ final class BookChapterSelectionTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension BookChapterSelectionTests {
+    // MARK: Tests
 
     func testCancelButtonAction() {
         app.buttons["Chapter 1"].tap()
@@ -34,5 +30,5 @@ extension BookChapterSelectionTests {
         app.cells.element(boundBy: 3).tap()
         XCTAssert(app.buttons["Chapter 4"].isHittable)
     }
-
+    
 }
