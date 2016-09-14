@@ -4,19 +4,24 @@ import UIKit
 
 final class ChapterTableViewCell: UITableViewCell {
 
-    // MARK: Populating with location
+    // MARK: Chapter number
 
-    @IBOutlet private var chapterNumberLabel: UILabel!
-    @IBOutlet private var chapterTitleLabel: UILabel!
-
-    func setChapterNumber(_ chapterNumber: Int, chapterTitle: String) {
-        chapterNumberLabel.text = ChapterTableViewCell.numberFormatter.string(from: chapterNumber as NSNumber)
-        chapterTitleLabel.text = chapterTitle
+    func setChapterNumber(_ number: Int) {
+        chapterNumberLabel.text = ChapterTableViewCell.numberFormatter.string(from: number as NSNumber)
     }
 
+    @IBOutlet private var chapterNumberLabel: UILabel!
     private static let numberFormatter = NumberFormatter()
 
-    // MARK: Accessory type
+    // MARK: Chapter title
+
+    func setChapterTitle(_ title: String) {
+        chapterTitleLabel.text = title
+    }
+
+    @IBOutlet private var chapterTitleLabel: UILabel!
+
+    // MARK: Chapter selection
 
     func setChapterSelected(_ selected: Bool) {
         accessoryType = selected ? .checkmark : .none
