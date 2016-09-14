@@ -20,14 +20,14 @@ final class BookController {
         return Book(chapters: chapters)
     }
 
-    private static func chapterWith(dictionary: [String: String]) -> BookChapter {
+    private static func chapterWith(dictionary: [String: String]) -> Book.Chapter {
         guard let title = dictionary[chapterTitleKey], let fileName = dictionary[chapterFileNameKey] else {
             preconditionFailure("Unable to parse book chapter")
         }
         guard let fileURL =  Bundle.main.url(forResource: fileName, withExtension: "html") else {
             preconditionFailure("Unable to find book chapter file")
         }
-        return BookChapter(title: title, fileURL: fileURL)
+        return Book.Chapter(title: title, fileURL: fileURL)
     }
 
     private static let chapterTitleKey = "Title"

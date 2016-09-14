@@ -4,7 +4,7 @@ import UIKit
 
 final class BookChapterListViewController: UITableViewController {
 
-    var bookChapters: [BookChapter] = []
+    var bookChapters: [Book.Chapter] = []
     var selectedChapterIndex = 0
 
     // MARK: Table view

@@ -4,15 +4,11 @@ import Foundation
 
 struct Book {
 
-    let chapters: [BookChapter]
+    struct Chapter {
+        let title: String
+        let fileURL: URL
+    }
 
-}
-
-// MARK: Chapter
-
-struct BookChapter {
-
-    let title: String
-    let fileURL: URL
+    let chapters: [Chapter]
 
 }
