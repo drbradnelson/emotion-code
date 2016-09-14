@@ -32,7 +32,7 @@ final class BookChapterViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        bookChapterView?.setPreferredLayoutGuidesForTop(preferredTopLayoutGuide, forBottom: preferredBottomLayoutGuide)
+        bookChapterView.insetContent(top: preferredTopLayoutGuide, bottom: preferredBottomLayoutGuide)
     }
 
     // MARK: Load chapter
