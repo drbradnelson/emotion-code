@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class BookNavigationBarLayoutTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,20 +11,18 @@ final class BookNavigationBarLayoutTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-extension BookNavigationBarLayoutTests {
+    // MARK: Tests
 
     func testChapterButton() {
-        XCTAssert(app.navigationBars.first.buttons["Chapter 1"].hittable)
+        XCTAssert(app.navigationBars.first.buttons["Chapter 1"].isHittable)
     }
 
     func testPreviousChapterButton() {
-        XCTAssert(app.navigationBars.first.buttons["Previous Chapter"].hittable)
+        XCTAssert(app.navigationBars.first.buttons["Previous Chapter"].isHittable)
     }
 
     func testNextChapterButton() {
-        XCTAssert(app.navigationBars.first.buttons["Next Chapter"].hittable)
+        XCTAssert(app.navigationBars.first.buttons["Next Chapter"].isHittable)
     }
 
 }

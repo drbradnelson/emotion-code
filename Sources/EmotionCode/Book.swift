@@ -1,18 +1,14 @@
 import Foundation
 
-// MARK: Main
+// MARK: Book
 
 struct Book {
 
-    let chapters: [BookChapter]
+    struct Chapter {
+        let title: String
+        let fileURL: URL
+    }
 
-}
-
-// MARK: Chapter
-
-struct BookChapter {
-
-    let title: String
-    let fileURL: NSURL
+    let chapters: [Chapter]
 
 }

@@ -1,81 +1,65 @@
 import Foundation
 
-// MARK: Main
-
 final class ChartController {
 
-    let chart = ChartController.chartAtURL(ChartController.chartURL)
+    // MARK: Chart
 
-}
+    let chart = ChartController.chartAt(URL: ChartController.chartURL)
 
-// MARK: Parser
+    // MARK: Chart parser
 
-private extension ChartController {
-
-    static func chartAtURL(URL: NSURL) -> Chart {
-        guard let chartArray = NSArray(contentsOfURL: URL) else {
+    private static func chartAt(URL: URL) -> Chart {
+        guard let chartArray = NSArray(contentsOf: URL) else {
             preconditionFailure("Unable to load chart file")
         }
-        return chartWithArray(chartArray)
+        return chartWith(array: chartArray)
     }
 
-    static func chartWithArray(array: NSArray) -> Chart {
+    private static func chartWith(array: NSArray) -> Chart {
         guard let columnArrays = array as? [NSArray] else {
             preconditionFailure("Unable to find chart columns")
         }
-        let columns = columnArrays.map(chartColumnWithArray)
+        let columns = columnArrays.map(chartColumnWith)
         return Chart(columns: columns)
     }
 
-    static func chartColumnWithArray(array: NSArray) -> ChartColumn {
+    private static func chartColumnWith(array: NSArray) -> Chart.Column {
         guard let rowArrays = array as? [NSArray] else {
             preconditionFailure("Unable to find chart rows")
         }
-        let rows = rowArrays.map(chartRowWithArray)
-        return ChartColumn(rows: rows)
+        let rows = rowArrays.map(chartRowWith)
+        return Chart.Column(rows: rows)
     }
 
-    static func chartRowWithArray(array: NSArray) -> ChartRow {
+    private static func chartRowWith(array: NSArray) -> Chart.Row {
         guard let itemDictionaries = array as? [NSDictionary] else {
             preconditionFailure("Unable to find chart items")
         }
-        let items = itemDictionaries.map(chartItemWithDictionary)
-        return ChartRow(items: items)
+        let items = itemDictionaries.map(chartItemWith)
+        return Chart.Row(items: items)
     }
 
-    static func chartItemWithDictionary(dictionary: NSDictionary) -> ChartItem {
-        guard let title = dictionary[itemTitleKey] as? String, description = dictionary[itemDescriptionKey] as? String else {
+    private static func chartItemWith(dictionary: NSDictionary) -> Chart.Item {
+        guard let title = dictionary[itemTitleKey] as? String, let description = dictionary[itemDescriptionKey] as? String else {
             preconditionFailure("Unable to parse chart item")
         }
-        return ChartItem(title: title, description: description)
+        return Chart.Item(title: title, description: description)
     }
 
-}
+    private static let itemTitleKey = "Title"
+    private static let itemDescriptionKey = "Description"
 
-private extension ChartController {
+    // MARK: Chart URL
 
-    static let itemTitleKey = "Title"
-    static let itemDescriptionKey = "Description"
-
-}
-
-// MARK: Chart URL
-
-private extension ChartController {
-
-    static var chartURL: NSURL {
-        let bundle = NSBundle.mainBundle()
-        guard let chartURL = bundle.URLForResource(chartResource, withExtension: chartResourceExtension) else {
+    private static var chartURL: URL {
+        let bundle = Bundle.main
+        guard let chartURL = bundle.url(forResource: chartResource, withExtension: chartResourceExtension) else {
             preconditionFailure("Unable to locate chart file")
         }
         return chartURL
     }
 
-}
-
-private extension ChartController {
-
-    static let chartResource = "EmotionCodeChart"
-    static let chartResourceExtension = "plist"
+    private static let chartResource = "EmotionCodeChart"
+    private static let chartResourceExtension = "plist"
 
 }

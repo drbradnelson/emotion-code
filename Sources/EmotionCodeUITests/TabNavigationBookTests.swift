@@ -1,8 +1,8 @@
 import XCTest
 
-// MARK: Main
-
 final class TabNavigationBookTests: XCTestCase {
+
+    // MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -11,15 +11,11 @@ final class TabNavigationBookTests: XCTestCase {
         sleep(1)
     }
 
-}
-
-// MARK: Tests
-
-extension TabNavigationBookTests {
+    // MARK: Tests
 
     func testBookSelection() {
         app.buttons["Book"].tap()
-        XCTAssert(app.buttons["Book"].selected)
+        XCTAssert(app.buttons["Book"].isSelected)
     }
 
     func testBookTitle() {
@@ -29,8 +25,8 @@ extension TabNavigationBookTests {
 
     func testBookDeselection() {
         app.buttons["Book"].tap()
-        XCTAssertFalse(app.buttons["Chart"].selected)
-        XCTAssertFalse(app.buttons["Help"].selected)
+        XCTAssertFalse(app.buttons["Chart"].isSelected)
+        XCTAssertFalse(app.buttons["Help"].isSelected)
     }
 
 }
