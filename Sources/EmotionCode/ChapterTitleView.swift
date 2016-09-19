@@ -30,7 +30,7 @@ final class ChapterTitleView: UIView {
 
     func titleOfChapter(at index: Int) -> String {
         let format = NSLocalizedString("Chapter %i", comment: "")
-        return NSString.localizedStringWithFormat(format as NSString, index + 1) as String
+        return String.localizedStringWithFormat(format, index + 1)
     }
 
 }
