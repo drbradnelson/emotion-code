@@ -1,32 +1,20 @@
-// MARK: Main
+// MARK: Chart
 
 struct Chart {
 
-    let columns: [ChartColumn]
+    struct Column {
+        let rows: [Row]
+    }
 
-}
+    struct Row {
+        let items: [Item]
+    }
 
-// MARK: Column
+    struct Item {
+        let title: String
+        let description: String
+    }
 
-struct ChartColumn {
-
-    let rows: [ChartRow]
-
-}
-
-// MARK: Row
-
-struct ChartRow {
-
-    let items: [ChartItem]
-
-}
-
-// MARK: Item
-
-struct ChartItem {
-
-    let title: String
-    let description: String
+    let columns: [Column]
 
 }
