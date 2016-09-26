@@ -12,4 +12,8 @@ class ChartCollectionViewController: UICollectionViewController {
 			max(maxRowCount, column.rows.count)
 		}
 	}
+
+	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return chart.columns.count
+	}
 }
