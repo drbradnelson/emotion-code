@@ -75,6 +75,7 @@
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
 		B6EA999D1D991ADF0057D2D5 /* ChartCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA999C1D991ADF0057D2D5 /* ChartCollectionViewController.swift */; };
+		B6EA999F1D991EA50057D2D5 /* RowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA999E1D991EA50057D2D5 /* RowCell.swift */; };
 		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +166,7 @@
 		91B88ACC1D58B8E600DFCDB2 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		B6EA999C1D991ADF0057D2D5 /* ChartCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCollectionViewController.swift; sourceTree = "<group>"; };
+		B6EA999E1D991EA50057D2D5 /* RowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCell.swift; sourceTree = "<group>"; };
 		E7ED2B5E1D52135600F85992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 		E7ED2B611D5213DF00F85992 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 		91187B211D67768C0098A881 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6EA999E1D991EA50057D2D5 /* RowCell.swift */,
 				91187B221D6776A00098A881 /* ChapterTitleView.swift */,
 				0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */,
 				0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */,
@@ -573,6 +576,7 @@
 				B6EA999D1D991ADF0057D2D5 /* ChartCollectionViewController.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
+				B6EA999F1D991EA50057D2D5 /* RowCell.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */,

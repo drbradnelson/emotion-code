@@ -19,12 +19,12 @@ class ChartCollectionViewController: UICollectionViewController {
 
 	// MARK: Get row at index path
 
-	private func row(at indexPath: indexPath) -> Chart.Row? {
+	private func row(at indexPath: IndexPath) -> Chart.Row? {
 		let section = indexPath.section
 		let row = indexPath.section
 		let columns = chart.columns
 
-		guard columns.indices.contains(row) && columns[row].rows.indicies.contains(section) else { return nil }
+		guard columns.indices.contains(row) && columns[row].rows.indices.contains(section) else { return nil }
 
 		return chart.columns[row].rows[section]
 	}
