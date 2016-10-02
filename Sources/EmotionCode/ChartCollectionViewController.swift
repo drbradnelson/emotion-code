@@ -36,6 +36,16 @@ class ChartCollectionViewController: UICollectionViewController, UICollectionVie
 		return chart.columns[column].rows[row]
 	}
 
+	// MARK: Segue
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender)
+
+		guard let destination = segue.destination as? ChartRowViewController,
+			let indexPath = collectionView!.indexPathsForSelectedItems?.first else { return }
+		destination.row = chart.columns[indexPath.row].rows[indexPath.section]
+	}
+
 	// MARK: Collection view delegate flow layout
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

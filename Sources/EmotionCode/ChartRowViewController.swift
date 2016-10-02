@@ -1,6 +1,6 @@
 import UIKit
 
-class ChartRowViewController: UIViewController {
+class ChartRowViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	@IBOutlet private var collectionView: UICollectionView!
 
