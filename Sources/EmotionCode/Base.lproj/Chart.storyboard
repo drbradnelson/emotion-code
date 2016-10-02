@@ -34,20 +34,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0pt-os-7cp">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="15" id="0pt-os-7cp">
                             <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="8" minY="20" maxX="8" maxY="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RowCell" id="ACZ-PX-OCb" customClass="RowCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="8" y="20" width="150" height="150"/>
+                                <rect key="frame" x="15" y="10" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-tQ-9iM"/>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="ky5-tQ-9iM" firstAttribute="top" secondItem="ACZ-PX-OCb" secondAttribute="top" id="P5U-FU-hiL"/>
+                                    <constraint firstItem="ky5-tQ-9iM" firstAttribute="leading" secondItem="ACZ-PX-OCb" secondAttribute="leading" id="PG7-Xn-Yz6"/>
+                                    <constraint firstAttribute="trailing" secondItem="ky5-tQ-9iM" secondAttribute="trailing" id="nnI-7x-0Kt"/>
+                                    <constraint firstAttribute="bottom" secondItem="ky5-tQ-9iM" secondAttribute="bottom" id="wJq-43-8th"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="stackView" destination="ky5-tQ-9iM" id="j5h-1l-cYF"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -56,6 +68,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Chart" id="B51-Al-lc4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Zkh-h4-p3L" id="skr-Bt-vME"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtv-Lw-ips" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
