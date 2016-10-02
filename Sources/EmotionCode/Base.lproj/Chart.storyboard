@@ -29,23 +29,23 @@
         <!--Chart-->
         <scene sceneID="h3z-Zw-tFF">
             <objects>
-                <collectionViewController id="y6C-PI-sow" sceneMemberID="viewController">
+                <collectionViewController id="y6C-PI-sow" customClass="ChartCollectionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Zkh-h4-p3L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="15" id="0pt-os-7cp">
-                            <size key="itemSize" width="150" height="150"/>
+                            <size key="itemSize" width="158" height="159"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RowCell" id="ACZ-PX-OCb" customClass="RowCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="15" y="10" width="150" height="150"/>
+                                <rect key="frame" x="15" y="10" width="158" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="158" height="159"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-tQ-9iM"/>
@@ -64,12 +64,12 @@
                         </cells>
                         <connections>
                             <outlet property="dataSource" destination="y6C-PI-sow" id="uFZ-X1-kl8"/>
-                            <outlet property="delegate" destination="y6C-PI-sow" id="of2-BK-B5U"/>
+                            <outlet property="delegate" destination="y6C-PI-sow" id="XwZ-AP-dl5"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Chart" id="B51-Al-lc4"/>
                     <connections>
-                        <outlet property="collectionView" destination="Zkh-h4-p3L" id="skr-Bt-vME"/>
+                        <outlet property="collectionView" destination="Zkh-h4-p3L" id="j9N-s9-s1U"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtv-Lw-ips" userLabel="First Responder" sceneMemberID="firstResponder"/>

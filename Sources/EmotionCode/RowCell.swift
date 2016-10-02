@@ -6,12 +6,18 @@ class RowCell: UICollectionViewCell {
 
 	var row: Chart.Row!
 
-	override func layoutSubviews() {
-		super.layoutSubviews()
-
+	override func prepareForReuse() {
+		super.prepareForReuse()
+		row = nil
 		for view in stackView.arrangedSubviews {
 			view.removeFromSuperview()
 		}
+	}
+
+	override func layoutSubviews() {
+		super.layoutSubviews()
+
+		guard stackView.arrangedSubviews.isEmpty && row != nil else { return }
 
 		for item in row.items {
 			let titleView = TitleView()
