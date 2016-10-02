@@ -70,14 +70,15 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let columnsCount = CGFloat(chart.columns.count)
 
+		// Set size depending on spacing between cells and header width
 		let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
 		let spacing = flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * (columnsCount)
-		let headerSize = CGFloat(20)
+		let headerSize = CGFloat(30)
 		let totalSize = collectionView.bounds.width - spacing - headerSize
 		let cellSize = totalSize / columnsCount
 
-		let height = (indexPath.section == 0) ? headerSize: cellSize
 		let width = (indexPath.row == 0) ? headerSize: cellSize
+		let height = (indexPath.section == 0) ? headerSize: cellSize
 
 		return CGSize(width: width, height: height)
 	}

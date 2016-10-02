@@ -6,14 +6,14 @@ final class ChartRowViewController: UIViewController, UICollectionViewDataSource
 	@IBOutlet private var indexPathLabel: UILabel!
 
 	private let cellReuseIdentifier = "ItemCell"
-	private let alphabet = Array("ABCDEFG".characters)
+	private let alphabet = Array(" ABCDEFG".characters)
 
 	var row: Chart.Row!
 	var indexPath: IndexPath!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		indexPathLabel.text = "Column \(alphabet[indexPath.row - 1]), Row \(indexPath.section)"
+		indexPathLabel.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
 	}
 
 	// MARK: Collection view data source

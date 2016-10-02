@@ -103,7 +103,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="ItemCell" id="Hie-hm-vQI" customClass="ItemCell" customModule="EmotionCode" customModuleProvider="target">
-                                        <rect key="frame" x="-1" y="0.0" width="289" height="50"/>
+                                        <rect key="frame" x="-0.5" y="0.0" width="289" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="289" height="50"/>
@@ -147,7 +147,9 @@
                             </constraint>
                             <constraint firstItem="L8j-yQ-bwy" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="C3M-Mq-bQI"/>
                             <constraint firstItem="hNV-CC-lXn" firstAttribute="top" secondItem="L8j-yQ-bwy" secondAttribute="bottom" id="UjX-QL-R4r"/>
-                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="4lG-Mg-bI8" secondAttribute="bottom" constant="20" id="lef-o9-GCS"/>
+                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="4lG-Mg-bI8" secondAttribute="bottom" constant="20" id="lef-o9-GCS">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="4lG-Mg-bI8" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="m4P-2t-DTv"/>
                         </constraints>
                     </view>
@@ -184,7 +186,7 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3eB-eH-Ah5">
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textView>
                                 </subviews>
