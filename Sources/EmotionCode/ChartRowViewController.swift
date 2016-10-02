@@ -3,9 +3,18 @@ import UIKit
 final class ChartRowViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	@IBOutlet private var collectionView: UICollectionView!
+	@IBOutlet private var indexPathLabel: UILabel!
 
 	private let cellReuseIdentifier = "ItemCell"
+	private let alphabet = Array("ABCDEFG".characters)
+
 	var row: Chart.Row!
+	var indexPath: IndexPath!
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		indexPathLabel.text = "Column \(alphabet[indexPath.row - 1]), Row \(indexPath.section)"
+	}
 
 	// MARK: Collection view data source
 

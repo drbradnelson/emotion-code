@@ -102,15 +102,15 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Hie-hm-vQI" customClass="ItemCell" customModule="EmotionCode" customModuleProvider="target">
-                                        <rect key="frame" x="-0.5" y="0.0" width="289" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="ItemCell" id="Hie-hm-vQI" customClass="ItemCell" customModule="EmotionCode" customModuleProvider="target">
+                                        <rect key="frame" x="-1" y="0.0" width="289" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="289" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-c4-abQ">
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -134,18 +134,26 @@
                                     <outlet property="delegate" destination="ghh-Ez-zIv" id="3vh-DB-lT8"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Column A – Row 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lG-Mg-bI8">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="C3M-Mq-bQI"/>
-                            <constraint firstItem="hNV-CC-lXn" firstAttribute="top" secondItem="L8j-yQ-bwy" secondAttribute="bottom" id="UjX-QL-R4r"/>
-                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="oQ2-Rf-l5j" secondAttribute="bottom" constant="60" id="uRa-9i-7ut">
+                            <constraint firstItem="4lG-Mg-bI8" firstAttribute="top" secondItem="oQ2-Rf-l5j" secondAttribute="bottom" constant="20" id="0yH-PH-oeb">
                                 <variation key="heightClass=compact-widthClass=compact" constant="8"/>
                             </constraint>
+                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="C3M-Mq-bQI"/>
+                            <constraint firstItem="hNV-CC-lXn" firstAttribute="top" secondItem="L8j-yQ-bwy" secondAttribute="bottom" id="UjX-QL-R4r"/>
+                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="4lG-Mg-bI8" secondAttribute="bottom" constant="20" id="lef-o9-GCS"/>
+                            <constraint firstItem="4lG-Mg-bI8" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="m4P-2t-DTv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="L8j-yQ-bwy" id="A64-0Y-Kv9"/>
+                        <outlet property="indexPathLabel" destination="4lG-Mg-bI8" id="Q2m-nY-Dhm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4J-zV-cbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,7 +178,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Ygh-EI-oje"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
