@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,6 +60,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="stackView" destination="ky5-tQ-9iM" id="j5h-1l-cYF"/>
+                                    <segue destination="ghh-Ez-zIv" kind="show" id="bO7-BF-4IU"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -75,6 +77,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtv-Lw-ips" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2100" y="525.78710644677665"/>
+        </scene>
+        <!--Chart Row-->
+        <scene sceneID="DYd-ld-Ziv">
+            <objects>
+                <viewController title="Chart Row" id="ghh-Ez-zIv" customClass="ChartRowViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oQ2-Rf-l5j"/>
+                        <viewControllerLayoutGuide type="bottom" id="hNV-CC-lXn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X22-tY-KXv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L8j-yQ-bwy">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="hfL-g3-zHh"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tv6-Ef-V6d">
+                                    <size key="itemSize" width="289" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Hie-hm-vQI" customClass="ItemCell" customModule="EmotionCode" customModuleProvider="target">
+                                        <rect key="frame" x="-1" y="0.0" width="289" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="289" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-c4-abQ">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="LNA-c4-abQ" firstAttribute="trailing" secondItem="Hie-hm-vQI" secondAttribute="trailingMargin" id="DCY-v3-uau"/>
+                                            <constraint firstItem="LNA-c4-abQ" firstAttribute="bottom" secondItem="Hie-hm-vQI" secondAttribute="bottomMargin" id="IcO-6O-KDP"/>
+                                            <constraint firstItem="LNA-c4-abQ" firstAttribute="top" secondItem="Hie-hm-vQI" secondAttribute="topMargin" id="mJF-QT-rHT"/>
+                                            <constraint firstItem="LNA-c4-abQ" firstAttribute="leading" secondItem="Hie-hm-vQI" secondAttribute="leadingMargin" id="rSo-Ic-8jW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="LNA-c4-abQ" id="ZXz-4d-9i6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ghh-Ez-zIv" id="kBV-lU-4Qn"/>
+                                    <outlet property="delegate" destination="ghh-Ez-zIv" id="3vh-DB-lT8"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="C3M-Mq-bQI"/>
+                            <constraint firstItem="hNV-CC-lXn" firstAttribute="top" secondItem="L8j-yQ-bwy" secondAttribute="bottom" id="UjX-QL-R4r"/>
+                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="oQ2-Rf-l5j" secondAttribute="bottom" id="uRa-9i-7ut"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="L8j-yQ-bwy" id="A64-0Y-Kv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4J-zV-cbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2852" y="525.78710644677665"/>
         </scene>
     </scenes>
     <resources>
