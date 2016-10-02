@@ -81,7 +81,7 @@
         <!--Chart Row-->
         <scene sceneID="DYd-ld-Ziv">
             <objects>
-                <viewController title="Chart Row" id="ghh-Ez-zIv" customClass="ChartRowViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Chart Row" automaticallyAdjustsScrollViewInsets="NO" id="ghh-Ez-zIv" customClass="ChartRowViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oQ2-Rf-l5j"/>
                         <viewControllerLayoutGuide type="bottom" id="hNV-CC-lXn"/>
@@ -103,7 +103,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Hie-hm-vQI" customClass="ItemCell" customModule="EmotionCode" customModuleProvider="target">
-                                        <rect key="frame" x="-1" y="0.0" width="289" height="50"/>
+                                        <rect key="frame" x="-0.5" y="0.0" width="289" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="289" height="50"/>
@@ -139,7 +139,9 @@
                         <constraints>
                             <constraint firstItem="L8j-yQ-bwy" firstAttribute="centerX" secondItem="X22-tY-KXv" secondAttribute="centerX" id="C3M-Mq-bQI"/>
                             <constraint firstItem="hNV-CC-lXn" firstAttribute="top" secondItem="L8j-yQ-bwy" secondAttribute="bottom" id="UjX-QL-R4r"/>
-                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="oQ2-Rf-l5j" secondAttribute="bottom" id="uRa-9i-7ut"/>
+                            <constraint firstItem="L8j-yQ-bwy" firstAttribute="top" secondItem="oQ2-Rf-l5j" secondAttribute="bottom" constant="60" id="uRa-9i-7ut">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <connections>
@@ -195,7 +197,7 @@
                             <constraint firstItem="GxZ-NR-y5A" firstAttribute="trailing" secondItem="hwT-bV-JI0" secondAttribute="trailingMargin" id="CLe-xm-nZJ"/>
                             <constraint firstItem="jNe-op-WDs" firstAttribute="top" secondItem="GxZ-NR-y5A" secondAttribute="bottom" constant="8" id="G5u-r8-SR2"/>
                             <constraint firstItem="GxZ-NR-y5A" firstAttribute="leading" secondItem="hwT-bV-JI0" secondAttribute="leadingMargin" id="IQd-Vq-MUk"/>
-                            <constraint firstItem="GxZ-NR-y5A" firstAttribute="top" secondItem="gSU-V9-rkr" secondAttribute="bottom" constant="64" id="pAE-0S-B7H">
+                            <constraint firstItem="GxZ-NR-y5A" firstAttribute="top" secondItem="gSU-V9-rkr" secondAttribute="bottom" constant="60" id="pAE-0S-B7H">
                                 <variation key="heightClass=compact-widthClass=compact" constant="8"/>
                             </constraint>
                         </constraints>

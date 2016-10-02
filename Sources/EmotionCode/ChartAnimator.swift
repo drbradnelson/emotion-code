@@ -1,5 +1,10 @@
 import UIKit
 
+protocol ChartAnimatable {
+	var sourceView: UIView? { get }
+	var view: UIView! { get }
+}
+
 final class ChartAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
 	private let operation: UINavigationControllerOperation
