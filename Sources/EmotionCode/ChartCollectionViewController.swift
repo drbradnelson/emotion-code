@@ -1,9 +1,14 @@
 import UIKit
 
-class ChartCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class ChartCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate {
 
 	private let cellReuseIdentifier = "RowCell"
 	private let chart = ChartController().chart
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		navigationController?.delegate = self
+	}
 
 	// MARK: Collection view data source
 
@@ -63,5 +68,9 @@ class ChartCollectionViewController: UICollectionViewController, UICollectionVie
 	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 		super.viewWillTransition(to: size, with: coordinator)
 		collectionViewLayout.invalidateLayout()
+	}
+
+	func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return ChartAnimator(operation: operation)
 	}
 }
