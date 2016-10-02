@@ -68,16 +68,16 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 	// MARK: Collection view delegate flow layout
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let itemsCount = CGFloat(chart.columns.count)
-		let columnsCount = CGFloat(chart.columns.count * 4 + 1)
+		let columnsCount = CGFloat(chart.columns.count)
 
 		let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
-		let spacing = flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * (itemsCount)
-		let totalSize = collectionView.bounds.width - spacing
-		let size = totalSize / columnsCount
+		let spacing = flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * (columnsCount)
+		let headerSize = CGFloat(20)
+		let totalSize = collectionView.bounds.width - spacing - headerSize
+		let cellSize = totalSize / columnsCount
 
-		let height = (indexPath.section == 0) ? size: size * 4
-		let width = (indexPath.row == 0) ? size: size * 4
+		let height = (indexPath.section == 0) ? headerSize: cellSize
+		let width = (indexPath.row == 0) ? headerSize: cellSize
 
 		return CGSize(width: width, height: height)
 	}
