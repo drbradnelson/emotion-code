@@ -1,6 +1,6 @@
 import UIKit
 
-class ChartCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate {
+final class ChartCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate {
 
 	private let cellReuseIdentifier = "RowCell"
 	private let chart = ChartController().chart
