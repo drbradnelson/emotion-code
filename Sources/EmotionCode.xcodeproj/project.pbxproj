@@ -75,11 +75,11 @@
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
 		B676D1091DA12CC000BF3D3F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676D1081DA12CC000BF3D3F /* TitleView.swift */; };
-		B676D10B1DA13A3D00BF3D3F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676D10A1DA13A3D00BF3D3F /* ItemCell.swift */; };
 		B676D10D1DA13A8200BF3D3F /* ChartRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676D10C1DA13A8200BF3D3F /* ChartRowViewController.swift */; };
 		B676D10F1DA13BF200BF3D3F /* ChartItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676D10E1DA13BF200BF3D3F /* ChartItemViewController.swift */; };
 		B6DFAB631DA14789005ECC5E /* ChartAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFAB621DA14789005ECC5E /* ChartAnimator.swift */; };
 		B6DFAB651DA17DB5005ECC5E /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DFAB641DA17DB5005ECC5E /* HeaderCell.swift */; };
+		B6E9A2EC1DA273EE001D4E68 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E9A2EB1DA273EE001D4E68 /* ItemTableViewCell.swift */; };
 		B6EA999D1D991ADF0057D2D5 /* ChartCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA999C1D991ADF0057D2D5 /* ChartCollectionViewController.swift */; };
 		B6EA999F1D991EA50057D2D5 /* RowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA999E1D991EA50057D2D5 /* RowCell.swift */; };
 		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
@@ -172,11 +172,11 @@
 		91B88ACC1D58B8E600DFCDB2 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		B676D1081DA12CC000BF3D3F /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
-		B676D10A1DA13A3D00BF3D3F /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		B676D10C1DA13A8200BF3D3F /* ChartRowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartRowViewController.swift; sourceTree = "<group>"; };
 		B676D10E1DA13BF200BF3D3F /* ChartItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartItemViewController.swift; sourceTree = "<group>"; };
 		B6DFAB621DA14789005ECC5E /* ChartAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartAnimator.swift; sourceTree = "<group>"; };
 		B6DFAB641DA17DB5005ECC5E /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		B6E9A2EB1DA273EE001D4E68 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		B6EA999C1D991ADF0057D2D5 /* ChartCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCollectionViewController.swift; sourceTree = "<group>"; };
 		B6EA999E1D991EA50057D2D5 /* RowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCell.swift; sourceTree = "<group>"; };
 		E7ED2B5E1D52135600F85992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
@@ -298,9 +298,9 @@
 			isa = PBXGroup;
 			children = (
 				B676D1081DA12CC000BF3D3F /* TitleView.swift */,
+				B6E9A2EB1DA273EE001D4E68 /* ItemTableViewCell.swift */,
 				B6DFAB641DA17DB5005ECC5E /* HeaderCell.swift */,
 				B6EA999E1D991EA50057D2D5 /* RowCell.swift */,
-				B676D10A1DA13A3D00BF3D3F /* ItemCell.swift */,
 				91187B221D6776A00098A881 /* ChapterTitleView.swift */,
 				0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */,
 				0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */,
@@ -591,7 +591,6 @@
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
-				B676D10B1DA13A3D00BF3D3F /* ItemCell.swift in Sources */,
 				B6EA999D1D991ADF0057D2D5 /* ChartCollectionViewController.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				B676D1091DA12CC000BF3D3F /* TitleView.swift in Sources */,
@@ -606,6 +605,7 @@
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 				0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */,
 				B676D10D1DA13A8200BF3D3F /* ChartRowViewController.swift in Sources */,
+				B6E9A2EC1DA273EE001D4E68 /* ItemTableViewCell.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

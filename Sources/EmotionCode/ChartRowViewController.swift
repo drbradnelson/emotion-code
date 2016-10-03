@@ -1,8 +1,8 @@
 import UIKit
 
-final class ChartRowViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+final class ChartRowViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-	@IBOutlet private var collectionView: UICollectionView!
+	@IBOutlet private var tableView: UITableView!
 	@IBOutlet private var indexPathLabel: UILabel!
 
 	private let cellReuseIdentifier = "ItemCell"
@@ -14,47 +14,36 @@ final class ChartRowViewController: UIViewController, UICollectionViewDataSource
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		indexPathLabel.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
+		tableView.rowHeight = UITableViewAutomaticDimension
 	}
 
-	// MARK: Collection view data source
+	// MARK: Table view data source
 
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+	func numberOfSections(in tableView: UITableView) -> Int {
 		return row?.items.count ?? 0
 	}
 
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! ItemCell
-		cell.titleLabel.text = row.items[indexPath.row].title
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 1
+	}
+
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! ItemTableViewCell
+		cell.titleLabel.text = row.items[indexPath.section].title
 		return cell
+	}
+
+	// MARK: Table view delegate
+
+	func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+		return 10
 	}
 
 	// MARK: Segue
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		guard
-			let destination = segue.destination as? ChartItemViewController,
-			let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
-
-		destination.item = row.items[indexPath.row]
-	}
-
-	// MARK: Collection view delegate flow layout
-
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let itemsCount = CGFloat(row!.items.count)
-
-		let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
-		let spacing = flowLayout.sectionInset.top + flowLayout.sectionInset.bottom + flowLayout.minimumLineSpacing * (itemsCount - 1)
-		let width = collectionView.bounds.width
-		let height = (width - spacing) / itemsCount
-
-		return CGSize(width: width, height: height)
-	}
-
-	// MARK: View controller delegate
-
-	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-		super.viewWillTransition(to: size, with: coordinator)
-		collectionView.collectionViewLayout.invalidateLayout()
+		guard let destination = segue.destination as? ChartItemViewController,
+			let indexPath = tableView.indexPathForSelectedRow else { return }
+		destination.item = row.items[indexPath.section]
 	}
 }

@@ -1,5 +1,7 @@
 import UIKit
 
-class ItemCell: UICollectionViewCell {
+class ItemTableViewCell: UITableViewCell {
+
 	@IBOutlet var titleLabel: UILabel!
+
 }
