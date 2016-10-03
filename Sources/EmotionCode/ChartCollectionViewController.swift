@@ -4,8 +4,11 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 
 	private let cellReuseIdentifier = "RowCell"
 	private let headerReuseIdentifier = "HeaderCell"
+
 	private let chart = ChartController().chart
 	private let alphabet = Array(" ABCDEFG".characters)
+
+	private var cellHeight: CGFloat!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -38,7 +41,7 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 		}
 
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! RowCell
-		cell.row = row(at: indexPath)
+		cell.tableView.row = row(at: indexPath)
 		return cell
 	}
 

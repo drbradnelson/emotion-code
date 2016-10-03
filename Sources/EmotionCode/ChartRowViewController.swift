@@ -15,6 +15,7 @@ final class ChartRowViewController: UIViewController {
 		super.viewDidLoad()
 		indexPathLabel.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
 		tableView.row = row
+		tableView.rowHeight = UITableViewAutomaticDimension
 	}
 
 	// MARK: Storyboard segue

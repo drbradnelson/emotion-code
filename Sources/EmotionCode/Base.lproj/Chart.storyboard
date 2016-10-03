@@ -35,31 +35,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="15" id="0pt-os-7cp">
-                            <size key="itemSize" width="158" height="159"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="15" id="0pt-os-7cp">
+                            <size key="itemSize" width="193" height="185"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RowCell" id="ACZ-PX-OCb" customClass="RowCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="15" y="10" width="158" height="159"/>
+                                <rect key="frame" x="91" y="10" width="193" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="158" height="159"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="193" height="185"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-tQ-9iM"/>
+                                        <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="30" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-xL-k9b" customClass="RowTableView" customModule="EmotionCode" customModuleProvider="target">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="30" id="GuB-NU-2A9" customClass="ItemTableViewCell" customModule="EmotionCode" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="28" width="193" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GuB-NU-2A9" id="dPg-KD-63q">
+                                                        <frame key="frameInset" width="193" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbs-CL-Oxi">
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Rbs-CL-Oxi" firstAttribute="top" secondItem="dPg-KD-63q" secondAttribute="top" id="H8z-k7-rIU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Rbs-CL-Oxi" secondAttribute="bottom" id="KeJ-3b-hEU"/>
+                                                            <constraint firstItem="Rbs-CL-Oxi" firstAttribute="trailing" secondItem="dPg-KD-63q" secondAttribute="trailingMargin" id="deG-U9-5Io"/>
+                                                            <constraint firstItem="Rbs-CL-Oxi" firstAttribute="leading" secondItem="dPg-KD-63q" secondAttribute="leadingMargin" id="ma1-Fu-1J5"/>
+                                                        </constraints>
+                                                    </tableViewCellContentView>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="titleLabel" destination="Rbs-CL-Oxi" id="n5T-dG-wYP"/>
+                                                    </connections>
+                                                </tableViewCell>
+                                            </prototypes>
+                                        </tableView>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ky5-tQ-9iM" firstAttribute="top" secondItem="ACZ-PX-OCb" secondAttribute="top" id="P5U-FU-hiL"/>
-                                    <constraint firstItem="ky5-tQ-9iM" firstAttribute="leading" secondItem="ACZ-PX-OCb" secondAttribute="leading" id="PG7-Xn-Yz6"/>
-                                    <constraint firstAttribute="trailing" secondItem="ky5-tQ-9iM" secondAttribute="trailing" id="nnI-7x-0Kt"/>
-                                    <constraint firstAttribute="bottom" secondItem="ky5-tQ-9iM" secondAttribute="bottom" id="wJq-43-8th"/>
+                                    <constraint firstItem="tBc-xL-k9b" firstAttribute="leading" secondItem="ACZ-PX-OCb" secondAttribute="leading" id="Zhb-yG-kQL"/>
+                                    <constraint firstAttribute="bottom" secondItem="tBc-xL-k9b" secondAttribute="bottom" id="dJZ-AI-vKa"/>
+                                    <constraint firstAttribute="trailing" secondItem="tBc-xL-k9b" secondAttribute="trailing" id="fYr-GN-GPd"/>
+                                    <constraint firstItem="tBc-xL-k9b" firstAttribute="top" secondItem="ACZ-PX-OCb" secondAttribute="top" id="mLX-m4-wfr"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="stackView" destination="ky5-tQ-9iM" id="j5h-1l-cYF"/>
+                                    <outlet property="tableView" destination="tBc-xL-k9b" id="wkG-Y6-fA3"/>
                                     <segue destination="ghh-Ez-zIv" kind="show" id="bO7-BF-4IU"/>
                                 </connections>
                             </collectionViewCell>
@@ -106,7 +137,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z9-m3-eyv">
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
