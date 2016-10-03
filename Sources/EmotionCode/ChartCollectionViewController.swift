@@ -57,9 +57,8 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 	// MARK: Segue
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		super.prepare(for: segue, sender: sender)
-
-		guard let destination = segue.destination as? ChartRowViewController,
+		guard
+			let destination = segue.destination as? ChartRowViewController,
 			let indexPath = collectionView!.indexPathsForSelectedItems?.first else { return }
 		destination.row = chart.columns[indexPath.row - 1].rows[indexPath.section - 1]
 		destination.indexPath = indexPath
