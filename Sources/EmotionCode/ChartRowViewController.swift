@@ -6,12 +6,14 @@ final class ChartRowViewController: UIViewController {
 		didSet {
 			tableView?.isChartOverview = false
 			tableView?.row = row
+			row = nil
 		}
 	}
 
 	@IBOutlet private var indexPathLabel: UILabel! {
 		didSet {
 			indexPathLabel?.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
+			indexPath = nil
 		}
 	}
 
@@ -26,6 +28,6 @@ final class ChartRowViewController: UIViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		guard let destination = segue.destination as? ChartItemViewController,
 			let indexPath = tableView.indexPathForSelectedRow else { return }
-		destination.item = row.items[indexPath.section]
+		destination.item = tableView.row.items[indexPath.section]
 	}
 }
