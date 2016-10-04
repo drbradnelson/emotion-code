@@ -57,16 +57,6 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 		return chart.columns[column].rows[row]
 	}
 
-	// MARK: Segue
-
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		guard
-			let destination = segue.destination as? ChartRowViewController,
-			let indexPath = collectionView!.indexPathsForSelectedItems?.first else { return }
-		destination.row = chart.columns[indexPath.row - 1].rows[indexPath.section - 1]
-		destination.indexPath = indexPath
-	}
-
 	// MARK: Collection view delegate flow layout
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -94,5 +84,15 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 
 	func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		return ChartAnimator(operation: operation)
+	}
+
+	// MARK: Storyboard segue
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		guard
+			let destination = segue.destination as? ChartRowViewController,
+			let indexPath = collectionView!.indexPathsForSelectedItems?.first else { return }
+		destination.row = chart.columns[indexPath.row - 1].rows[indexPath.section - 1]
+		destination.indexPath = indexPath
 	}
 }

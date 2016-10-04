@@ -205,8 +205,8 @@
 		0F28D0BE1D4E7624002C98E7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6DFAB621DA14789005ECC5E /* ChartAnimator.swift */,
 				91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */,
+				B6DFAB621DA14789005ECC5E /* ChartAnimator.swift */,
 				B6EA999C1D991ADF0057D2D5 /* ChartCollectionViewController.swift */,
 				B676D10C1DA13A8200BF3D3F /* ChartRowViewController.swift */,
 				B676D10E1DA13BF200BF3D3F /* ChartItemViewController.swift */,
