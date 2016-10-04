@@ -6,14 +6,12 @@ final class ChartRowViewController: UIViewController {
 		didSet {
 			tableView?.isChartOverview = false
 			tableView?.row = row
-			row = nil
 		}
 	}
 
 	@IBOutlet private var indexPathLabel: UILabel! {
 		didSet {
 			indexPathLabel?.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
-			indexPath = nil
 		}
 	}
 
@@ -30,4 +28,5 @@ final class ChartRowViewController: UIViewController {
 			let indexPath = tableView.indexPathForSelectedRow else { return }
 		destination.item = tableView.row.items[indexPath.section]
 	}
+
 }
