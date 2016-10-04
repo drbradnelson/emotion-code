@@ -6,7 +6,6 @@ final class RowCollectionViewCell: UICollectionViewCell {
 
 	override func prepareForReuse() {
 		super.prepareForReuse()
-		tableView.dataSource = tableView
 		tableView.reloadData()
 	}
 
