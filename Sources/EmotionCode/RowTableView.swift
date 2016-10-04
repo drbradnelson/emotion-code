@@ -38,7 +38,7 @@ class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 	}
 
 	func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-		return cellMargin
+		return (section == row.items.count - 1) ? 0 : cellMargin
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -46,7 +46,7 @@ class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 
 		// Set row height based on footer height and table view frame to fit in
 		let itemsCount = CGFloat(row.items.count)
-		let spacing = cellMargin * itemsCount
+		let spacing = cellMargin * (itemsCount - 1)
 
 		return (frame.height - spacing) / itemsCount
 	}
