@@ -1,6 +1,6 @@
 import UIKit
 
-class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+final class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 
 	private let cellReuseIdentifier = "ItemCell"
 	private let cellMargin: CGFloat = 10

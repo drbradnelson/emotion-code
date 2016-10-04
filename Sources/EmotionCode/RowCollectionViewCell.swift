@@ -1,6 +1,6 @@
 import UIKit
 
-class RowCollectionViewCell: UICollectionViewCell {
+final class RowCollectionViewCell: UICollectionViewCell {
 
 	@IBOutlet var tableView: RowTableView!
 
