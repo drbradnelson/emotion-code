@@ -2,21 +2,24 @@ import UIKit
 
 final class ChartRowViewController: UIViewController {
 
-	@IBOutlet private var tableView: RowTableView!
-	@IBOutlet private var indexPathLabel: UILabel!
+	@IBOutlet private var tableView: RowTableView! {
+		didSet {
+			tableView?.isChartOverview = false
+			tableView?.row = row
+		}
+	}
+
+	@IBOutlet private var indexPathLabel: UILabel! {
+		didSet {
+			indexPathLabel?.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
+		}
+	}
 
 	private let cellReuseIdentifier = "ItemCell"
 	private let alphabet = Array(" ABCDEFG".characters)
 
 	var indexPath: IndexPath!
 	var row: Chart.Row!
-
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		indexPathLabel.text = "Column \(alphabet[indexPath.row]) – Row \(indexPath.section)"
-		tableView.row = row
-		tableView.rowHeight = UITableViewAutomaticDimension
-	}
 
 	// MARK: Storyboard segue
 

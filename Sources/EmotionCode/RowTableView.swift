@@ -4,6 +4,7 @@ class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 
 	private let cellReuseIdentifier = "ItemCell"
 	private let cellMargin: CGFloat = 10
+	var isChartOverview = true
 
 	var row: Chart.Row!
 
@@ -12,9 +13,6 @@ class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 
 		delegate = self
 		dataSource = self
-
-		estimatedRowHeight = 30
-		rowHeight = UITableViewAutomaticDimension
 	}
 
 	// MARK: Table view data source
@@ -44,6 +42,8 @@ class RowTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		guard isChartOverview else { return UITableViewAutomaticDimension }
+
 		let itemsCount = CGFloat(row.items.count)
 		let spacing = cellMargin * itemsCount
 
