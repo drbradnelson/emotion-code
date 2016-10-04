@@ -1,6 +1,6 @@
 import UIKit
 
-class HeaderCell: UICollectionViewCell {
+class HeaderCollectionViewCell: UICollectionViewCell {
 
 	let titleLabel = UILabel()
 

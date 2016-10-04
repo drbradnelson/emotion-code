@@ -13,7 +13,7 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationController?.delegate = self
-		collectionView?.register(HeaderCell.self, forCellWithReuseIdentifier: headerReuseIdentifier)
+		collectionView?.register(HeaderCollectionViewCell.self, forCellWithReuseIdentifier: headerReuseIdentifier)
 	}
 
 	// MARK: Collection view data source
@@ -31,16 +31,16 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		if indexPath.section == 0 {
-			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! HeaderCell
+			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! HeaderCollectionViewCell
 			cell.titleLabel.text = "\(alphabet[indexPath.row])"
 			return cell
 		} else if indexPath.row == 0 {
-			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! HeaderCell
+			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! HeaderCollectionViewCell
 			cell.titleLabel.text = "\(indexPath.section)"
 			return cell
 		}
 
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! RowCell
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! RowCollectionViewCell
 		cell.tableView.row = row(at: indexPath)
 		return cell
 	}
