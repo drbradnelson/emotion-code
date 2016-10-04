@@ -8,8 +8,6 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
 	private let chart = ChartController().chart
 	private let alphabet = Array(" ABCDEFG".characters)
 
-	private var cellHeight: CGFloat!
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationController?.delegate = self
