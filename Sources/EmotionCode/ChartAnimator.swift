@@ -26,13 +26,11 @@ final class ChartAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 			let toVC = transitionContext.viewController(forKey: .to),
 			let fromVC = transitionContext.viewController(forKey: .from) else { return }
 
-		container.addSubview(toVC.view)
-		container.addSubview(fromVC.view)
+		[fromVC.view, toVC.view].forEach(container.addSubview)
 		toVC.view.alpha = 0
 
 		let animations = {
 			toVC.view.alpha = 1
-			fromVC.view.alpha = 0
 		}
 
 		UIView.animate(withDuration: duration, animations: animations) { _ in
