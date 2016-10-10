@@ -2,11 +2,11 @@
 
 struct Chart {
 
-    struct Column {
-        let rows: [Row]
+    struct Row {
+        let columns: [Column]
     }
 
-    struct Row {
+    struct Column {
         let items: [Item]
     }
 
@@ -15,6 +15,6 @@ struct Chart {
         let description: String
     }
 
-    let columns: [Column]
+    let rows: [Row]
 
 }
