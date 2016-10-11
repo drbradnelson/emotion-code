@@ -16,27 +16,27 @@ final class ChartController {
     }
 
     private static func chartWith(array: NSArray) -> Chart {
-        guard let columnArrays = array as? [NSArray] else {
-            preconditionFailure("Unable to find chart columns")
-        }
-        let columns = columnArrays.map(chartColumnWith)
-        return Chart(columns: columns)
-    }
-
-    private static func chartColumnWith(array: NSArray) -> Chart.Column {
         guard let rowArrays = array as? [NSArray] else {
             preconditionFailure("Unable to find chart rows")
         }
         let rows = rowArrays.map(chartRowWith)
-        return Chart.Column(rows: rows)
+        return Chart(rows: rows)
     }
 
     private static func chartRowWith(array: NSArray) -> Chart.Row {
+        guard let columnArrays = array as? [NSArray] else {
+            preconditionFailure("Unable to find chart columns")
+        }
+        let columns = columnArrays.map(chartColumnWith)
+        return Chart.Row(columns: columns)
+    }
+
+    private static func chartColumnWith(array: NSArray) -> Chart.Column {
         guard let itemDictionaries = array as? [NSDictionary] else {
             preconditionFailure("Unable to find chart items")
         }
         let items = itemDictionaries.map(chartItemWith)
-        return Chart.Row(items: items)
+        return Chart.Column(items: items)
     }
 
     private static func chartItemWith(dictionary: NSDictionary) -> Chart.Item {
