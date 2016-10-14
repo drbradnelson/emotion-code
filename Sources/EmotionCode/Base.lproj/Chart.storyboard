@@ -65,6 +65,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
+                                    <segue destination="QSz-Q4-vOB" kind="show" id="NQx-De-Kow"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -82,28 +83,45 @@
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Chart Column Collection View Controller-->
         <scene sceneID="OTd-Lr-Dj3">
             <objects>
-                <collectionViewController id="QSz-Q4-vOB" sceneMemberID="viewController">
+                <collectionViewController id="QSz-Q4-vOB" customClass="ChartColumnCollectionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pq5-jn-5iV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d5Z-6v-Ik6">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="167" height="52"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aAC-Kn-OkI">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Tuw-Wq-Wdv" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="167" height="52"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-m8-o3J">
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5pi-m8-o3J" firstAttribute="leading" secondItem="Tuw-Wq-Wdv" secondAttribute="leadingMargin" id="ORQ-Rb-4C4"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="5pi-m8-o3J" secondAttribute="bottom" id="VnT-gH-uAn"/>
+                                    <constraint firstItem="5pi-m8-o3J" firstAttribute="top" secondItem="Tuw-Wq-Wdv" secondAttribute="topMargin" id="xoQ-8y-l4i"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="5pi-m8-o3J" secondAttribute="trailing" id="yKV-7r-CbU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="5pi-m8-o3J" id="8Kz-PE-TLa"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -114,7 +132,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2865" y="526"/>
+            <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
     </scenes>
     <resources>
