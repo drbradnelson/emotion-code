@@ -7,13 +7,11 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return chart.rows.count
+        return 6
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chart.rows[section].columns.reduce(0) { itemsCount, column in
-            itemsCount + column.items.count
-        }
+        return 10
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -37,6 +35,15 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
         let width = (collectionView.bounds.width - spacing) / numberOfColumns
 
         return CGSize(width: width, height: 30)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? ChartColumnCollectionViewController,
+            let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
+
+        let columnIndex = (indexPath.item + 2) % 2
+        let column = chart.rows[indexPath.section].columns[columnIndex]
+        destination.column = column
     }
 
 }
