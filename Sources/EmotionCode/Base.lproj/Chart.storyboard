@@ -74,6 +74,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Chart" id="Max-Y6-eov"/>
+                    <connections>
+                        <outlet property="collectionView" destination="fzJ-tm-ABD" id="xoP-uf-srl"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBQ-ci-T9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
