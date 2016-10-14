@@ -37,6 +37,14 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
         return CGSize(width: width, height: 30)
     }
 
+    // MARK: View controller delegate
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionViewLayout.invalidateLayout()
+    }
+
+    // MARK: Storyboard segue
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? ChartColumnCollectionViewController,
             let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }

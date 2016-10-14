@@ -27,4 +27,10 @@ class ChartColumnCollectionViewController: UICollectionViewController, UICollect
         return CGSize(width: width, height: 60)
     }
 
+    // MARK: View controller delegate
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionViewLayout.invalidateLayout()
+    }
+
 }
