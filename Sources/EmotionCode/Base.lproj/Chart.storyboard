@@ -42,7 +42,7 @@
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NsJ-MK-7ts">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="169" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -63,6 +63,9 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="OUH-O0-X2M"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="Qmp-St-7HD"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
