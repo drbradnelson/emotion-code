@@ -1,6 +1,6 @@
 import UIKit
 
-class ChartColumnCollectionViewController: UICollectionViewController {
+class ChartColumnCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var column: Chart.Column!
 
@@ -15,6 +15,16 @@ class ChartColumnCollectionViewController: UICollectionViewController {
         let title = column.items[indexPath.item].title
         cell.configure(title: title)
         return cell
+    }
+
+    // MARK: Collection view delegate flow layout
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        let spacing = layout.sectionInset.left + layout.sectionInset.right
+        let width = (collectionView.bounds.width - spacing)
+
+        return CGSize(width: width, height: 60)
     }
 
 }
