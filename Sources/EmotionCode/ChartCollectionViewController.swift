@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+final class ChartCollectionViewController: UICollectionViewController {
 
     private let columns = ChartController().chart.rows.reduce([]) { columns, row in
         columns + row.columns
@@ -21,24 +21,6 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
         let title = columns[indexPath.section].items[indexPath.item].title
         cell.configure(title: title)
         return cell
-    }
-
-    // MARK: Collection view delegate flow layout
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfColumns: CGFloat = 2
-
-        let layout = collectionViewLayout as! UICollectionViewFlowLayout
-        let spacing = layout.sectionInset.left + layout.sectionInset.right + layout.minimumInteritemSpacing * (numberOfColumns - 1)
-        let width = (collectionView.bounds.width - spacing) / numberOfColumns
-
-        return CGSize(width: width, height: 30)
-    }
-
-    // MARK: View controller delegate
-
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        collectionViewLayout.invalidateLayout()
     }
 
     // MARK: Storyboard segue
