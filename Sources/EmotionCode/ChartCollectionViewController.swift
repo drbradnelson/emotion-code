@@ -2,25 +2,23 @@ import UIKit
 
 final class ChartCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    private let chart = ChartController().chart
+    private let columns = ChartController().chart.rows.reduce([]) { columns, row in
+        columns + row.columns
+    }
 
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 6
+        return columns.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return columns[section].items.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.reuseIdentifier, for: indexPath) as! ItemCollectionViewCell
-
-        let columnIndex = (indexPath.item + 2) % 2
-        let itemIndex = (indexPath.item - columnIndex) / 2
-
-        let title = chart.rows[indexPath.section].columns[columnIndex].items[itemIndex].title
+        let title = columns[indexPath.section].items[indexPath.item].title
         cell.configure(title: title)
         return cell
     }
@@ -49,9 +47,7 @@ final class ChartCollectionViewController: UICollectionViewController, UICollect
         guard let destination = segue.destination as? ChartColumnCollectionViewController,
             let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
 
-        let columnIndex = (indexPath.item + 2) % 2
-        let column = chart.rows[indexPath.section].columns[columnIndex]
-        destination.column = column
+        destination.column = columns[indexPath.section]
     }
 
 }
