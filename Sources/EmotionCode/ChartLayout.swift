@@ -64,7 +64,7 @@ final class ChartLayout: UICollectionViewLayout {
     // MARK: Get layout attributes for index path
 
     private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
-        let column = (indexPath.section + numberOfColumns) % numberOfColumns
+        let column = columnIndex(for: indexPath.section)
 
         let point = CGPoint(x: xOffsets[column], y: yOffsets[indexPath.section][indexPath.item])
         let frame = CGRect(origin: point, size: itemSize)
@@ -106,13 +106,18 @@ final class ChartLayout: UICollectionViewLayout {
                 itemOffset += itemSize.height
             }
 
-            if (section + numberOfColumns + 1) % numberOfColumns == 0 {
+            let column = columnIndex(for: section)
+            if column == numberOfColumns - 1 {
                 contentHeight = itemOffset
             }
 
             yOffsets.append(offsets)
         }
         contentHeight += sectionPadding
+    }
+
+    private func columnIndex(for section: Int) -> Int {
+        return (section + numberOfColumns) % numberOfColumns
     }
 
 }
