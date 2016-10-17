@@ -45,8 +45,20 @@ final class ChartLayout: UICollectionViewLayout {
         }
     }
 
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        if collectionView!.bounds != newBounds {
+            cache = []
+            return true
+        }
+        return false
+    }
+
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return cache.filter { $0.frame.intersects(rect) }
+    }
+
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        return layoutAttributes(for: indexPath)
     }
 
     // MARK: Get layout attributes for index path
