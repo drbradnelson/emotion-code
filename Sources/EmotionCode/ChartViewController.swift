@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartCollectionViewController: UICollectionViewController, UINavigationControllerDelegate {
+final class ChartViewController: UICollectionViewController, UINavigationControllerDelegate {
 
     private let columns = ChartController().chart.rows.reduce([]) { columns, row in
         columns + row.columns
@@ -35,7 +35,7 @@ final class ChartCollectionViewController: UICollectionViewController, UINavigat
     // MARK: Storyboard segue
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? ChartColumnCollectionViewController,
+        guard let destination = segue.destination as? ChartColumnViewController,
             let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
 
         destination.useLayoutToLayoutNavigationTransitions = true
@@ -45,19 +45,19 @@ final class ChartCollectionViewController: UICollectionViewController, UINavigat
     // MARK: Navigation controller delegate
 
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        if let vc = viewController as? ChartCollectionViewController {
+        if let vc = viewController as? ChartViewController {
             vc.collectionView?.dataSource = vc
             vc.collectionView?.scrollToItem(at: selectedIndexPath, at: .top, animated: false)
-        } else if let vc = viewController as? ChartColumnCollectionViewController {
+        } else if let vc = viewController as? ChartColumnViewController {
             vc.collectionView?.scrollToItem(at: selectedIndexPath, at: .top, animated: true)
             vc.collectionView?.delegate = vc
         }
     }
 
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        if let vc = viewController as? ChartCollectionViewController {
+        if let vc = viewController as? ChartViewController {
             vc.collectionView?.scrollToItem(at: selectedIndexPath, at: .top, animated: false)
-        } else if let vc = viewController as? ChartColumnCollectionViewController {
+        } else if let vc = viewController as? ChartColumnViewController {
             vc.collectionView?.dataSource = vc
         }
     }

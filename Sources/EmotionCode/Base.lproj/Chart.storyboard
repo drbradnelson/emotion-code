@@ -30,18 +30,18 @@
         <!--Chart-->
         <scene sceneID="4Hi-Im-B0S">
             <objects>
-                <collectionViewController id="rEs-Oe-nW8" customClass="ChartCollectionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fzJ-tm-ABD">
+                <collectionViewController id="rEs-Oe-nW8" customClass="ChartViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="fzJ-tm-ABD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewLayout key="collectionViewLayout" id="2Lb-D5-bK2" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
@@ -58,6 +58,7 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="OUH-O0-X2M"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="Qmp-St-7HD"/>
                                 </constraints>
+                                <size key="customSize" width="151" height="40"/>
                                 <connections>
                                     <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
                                     <segue destination="QSz-Q4-vOB" kind="show" id="NQx-De-Kow"/>
@@ -78,26 +79,26 @@
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>
-        <!--Chart Column Collection View Controller-->
+        <!--Chart Column View Controller-->
         <scene sceneID="OTd-Lr-Dj3">
             <objects>
-                <collectionViewController id="QSz-Q4-vOB" customClass="ChartColumnCollectionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="QSz-Q4-vOB" customClass="ChartColumnViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pq5-jn-5iV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d5Z-6v-Ik6">
-                            <size key="itemSize" width="167" height="52"/>
+                            <size key="itemSize" width="175" height="54"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="30" minY="20" maxX="30" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Tuw-Wq-Wdv" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="104" y="20" width="167" height="52"/>
+                                <rect key="frame" x="100" y="20" width="175" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="167" height="52"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-m8-o3J">
