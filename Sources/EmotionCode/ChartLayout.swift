@@ -13,6 +13,8 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: collectionView!.bounds.width, height: contentHeight)
     }
 
+    // MARK: Properties for collection view layout attributes
+
     private var columnWidth: CGFloat {
         return collectionViewContentSize.width / CGFloat(numberOfColumns)
     }
@@ -22,7 +24,11 @@ final class ChartLayout: UICollectionViewLayout {
     private var xOffsets: [CGFloat]!
     private var yOffsets: [[CGFloat]]!
 
+    // MARK: Cache for storing attributes
+
     private var cache = [UICollectionViewLayoutAttributes]()
+
+    // MARK: Collection view layout
 
     override func prepare() {
         guard cache.isEmpty else { return }
@@ -43,6 +49,8 @@ final class ChartLayout: UICollectionViewLayout {
         return cache.filter { $0.frame.intersects(rect) }
     }
 
+    // MARK: Get layout attributes for index path
+
     private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
         let column = (indexPath.section + numberOfColumns) % numberOfColumns
 
@@ -54,6 +62,8 @@ final class ChartLayout: UICollectionViewLayout {
 
         return attributes
     }
+
+    // MARK: Calculate properties
 
     private func calculateItemSize() {
         let totalPadding = 2 * sectionPadding
