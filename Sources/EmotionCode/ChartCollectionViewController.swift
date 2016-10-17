@@ -1,9 +1,18 @@
 import UIKit
 
-final class ChartCollectionViewController: UICollectionViewController {
+final class ChartCollectionViewController: UICollectionViewController, UINavigationControllerDelegate {
 
     private let columns = ChartController().chart.rows.reduce([]) { columns, row in
         columns + row.columns
+    }
+
+    var selectedIndexPath = IndexPath(item: 0, section: 0)
+
+    // MARK: View lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.delegate = self
     }
 
     // MARK: Collection view data source
@@ -29,7 +38,28 @@ final class ChartCollectionViewController: UICollectionViewController {
         guard let destination = segue.destination as? ChartColumnCollectionViewController,
             let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
 
+        destination.useLayoutToLayoutNavigationTransitions = true
         destination.column = columns[indexPath.section]
+    }
+
+    // MARK: Navigation controller delegate
+
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if let vc = viewController as? ChartCollectionViewController {
+            vc.collectionView?.dataSource = vc
+            vc.collectionView?.scrollToItem(at: selectedIndexPath, at: .top, animated: false)
+        } else if let vc = viewController as? ChartColumnCollectionViewController {
+            vc.collectionView?.scrollToItem(at: selectedIndexPath, at: .top, animated: true)
+            vc.collectionView?.delegate = vc
+        }
+    }
+
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        if let vc = viewController as? ChartCollectionViewController {
+            vc.collectionView?.scrollToItem(at: selectedIndexPath, at: .top, animated: false)
+        } else if let vc = viewController as? ChartColumnCollectionViewController {
+            vc.collectionView?.dataSource = vc
+        }
     }
 
 }
