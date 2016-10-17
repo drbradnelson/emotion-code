@@ -25,4 +25,35 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: collectionView!.bounds.width, height: contentHeight)
     }
 
+    private var xOffsets: [CGFloat] {
+        return (0..<numberOfColumns).map { column in
+            CGFloat(column) * column + sectionPadding
+        }
+    }
+
+    private var yOffsets: [[CGFloat]] {
+        var yOffsets: [[CGFloat]] = []
+
+        for section in 0..<collectionView!.numberOfSections {
+            var offsets: [CGFloat] = []
+            var itemOffset = contentHeight
+
+            for item in 0..<collectionView!.numberOfItems(inSection: section) {
+                let padding = (item == 0) ? sectionPadding : itemPadding
+                itemOffset += padding
+                offsets.append(itemOffset)
+                itemOffset += itemSize.height
+            }
+            yOffsets.append(offsets)
+
+            let columnIndex = (section + numberOfColumns) % numberOfColumns
+            if (columnIndex + 1 == numberOfColumns) {
+                contentHeight = itemOffset
+            }
+        }
+        contentHeight += sectionPadding
+
+        return yOffsets
+    }
+
 }
