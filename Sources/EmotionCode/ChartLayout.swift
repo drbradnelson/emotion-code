@@ -56,4 +56,33 @@ final class ChartLayout: UICollectionViewLayout {
         return yOffsets
     }
 
+    private var cache = [UICollectionViewLayoutAttributes]()
+
+    override func prepare() {
+        guard cache.isEmpty else { return }
+
+        for section in 0..<collectionView!.numberOfSections {
+            for item in 0..<collectionView!.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                let attributes = layoutAttributes(for: indexPath)
+                cache.append(attributes)
+            }
+        }
+    }
+
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        return cache.filer { $0.frame.intersects(rect) }
+    }
+
+    private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
+        let column = (indexPath.section + numberOfColumns) % numberOfColumns
+
+        let point = CGPoint(x: xOffsets[column], y: yOffsets[indexPath.section][indexPath.item])
+        let frame = CGRect(point: point, size: itemSize)
+
+        let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+        attributes.frame = frame
+
+        return attributes
+    }
 }
