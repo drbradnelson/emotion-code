@@ -9,21 +9,15 @@ final class ChartLayout: UICollectionViewLayout {
 
     private var contentHeight: CGFloat = 0
 
+    override var collectionViewContentSize: CGSize {
+        return CGSize(width: collectionView!.bounds.width, height: contentHeight)
+    }
+
     private var columnWidth: CGFloat {
         return collectionViewContentSize.width / CGFloat(numberOfColumns)
     }
 
-    private var itemSize: CGSize {
-        let totalPadding = 2 * sectionPadding
-        let width = collectionViewContentSize.width / CGFloat(numberOfColumns) - totalPadding
-        let height = 60 / CGFloat(numberOfColumns)
-
-        return CGSize(width: width, height: height)
-    }
-
-    override var collectionViewContentSize: CGSize {
-        return CGSize(width: collectionView!.bounds.width, height: contentHeight)
-    }
+    private var itemSize: CGSize!
 
     private var xOffsets: [CGFloat]!
     private var yOffsets: [[CGFloat]]!
@@ -33,6 +27,7 @@ final class ChartLayout: UICollectionViewLayout {
     override func prepare() {
         guard cache.isEmpty else { return }
 
+        calculateItemSize()
         calculateXOffsets()
         calculateYOffsets()
         for section in 0..<collectionView!.numberOfSections {
@@ -58,6 +53,14 @@ final class ChartLayout: UICollectionViewLayout {
         attributes.frame = frame
 
         return attributes
+    }
+
+    private func calculateItemSize() {
+        let totalPadding = 2 * sectionPadding
+        let width = columnWidth - totalPadding
+        let height = 60 / CGFloat(numberOfColumns)
+
+        itemSize = CGSize(width: width, height: height)
     }
 
     private func calculateXOffsets() {
