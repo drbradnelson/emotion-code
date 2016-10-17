@@ -15,7 +15,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     private var itemSize: CGSize {
         let totalPadding = 2 * sectionPadding
-        let width = collectionViewContentSize.width - totalPadding / CGFloat(numberOfColumns)
+        let width = collectionViewContentSize.width / CGFloat(numberOfColumns) - totalPadding
         let height = 60 / CGFloat(numberOfColumns)
 
         return CGSize(width: width, height: height)
@@ -25,14 +25,50 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: collectionView!.bounds.width, height: contentHeight)
     }
 
-    private var xOffsets: [CGFloat] {
-        return (0..<numberOfColumns).map { column in
-            CGFloat(column) * column + sectionPadding
+    private var xOffsets: [CGFloat]!
+    private var yOffsets: [[CGFloat]]!
+
+    private var cache = [UICollectionViewLayoutAttributes]()
+
+    override func prepare() {
+        guard cache.isEmpty else { return }
+
+        calculateXOffsets()
+        calculateYOffsets()
+        for section in 0..<collectionView!.numberOfSections {
+            for item in 0..<collectionView!.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                let attributes = layoutAttributes(for: indexPath)
+                cache.append(attributes)
+            }
         }
     }
 
-    private var yOffsets: [[CGFloat]] {
-        var yOffsets: [[CGFloat]] = []
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        return cache.filter { $0.frame.intersects(rect) }
+    }
+
+    private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
+        let column = (indexPath.section + numberOfColumns) % numberOfColumns
+
+        let point = CGPoint(x: xOffsets[column], y: yOffsets[indexPath.section][indexPath.item])
+        let frame = CGRect(origin: point, size: itemSize)
+
+        let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+        attributes.frame = frame
+
+        return attributes
+    }
+
+    private func calculateXOffsets() {
+        xOffsets = (0..<numberOfColumns).map { column in
+            CGFloat(column) * columnWidth + sectionPadding
+        }
+    }
+
+    private func calculateYOffsets() {
+        yOffsets = []
+        contentHeight = 0
 
         for section in 0..<collectionView!.numberOfSections {
             var offsets: [CGFloat] = []
@@ -44,45 +80,14 @@ final class ChartLayout: UICollectionViewLayout {
                 offsets.append(itemOffset)
                 itemOffset += itemSize.height
             }
-            yOffsets.append(offsets)
 
-            let columnIndex = (section + numberOfColumns) % numberOfColumns
-            if (columnIndex + 1 == numberOfColumns) {
+            if (section + numberOfColumns + 1) % numberOfColumns == 0 {
                 contentHeight = itemOffset
             }
+
+            yOffsets.append(offsets)
         }
         contentHeight += sectionPadding
-
-        return yOffsets
     }
 
-    private var cache = [UICollectionViewLayoutAttributes]()
-
-    override func prepare() {
-        guard cache.isEmpty else { return }
-
-        for section in 0..<collectionView!.numberOfSections {
-            for item in 0..<collectionView!.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                let attributes = layoutAttributes(for: indexPath)
-                cache.append(attributes)
-            }
-        }
-    }
-
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        return cache.filer { $0.frame.intersects(rect) }
-    }
-
-    private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
-        let column = (indexPath.section + numberOfColumns) % numberOfColumns
-
-        let point = CGPoint(x: xOffsets[column], y: yOffsets[indexPath.section][indexPath.item])
-        let frame = CGRect(point: point, size: itemSize)
-
-        let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-        attributes.frame = frame
-
-        return attributes
-    }
 }
