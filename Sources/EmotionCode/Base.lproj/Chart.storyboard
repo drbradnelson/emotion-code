@@ -10,7 +10,7 @@
         <!--Chart-->
         <scene sceneID="v46-gz-OvS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J1V-Tc-VYI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J1V-Tc-VYI" customClass="ChartNavigationController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chart" image="Standard/Chart" selectedImage="Selected/Chart" id="xSv-EC-Guf"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -31,7 +31,7 @@
         <scene sceneID="4Hi-Im-B0S">
             <objects>
                 <collectionViewController id="rEs-Oe-nW8" customClass="ChartViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="fzJ-tm-ABD">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fzJ-tm-ABD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
