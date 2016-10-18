@@ -1,6 +1,6 @@
 import UIKit
 
-class ChartColumnViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+final class ChartColumnViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var column: Chart.Column!
 
