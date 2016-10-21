@@ -67,9 +67,7 @@ final class ChartLayout: UICollectionViewLayout {
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let column = columnIndex(for: indexPath.section)
 
-        let xOffset = CGFloat(column) * columnWidth + sectionPadding
-
-        let point = CGPoint(x: xOffset, y: yOffset(at: indexPath))
+        let point = location(at: indexPath)
         let frame = CGRect(origin: point, size: itemSize)
         contentHeight = max(contentHeight, frame.maxY)
 
@@ -81,14 +79,17 @@ final class ChartLayout: UICollectionViewLayout {
 
     // MARK: Calculate properties
 
-    private func yOffset(at indexPath: IndexPath) -> CGFloat {
+    private func location(at indexPath: IndexPath) -> CGPoint {
         let line = indexPath.section / numberOfColumns
         let sectionOffset = CGFloat(line) * sectionHeight
 
         let padding = CGFloat(indexPath.item) * itemPadding + sectionPadding
         let itemOffset = CGFloat(indexPath.item) * itemSize.height + padding
 
-        return itemOffset + sectionOffset
+        let yOffset = itemOffset + sectionOffset
+        let xOffset = CGFloat(column) * columnWidth + sectionPadding
+
+        return CGPoint(x: xOffset, y: yOffset)
     }
 
     private func columnIndex(for section: Int) -> Int {
