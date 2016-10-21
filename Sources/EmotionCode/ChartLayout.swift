@@ -19,7 +19,7 @@ final class ChartLayout: UICollectionViewLayout {
         return collectionViewContentSize.width / CGFloat(numberOfColumns)
     }
 
-    private var itemSize: CGSize! {
+    private var itemSize: CGSize {
         let totalPadding = 2 * sectionPadding
         let width = columnWidth - totalPadding
         let height = 60 / CGFloat(numberOfColumns)
@@ -27,7 +27,12 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: width, height: height)
     }
 
-    private var yOffsets: [[CGFloat]]!
+    private var sectionHeight: CGFloat {
+        let items = CGFloat(collectionView!.numberOfItems(inSection: 0))
+        let padding = (items - 1) * itemPadding + sectionPadding
+        let itemHeights = itemSize.height * items
+        return padding + itemHeights
+    }
 
     // MARK: Cache for storing attributes
 
@@ -38,7 +43,6 @@ final class ChartLayout: UICollectionViewLayout {
     override func prepare() {
         guard cache.isEmpty else { return }
 
-        calculateYOffsets()
         for section in 0..<collectionView!.numberOfSections {
             for item in 0..<collectionView!.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
@@ -65,8 +69,9 @@ final class ChartLayout: UICollectionViewLayout {
 
         let xOffset = CGFloat(column) * columnWidth + sectionPadding
 
-        let point = CGPoint(x: xOffset, y: yOffsets[indexPath.section][indexPath.item])
+        let point = CGPoint(x: xOffset, y: yOffset(at: indexPath))
         let frame = CGRect(origin: point, size: itemSize)
+        contentHeight = max(contentHeight, frame.maxY)
 
         let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
         attributes.frame = frame
@@ -76,29 +81,14 @@ final class ChartLayout: UICollectionViewLayout {
 
     // MARK: Calculate properties
 
-    private func calculateYOffsets() {
-        yOffsets = []
-        contentHeight = 0
+    private func yOffset(at indexPath: IndexPath) -> CGFloat {
+        let line = indexPath.section / numberOfColumns
+        let sectionOffset = CGFloat(line) * sectionHeight
 
-        for section in 0..<collectionView!.numberOfSections {
-            var offsets: [CGFloat] = []
-            var itemOffset = contentHeight
+        let padding = CGFloat(indexPath.item) * itemPadding + sectionPadding
+        let itemOffset = CGFloat(indexPath.item) * itemSize.height + padding
 
-            for item in 0..<collectionView!.numberOfItems(inSection: section) {
-                let padding = (item == 0) ? sectionPadding : itemPadding
-                itemOffset += padding
-                offsets.append(itemOffset)
-                itemOffset += itemSize.height
-            }
-
-            let column = columnIndex(for: section)
-            if column == numberOfColumns - 1 {
-                contentHeight = itemOffset
-            }
-
-            yOffsets.append(offsets)
-        }
-        contentHeight += sectionPadding
+        return itemOffset + sectionOffset
     }
 
     private func columnIndex(for section: Int) -> Int {
