@@ -33,6 +33,7 @@ final class ChartViewController: UICollectionViewController {
 
         destination.useLayoutToLayoutNavigationTransitions = true
         destination.column = columns[indexPath.section]
+        selectedIndexPath = indexPath
     }
 
 }
