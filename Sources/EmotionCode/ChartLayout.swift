@@ -27,12 +27,12 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: width, height: height)
     }
 
-    private var sectionHeight: CGFloat {
-        let items = CGFloat(collectionView!.numberOfItems(inSection: 0))
-        let padding = (items - 1) * itemPadding + sectionPadding
-        let itemHeights = itemSize.height * items
+    private lazy var sectionHeight: CGFloat = {
+        let items = CGFloat(self.collectionView!.numberOfItems(inSection: 0))
+        let padding = (items - 1) * self.itemPadding + self.sectionPadding
+        let itemHeights = self.itemSize.height * items
         return padding + itemHeights
-    }
+    }()
 
     // MARK: Cache for storing attributes
 
@@ -65,11 +65,10 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let column = columnIndex(for: indexPath.section)
-
         let point = location(at: indexPath)
         let frame = CGRect(origin: point, size: itemSize)
-        contentHeight = max(contentHeight, frame.maxY)
+
+        if frame.maxY > contentHeight { contentHeight = frame.maxY }
 
         let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
         attributes.frame = frame
@@ -87,6 +86,8 @@ final class ChartLayout: UICollectionViewLayout {
         let itemOffset = CGFloat(indexPath.item) * itemSize.height + padding
 
         let yOffset = itemOffset + sectionOffset
+
+        let column = columnIndex(for: indexPath.section)
         let xOffset = CGFloat(column) * columnWidth + sectionPadding
 
         return CGPoint(x: xOffset, y: yOffset)
