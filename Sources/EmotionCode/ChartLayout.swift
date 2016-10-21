@@ -27,7 +27,6 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: width, height: height)
     }
 
-    private var xOffsets: [CGFloat]!
     private var yOffsets: [[CGFloat]]!
 
     // MARK: Cache for storing attributes
@@ -39,7 +38,6 @@ final class ChartLayout: UICollectionViewLayout {
     override func prepare() {
         guard cache.isEmpty else { return }
 
-        calculateXOffsets()
         calculateYOffsets()
         for section in 0..<collectionView!.numberOfSections {
             for item in 0..<collectionView!.numberOfItems(inSection: section) {
@@ -71,7 +69,9 @@ final class ChartLayout: UICollectionViewLayout {
     private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
         let column = columnIndex(for: indexPath.section)
 
-        let point = CGPoint(x: xOffsets[column], y: yOffsets[indexPath.section][indexPath.item])
+        let xOffset = CGFloat(column) * columnWidth + sectionPadding
+
+        let point = CGPoint(x: xOffset, y: yOffsets[indexPath.section][indexPath.item])
         let frame = CGRect(origin: point, size: itemSize)
 
         let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
@@ -81,12 +81,6 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     // MARK: Calculate properties
-
-    private func calculateXOffsets() {
-        xOffsets = (0..<numberOfColumns).map { column in
-            CGFloat(column) * columnWidth + sectionPadding
-        }
-    }
 
     private func calculateYOffsets() {
         yOffsets = []
