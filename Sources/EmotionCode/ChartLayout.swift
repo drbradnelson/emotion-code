@@ -42,7 +42,7 @@ final class ChartLayout: UICollectionViewLayout {
         for section in 0..<collectionView!.numberOfSections {
             for item in 0..<collectionView!.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
-                let attributes = layoutAttributes(for: indexPath)
+                let attributes = layoutAttributesForItem(at: indexPath)!
                 cache.append(attributes)
             }
         }
@@ -61,12 +61,6 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        return layoutAttributes(for: indexPath)
-    }
-
-    // MARK: Get layout attributes for index path
-
-    private func layoutAttributes(for indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
         let column = columnIndex(for: indexPath.section)
 
         let xOffset = CGFloat(column) * columnWidth + sectionPadding
