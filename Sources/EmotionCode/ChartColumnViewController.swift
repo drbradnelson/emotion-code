@@ -21,10 +21,26 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
-        let spacing = layout.sectionInset.left + layout.sectionInset.right
-        let width = (collectionView.bounds.width - spacing)
+        let itemsCount = CGFloat(column.items.count)
 
-        return CGSize(width: width, height: 60)
+        let widthSpacing = layout.sectionInset.left + layout.sectionInset.right
+        let width = (collectionView.bounds.width - widthSpacing)
+
+        var height: CGFloat = 60
+
+        if collectionView.bounds.width > collectionView.bounds.height {
+            let heightSpacing = layout.sectionInset.top + layout.sectionInset.bottom + layout.minimumLineSpacing * (itemsCount - 1)
+            height = (collectionView.bounds.height - heightSpacing) / (itemsCount + 2)
+        }
+
+        return CGSize(width: width, height: height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if collectionView.bounds.width > collectionView.bounds.height {
+            return UIEdgeInsets(top: 15, left: 30, bottom: 15, right: 30)
+        }
+        return UIEdgeInsets(top: 100, left: 30, bottom: 100, right: 30)
     }
 
     // MARK: View controller delegate
