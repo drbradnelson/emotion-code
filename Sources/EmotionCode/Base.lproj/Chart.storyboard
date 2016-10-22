@@ -61,7 +61,7 @@
                                 <size key="customSize" width="151" height="40"/>
                                 <connections>
                                     <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
-                                    <segue destination="QSz-Q4-vOB" kind="show" id="NQx-De-Kow"/>
+                                    <segue destination="QSz-Q4-vOB" kind="show" identifier="ShowColumn" id="NQx-De-Kow"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -117,7 +117,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="titleLabel" destination="5pi-m8-o3J" id="8Kz-PE-TLa"/>
-                                    <segue destination="nA3-HW-MGA" kind="show" id="KkP-qB-Mea"/>
+                                    <segue destination="nA3-HW-MGA" kind="show" identifier="ShowItem" id="KkP-qB-Mea"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
