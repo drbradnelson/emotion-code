@@ -87,15 +87,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d5Z-6v-Ik6">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="5" id="d5Z-6v-Ik6">
                             <size key="itemSize" width="175" height="54"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="30" minY="100" maxX="30" maxY="100"/>
+                            <inset key="sectionInset" minX="30" minY="15" maxX="30" maxY="15"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Tuw-Wq-Wdv" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="100" y="100" width="175" height="54"/>
+                                <rect key="frame" x="30" y="15" width="175" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="175" height="54"/>
@@ -143,11 +143,11 @@
                             <size key="itemSize" width="309" height="265"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="120" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="i4a-5d-ozG" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="33" y="0.0" width="309" height="265"/>
+                                <rect key="frame" x="33" y="120" width="309" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="309" height="265"/>
@@ -167,6 +167,9 @@
                                     <constraint firstItem="rSh-aF-WMZ" firstAttribute="leading" secondItem="i4a-5d-ozG" secondAttribute="leading" id="ZJ5-UF-qeT"/>
                                     <constraint firstItem="rSh-aF-WMZ" firstAttribute="top" secondItem="i4a-5d-ozG" secondAttribute="top" id="pXX-Fy-HmE"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="rSh-aF-WMZ" id="J06-6L-mJj"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
