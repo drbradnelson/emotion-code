@@ -28,12 +28,10 @@ final class ChartViewController: UICollectionViewController {
     // MARK: Storyboard segue
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? ChartColumnViewController,
-            let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
+        guard let destination = segue.destination as? ChartColumnViewController else { return }
 
         destination.useLayoutToLayoutNavigationTransitions = true
-        destination.column = columns[indexPath.section]
-        selectedIndexPath = indexPath
+        destination.columns = columns
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

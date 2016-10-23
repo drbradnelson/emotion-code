@@ -2,26 +2,13 @@ import UIKit
 
 final class ChartColumnViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    var column: Chart.Column!
-
-    // MARK: Collection view data source
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return column.items.count
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.reuseIdentifier, for: indexPath) as! ItemCollectionViewCell
-        let title = column.items[indexPath.item].title
-        cell.configure(title: title)
-        return cell
-    }
+    var columns: [Chart.Column]!
 
     // MARK: Collection view delegate flow layout
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
-        let itemsCount = CGFloat(column.items.count)
+        let itemsCount: CGFloat = 5
 
         let widthSpacing = layout.sectionInset.left + layout.sectionInset.right
         let width = (collectionView.bounds.width - widthSpacing)
@@ -61,7 +48,7 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
         guard let destination = segue.destination as? ChartItemViewController,
             let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
 
-        destination.item = column.items[indexPath.item]
+        destination.item = columns[indexPath.section].items[indexPath.item]
     }
 
 }
