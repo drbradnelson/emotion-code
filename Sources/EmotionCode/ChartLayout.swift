@@ -68,7 +68,7 @@ final class ChartLayout: UICollectionViewLayout {
         let point = location(at: indexPath)
         let frame = CGRect(origin: point, size: itemSize)
 
-        if frame.maxY > contentHeight { contentHeight = frame.maxY }
+        if frame.maxY > contentHeight { contentHeight = frame.maxY + sectionPadding }
 
         let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
         attributes.frame = frame
