@@ -36,4 +36,11 @@ final class ChartViewController: UICollectionViewController {
         selectedIndexPath = indexPath
     }
 
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "ShowColumn", let _ = collectionView?.collectionViewLayout as? ChartLayout {
+            return true
+        }
+        return false
+    }
+
 }

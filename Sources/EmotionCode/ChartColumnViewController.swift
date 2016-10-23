@@ -43,10 +43,25 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
         return UIEdgeInsets(top: 100, left: 30, bottom: 100, right: 30)
     }
 
+    // MARK: Collection view delegate
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ShowItem", sender: self)
+    }
+
     // MARK: View controller delegate
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         collectionViewLayout.invalidateLayout()
+    }
+
+    // MARK: Storyboard segue
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? ChartItemViewController,
+            let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
+
+        destination.item = column.items[indexPath.item]
     }
 
 }
