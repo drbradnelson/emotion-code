@@ -153,22 +153,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="309" height="265"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSh-aF-WMZ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kym-aE-MF9">
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-8N-fgh">
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="rSh-aF-WMZ" secondAttribute="trailing" id="1m2-jY-ypC"/>
-                                    <constraint firstAttribute="bottom" secondItem="rSh-aF-WMZ" secondAttribute="bottom" id="Knu-37-s8D"/>
-                                    <constraint firstItem="rSh-aF-WMZ" firstAttribute="leading" secondItem="i4a-5d-ozG" secondAttribute="leading" id="ZJ5-UF-qeT"/>
-                                    <constraint firstItem="rSh-aF-WMZ" firstAttribute="top" secondItem="i4a-5d-ozG" secondAttribute="top" id="pXX-Fy-HmE"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="AMp-8N-fgh" secondAttribute="bottom" id="22w-B0-VMv"/>
+                                    <constraint firstItem="AMp-8N-fgh" firstAttribute="top" secondItem="Kym-aE-MF9" secondAttribute="bottom" constant="8" id="4ec-Uk-lNt"/>
+                                    <constraint firstItem="Kym-aE-MF9" firstAttribute="top" secondItem="i4a-5d-ozG" secondAttribute="topMargin" id="Ptt-Vo-eYm"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Kym-aE-MF9" secondAttribute="trailing" id="Rb2-ME-mfU"/>
+                                    <constraint firstItem="Kym-aE-MF9" firstAttribute="leading" secondItem="i4a-5d-ozG" secondAttribute="leadingMargin" id="UhS-Jb-UuL"/>
+                                    <constraint firstItem="AMp-8N-fgh" firstAttribute="leading" secondItem="i4a-5d-ozG" secondAttribute="leadingMargin" id="aiV-QC-iPD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="AMp-8N-fgh" secondAttribute="trailing" id="nZX-UX-yOZ"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="titleLabel" destination="rSh-aF-WMZ" id="J06-6L-mJj"/>
+                                    <outlet property="descriptionTextView" destination="AMp-8N-fgh" id="X0X-pD-OFb"/>
+                                    <outlet property="titleLabel" destination="Kym-aE-MF9" id="tu1-LY-IfQ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
