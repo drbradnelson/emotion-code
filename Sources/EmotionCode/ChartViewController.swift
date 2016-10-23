@@ -6,8 +6,6 @@ final class ChartViewController: UICollectionViewController {
         columns + row.columns
     }
 
-    var selectedIndexPath = IndexPath(item: 0, section: 0)
-
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
