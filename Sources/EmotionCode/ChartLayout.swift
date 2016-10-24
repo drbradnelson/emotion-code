@@ -34,34 +34,24 @@ final class ChartLayout: UICollectionViewLayout {
         return padding + itemHeights
     }()
 
-    // MARK: Cache for storing attributes
-
-    private var cache = [UICollectionViewLayoutAttributes]()
-
     // MARK: Collection view layout
 
-    override func prepare() {
-        guard cache.isEmpty else { return }
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        return collectionView!.bounds != newBounds
+    }
+
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        var attributesArray = [UICollectionViewLayoutAttributes]()
 
         for section in 0..<collectionView!.numberOfSections {
             for item in 0..<collectionView!.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
                 let attributes = layoutAttributesForItem(at: indexPath)!
-                cache.append(attributes)
+                attributesArray.append(attributes)
             }
         }
-    }
 
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        if collectionView!.bounds != newBounds {
-            cache = []
-            return true
-        }
-        return false
-    }
-
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        return cache.filter { $0.frame.intersects(rect) }
+        return attributesArray
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
