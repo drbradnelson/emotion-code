@@ -27,12 +27,12 @@ final class ChartLayout: UICollectionViewLayout {
         return CGSize(width: width, height: height)
     }
 
-    private lazy var sectionHeight: CGFloat = {
-        let items = CGFloat(self.collectionView!.numberOfItems(inSection: 0))
-        let padding = (items - 1) * self.itemPadding + self.sectionPadding
-        let itemHeights = self.itemSize.height * items
+    private var sectionHeight: CGFloat {
+        let items = CGFloat(collectionView!.numberOfItems(inSection: 0))
+        let padding = (items - 1) * itemPadding + sectionPadding
+        let itemHeights = itemSize.height * items
         return padding + itemHeights
-    }()
+    }
 
     // MARK: Collection view layout
 
