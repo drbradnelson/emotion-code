@@ -46,7 +46,7 @@ final class ChartLayout: UICollectionViewLayout {
             for item in 0..<collectionView!.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
                 let attributes = layoutAttributesForItem(at: indexPath)!
-                attributesArray.append(attributes)
+                if attributes.frame.intersects(rect) { attributesArray.append(attributes) }
             }
         }
 
