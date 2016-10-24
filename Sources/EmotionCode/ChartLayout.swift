@@ -27,8 +27,8 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     private var sectionHeight: CGFloat {
-        let items = CGFloat(collectionView!.numberOfItems(inSection: 0))
-        let padding = (items - 1) * itemPadding + sectionPadding
+        let items: CGFloat = 5
+        let padding = itemPadding * (items - 1) + sectionPadding
         let itemHeights = itemSize.height * items
         return padding + itemHeights
     }
