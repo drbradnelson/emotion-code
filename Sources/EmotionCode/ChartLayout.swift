@@ -22,9 +22,8 @@ final class ChartLayout: UICollectionViewLayout {
     private var itemSize: CGSize {
         let totalPadding = 2 * sectionPadding
         let width = columnWidth - totalPadding
-        let height = 60 / CGFloat(numberOfColumns)
 
-        return CGSize(width: width, height: height)
+        return CGSize(width: width, height: 30)
     }
 
     private var sectionHeight: CGFloat {
