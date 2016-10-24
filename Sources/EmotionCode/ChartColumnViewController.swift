@@ -8,7 +8,7 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
-        let itemsCount: CGFloat = 5
+        let itemsCount = CGFloat(collectionView.numberOfItems(inSection: indexPath.section))
 
         let widthSpacing = layout.sectionInset.left + layout.sectionInset.right
         let width = (collectionView.bounds.width - widthSpacing)
