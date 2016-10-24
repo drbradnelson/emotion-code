@@ -7,16 +7,16 @@ final class ChartLayout: UICollectionViewLayout {
     private let itemPadding: CGFloat = 5
     private let sectionPadding: CGFloat = 15
 
-    private var contentHeight: CGFloat = 0
-
     override var collectionViewContentSize: CGSize {
+        let line = CGFloat(collectionView!.numberOfSections / numberOfColumns)
+        let contentHeight = line * sectionHeight + sectionPadding
         return CGSize(width: collectionView!.bounds.width, height: contentHeight)
     }
 
     // MARK: Properties for collection view layout attributes
 
     private var columnWidth: CGFloat {
-        return collectionViewContentSize.width / CGFloat(numberOfColumns)
+        return collectionView!.bounds.width / CGFloat(numberOfColumns)
     }
 
     private var itemSize: CGSize {
@@ -57,8 +57,6 @@ final class ChartLayout: UICollectionViewLayout {
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let point = location(at: indexPath)
         let frame = CGRect(origin: point, size: itemSize)
-
-        if frame.maxY > contentHeight { contentHeight = frame.maxY + sectionPadding }
 
         let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
         attributes.frame = frame
