@@ -12,7 +12,6 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         let vc = viewController as? UICollectionViewController
         vc?.collectionView?.delegate = vc
-        vc?.collectionView?.isPagingEnabled = !(vc is ChartViewController)
     }
 
 }
