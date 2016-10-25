@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartColumnViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    var columns: [Chart.Column]!
+    var column: Chart.Column!
     var selectedSection: Int!
 
     // MARK: Collection view delegate flow layout
@@ -28,6 +28,7 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
         guard UIDevice.current.orientation == .portrait else {
             return UIEdgeInsets(top: 15, left: 30, bottom: 15, right: 30)
         }
+
         return UIEdgeInsets(top: 80, left: 30, bottom: 15, right: 30)
     }
 
@@ -49,7 +50,7 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
         guard let destination = segue.destination as? ChartItemViewController,
             let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
 
-        destination.item = columns[indexPath.section].items[indexPath.item]
+        destination.item = column.items[indexPath.item]
     }
 
 }

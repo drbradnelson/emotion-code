@@ -30,7 +30,7 @@ final class ChartViewController: UICollectionViewController {
             let section = collectionView?.indexPathsForSelectedItems?.first?.section else { return }
 
         destination.useLayoutToLayoutNavigationTransitions = true
-        destination.columns = columns
+        destination.column = columns[section]
         destination.selectedSection = section
     }
 
