@@ -12,6 +12,8 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         let vc = viewController as? UICollectionViewController
         vc?.collectionView?.delegate = vc
+
+        vc?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 }
