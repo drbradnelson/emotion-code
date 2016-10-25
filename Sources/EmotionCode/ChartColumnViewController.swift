@@ -5,6 +5,17 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
     var columns: [Chart.Column]!
     var selectedSection: Int!
 
+    // MARK: View lifecycle
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let column = (selectedSection + 2) % 2
+        let row = selectedSection / 2 + 1
+        let columnNames = ["A", "B"]
+
+        navigationItem.title = "Row \(row) - Column \(columnNames[column])"
+    }
+
     // MARK: Collection view delegate flow layout
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
