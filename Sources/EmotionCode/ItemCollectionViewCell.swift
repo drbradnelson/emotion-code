@@ -5,7 +5,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var descriptionTextView: UITextView!
 
-    static let reuseIdentifier = "ItemCell"
+    static let preferredReuseIdentifier = "ItemCell"
 
     func configure(title: String) {
         titleLabel.text = title
