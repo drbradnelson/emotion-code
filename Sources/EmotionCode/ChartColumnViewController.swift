@@ -17,7 +17,7 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
         let widthSpacing = layout.sectionInset.left + layout.sectionInset.right
         let width = (collectionView.bounds.width - widthSpacing)
 
-        return CGSize(width: width, height: 45)
+        return CGSize(width: width, height: 60)
     }
 
     // MARK: Collection view delegate
