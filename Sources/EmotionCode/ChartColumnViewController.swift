@@ -25,11 +25,15 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
             return UIEdgeInsets(top: 0.01, left: 0, bottom: 0.01, right: 0)
         }
 
-        guard UIDevice.current.orientation == .portrait else {
-            return UIEdgeInsets(top: 15, left: 30, bottom: 15, right: 30)
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+
+        if UIDevice.current.orientation == .portrait {
+            var inset = layout.sectionInset
+            inset.top = 80
+            return inset
         }
 
-        return UIEdgeInsets(top: 80, left: 30, bottom: 15, right: 30)
+        return layout.sectionInset
     }
 
     // MARK: Collection view delegate
