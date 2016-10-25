@@ -20,6 +20,13 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
         return CGSize(width: width, height: 60)
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        guard selectedSection == section else {
+            return UIEdgeInsets(top: 0.01, left: 0.01, bottom: 0.01, right: 0.01)
+        }
+        return UIEdgeInsets(top: 15, left: 30, bottom: 15, right: 30)
+    }
+
     // MARK: Collection view delegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
