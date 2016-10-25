@@ -33,10 +33,7 @@ final class ChartViewController: UICollectionViewController {
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "ShowColumn", let _ = collectionView?.collectionViewLayout as? ChartLayout {
-            return true
-        }
-        return false
+        return collectionView?.collectionViewLayout is ChartLayout
     }
 
 }
