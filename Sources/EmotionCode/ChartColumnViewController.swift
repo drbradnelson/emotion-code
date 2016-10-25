@@ -8,6 +8,10 @@ final class ChartColumnViewController: UICollectionViewController, UICollectionV
     // MARK: Collection view delegate flow layout
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard selectedSection == indexPath.section else {
+            return CGSize.zero
+        }
+
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
 
         let widthSpacing = layout.sectionInset.left + layout.sectionInset.right
