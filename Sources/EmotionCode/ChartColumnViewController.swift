@@ -3,6 +3,7 @@ import UIKit
 final class ChartColumnViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var columns: [Chart.Column]!
+    var selectedSection: Int!
 
     // MARK: Collection view delegate flow layout
 
