@@ -2,86 +2,118 @@ import UIKit
 
 final class ChartLayout: UICollectionViewLayout {
 
-    private let numberOfColumns = 2
+    // MARK: Parametrization
 
-    private let itemPadding: CGFloat = 5
-    private let sectionPadding: CGFloat = 15
+    private let numberOfColumns = 2
+    private let contentPadding: CGFloat = 10
+    private let itemSpacing: CGFloat = 5
+    private let itemHeight: CGFloat = 30
+    private let horizontalSectionSpacing: CGFloat = 30
+    private let verticalSectionSpacing: CGFloat = 15
+
+    // MARK: Content size
 
     override var collectionViewContentSize: CGSize {
-        let line = CGFloat(collectionView!.numberOfSections / numberOfColumns)
-        let contentHeight = line * sectionHeight + sectionPadding
-        return CGSize(width: collectionView!.bounds.width, height: contentHeight)
+        guard let collectionView = collectionView else { return .zero }
+        let lastSection = collectionView.numberOfSections - 1
+        let collectionViewContentHeight = yOffset(forSection: lastSection) + maximumSectionHeight
+        return CGSize(width: collectionView.bounds.width, height: collectionViewContentHeight + contentPadding)
     }
 
-    // MARK: Properties for collection view layout attributes
-
-    private var columnWidth: CGFloat {
-        return collectionView!.bounds.width / CGFloat(numberOfColumns)
-    }
-
-    private var itemSize: CGSize {
-        let totalPadding = 2 * sectionPadding
-        let width = columnWidth - totalPadding
-
-        return CGSize(width: width, height: 30)
-    }
-
-    private var sectionHeight: CGFloat {
-        let items: CGFloat = 5
-        let padding = itemPadding * (items - 1) + sectionPadding
-        let itemHeights = itemSize.height * items
-        return padding + itemHeights
-    }
-
-    // MARK: Collection view layout
-
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        return collectionView!.bounds != newBounds
-    }
+    // MARK: Layout attributes
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var attributesArray = [UICollectionViewLayoutAttributes]()
-
-        for section in 0..<collectionView!.numberOfSections {
-            for item in 0..<collectionView!.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                let attributes = layoutAttributesForItem(at: indexPath)!
-                if attributes.frame.intersects(rect) { attributesArray.append(attributes) }
-            }
-        }
-
-        return attributesArray
+        guard let collectionView = collectionView else { return nil }
+        let layoutAttributes = collectionView.indexPaths.flatMap(layoutAttributesForItem)
+        return layoutAttributes.filter { layoutAttributes in layoutAttributes.frame.intersects(rect) }
     }
 
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let point = location(at: indexPath)
-        let frame = CGRect(origin: point, size: itemSize)
-
-        let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-        attributes.frame = frame
-
-        return attributes
-    }
-
-    // MARK: Calculate properties
-
-    private func location(at indexPath: IndexPath) -> CGPoint {
-        let line = indexPath.section / numberOfColumns
-        let sectionOffset = CGFloat(line) * sectionHeight
-
-        let padding = CGFloat(indexPath.item) * itemPadding + sectionPadding
-        let itemOffset = CGFloat(indexPath.item) * itemSize.height + padding
-
-        let yOffset = itemOffset + sectionOffset
-
-        let column = columnIndex(for: indexPath.section)
-        let xOffset = CGFloat(column) * columnWidth + sectionPadding
-
+    private func frameOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGPoint {
+        let xOffset = xOffsetForLayoutAttributes(at: indexPath)
+        let yOffset = yOffsetForLayoutAttributes(at: indexPath)
         return CGPoint(x: xOffset, y: yOffset)
     }
 
-    private func columnIndex(for section: Int) -> Int {
-        return (section + numberOfColumns) % numberOfColumns
+    private func xOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
+        let column = (indexPath.section + numberOfColumns) % numberOfColumns
+        return contentPadding + CGFloat(column) * (itemSize.width + horizontalSectionSpacing)
+    }
+
+    private func yOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
+        let cumulativeContentHeight = CGFloat(indexPath.item) * itemSize.height
+        let cumulativeSpacingHeight = CGFloat(indexPath.item) * itemSpacing
+        return yOffset(forSection: indexPath.section) + cumulativeContentHeight + cumulativeSpacingHeight
+    }
+
+    private func yOffset(forSection section: Int) -> CGFloat {
+        let row = section / numberOfColumns
+        let cumulativeContentHeight = maximumSectionHeight * CGFloat(row)
+        let cumulativeSpacingHeight = verticalSectionSpacing * CGFloat(row)
+        return contentPadding + cumulativeContentHeight + cumulativeSpacingHeight
+    }
+
+    // MARK: Item size
+
+    private var itemSize: CGSize {
+        guard let collectionView = collectionView else { return .zero }
+        let totalAvailableWidth = collectionView.bounds.width - contentPadding * 2
+        let totalSpacingWidth = horizontalSectionSpacing * CGFloat(numberOfColumns - 1)
+        let totalContentWidth = totalAvailableWidth - totalSpacingWidth
+        let itemWidth = totalContentWidth / CGFloat(numberOfColumns)
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
+
+    // MARK: Section height
+
+    private var maximumSectionHeight: CGFloat {
+        guard let collectionView = collectionView else { return 0 }
+        let sections = 0..<collectionView.numberOfSections
+        let sectionHeights = sections.map(heightForSection)
+        return sectionHeights.max() ?? 0
+    }
+
+    private func heightForSection(section: Int) -> CGFloat {
+        guard let collectionView = collectionView else { return 0 }
+        let numberOfItems = collectionView.numberOfItems(inSection: section)
+        let itemHeight = CGFloat(numberOfItems) * itemSize.height
+        let verticalItemSpacing = CGFloat(numberOfItems - 1) * itemSpacing
+        return itemHeight + verticalItemSpacing
+    }
+
+    // MARK: Layout invalidation
+
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        guard let collectionView = collectionView else { return false }
+        return collectionView.bounds != newBounds
+    }
+
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        let frameOffset = frameOffsetForLayoutAttributes(at: indexPath)
+        let frame = CGRect(origin: frameOffset, size: itemSize)
+        return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame)
+    }
+
+}
+
+private extension UICollectionView {
+
+    var indexPaths: [IndexPath] {
+        let sections = 0..<numberOfSections
+        return sections.flatMap(indexPaths)
+    }
+
+    func indexPaths(forSection section: Int) -> [IndexPath] {
+        let items = 0..<self.numberOfItems(inSection: section)
+        return items.map { item in IndexPath(item: item, section: section) }
+    }
+
+}
+
+private extension UICollectionViewLayoutAttributes {
+
+    convenience init(indexPath: IndexPath, frame: CGRect) {
+        self.init(forCellWith: indexPath)
+        self.frame = frame
     }
 
 }
