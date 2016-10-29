@@ -10,19 +10,19 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     // MARK: Navigation controller delegate
 
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        let vc = viewController as? UICollectionViewController
-        vc?.collectionView?.delegate = vc
+        guard let destination = viewController as? UICollectionViewController else { return }
+        destination.collectionView?.delegate = destination
 
-        vc?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        destination.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
-        switch vc {
-        case let vc as ChartColumnViewController:
-            let column = (vc.selectedSection + 2) % 2
-            let row = vc.selectedSection / 2 + 1
+        switch destination {
+        case let destination as ChartColumnViewController:
+            let column = (destination.selectedSection + 2) % 2
+            let row = destination.selectedSection / 2 + 1
             let columnNames = ["A", "B"]
-            vc.navigationItem.title = "Row \(row) - Column \(columnNames[column])"
-        case let vc as ChartItemViewController:
-            vc.navigationItem.title = vc.item.title
+            destination.navigationItem.title = "Row \(row) - Column \(columnNames[column])"
+        case let destination as ChartItemViewController:
+            destination.navigationItem.title = destination.item.title
         default: break
         }
     }
