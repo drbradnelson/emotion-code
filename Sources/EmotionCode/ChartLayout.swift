@@ -28,6 +28,12 @@ final class ChartLayout: UICollectionViewLayout {
         return layoutAttributes.filter { layoutAttributes in layoutAttributes.frame.intersects(rect) }
     }
 
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        let frameOffset = frameOffsetForLayoutAttributes(at: indexPath)
+        let frame = CGRect(origin: frameOffset, size: itemSize)
+        return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame)
+    }
+
     private func frameOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGPoint {
         let xOffset = xOffsetForLayoutAttributes(at: indexPath)
         let yOffset = yOffsetForLayoutAttributes(at: indexPath)
@@ -78,19 +84,6 @@ final class ChartLayout: UICollectionViewLayout {
         let itemHeight = CGFloat(numberOfItems) * itemSize.height
         let verticalItemSpacing = CGFloat(numberOfItems - 1) * itemSpacing
         return itemHeight + verticalItemSpacing
-    }
-
-    // MARK: Layout invalidation
-
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
-        guard let collectionView = collectionView else { return false }
-        return collectionView.bounds != newBounds
-    }
-
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let frameOffset = frameOffsetForLayoutAttributes(at: indexPath)
-        let frame = CGRect(origin: frameOffset, size: itemSize)
-        return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame)
     }
 
 }
