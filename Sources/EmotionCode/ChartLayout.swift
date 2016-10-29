@@ -95,7 +95,7 @@ final class ChartLayout: UICollectionViewLayout {
 
 }
 
-private extension UICollectionView {
+extension UICollectionView {
 
     var indexPaths: [IndexPath] {
         let sections = 0..<numberOfSections
@@ -109,7 +109,7 @@ private extension UICollectionView {
 
 }
 
-private extension UICollectionViewLayoutAttributes {
+extension UICollectionViewLayoutAttributes {
 
     convenience init(indexPath: IndexPath, frame: CGRect) {
         self.init(forCellWith: indexPath)
