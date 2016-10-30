@@ -19,13 +19,19 @@ final class ChartColumnLayout: UICollectionViewLayout {
 
     private let verticalSectionSpacing: CGFloat = 20
 
-    // MARK: Content size
+    // MARK: Content frame
 
     override var collectionViewContentSize: CGSize {
         guard let collectionView = collectionView else { return .zero }
         let lastSection = collectionView.numberOfSections - 1
         let collectionViewContentHeight = yOffset(forSection: lastSection) + maximumSectionHeight
         return CGSize(width: collectionView.bounds.width * 2 - contentPadding, height: collectionViewContentHeight + verticalSectionSpacing)
+    }
+
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+        guard let section = collectionView?.indexPathsForSelectedItems?.first?.section else { return proposedContentOffset }
+        let y = yOffset(forSection: section) - verticalSectionSpacing - 64
+        return CGPoint(x: proposedContentOffset.x, y: y)
     }
 
     // MARK: Layout attributes
