@@ -112,7 +112,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="titleLabel" destination="5pi-m8-o3J" id="8Kz-PE-TLa"/>
-                                    <segue destination="nA3-HW-MGA" kind="show" identifier="ShowItem" id="KkP-qB-Mea"/>
+                                    <segue destination="3AH-pL-I16" kind="show" identifier="ShowItem" id="CGg-3t-EVr"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -127,63 +127,50 @@
             <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
         <!--Chart Item View Controller-->
-        <scene sceneID="iv6-g0-XKu">
+        <scene sceneID="ALC-mo-bBU">
             <objects>
-                <collectionViewController id="nA3-HW-MGA" customClass="ChartItemViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HhD-hv-Eai">
+                <collectionViewController id="3AH-pL-I16" customClass="ChartItemViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Tb9-J0-rsf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="9rJ-km-Bsh" customClass="ChartItemLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartItemLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="i4a-5d-ozG" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="0Ar-n8-7Da" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kym-aE-MF9">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdN-cs-x6t">
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-8N-fgh">
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="AMp-8N-fgh" secondAttribute="bottom" id="22w-B0-VMv"/>
-                                    <constraint firstItem="AMp-8N-fgh" firstAttribute="top" secondItem="Kym-aE-MF9" secondAttribute="bottom" constant="8" id="4ec-Uk-lNt"/>
-                                    <constraint firstItem="Kym-aE-MF9" firstAttribute="top" secondItem="i4a-5d-ozG" secondAttribute="topMargin" id="Ptt-Vo-eYm"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="Kym-aE-MF9" secondAttribute="trailing" id="Rb2-ME-mfU"/>
-                                    <constraint firstItem="Kym-aE-MF9" firstAttribute="leading" secondItem="i4a-5d-ozG" secondAttribute="leadingMargin" id="UhS-Jb-UuL"/>
-                                    <constraint firstItem="AMp-8N-fgh" firstAttribute="leading" secondItem="i4a-5d-ozG" secondAttribute="leadingMargin" id="aiV-QC-iPD"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="AMp-8N-fgh" secondAttribute="trailing" id="nZX-UX-yOZ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="cdN-cs-x6t" secondAttribute="bottom" id="2UU-fx-08d"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="cdN-cs-x6t" secondAttribute="trailing" id="aNt-Ip-5Xx"/>
+                                    <constraint firstItem="cdN-cs-x6t" firstAttribute="top" secondItem="0Ar-n8-7Da" secondAttribute="topMargin" id="fJj-Fr-ANc"/>
+                                    <constraint firstItem="cdN-cs-x6t" firstAttribute="leading" secondItem="0Ar-n8-7Da" secondAttribute="leadingMargin" id="iet-4G-Ec3"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="descriptionTextView" destination="AMp-8N-fgh" id="X0X-pD-OFb"/>
-                                    <outlet property="titleLabel" destination="Kym-aE-MF9" id="tu1-LY-IfQ"/>
+                                    <outlet property="titleLabel" destination="cdN-cs-x6t" id="Vf5-n5-rcd"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="nA3-HW-MGA" id="LmG-cT-SBz"/>
-                            <outlet property="delegate" destination="nA3-HW-MGA" id="6Pd-qb-q4e"/>
+                            <outlet property="dataSource" destination="3AH-pL-I16" id="T6X-A1-4bn"/>
+                            <outlet property="delegate" destination="3AH-pL-I16" id="hnf-qS-u5e"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <outlet property="collectionView" destination="HhD-hv-Eai" id="YcY-ir-dlP"/>
-                    </connections>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvP-hl-5RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJY-PR-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3624.8000000000002" y="525.78710644677665"/>
+            <point key="canvasLocation" x="3625" y="526"/>
         </scene>
     </scenes>
     <resources>

@@ -207,9 +207,6 @@
 			children = (
 				91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */,
 				B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */,
-				B6F8B1911DB499AE0015789A /* ChartLayout.swift */,
-				B657EC461DC5286900945B9B /* ChartColumnLayout.swift */,
-				B6352F4E1DC70C320060D752 /* ChartItemLayout.swift */,
 				B65C13F41DB0F518008B4A77 /* ChartViewController.swift */,
 				B65C13F81DB10EDD008B4A77 /* ChartColumnViewController.swift */,
 				B6BF17B31DBA0E11008657DF /* ChartItemViewController.swift */,
@@ -333,6 +330,7 @@
 				0F669F131D78AB66003AD410 /* BookPatches */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				E7BF74B01D4F607300AF6198 /* Models */,
+				B6352F501DC7144D0060D752 /* Layouts */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				91187B211D67768C0098A881 /* Views */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
@@ -365,6 +363,16 @@
 				915EEC531D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCodeUITests;
+			sourceTree = "<group>";
+		};
+		B6352F501DC7144D0060D752 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				B6F8B1911DB499AE0015789A /* ChartLayout.swift */,
+				B657EC461DC5286900945B9B /* ChartColumnLayout.swift */,
+				B6352F4E1DC70C320060D752 /* ChartItemLayout.swift */,
+			);
+			name = Layouts;
 			sourceTree = "<group>";
 		};
 		E7BF74B01D4F607300AF6198 /* Models */ = {

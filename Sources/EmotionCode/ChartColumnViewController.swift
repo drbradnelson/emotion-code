@@ -15,9 +15,10 @@ final class ChartColumnViewController: UICollectionViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? ChartItemViewController,
-            let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return }
+            let item = collectionView?.indexPathsForSelectedItems?.first?.item else { return }
 
-        destination.item = column.items[indexPath.item]
+        destination.useLayoutToLayoutNavigationTransitions = true
+        destination.item = column.items[item]
     }
 
 }
