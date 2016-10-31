@@ -1,20 +1,18 @@
 import UIKit
 
-final class ChartColumnLayout: UICollectionViewLayout {
+final class ChartItemLayout: UICollectionViewLayout {
 
     // MARK: Parametrization
 
     private let numberOfColumns = 2
     private let contentPadding: CGFloat = 20
-    private let itemSpacing: CGFloat = 10
+    private let itemSpacing: CGFloat = 20
 
     private func itemHeight(for section: Int) -> CGFloat {
         guard let collectionView = collectionView else { return 0 }
-        let numberOfItems = collectionView.numberOfItems(inSection: section)
         let totalPaddingHeight = contentPadding * 2
-        let totalSpacingHeight = itemSpacing * CGFloat(numberOfItems - 1)
-        let totalAvailableContentHeight = collectionView.visibleContentHeight - totalPaddingHeight - totalSpacingHeight
-        return totalAvailableContentHeight / CGFloat(numberOfItems)
+        let totalAvailableContentHeight = collectionView.visibleContentHeight - totalPaddingHeight
+        return totalAvailableContentHeight
     }
 
     private let verticalSectionSpacing: CGFloat = 20
@@ -29,8 +27,8 @@ final class ChartColumnLayout: UICollectionViewLayout {
     }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
-        guard let section = collectionView?.indexPathsForSelectedItems?.first?.section else { return proposedContentOffset }
-        let y = yOffset(forSection: section) - verticalSectionSpacing - 64
+        guard let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return proposedContentOffset }
+        let y = yOffsetForLayoutAttributes(at: indexPath) - itemSpacing - 64
         return CGPoint(x: proposedContentOffset.x, y: y)
     }
 
@@ -101,14 +99,6 @@ final class ChartColumnLayout: UICollectionViewLayout {
         let totalItemHeight = CGFloat(numberOfItems) * itemHeight(for: section)
         let totalVerticalItemSpacing = CGFloat(numberOfItems - 1) * itemSpacing
         return totalItemHeight + totalVerticalItemSpacing
-    }
-
-}
-
-extension UICollectionView {
-
-    var visibleContentHeight: CGFloat {
-        return bounds.height - contentInset.top - contentInset.bottom
     }
 
 }
