@@ -29,8 +29,9 @@ final class ChartColumnLayout: UICollectionViewLayout {
     }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
-        guard let section = collectionView?.indexPathsForSelectedItems?.first?.section else { return proposedContentOffset }
-        let y = yOffset(forSection: section) - verticalSectionSpacing - 64
+        guard let collectionView = collectionView,
+            let section = collectionView.indexPathsForSelectedItems?.first?.section else { return proposedContentOffset }
+        let y = yOffset(forSection: section) - verticalSectionSpacing - collectionView.contentInset.top
         return CGPoint(x: proposedContentOffset.x, y: y)
     }
 
