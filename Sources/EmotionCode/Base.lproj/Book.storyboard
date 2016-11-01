@@ -32,6 +32,7 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dRs-Se-HEv"/>
                                     </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                     <state key="normal" title="Chapter"/>
                                     <connections>
                                         <segue destination="0M1-OL-JCf" kind="presentation" identifier="ShowChapterSelectionSegue" id="OHk-3O-gIM"/>
