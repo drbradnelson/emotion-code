@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="1361" y="526"/>
         </scene>
-        <!--Chart-->
+        <!--Emotion Chart-->
         <scene sceneID="4Hi-Im-B0S">
             <objects>
                 <collectionViewController id="rEs-Oe-nW8" customClass="ChartViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,14 +44,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDv-NB-PTM">
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
@@ -80,7 +80,7 @@
                             <outlet property="delegate" destination="rEs-Oe-nW8" id="AZJ-dd-Ika"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Chart" id="Max-Y6-eov"/>
+                    <navigationItem key="navigationItem" title="Emotion Chart" id="Max-Y6-eov"/>
                     <connections>
                         <outlet property="collectionView" destination="fzJ-tm-ABD" id="xoP-uf-srl"/>
                     </connections>
