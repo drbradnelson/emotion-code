@@ -12,11 +12,17 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         descriptionTextView.text = item.description
     }
 
-    func toggle() {
-        let alpha = titleLabel.alpha
-        UIView.animate(withDuration: 0.2) {
-            self.titleLabel.alpha = abs(alpha - 1)
-            self.descriptionTextView.alpha = alpha
+    func showTitle() {
+        UIView.animate(withDuration: 0.4) {
+            self.titleLabel.alpha = 1
+            self.descriptionTextView.alpha = 0
+        }
+    }
+
+    func showDescription() {
+        self.titleLabel.alpha = 0
+        UIView.animate(withDuration: 0.4) {
+            self.descriptionTextView.alpha = 1
         }
     }
 
