@@ -18,8 +18,8 @@ final class ChartViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.preferredReuseIdentifier, for: indexPath) as! ItemCollectionViewCell
-        let title = columns[indexPath.section].items[indexPath.item].title
-        cell.configure(title: title)
+        let item = columns[indexPath.section].items[indexPath.item]
+        cell.configure(item: item)
         return cell
     }
 

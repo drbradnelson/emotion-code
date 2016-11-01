@@ -7,13 +7,17 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     static let preferredReuseIdentifier = "ItemCell"
 
-    func configure(title: String) {
-        titleLabel.text = title
-    }
-
     func configure(item: Chart.Item) {
         titleLabel.text = item.title
         descriptionTextView.text = item.description
+    }
+
+    func toggle() {
+        let alpha = titleLabel.alpha
+        UIView.animate(withDuration: 0.2) {
+            self.titleLabel.alpha = abs(alpha - 1)
+            self.descriptionTextView.alpha = alpha
+        }
     }
 
 }
