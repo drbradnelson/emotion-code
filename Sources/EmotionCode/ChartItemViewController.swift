@@ -4,6 +4,11 @@ final class ChartItemViewController: UICollectionViewController {
 
     var item: Chart.Item!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.title = item.title
+    }
+
     private var itemCell: ItemCollectionViewCell? {
         guard let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return nil }
         return collectionView?.cellForItem(at: indexPath) as? ItemCollectionViewCell

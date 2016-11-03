@@ -13,19 +13,7 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
         guard let destination = viewController as? UICollectionViewController else { return }
         destination.collectionView?.delegate = destination
         destination.collectionView?.isScrollEnabled = destination is ChartViewController
-
         destination.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-
-        switch destination {
-        case let destination as ChartColumnViewController:
-            let column = (destination.selectedSection + 2) % 2
-            let row = destination.selectedSection / 2 + 1
-            let columnNames = ["A", "B"]
-            destination.navigationItem.title = "Row \(row) - Column \(columnNames[column])"
-        case let destination as ChartItemViewController:
-            destination.navigationItem.title = destination.item.title
-        default: break
-        }
     }
 
 }
