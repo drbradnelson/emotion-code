@@ -28,8 +28,6 @@ final class ChartViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? ChartColumnViewController,
             let section = collectionView?.indexPathsForSelectedItems?.first?.section else { return }
-
-        destination.useLayoutToLayoutNavigationTransitions = true
         destination.column = columns[section]
         destination.selectedSection = section
     }

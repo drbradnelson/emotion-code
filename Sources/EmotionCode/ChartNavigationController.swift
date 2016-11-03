@@ -7,6 +7,13 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
         delegate = self
     }
 
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if let collectionViewController = viewController as? UICollectionViewController {
+            collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
+        }
+        super.pushViewController(viewController, animated: animated)
+    }
+
     // MARK: Navigation controller delegate
 
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
