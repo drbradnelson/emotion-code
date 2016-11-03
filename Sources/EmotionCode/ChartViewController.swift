@@ -2,23 +2,21 @@ import UIKit
 
 final class ChartViewController: UICollectionViewController {
 
-    private let columns = ChartController().chart.rows.reduce([]) { columns, row in
-        columns + row.columns
-    }
+    private let chartColumns = ChartController().chart.columns
 
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return columns.count
+        return chartColumns.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return columns[section].items.count
+        return chartColumns[section].items.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.preferredReuseIdentifier, for: indexPath) as! ItemCollectionViewCell
-        let item = columns[indexPath.section].items[indexPath.item]
+        let item = chartColumns[indexPath.section].items[indexPath.item]
         cell.configure(item: item)
         return cell
     }
@@ -40,7 +38,7 @@ final class ChartViewController: UICollectionViewController {
         guard let section = collectionView?.indexPathForSelectedItem?.section else {
             preconditionFailure()
         }
-        destination.column = columns[section]
+        destination.column = chartColumns[section]
         destination.selectedSection = section
     }
 

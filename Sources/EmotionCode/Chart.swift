@@ -17,4 +17,8 @@ struct Chart {
 
     let rows: [Row]
 
+    var columns: [Column] {
+        return rows.flatMap { row in row.columns }
+    }
+
 }
