@@ -2,22 +2,23 @@ import UIKit
 
 final class ChartViewController: UICollectionViewController {
 
-    private let chartSections = ChartController().chart.sections
+    private let chart = ChartController().chart
 
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return chartSections.count
+        return chart.numberOfGroups
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chartSections[section].items.count
+        return chart.group(atIndex: section).emotions.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.preferredReuseIdentifier, for: indexPath) as! ItemCollectionViewCell
-        let item = chartSections[indexPath.section].items[indexPath.item]
-        cell.configure(item: item)
+        let chartGroup = chart.group(atIndex: indexPath.section)
+        let emotion = chartGroup.emotions[indexPath.item]
+        cell.configure(with: emotion)
         return cell
     }
 
@@ -39,7 +40,7 @@ final class ChartViewController: UICollectionViewController {
             preconditionFailure()
         }
         destination.setTitle(forSection: section)
-        destination.column = chartSections[section]
+        destination.group = chart.group(atIndex: section)
     }
 
 }

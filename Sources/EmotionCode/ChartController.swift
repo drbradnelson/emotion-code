@@ -12,42 +12,42 @@ final class ChartController {
         guard let chartArray = NSArray(contentsOf: URL) else {
             preconditionFailure("Unable to load chart file")
         }
-        return chartWith(array: chartArray)
+        return makeChart(with: chartArray)
     }
 
-    private static func chartWith(array: NSArray) -> Chart {
-        guard let rowArrays = array as? [NSArray] else {
-            preconditionFailure("Unable to find chart rows")
+    private static func makeChart(with array: NSArray) -> Chart {
+        guard let columnArrays = array as? [NSArray] else {
+            preconditionFailure("Unable to find chart columns")
         }
-        let rows = rowArrays.map(chartRowWith)
-        return Chart(rows: rows)
+        let columns = columnArrays.map(makeChartColumn)
+        return Chart(columns: columns)
     }
 
-    private static func chartRowWith(array: NSArray) -> Chart.Row {
-        guard let sectionArrays = array as? [NSArray] else {
-            preconditionFailure("Unable to find chart sections")
+    private static func makeChartColumn(with array: NSArray) -> Chart.Column {
+        guard let groupArrays = array as? [NSArray] else {
+            preconditionFailure("Unable to find chart groups")
         }
-        let sections = sectionArrays.map(chartSectionWith)
-        return Chart.Row(sections: sections)
+        let groups = groupArrays.map(makeChartGroup)
+        return Chart.Column(groups: groups)
     }
 
-    private static func chartSectionWith(array: NSArray) -> Chart.Section {
-        guard let itemDictionaries = array as? [NSDictionary] else {
-            preconditionFailure("Unable to find chart items")
+    private static func makeChartGroup(with array: NSArray) -> Chart.Group {
+        guard let emotionDictionaries = array as? [NSDictionary] else {
+            preconditionFailure("Unable to find chart emotions")
         }
-        let items = itemDictionaries.map(chartItemWith)
-        return Chart.Section(items: items)
+        let emotions = emotionDictionaries.map(makeChartEmotion)
+        return Chart.Group(emotions: emotions)
     }
 
-    private static func chartItemWith(dictionary: NSDictionary) -> Chart.Item {
-        guard let title = dictionary[itemTitleKey] as? String, let description = dictionary[itemDescriptionKey] as? String else {
-            preconditionFailure("Unable to parse chart item")
+    private static func makeChartEmotion(with dictionary: NSDictionary) -> Chart.Emotion {
+        guard let title = dictionary[emotionTitleKey] as? String, let description = dictionary[emotionDescriptionKey] as? String else {
+            preconditionFailure("Unable to parse chart emotion")
         }
-        return Chart.Item(title: title, description: description)
+        return Chart.Emotion(title: title, description: description)
     }
 
-    private static let itemTitleKey = "Title"
-    private static let itemDescriptionKey = "Description"
+    private static let emotionTitleKey = "Title"
+    private static let emotionDescriptionKey = "Description"
 
     // MARK: Chart URL
 

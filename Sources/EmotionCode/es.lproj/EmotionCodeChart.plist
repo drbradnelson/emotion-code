@@ -1,402 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Abandono</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Traición</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Desamparo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Perdido</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Amor sin recibir</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Esfuerzo no recibido</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Pena en el corazón</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Inseguridad</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Demasiada alegría</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Vulnerabilidad</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-	</array>
-	<array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Ansiedad</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Desesperación</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Asco</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Nerviosismo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Preocupación</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Fracaso</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Impotencia</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Desesperanza</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Falta de control</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Baja autoestima</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-	</array>
-	<array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Llanto</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Desanimo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Rechazo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Tristeza</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Pesar</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Confusión</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Actitud defensiva</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Dolor Profundo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Autolesión</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Obstinación</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-	</array>
-	<array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Ira</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Amargura</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Culpa</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Odio</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Resentimiento</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Depresión</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Frustración</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Indecisión</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Pánico</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>No valorado</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-	</array>
-	<array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Acusar</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Pavor</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Miedo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Horror</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Fastidio</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Conflicto</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Inseguridad creativa</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Terror</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Sin apoyo</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Falta de personalidad</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-	</array>
-	<array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Humillación</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Celos</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Nostalgia</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Lujuria</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Agobio</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-		<array>
-			<dict>
-				<key>Title</key>
-				<string>Soberbia</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Vergüenza</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Shock</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Indignidad</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-			<dict>
-				<key>Title</key>
-				<string>Desprecio</string>
-				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-			</dict>
-		</array>
-	</array>
-</array>
+    <array>
+        <array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Abandono</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Traición</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Desamparo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Perdido</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Amor sin recibir</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Ansiedad</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Desesperación</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Asco</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Nerviosismo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Preocupación</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Llanto</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Desanimo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Rechazo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Tristeza</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Pesar</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Ira</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Amargura</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Culpa</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Odio</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Resentimiento</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Acusar</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Pavor</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Miedo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Horror</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Fastidio</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Humillación</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Celos</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Nostalgia</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Lujuria</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Agobio</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+        </array>
+        <array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Esfuerzo no recibido</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Pena en el corazón</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Inseguridad</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Demasiada alegría</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Vulnerabilidad</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Fracaso</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Impotencia</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Desesperanza</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Falta de control</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Baja autoestima</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Confusión</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Actitud defensiva</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Dolor Profundo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Autolesión</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Obstinación</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Depresión</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Frustración</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Indecisión</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Pánico</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>No valorado</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Conflicto</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Inseguridad creativa</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Terror</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Sin apoyo</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Falta de personalidad</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>Title</key>
+                    <string>Soberbia</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Vergüenza</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Shock</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Indignidad</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+                <dict>
+                    <key>Title</key>
+                    <string>Desprecio</string>
+                    <key>Description</key>
+                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+                </dict>
+            </array>
+        </array>
+    </array>
 </plist>

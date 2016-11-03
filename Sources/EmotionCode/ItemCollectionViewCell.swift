@@ -7,23 +7,14 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     static let preferredReuseIdentifier = "ItemCell"
 
-    func configure(item: Chart.Item) {
-        titleLabel.text = item.title
-        descriptionTextView.text = item.description
+    func configure(with emotion: Chart.Emotion) {
+        titleLabel.text = emotion.title
+        descriptionTextView.text = emotion.description
     }
 
-    func showTitle() {
-        UIView.animate(withDuration: 0.4) {
-            self.titleLabel.alpha = 1
-            self.descriptionTextView.alpha = 0
-        }
-    }
-
-    func showDescription() {
-        self.titleLabel.alpha = 0
-        UIView.animate(withDuration: 0.4) {
-            self.descriptionTextView.alpha = 1
-        }
+    func setDescriptionVisible(_ visible: Bool) {
+        titleLabel.alpha = visible ? 0 : 1
+        descriptionTextView.alpha = visible ? 1 : 0
     }
 
 }

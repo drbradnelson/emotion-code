@@ -2,26 +2,33 @@ import UIKit
 
 final class ChartItemViewController: UICollectionViewController {
 
-    var item: Chart.Item!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationItem.title = item.title
+    func setTitle(for emotion: Chart.Emotion) {
+        navigationItem.title = emotion.title
     }
 
-    private var itemCell: ItemCollectionViewCell? {
-        guard let indexPath = collectionView?.indexPathForSelectedItem else { return nil }
-        return collectionView?.cellForItem(at: indexPath) as? ItemCollectionViewCell
-    }
+    // MARK: View lifecycle
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        itemCell?.showDescription()
+        animateDescriptionVisible(true)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        itemCell?.showTitle()
+        animateDescriptionVisible(false)
+    }
+
+    private func animateDescriptionVisible(_ descriptionVisible: Bool) {
+        transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
+            itemCell.setDescriptionVisible(descriptionVisible)
+            }, completion: nil)
+    }
+
+    // MARK: Cell
+
+    private var itemCell: ItemCollectionViewCell {
+        let indexPath = collectionView!.indexPathForSelectedItem!
+        return collectionView?.cellForItem(at: indexPath) as! ItemCollectionViewCell
     }
 
 }

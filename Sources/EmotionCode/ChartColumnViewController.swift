@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartColumnViewController: UICollectionViewController {
 
-    var column: Chart.Section!
+    var group: Chart.Group!
 
     // MARK: Title
 
@@ -33,7 +33,7 @@ final class ChartColumnViewController: UICollectionViewController {
         guard let item = collectionView?.indexPathForSelectedItem?.item else {
             preconditionFailure()
         }
-        destination.item = column.items[item]
+        destination.setTitle(for: group.emotions[item])
     }
 
 }
