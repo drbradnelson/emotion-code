@@ -1,0 +1,59 @@
+8a9
+> 		<div class="chapter" id="0" style="display: none;">
+190a192,193
+> 		</div>
+> 		<div class="chapter" id="1" style="display: none;">
+486c489,490
+< 		<div class="_idGenObjectLayout-1">
+---
+> 		</div>
+> 		<div class="_idGenObjectLayout-1" style="display: none;">
+489a494
+> 		<div class="chapter" id="2" style="display: none;">
+820c825,826
+< 		<div id="_idContainer024" class="Basic-Text-Frame">
+---
+> 		</div>
+> 		<div id="_idContainer024" class="Basic-Text-Frame" style="display: none;">
+822a829
+> 		<div class="chapter" id="3" style="display: none;">
+1014a1022,1023
+> 		</div>
+> 		<div class="chapter" id="4" style="display: none;">
+1148c1157,1158
+< 		<div id="_idContainer035" class="Basic-Text-Frame">
+---
+> 		</div>
+> 		<div id="_idContainer035" class="Basic-Text-Frame" style="display: none;">
+1150a1161
+> 		<div class="chapter" id="5" style="display: none;">
+1364a1376,1379
+> 			</div>
+> 			</div>
+> 			<div class="chapter" id="6" style="display: none;">
+> 			<div class="Basic-Text-Frame">
+1732a1748,1749
+> 		</div>
+> 		<div class="chapter" id="7" style="display: none;">
+2051a2069,2070
+> 		</div>
+> 		<div class="chapter" id="8" style="display: none;">
+2272a2292,2293
+> 		</div>
+> 		<div class="chapter" id="9" style="display: none;">
+2398c2419,2423
+< 			<p class="Part">Part IV <br /><br /><br />A Brighter Future</p>
+---
+> 			</div>
+> 			</div>
+> 			<p class="Part" style="display: none;">Part IV <br /><br /><br />A Brighter Future</p>
+> 			<div class="chapter" id="10" style="display: none;">
+> 			<div class="Basic-Text-Frame">
+2574a2600,2601
+> 		</div>
+> 		<div class="chapter" id="11" style="display: none;">
+2643a2671,2672
+> 		</div>
+> 		<div class="chapter" id="12" style="display: none;">
+3108a3138
+> 		</div>

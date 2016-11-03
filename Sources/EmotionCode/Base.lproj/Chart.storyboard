@@ -1,33 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1V-Tc-VYI">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Chart-->
-        <scene sceneID="SLh-DE-o7h">
-            <objects>
-                <viewController id="NJr-vB-XRf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="r3m-ds-jz3"/>
-                        <viewControllerLayoutGuide type="bottom" id="KEl-2v-8Iz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sHF-hw-VyN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Chart" id="pkG-bX-Aih"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4oX-Tv-8ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2083" y="526"/>
-        </scene>
-        <!--Chart-->
         <scene sceneID="v46-gz-OvS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J1V-Tc-VYI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J1V-Tc-VYI" customClass="ChartNavigationController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chart" image="Standard/Chart" selectedImage="Selected/Chart" id="xSv-EC-Guf"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -37,12 +23,119 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NJr-vB-XRf" kind="relationship" relationship="rootViewController" id="sET-XV-XBw"/>
+                        <segue destination="rEs-Oe-nW8" kind="relationship" relationship="rootViewController" id="nUx-3m-PUa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ops-Lz-xwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1361" y="526"/>
+        </scene>
+        <!--Emotion Chart-->
+        <scene sceneID="4Hi-Im-B0S">
+            <objects>
+                <collectionViewController id="rEs-Oe-nW8" customClass="ChartViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fzJ-tm-ABD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewLayout key="collectionViewLayout" id="2Lb-D5-bK2" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
+                                            <rect key="frame" x="8" y="8" width="135" height="24"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDv-NB-PTM">
+                                            <rect key="frame" x="8" y="8" width="135" height="24"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="0SO-Qc-Zk5"/>
+                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="2Zo-32-gu3"/>
+                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="FIJ-nM-ZuS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="OUH-O0-X2M"/>
+                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="bottom" secondItem="NsJ-MK-7ts" secondAttribute="bottomMargin" id="Pzd-RX-BDf"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="Qmp-St-7HD"/>
+                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="trailing" secondItem="NsJ-MK-7ts" secondAttribute="trailingMargin" id="Rrd-Z1-D9c"/>
+                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="zOO-hK-A8p"/>
+                                </constraints>
+                                <size key="customSize" width="151" height="40"/>
+                                <connections>
+                                    <outlet property="descriptionTextView" destination="VDv-NB-PTM" id="Yu8-UA-uFE"/>
+                                    <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
+                                    <segue destination="QSz-Q4-vOB" kind="show" identifier="ShowColumn" id="NQx-De-Kow"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="rEs-Oe-nW8" id="Sw5-WY-SXR"/>
+                            <outlet property="delegate" destination="rEs-Oe-nW8" id="AZJ-dd-Ika"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Emotion Chart" id="Max-Y6-eov"/>
+                    <connections>
+                        <outlet property="collectionView" destination="fzJ-tm-ABD" id="xoP-uf-srl"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBQ-ci-T9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
+        </scene>
+        <!--Chart Column View Controller-->
+        <scene sceneID="OTd-Lr-Dj3">
+            <objects>
+                <collectionViewController id="QSz-Q4-vOB" customClass="ChartColumnViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pq5-jn-5iV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewLayout key="collectionViewLayout" id="r6o-cU-aYY" customClass="ChartColumnLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="QSz-Q4-vOB" id="2eH-AU-bLf"/>
+                            <outlet property="delegate" destination="QSz-Q4-vOB" id="ZhF-VO-Po2"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="3AH-pL-I16" kind="show" identifier="ShowItem" id="WiV-ZG-j5d"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
+        </scene>
+        <!--Chart Item View Controller-->
+        <scene sceneID="ALC-mo-bBU">
+            <objects>
+                <collectionViewController id="3AH-pL-I16" customClass="ChartItemViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Tb9-J0-rsf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartItemLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="3AH-pL-I16" id="T6X-A1-4bn"/>
+                            <outlet property="delegate" destination="3AH-pL-I16" id="hnf-qS-u5e"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJY-PR-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="526"/>
         </scene>
     </scenes>
     <resources>

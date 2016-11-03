@@ -1,35 +1,27 @@
 import UIKit
 
-// MARK: Main
-
 final class BookChapterViewController: UIViewController {
 
     @IBOutlet private var bookChapterView: BookChapterView!
+
     var chapterIndex = 0
-    var chapterURL: NSURL?
+    var chapterURL: URL?
     var preferredTopLayoutGuide: CGFloat = 0
     var preferredBottomLayoutGuide: CGFloat = 0
 
-}
-
-// MARK: Factory method
-
-extension BookChapterViewController {
+    // MARK: Instantiating from storyboard
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
-        let storyboard = UIStoryboard(name: "Book", bundle: nil)
-        let storyboardIdentifier = String(BookChapterViewController.self)
-        guard let bookChapterViewController = storyboard.instantiateViewControllerWithIdentifier(storyboardIdentifier) as? BookChapterViewController else {
-            preconditionFailure("Unable to instantiate BookChapterViewController")
+        guard let bookChapterViewController = BookChapterViewController.preferredStoryboard.instantiateViewController(withIdentifier: BookChapterViewController.preferredStoryboardIdentifier) as? BookChapterViewController else {
+            preconditionFailure()
         }
         return bookChapterViewController
     }
 
-}
+    static let preferredStoryboard = UIStoryboard(name: "Book", bundle: nil)
+    static let preferredStoryboardIdentifier = String(describing: BookChapterViewController.self)
 
-// MARK: View lifecycle
-
-extension BookChapterViewController {
+    // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,22 +30,18 @@ extension BookChapterViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        bookChapterView?.setPreferredLayoutGuidesForTop(preferredTopLayoutGuide, forBottom: preferredBottomLayoutGuide)
+        bookChapterView.insetContent(top: preferredTopLayoutGuide, bottom: preferredBottomLayoutGuide)
     }
 
-}
-
-// MARK: Load chapter HTML
-
-private extension BookChapterViewController {
+    // MARK: Load chapter
 
     func loadChapter() {
         guard let chapterURL = chapterURL else { return }
         do {
-            let htmlString = try String(contentsOfURL: chapterURL)
+            let htmlString = try String(contentsOf: chapterURL)
             bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
-            preconditionFailure("Unable to load chapter HTML file")
+            preconditionFailure()
         }
     }
 

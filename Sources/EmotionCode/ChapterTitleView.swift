@@ -1,48 +1,36 @@
 import UIKit
 
-// MARK: Main
-
 final class ChapterTitleView: UIView {
+
+    // MARK: Chapter title button
 
     @IBOutlet private var chapterTitleButton: UIButton!
 
-}
+    // MARK: Chapter index
 
-// MARK: Chapter index
-
-extension ChapterTitleView {
-
-    func setChapterIndex(index: Int) {
-        let title = titleOfChapterWithIndex(index)
-        let decoratedTitle = decoratedTitleOfChapter(title)
-        chapterTitleButton.setTitle(decoratedTitle, forState: .Normal)
+    func setChapterIndex(_ index: Int) {
+        let title = titleOfChapter(at: index)
+        let decoratedTitle = decoratedChapterTitle(title)
+        chapterTitleButton.setTitle(decoratedTitle, for: UIControlState())
         chapterTitleButton.accessibilityLabel = title
         sizeToFit()
     }
 
-}
+    // MARK: Decorated chapter title
 
-// MARK: Decorated chapter title
-
-private extension ChapterTitleView {
-
-    func decoratedTitleOfChapter(title: String) -> String {
+    private func decoratedChapterTitle(_ title: String) -> String {
         return title + " " + titleDecorator
     }
 
-    var titleDecorator: String {
+    private var titleDecorator: String {
         return "▼"
     }
 
-}
+    // MARK: Chapter title
 
-// MARK: Chapter title
-
-extension ChapterTitleView {
-
-    func titleOfChapterWithIndex(index: Int) -> String {
+    func titleOfChapter(at index: Int) -> String {
         let format = NSLocalizedString("Chapter %i", comment: "")
-        return NSString.localizedStringWithFormat(format, index + 1) as String
+        return String.localizedStringWithFormat(format, index + 1)
     }
 
 }

@@ -1,73 +1,54 @@
 import Foundation
 
-// MARK: Main
-
 final class BookController {
+
+    // MARK: Book
 
     let book = BookController.bookAtURL(BookController.bookURL)
 
-}
+    // MARK: Book parser
 
-extension BookController {
-
-    func hasChapter(chapterIndex: Int) -> Bool {
-        return book.chapters.indices.contains(chapterIndex)
-    }
-
-}
-
-// MARK: Parser
-
-private extension BookController {
-
-    static func bookAtURL(URL: NSURL) -> Book {
-        guard let bookChapterArray = NSArray(contentsOfURL: URL) as? [[String: String]] else {
+    private static func bookAtURL(_ URL: Foundation.URL) -> Book {
+        guard let bookArray = NSArray(contentsOf: URL) as? [[String: String]] else {
             preconditionFailure("Unable to load book file")
         }
-        return bookWithChapterArray(bookChapterArray)
+        return bookWith(array: bookArray)
     }
 
-    static func bookWithChapterArray(array: [[String: String]]) -> Book {
-        let chapters = array.map(chapterWithDictionary)
+    private static func bookWith(array: [[String: String]]) -> Book {
+        let chapters = array.map(chapterWith)
         return Book(chapters: chapters)
     }
 
-    static func chapterWithDictionary(dictionary: [String: String]) -> BookChapter {
-        guard let title = dictionary[chapterTitleKey], fileName = dictionary[chapterFileNameKey] else {
+    private static func chapterWith(dictionary: [String: String]) -> Book.Chapter {
+        guard let title = dictionary[chapterTitleKey], let fileName = dictionary[chapterFileNameKey] else {
             preconditionFailure("Unable to parse book chapter")
         }
-        guard let fileURL =  NSBundle.mainBundle().URLForResource(fileName, withExtension: "html") else {
+        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "html") else {
             preconditionFailure("Unable to find book chapter file")
         }
-        return BookChapter(title: title, fileURL: fileURL)
+        return Book.Chapter(title: title, fileURL: fileURL)
     }
 
-}
+    private static let chapterTitleKey = "Title"
+    private static let chapterFileNameKey = "Filename"
 
-private extension BookController {
+    // MARK: Book URL
 
-    static let chapterTitleKey = "Title"
-    static let chapterFileNameKey = "Filename"
-
-}
-
-// MARK: Book URL
-
-private extension BookController {
-
-    static var bookURL: NSURL {
-        let bundle = NSBundle.mainBundle()
-        guard let bookURL = bundle.URLForResource(bookResource, withExtension: bookResourceExtension) else {
+    private static var bookURL: URL {
+        guard let bookURL = Bundle.main.url(forResource: bookResource, withExtension: bookResourceExtension) else {
             preconditionFailure("Unable to locate book file")
         }
         return bookURL
     }
 
-}
+    private static let bookResource = "BookChapters"
+    private static let bookResourceExtension = "plist"
 
-private extension BookController {
+    // MARK: Book chapter query
 
-    static let bookResource = "BookChapters"
-    static let bookResourceExtension = "plist"
+    func hasChapter(at index: Int) -> Bool {
+        return book.chapters.indices.contains(index)
+    }
 
 }

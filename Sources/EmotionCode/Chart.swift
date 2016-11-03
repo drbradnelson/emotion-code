@@ -1,32 +1,30 @@
-// MARK: Main
-
 struct Chart {
 
-    let columns: [ChartColumn]
+    let columns: [Column]
 
-}
+    struct Column {
+        let groups: [Group]
+    }
 
-// MARK: Column
+    struct Group {
+        let emotions: [Emotion]
+    }
 
-struct ChartColumn {
+    struct Emotion {
+        let title: String
+        let description: String
+    }
 
-    let rows: [ChartRow]
+    var numberOfGroups: Int {
+        return columns.reduce(0) { numberOfGroups, column in
+            numberOfGroups + column.groups.count
+        }
+    }
 
-}
-
-// MARK: Row
-
-struct ChartRow {
-
-    let items: [ChartItem]
-
-}
-
-// MARK: Item
-
-struct ChartItem {
-
-    let title: String
-    let description: String
+    func group(atIndex index: Int) -> Group {
+        let columnIndex = (index + columns.count) % columns.count
+        let groupIndex = index / columns.count
+        return columns[columnIndex].groups[groupIndex]
+    }
 
 }

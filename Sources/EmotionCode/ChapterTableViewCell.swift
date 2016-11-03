@@ -1,47 +1,32 @@
 import UIKit
 
-// MARK: Main
-
 final class ChapterTableViewCell: UITableViewCell {
 
+    // MARK: Chapter number
+
+    func setChapterNumber(_ number: Int) {
+        chapterNumberLabel.text = ChapterTableViewCell.numberFormatter.string(from: number as NSNumber)
+    }
+
     @IBOutlet private var chapterNumberLabel: UILabel!
+    private static let numberFormatter = NumberFormatter()
+
+    // MARK: Chapter title
+
+    func setChapterTitle(_ title: String) {
+        chapterTitleLabel.text = title
+    }
+
     @IBOutlet private var chapterTitleLabel: UILabel!
 
-}
+    // MARK: Chapter selection
 
-// MARK: Populating with location
-
-extension ChapterTableViewCell {
-
-    func setChapterNumber(chapterNumber: Int, chapterTitle: String) {
-        chapterNumberLabel.text = ChapterTableViewCell.numberFormatter.stringFromNumber(chapterNumber)
-        chapterTitleLabel.text = chapterTitle
+    func setChapterSelected(_ selected: Bool) {
+        accessoryType = selected ? .checkmark : .none
     }
 
-}
+    // MARK: Reuse identifier
 
-private extension ChapterTableViewCell {
-
-    static let numberFormatter = NSNumberFormatter()
-
-}
-
-// MARK: Accessory type
-
-extension ChapterTableViewCell {
-
-    func setChapterSelected(selected: Bool) {
-        accessoryType = selected ? .Checkmark : .None
-    }
-
-}
-
-// MARK: Reuse identifier
-
-extension ChapterTableViewCell {
-
-    static var preferredReuseIdentifier: String {
-        return "Chapter Cell"
-    }
+    static let preferredReuseIdentifier = "Chapter Cell"
 
 }
