@@ -3,20 +3,15 @@ import UIKit
 final class ChartColumnViewController: UICollectionViewController {
 
     var column: Chart.Column!
-    var selectedSection: Int!
 
-    // MARK: View lifecycle
+    // MARK: Title
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateTitle()
-    }
-
-    private func updateTitle() {
-        let column = (selectedSection + 2) % 2
-        let row = selectedSection / 2 + 1
-        let columnNames = ["A", "B"]
-        navigationItem.title = "Row \(row) - Column \(columnNames[column])" // Localize
+    func setTitle(forSection section: Int) {
+        let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
+        let row = section / ChartLayout.numberOfColumns + 1
+        let columnName = ["A", "B"][column] // Temporary
+        let localizedFormat = NSLocalizedString("Row %i - Column %@", comment: "")
+        navigationItem.title = String.localizedStringWithFormat(localizedFormat, row, columnName)
     }
 
     // MARK: Collection view delegate

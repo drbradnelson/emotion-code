@@ -38,8 +38,8 @@ final class ChartViewController: UICollectionViewController {
         guard let section = collectionView?.indexPathForSelectedItem?.section else {
             preconditionFailure()
         }
+        destination.setTitle(forSection: section)
         destination.column = chartColumns[section]
-        destination.selectedSection = section
     }
 
 }
