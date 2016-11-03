@@ -1,5 +1,3 @@
-// MARK: Chart
-
 struct Chart {
 
     let columns: [Column]
