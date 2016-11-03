@@ -14,6 +14,18 @@ final class ChartColumnViewController: UICollectionViewController {
         navigationItem.title = String.localizedStringWithFormat(localizedFormat, row, columnName)
     }
 
+    // MARK: View lifecycle
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        layoutCellsAlongsideTransition()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        layoutCellsAlongsideTransition()
+    }
+
     // MARK: Collection view delegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -4,6 +4,18 @@ final class ChartViewController: UICollectionViewController {
 
     private let chart = ChartController().chart
 
+    // MARK: View lifecycle
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView?.isScrollEnabled = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        collectionView?.isScrollEnabled = false
+    }
+
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -2,16 +2,19 @@ import UIKit
 
 final class ChartNavigationController: UINavigationController, UINavigationControllerDelegate {
 
+    // MARK: View lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
     }
 
+    // MARK: Navigation stack
+
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if let collectionViewController = viewController as? UICollectionViewController {
             collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
             collectionViewController.collectionView?.delegate = collectionViewController
-            collectionViewController.collectionView?.isScrollEnabled = collectionViewController is ChartViewController
         }
         super.pushViewController(viewController, animated: animated)
     }

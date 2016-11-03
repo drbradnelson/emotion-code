@@ -10,15 +10,17 @@ final class ChartItemViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        animateDescriptionVisible(true)
+        setDescriptionVisibleAlongsideTransition(true)
+        layoutCellsAlongsideTransition()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        animateDescriptionVisible(false)
+        setDescriptionVisibleAlongsideTransition(false)
+        layoutCellsAlongsideTransition()
     }
 
-    private func animateDescriptionVisible(_ descriptionVisible: Bool) {
+    private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
             itemCell.setDescriptionVisible(descriptionVisible)
             }, completion: nil)
