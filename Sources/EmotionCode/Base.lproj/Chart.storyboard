@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,11 +48,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
+                                            <rect key="frame" x="8" y="8" width="135" height="24"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDv-NB-PTM">
+                                            <rect key="frame" x="8" y="8" width="135" height="24"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -98,39 +103,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewLayout key="collectionViewLayout" id="r6o-cU-aYY" customClass="ChartColumnLayout" customModule="EmotionCode" customModuleProvider="target"/>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="Tuw-Wq-Wdv" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-m8-o3J">
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </view>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="5pi-m8-o3J" firstAttribute="leading" secondItem="Tuw-Wq-Wdv" secondAttribute="leadingMargin" id="ORQ-Rb-4C4"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="5pi-m8-o3J" secondAttribute="bottom" id="VnT-gH-uAn"/>
-                                    <constraint firstItem="5pi-m8-o3J" firstAttribute="top" secondItem="Tuw-Wq-Wdv" secondAttribute="topMargin" id="xoQ-8y-l4i"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="5pi-m8-o3J" secondAttribute="trailing" id="yKV-7r-CbU"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="titleLabel" destination="5pi-m8-o3J" id="8Kz-PE-TLa"/>
-                                    <segue destination="3AH-pL-I16" kind="show" identifier="ShowItem" id="CGg-3t-EVr"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="QSz-Q4-vOB" id="2eH-AU-bLf"/>
                             <outlet property="delegate" destination="QSz-Q4-vOB" id="ZhF-VO-Po2"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="3AH-pL-I16" kind="show" identifier="ShowItem" id="WiV-ZG-j5d"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,33 +126,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartItemLayout" customModule="EmotionCode" customModuleProvider="target"/>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="0Ar-n8-7Da" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdN-cs-x6t">
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </view>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="cdN-cs-x6t" secondAttribute="bottom" id="2UU-fx-08d"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="cdN-cs-x6t" secondAttribute="trailing" id="aNt-Ip-5Xx"/>
-                                    <constraint firstItem="cdN-cs-x6t" firstAttribute="top" secondItem="0Ar-n8-7Da" secondAttribute="topMargin" id="fJj-Fr-ANc"/>
-                                    <constraint firstItem="cdN-cs-x6t" firstAttribute="leading" secondItem="0Ar-n8-7Da" secondAttribute="leadingMargin" id="iet-4G-Ec3"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="titleLabel" destination="cdN-cs-x6t" id="Vf5-n5-rcd"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="3AH-pL-I16" id="T6X-A1-4bn"/>
                             <outlet property="delegate" destination="3AH-pL-I16" id="hnf-qS-u5e"/>
