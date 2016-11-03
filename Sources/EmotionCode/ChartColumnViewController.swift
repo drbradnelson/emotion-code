@@ -28,8 +28,16 @@ final class ChartColumnViewController: UICollectionViewController {
     // MARK: Storyboard segue
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? ChartItemViewController,
-            let item = collectionView?.indexPathsForSelectedItems?.first?.item else { return }
+        super.prepare(for: segue, sender: sender)
+        if let destination = segue.destination as? ChartItemViewController {
+            prepare(for: destination)
+        }
+    }
+
+    private func prepare(for destination: ChartItemViewController) {
+        guard let item = collectionView?.indexPathForSelectedItem?.item else {
+            preconditionFailure()
+        }
         destination.item = column.items[item]
     }
 

@@ -25,15 +25,23 @@ final class ChartViewController: UICollectionViewController {
 
     // MARK: Storyboard segue
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? ChartColumnViewController,
-            let section = collectionView?.indexPathsForSelectedItems?.first?.section else { return }
-        destination.column = columns[section]
-        destination.selectedSection = section
-    }
-
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         return collectionView?.collectionViewLayout is ChartLayout
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let destination = segue.destination as? ChartColumnViewController {
+            prepare(for: destination)
+        }
+    }
+
+    private func prepare(for destination: ChartColumnViewController) {
+        guard let section = collectionView?.indexPathForSelectedItem?.section else {
+            preconditionFailure()
+        }
+        destination.column = columns[section]
+        destination.selectedSection = section
     }
 
 }

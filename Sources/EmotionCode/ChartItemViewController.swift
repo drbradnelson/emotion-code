@@ -10,7 +10,7 @@ final class ChartItemViewController: UICollectionViewController {
     }
 
     private var itemCell: ItemCollectionViewCell? {
-        guard let indexPath = collectionView?.indexPathsForSelectedItems?.first else { return nil }
+        guard let indexPath = collectionView?.indexPathForSelectedItem else { return nil }
         return collectionView?.cellForItem(at: indexPath) as? ItemCollectionViewCell
     }
 
