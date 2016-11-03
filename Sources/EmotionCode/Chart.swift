@@ -3,10 +3,10 @@
 struct Chart {
 
     struct Row {
-        let columns: [Column]
+        let sections: [Section]
     }
 
-    struct Column {
+    struct Section {
         let items: [Item]
     }
 
@@ -17,8 +17,8 @@ struct Chart {
 
     let rows: [Row]
 
-    var columns: [Column] {
-        return rows.flatMap { row in row.columns }
+    var sections: [Section] {
+        return rows.flatMap { row in row.sections }
     }
 
 }

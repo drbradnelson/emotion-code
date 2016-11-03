@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartColumnViewController: UICollectionViewController {
 
-    var column: Chart.Column!
+    var column: Chart.Section!
 
     // MARK: Title
 
