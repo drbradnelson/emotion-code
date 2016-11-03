@@ -4,7 +4,8 @@ final class ChartLayout: UICollectionViewLayout {
 
     // MARK: Parametrization
 
-    private let numberOfColumns = 2
+    static let numberOfColumns = 2
+
     private let contentPadding: CGFloat = 10
     private let itemSpacing: CGFloat = 5
     private let itemHeight: CGFloat = 30
@@ -41,7 +42,7 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     private func xOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
-        let column = (indexPath.section + numberOfColumns) % numberOfColumns
+        let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
         return contentPadding + CGFloat(column) * (itemSize.width + horizontalSectionSpacing)
     }
 
@@ -52,7 +53,7 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     private func yOffset(forSection section: Int) -> CGFloat {
-        let row = section / numberOfColumns
+        let row = section / ChartLayout.numberOfColumns
         let cumulativeContentHeight = maximumSectionHeight * CGFloat(row)
         let cumulativeSpacingHeight = verticalSectionSpacing * CGFloat(row)
         return contentPadding + cumulativeContentHeight + cumulativeSpacingHeight
@@ -63,9 +64,9 @@ final class ChartLayout: UICollectionViewLayout {
     private var itemSize: CGSize {
         guard let collectionView = collectionView else { return .zero }
         let totalAvailableWidth = collectionView.bounds.width - contentPadding * 2
-        let totalSpacingWidth = horizontalSectionSpacing * CGFloat(numberOfColumns - 1)
+        let totalSpacingWidth = horizontalSectionSpacing * CGFloat(ChartLayout.numberOfColumns - 1)
         let totalContentWidth = totalAvailableWidth - totalSpacingWidth
-        let itemWidth = totalContentWidth / CGFloat(numberOfColumns)
+        let itemWidth = totalContentWidth / CGFloat(ChartLayout.numberOfColumns)
         return CGSize(width: itemWidth, height: itemHeight)
     }
 

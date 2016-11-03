@@ -4,7 +4,6 @@ final class ChartColumnLayout: UICollectionViewLayout {
 
     // MARK: Parametrization
 
-    private let numberOfColumns = 2
     private let contentPadding: CGFloat = 20
     private let itemSpacing: CGFloat = 10
 
@@ -25,7 +24,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
         guard let collectionView = collectionView else { return .zero }
         let lastSection = collectionView.numberOfSections - 1
         let collectionViewContentHeight = yOffset(forSection: lastSection) + maximumSectionHeight
-        return CGSize(width: collectionView.bounds.width * 2 - contentPadding, height: collectionViewContentHeight + verticalSectionSpacing)
+        return CGSize(width: collectionView.bounds.width * CGFloat(ChartLayout.numberOfColumns) - contentPadding, height: collectionViewContentHeight + verticalSectionSpacing)
     }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
@@ -57,7 +56,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
     }
 
     private func xOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
-        let column = (indexPath.section + numberOfColumns) % numberOfColumns
+        let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
         return contentPadding + CGFloat(column) * (itemWidth + contentPadding)
     }
 
@@ -69,7 +68,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
     }
 
     private func yOffset(forSection section: Int) -> CGFloat {
-        let row = section / numberOfColumns
+        let row = section / ChartLayout.numberOfColumns
         let cumulativeContentHeight = maximumSectionHeight * CGFloat(row)
         let cumulativeSpacingHeight = verticalSectionSpacing * CGFloat(row)
         return verticalSectionSpacing + cumulativeContentHeight + cumulativeSpacingHeight
