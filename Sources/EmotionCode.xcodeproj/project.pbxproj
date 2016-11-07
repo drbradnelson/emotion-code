@@ -65,6 +65,8 @@
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
+		91A430401DD0DF08004D466E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
+		91A430411DD0DF08004D466E /* AudioBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */; };
 		91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */; };
 		91AD7CE41D534D2500FBEBF7 /* TabNavigationBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */; };
@@ -96,6 +98,20 @@
 			remoteInfo = EmotionCode;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91A430421DD0DF08004D466E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91A430411DD0DF08004D466E /* AudioBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F0FB5961D7DE65800546BD0 /* css-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-en.patch"; sourceTree = "<group>"; };
@@ -164,6 +180,7 @@
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
 		91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
 		91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationBookTests.swift; sourceTree = "<group>"; };
@@ -192,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A430401DD0DF08004D466E /* AudioBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +332,7 @@
 			children = (
 				915EEC3B1D460CE1005CC318 /* EmotionCode */,
 				915EEC501D460CE1005CC318 /* EmotionCodeUITests */,
+				91A430431DD0DF0E004D466E /* Frameworks */,
 				915EEC3A1D460CE1005CC318 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -370,6 +389,14 @@
 			path = EmotionCodeUITests;
 			sourceTree = "<group>";
 		};
+		91A430431DD0DF0E004D466E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A4303F1DD0DF08004D466E /* AudioBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6352F501DC7144D0060D752 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +432,7 @@
 				915EEC351D460CE1005CC318 /* Sources */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
+				91A430421DD0DF08004D466E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -817,6 +845,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
@@ -830,6 +862,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
