@@ -2,6 +2,9 @@ import UIKit
 
 final class ChartHeaderView: UICollectionReusableView {
 
+    static let kindColumnHeader = "ColumnKind"
+    static let kindRowHeader = "RowKind"
+
     private let titleLabel = UILabel()
 
     override func layoutSubviews() {
