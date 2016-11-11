@@ -40,6 +40,23 @@ final class ChartViewController: UICollectionViewController {
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case ChartHeaderView.kindColumnHeader:
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kind, for: indexPath) as! ChartHeaderView
+            let alphabet = ["A", "B"]
+            view.configure(title: alphabet[(indexPath.section + 2) % 2])
+            return view
+        case ChartHeaderView.kindRowHeader:
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kind, for: indexPath) as! ChartHeaderView
+            let index = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
+            view.configure(title: "\(index)")
+            return view
+        default:
+            return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kind, for: indexPath)
+        }
+    }
+
     // MARK: Storyboard segue
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
