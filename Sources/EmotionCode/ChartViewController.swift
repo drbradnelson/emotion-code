@@ -6,6 +6,12 @@ final class ChartViewController: UICollectionViewController {
 
     // MARK: View lifecycle
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView?.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindColumnHeader, withReuseIdentifier: ChartHeaderView.kindColumnHeader)
+        collectionView?.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindRowHeader, withReuseIdentifier: ChartHeaderView.kindRowHeader)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView?.isScrollEnabled = true
