@@ -104,11 +104,3 @@ final class ChartColumnLayout: UICollectionViewLayout {
     }
 
 }
-
-extension UICollectionView {
-
-    var visibleContentHeight: CGFloat {
-        return bounds.height - contentInset.top - contentInset.bottom
-    }
-
-}
