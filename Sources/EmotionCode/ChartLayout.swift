@@ -26,8 +26,8 @@ final class ChartLayout: UICollectionViewLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let collectionView = collectionView else { return nil }
         let items = collectionView.indexPaths.flatMap(layoutAttributesForItem)
-        let columnHeaders = collectionView.indexPaths.flatMap { layoutAttributesForSupplementaryView(ofKind: ChartHeaderView.kindColumnHeader, at: $0) }
-        let rowHeaders = collectionView.indexPaths.flatMap { layoutAttributesForSupplementaryView(ofKind: ChartHeaderView.kindRowHeader, at: $0) }
+        let columnHeaders = collectionView.indexPaths.flatMap(layoutAttributesForColumnHeader)
+        let rowHeaders = collectionView.indexPaths.flatMap(layoutAttributesForRowHeader)
         return (items + columnHeaders + rowHeaders).filter { layoutAttributes in layoutAttributes.frame.intersects(rect) }
     }
 
