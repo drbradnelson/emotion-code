@@ -92,9 +92,9 @@ final class ChartLayout: UICollectionViewLayout {
     private func heightForSection(section: Int) -> CGFloat {
         guard let collectionView = collectionView else { return 0 }
         let numberOfItems = collectionView.numberOfItems(inSection: section)
-        let itemHeight = CGFloat(numberOfItems) * itemSize.height
+        let totalItemHeights = CGFloat(numberOfItems) * itemHeight
         let verticalItemSpacing = CGFloat(numberOfItems - 1) * itemSpacing
-        return itemHeight + verticalItemSpacing
+        return totalItemHeights + verticalItemSpacing
     }
 
 }
