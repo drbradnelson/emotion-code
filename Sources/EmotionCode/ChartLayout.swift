@@ -59,6 +59,16 @@ final class ChartLayout: UICollectionViewLayout {
         return contentPadding + cumulativeContentHeight + cumulativeSpacingHeight
     }
 
+    // MARK: Headers size
+
+    private var columnHeaderSize: CGSize {
+        return CGSize(width: itemSize.width, height: contentPadding)
+    }
+
+    private var rowHeaderSize: CGSize {
+        return CGSize(width: contentPadding, height: maximumSectionHeight)
+    }
+
     // MARK: Item size
 
     private var itemSize: CGSize {
