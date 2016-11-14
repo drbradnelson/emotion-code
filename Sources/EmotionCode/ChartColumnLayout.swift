@@ -24,7 +24,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
         guard let collectionView = collectionView else { return .zero }
         let lastSection = collectionView.numberOfSections - 1
         let collectionViewContentHeight = yOffset(forSection: lastSection) + maximumSectionHeight
-        return CGSize(width: collectionView.bounds.width * CGFloat(ChartLayout.numberOfColumns) - contentPadding, height: collectionViewContentHeight + verticalSectionSpacing)
+        return CGSize(width: collectionView.bounds.width * CGFloat(ChartLayout.numberOfColumns) - contentPadding + rowHeaderSize(forSection: 0).width, height: collectionViewContentHeight + verticalSectionSpacing)
     }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
@@ -61,7 +61,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
 
     private func xOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
         let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
-        return contentPadding + CGFloat(column) * (itemWidth + contentPadding)
+        return contentPadding + rowHeaderSize(forSection: indexPath.section).width + CGFloat(column) * (itemWidth + contentPadding)
     }
 
     private func yOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
@@ -75,7 +75,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
         let row = section / ChartLayout.numberOfColumns
         let cumulativeContentHeight = maximumSectionHeight * CGFloat(row)
         let cumulativeSpacingHeight = verticalSectionSpacing * CGFloat(row)
-        return verticalSectionSpacing + cumulativeContentHeight + cumulativeSpacingHeight
+        return verticalSectionSpacing + columnHeaderSize(forSection: section).height + cumulativeContentHeight + cumulativeSpacingHeight
     }
 
     // MARK: Layout attributes for headers
@@ -119,13 +119,13 @@ final class ChartColumnLayout: UICollectionViewLayout {
     // MARK: Headers size
 
     private func columnHeaderSize(forSection section: Int) -> CGSize {
-        let sectionItemSize = itemSize(forSection: section)
-        return CGSize(width: itemWidth, height: sectionItemSize.height * 1.5)
+        let height = itemHeight(forSection: section)
+        return CGSize(width: itemWidth, height: height * 1.5)
     }
 
     private func rowHeaderSize(forSection section: Int) -> CGSize {
-        let sectionItemSize = itemSize(forSection: section)
-        return CGSize(width: sectionItemSize.height * 1.5, height: maximumSectionHeight)
+        let height = itemHeight(forSection: section)
+        return CGSize(width: height * 1.5, height: maximumSectionHeight)
     }
 
     // MARK: Item size
