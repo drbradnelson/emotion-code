@@ -38,9 +38,13 @@ final class ChartColumnLayout: UICollectionViewLayout {
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let collectionView = collectionView else { return nil }
-        let layoutAttributes = collectionView.indexPaths.flatMap(layoutAttributesForItem)
-        return layoutAttributes.filter { layoutAttributes in layoutAttributes.frame.intersects(rect) }
+        let items = collectionView.indexPaths.flatMap(layoutAttributesForItem)
+        let columnHeaders = collectionView.indexPaths.flatMap(layoutAttributesForColumnHeader)
+        let rowHeaders = collectionView.indexPaths.flatMap(layoutAttributesForRowHeader)
+        return (items + columnHeaders + rowHeaders).filter { layoutAttributes in layoutAttributes.frame.intersects(rect) }
     }
+
+    // MARK: Layout attributes for item
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let frameOffset = frameOffsetForLayoutAttributes(at: indexPath)
@@ -72,6 +76,56 @@ final class ChartColumnLayout: UICollectionViewLayout {
         let cumulativeContentHeight = maximumSectionHeight * CGFloat(row)
         let cumulativeSpacingHeight = verticalSectionSpacing * CGFloat(row)
         return verticalSectionSpacing + cumulativeContentHeight + cumulativeSpacingHeight
+    }
+
+    // MARK: Layout attributes for headers
+
+    override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        switch elementKind {
+        case ChartHeaderView.kindColumnHeader:
+            return layoutAttributesForColumnHeader(at: indexPath)
+        case ChartHeaderView.kindRowHeader:
+            return layoutAttributesForRowHeader(at: indexPath)
+        default: return nil
+        }
+    }
+
+    private func layoutAttributesForColumnHeader(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        guard indexPath.section <= ChartLayout.numberOfColumns, indexPath.row == 0 else { return nil }
+        let frameOffset = frameOffsetForColumnHeader(at: indexPath)
+        let size = columnHeaderSize(forSection: indexPath.section)
+        let frame = CGRect(origin: frameOffset, size: size)
+        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartHeaderView.kindColumnHeader, with: indexPath, frame: frame)
+    }
+
+    private func layoutAttributesForRowHeader(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        guard (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns == 0 else { return nil }
+        let frameOffset = frameOffsetForRowHeader(at: indexPath)
+        let size = rowHeaderSize(forSection: indexPath.section)
+        let frame = CGRect(origin: frameOffset, size: size)
+        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartHeaderView.kindRowHeader, with: indexPath, frame: frame)
+    }
+
+    private func frameOffsetForColumnHeader(at indexPath: IndexPath) -> CGPoint {
+        let xOffset = xOffsetForLayoutAttributes(at: indexPath)
+        return CGPoint(x: xOffset, y: contentPadding)
+    }
+
+    private func frameOffsetForRowHeader(at indexPath: IndexPath) -> CGPoint {
+        let y = yOffset(forSection: indexPath.section)
+        return CGPoint(x: contentPadding, y: y)
+    }
+
+    // MARK: Headers size
+
+    private func columnHeaderSize(forSection section: Int) -> CGSize {
+        let sectionItemSize = itemSize(forSection: section)
+        return CGSize(width: itemWidth, height: sectionItemSize.height * 1.5)
+    }
+
+    private func rowHeaderSize(forSection section: Int) -> CGSize {
+        let sectionItemSize = itemSize(forSection: section)
+        return CGSize(width: sectionItemSize.height * 1.5, height: maximumSectionHeight)
     }
 
     // MARK: Item size
