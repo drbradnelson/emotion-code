@@ -7,7 +7,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
     private let contentPadding: CGFloat = 20
     private let itemSpacing: CGFloat = 10
 
-    private func itemHeight(for section: Int) -> CGFloat {
+    private func itemHeight(forSection section: Int) -> CGFloat {
         guard let collectionView = collectionView else { return 0 }
         let numberOfItems = collectionView.numberOfItems(inSection: section)
         let totalPaddingHeight = contentPadding * 2
@@ -65,7 +65,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
     }
 
     private func yOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
-        let height = itemHeight(for: indexPath.section)
+        let height = itemHeight(forSection: indexPath.section)
         let cumulativeContentHeight = CGFloat(indexPath.item) * height
         let cumulativeSpacingHeight = CGFloat(indexPath.item) * itemSpacing
         return yOffset(forSection: indexPath.section) + cumulativeContentHeight + cumulativeSpacingHeight
@@ -131,7 +131,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
     // MARK: Item size
 
     private func itemSize(forSection section: Int) -> CGSize {
-        let height = itemHeight(for: section)
+        let height = itemHeight(forSection: section)
         return CGSize(width: itemWidth, height: height)
     }
 
@@ -152,7 +152,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
     private func heightForSection(section: Int) -> CGFloat {
         guard let collectionView = collectionView else { return 0 }
         let numberOfItems = collectionView.numberOfItems(inSection: section)
-        let totalItemHeight = CGFloat(numberOfItems) * itemHeight(for: section)
+        let totalItemHeight = CGFloat(numberOfItems) * itemHeight(forSection: section)
         let totalVerticalItemSpacing = CGFloat(numberOfItems - 1) * itemSpacing
         return totalItemHeight + totalVerticalItemSpacing
     }
