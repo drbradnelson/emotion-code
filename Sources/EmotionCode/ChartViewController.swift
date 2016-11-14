@@ -45,7 +45,8 @@ final class ChartViewController: UICollectionViewController {
         case ChartHeaderView.kindColumnHeader:
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kind, for: indexPath) as! ChartHeaderView
             let alphabet = ["A", "B"]
-            view.configure(title: alphabet[(indexPath.section + 2) % 2])
+            let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
+            view.configure(title: alphabet[column])
             return view
         case ChartHeaderView.kindRowHeader:
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kind, for: indexPath) as! ChartHeaderView
