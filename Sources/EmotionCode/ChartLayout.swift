@@ -102,11 +102,11 @@ final class ChartLayout: UICollectionViewLayout {
     // MARK: Headers size
 
     private var columnHeaderSize: CGSize {
-        return CGSize(width: itemSize.width, height: itemHeight * 2)
+        return CGSize(width: itemSize.width, height: itemHeight * 1.5)
     }
 
     private var rowHeaderSize: CGSize {
-        return CGSize(width: itemHeight * 2, height: maximumSectionHeight)
+        return CGSize(width: itemHeight * 1.5, height: maximumSectionHeight)
     }
 
     // MARK: Item size
