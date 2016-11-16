@@ -18,7 +18,7 @@ final class ChartLayout: UICollectionViewLayout {
         guard let collectionView = collectionView else { return .zero }
         let lastSection = collectionView.numberOfSections - 1
         let collectionViewContentHeight = yOffset(forSection: lastSection) + maximumSectionHeight
-        return CGSize(width: collectionView.bounds.width, height: collectionViewContentHeight + contentPadding)
+        return CGSize(width: collectionView.bounds.width, height: collectionViewContentHeight + verticalSectionSpacing + contentPadding)
     }
 
     // MARK: Layout attributes
@@ -47,7 +47,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     private func xOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
         let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
-        return contentPadding + CGFloat(column) * (itemSize.width + horizontalSectionSpacing) + rowHeaderSize.width
+        return contentPadding + rowHeaderSize.width + horizontalSectionSpacing + CGFloat(column) * (itemSize.width + horizontalSectionSpacing)
     }
 
     private func yOffsetForLayoutAttributes(at indexPath: IndexPath) -> CGFloat {
@@ -60,7 +60,7 @@ final class ChartLayout: UICollectionViewLayout {
         let row = section / ChartLayout.numberOfColumns
         let cumulativeContentHeight = maximumSectionHeight * CGFloat(row)
         let cumulativeSpacingHeight = verticalSectionSpacing * CGFloat(row)
-        return contentPadding + columnHeaderSize.height + cumulativeContentHeight + cumulativeSpacingHeight
+        return contentPadding + columnHeaderSize.height + verticalSectionSpacing + cumulativeContentHeight + cumulativeSpacingHeight
     }
 
     // MARK: Layout attributes for headers
@@ -102,18 +102,18 @@ final class ChartLayout: UICollectionViewLayout {
     // MARK: Headers size
 
     private var columnHeaderSize: CGSize {
-        return CGSize(width: itemSize.width, height: 45)
+        return CGSize(width: itemSize.width, height: 30)
     }
 
     private var rowHeaderSize: CGSize {
-        return CGSize(width: 45, height: maximumSectionHeight)
+        return CGSize(width: 30, height: maximumSectionHeight)
     }
 
     // MARK: Item size
 
     private var itemSize: CGSize {
         guard let collectionView = collectionView else { return .zero }
-        let totalAvailableWidth = collectionView.bounds.width - contentPadding * 2 - rowHeaderSize.width
+        let totalAvailableWidth = collectionView.bounds.width - contentPadding * 2 - rowHeaderSize.width - horizontalSectionSpacing
         let totalSpacingWidth = horizontalSectionSpacing * CGFloat(ChartLayout.numberOfColumns - 1)
         let totalContentWidth = totalAvailableWidth - totalSpacingWidth
         let itemWidth = totalContentWidth / CGFloat(ChartLayout.numberOfColumns)
