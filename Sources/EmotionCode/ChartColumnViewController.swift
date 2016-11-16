@@ -10,8 +10,8 @@ final class ChartColumnViewController: UICollectionViewController {
         let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
         let row = section / ChartLayout.numberOfColumns + 1
         let columnName = ["A", "B"][column] // Temporary
-        let localizedFormat = NSLocalizedString("Row %i - Column %@", comment: "")
-        navigationItem.title = String.localizedStringWithFormat(localizedFormat, row, columnName)
+        let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
+        navigationItem.title = String.localizedStringWithFormat(localizedFormat, columnName, row)
     }
 
     // MARK: View lifecycle
