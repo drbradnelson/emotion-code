@@ -31,7 +31,7 @@ final class ChartLayout: UICollectionViewLayout {
         return (items + columnHeaders + rowHeaders).filter { layoutAttributes in layoutAttributes.frame.intersects(rect) }
     }
 
-    // MARK: Layout attributes for item
+    // MARK: Layout attributes for items
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let frameOffset = frameOffsetForLayoutAttributes(at: indexPath)
@@ -90,8 +90,8 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     private func frameOffsetForColumnHeader(at indexPath: IndexPath) -> CGPoint {
-        let xOffset = xOffsetForLayoutAttributes(at: indexPath)
-        return CGPoint(x: xOffset, y: contentPadding)
+        let x = xOffsetForLayoutAttributes(at: indexPath)
+        return CGPoint(x: x, y: contentPadding)
     }
 
     private func frameOffsetForRowHeader(at indexPath: IndexPath) -> CGPoint {
@@ -102,11 +102,11 @@ final class ChartLayout: UICollectionViewLayout {
     // MARK: Headers size
 
     private var columnHeaderSize: CGSize {
-        return CGSize(width: itemSize.width, height: itemHeight * 1.5)
+        return CGSize(width: itemSize.width, height: 45)
     }
 
     private var rowHeaderSize: CGSize {
-        return CGSize(width: itemHeight * 1.5, height: maximumSectionHeight)
+        return CGSize(width: 45, height: maximumSectionHeight)
     }
 
     // MARK: Item size
