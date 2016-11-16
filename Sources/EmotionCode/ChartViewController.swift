@@ -43,16 +43,16 @@ final class ChartViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case ChartHeaderView.kindColumnHeader:
-            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
+            let columnHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
             let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
             let columnName = ["A", "B"][column] // Temporary
-            view.configure(title: columnName)
-            return view
+            columnHeader.configure(title: columnName)
+            return columnHeader
         case ChartHeaderView.kindRowHeader:
-            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let index = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
-            view.configure(title: "\(index)")
-            return view
+            let rowHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
+            let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
+            rowHeader.configure(title: "\(row)")
+            return rowHeader
         default:
             return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "", for: indexPath)
         }
