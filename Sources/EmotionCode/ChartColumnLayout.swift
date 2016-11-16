@@ -106,12 +106,14 @@ final class ChartColumnLayout: UICollectionViewLayout {
 
     private func frameOffsetForColumnHeader(at indexPath: IndexPath) -> CGPoint {
         let x = xOffsetForLayoutAttributes(at: indexPath)
-        return CGPoint(x: x, y: contentPadding - columnHeaderSize.height)
+        let y = contentPadding - columnHeaderSize.height
+        return CGPoint(x: x, y: y)
     }
 
     private func frameOffsetForRowHeader(at indexPath: IndexPath) -> CGPoint {
+        let x = contentPadding - rowHeaderSize.width
         let y = yOffset(forSection: indexPath.section)
-        return CGPoint(x: contentPadding - rowHeaderSize.width, y: y)
+        return CGPoint(x: x, y: y)
     }
 
     // MARK: Headers size
