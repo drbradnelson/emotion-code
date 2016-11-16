@@ -5,6 +5,8 @@ final class ChartHeaderView: UICollectionReusableView {
     static let kindColumnHeader = "ColumnKind"
     static let kindRowHeader = "RowKind"
 
+    static let preferredReuseIdentifier = "ChartHeader"
+
     private let titleLabel = UILabel()
 
     override func layoutSubviews() {
