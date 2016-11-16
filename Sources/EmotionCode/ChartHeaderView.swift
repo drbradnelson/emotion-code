@@ -12,6 +12,7 @@ final class ChartHeaderView: UICollectionReusableView {
         titleLabel.frame = bounds
         titleLabel.textAlignment = .center
         titleLabel.font = .preferredFont(forTextStyle: .callout)
+        titleLabel.contentMode = .center
         addSubview(titleLabel)
     }
 
