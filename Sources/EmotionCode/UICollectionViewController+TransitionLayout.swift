@@ -8,7 +8,7 @@ extension UICollectionViewController {
         }, completion: nil)
     }
 
-    func layoutSupplementaryViewsAlongsideTransition(kinds: [String]) {
+    func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
         transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
             guard let collectionView = collectionView else { return }
             let supplementaryViews = kinds.flatMap(collectionView.visibleSupplementaryViews)
