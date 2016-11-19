@@ -84,7 +84,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
         switch elementKind {
         case ChartHeaderView.columnKind:
             return layoutAttributesForColumnHeader(at: indexPath)
-        case ChartHeaderView.kindRowHeader:
+        case ChartHeaderView.rowKind:
             return layoutAttributesForRowHeader(at: indexPath)
         default: return nil
         }
@@ -101,7 +101,7 @@ final class ChartColumnLayout: UICollectionViewLayout {
         guard (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns == 0 else { return nil }
         let frameOffset = frameOffsetForRowHeader(at: indexPath)
         let frame = CGRect(origin: frameOffset, size: rowHeaderSize)
-        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartHeaderView.kindRowHeader, with: indexPath, frame: frame)
+        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartHeaderView.rowKind, with: indexPath, frame: frame)
     }
 
     private func frameOffsetForColumnHeader(at indexPath: IndexPath) -> CGPoint {

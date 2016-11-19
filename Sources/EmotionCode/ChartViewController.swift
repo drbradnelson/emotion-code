@@ -9,7 +9,7 @@ final class ChartViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
-        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindRowHeader, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +48,7 @@ final class ChartViewController: UICollectionViewController {
             let columnName = ["A", "B"][column] // Temporary
             columnHeader.configure(title: columnName)
             return columnHeader
-        case ChartHeaderView.kindRowHeader:
+        case ChartHeaderView.rowKind:
             let rowHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
             let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
             rowHeader.configure(title: String(row))
