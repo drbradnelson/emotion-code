@@ -80,7 +80,7 @@ final class ChartItemLayout: UICollectionViewLayout {
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
-        case ChartHeaderView.kindColumnHeader:
+        case ChartHeaderView.columnKind:
             return layoutAttributesForColumnHeader(at: indexPath)
         case ChartHeaderView.kindRowHeader:
             return layoutAttributesForRowHeader(at: indexPath)
@@ -92,7 +92,7 @@ final class ChartItemLayout: UICollectionViewLayout {
         guard indexPath.section <= ChartLayout.numberOfColumns, indexPath.row == 0 else { return nil }
         let frameOffset = frameOffsetForColumnHeader(at: indexPath)
         let frame = CGRect(origin: frameOffset, size: columnHeaderSize)
-        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartHeaderView.kindColumnHeader, with: indexPath, frame: frame)
+        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ChartHeaderView.columnKind, with: indexPath, frame: frame)
     }
 
     private func layoutAttributesForRowHeader(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {

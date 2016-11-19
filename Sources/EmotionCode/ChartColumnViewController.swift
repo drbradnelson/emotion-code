@@ -19,13 +19,13 @@ final class ChartColumnViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.kindRowHeader, ChartHeaderView.kindColumnHeader])
+        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.kindRowHeader, ChartHeaderView.columnKind])
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.kindRowHeader, ChartHeaderView.kindColumnHeader])
+        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.kindRowHeader, ChartHeaderView.columnKind])
     }
 
     // MARK: Collection view delegate

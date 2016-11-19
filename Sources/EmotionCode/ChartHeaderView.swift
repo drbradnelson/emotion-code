@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartHeaderView: UICollectionReusableView {
 
-    static let kindColumnHeader = "ColumnKind"
+    static let columnKind = "ColumnKind"
     static let kindRowHeader = "RowKind"
 
     static let preferredReuseIdentifier = "ChartHeader"
