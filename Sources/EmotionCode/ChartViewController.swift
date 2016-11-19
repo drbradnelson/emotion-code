@@ -8,18 +8,18 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView?.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindColumnHeader, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
-        collectionView?.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindRowHeader, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindColumnHeader, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.kindRowHeader, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        collectionView?.isScrollEnabled = true
+        collectionView!.isScrollEnabled = true
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        collectionView?.isScrollEnabled = false
+        collectionView!.isScrollEnabled = false
     }
 
     // MARK: Collection view data source
@@ -61,7 +61,7 @@ final class ChartViewController: UICollectionViewController {
     // MARK: Storyboard segue
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return collectionView?.collectionViewLayout is ChartLayout
+        return collectionView!.collectionViewLayout is ChartLayout
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
