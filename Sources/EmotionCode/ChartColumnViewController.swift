@@ -9,7 +9,7 @@ final class ChartColumnViewController: UICollectionViewController {
     func setTitle(forSection section: Int) {
         let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
         let row = section / ChartLayout.numberOfColumns + 1
-        let columnName = ["A", "B"][column] // Temporary
+        let columnName = String.alphabet[column]
         let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
         navigationItem.title = String.localizedStringWithFormat(localizedFormat, columnName, row)
     }

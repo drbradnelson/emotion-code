@@ -83,6 +83,7 @@
 		B65C13F91DB10EDD008B4A77 /* ChartColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartColumnViewController.swift */; };
 		B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */; };
 		B6BF17B41DBA0E11008657DF /* ChartItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartItemViewController.swift */; };
+		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
 		B6F8B1921DB499AE0015789A /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8B1911DB499AE0015789A /* ChartLayout.swift */; };
 		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
@@ -183,6 +184,7 @@
 		B65C13F81DB10EDD008B4A77 /* ChartColumnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColumnViewController.swift; sourceTree = "<group>"; };
 		B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartNavigationController.swift; sourceTree = "<group>"; };
 		B6BF17B31DBA0E11008657DF /* ChartItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartItemViewController.swift; sourceTree = "<group>"; };
+		B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Alphabet.swift"; sourceTree = "<group>"; };
 		B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
 		B6F8B1911DB499AE0015789A /* ChartLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayout.swift; sourceTree = "<group>"; };
 		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				0F28D0C01D4E7659002C98E7 /* Shared */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
 				91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */,
+				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				910C68421D6AE193004E7E7F /* TabIcons.xcassets */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
@@ -602,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */,
 				B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */,
 				91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */,
 				0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */,
