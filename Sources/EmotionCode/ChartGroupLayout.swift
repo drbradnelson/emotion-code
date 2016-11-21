@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartColumnLayout: UICollectionViewLayout {
+final class ChartGroupLayout: UICollectionViewLayout {
 
     // MARK: Parametrization
 

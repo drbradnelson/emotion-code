@@ -77,7 +77,7 @@
 		91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */; };
 		91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */; };
 		B6352F4F1DC70C320060D752 /* ChartItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6352F4E1DC70C320060D752 /* ChartItemLayout.swift */; };
-		B657EC471DC5286900945B9B /* ChartColumnLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657EC461DC5286900945B9B /* ChartColumnLayout.swift */; };
+		B657EC471DC5286900945B9B /* ChartGroupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657EC461DC5286900945B9B /* ChartGroupLayout.swift */; };
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
 		B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */; };
 		B65C13F91DB10EDD008B4A77 /* ChartColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartColumnViewController.swift */; };
@@ -178,7 +178,7 @@
 		91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+TransitionLayout.swift"; sourceTree = "<group>"; };
 		91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		B6352F4E1DC70C320060D752 /* ChartItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartItemLayout.swift; sourceTree = "<group>"; };
-		B657EC461DC5286900945B9B /* ChartColumnLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColumnLayout.swift; sourceTree = "<group>"; };
+		B657EC461DC5286900945B9B /* ChartGroupLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartGroupLayout.swift; sourceTree = "<group>"; };
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartColumnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColumnViewController.swift; sourceTree = "<group>"; };
@@ -380,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F8B1911DB499AE0015789A /* ChartLayout.swift */,
-				B657EC461DC5286900945B9B /* ChartColumnLayout.swift */,
+				B657EC461DC5286900945B9B /* ChartGroupLayout.swift */,
 				B6352F4E1DC70C320060D752 /* ChartItemLayout.swift */,
 			);
 			name = Layouts;
@@ -610,7 +610,7 @@
 				91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */,
 				0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */,
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
-				B657EC471DC5286900945B9B /* ChartColumnLayout.swift in Sources */,
+				B657EC471DC5286900945B9B /* ChartGroupLayout.swift in Sources */,
 				B6F8B1921DB499AE0015789A /* ChartLayout.swift in Sources */,
 				B6352F4F1DC70C320060D752 /* ChartItemLayout.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
