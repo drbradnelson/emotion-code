@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartColumnViewController: UICollectionViewController {
+final class ChartGroupViewController: UICollectionViewController {
 
     var group: Chart.Group!
 

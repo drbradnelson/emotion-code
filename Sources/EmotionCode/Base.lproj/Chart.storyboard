@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>
-        <!--Chart Column View Controller-->
+        <!--Chart Group View Controller-->
         <scene sceneID="OTd-Lr-Dj3">
             <objects>
-                <collectionViewController id="QSz-Q4-vOB" customClass="ChartColumnViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="QSz-Q4-vOB" customClass="ChartGroupViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pq5-jn-5iV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
