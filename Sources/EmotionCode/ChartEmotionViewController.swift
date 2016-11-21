@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartItemViewController: UICollectionViewController {
+final class ChartEmotionViewController: UICollectionViewController {
 
     func setTitle(for emotion: Chart.Emotion) {
         navigationItem.title = emotion.title

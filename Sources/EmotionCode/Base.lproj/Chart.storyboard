@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
-        <!--Chart Item View Controller-->
+        <!--Chart Emotion View Controller-->
         <scene sceneID="ALC-mo-bBU">
             <objects>
-                <collectionViewController id="3AH-pL-I16" customClass="ChartItemViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="3AH-pL-I16" customClass="ChartEmotionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Tb9-J0-rsf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
