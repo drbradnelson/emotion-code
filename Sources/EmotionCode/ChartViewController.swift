@@ -6,14 +6,20 @@ final class ChartViewController: UICollectionViewController {
 
     // MARK: View lifecycle
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        collectionView?.isScrollEnabled = true
+        collectionView!.isScrollEnabled = true
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        collectionView?.isScrollEnabled = false
+        collectionView!.isScrollEnabled = false
     }
 
     // MARK: Collection view data source
@@ -34,10 +40,28 @@ final class ChartViewController: UICollectionViewController {
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case ChartHeaderView.columnKind:
+            let columnHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
+            let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
+            let columnName = String.alphabet[column]
+            columnHeader.configure(title: columnName)
+            return columnHeader
+        case ChartHeaderView.rowKind:
+            let rowHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
+            let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
+            rowHeader.configure(title: String(row))
+            return rowHeader
+        default:
+            return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "", for: indexPath)
+        }
+    }
+
     // MARK: Storyboard segue
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return collectionView?.collectionViewLayout is ChartLayout
+        return collectionView!.collectionViewLayout is ChartLayout
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -9,9 +9,9 @@ final class ChartColumnViewController: UICollectionViewController {
     func setTitle(forSection section: Int) {
         let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
         let row = section / ChartLayout.numberOfColumns + 1
-        let columnName = ["A", "B"][column] // Temporary
-        let localizedFormat = NSLocalizedString("Row %i - Column %@", comment: "")
-        navigationItem.title = String.localizedStringWithFormat(localizedFormat, row, columnName)
+        let columnName = String.alphabet[column]
+        let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
+        navigationItem.title = String.localizedStringWithFormat(localizedFormat, columnName, row)
     }
 
     // MARK: View lifecycle
@@ -19,11 +19,13 @@ final class ChartColumnViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
+        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()
+        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
     // MARK: Collection view delegate
