@@ -125,7 +125,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartItemLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartEmotionLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="3AH-pL-I16" id="T6X-A1-4bn"/>

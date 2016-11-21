@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartItemLayout: UICollectionViewLayout {
+final class ChartEmotionLayout: UICollectionViewLayout {
 
     // MARK: Parametrization
 
