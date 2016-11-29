@@ -66,12 +66,12 @@ final class ChartViewController: UICollectionViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let destination = segue.destination as? ChartColumnViewController {
+        if let destination = segue.destination as? ChartGroupViewController {
             prepare(for: destination)
         }
     }
 
-    private func prepare(for destination: ChartColumnViewController) {
+    private func prepare(for destination: ChartGroupViewController) {
         guard let section = collectionView?.indexPathForSelectedItem?.section else {
             preconditionFailure()
         }

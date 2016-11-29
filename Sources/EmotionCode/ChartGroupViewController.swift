@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartColumnViewController: UICollectionViewController {
+final class ChartGroupViewController: UICollectionViewController {
 
     var group: Chart.Group!
 
@@ -38,12 +38,12 @@ final class ChartColumnViewController: UICollectionViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let destination = segue.destination as? ChartItemViewController {
+        if let destination = segue.destination as? ChartEmotionViewController {
             prepare(for: destination)
         }
     }
 
-    private func prepare(for destination: ChartItemViewController) {
+    private func prepare(for destination: ChartEmotionViewController) {
         guard let item = collectionView?.indexPathForSelectedItem?.item else {
             preconditionFailure()
         }
