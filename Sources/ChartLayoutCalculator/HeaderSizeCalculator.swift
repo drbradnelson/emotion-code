@@ -14,6 +14,7 @@ public extension HeaderSizeCalculator {
     var rowHeaderSize: Size {
         return Size(width: Self.headerSize.width, height: maximumSectionHeight)
     }
+
 }
 
 extension HeaderSizeCalculator {
