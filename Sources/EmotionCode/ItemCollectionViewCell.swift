@@ -7,6 +7,9 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     static let preferredReuseIdentifier = "ItemCell"
 
+    private static let oddRowColor = UIColor(red: 0.56, green: 0.78, blue: 0.78, alpha: 1)
+    private static let evenRowColor = UIColor(red: 0.66, green: 0.88, blue: 0.98, alpha: 1)
+
     func configure(with emotion: Chart.Emotion) {
         titleLabel.text = emotion.title
         descriptionTextView.text = emotion.description
