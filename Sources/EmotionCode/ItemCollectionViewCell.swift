@@ -15,6 +15,12 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         descriptionTextView.text = emotion.description
     }
 
+    func setBackgroundColor(for indexPath: IndexPath) {
+        let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
+        let isRowEven = (row % ChartLayout.numberOfColumns == 0)
+        backgroundColor = isRowEven ? ItemCollectionViewCell.evenRowColor : ItemCollectionViewCell.oddRowColor
+    }
+
     func setDescriptionVisible(_ visible: Bool) {
         titleLabel.alpha = visible ? 0 : 1
         descriptionTextView.alpha = visible ? 1 : 0
