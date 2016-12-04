@@ -13,7 +13,7 @@ public extension SectionSpacingCalculator {
     var verticalSectionSpacing: Float {
         switch mode {
         case .all: return 15
-        case .group, .emotion: return 20
+        case .section, .emotion: return 20
         }
     }
 

@@ -26,17 +26,17 @@ final class ChartViewController: UICollectionViewController {
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return chart.numberOfGroups
+        return chart.numberOfSections
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chart.group(atIndex: section).emotions.count
+        return chart.section(atIndex: section).emotions.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.preferredReuseIdentifier, for: indexPath) as! ItemCollectionViewCell
-        let chartGroup = chart.group(atIndex: indexPath.section)
-        let emotion = chartGroup.emotions[indexPath.item]
+        let chartSection = chart.section(atIndex: indexPath.section)
+        let emotion = chartSection.emotions[indexPath.item]
         cell.configure(with: emotion)
         return cell
     }
@@ -60,24 +60,24 @@ final class ChartViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowGroup", sender: self)
+        performSegue(withIdentifier: "ShowSection", sender: self)
     }
 
     // MARK: Storyboard segue
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let destination = segue.destination as? ChartGroupViewController {
+        if let destination = segue.destination as? ChartSectionViewController {
             prepare(for: destination)
         }
     }
 
-    private func prepare(for destination: ChartGroupViewController) {
+    private func prepare(for destination: ChartSectionViewController) {
         guard let section = collectionView?.indexPathForSelectedItem?.section else {
             preconditionFailure()
         }
         destination.setTitle(forSection: section)
-        destination.group = chart.group(atIndex: section)
+        destination.section = chart.section(atIndex: section)
     }
 
 }

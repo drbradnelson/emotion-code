@@ -20,7 +20,7 @@ public extension HeaderPositionCalculator {
         let y: Float
         switch mode {
         case .all: y = contentPadding
-        case .group, .emotion: y = contentPadding - columnHeaderSize.height
+        case .section, .emotion: y = contentPadding - columnHeaderSize.height
         }
         return Point(x: x, y: y)
     }
@@ -29,7 +29,7 @@ public extension HeaderPositionCalculator {
         let x: Float
         switch mode {
         case .all: x = contentPadding
-        case .group, .emotion: x = contentPadding - rowHeaderSize.width
+        case .section, .emotion: x = contentPadding - rowHeaderSize.width
         }
         let y = yPosition(forSection: indexPath.section)
         return Point(x: x, y: y)

@@ -1,9 +1,9 @@
 import UIKit
 import ChartLayoutCalculator
 
-final class ChartGroupViewController: UICollectionViewController {
+final class ChartSectionViewController: UICollectionViewController {
 
-    var group: Chart.Group!
+    var section: Chart.Section!
 
     // MARK: Title
 
@@ -48,18 +48,18 @@ final class ChartGroupViewController: UICollectionViewController {
         guard let item = collectionView?.indexPathForSelectedItem?.item else {
             preconditionFailure()
         }
-        destination.setTitle(for: group.emotions[item])
+        destination.setTitle(for: section.emotions[item])
     }
 
 }
 
-extension ChartGroupViewController: ChartPresenter {
+extension ChartSectionViewController: ChartPresenter {
 
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode {
         guard let selectedSection = collectionView.indexPathForSelectedItem?.section else {
             preconditionFailure()
         }
-        return .group(selectedSection)
+        return .section(selectedSection)
     }
 
 }

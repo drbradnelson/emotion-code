@@ -24,19 +24,19 @@ final class ChartController {
     }
 
     private static func makeChartColumn(with array: NSArray) -> Chart.Column {
-        guard let groupArrays = array as? [NSArray] else {
-            preconditionFailure("Unable to find chart groups")
+        guard let sectionArrays = array as? [NSArray] else {
+            preconditionFailure("Unable to find chart sections")
         }
-        let groups = groupArrays.map(makeChartGroup)
-        return Chart.Column(groups: groups)
+        let sections = sectionArrays.map(makeChartSection)
+        return Chart.Column(sections: sections)
     }
 
-    private static func makeChartGroup(with array: NSArray) -> Chart.Group {
+    private static func makeChartSection(with array: NSArray) -> Chart.Section {
         guard let emotionDictionaries = array as? [NSDictionary] else {
             preconditionFailure("Unable to find chart emotions")
         }
         let emotions = emotionDictionaries.map(makeChartEmotion)
-        return Chart.Group(emotions: emotions)
+        return Chart.Section(emotions: emotions)
     }
 
     private static func makeChartEmotion(with dictionary: NSDictionary) -> Chart.Emotion {
