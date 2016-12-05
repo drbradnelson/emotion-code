@@ -7,12 +7,12 @@ public protocol SectionSpacingCalculator {
 public extension SectionSpacingCalculator {
 
     static var horizontalSectionSpacing: Float {
-        return 15
+        return 5
     }
 
     var verticalSectionSpacing: Float {
         switch mode {
-        case .all: return 15
+        case .all: return 5
         case .group, .emotion: return 20
         }
     }
