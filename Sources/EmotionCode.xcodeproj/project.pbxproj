@@ -369,8 +369,8 @@
 			isa = PBXGroup;
 			children = (
 				B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */,
-				91187B221D6776A00098A881 /* ChapterTitleView.swift */,
 				B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */,
+				91187B221D6776A00098A881 /* ChapterTitleView.swift */,
 				0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */,
 				0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */,
 				0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */,
@@ -1117,6 +1117,7 @@
 				91F833FE1DEDD8F900F27AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -48,7 +48,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
-                                            <rect key="frame" x="8" y="8" width="135" height="24"/>
+                                            <rect key="frame" x="8" y="0.0" width="135" height="40"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -64,12 +64,12 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="0SO-Qc-Zk5"/>
-                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="2Zo-32-gu3"/>
                                     <constraint firstItem="VDv-NB-PTM" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="FIJ-nM-ZuS"/>
+                                    <constraint firstAttribute="bottom" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="O9r-lG-JT6"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="OUH-O0-X2M"/>
                                     <constraint firstItem="VDv-NB-PTM" firstAttribute="bottom" secondItem="NsJ-MK-7ts" secondAttribute="bottomMargin" id="Pzd-RX-BDf"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="Qmp-St-7HD"/>
                                     <constraint firstItem="VDv-NB-PTM" firstAttribute="trailing" secondItem="NsJ-MK-7ts" secondAttribute="trailingMargin" id="Rrd-Z1-D9c"/>
+                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="sa3-yn-Gdc"/>
                                     <constraint firstItem="VDv-NB-PTM" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="zOO-hK-A8p"/>
                                 </constraints>
                                 <size key="customSize" width="151" height="40"/>

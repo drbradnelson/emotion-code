@@ -9,7 +9,7 @@ public extension ItemSpacingCalculator {
 
     var itemSpacing: Float {
         switch mode {
-        case .all: return 5
+        case .all: return 0
         case .group: return 10
         case .emotion: return verticalSectionSpacing
         }
