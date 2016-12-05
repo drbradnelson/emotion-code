@@ -1,4 +1,5 @@
 import UIKit
+import ChartLayoutCalculator
 
 final class ChartGroupViewController: UICollectionViewController {
 
@@ -31,7 +32,7 @@ final class ChartGroupViewController: UICollectionViewController {
     // MARK: Collection view delegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowItem", sender: self)
+        performSegue(withIdentifier: "ShowEmotion", sender: self)
     }
 
     // MARK: Storyboard segue
@@ -48,6 +49,17 @@ final class ChartGroupViewController: UICollectionViewController {
             preconditionFailure()
         }
         destination.setTitle(for: group.emotions[item])
+    }
+
+}
+
+extension ChartGroupViewController: ChartPresenter {
+
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode {
+        guard let selectedSection = collectionView.indexPathForSelectedItem?.section else {
+            preconditionFailure()
+        }
+        return .group(selectedSection)
     }
 
 }

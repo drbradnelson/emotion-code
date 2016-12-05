@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -76,7 +76,6 @@
                                 <connections>
                                     <outlet property="descriptionTextView" destination="VDv-NB-PTM" id="Yu8-UA-uFE"/>
                                     <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
-                                    <segue destination="QSz-Q4-vOB" kind="show" identifier="ShowColumn" id="NQx-De-Kow"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -88,6 +87,7 @@
                     <navigationItem key="navigationItem" title="Emotion Chart" id="Max-Y6-eov"/>
                     <connections>
                         <outlet property="collectionView" destination="fzJ-tm-ABD" id="xoP-uf-srl"/>
+                        <segue destination="QSz-Q4-vOB" kind="show" identifier="ShowGroup" id="Jwd-zx-Av3"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBQ-ci-T9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="r6o-cU-aYY" customClass="ChartGroupLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <collectionViewLayout key="collectionViewLayout" id="r6o-cU-aYY" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="QSz-Q4-vOB" id="2eH-AU-bLf"/>
@@ -110,7 +110,7 @@
                         </connections>
                     </collectionView>
                     <connections>
-                        <segue destination="3AH-pL-I16" kind="show" identifier="ShowItem" id="WiV-ZG-j5d"/>
+                        <segue destination="3AH-pL-I16" kind="show" identifier="ShowEmotion" id="WiV-ZG-j5d"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +125,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartEmotionLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="3AH-pL-I16" id="T6X-A1-4bn"/>

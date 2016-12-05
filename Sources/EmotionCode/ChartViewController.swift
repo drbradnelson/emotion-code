@@ -1,4 +1,5 @@
 import UIKit
+import ChartLayoutCalculator
 
 final class ChartViewController: UICollectionViewController {
 
@@ -58,11 +59,11 @@ final class ChartViewController: UICollectionViewController {
         }
     }
 
-    // MARK: Storyboard segue
-
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return collectionView!.collectionViewLayout is ChartLayout
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ShowGroup", sender: self)
     }
+
+    // MARK: Storyboard segue
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -77,6 +78,14 @@ final class ChartViewController: UICollectionViewController {
         }
         destination.setTitle(forSection: section)
         destination.group = chart.group(atIndex: section)
+    }
+
+}
+
+extension ChartViewController: ChartPresenter {
+
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode {
+        return .all
     }
 
 }

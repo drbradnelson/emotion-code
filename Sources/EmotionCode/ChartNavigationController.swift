@@ -14,7 +14,14 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if let collectionViewController = viewController as? UICollectionViewController {
             collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
-            collectionViewController.collectionView?.delegate = collectionViewController
+            if let chartPresenter = viewController as? ChartPresenter {
+                let masterCollectionView = (viewControllers[0] as! UICollectionViewController).collectionView!
+
+                viewController.loadViewIfNeeded()
+                let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
+
+                chartLayout.mode = chartPresenter.chartLayoutMode(with: masterCollectionView)
+            }
         }
         super.pushViewController(viewController, animated: animated)
     }
