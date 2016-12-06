@@ -1,7 +1,7 @@
 import UIKit
-import ChartLayoutCalculator
+import ChartLayout
 
-class ChartLayout: UICollectionViewLayout, ChartLayoutCalculator {
+class ChartCollectionViewLayout: UICollectionViewLayout, ChartLayout {
 
     var numberOfSections: Int {
         return collectionView?.numberOfSections ?? 0

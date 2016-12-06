@@ -1,29 +1,29 @@
 import Foundation
 
-public protocol HeaderFrameCalculator {
+public protocol HeaderFrames {
 
-    func positionForColumnHeader(at indexPath: IndexPath) -> Point
-    func positionForRowHeader(at indexPath: IndexPath) -> Point
-
-    var columnHeaderSize: Size { get }
-    var rowHeaderSize: Size { get }
-
-    static var numberOfColumns: Int { get }
+    func frameForColumnHeader(at indexPath: IndexPath) -> Rect?
+    func frameForRowHeader(at indexPath: IndexPath) -> Rect?
 
 }
 
-public extension HeaderFrameCalculator {
+public extension HeaderFrames where Self: DefaultHeaderFrames {
 
     func frameForColumnHeader(at indexPath: IndexPath) -> Rect? {
         guard indexPath.section <= Self.numberOfColumns, indexPath.item == 0 else { return nil }
         let frameOffset = positionForColumnHeader(at: indexPath)
-        return Rect(origin: frameOffset, size: columnHeaderSize)
+        return Rect(origin: frameOffset, size: columnHeaderSizes)
     }
 
     func frameForRowHeader(at indexPath: IndexPath) -> Rect? {
         guard (indexPath.section + Self.numberOfColumns) % Self.numberOfColumns == 0 else { return nil }
         let frameOffset = positionForRowHeader(at: indexPath)
-        return Rect(origin: frameOffset, size: rowHeaderSize)
+        return Rect(origin: frameOffset, size: rowHeaderSizes)
     }
 
 }
+
+public typealias DefaultHeaderFrames = HeaderFrames
+    & HeaderPositions
+    & HeaderSizes
+    & NumberOfColumns

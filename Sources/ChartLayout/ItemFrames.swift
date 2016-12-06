@@ -1,15 +1,12 @@
 import Foundation
 
-public protocol ItemFrameCalculator {
+public protocol ItemFrames {
 
-    var itemWidth: Float { get }
-
-    func positionForItem(at indexPath: IndexPath) -> Point
-    func itemHeight(forSection section: Int) -> Float
+    func frameForItem(at indexPath: IndexPath) -> Rect
 
 }
 
-public extension ItemFrameCalculator {
+public extension ItemFrames where Self: DefaultItemFrames {
 
     func frameForItem(at indexPath: IndexPath) -> Rect {
         let frameOffset = positionForItem(at: indexPath)
@@ -19,3 +16,7 @@ public extension ItemFrameCalculator {
     }
 
 }
+
+public typealias DefaultItemFrames = ItemFrames
+    & ItemSizes
+    & ItemPositions

@@ -1,17 +1,12 @@
 import Foundation
 
-public protocol ChartContentOffsetCalculator {
+public protocol ChartContentOffset {
 
-    var mode: ChartLayoutMode { get }
-
-    func yPosition(forSection section: Int) -> Float
-    func yPositionForItem(at indexPath: IndexPath) -> Float
-
-    var verticalSectionSpacing: Float { get }
+    var verticalContentOffset: Float? { get }
 
 }
 
-public extension ChartContentOffsetCalculator {
+public extension ChartContentOffset where Self: DefaultChartContentOffset {
 
     var verticalContentOffset: Float? {
         switch mode {
@@ -24,3 +19,9 @@ public extension ChartContentOffsetCalculator {
     }
 
 }
+
+public typealias DefaultChartContentOffset = ChartContentOffset
+    & ChartMode
+    & SectionPositions
+    & SectionSpacing
+    & ItemPositions

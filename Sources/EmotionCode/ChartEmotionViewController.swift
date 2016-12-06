@@ -1,5 +1,5 @@
 import UIKit
-import ChartLayoutCalculator
+import ChartLayout
 
 final class ChartEmotionViewController: UICollectionViewController {
 
