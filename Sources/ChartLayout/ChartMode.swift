@@ -4,7 +4,7 @@ public enum ChartLayoutMode {
     case emotion(IndexPath)
 }
 
-public protocol ChartModeProvider {
+public protocol ChartMode {
 
     var mode: ChartLayoutMode { get }
 

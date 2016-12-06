@@ -1,5 +1,5 @@
 import UIKit
-import ChartLayoutCalculator
+import ChartLayout
 
 final class ChartSectionViewController: UICollectionViewController {
 
@@ -8,8 +8,8 @@ final class ChartSectionViewController: UICollectionViewController {
     // MARK: Title
 
     func setTitle(forSection section: Int) {
-        let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
-        let row = section / ChartLayout.numberOfColumns + 1
+        let column = (section + ChartCollectionViewLayout.numberOfColumns) % ChartCollectionViewLayout.numberOfColumns
+        let row = section / ChartCollectionViewLayout.numberOfColumns + 1
         let columnName = String.alphabet[column]
         let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
         navigationItem.title = String.localizedStringWithFormat(localizedFormat, columnName, row)

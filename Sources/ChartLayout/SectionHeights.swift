@@ -1,11 +1,11 @@
-public protocol SectionHeightCalculator {
+public protocol SectionHeights {
 
     func heightForSection(section: Int) -> Float
-    var maximumSectionHeight: Float { get }
+    var maximumSectionHeights: Float { get }
 
 }
 
-public extension SectionHeightCalculator where Self: DefaultSectionHeightCalculator {
+public extension SectionHeights where Self: DefaultSectionHeights {
 
     func heightForSection(section: Int) -> Float {
         let itemCount = numberOfItems(inSection: section)
@@ -14,7 +14,7 @@ public extension SectionHeightCalculator where Self: DefaultSectionHeightCalcula
         return totalItemHeights + verticalItemSpacing
     }
 
-    var maximumSectionHeight: Float {
+    var maximumSectionHeights: Float {
         let sections = 0..<numberOfSections
         let sectionHeights = sections.map(heightForSection)
         return sectionHeights.max() ?? 0
@@ -22,7 +22,7 @@ public extension SectionHeightCalculator where Self: DefaultSectionHeightCalcula
 
 }
 
-public typealias DefaultSectionHeightCalculator = SectionHeightCalculator
-    & ChartDataProvider
-    & ItemSpacingCalculator
-    & ItemSizeCalculator
+public typealias DefaultSectionHeights = SectionHeights
+    & ChartData
+    & ItemSpacing
+    & ItemSizes

@@ -18,7 +18,7 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
                 let masterCollectionView = (viewControllers[0] as! UICollectionViewController).collectionView!
 
                 viewController.loadViewIfNeeded()
-                let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
+                let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartCollectionViewLayout
 
                 chartLayout.mode = chartPresenter.chartLayoutMode(with: masterCollectionView)
             }

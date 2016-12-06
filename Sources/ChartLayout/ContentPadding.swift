@@ -1,10 +1,10 @@
-public protocol ContentPaddingProvider {
+public protocol ContentPadding {
 
     var contentPadding: Float { get }
 
 }
 
-public extension ContentPaddingProvider {
+public extension ContentPadding {
 
     var contentPadding: Float {
         return 10

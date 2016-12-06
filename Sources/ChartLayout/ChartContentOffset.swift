@@ -1,12 +1,12 @@
 import Foundation
 
-public protocol ChartContentOffsetCalculator {
+public protocol ChartContentOffset {
 
     var verticalContentOffset: Float? { get }
 
 }
 
-public extension ChartContentOffsetCalculator where Self: DefaultChartContentOffsetCalculator {
+public extension ChartContentOffset where Self: DefaultChartContentOffset {
 
     var verticalContentOffset: Float? {
         switch mode {
@@ -20,8 +20,8 @@ public extension ChartContentOffsetCalculator where Self: DefaultChartContentOff
 
 }
 
-public typealias DefaultChartContentOffsetCalculator = ChartContentOffsetCalculator
-    & ChartModeProvider
-    & SectionPositionCalculator
-    & SectionSpacingCalculator
-    & ItemPositionCalculator
+public typealias DefaultChartContentOffset = ChartContentOffset
+    & ChartMode
+    & SectionPositions
+    & SectionSpacing
+    & ItemPositions

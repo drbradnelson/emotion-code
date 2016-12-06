@@ -1,10 +1,10 @@
-public protocol NumberOfColumnsProvider {
+public protocol NumberOfColumns {
 
     static var numberOfColumns: Int { get }
 
 }
 
-public extension NumberOfSectionsProvider {
+public extension NumberOfSections {
 
     static var numberOfColumns: Int {
         return 2

@@ -1,11 +1,11 @@
-public protocol SectionSpacingCalculator {
+public protocol SectionSpacing {
 
     var horizontalSectionSpacing: Float { get }
     var verticalSectionSpacing: Float { get }
 
 }
 
-public extension SectionSpacingCalculator where Self: DefaultSectionSpacingCalculator {
+public extension SectionSpacing where Self: DefaultSectionSpacing {
 
     var horizontalSectionSpacing: Float {
         return 15
@@ -20,5 +20,5 @@ public extension SectionSpacingCalculator where Self: DefaultSectionSpacingCalcu
 
 }
 
-public typealias DefaultSectionSpacingCalculator = SectionSpacingCalculator
-    & ChartModeProvider
+public typealias DefaultSectionSpacing = SectionSpacing
+    & ChartMode
