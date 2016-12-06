@@ -31,7 +31,7 @@ public extension ItemPositionCalculator {
         let xPosition = contentPadding + rowHeaderSize.width
         switch mode {
         case .all: return xPosition + Self.horizontalSectionSpacing + Float(column) * (itemWidth + Self.horizontalSectionSpacing)
-        case .group, .emotion: return xPosition + Float(column) * (itemWidth + contentPadding)
+        case .section, .emotion: return xPosition + Float(column) * (itemWidth + contentPadding)
         }
     }
 

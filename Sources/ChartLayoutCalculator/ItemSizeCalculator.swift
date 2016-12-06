@@ -20,7 +20,7 @@ public extension ItemSizeCalculator {
     func itemHeight(forSection section: Int) -> Float {
         switch mode {
         case .all: return 30
-        case .group:
+        case .section:
             let itemCount = numberOfItems(inSection: section)
             let totalPaddingHeight = contentPadding * 2
             let totalSpacingHeight = itemSpacing * Float(itemCount - 1)
@@ -40,7 +40,7 @@ public extension ItemSizeCalculator {
             let totalSpacingWidth = Self.horizontalSectionSpacing * Float(Self.numberOfColumns - 1)
             let totalContentWidth = totalAvailableWidth - totalSpacingWidth
             return totalContentWidth / Float(Self.numberOfColumns)
-        case .group, .emotion:
+        case .section, .emotion:
             return viewWidth - contentPadding * 2
         }
     }

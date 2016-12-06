@@ -6,7 +6,7 @@ public typealias SectionCalculator = SectionHeightCalculator & SectionSpacingCal
 
 public enum ChartLayoutMode {
     case all
-    case group(Int)
+    case section(Int)
     case emotion(IndexPath)
 }
 
@@ -25,7 +25,7 @@ public extension ChartLayoutCalculator {
     var contentPadding: Float {
         switch mode {
         case .all: return 10
-        case .group, .emotion: return 20
+        case .section, .emotion: return 20
         }
     }
 
