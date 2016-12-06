@@ -1,21 +1,11 @@
 public protocol ItemSizeCalculator {
 
-    var mode: ChartLayoutMode { get }
-
-    var itemSpacing: Float { get }
-    var contentPadding: Float { get }
-    var rowHeaderSize: Size { get }
-    var visibleContentHeight: Float { get }
-    var viewWidth: Float { get }
-
-    static var horizontalSectionSpacing: Float { get }
-    static var numberOfColumns: Int { get }
-
-    func numberOfItems(inSection section: Int) -> Int
+    func itemHeight(forSection section: Int) -> Float
+    var itemWidth: Float { get }
 
 }
 
-public extension ItemSizeCalculator {
+public extension ItemSizeCalculator where Self: DefaultItemSizeCalculator {
 
     func itemHeight(forSection section: Int) -> Float {
         switch mode {
@@ -36,8 +26,8 @@ public extension ItemSizeCalculator {
     var itemWidth: Float {
         switch mode {
         case .all:
-            let totalAvailableWidth = viewWidth - contentPadding * 2 - rowHeaderSize.width - Self.horizontalSectionSpacing
-            let totalSpacingWidth = Self.horizontalSectionSpacing * Float(Self.numberOfColumns - 1)
+            let totalAvailableWidth = viewWidth - contentPadding * 2 - rowHeaderSize.width - horizontalSectionSpacing
+            let totalSpacingWidth = horizontalSectionSpacing * Float(Self.numberOfColumns - 1)
             let totalContentWidth = totalAvailableWidth - totalSpacingWidth
             return totalContentWidth / Float(Self.numberOfColumns)
         case .section, .emotion:
@@ -46,3 +36,13 @@ public extension ItemSizeCalculator {
     }
 
 }
+
+public typealias DefaultItemSizeCalculator = ItemSizeCalculator
+    & ChartModeProvider
+    & ContentPaddingProvider
+    & HeaderSizeCalculator
+    & ItemSpacingCalculator
+    & NumberOfColumnsProvider
+    & NumberOfItemsInSectionProvider
+    & SectionSpacingCalculator
+    & ViewSizeProvider

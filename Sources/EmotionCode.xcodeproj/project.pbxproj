@@ -61,6 +61,11 @@
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
 		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
+		914E95211DF6C7E3001BE402 /* ChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E95201DF6C7E3001BE402 /* ChartDataProvider.swift */; };
+		914E95231DF6C7F7001BE402 /* ViewSizeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E95221DF6C7F7001BE402 /* ViewSizeProvider.swift */; };
+		914E95251DF6C809001BE402 /* ChartModeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E95241DF6C809001BE402 /* ChartModeProvider.swift */; };
+		914E95271DF6C85E001BE402 /* ContentPaddingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E95261DF6C85E001BE402 /* ContentPaddingProvider.swift */; };
+		914E95291DF6C86A001BE402 /* NumberOfColumnsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E95281DF6C86A001BE402 /* NumberOfColumnsProvider.swift */; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
@@ -196,6 +201,11 @@
 		91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterLayoutTests.swift; sourceTree = "<group>"; };
 		91187B221D6776A00098A881 /* ChapterTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleView.swift; sourceTree = "<group>"; };
 		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
+		914E95201DF6C7E3001BE402 /* ChartDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataProvider.swift; sourceTree = "<group>"; };
+		914E95221DF6C7F7001BE402 /* ViewSizeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSizeProvider.swift; sourceTree = "<group>"; };
+		914E95241DF6C809001BE402 /* ChartModeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartModeProvider.swift; sourceTree = "<group>"; };
+		914E95261DF6C85E001BE402 /* ContentPaddingProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentPaddingProvider.swift; sourceTree = "<group>"; };
+		914E95281DF6C86A001BE402 /* NumberOfColumnsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfColumnsProvider.swift; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915EEC411D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -447,6 +457,11 @@
 			children = (
 				91F833F51DEDD8F800F27AD5 /* ChartLayoutCalculator.h */,
 				91F834011DEDD9FA00F27AD5 /* ChartLayoutCalculator.swift */,
+				914E95281DF6C86A001BE402 /* NumberOfColumnsProvider.swift */,
+				914E95261DF6C85E001BE402 /* ContentPaddingProvider.swift */,
+				914E95241DF6C809001BE402 /* ChartModeProvider.swift */,
+				914E95221DF6C7F7001BE402 /* ViewSizeProvider.swift */,
+				914E95201DF6C7E3001BE402 /* ChartDataProvider.swift */,
 				91F834001DEDD9FA00F27AD5 /* ChartContentOffsetCalculator.swift */,
 				91F834021DEDD9FA00F27AD5 /* ChartSizeCalculator.swift */,
 				91F834041DEDD9FA00F27AD5 /* HeaderPositionCalculator.swift */,
@@ -565,7 +580,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = DiscoverHealing.com;
 				TargetAttributes = {
 					915EEC381D460CE1005CC318 = {
@@ -794,13 +809,18 @@
 				91F834111DEDD9FA00F27AD5 /* HeaderPositionCalculator.swift in Sources */,
 				91F834121DEDD9FA00F27AD5 /* HeaderSizeCalculator.swift in Sources */,
 				91F834101DEDD9FA00F27AD5 /* HeaderFrameCalculator.swift in Sources */,
+				914E95231DF6C7F7001BE402 /* ViewSizeProvider.swift in Sources */,
 				91F8341D1DEDDB7100F27AD5 /* Geometry.swift in Sources */,
 				91F8340E1DEDD9FA00F27AD5 /* ChartLayoutCalculator.swift in Sources */,
 				91F834191DEDD9FA00F27AD5 /* SectionSpacingCalculator.swift in Sources */,
 				91F834171DEDD9FA00F27AD5 /* SectionHeightCalculator.swift in Sources */,
 				91F834181DEDD9FA00F27AD5 /* SectionPositionCalculator.swift in Sources */,
+				914E95291DF6C86A001BE402 /* NumberOfColumnsProvider.swift in Sources */,
+				914E95211DF6C7E3001BE402 /* ChartDataProvider.swift in Sources */,
 				91F834141DEDD9FA00F27AD5 /* ItemPositionCalculator.swift in Sources */,
+				914E95251DF6C809001BE402 /* ChartModeProvider.swift in Sources */,
 				91F834161DEDD9FA00F27AD5 /* ItemSpacingCalculator.swift in Sources */,
+				914E95271DF6C85E001BE402 /* ContentPaddingProvider.swift in Sources */,
 				91F834151DEDD9FA00F27AD5 /* ItemSizeCalculator.swift in Sources */,
 				91F8340D1DEDD9FA00F27AD5 /* ChartContentOffsetCalculator.swift in Sources */,
 				91F8341B1DEDDB0100F27AD5 /* IndexPath+Chart.swift in Sources */,
@@ -1037,6 +1057,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1063,6 +1084,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

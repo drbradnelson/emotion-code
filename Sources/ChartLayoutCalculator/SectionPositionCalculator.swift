@@ -1,15 +1,10 @@
 public protocol SectionPositionCalculator {
 
-    var maximumSectionHeight: Float { get }
-    var verticalSectionSpacing: Float { get }
-    var columnHeaderSize: Size { get }
-    var contentPadding: Float { get }
-
-    static var numberOfColumns: Int { get }
+    func yPosition(forSection section: Int) -> Float
 
 }
 
-public extension SectionPositionCalculator {
+public extension SectionPositionCalculator where Self: DefaultSectionPositionCalculator {
 
     func yPosition(forSection section: Int) -> Float {
         let row = section / Self.numberOfColumns
@@ -19,3 +14,10 @@ public extension SectionPositionCalculator {
     }
 
 }
+
+public typealias DefaultSectionPositionCalculator = SectionPositionCalculator
+    & ContentPaddingProvider
+    & NumberOfColumnsProvider
+    & SectionHeightCalculator
+    & SectionSpacingCalculator
+    & HeaderSizeCalculator

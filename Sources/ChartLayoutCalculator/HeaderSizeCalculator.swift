@@ -1,11 +1,11 @@
 public protocol HeaderSizeCalculator {
 
-    var itemWidth: Float { get }
-    var maximumSectionHeight: Float { get }
+    var columnHeaderSize: Size { get }
+    var rowHeaderSize: Size { get }
 
 }
 
-public extension HeaderSizeCalculator {
+public extension HeaderSizeCalculator where Self: DefaultHeaderSizeCalculator {
 
     var columnHeaderSize: Size {
         return Size(width: itemWidth, height: Self.headerSize.height)
@@ -15,12 +15,12 @@ public extension HeaderSizeCalculator {
         return Size(width: Self.headerSize.width, height: maximumSectionHeight)
     }
 
-}
-
-extension HeaderSizeCalculator {
-
-    static var headerSize: Size {
+    private static var headerSize: Size {
         return Size(width: 30, height: 30)
     }
 
 }
+
+public typealias DefaultHeaderSizeCalculator = HeaderSizeCalculator
+    & ItemSizeCalculator
+    & SectionHeightCalculator

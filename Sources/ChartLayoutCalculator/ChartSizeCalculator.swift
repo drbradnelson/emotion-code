@@ -1,22 +1,10 @@
 public protocol ChartSizeCalculator {
 
-    var mode: ChartLayoutMode { get }
-
-    var maximumSectionHeight: Float { get }
-    var contentPadding: Float { get }
-    var verticalSectionSpacing: Float { get }
-    var rowHeaderSize: Size { get }
-
-    func yPosition(forSection section: Int) -> Float
-
-    static var numberOfColumns: Int { get }
-
-    var viewWidth: Float { get }
-    var numberOfSections: Int { get }
+    var chartSize: Size { get }
 
 }
 
-public extension ChartSizeCalculator {
+public extension ChartSizeCalculator where Self: DefaultChartSizeCalculator {
 
     var chartSize: Size {
         let lastSection = numberOfSections - 1
@@ -33,3 +21,14 @@ public extension ChartSizeCalculator {
     }
 
 }
+
+public typealias DefaultChartSizeCalculator = ChartSizeCalculator
+    & ChartModeProvider
+    & ContentPaddingProvider
+    & HeaderSizeCalculator
+    & NumberOfColumnsProvider
+    & NumberOfSectionsProvider
+    & SectionHeightCalculator
+    & SectionPositionCalculator
+    & SectionSpacingCalculator
+    & ViewWidthProvider

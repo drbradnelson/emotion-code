@@ -2,18 +2,12 @@ import Foundation
 
 public protocol HeaderPositionCalculator {
 
-    var mode: ChartLayoutMode { get }
-
-    var contentPadding: Float { get }
-    var columnHeaderSize: Size { get }
-    var rowHeaderSize: Size { get }
-
-    func yPosition(forSection section: Int) -> Float
-    func xPositionForItem(at indexPath: IndexPath) -> Float
+    func positionForColumnHeader(at indexPath: IndexPath) -> Point
+    func positionForRowHeader(at indexPath: IndexPath) -> Point
 
 }
 
-public extension HeaderPositionCalculator {
+public extension HeaderPositionCalculator where Self: DefaultHeaderPositionCalculator {
 
     func positionForColumnHeader(at indexPath: IndexPath) -> Point {
         let x = xPositionForItem(at: indexPath)
@@ -36,3 +30,10 @@ public extension HeaderPositionCalculator {
     }
 
 }
+
+public typealias DefaultHeaderPositionCalculator = HeaderPositionCalculator
+    & ContentPaddingProvider
+    & ChartModeProvider
+    & HeaderSizeCalculator
+    & SectionPositionCalculator
+    & ItemPositionCalculator

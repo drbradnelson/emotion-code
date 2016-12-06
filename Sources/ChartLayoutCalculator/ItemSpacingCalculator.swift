@@ -1,11 +1,10 @@
 public protocol ItemSpacingCalculator {
 
-    var mode: ChartLayoutMode { get }
-    var verticalSectionSpacing: Float { get }
+    var itemSpacing: Float { get }
 
 }
 
-public extension ItemSpacingCalculator {
+public extension ItemSpacingCalculator where Self: DefaultItemSpacingCalculator {
 
     var itemSpacing: Float {
         switch mode {
@@ -16,3 +15,7 @@ public extension ItemSpacingCalculator {
     }
 
 }
+
+public typealias DefaultItemSpacingCalculator = ItemSpacingCalculator
+    & ChartModeProvider
+    & SectionSpacingCalculator

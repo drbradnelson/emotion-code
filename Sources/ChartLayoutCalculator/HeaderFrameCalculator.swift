@@ -2,17 +2,12 @@ import Foundation
 
 public protocol HeaderFrameCalculator {
 
-    func positionForColumnHeader(at indexPath: IndexPath) -> Point
-    func positionForRowHeader(at indexPath: IndexPath) -> Point
-
-    var columnHeaderSize: Size { get }
-    var rowHeaderSize: Size { get }
-
-    static var numberOfColumns: Int { get }
+    func frameForColumnHeader(at indexPath: IndexPath) -> Rect?
+    func frameForRowHeader(at indexPath: IndexPath) -> Rect?
 
 }
 
-public extension HeaderFrameCalculator {
+public extension HeaderFrameCalculator where Self: DefaultHeaderFrameCalculator {
 
     func frameForColumnHeader(at indexPath: IndexPath) -> Rect? {
         guard indexPath.section <= Self.numberOfColumns, indexPath.item == 0 else { return nil }
@@ -27,3 +22,8 @@ public extension HeaderFrameCalculator {
     }
 
 }
+
+public typealias DefaultHeaderFrameCalculator = HeaderFrameCalculator
+    & HeaderPositionCalculator
+    & HeaderSizeCalculator
+    & NumberOfColumnsProvider

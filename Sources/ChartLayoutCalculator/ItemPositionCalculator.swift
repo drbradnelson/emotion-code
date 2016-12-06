@@ -2,23 +2,13 @@ import Foundation
 
 public protocol ItemPositionCalculator {
 
-    var mode: ChartLayoutMode { get }
-
-    var contentPadding: Float { get }
-
-    var itemWidth: Float { get }
-    func itemHeight(forSection section: Int) -> Float
-    var itemSpacing: Float { get }
-    var rowHeaderSize: Size { get }
-    static var horizontalSectionSpacing: Float { get }
-
-    func yPosition(forSection section: Int) -> Float
-
-    static var numberOfColumns: Int { get }
+    func positionForItem(at indexPath: IndexPath) -> Point
+    func xPositionForItem(at indexPath: IndexPath) -> Float
+    func yPositionForItem(at indexPath: IndexPath) -> Float
 
 }
 
-public extension ItemPositionCalculator {
+public extension ItemPositionCalculator where Self: DefaultItemPositionCalculator {
 
     func positionForItem(at indexPath: IndexPath) -> Point {
         let xPosition = xPositionForItem(at: indexPath)
@@ -30,7 +20,7 @@ public extension ItemPositionCalculator {
         let column = (indexPath.section + Self.numberOfColumns) % Self.numberOfColumns
         let xPosition = contentPadding + rowHeaderSize.width
         switch mode {
-        case .all: return xPosition + Self.horizontalSectionSpacing + Float(column) * (itemWidth + Self.horizontalSectionSpacing)
+        case .all: return xPosition + horizontalSectionSpacing + Float(column) * (itemWidth + horizontalSectionSpacing)
         case .section, .emotion: return xPosition + Float(column) * (itemWidth + contentPadding)
         }
     }
@@ -43,3 +33,14 @@ public extension ItemPositionCalculator {
     }
 
 }
+
+public typealias DefaultItemPositionCalculator = ItemPositionCalculator
+    & ChartModeProvider
+    & ContentPaddingProvider
+    & HeaderSizeCalculator
+    & ItemSizeCalculator
+    & ItemSpacingCalculator
+    & NumberOfColumnsProvider
+    & NumberOfSectionsProvider
+    & SectionPositionCalculator
+    & SectionSpacingCalculator
