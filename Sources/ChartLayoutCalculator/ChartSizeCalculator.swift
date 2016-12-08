@@ -26,7 +26,7 @@ public extension ChartSizeCalculator {
         switch mode {
         case .all:
             width = viewWidth
-        case .group, .emotion:
+        case .section, .emotion:
             width = viewWidth * Float(Self.numberOfColumns) - contentPadding + rowHeaderSize.width
         }
         return Size(width: width, height: height)
