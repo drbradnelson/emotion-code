@@ -204,7 +204,6 @@ struct ChartLayoutModule: Module {
             }
         }
 
-
         //
         // MARK: -
         // MARK: Item frame
@@ -227,6 +226,7 @@ struct ChartLayoutModule: Module {
         //
 
         var proposedVerticalContentOffset: Float? {
+            guard !sectionsRange.isEmpty else { return nil }
             switch model.mode {
             case .all:
                 return nil
@@ -297,9 +297,9 @@ struct ChartLayoutModule: Module {
         //
 
         var chartSize: Size {
-            let lastSection = model.itemsPerSection.count - 1
-            let collectionViewContentHeight = sectionYPositions[lastSection] + maximumSectionHeight
-            let height = collectionViewContentHeight + sectionSpacing.height + contentPadding
+            guard let positionForLastSection = sectionYPositions.last else { return .zero }
+            let contentHeight = positionForLastSection + maximumSectionHeight
+            let height = contentHeight + sectionSpacing.height + contentPadding
             let width: Float
             switch model.mode {
             case .all:
