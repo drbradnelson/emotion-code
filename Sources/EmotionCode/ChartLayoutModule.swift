@@ -51,7 +51,7 @@ struct ChartLayoutModule: Module {
 
     static func view(for model: Model) -> View {
 
-        let numberOfSections = model.itemsPerSection.count
+        let sectionsRange = 0..<model.itemsPerSection.count
 
         //
         // MARK: -
@@ -95,49 +95,10 @@ struct ChartLayoutModule: Module {
 
         //
         // MARK: -
-        // MARK: Section height
+        // MARK: Item heights
         //
 
-        var maximumSectionHeight: Float {
-            let sections = 0..<numberOfSections
-            let sectionHeights = sections.map(heightForSection)
-            return sectionHeights.max() ?? 0
-        }
-
-        func heightForSection(section: Int) -> Float {
-            let itemCount = model.itemsPerSection[section]
-            let verticalItemSpacing = Float(itemCount - 1) * itemSpacing
-            let totalItemHeights = Float(itemCount) * itemHeight(forSection: section)
-            return totalItemHeights + verticalItemSpacing
-        }
-
-        //
-        // MARK: -
-        // MARK: Horizontal something
-        //
-
-        let rowHeaderSize = Size(width: 30, height: maximumSectionHeight)
-
-        var itemWidth: Float {
-            switch model.mode {
-            case .all:
-                let totalAvailableWidth = model.viewSize.width - contentPadding * 2 - rowHeaderSize.width - sectionSpacing.width
-                let totalSpacingWidth = sectionSpacing.width * Float(View.numberOfColumns - 1)
-                let totalContentWidth = totalAvailableWidth - totalSpacingWidth
-                return totalContentWidth / Float(View.numberOfColumns)
-            case .section, .emotion:
-                return model.viewSize.width - contentPadding * 2
-            }
-        }
-
-        //
-        // MARK: -
-        // MARK: Vertical something
-        //
-
-        let columnHeaderSize = Size(width: itemWidth, height: 30)
-
-        func itemHeight(forSection section: Int) -> Float {
+        let itemHeights = sectionsRange.map { section -> Float in
             switch model.mode {
             case .all: return 30
             case .section:
@@ -155,17 +116,68 @@ struct ChartLayoutModule: Module {
 
         //
         // MARK: -
+        // MARK: Section height
+        //
+
+        let sectionHeights = sectionsRange.map { section -> Float in
+            let itemCount = model.itemsPerSection[section]
+            let verticalItemSpacing = Float(itemCount - 1) * itemSpacing
+            let totalItemHeights = Float(itemCount) * itemHeights[section]
+            return totalItemHeights + verticalItemSpacing
+        }
+
+        let maximumSectionHeight = sectionHeights.max() ?? 0
+
+        //
+        // MARK: -
+        // MARK: Row header size
+        //
+
+        let rowHeaderSize = Size(width: 30, height: maximumSectionHeight)
+
+        //
+        // MARK: -
+        // MARK: Item width
+        //
+
+        var itemWidth: Float {
+            switch model.mode {
+            case .all:
+                let totalAvailableWidth = model.viewSize.width - contentPadding * 2 - rowHeaderSize.width - sectionSpacing.width
+                let totalSpacingWidth = sectionSpacing.width * Float(View.numberOfColumns - 1)
+                let totalContentWidth = totalAvailableWidth - totalSpacingWidth
+                return totalContentWidth / Float(View.numberOfColumns)
+            case .section, .emotion:
+                return model.viewSize.width - contentPadding * 2
+            }
+        }
+
+        //
+        // MARK: -
+        // MARK: Column header size
+        //
+
+        let columnHeaderSize = Size(width: itemWidth, height: 30)
+
+        //
+        // MARK: -
+        // MARK: Section position
+        //
+
+        let sectionYPositions = sectionsRange.map { section -> Float in
+            let row = section / View.numberOfColumns
+            let cumulativeContentHeight = maximumSectionHeight * Float(row)
+            let cumulativeSpacingHeight = sectionSpacing.height * Float(row)
+            return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + contentPadding
+        }
+
+        //
+        // MARK: -
         // MARK: Item position
         //
 
-        func positionForItem(at indexPath: IndexPath) -> Point {
-            let xPosition = xPositionForItem(at: indexPath)
-            let yPosition = yPositionForItem(at: indexPath)
-            return Point(x: xPosition, y: yPosition)
-        }
-
-        func xPositionForItem(at indexPath: IndexPath) -> Float {
-            let column = (indexPath.section + View.numberOfColumns) % View.numberOfColumns
+        let xPositionsForItemsInSection = sectionsRange.map { section -> Float in
+            let column = (section + View.numberOfColumns) % View.numberOfColumns
             let xPosition = contentPadding + rowHeaderSize.width
             switch model.mode {
             case .all: return xPosition + sectionSpacing.width + Float(column) * (itemWidth + sectionSpacing.width)
@@ -173,35 +185,40 @@ struct ChartLayoutModule: Module {
             }
         }
 
-        func yPositionForItem(at indexPath: IndexPath) -> Float {
-            let cumulativeSpacingHeight = Float(indexPath.item) * itemSpacing
-            let height = itemHeight(forSection: indexPath.section)
-            let cumulativeContentHeight = Float(indexPath.item) * height
-            return yPosition(forSection: indexPath.section) + cumulativeContentHeight + cumulativeSpacingHeight
+        let yPositionsForItems = sectionsRange.map { section -> [Float] in
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let cumulativeSpacingHeight = Float(item) * itemSpacing
+                let cumulativeContentHeight = Float(item) * itemHeights[section]
+                return sectionYPositions[section] + cumulativeContentHeight + cumulativeSpacingHeight
+            }
         }
+
+        let itemPositions = sectionsRange.map { section -> [Point] in
+            let xPosition = xPositionsForItemsInSection[section]
+
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let yPosition = yPositionsForItems[section][item]
+                return Point(x: xPosition, y: yPosition)
+            }
+        }
+
 
         //
         // MARK: -
         // MARK: Item frame
         //
 
-        func frameForItem(at indexPath: IndexPath) -> Rect {
-            let frameOffset = positionForItem(at: indexPath)
-            let height = itemHeight(forSection: indexPath.section)
+        let itemFrames = sectionsRange.map { section -> [Rect] in
+            let height = itemHeights[section]
             let size = Size(width: itemWidth, height: height)
-            return Rect(origin: frameOffset, size: size)
-        }
 
-        //
-        // MARK: -
-        // MARK: Section position
-        //
-
-        func yPosition(forSection section: Int) -> Float {
-            let row = section / View.numberOfColumns
-            let cumulativeContentHeight = maximumSectionHeight * Float(row)
-            let cumulativeSpacingHeight = sectionSpacing.height * Float(row)
-            return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + contentPadding
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let position = itemPositions[section][item]
+                return Rect(origin: position, size: size)
+            }
         }
 
         //
@@ -214,9 +231,9 @@ struct ChartLayoutModule: Module {
             case .all:
                 return nil
             case .section(let section):
-                return yPosition(forSection: section) - sectionSpacing.height
+                return sectionYPositions[section] - sectionSpacing.height
             case .emotion(let indexPath):
-                return yPositionForItem(at: indexPath) - sectionSpacing.height
+                return yPositionsForItems[indexPath.section][indexPath.item] - sectionSpacing.height
             }
         }
 
@@ -225,24 +242,32 @@ struct ChartLayoutModule: Module {
         // MARK: Header position
         //
 
-        func positionForColumnHeader(at indexPath: IndexPath) -> Point {
-            let x = xPositionForItem(at: indexPath)
-            let y: Float
-            switch model.mode {
-            case .all: y = contentPadding
-            case .section, .emotion: y = contentPadding - columnHeaderSize.height
+        let positionsForColumnHeaders = sectionsRange.map { section -> [Point] in
+            let x = xPositionsForItemsInSection[section]
+
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let y: Float
+                switch model.mode {
+                case .all: y = contentPadding
+                case .section, .emotion: y = contentPadding - columnHeaderSize.height
+                }
+                return Point(x: x, y: y)
             }
-            return Point(x: x, y: y)
         }
 
-        func positionForRowHeader(at indexPath: IndexPath) -> Point {
-            let x: Float
-            switch model.mode {
-            case .all: x = contentPadding
-            case .section, .emotion: x = contentPadding - rowHeaderSize.width
+        let positionsForRowHeaders = sectionsRange.map { section -> [Point] in
+            let y = sectionYPositions[section]
+
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let x: Float
+                switch model.mode {
+                case .all: x = contentPadding
+                case .section, .emotion: x = contentPadding - rowHeaderSize.width
+                }
+                return Point(x: x, y: y)
             }
-            let y = yPosition(forSection: indexPath.section)
-            return Point(x: x, y: y)
         }
 
         //
@@ -250,14 +275,20 @@ struct ChartLayoutModule: Module {
         // MARK: Header frame
         //
 
-        func frameForColumnHeader(at indexPath: IndexPath) -> Rect {
-            let frameOffset = positionForColumnHeader(at: indexPath)
-            return Rect(origin: frameOffset, size: columnHeaderSize)
+        let columnHeaderFrames = sectionsRange.map { section -> [Rect] in
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let position = positionsForColumnHeaders[section][item]
+                return Rect(origin: position, size: columnHeaderSize)
+            }
         }
 
-        func frameForRowHeader(at indexPath: IndexPath) -> Rect {
-            let frameOffset = positionForRowHeader(at: indexPath)
-            return Rect(origin: frameOffset, size: rowHeaderSize)
+        let rowHeaderFrames = sectionsRange.map { section -> [Rect] in
+            let itemsRange = 0..<model.itemsPerSection[section]
+            return itemsRange.map { item in
+                let position = positionsForRowHeaders[section][item]
+                return Rect(origin: position, size: rowHeaderSize)
+            }
         }
 
         //
@@ -266,8 +297,8 @@ struct ChartLayoutModule: Module {
         //
 
         var chartSize: Size {
-            let lastSection = numberOfSections - 1
-            let collectionViewContentHeight = yPosition(forSection: lastSection) + maximumSectionHeight
+            let lastSection = model.itemsPerSection.count - 1
+            let collectionViewContentHeight = sectionYPositions[lastSection] + maximumSectionHeight
             let height = collectionViewContentHeight + sectionSpacing.height + contentPadding
             let width: Float
             switch model.mode {
@@ -278,11 +309,6 @@ struct ChartLayoutModule: Module {
             }
             return Size(width: width, height: height)
         }
-
-        let indexPaths = IndexPath.with(itemsPerSection: model.itemsPerSection)
-        let itemFrames = indexPaths.map { $0.map(frameForItem) }
-        let columnHeaderFrames = indexPaths.map { $0.map(frameForColumnHeader) }
-        let rowHeaderFrames = indexPaths.map { $0.map(frameForRowHeader) }
 
         return View(
             chartSize: chartSize,
@@ -296,21 +322,6 @@ struct ChartLayoutModule: Module {
 
 }
 
-private extension IndexPath {
-
-    static func with(itemsPerSection: [Int]) -> [[IndexPath]] {
-        let sections = 0..<itemsPerSection.count
-        let itemRanges = itemsPerSection.map { itemCount in 0..<itemCount }
-        return zip(itemRanges, sections).flatMap(IndexPath.indexPaths)
-    }
-
-    static func indexPaths(in range: CountableRange<Int>, section: Int) -> [IndexPath] {
-        return range.map { item in
-            IndexPath(item: item, section: section)
-        }
-    }
-
-}
 
 //
 // MARK: -
