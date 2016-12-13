@@ -1,5 +1,4 @@
 import UIKit
-import ChartLayoutCalculator
 
 final class ChartEmotionViewController: UICollectionViewController {
 
@@ -38,7 +37,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
 extension ChartEmotionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
         guard let selectedIndexPath = collectionView.indexPathForSelectedItem else {
             preconditionFailure()
         }

@@ -20,4 +20,10 @@ extension UICollectionView {
         return bounds.height - contentInset.top - contentInset.bottom
     }
 
+    var visibleContentSize: CGSize {
+        let width = bounds.width - contentInset.left - contentInset.right
+        let height = bounds.height - contentInset.top - contentInset.bottom
+        return CGSize(width: width, height: height)
+    }
+
 }

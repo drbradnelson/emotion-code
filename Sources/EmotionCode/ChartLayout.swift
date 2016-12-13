@@ -1,31 +1,29 @@
 import UIKit
-import ChartLayoutCalculator
 
-class ChartLayout: UICollectionViewLayout, ChartLayoutCalculator {
+class ChartLayout: UICollectionViewLayout {
 
-    var numberOfSections: Int {
-        return collectionView?.numberOfSections ?? 0
+    let program = ChartLayoutModule.makeProgram()
+
+    func setMode(_ mode: ChartLayoutModule.Mode) {
+        program.dispatch(.setMode(mode))
     }
 
-    func numberOfItems(inSection section: Int) -> Int {
-        return collectionView?.numberOfItems(inSection: section) ?? 0
+    override func prepare() {
+        super.prepare()
+        guard let collectionView = collectionView else { return }
+        let sections = 0..<collectionView.numberOfSections
+        let itemsPerSection = sections.map(collectionView.numberOfItems)
+        program.dispatch(.setItemsPerSection(itemsPerSection))
+        program.dispatch(.setViewSize(collectionView.visibleContentSize))
     }
 
-    var viewWidth: Float {
-        return Float(collectionView?.bounds.width ?? 0)
+    override var collectionViewContentSize: CGSize {
+        return program.view.chartSize.cgSize
     }
-
-    var visibleContentHeight: Float {
-        return Float(collectionView?.visibleContentHeight ?? 0)
-    }
-
-    var mode: ChartLayoutMode = .all
-
-    override var collectionViewContentSize: CGSize { return chartSize.cgSize }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         guard let collectionView = collectionView else { preconditionFailure() }
-        guard let verticalContentOffset = verticalContentOffset else { return proposedContentOffset }
+        guard let verticalContentOffset = program.view.proposedVerticalContentOffset else { return proposedContentOffset }
         let x = proposedContentOffset.x
         let y = CGFloat(verticalContentOffset) - collectionView.contentInset.top
         return CGPoint(x: x, y: y)
@@ -45,17 +43,17 @@ class ChartLayout: UICollectionViewLayout, ChartLayoutCalculator {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let frame = frameForItem(at: indexPath)
+        let frame = program.view.itemFrames[indexPath.section][indexPath.item]
         return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame.cgRect)
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
         case ChartHeaderView.columnKind:
-            guard let frame = frameForColumnHeader(at: indexPath) else { return nil }
+            let frame = program.view.columnHeaderFrames[indexPath.section][indexPath.item]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         case ChartHeaderView.rowKind:
-            guard let frame = frameForRowHeader(at: indexPath) else { return nil }
+            let frame = program.view.rowHeaderFrames[indexPath.section][indexPath.item]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         default: return nil
         }
