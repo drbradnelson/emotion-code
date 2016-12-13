@@ -14,7 +14,7 @@ class ChartLayout: UICollectionViewLayout {
         let sections = 0..<collectionView.numberOfSections
         let itemsPerSection = sections.map(collectionView.numberOfItems)
         program.dispatch(.setItemsPerSection(itemsPerSection))
-        program.dispatch(.setViewSize(collectionView.visibleContentSize))
+        program.dispatch(.setViewSize(collectionView.visibleContentSize.floatSize))
     }
 
     override var collectionViewContentSize: CGSize {
@@ -59,6 +59,12 @@ class ChartLayout: UICollectionViewLayout {
         }
     }
 
+}
+
+private extension CGSize {
+    var floatSize: Size {
+        return Size(width: Float(width), height: Float(height))
+    }
 }
 
 private extension UICollectionViewLayoutAttributes {
