@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0F0FB5971D7DE65800546BD0 /* css-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5961D7DE65800546BD0 /* css-en.patch */; };
 		0F0FB5991D7DE7B100546BD0 /* css-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5981D7DE7B100546BD0 /* css-es.patch */; };
+		0F11954F1E02F7AA0013B0B8 /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F11954E1E02F7AA0013B0B8 /* Down.framework */; };
+		0F1195501E02FCEA0013B0B8 /* Down.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F11954E1E02F7AA0013B0B8 /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
 		0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */; };
@@ -130,6 +132,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0F1195501E02FCEA0013B0B8 /* Down.framework in Embed Frameworks */,
 				91F833FC1DEDD8F800F27AD5 /* ChartLayoutCalculator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -140,6 +143,7 @@
 /* Begin PBXFileReference section */
 		0F0FB5961D7DE65800546BD0 /* css-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-en.patch"; sourceTree = "<group>"; };
 		0F0FB5981D7DE7B100546BD0 /* css-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-es.patch"; sourceTree = "<group>"; };
+		0F11954E1E02F7AA0013B0B8 /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/iOS/Down.framework; sourceTree = "<group>"; };
 		0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarLayoutTests.swift; sourceTree = "<group>"; };
 		0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSegueController.swift; sourceTree = "<group>"; };
 		0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterSelectionLayoutTests.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F833FA1DEDD8F800F27AD5 /* ChartLayoutCalculator.framework in Frameworks */,
+				0F11954F1E02F7AA0013B0B8 /* Down.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +277,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F11954D1E02F7A90013B0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F11954E1E02F7AA0013B0B8 /* Down.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0F28D0BE1D4E7624002C98E7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +398,7 @@
 				915EEC501D460CE1005CC318 /* EmotionCodeUITests */,
 				91F833F41DEDD8F800F27AD5 /* ChartLayoutCalculator */,
 				915EEC3A1D460CE1005CC318 /* Products */,
+				0F11954D1E02F7A90013B0B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -984,6 +998,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
@@ -998,6 +1016,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
