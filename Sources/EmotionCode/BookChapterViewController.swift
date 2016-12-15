@@ -1,4 +1,5 @@
 import UIKit
+import Down
 
 final class BookChapterViewController: UIViewController {
 
@@ -36,13 +37,29 @@ final class BookChapterViewController: UIViewController {
     // MARK: Load chapter
 
     func loadChapter() {
-        guard let chapterURL = chapterURL else { return }
         do {
-            let htmlString = try String(contentsOf: chapterURL)
-            bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
+            let htmlString = try loadMarkdownToHTMLString()
+            bookChapterView.webView.loadHTMLString(htmlString, baseURL: nil)
         } catch {
-            preconditionFailure()
+            preconditionFailure(error.localizedDescription)
         }
+//        guard let chapterURL = chapterURL else { return }
+//        do {
+//            let htmlString = try String(contentsOf: chapterURL)
+//            bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
+//        } catch {
+//            preconditionFailure()
+//        }
+    }
+
+    private func loadMarkdownToHTMLString() throws ->  String {
+        guard let markdownURL = Bundle.main.url(forResource: "Chapter 3", withExtension: "md") else {
+            preconditionFailure("Unable to locate markdown file")
+        }
+        let markdownString = try String(contentsOf: markdownURL)
+        let markdown = Down(markdownString: markdownString)
+        let htmlString = try markdown.toHTML()
+        return htmlString
     }
 
 }
