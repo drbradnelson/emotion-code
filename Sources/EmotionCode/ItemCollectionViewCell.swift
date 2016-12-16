@@ -5,8 +5,8 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var descriptionTextView: UITextView!
 
-    @IBInspectable private var oddRowColor: UIColor!
-    @IBInspectable private var evenRowColor: UIColor!
+    @IBInspectable var oddRowColor: UIColor!
+    @IBInspectable var evenRowColor: UIColor!
 
     static let preferredReuseIdentifier = "ItemCell"
 
