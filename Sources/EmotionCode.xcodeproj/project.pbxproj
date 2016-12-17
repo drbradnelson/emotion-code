@@ -84,6 +84,7 @@
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
 		B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */; };
 		B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */; };
+		B6B273701E05948E00771409 /* ChartLayoutModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2736F1E05948E00771409 /* ChartLayoutModuleTests.swift */; };
 		B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */; };
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
@@ -93,6 +94,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		915EEC4E1D460CE1005CC318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 915EEC311D460CE1005CC318 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 915EEC381D460CE1005CC318;
+			remoteInfo = EmotionCode;
+		};
+		B6B273721E05948E00771409 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 915EEC311D460CE1005CC318 /* Project object */;
 			proxyType = 1;
@@ -200,6 +208,9 @@
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSectionViewController.swift; sourceTree = "<group>"; };
+		B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B2736F1E05948E00771409 /* ChartLayoutModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleTests.swift; sourceTree = "<group>"; };
+		B6B273711E05948E00771409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartNavigationController.swift; sourceTree = "<group>"; };
 		B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartEmotionViewController.swift; sourceTree = "<group>"; };
 		B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Alphabet.swift"; sourceTree = "<group>"; };
@@ -218,6 +229,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		915EEC4A1D460CE1005CC318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B2736A1E05948E00771409 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,6 +356,7 @@
 			children = (
 				915EEC3B1D460CE1005CC318 /* EmotionCode */,
 				915EEC501D460CE1005CC318 /* EmotionCodeUITests */,
+				B6B2736E1E05948E00771409 /* EmotionCodeTests */,
 				915EEC3A1D460CE1005CC318 /* Products */,
 				9113777E1E001A69008627F1 /* Elm.framework */,
 			);
@@ -348,6 +367,7 @@
 			children = (
 				915EEC391D460CE1005CC318 /* EmotionCode.app */,
 				915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */,
+				B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,6 +425,15 @@
 			name = Layouts;
 			sourceTree = "<group>";
 		};
+		B6B2736E1E05948E00771409 /* EmotionCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2736F1E05948E00771409 /* ChartLayoutModuleTests.swift */,
+				B6B273711E05948E00771409 /* Info.plist */,
+			);
+			path = EmotionCodeTests;
+			sourceTree = "<group>";
+		};
 		E7BF74B01D4F607300AF6198 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,13 +488,31 @@
 			productReference = 915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B6B2736C1E05948E00771409 /* EmotionCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B273741E05948E00771409 /* Build configuration list for PBXNativeTarget "EmotionCodeTests" */;
+			buildPhases = (
+				B6B273691E05948E00771409 /* Sources */,
+				B6B2736A1E05948E00771409 /* Frameworks */,
+				B6B2736B1E05948E00771409 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6B273731E05948E00771409 /* PBXTargetDependency */,
+			);
+			name = EmotionCodeTests;
+			productName = EmotionCodeTests;
+			productReference = B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		915EEC311D460CE1005CC318 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = DiscoverHealing.com;
 				TargetAttributes = {
@@ -477,6 +524,12 @@
 					915EEC4C1D460CE1005CC318 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
+						TestTargetID = 915EEC381D460CE1005CC318;
+					};
+					B6B2736C1E05948E00771409 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = FU4W8383YY;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 915EEC381D460CE1005CC318;
 					};
 				};
@@ -497,6 +550,7 @@
 			targets = (
 				915EEC381D460CE1005CC318 /* EmotionCode */,
 				915EEC4C1D460CE1005CC318 /* EmotionCodeUITests */,
+				B6B2736C1E05948E00771409 /* EmotionCodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -550,6 +604,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		915EEC4B1D460CE1005CC318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B2736B1E05948E00771409 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,6 +736,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6B273691E05948E00771409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B273701E05948E00771409 /* ChartLayoutModuleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -682,6 +751,11 @@
 			isa = PBXTargetDependency;
 			target = 915EEC381D460CE1005CC318 /* EmotionCode */;
 			targetProxy = 915EEC4E1D460CE1005CC318 /* PBXContainerItemProxy */;
+		};
+		B6B273731E05948E00771409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 915EEC381D460CE1005CC318 /* EmotionCode */;
+			targetProxy = B6B273721E05948E00771409 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -898,6 +972,39 @@
 			};
 			name = Release;
 		};
+		B6B273751E05948E00771409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = FU4W8383YY;
+				INFOPLIST_FILE = EmotionCodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NasakinMaxim.EmotionCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmotionCode.app/EmotionCode";
+			};
+			name = Debug;
+		};
+		B6B273761E05948E00771409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = FU4W8383YY;
+				INFOPLIST_FILE = EmotionCodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NasakinMaxim.EmotionCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmotionCode.app/EmotionCode";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -927,6 +1034,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B6B273741E05948E00771409 /* Build configuration list for PBXNativeTarget "EmotionCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B273751E05948E00771409 /* Debug */,
+				B6B273761E05948E00771409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
