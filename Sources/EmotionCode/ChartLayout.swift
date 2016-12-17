@@ -1,10 +1,18 @@
 import UIKit
+import Elm
 
 class ChartLayout: UICollectionViewLayout {
 
-    let program = ChartLayoutModule.makeProgram()
+    typealias Module = ChartLayoutModule
 
-    func setMode(_ mode: ChartLayoutModule.Mode) {
+    let program = Module.makeProgram()
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        program.setDelegate(self)
+    }
+
+    func setMode(_ mode: Module.Mode) {
         program.dispatch(.setMode(mode))
     }
 
@@ -58,6 +66,13 @@ class ChartLayout: UICollectionViewLayout {
         default: return nil
         }
     }
+
+}
+
+extension ChartLayout: ElmDelegate {
+
+    func program(_ program: Program<ChartLayoutModule>, didUpdate view: ChartLayoutModule.View) {}
+    func program(_ program: Program<ChartLayoutModule>, didEmit command: ()) {}
 
 }
 

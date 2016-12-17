@@ -6,7 +6,7 @@ import Elm
 // swiftlint:disable file_length
 // swiftlint:disable cyclomatic_complexity
 
-struct ChartLayoutModule: Module {
+struct ChartLayoutModule: ElmModule {
 
     enum Mode {
         case all
@@ -52,6 +52,7 @@ struct ChartLayoutModule: Module {
     static func view(for model: Model) -> View {
 
         let sectionsRange = 0..<model.itemsPerSection.count
+        print(model.mode)
 
         //
         // MARK: -
