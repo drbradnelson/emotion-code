@@ -58,10 +58,12 @@ class ChartLayout: UICollectionViewLayout {
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let frame = program.view.columnHeaderFrames[indexPath.section][indexPath.item]
+            let column = (indexPath.section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let frame = program.view.columnHeaderFrames[column]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         case ChartHeaderView.rowKind:
-            let frame = program.view.rowHeaderFrames[indexPath.section][indexPath.item]
+            let row = indexPath.section / ChartLayoutModule.View.numberOfColumns
+            let frame = program.view.rowHeaderFrames[row]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         default: return nil
         }

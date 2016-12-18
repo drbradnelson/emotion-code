@@ -62,8 +62,8 @@ struct ChartLayoutModule: ElmModule {
         let chartSize: Size
         let proposedVerticalContentOffset: Float?
         let itemFrames: [[Rect]]
-        let columnHeaderFrames: [[Rect]]
-        let rowHeaderFrames: [[Rect]]
+        let columnHeaderFrames: [Rect]
+        let rowHeaderFrames: [Rect]
         static let numberOfColumns = 2
     }
 
@@ -81,8 +81,28 @@ struct ChartLayoutModule: ElmModule {
 
     static func view(for model: Model) -> View {
 
-        let sectionsRange = 0..<model.itemsPerSection.count
+        let sectionsCount = model.itemsPerSection.count
 
+        guard sectionsCount > 0 else {
+            return View(
+                chartSize: .zero,
+                proposedVerticalContentOffset: nil,
+                itemFrames: [],
+                columnHeaderFrames: [],
+                rowHeaderFrames: []
+            )
+        }
+
+        func rowIndex(forSection section: Int) -> Int {
+            return section / View.numberOfColumns
+        }
+
+        let sectionsRange = 0..<sectionsCount
+
+        let columnsRange = 0..<View.numberOfColumns
+
+        let rowsCount = sectionsCount / View.numberOfColumns
+        let rowsRange = 0..<rowsCount
 
         //
         // MARK: -
@@ -152,14 +172,22 @@ struct ChartLayoutModule: ElmModule {
 
         //
         // MARK: -
-        // MARK: Section position
+        // MARK: Column and row positions
         //
 
-        let sectionYPositions = sectionsRange.map { section -> Float in
-            let row = section / View.numberOfColumns
+        let rowYPositions = rowsRange.map { row -> Float in
             let cumulativeContentHeight = maximumSectionHeight * Float(row)
             let cumulativeSpacingHeight = model.sectionSpacing.height * Float(row)
             return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + model.sectionSpacing.height + model.contentPadding
+        }
+
+        let columnXPositions = columnsRange.map { column -> Float in
+            let xPosition = model.contentPadding + rowHeaderSize.width
+
+            switch model.mode {
+            case .all: return xPosition + model.sectionSpacing.width + Float(column) * (itemWidth + model.sectionSpacing.width)
+            case .section, .emotion: return xPosition + Float(column) * (itemWidth + model.contentPadding)
+            }
         }
 
         //
@@ -167,26 +195,19 @@ struct ChartLayoutModule: ElmModule {
         // MARK: Item position
         //
 
-        let xPositionsForItemsInSection = sectionsRange.map { section -> Float in
-            let column = (section + View.numberOfColumns) % View.numberOfColumns
-            let xPosition = model.contentPadding + rowHeaderSize.width
-            switch model.mode {
-            case .all: return xPosition + model.sectionSpacing.width + Float(column) * (itemWidth + model.sectionSpacing.width)
-            case .section, .emotion: return xPosition + Float(column) * (itemWidth + model.contentPadding)
-            }
-        }
-
         let yPositionsForItems = sectionsRange.map { section -> [Float] in
             let itemsRange = 0..<model.itemsPerSection[section]
+            let row = rowIndex(forSection: section)
             return itemsRange.map { item in
                 let cumulativeSpacingHeight = Float(item) * model.itemSpacing
                 let cumulativeContentHeight = Float(item) * itemHeights[section]
-                return sectionYPositions[section] + cumulativeContentHeight + cumulativeSpacingHeight
+                return rowYPositions[row] + cumulativeContentHeight + cumulativeSpacingHeight
             }
         }
 
         let itemPositions = sectionsRange.map { section -> [Point] in
-            let xPosition = xPositionsForItemsInSection[section]
+            let column = (section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let xPosition = columnXPositions[column]
 
             let itemsRange = 0..<model.itemsPerSection[section]
             return itemsRange.map { item in
@@ -217,12 +238,12 @@ struct ChartLayoutModule: ElmModule {
         //
 
         var proposedVerticalContentOffset: Float? {
-            guard !sectionsRange.isEmpty else { return nil }
             switch model.mode {
             case .all:
                 return nil
             case .section(let section):
-                return sectionYPositions[section] - model.sectionSpacing.height
+                let row = rowIndex(forSection: section)
+                return rowYPositions[row] - model.sectionSpacing.height
             case .emotion(let indexPath):
                 return yPositionsForItems[indexPath.section][indexPath.item] - model.sectionSpacing.height
             }
@@ -233,32 +254,27 @@ struct ChartLayoutModule: ElmModule {
         // MARK: Header position
         //
 
-        let positionsForColumnHeaders = sectionsRange.map { section -> [Point] in
-            let x = xPositionsForItemsInSection[section]
+        let positionsForColumnHeaders = columnsRange.map { column -> Point in
+            let x = columnXPositions[column]
 
-            let itemsRange = 0..<model.itemsPerSection[section]
-            return itemsRange.map { item in
-                let y: Float
-                switch model.mode {
-                case .all: y = model.contentPadding
-                case .section, .emotion: y = model.contentPadding - columnHeaderSize.height
-                }
-                return Point(x: x, y: y)
+            let y: Float
+            switch model.mode {
+            case .all: y = model.contentPadding
+            case .section, .emotion: y = model.contentPadding - columnHeaderSize.height
             }
+
+            return Point(x: x, y: y)
         }
 
-        let positionsForRowHeaders = sectionsRange.map { section -> [Point] in
-            let y = sectionYPositions[section]
+        let positionsForRowHeaders = rowsRange.map { row -> Point in
+            let y = rowYPositions[row]
 
-            let itemsRange = 0..<model.itemsPerSection[section]
-            return itemsRange.map { item in
-                let x: Float
-                switch model.mode {
-                case .all: x = model.contentPadding
-                case .section, .emotion: x = model.contentPadding - rowHeaderSize.width
-                }
-                return Point(x: x, y: y)
+            let x: Float
+            switch model.mode {
+            case .all: x = model.contentPadding
+            case .section, .emotion: x = model.contentPadding - rowHeaderSize.width
             }
+            return Point(x: x, y: y)
         }
 
         //
@@ -266,20 +282,14 @@ struct ChartLayoutModule: ElmModule {
         // MARK: Header frame
         //
 
-        let columnHeaderFrames = sectionsRange.map { section -> [Rect] in
-            let itemsRange = 0..<model.itemsPerSection[section]
-            return itemsRange.map { item in
-                let position = positionsForColumnHeaders[section][item]
-                return Rect(origin: position, size: columnHeaderSize)
-            }
+        let columnHeaderFrames = columnsRange.map { column -> Rect in
+            let position = positionsForColumnHeaders[column]
+            return Rect(origin: position, size: columnHeaderSize)
         }
 
-        let rowHeaderFrames = sectionsRange.map { section -> [Rect] in
-            let itemsRange = 0..<model.itemsPerSection[section]
-            return itemsRange.map { item in
-                let position = positionsForRowHeaders[section][item]
-                return Rect(origin: position, size: rowHeaderSize)
-            }
+        let rowHeaderFrames = rowsRange.map { row -> Rect in
+            let position = positionsForRowHeaders[row]
+            return Rect(origin: position, size: rowHeaderSize)
         }
 
         //
@@ -288,9 +298,11 @@ struct ChartLayoutModule: ElmModule {
         //
 
         var chartSize: Size {
-            guard let positionForLastSection = sectionYPositions.last else { return .zero }
-            let contentHeight = positionForLastSection + maximumSectionHeight
-            let height = contentHeight + model.sectionSpacing.height + model.contentPadding
+            guard let positionForLastRow = rowYPositions.last else { return .zero }
+
+            let contentHeight = positionForLastRow + maximumSectionHeight
+            let height = contentHeight + model.contentPadding
+
             let width: Float
             switch model.mode {
             case .all:
@@ -298,6 +310,7 @@ struct ChartLayoutModule: ElmModule {
             case .section, .emotion:
                 width = model.viewSize.width * Float(View.numberOfColumns) - model.contentPadding + rowHeaderSize.width
             }
+
             return Size(width: width, height: height)
         }
 
