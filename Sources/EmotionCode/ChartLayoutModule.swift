@@ -310,10 +310,9 @@ struct ChartLayoutModule: ElmModule {
         //
 
         var chartSize: Size {
-            guard let positionForLastRow = rowYPositions.last else { return .zero }
+            guard let lastRowHeaderFrame = rowHeaderFrames.last else { return .zero }
 
-            let contentHeight = positionForLastRow + maximumSectionHeight
-            let height = contentHeight + model.contentPadding
+            let height = lastRowHeaderFrame.maxY + model.contentPadding
 
             let width: Float
             switch model.mode {
@@ -366,6 +365,16 @@ public struct Size {
 }
 
 public struct Rect {
+
     let origin: Point
     let size: Size
+
+    var maxX: Float {
+        return origin.x + size.width
+    }
+
+    var maxY: Float {
+        return origin.y + size.height
+    }
+
 }
