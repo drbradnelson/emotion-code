@@ -37,6 +37,7 @@ final class ChartViewController: UICollectionViewController {
         let chartSection = chart.section(atIndex: indexPath.section)
         let emotion = chartSection.emotions[indexPath.item]
         cell.configure(with: emotion)
+        cell.setBackgroundColor(for: indexPath)
         return cell
     }
 
