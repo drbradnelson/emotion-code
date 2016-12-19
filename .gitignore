@@ -5,6 +5,6 @@
 *.perspectivev3
 *.xcuserstate
 *.xccheckout
-*.xcscmblueprint
 project.xcworkspace/
 xcuserdata/
+Carthage
