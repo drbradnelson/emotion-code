@@ -12,8 +12,7 @@ final class ViewChartSizeTests: XCTestCase {
         let view = Module.view(for: model)
 
         let width = viewSize.width
-        let lastRowHeaderFrame = view.rowHeaderFrames.last!
-        let height = lastRowHeaderFrame.maxY + model.contentPadding
+        let height = view.rowHeaderFrames.last!.maxY + model.contentPadding
         let expectedSize = Size(width: width, height: height)
         XCTAssertEqual(view.chartSize, expectedSize)
     }
@@ -27,10 +26,8 @@ final class ViewChartSizeTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        let lastColumnHeaderFrame = view.columnHeaderFrames.last!
-        let width = lastColumnHeaderFrame.maxX + model.contentPadding
-        let lastRowHeaderFrame = view.rowHeaderFrames.last!
-        let height = lastRowHeaderFrame.maxY + model.contentPadding
+        let width = view.columnHeaderFrames.last!.maxX + model.contentPadding
+        let height = view.rowHeaderFrames.last!.maxY + model.contentPadding
         let expectedSize = Size(width: width, height: height)
         XCTAssertEqual(view.chartSize, expectedSize)
     }
