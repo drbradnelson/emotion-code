@@ -84,6 +84,7 @@
 		B625D02C1E0827770021570D /* DefaultModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D02B1E0827770021570D /* DefaultModelTests.swift */; };
 		B625D02E1E0829400021570D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D02D1E0829400021570D /* Utilities.swift */; };
 		B625D0301E082BFF0021570D /* SimpleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D02F1E082BFF0021570D /* SimpleModelTests.swift */; };
+		B625D0341E083E910021570D /* DefaultViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D0331E083E910021570D /* DefaultViewTests.swift */; };
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
 		B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */; };
 		B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */; };
@@ -211,6 +212,7 @@
 		B625D02B1E0827770021570D /* DefaultModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultModelTests.swift; sourceTree = "<group>"; };
 		B625D02D1E0829400021570D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B625D02F1E082BFF0021570D /* SimpleModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleModelTests.swift; sourceTree = "<group>"; };
+		B625D0331E083E910021570D /* DefaultViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultViewTests.swift; sourceTree = "<group>"; };
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSectionViewController.swift; sourceTree = "<group>"; };
@@ -427,6 +429,7 @@
 			children = (
 				B625D02B1E0827770021570D /* DefaultModelTests.swift */,
 				B625D02F1E082BFF0021570D /* SimpleModelTests.swift */,
+				B625D0331E083E910021570D /* DefaultViewTests.swift */,
 				B6B273791E06E0C000771409 /* ChartLayoutModuleViewTests.swift */,
 				B625D02D1E0829400021570D /* Utilities.swift */,
 			);
@@ -760,6 +763,7 @@
 				B6B2737A1E06E0C000771409 /* ChartLayoutModuleViewTests.swift in Sources */,
 				B625D02C1E0827770021570D /* DefaultModelTests.swift in Sources */,
 				B625D02E1E0829400021570D /* Utilities.swift in Sources */,
+				B625D0341E083E910021570D /* DefaultViewTests.swift in Sources */,
 				B625D0301E082BFF0021570D /* SimpleModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
