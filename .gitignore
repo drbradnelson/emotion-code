@@ -8,5 +8,4 @@
 *.xcscmblueprint
 project.xcworkspace/
 xcuserdata/
-Sources/Carthage/Checkouts
-Sources/Carthage/Build
+Sources/Carthage
