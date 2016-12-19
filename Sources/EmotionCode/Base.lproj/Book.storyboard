@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AVR-qB-fiv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AVR-qB-fiv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="SqM-33-d4q">
+            <objects>
+                <viewController id="PQB-gq-P8U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZRP-yX-566"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1Q-VO-gpR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SBW-E9-6hP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-M1-7XL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="PGN-AK-z9e" kind="embed" id="aon-eH-nlD"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8jl-M1-7XL" secondAttribute="bottom" id="86j-7z-9RR"/>
+                            <constraint firstItem="8jl-M1-7XL" firstAttribute="leading" secondItem="SBW-E9-6hP" secondAttribute="leading" id="BHI-j8-PXg"/>
+                            <constraint firstItem="8jl-M1-7XL" firstAttribute="top" secondItem="SBW-E9-6hP" secondAttribute="top" id="LGd-gB-9vH"/>
+                            <constraint firstAttribute="trailing" secondItem="8jl-M1-7XL" secondAttribute="trailing" id="nlk-Bc-BaT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QhT-fJ-qFt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f18-3e-rz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="-135.38230884557723"/>
+        </scene>
         <!--Book Page View Controller-->
         <scene sceneID="ReO-jZ-k3q">
             <objects>
@@ -207,12 +240,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="PGN-AK-z9e" kind="relationship" relationship="rootViewController" id="wGW-3X-0hC"/>
+                        <segue destination="PQB-gq-P8U" kind="relationship" relationship="rootViewController" id="zMy-lK-CX1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdX-cx-qqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="-135"/>
+            <point key="canvasLocation" x="490" y="-135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Km9-He-RKn">

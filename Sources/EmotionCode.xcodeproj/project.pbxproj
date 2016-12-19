@@ -602,7 +602,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftlint lint --strict";
+			shellScript = "cd \"$PROJECT_NAME\"\nswiftlint lint --config ../.swiftlint.yml\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
