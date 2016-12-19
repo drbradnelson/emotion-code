@@ -1,9 +1,9 @@
 import XCTest
 @testable import EmotionCode
 
-final class SimpleViewTests: XCTestCase {
+final class ViewFramesCountTests: XCTestCase {
 
-    func testItemFramesCount() {
+    func testItemFrames() {
         var model = Model()
         let itemsPerSection = [0, 1, 2, 3 ,4]
         model.itemsPerSection = itemsPerSection
@@ -13,7 +13,7 @@ final class SimpleViewTests: XCTestCase {
         XCTAssertEqual(view.itemFrames.count, itemsPerSection.count)
     }
 
-    func testItemFramesPerSectionCount() {
+    func testItemFramesPerSection() {
         var model = Model()
         let itemsPerSection = [0, 1, 2, 3, 4]
         model.itemsPerSection = itemsPerSection
@@ -27,7 +27,7 @@ final class SimpleViewTests: XCTestCase {
         XCTAssertEqual(view.itemFrames[4].count, itemsPerSection[4])
     }
 
-    func testColumnHeaderFramesCount() {
+    func testColumnHeaderFrames() {
         var model = Model()
         model.itemsPerSection = [
             0, 1,
@@ -40,7 +40,7 @@ final class SimpleViewTests: XCTestCase {
         XCTAssertEqual(view.columnHeaderFrames.count, View.numberOfColumns)
     }
 
-    func testRowHeaderFramesCount() {
+    func testRowHeaderFrames() {
         var model = Model()
 
         model.itemsPerSection = [
