@@ -20,7 +20,7 @@ final class TabNavigationChartTests: XCTestCase {
 
     func testChartTitle() {
         app.buttons["Chart"].tap()
-        XCTAssert(app.navigationBars["Chart"].exists)
+        XCTAssert(app.navigationBars["Emotion Chart"].exists)
     }
 
     func testChartDeselection() {

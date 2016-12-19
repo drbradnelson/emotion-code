@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C60b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,7 +37,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fzJ-tm-ABD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="2Lb-D5-bK2" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
@@ -61,7 +61,7 @@
                                         </textView>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="0SO-Qc-Zk5"/>
                                     <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="2Zo-32-gu3"/>
@@ -73,10 +73,17 @@
                                     <constraint firstItem="VDv-NB-PTM" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="zOO-hK-A8p"/>
                                 </constraints>
                                 <size key="customSize" width="151" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="oddRowColor">
+                                        <color key="value" red="0.55976581569999995" green="0.78158503769999998" blue="0.78176909689999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="evenRowColor">
+                                        <color key="value" red="0.6580919623" green="0.8796262145" blue="0.9753685594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="descriptionTextView" destination="VDv-NB-PTM" id="Yu8-UA-uFE"/>
                                     <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
-                                    <segue destination="QSz-Q4-vOB" kind="show" identifier="ShowColumn" id="NQx-De-Kow"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -88,21 +95,22 @@
                     <navigationItem key="navigationItem" title="Emotion Chart" id="Max-Y6-eov"/>
                     <connections>
                         <outlet property="collectionView" destination="fzJ-tm-ABD" id="xoP-uf-srl"/>
+                        <segue destination="QSz-Q4-vOB" kind="show" identifier="ShowSection" id="Jwd-zx-Av3"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBQ-ci-T9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>
-        <!--Chart Column View Controller-->
+        <!--Chart Section View Controller-->
         <scene sceneID="OTd-Lr-Dj3">
             <objects>
-                <collectionViewController id="QSz-Q4-vOB" customClass="ChartColumnViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="QSz-Q4-vOB" customClass="ChartSectionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pq5-jn-5iV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="r6o-cU-aYY" customClass="ChartColumnLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="r6o-cU-aYY" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="QSz-Q4-vOB" id="2eH-AU-bLf"/>
@@ -110,22 +118,22 @@
                         </connections>
                     </collectionView>
                     <connections>
-                        <segue destination="3AH-pL-I16" kind="show" identifier="ShowItem" id="WiV-ZG-j5d"/>
+                        <segue destination="3AH-pL-I16" kind="show" identifier="ShowEmotion" id="WiV-ZG-j5d"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
-        <!--Chart Item View Controller-->
+        <!--Chart Emotion View Controller-->
         <scene sceneID="ALC-mo-bBU">
             <objects>
-                <collectionViewController id="3AH-pL-I16" customClass="ChartItemViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="3AH-pL-I16" customClass="ChartEmotionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Tb9-J0-rsf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartItemLayout" customModule="EmotionCode" customModuleProvider="target"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="y7O-qd-TeI" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="3AH-pL-I16" id="T6X-A1-4bn"/>

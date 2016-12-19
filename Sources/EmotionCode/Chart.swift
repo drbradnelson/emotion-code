@@ -3,10 +3,10 @@ struct Chart {
     let columns: [Column]
 
     struct Column {
-        let groups: [Group]
+        let sections: [Section]
     }
 
-    struct Group {
+    struct Section {
         let emotions: [Emotion]
     }
 
@@ -15,16 +15,16 @@ struct Chart {
         let description: String
     }
 
-    var numberOfGroups: Int {
-        return columns.reduce(0) { numberOfGroups, column in
-            numberOfGroups + column.groups.count
+    var numberOfSections: Int {
+        return columns.reduce(0) { numberOfSections, column in
+            numberOfSections + column.sections.count
         }
     }
 
-    func group(atIndex index: Int) -> Group {
+    func section(atIndex index: Int) -> Section {
         let columnIndex = (index + columns.count) % columns.count
-        let groupIndex = index / columns.count
-        return columns[columnIndex].groups[groupIndex]
+        let sectionIndex = index / columns.count
+        return columns[columnIndex].sections[sectionIndex]
     }
 
 }
