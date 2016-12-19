@@ -1,7 +1,7 @@
 import XCTest
 @testable import EmotionCode
 
-final class SimpleModelTests: XCTestCase {
+final class MessagesModelTests: XCTestCase {
 
     func testSetMode() {
         var model = Model()

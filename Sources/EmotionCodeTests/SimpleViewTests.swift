@@ -2,7 +2,7 @@ import XCTest
 @testable import EmotionCode
 
 final class SimpleViewTests: XCTestCase {
-        
+
     func testItemFramesCount() {
         var model = Model()
         let itemsPerSection = [0, 1, 2, 3 ,4]
@@ -53,5 +53,5 @@ final class SimpleViewTests: XCTestCase {
 
         XCTAssertEqual(view.rowHeaderFrames.count, 3)
     }
-    
+
 }
