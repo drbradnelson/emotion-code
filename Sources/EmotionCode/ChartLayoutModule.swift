@@ -26,6 +26,7 @@ struct ChartLayoutModule: ElmModule {
         var viewSize: Size = .zero
 
         //
+        // MARK: -
         // MARK: Spacing & padding
         //
 
@@ -54,9 +55,16 @@ struct ChartLayoutModule: ElmModule {
             }
         }
 
+        //
+        // MARK: -
+        // MARK: Header size & base item height
+        //
+
         var headerSize: Size {
             return Size(width: 30, height: 30)
         }
+
+        let baseItemHeight: Float = 30
 
     }
 
@@ -115,7 +123,7 @@ struct ChartLayoutModule: ElmModule {
 
         let itemHeights = sectionsRange.map { section -> Float in
             switch model.mode {
-            case .all: return 30
+            case .all: return model.baseItemHeight
             case .section:
                 let itemCount = model.itemsPerSection[section]
                 let totalPaddingHeight = model.contentPadding * 2

@@ -26,8 +26,8 @@ final class ChartLayoutModuleViewTests: XCTestCase {
 
             XCTAssertEqual(view.itemFrames.count, model.itemsPerSection.count)
 
-            for (section, itemsInSection) in itemsPerSection.enumerated() {
-                XCTAssertEqual(view.itemFrames[section].count, itemsInSection)
+            for (section, itemsCount) in itemsPerSection.enumerated() {
+                XCTAssertEqual(view.itemFrames[section].count, itemsCount)
             }
         }
 
