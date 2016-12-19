@@ -3,12 +3,17 @@ import XCTest
 
 final class DefaultModelTests: XCTestCase {
         
-    func testModeAll() {
+    func testEmptyModel() {
         let model = Model()
 
         XCTAssertEqual(model.mode, .all)
         XCTAssertTrue(model.itemsPerSection.isEmpty)
         XCTAssertEqual(model.viewSize, .zero)
+        XCTAssertEqual(model.baseItemHeight, 30)
+    }
+
+    func testModeAll() {
+        let model = Model()
 
         XCTAssertEqual(model.contentPadding, 10)
 
@@ -18,8 +23,6 @@ final class DefaultModelTests: XCTestCase {
 
         let expectedHeaderSize = Size(width: 30, height: 30)
         XCTAssertEqual(model.headerSize, expectedHeaderSize)
-
-        XCTAssertEqual(model.baseItemHeight, 30)
     }
 
     func testModeSection() {
