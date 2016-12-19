@@ -113,7 +113,6 @@ struct ChartLayoutModule: ElmModule {
         let rowsCount = (Float(sectionsCount) / Float(View.numberOfColumns)).rounded(.up)
 
         let rowsRange = 0..<Int(rowsCount)
-        print(sectionsCount)
 
 
         //
