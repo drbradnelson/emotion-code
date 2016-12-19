@@ -310,18 +310,12 @@ struct ChartLayoutModule: ElmModule {
         //
 
         var chartSize: Size {
-            guard let lastRowHeaderFrame = rowHeaderFrames.last else { return .zero }
+            guard
+                let lastRowHeaderFrame = rowHeaderFrames.last,
+                let lastColumnHeaderFrame = columnHeaderFrames.last else { return .zero }
 
             let height = lastRowHeaderFrame.maxY + model.contentPadding
-
-            let width: Float
-            switch model.mode {
-            case .all:
-                width = model.viewSize.width
-            case .section, .emotion:
-                width = model.viewSize.width * Float(View.numberOfColumns) - model.contentPadding + rowHeaderSize.width
-            }
-
+            let width = lastColumnHeaderFrame.maxX + model.contentPadding
             return Size(width: width, height: height)
         }
 
