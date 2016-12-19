@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Book Container View Controller-->
         <scene sceneID="SqM-33-d4q">
             <objects>
-                <viewController id="PQB-gq-P8U" sceneMemberID="viewController">
+                <viewController id="PQB-gq-P8U" customClass="BookContainerViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRP-yX-566"/>
                         <viewControllerLayoutGuide type="bottom" id="c1Q-VO-gpR"/>
@@ -28,16 +28,28 @@
                                     <segue destination="PGN-AK-z9e" kind="embed" id="aon-eH-nlD"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-Dr-sYL">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wS5-3A-LU2"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="hIg-Dc-7MS" kind="embed" id="XaH-6j-8pw"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="8jl-M1-7XL" secondAttribute="bottom" id="86j-7z-9RR"/>
+                            <constraint firstAttribute="trailing" secondItem="muQ-Dr-sYL" secondAttribute="trailing" id="9Du-Ob-rzX"/>
                             <constraint firstItem="8jl-M1-7XL" firstAttribute="leading" secondItem="SBW-E9-6hP" secondAttribute="leading" id="BHI-j8-PXg"/>
                             <constraint firstItem="8jl-M1-7XL" firstAttribute="top" secondItem="SBW-E9-6hP" secondAttribute="top" id="LGd-gB-9vH"/>
+                            <constraint firstItem="muQ-Dr-sYL" firstAttribute="leading" secondItem="SBW-E9-6hP" secondAttribute="leading" id="mW5-nO-luc"/>
                             <constraint firstAttribute="trailing" secondItem="8jl-M1-7XL" secondAttribute="trailing" id="nlk-Bc-BaT"/>
+                            <constraint firstItem="c1Q-VO-gpR" firstAttribute="top" secondItem="muQ-Dr-sYL" secondAttribute="bottom" id="uOu-DW-HZO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QhT-fJ-qFt"/>
+                    <navigationItem key="navigationItem" id="MB2-yp-Fj1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f18-3e-rz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,54 +59,52 @@
         <scene sceneID="ReO-jZ-k3q">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="MB2-yp-Fj1">
-                        <barButtonItem key="leftBarButtonItem" image="Book/Previous Chapter" id="V6E-dN-fbf">
-                            <connections>
-                                <action selector="userDidTapLeftBarButtonItem" destination="PGN-AK-z9e" id="gWT-vu-VLz"/>
-                            </connections>
-                        </barButtonItem>
-                        <view key="titleView" contentMode="scaleToFill" id="pXr-Nk-9Ei" customClass="ChapterTitleView" customModule="EmotionCode" customModuleProvider="target">
-                            <rect key="frame" x="69.5" y="5.5" width="236" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpy-SJ-jeB">
-                                    <rect key="frame" x="0.0" y="0.0" width="236" height="33"/>
-                                    <accessibility key="accessibilityConfiguration">
-                                        <accessibilityTraits key="traits" button="YES" header="YES"/>
-                                    </accessibility>
-                                    <constraints>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dRs-Se-HEv"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                    <state key="normal" title="Chapter"/>
-                                    <connections>
-                                        <segue destination="0M1-OL-JCf" kind="presentation" identifier="ShowChapterSelectionSegue" id="OHk-3O-gIM"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="hpy-SJ-jeB" secondAttribute="bottom" id="FpE-Bj-GnD"/>
-                                <constraint firstItem="hpy-SJ-jeB" firstAttribute="leading" secondItem="pXr-Nk-9Ei" secondAttribute="leading" id="gbE-VN-5c7"/>
-                                <constraint firstAttribute="trailing" secondItem="hpy-SJ-jeB" secondAttribute="trailing" id="iMn-pT-E21"/>
-                                <constraint firstItem="hpy-SJ-jeB" firstAttribute="top" secondItem="pXr-Nk-9Ei" secondAttribute="top" id="rsC-Bp-R1p"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="chapterTitleButton" destination="hpy-SJ-jeB" id="ldI-Ny-Nkk"/>
-                            </connections>
-                        </view>
-                        <barButtonItem key="rightBarButtonItem" image="Book/Next Chapter" id="pD0-t1-PtU">
-                            <connections>
-                                <action selector="userDidTapRightBarButtonItem" destination="PGN-AK-z9e" id="2NK-8V-SbU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="chapterTitleView" destination="pXr-Nk-9Ei" id="gRz-Qm-bbU"/>
-                        <outlet property="leftBarButtonItem" destination="V6E-dN-fbf" id="nbK-rK-bQp"/>
-                        <outlet property="rightBarButtonItem" destination="pD0-t1-PtU" id="hyj-DC-Nmj"/>
+                        <outlet property="nextChapterButtonItem" destination="pD0-t1-PtU" id="bzX-4b-riA"/>
+                        <outlet property="previousChapterButtonItem" destination="V6E-dN-fbf" id="I9T-BU-Abf"/>
                     </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X25-7F-9Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="pXr-Nk-9Ei" customClass="ChapterTitleView" customModule="EmotionCode" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="236" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpy-SJ-jeB">
+                            <rect key="frame" x="0.0" y="0.0" width="236" height="33"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" button="YES" header="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dRs-Se-HEv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <state key="normal" title="Chapter"/>
+                            <connections>
+                                <segue destination="0M1-OL-JCf" kind="presentation" identifier="ShowChapterSelectionSegue" id="OHk-3O-gIM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hpy-SJ-jeB" secondAttribute="bottom" id="FpE-Bj-GnD"/>
+                        <constraint firstItem="hpy-SJ-jeB" firstAttribute="leading" secondItem="pXr-Nk-9Ei" secondAttribute="leading" id="gbE-VN-5c7"/>
+                        <constraint firstAttribute="trailing" secondItem="hpy-SJ-jeB" secondAttribute="trailing" id="iMn-pT-E21"/>
+                        <constraint firstItem="hpy-SJ-jeB" firstAttribute="top" secondItem="pXr-Nk-9Ei" secondAttribute="top" id="rsC-Bp-R1p"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="chapterTitleButton" destination="hpy-SJ-jeB" id="ldI-Ny-Nkk"/>
+                    </connections>
+                </view>
+                <barButtonItem image="Book/Previous Chapter" id="V6E-dN-fbf">
+                    <connections>
+                        <action selector="userDidTapPreviousChapterButton" destination="PGN-AK-z9e" id="qcd-5i-N3z"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem image="Book/Next Chapter" id="pD0-t1-PtU">
+                    <connections>
+                        <action selector="userDidTapNextChapterButton" destination="PGN-AK-z9e" id="zNX-OZ-hFS"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="2097" y="-135"/>
         </scene>
@@ -189,7 +199,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kL2-jN-Qj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Utw-3T-POo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2803" y="554"/>
+            <point key="canvasLocation" x="2802" y="588"/>
         </scene>
         <!--Book Chapter View Controller-->
         <scene sceneID="bo4-8Q-k5e">
@@ -263,7 +273,21 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycb-KW-QIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097" y="554"/>
+            <point key="canvasLocation" x="2098" y="589"/>
+        </scene>
+        <!--Audio Bar Container Controller-->
+        <scene sceneID="ahz-i0-35o">
+            <objects>
+                <viewController id="hIg-Dc-7MS" customClass="AudioBarContainerController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkh-eD-iis">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OB8-t0-PAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="360"/>
         </scene>
     </scenes>
     <resources>
