@@ -62,9 +62,9 @@
 		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
 		913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
-		913A65DE1E07F31900069B4E /* AudioBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */; };
 		913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E31E07FB3300069B4E /* BookContainerViewController.swift */; };
+		913A65E51E08042F00069B4E /* AudioBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
@@ -128,26 +128,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		913A65DD1E07F2AE00069B4E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				913A65DE1E07F31900069B4E /* AudioBar.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXCopyFilesBuildPhase section */
 		91F833FB1DEDD8F800F27AD5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				913A65E51E08042F00069B4E /* AudioBar.framework in Embed Frameworks */,
 				91F833FC1DEDD8F800F27AD5 /* ChartLayoutCalculator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -224,8 +211,8 @@
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		916BED5D1DED81C50048314E /* ChartLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayout.swift; sourceTree = "<group>"; };
+		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
 		91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
 		91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationBookTests.swift; sourceTree = "<group>"; };
@@ -543,7 +530,6 @@
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
-				913A65DD1E07F2AE00069B4E /* Embed Frameworks */,
 				91F833FB1DEDD8F800F27AD5 /* Embed Frameworks */,
 			);
 			buildRules = (
