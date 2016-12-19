@@ -54,6 +54,10 @@ struct ChartLayoutModule: ElmModule {
             }
         }
 
+        var headerSize: Size {
+            return Size(width: 30, height: 30)
+        }
+
     }
 
     typealias Command = Void
@@ -86,11 +90,8 @@ struct ChartLayoutModule: ElmModule {
         guard sectionsCount > 0 else {
             return View(
                 chartSize: .zero,
-                proposedVerticalContentOffset: nil,
-                itemFrames: [],
-                columnHeaderFrames: [],
-                rowHeaderFrames: []
-            )
+                proposedVerticalContentOffset: nil, itemFrames: [],
+                columnHeaderFrames: [], rowHeaderFrames: [])
         }
 
         func rowIndex(forSection section: Int) -> Int {
@@ -101,8 +102,11 @@ struct ChartLayoutModule: ElmModule {
 
         let columnsRange = 0..<View.numberOfColumns
 
-        let rowsCount = sectionsCount / View.numberOfColumns
-        let rowsRange = 0..<rowsCount
+        let rowsCount = (Float(sectionsCount) / Float(View.numberOfColumns)).rounded(.up)
+
+        let rowsRange = 0..<Int(rowsCount)
+        print(sectionsCount)
+
 
         //
         // MARK: -
@@ -144,7 +148,7 @@ struct ChartLayoutModule: ElmModule {
         // MARK: Row header size
         //
 
-        let rowHeaderSize = Size(width: 30, height: maximumSectionHeight)
+        let rowHeaderSize = Size(width: model.headerSize.width, height: maximumSectionHeight)
 
         //
         // MARK: -
@@ -168,7 +172,7 @@ struct ChartLayoutModule: ElmModule {
         // MARK: Column header size
         //
 
-        let columnHeaderSize = Size(width: itemWidth, height: 30)
+        let columnHeaderSize = Size(width: itemWidth, height: model.headerSize.height)
 
         //
         // MARK: -
@@ -197,6 +201,7 @@ struct ChartLayoutModule: ElmModule {
 
         let yPositionsForItems = sectionsRange.map { section -> [Float] in
             let itemsRange = 0..<model.itemsPerSection[section]
+
             let row = rowIndex(forSection: section)
             return itemsRange.map { item in
                 let cumulativeSpacingHeight = Float(item) * model.itemSpacing

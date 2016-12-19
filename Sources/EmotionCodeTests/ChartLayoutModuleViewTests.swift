@@ -4,16 +4,16 @@ import XCTest
 
 final class ChartLayoutModuleViewTests: XCTestCase {
 
-    func testView() {
+    func testViewNumberOfColumns() {
+        XCTAssertEqual(View.numberOfColumns, 2)
+    }
+
+    func testViewChartSizeWhenNoItems() {
         let model = Model()
 
         let view = Module.view(for: model)
 
         XCTAssertEqual(view.chartSize, .zero)
-        XCTAssertNil(view.proposedVerticalContentOffset)
-        XCTAssertTrue(view.itemFrames.isEmpty)
-        XCTAssertTrue(view.columnHeaderFrames.isEmpty)
-        XCTAssertEqual(View.numberOfColumns, 2)
     }
 
     func testViewItemFramesCount() {
@@ -31,9 +31,52 @@ final class ChartLayoutModuleViewTests: XCTestCase {
             }
         }
 
-        test(itemsPerSection: 0, 1, 2)
-        test(itemsPerSection: 3, 4, 5, 6, 7)
-        test(itemsPerSection: 8, 9)
+        test(itemsPerSection: 0)
+        test(itemsPerSection: 1, 2)
+        test(itemsPerSection: 3, 4, 5)
+        test(itemsPerSection: 6, 7, 8, 9)
+
+    }
+
+    func testViewColumnHeadersFramesCount() {
+
+        func test(sectionsCount: Int) {
+            var model = Model()
+            model.itemsPerSection = Array(repeating: 0, count: sectionsCount)
+
+            let view = Module.view(for: model)
+
+            if sectionsCount > 0 {
+                XCTAssertEqual(view.columnHeaderFrames.count, View.numberOfColumns)
+            } else {
+                XCTAssertEqual(view.columnHeaderFrames.count, 0)
+            }
+        }
+
+        test(sectionsCount: 0)
+        test(sectionsCount: 1)
+        test(sectionsCount: 2)
+        test(sectionsCount: 3)
+
+    }
+
+    func testViewRowHeaderFramesCount() {
+
+        func test(sectionsCount: Int) {
+            var model = Model()
+            model.itemsPerSection = Array(repeating: 0, count: sectionsCount)
+
+            let view = Module.view(for: model)
+
+            let expectedRowCount = (Float(sectionsCount) / Float(View.numberOfColumns)).rounded(.up)
+            XCTAssertEqual(view.rowHeaderFrames.count, Int(expectedRowCount))
+        }
+
+        test(sectionsCount: 0)
+        test(sectionsCount: 1)
+        test(sectionsCount: 2)
+        test(sectionsCount: 3)
+
     }
 
 }
