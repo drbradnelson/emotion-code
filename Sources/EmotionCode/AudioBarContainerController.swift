@@ -7,7 +7,7 @@ final class AudioBarContainerController: UIViewController {
     private let audioBarController = AudioBarViewController.instantiateFromStoryboard()
 
     override func viewDidLoad() {
-        
+
         super.viewDidLoad()
 
         try! AVAudioSession.sharedInstance().setMode(AVAudioSessionModeSpokenAudio)
