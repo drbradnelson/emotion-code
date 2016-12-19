@@ -1,7 +1,6 @@
 import XCTest
 @testable import EmotionCode
 
-
 final class ChartLayoutModuleViewTests: XCTestCase {
 
     func testViewNumberOfColumns() {

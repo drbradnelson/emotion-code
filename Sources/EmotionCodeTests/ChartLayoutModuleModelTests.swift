@@ -1,20 +1,7 @@
 import XCTest
 @testable import EmotionCode
 
-typealias Module = ChartLayoutModule
-typealias Mode = Module.Mode
-typealias Message = Module.Message
-typealias Model = Module.Model
-typealias View = Module.View
-
 final class ChartLayoutModuleModelTests: XCTestCase {
-
-    func testModel() {
-        let model = Model()
-        XCTAssertEqual(model.mode, .all)
-        XCTAssertTrue(model.itemsPerSection.isEmpty)
-        XCTAssertEqual(model.viewSize, .zero)
-    }
 
     func testModelContentPadding() {
         var model = Model()
@@ -103,23 +90,4 @@ final class ChartLayoutModuleModelTests: XCTestCase {
         XCTAssertEqual(model, expectedModel)
     }
 
-}
-
-extension Mode: Equatable {
-    public static func ==(lhs: Mode, rhs: Mode) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
-
-extension Size: Equatable {
-    public static func ==(lhs: Size, rhs: Size) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
-
-
-extension Model: Equatable {
-    public static func ==(lhs: Model, rhs: Model) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
 }
