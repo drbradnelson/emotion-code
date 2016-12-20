@@ -13,7 +13,7 @@
         <!--Book Container View Controller-->
         <scene sceneID="SqM-33-d4q">
             <objects>
-                <viewController id="PQB-gq-P8U" customClass="BookContainerViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PQB-gq-P8U" customClass="BookContainerViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRP-yX-566"/>
                         <viewControllerLayoutGuide type="bottom" id="c1Q-VO-gpR"/>
@@ -58,7 +58,7 @@
         <!--Book Page View Controller-->
         <scene sceneID="ReO-jZ-k3q">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <outlet property="chapterTitleView" destination="pXr-Nk-9Ei" id="gRz-Qm-bbU"/>
                         <outlet property="nextChapterButtonItem" destination="pD0-t1-PtU" id="bzX-4b-riA"/>
@@ -121,7 +121,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mNq-gv-QgW" id="ndl-5D-vDz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-4j-HJ3">
@@ -279,6 +279,10 @@
         <scene sceneID="ahz-i0-35o">
             <objects>
                 <viewController id="hIg-Dc-7MS" customClass="AudioBarContainerController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GfS-WR-vNo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ti7-gR-WD1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gkh-eD-iis">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -2,6 +2,9 @@ import UIKit
 
 final class BookPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
+    var preferredTopLayoutGuide: CGFloat = 0
+    var preferredBottomLayoutGuide: CGFloat = 0
+
     @IBOutlet private(set) var previousChapterButtonItem: UIBarButtonItem! {
         didSet {
             previousChapterButtonItem.accessibilityLabel = NSLocalizedString("Previous Chapter", comment: "")
@@ -29,10 +32,10 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         showChapter(at: 0, direction: .forward, animated: false)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        currentBookChapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
-        currentBookChapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        currentBookChapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
+        currentBookChapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
     }
 
     // MARK: Page view controller data source
@@ -69,8 +72,8 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         let chapter = bookController.book.chapters[chapterIndex]
         chapterViewController.chapterURL = chapter.fileURL
         chapterViewController.chapterIndex = chapterIndex
-        chapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
-        chapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+        chapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
+        chapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
         return chapterViewController
     }
 

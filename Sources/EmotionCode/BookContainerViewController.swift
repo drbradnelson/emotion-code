@@ -11,6 +11,12 @@ final class BookContainerViewController: UIViewController {
         navigationItem.rightBarButtonItem = bookPageViewController.nextChapterButtonItem
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        bookPageViewController.preferredTopLayoutGuide = topLayoutGuide.length
+        bookPageViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if let bookPageViewController = segue.destination as? BookPageViewController {
