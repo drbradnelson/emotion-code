@@ -6,7 +6,7 @@ import Elm
 // swiftlint:disable file_length
 // swiftlint:disable cyclomatic_complexity
 
-struct ChartLayoutModule: ElmModule {
+struct ChartLayoutModule: Elm.Module {
 
     enum Mode {
         case all
@@ -38,10 +38,10 @@ struct ChartLayoutModule: ElmModule {
         }
 
         var sectionSpacing: Size {
-            let width: Float = 15
+            let width: Float = 5
             let height: Float
             switch mode {
-            case .all: height = 15
+            case .all: height = 5
             case .section, .emotion: height = 20
             }
             return Size(width: width, height: height)
@@ -49,7 +49,7 @@ struct ChartLayoutModule: ElmModule {
 
         var itemSpacing: Float {
             switch mode {
-            case .all: return 5
+            case .all: return 0
             case .section: return 10
             case .emotion: return sectionSpacing.height
             }
@@ -120,9 +120,20 @@ struct ChartLayoutModule: ElmModule {
         // MARK: Item heights
         //
 
+        var baseItemHeight: Float {
+            let rowsCount = (Float(model.itemsPerSection.count) / Float(View.numberOfColumns)).rounded(.up)
+            let iphone6ScreenWidth: Float = 375
+            guard model.viewSize.width >= iphone6ScreenWidth else { return model.baseItemHeight }
+
+            let totalSpacing = model.contentPadding * 2 + model.headerSize.height + model.sectionSpacing.height * rowsCount
+            let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
+            let maximumItemsCountInSection = model.itemsPerSection.max()!
+            return totalAvailableSpacePerSection / Float(maximumItemsCountInSection)
+        }
+
         let itemHeights = sectionsRange.map { section -> Float in
             switch model.mode {
-            case .all: return model.baseItemHeight
+            case .all: return baseItemHeight
             case .section:
                 let itemCount = model.itemsPerSection[section]
                 let totalPaddingHeight = model.contentPadding * 2

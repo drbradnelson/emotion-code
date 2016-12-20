@@ -8,9 +8,9 @@ final class ModelModeTests: XCTestCase {
 
         XCTAssertEqual(model.contentPadding, 10)
 
-        let expectedSectionSpacing = Size(width: 15, height: 15)
+        let expectedSectionSpacing = Size(width: 5, height: 5)
         XCTAssertEqual(model.sectionSpacing, expectedSectionSpacing)
-        XCTAssertEqual(model.itemSpacing, 5)
+        XCTAssertEqual(model.itemSpacing, 0)
     }
 
     func testModeSection() {
@@ -19,7 +19,7 @@ final class ModelModeTests: XCTestCase {
 
         XCTAssertEqual(model.contentPadding, 20)
 
-        let expectedSectionSpacing = Size(width: 15, height: 20)
+        let expectedSectionSpacing = Size(width: 5, height: 20)
         XCTAssertEqual(model.sectionSpacing, expectedSectionSpacing)
 
         XCTAssertEqual(model.itemSpacing, 10)
@@ -31,7 +31,7 @@ final class ModelModeTests: XCTestCase {
 
         XCTAssertEqual(model.contentPadding, 20)
 
-        let expectedSectionSpacing = Size(width: 15, height: 20)
+        let expectedSectionSpacing = Size(width: 5, height: 20)
         XCTAssertEqual(model.sectionSpacing, expectedSectionSpacing)
 
         XCTAssertEqual(model.itemSpacing, expectedSectionSpacing.height)

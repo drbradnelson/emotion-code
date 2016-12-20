@@ -15,7 +15,7 @@ final class ViewChartSizeTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        let expectedSize = Size(width: 100, height: 605)
+        let expectedSize = Size(width: 100, height: 515)
         XCTAssertEqual(view.chartSize, expectedSize)
     }
 
