@@ -33,17 +33,4 @@ final class ViewFramesCountTests: XCTestCase {
         XCTAssertEqual(view.itemFrames[4].count, 4)
     }
 
-    func testRowHeaderFrames() {
-        var model = Model()
-        model.itemsPerSection = [
-            0, 1,
-            2, 3,
-            4
-        ]
-
-        let view = Module.view(for: model)
-
-        XCTAssertEqual(view.rowHeaderFrames.count, 3)
-    }
-
 }

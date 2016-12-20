@@ -1,7 +1,7 @@
 import XCTest
 @testable import EmotionCode
 
-final class ViewColumnHeadersTests: XCTestCase {
+final class ViewRowHeadersTests: XCTestCase {
 
     func testFramesCount() {
         var model = Model()
@@ -13,7 +13,7 @@ final class ViewColumnHeadersTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        XCTAssertEqual(view.columnHeaderFrames.count, 2)
+        XCTAssertEqual(view.rowHeaderFrames.count, 3)
     }
 
     func testSizes() {
@@ -23,13 +23,13 @@ final class ViewColumnHeadersTests: XCTestCase {
             3, 4,
             5
         ]
-        model.viewSize = Size(width: 100, height: 100)
 
         let view = Module.view(for: model)
 
-        let expectedSize = Size(width: 10, height: 30)
-        XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
-        XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
+        let expectedSize = Size(width: 30, height: 170)
+        XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
+        XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
+        XCTAssertEqual(view.rowHeaderFrames[2].size, expectedSize)
     }
 
     func testOrigins() {
@@ -39,12 +39,12 @@ final class ViewColumnHeadersTests: XCTestCase {
             3, 4,
             5
         ]
-        model.viewSize = Size(width: 100, height: 100)
 
         let view = Module.view(for: model)
 
-        XCTAssertEqual(view.columnHeaderFrames[0].origin, Point(x: 55, y: 10))
-        XCTAssertEqual(view.columnHeaderFrames[1].origin, Point(x: 80, y: 10))
+        XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: 10, y: 55))
+        XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: 10, y: 240))
+        XCTAssertEqual(view.rowHeaderFrames[2].origin, Point(x: 10, y: 425))
     }
 
 }
