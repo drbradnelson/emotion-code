@@ -2,19 +2,22 @@ import UIKit
 
 final class BookPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
-    @IBOutlet private var leftBarButtonItem: UIBarButtonItem! {
+    var preferredTopLayoutGuide: CGFloat = 0
+    var preferredBottomLayoutGuide: CGFloat = 0
+
+    @IBOutlet private(set) var previousChapterButtonItem: UIBarButtonItem! {
         didSet {
-            leftBarButtonItem.accessibilityLabel = NSLocalizedString("Previous Chapter", comment: "")
+            previousChapterButtonItem.accessibilityLabel = NSLocalizedString("Previous Chapter", comment: "")
         }
     }
 
-    @IBOutlet private var rightBarButtonItem: UIBarButtonItem! {
+    @IBOutlet private(set) var nextChapterButtonItem: UIBarButtonItem! {
         didSet {
-            rightBarButtonItem.accessibilityLabel = NSLocalizedString("Next Chapter", comment: "")
+            nextChapterButtonItem.accessibilityLabel = NSLocalizedString("Next Chapter", comment: "")
         }
     }
 
-    @IBOutlet private var chapterTitleView: ChapterTitleView!
+    @IBOutlet private(set) var chapterTitleView: ChapterTitleView!
 
     let bookController = BookController()
     private lazy var bookSegueController: BookSegueController = BookSegueController(bookPageViewController: self)
@@ -29,10 +32,10 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         showChapter(at: 0, direction: .forward, animated: false)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        currentBookChapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
-        currentBookChapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        currentBookChapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
+        currentBookChapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
     }
 
     // MARK: Page view controller data source
@@ -52,7 +55,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         let chapterIndex = currentBookChapterViewController.chapterIndex
         chapterTitleView.setChapterIndex(chapterIndex)
-        enableDisableBarButtonItems()
+        enableDisablePreviousNextChapterButtons()
     }
 
     // MARK: Chapter view controller
@@ -69,8 +72,8 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         let chapter = bookController.book.chapters[chapterIndex]
         chapterViewController.chapterURL = chapter.fileURL
         chapterViewController.chapterIndex = chapterIndex
-        chapterViewController.preferredTopLayoutGuide = topLayoutGuide.length
-        chapterViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+        chapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
+        chapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
         return chapterViewController
     }
 
@@ -80,25 +83,25 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         let chapterViewController = chapterViewControllerWithChapter(at: chapterIndex)
         chapterTitleView.setChapterIndex(chapterViewController.chapterIndex)
         setViewControllers([chapterViewController], direction: direction, animated: animated, completion: nil)
-        enableDisableBarButtonItems()
+        enableDisablePreviousNextChapterButtons()
     }
 
     // MARK: Update bar button items
 
-    private func enableDisableBarButtonItems() {
+    private func enableDisablePreviousNextChapterButtons() {
         let currentChapterIndex = currentBookChapterViewController.chapterIndex
-        leftBarButtonItem.isEnabled = bookController.hasChapter(at: currentChapterIndex - 1)
-        rightBarButtonItem.isEnabled = bookController.hasChapter(at: currentChapterIndex + 1)
+        previousChapterButtonItem.isEnabled = bookController.hasChapter(at: currentChapterIndex - 1)
+        nextChapterButtonItem.isEnabled = bookController.hasChapter(at: currentChapterIndex + 1)
     }
 
     // MARK: Navigation bar button actions
 
-    @IBAction func userDidTapLeftBarButtonItem() {
+    @IBAction func userDidTapPreviousChapterButton() {
         guard bookController.hasChapter(at: currentBookChapterViewController.chapterIndex - 1) else { return }
         showChapter(at: currentBookChapterViewController.chapterIndex - 1, direction: .reverse, animated: true)
     }
 
-    @IBAction func userDidTapRightBarButtonItem() {
+    @IBAction func userDidTapNextChapterButton() {
         guard bookController.hasChapter(at: currentBookChapterViewController.chapterIndex + 1) else { return }
         showChapter(at: currentBookChapterViewController.chapterIndex + 1, direction: .forward, animated: true)
     }
