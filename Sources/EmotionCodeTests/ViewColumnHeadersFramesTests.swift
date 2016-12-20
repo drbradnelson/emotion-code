@@ -16,18 +16,34 @@ final class ViewColumnHeadersTests: XCTestCase {
         XCTAssertEqual(view.columnHeaderFrames.count, 2)
     }
 
-    func testSizes() {
+    func testSizesForSmallViewSize() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
             3, 4,
             5
         ]
-        model.viewSize = Size(width: 100, height: 100)
+        model.viewSize = Size(width: 100, height: 0)
 
         let view = Module.view(for: model)
 
         let expectedSize = Size(width: 20, height: 30)
+        XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
+        XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
+    }
+
+    func testSizesForBigViewSize() {
+        var model = Model()
+        model.itemsPerSection = [
+            1, 2,
+            3, 4,
+            5
+        ]
+        model.viewSize = Size(width: 375, height: 0)
+
+        let view = Module.view(for: model)
+
+        let expectedSize = Size(width: 157.5, height: 30)
         XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
         XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
     }

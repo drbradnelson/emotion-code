@@ -3,7 +3,7 @@ import XCTest
 
 final class ViewChartSizeTests: XCTestCase {
 
-    func testModeAll() {
+    func testModeAllForSmallViewSize() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
@@ -16,6 +16,22 @@ final class ViewChartSizeTests: XCTestCase {
         let view = Module.view(for: model)
 
         let expectedSize = Size(width: 100, height: 515)
+        XCTAssertEqual(view.chartSize, expectedSize)
+    }
+
+    func testModeAllForBigViewSize() {
+        var model = Model()
+        model.itemsPerSection = [
+            1, 2,
+            3, 4,
+            5
+        ]
+        let viewSize = Size(width: 375, height: 200)
+        model.viewSize = viewSize
+
+        let view = Module.view(for: model)
+
+        let expectedSize = Size(width: 375, height: 200)
         XCTAssertEqual(view.chartSize, expectedSize)
     }
 
@@ -54,5 +70,5 @@ final class ViewChartSizeTests: XCTestCase {
         let expectedSize = Size(width: 210, height: 1270)
         XCTAssertEqual(view.chartSize, expectedSize)
     }
-
+    
 }
