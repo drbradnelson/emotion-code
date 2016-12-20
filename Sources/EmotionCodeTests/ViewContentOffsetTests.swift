@@ -74,9 +74,6 @@ final class ViewContentOffsetTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        print(view.itemFrames[1])
-        print(view.itemFrames[3])
-
         XCTAssertEqual(view.proposedVerticalContentOffset, 610)
     }
 
