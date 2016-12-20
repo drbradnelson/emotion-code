@@ -3,7 +3,7 @@ import XCTest
 
 final class DefaultModelTests: XCTestCase {
 
-    func testEmptyModel() {
+    func test() {
         let model = Model()
 
         XCTAssertEqual(model.mode, .all)

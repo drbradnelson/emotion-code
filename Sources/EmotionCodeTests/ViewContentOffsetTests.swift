@@ -7,6 +7,7 @@ final class ViewContentOffsetTests: XCTestCase {
         var model = Model()
         let section = 0
         model.mode = .section(section)
+        model.viewSize = Size(width: 0, height: 100)
 
         let itemsPerSection = [
             1, 2,
@@ -17,14 +18,14 @@ final class ViewContentOffsetTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        let expectedVerticalContentOffset = view.itemFrames[section][0].origin.y - model.sectionSpacing.height
-        XCTAssertEqual(view.proposedVerticalContentOffset, expectedVerticalContentOffset)
+        XCTAssertEqual(view.proposedVerticalContentOffset, 50)
     }
 
-    func testModeSection1() {
+    func testModeSection2() {
         var model = Model()
-        let section = 1
+        let section = 2
         model.mode = .section(section)
+        model.viewSize = Size(width: 0, height: 100)
 
         let itemsPerSection = [
             1, 2,
@@ -35,8 +36,7 @@ final class ViewContentOffsetTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        let expectedVerticalContentOffset = view.itemFrames[section][0].origin.y - model.sectionSpacing.height
-        XCTAssertEqual(view.proposedVerticalContentOffset, expectedVerticalContentOffset)
+        XCTAssertEqual(view.proposedVerticalContentOffset, 130)
     }
 
     func testModeEmotionIndexPath01() {
@@ -44,6 +44,7 @@ final class ViewContentOffsetTests: XCTestCase {
         let item = 0
         let section = 1
         model.mode = .emotion(IndexPath(item: item, section: section))
+        model.viewSize = Size(width: 0, height: 100)
 
         let itemsPerSection = [
             1, 2,
@@ -54,8 +55,7 @@ final class ViewContentOffsetTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        let expectedVerticalContentOffset = view.itemFrames[section][item].origin.y - model.itemSpacing
-        XCTAssertEqual(view.proposedVerticalContentOffset, expectedVerticalContentOffset)
+        XCTAssertEqual(view.proposedVerticalContentOffset, 50)
     }
 
     func testModeEmotionIndexPath23() {
@@ -63,6 +63,7 @@ final class ViewContentOffsetTests: XCTestCase {
         let item = 2
         let section = 3
         model.mode = .emotion(IndexPath(item: item, section: section))
+        model.viewSize = Size(width: 0, height: 100)
 
         let itemsPerSection = [
             1, 2,
@@ -73,8 +74,10 @@ final class ViewContentOffsetTests: XCTestCase {
 
         let view = Module.view(for: model)
 
-        let expectedVerticalContentOffset = view.itemFrames[section][item].origin.y - model.itemSpacing
-        XCTAssertEqual(view.proposedVerticalContentOffset, expectedVerticalContentOffset)
+        print(view.itemFrames[1])
+        print(view.itemFrames[3])
+
+        XCTAssertEqual(view.proposedVerticalContentOffset, 610)
     }
 
 }
