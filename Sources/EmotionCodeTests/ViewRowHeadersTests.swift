@@ -7,55 +7,58 @@ final class ViewRowHeadersTests: XCTestCase {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
+        model.viewSize = Size(width: 100, height: 100)
 
         let view = try! Module.view(for: model)
 
-        XCTAssertEqual(view.rowHeaderFrames.count, 3)
+        XCTAssertEqual(view.rowHeaderFrames.count, 2)
     }
 
     func testSizesForSmallViewSize() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
-        model.viewSize = .zero
+        model.viewSize = Size(width: 100, height: 100)
 
         let view = try! Module.view(for: model)
 
-        let expectedSize = Size(width: 30, height: 150)
+        let height: Float = 30 * 2 // item height * 2
+        let expectedSize = Size(width: 30, height: height)
         XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
         XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
-        XCTAssertEqual(view.rowHeaderFrames[2].size, expectedSize)
     }
 
     func testSizesForBigViewSize() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
-        model.viewSize = Size(width: 375, height: 200)
+        model.viewSize = Size(width: 200, height: 554)
 
         let view = try! Module.view(for: model)
 
-        let expectedSize = Size(width: 30, height: 45)
+        let totalSpace = Float(0
+            + 10 * 2 // content padding
+            + 30 // column header
+            + 5 * 2  // section spacing
+        )
+        let height = (Float(554) - totalSpace) / Float(2) // (view width - all spacings) / number of rows
+
+        let expectedSize = Size(width: 30, height: height)
         XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
         XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
-        XCTAssertEqual(view.rowHeaderFrames[2].size, expectedSize)
     }
 
     func testOriginsForSmallViewSize() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
         model.viewSize = .zero
 
@@ -63,23 +66,38 @@ final class ViewRowHeadersTests: XCTestCase {
 
         XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: 10, y: 45))
         XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: 10, y: 200))
-        XCTAssertEqual(view.rowHeaderFrames[2].origin, Point(x: 10, y: 355))
     }
 
     func testOriginsForBigViewSize() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
-        model.viewSize = Size(width: 375, height: 200)
+        model.viewSize = Size(width: 375, height: 554)
 
         let view = try! Module.view(for: model)
+        let x: Float = 10 // content padding
+        let y1 = Float(0
+            + 10 // content padding
+            + 30 // column header
+            + 5  // section spacing
+        )
 
-        XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: 10, y: 45))
-        XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: 10, y: 95))
-        XCTAssertEqual(view.rowHeaderFrames[2].origin, Point(x: 10, y: 145))
+        let totalVerticalSpace = Float(0
+            + 10 * 2 // content padding
+            + 30 // column header
+            + 5 * 2 // section spacing
+        )
+        let columnWidth = (Float(554) - totalVerticalSpace) / 2 // (view width - total space) / number of columns
+
+        let y2 = Float(y1
+            + columnWidth
+            + 5 // section spacing
+        )
+
+        XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: x, y: y1))
+        XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: x, y: y2))
     }
 
 }
