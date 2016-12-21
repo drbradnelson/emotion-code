@@ -42,7 +42,14 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Failure: Error {
         case emptyItemsPerSectionArray
+        case negativeViewSize
+        case zeroViewSize
+
         case viewSizeSmallerThanContentPadding
+        case viewSizeSmallerThanSectionSpacing
+        case viewSizeSmallerThanItemSpacing
+        case viewSizeSmallerThanHeaderSize
+        case viewWidthSmallerThanAllSpacingAndRowHeaderWidth
     }
 
     static func update(for message: Message, model: inout Model) throws -> [Command] {
@@ -53,6 +60,8 @@ struct ChartLayoutModule: Elm.Module {
             guard !itemsPerSection.isEmpty else { throw Failure.emptyItemsPerSectionArray }
             model.itemsPerSection = itemsPerSection
         case .setViewSize(let size):
+            guard viewSize != .zero else { throw Failure.zeroViewSize }
+            guard viewSize.width > 0, viewSize.height > 0 else { throw Failure.negativeViewSize }
             model.viewSize = size
         }
         return []
@@ -61,13 +70,6 @@ struct ChartLayoutModule: Elm.Module {
     static func view(for model: Model) throws -> View {
 
         let sectionsCount = model.itemsPerSection.count
-
-        guard sectionsCount > 0 else {
-            return View(
-                chartSize: .zero,
-                proposedVerticalContentOffset: nil, itemFrames: [],
-                columnHeaderFrames: [], rowHeaderFrames: [])
-        }
 
         func rowIndex(forSection section: Int) -> Int {
             return section / View.numberOfColumns
@@ -93,6 +95,10 @@ struct ChartLayoutModule: Elm.Module {
             }
         }
 
+        guard model.viewSize.width > contentPadding, model.viewSize.height > contentPadding else {
+            throw Failure.viewSizeSmallerThanContentPadding
+        }
+
         var sectionSpacing: Size {
             let width: Float = 5
             let height: Float
@@ -103,6 +109,10 @@ struct ChartLayoutModule: Elm.Module {
             return Size(width: width, height: height)
         }
 
+        guard model.viewSize.width > sectionSpacing.width, model.viewSize.height > sectionSpacing.height else {
+            throw Failure.viewSizeSmallerThanSectionSpacing
+        }
+
         var itemSpacing: Float {
             switch model.mode {
             case .all: return 0
@@ -111,13 +121,25 @@ struct ChartLayoutModule: Elm.Module {
             }
         }
 
+        guard model.viewSize.width > itemSpacing, model.viewSize.height > itemSpacing else {
+            throw Failure.viewSizeSmallerThanItemSpacing
+        }
+
+        guard model.viewSize.width > Model.headerSize.width, model.viewSize.height > Model.headerSize.height else {
+            throw Failure.viewSizeSmallerThanHeaderSize
+        }
+
+        guard model.viewSize.width > (contentPadding * 2 + sectionSpacing.width * Float(View.numberOfColumns) + Model.headerSize.width) else {
+            throw Failure.viewWidthSmallerThanAllSpacingAndRowHeaderWidth
+        }
+
         //
         // MARK: -
         // MARK: Item heights
         //
 
         var baseItemHeight: Float {
-            guard model.viewSize.width >= Model.minViewHeightForCompactLayout else { return Model.baseItemHeight }
+            guard model.viewSize.height >= Model.minViewHeightForCompactLayout else { return Model.baseItemHeight }
 
             let totalSpacing = contentPadding * 2 + Model.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
