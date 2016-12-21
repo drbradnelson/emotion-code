@@ -93,13 +93,13 @@ final class ViewChartSizeTests: XCTestCase {
             + 20  // content padding
             + 30  // column header
             + 20  // section spacing
-            + (300 - 20 - 20) // row 1 item 1
+            + (300 - 20 - 20) // maximum section item 1
             + 20  // item spacing
-            + (300 - 20 - 20) // row 1 item 2
+            + (300 - 20 - 20) // maximum section item 2
             + 20  // section spacing
-            + (300 - 20 - 20) // row 2 item 1
+            + (300 - 20 - 20) // maximum section item 1
             + 20  // item spacing
-            + (300 - 20 - 20) // row 2 item 2
+            + (300 - 20 - 20) // maximum section item 2
             + 20  // contentPadding
         )
         XCTAssertEqual(view.chartSize, Size(width: width, height: height))

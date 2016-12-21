@@ -5,76 +5,61 @@ final class ViewContentOffsetTests: XCTestCase {
 
     func testModeSection0() {
         var model = Model()
-        let section = 0
-        model.mode = .section(section)
-        model.viewSize = Size(width: 0, height: 100)
-
-        let itemsPerSection = [
+        model.mode = .section(0)
+        model.viewSize = Size(width: 200, height: 300)
+        model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
-        model.itemsPerSection = itemsPerSection
 
         let view = try! Module.view(for: model)
 
-        XCTAssertEqual(view.proposedVerticalContentOffset, 50)
+        XCTAssertEqual(view.proposedVerticalContentOffset, Float(0
+            + 20 // content padding
+            + 30 // column header
+        ))
     }
 
     func testModeSection2() {
         var model = Model()
-        let section = 2
-        model.mode = .section(section)
-        model.viewSize = Size(width: 0, height: 100)
-
-        let itemsPerSection = [
+        model.mode = .section(2)
+        model.viewSize = Size(width: 200, height: 300)
+        model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
-        model.itemsPerSection = itemsPerSection
 
         let view = try! Module.view(for: model)
 
-        XCTAssertEqual(view.proposedVerticalContentOffset, 130)
+        XCTAssertEqual(view.proposedVerticalContentOffset, Float(0
+            + 20 // content padding
+            + 30 // column header
+            + 20 // section spacing
+            + (300 - 20 - 20) // row 1
+        ))
     }
 
-    func testModeEmotionIndexPath01() {
+    func testModeEmotionIndexPath() {
         var model = Model()
-        let item = 0
-        let section = 1
-        model.mode = .emotion(IndexPath(item: item, section: section))
-        model.viewSize = Size(width: 0, height: 100)
-
-        let itemsPerSection = [
+        model.mode = .emotion(IndexPath.arbitrary)
+        model.viewSize = Size(width: 200, height: 300)
+        model.itemsPerSection = [
             1, 2,
-            3, 4,
-            5
+            2
         ]
-        model.itemsPerSection = itemsPerSection
 
         let view = try! Module.view(for: model)
 
-        XCTAssertEqual(view.proposedVerticalContentOffset, 50)
-    }
-
-    func testModeEmotionIndexPath23() {
-        var model = Model()
-        let item = 2
-        let section = 3
-        model.mode = .emotion(IndexPath(item: item, section: section))
-        model.viewSize = Size(width: 0, height: 100)
-
-        let itemsPerSection = [
-            1, 2,
-            3, 4,
-            5
-        ]
-        model.itemsPerSection = itemsPerSection
-
-        let view = try! Module.view(for: model)
-
-        XCTAssertEqual(view.proposedVerticalContentOffset, 610)
+        XCTAssertEqual(view.proposedVerticalContentOffset, Float(0
+            + 20 // content padding
+            + 30 // column header
+            + 20 // section spacing
+            + (300 - 20 - 20) // maximum section item 1
+            + 20 // item spacing
+            + (300 - 20 - 20) // maximum section item 2
+            + 20 // section spacing
+            + (300 - 20 - 20) // maximum section item 1
+        ))
     }
 
 }
