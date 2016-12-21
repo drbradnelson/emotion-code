@@ -26,7 +26,7 @@ struct ChartLayoutModule: Elm.Module {
         var viewSize: Size = .zero
         static let headerSize = Size(width: 30, height: 30)
         static let baseItemHeight: Float = 30
-        static let minViewHeightForCompactLayout: Float = 667
+        static let minViewHeightForCompactLayout: Float = 554
     }
 
     typealias Command = Void
@@ -60,6 +60,8 @@ struct ChartLayoutModule: Elm.Module {
             guard !itemsPerSection.isEmpty else { throw Failure.emptyItemsPerSectionArray }
             model.itemsPerSection = itemsPerSection
         case .setViewSize(let size):
+            guard size.width != 0, size.height != 0 else { throw Failure.zeroViewSize }
+            guard size.width > 0, size.height > 0 else { throw Failure.negativeViewSize }
             model.viewSize = size
         }
         return []
@@ -79,20 +81,13 @@ struct ChartLayoutModule: Elm.Module {
             )
         }
 
-        guard model.viewSize.width != 0, model.viewSize.height != 0 else { throw Failure.zeroViewSize }
-        guard model.viewSize.width > 0, model.viewSize.height > 0 else { throw Failure.negativeViewSize }
-
-
         func rowIndex(forSection section: Int) -> Int {
             return section / View.numberOfColumns
         }
 
         let sectionsRange = 0..<sectionsCount
-
         let columnsRange = 0..<View.numberOfColumns
-
         let rowsCount = (Float(sectionsCount) / Float(View.numberOfColumns)).rounded(.up)
-
         let rowsRange = 0..<Int(rowsCount)
 
         //

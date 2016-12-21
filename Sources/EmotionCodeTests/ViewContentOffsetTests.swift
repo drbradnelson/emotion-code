@@ -16,7 +16,7 @@ final class ViewContentOffsetTests: XCTestCase {
         ]
         model.itemsPerSection = itemsPerSection
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.proposedVerticalContentOffset, 50)
     }
@@ -34,7 +34,7 @@ final class ViewContentOffsetTests: XCTestCase {
         ]
         model.itemsPerSection = itemsPerSection
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.proposedVerticalContentOffset, 130)
     }
@@ -53,7 +53,7 @@ final class ViewContentOffsetTests: XCTestCase {
         ]
         model.itemsPerSection = itemsPerSection
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.proposedVerticalContentOffset, 50)
     }
@@ -72,7 +72,7 @@ final class ViewContentOffsetTests: XCTestCase {
         ]
         model.itemsPerSection = itemsPerSection
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.proposedVerticalContentOffset, 610)
     }

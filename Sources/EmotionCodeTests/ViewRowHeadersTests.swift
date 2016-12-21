@@ -11,7 +11,7 @@ final class ViewRowHeadersTests: XCTestCase {
             5
         ]
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.rowHeaderFrames.count, 3)
     }
@@ -25,7 +25,7 @@ final class ViewRowHeadersTests: XCTestCase {
         ]
         model.viewSize = .zero
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         let expectedSize = Size(width: 30, height: 150)
         XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
@@ -42,7 +42,7 @@ final class ViewRowHeadersTests: XCTestCase {
         ]
         model.viewSize = Size(width: 375, height: 200)
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         let expectedSize = Size(width: 30, height: 45)
         XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
@@ -59,7 +59,7 @@ final class ViewRowHeadersTests: XCTestCase {
         ]
         model.viewSize = .zero
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: 10, y: 45))
         XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: 10, y: 200))
@@ -75,7 +75,7 @@ final class ViewRowHeadersTests: XCTestCase {
         ]
         model.viewSize = Size(width: 375, height: 200)
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: 10, y: 45))
         XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: 10, y: 95))

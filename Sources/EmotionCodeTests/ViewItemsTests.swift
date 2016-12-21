@@ -10,7 +10,7 @@ final class ViewItemsTests: XCTestCase {
             3
         ]
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.itemFrames.count, 3)
 
@@ -27,7 +27,7 @@ final class ViewItemsTests: XCTestCase {
         ]
         model.viewSize = Size(width: 100, height: 100)
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         let expectedSize = Size(width: 20, height: 30)
 
@@ -49,7 +49,7 @@ final class ViewItemsTests: XCTestCase {
         ]
         model.viewSize = Size(width: 375, height: 300)
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         let expectedSize = Size(width: 157.5, height: 40)
 
@@ -71,7 +71,7 @@ final class ViewItemsTests: XCTestCase {
         ]
         model.viewSize = Size(width: 100, height: 100)
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.itemFrames[0][0].origin, Point(x: 45, y: 45))
 
@@ -91,7 +91,7 @@ final class ViewItemsTests: XCTestCase {
         ]
         model.viewSize = Size(width: 375, height: 300)
 
-        let view = Module.view(for: model)
+        let view = try! Module.view(for: model)
 
         XCTAssertEqual(view.itemFrames[0][0].origin, Point(x: 45, y: 45))
 
