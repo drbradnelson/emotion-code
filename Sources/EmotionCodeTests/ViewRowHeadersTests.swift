@@ -60,12 +60,30 @@ final class ViewRowHeadersTests: XCTestCase {
             1, 2,
             2
         ]
-        model.viewSize = .zero
+        model.viewSize = Size(width: 100, height: 100)
 
         let view = try! Module.view(for: model)
 
-        XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: 10, y: 45))
-        XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: 10, y: 200))
+        let x = Float(0
+            + 10 // content padding
+        )
+
+        let y1 = Float(0
+            + 10 // content padding
+            + 30 // column header
+            + 5  // section spacing
+        )
+
+        let maximumSectionHeight: Float = 30 * 2 // item height * 2
+
+        let y2 = Float(0
+            + y1
+            + maximumSectionHeight
+            + 5 // section spacing
+        )
+
+        XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: x, y: y1))
+        XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: x, y: y2))
     }
 
     func testOriginsForBigViewSize() {
