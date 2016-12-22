@@ -29,8 +29,10 @@ final class ViewRowHeadersTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let height: Float = 30 * 2 // item height * 2
-            let expectedSize = Size(width: 30, height: height)
+            let expectedSize = Size(
+                width: 30,     // header size
+                height: 30 * 2 // item height * 2
+            )
             XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
         }
@@ -43,18 +45,23 @@ final class ViewRowHeadersTests: XCTestCase {
                 1, 2,
                 2
             ]
-            model.viewSize = Size(width: 200, height: 554)
+            model.viewSize = Size(
+                width: 200,
+                height: 554 // Module.minViewHeightForCompactLayout
+            )
 
             let view = try! Module.view(for: model)
 
             let totalSpace = Float(0
                 + 10 * 2 // content padding
-                + 30 // column header
+                + 30     // column header
                 + 5 * 2  // section spacing
             )
-            let height = (Float(554) - totalSpace) / Float(2) // (view height - all spacings) / number of rows
 
-            let expectedSize = Size(width: 30, height: height)
+            let expectedSize = Size(
+                width: 30,                                   // header size
+                height: (Float(554) - totalSpace) / Float(2) // (view height - all spacings) / number of rows
+            )
             XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
         }
@@ -84,7 +91,7 @@ final class ViewRowHeadersTests: XCTestCase {
             let y2 = Float(0
                 + y1
                 + 30 * 2 // item height * 2
-                + 5 // section spacing
+                + 5      // section spacing
             )
 
             XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: x, y: y1))
@@ -99,9 +106,13 @@ final class ViewRowHeadersTests: XCTestCase {
                 1, 2,
                 2
             ]
-            model.viewSize = Size(width: 375, height: 554)
+            model.viewSize = Size(
+                width: 200,
+                height: 554 // Module.minViewHeightForCompactLayout
+            )
 
             let view = try! Module.view(for: model)
+
             let x: Float = 10 // content padding
             let y1 = Float(0
                 + 10 // content padding
@@ -111,8 +122,8 @@ final class ViewRowHeadersTests: XCTestCase {
 
             let totalVerticalSpace = Float(0
                 + 10 * 2 // content padding
-                + 30 // column header
-                + 5 * 2 // section spacing
+                + 30     // column header
+                + 5 * 2  // section spacing
             )
             let rowHeight = (Float(554) - totalVerticalSpace) / 2 // (view width - total space) / number of columns
 

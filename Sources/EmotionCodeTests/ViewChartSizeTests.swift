@@ -164,7 +164,7 @@ final class ViewChartSizeTests: XCTestCase {
         XCTAssertThrowsError(try Module.view(for: model))
     }
 
-    func viewWidthSmallerThanAllSpacingAndRowHeaderWidth() {
+    func viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
