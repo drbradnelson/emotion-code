@@ -38,9 +38,11 @@ final class ViewItemsTests: XCTestCase {
                 + 5 * 2  // section spacing
                 + 30     // header size
             )
+            let expectedItemWidth = (100 - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
+
             let expectedSize = Size(
-                width: (100 - totalExpectedHorizontalSpace) / 2, // (view width - total expected horizontal space) / number of columns
-                height: 30                                       // header size
+                width: expectedItemWidth,
+                height: 30 // header size
             )
 
             XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)

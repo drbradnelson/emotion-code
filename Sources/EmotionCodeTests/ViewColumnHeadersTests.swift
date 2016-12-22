@@ -34,10 +34,11 @@ final class ViewColumnHeadersTests: XCTestCase {
                 + 5 * 2  // section spacing
                 + 30     // header size
             )
+            let expectedColumnWidth = (100 - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
 
             let expectedSize = Size(
-                width: (100 - totalExpectedHorizontalSpace) / 2, // (view width - total expected horizontal space) / number of columns
-                height: 30                                       // header size
+                width: expectedColumnWidth,
+                height: 30 // header size
             )
             XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
@@ -63,9 +64,12 @@ final class ViewColumnHeadersTests: XCTestCase {
                 + 30     // row header
                 + 5 * 2  // section spacing
             )
-            let expectedSize = Size(width:
-                (Float(100) - totalExpectedHorizontalSpace) / 2,  // (view width - total expected horizontal space) / number of columns
-                height: 30                                        // header size
+
+            let expectedColumnHeight = (Float(100) - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
+
+            let expectedSize = Size(
+                width: expectedColumnHeight,
+                height: 30 // header size
             )
             XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
@@ -95,10 +99,11 @@ final class ViewColumnHeadersTests: XCTestCase {
                 + 30     // row header
                 + 5 * 2  // section spacing
             )
+            let expectedColumnHeight = (Float(100) - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
 
-            let expectedX2 = Float(x1
-                + (Float(100) - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
-                + 5                                       // section spacing
+            let expectedX2 = Float(expectedX1
+                + expectedColumnHeight
+                + 5 // section spacing
             )
 
             XCTAssertEqual(view.columnHeaderFrames[0].origin, Point(x: expectedX1, y: expectedY))
