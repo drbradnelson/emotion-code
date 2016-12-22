@@ -1,7 +1,7 @@
 import UIKit
 import Elm
 
-class ChartLayout: UICollectionViewLayout {
+final class ChartLayout: UICollectionViewLayout {
 
     typealias Module = ChartLayoutModule
 
