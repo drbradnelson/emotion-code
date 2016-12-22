@@ -39,14 +39,13 @@ struct ChartLayoutModule: Elm.Module {
     }
 
     enum Failure: Error {
-        case emptyItemsPerSectionArray
+        case missingItems
         case negativeViewSize
         case zeroViewSize
-
         case viewSizeSmallerThanSectionSpacing
         case viewSizeSmallerThanContentPadding
         case viewSizeSmallerThanHeaderSize
-        case viewWidthSmallerThanAllSpacingAndRowHeaderWidth
+        case viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth
     }
 
     static func update(for message: Message, model: inout Model) throws -> [Command] {
@@ -54,7 +53,7 @@ struct ChartLayoutModule: Elm.Module {
         case .setMode(let mode):
             model.mode = mode
         case .setItemsPerSection(let itemsPerSection):
-            guard !itemsPerSection.isEmpty else { throw Failure.emptyItemsPerSectionArray }
+            guard !itemsPerSection.isEmpty else { throw Failure.missingItems }
             model.itemsPerSection = itemsPerSection
         case .setViewSize(let size):
             guard size.width != 0, size.height != 0 else { throw Failure.zeroViewSize }
@@ -128,8 +127,8 @@ struct ChartLayoutModule: Elm.Module {
             throw Failure.viewSizeSmallerThanHeaderSize
         }
 
-        guard model.viewSize.width > (contentPadding * 2 + sectionSpacing.width * Float(View.numberOfColumns) + Model.headerSize.width) else {
-            throw Failure.viewWidthSmallerThanAllSpacingAndRowHeaderWidth
+        guard model.viewSize.width > (contentPadding * Float(View.numberOfColumns) + sectionSpacing.width * Float(View.numberOfColumns) + Model.headerSize.width) else {
+            throw Failure.viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth
         }
 
         //
