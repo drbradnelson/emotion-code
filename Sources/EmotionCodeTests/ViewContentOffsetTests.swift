@@ -35,9 +35,9 @@ final class ViewContentOffsetTests: XCTestCase {
             let view = try! Module.view(for: model)
 
             XCTAssertEqual(view.proposedVerticalContentOffset, Float(0
-                + 20 // content padding
-                + 30 // column header
-                + 20 // section spacing
+                + 20              // content padding
+                + 30              // column header
+                + 20              // section spacing
                 + (300 - 20 - 20) // row 1
             ))
         }
@@ -56,13 +56,13 @@ final class ViewContentOffsetTests: XCTestCase {
             let view = try! Module.view(for: model)
 
             XCTAssertEqual(view.proposedVerticalContentOffset, Float(0
-                + 20 // content padding
-                + 30 // column header
-                + 20 // section spacing
+                + 20              // content padding
+                + 30              // column header
+                + 20              // section spacing
                 + (300 - 20 - 20) // maximum section item 1
-                + 20 // item spacing
+                + 20              // item spacing
                 + (300 - 20 - 20) // maximum section item 2
-                + 20 // section spacing
+                + 20              // section spacing
                 + (300 - 20 - 20) // maximum section item 1
             ))
         }
