@@ -2,8 +2,6 @@ import Foundation
 import Elm
 
 // swiftlint:disable mark
-// swiftlint:disable function_body_length
-// swiftlint:disable file_length
 // swiftlint:disable cyclomatic_complexity
 
 struct ChartLayoutModule: Elm.Module {
