@@ -22,9 +22,6 @@ struct ChartLayoutModule: Elm.Module {
         var mode = Mode.all
         var itemsPerSection: [Int] = []
         var viewSize: Size = .zero
-        static let headerSize = Size(width: 30, height: 30)
-        static let baseItemHeight: Float = 30
-        static let minViewHeightForCompactLayout: Float = 554
     }
 
     typealias Command = Void
@@ -35,6 +32,13 @@ struct ChartLayoutModule: Elm.Module {
         let itemFrames: [[Rect]]
         let columnHeaderFrames: [Rect]
         let rowHeaderFrames: [Rect]
+
+        static let minViewHeightForCompactLayout: Float = 554
+        static let headerSize = Size(width: 30, height: 30)
+        static let baseItemHeight: Float = 30
+        static let baseContentPadding: Float = 10
+        static let baseSectionSpacing = Size(width: 5, height: 5)
+        static let baseItemSpacing: Float = 10
         static let numberOfColumns = 2
     }
 
@@ -93,14 +97,14 @@ struct ChartLayoutModule: Elm.Module {
 
         var contentPadding: Float {
             switch model.mode {
-            case .all: return 10
-            case .section, .emotion: return 20
+            case .all: return View.baseContentPadding
+            case .section, .emotion: return View.baseContentPadding * 2
             }
         }
 
         var sectionSpacing: Size {
             switch model.mode {
-            case .all: return Size(width: 5, height: 5)
+            case .all: return View.baseSectionSpacing
             case .section, .emotion: return Size(width: contentPadding, height: contentPadding)
             }
         }
@@ -116,16 +120,16 @@ struct ChartLayoutModule: Elm.Module {
         var itemSpacing: Float {
             switch model.mode {
             case .all: return 0
-            case .section: return 10
+            case .section: return View.baseItemSpacing
             case .emotion: return sectionSpacing.height
             }
         }
 
-        guard model.viewSize.width >= Model.headerSize.width, model.viewSize.height >= Model.headerSize.height else {
+        guard model.viewSize.width >= View.headerSize.width, model.viewSize.height >= View.headerSize.height else {
             throw Failure.viewSizeSmallerThanHeaderSize
         }
 
-        guard model.viewSize.width >= (contentPadding * Float(View.numberOfColumns) + sectionSpacing.width * Float(View.numberOfColumns) + Model.headerSize.width) else {
+        guard model.viewSize.width >= (contentPadding * Float(View.numberOfColumns) + sectionSpacing.width * Float(View.numberOfColumns) + View.headerSize.width) else {
             throw Failure.viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth
         }
 
@@ -135,8 +139,8 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         var baseItemHeight: Float {
-            guard model.viewSize.height >= Model.minViewHeightForCompactLayout else { return Model.baseItemHeight }
-            let totalSpacing = contentPadding * 2 + Model.headerSize.height + sectionSpacing.height * rowsCount
+            guard model.viewSize.height >= View.minViewHeightForCompactLayout else { return View.baseItemHeight }
+            let totalSpacing = contentPadding * 2 + View.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
             let maximumItemsCountInSection = model.itemsPerSection.max()!
             return totalAvailableSpacePerSection / Float(maximumItemsCountInSection)
@@ -177,7 +181,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Row header size
         //
 
-        let rowHeaderSize = Size(width: Model.headerSize.width, height: maximumSectionHeight)
+        let rowHeaderSize = Size(width: View.headerSize.width, height: maximumSectionHeight)
 
         //
         // MARK: -
@@ -201,7 +205,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Column header size
         //
 
-        let columnHeaderSize = Size(width: itemWidth, height: Model.headerSize.height)
+        let columnHeaderSize = Size(width: itemWidth, height: View.headerSize.height)
 
         //
         // MARK: -
