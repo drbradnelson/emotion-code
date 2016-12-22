@@ -35,7 +35,7 @@ final class ViewChartSizeTests: XCTestCase {
             ]
             let viewSize = Size(
                 width: 100,
-                height: 554 // minimular view height for compact layout
+                height: 554 // minimum view height for compact layout
             )
             model.viewSize = viewSize
 

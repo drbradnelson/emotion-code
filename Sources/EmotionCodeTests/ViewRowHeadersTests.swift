@@ -57,10 +57,11 @@ final class ViewRowHeadersTests: XCTestCase {
                 + 30     // column header
                 + 5 * 2  // section spacing
             )
+            let expectedRowHeight = (554 - totalExpectedVerticalSpace) / 2 // (view height - total expected vertical space) / number of rows
 
             let expectedSize = Size(
-                width: 30,                                                   // header size
-                height: (Float(554) - totalExpectedVerticalSpace) / Float(2) // (view height - total expected vertical space) / number of rows
+                width: 30, // header size
+                height: expectedRowHeight
             )
             XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
@@ -115,7 +116,7 @@ final class ViewRowHeadersTests: XCTestCase {
                 + 30     // column header
                 + 5 * 2  // section spacing
             )
-            let expectedRowHeight = (Float(554) - totalExpectedVerticalSpace) / 2 // (view width - total expected vertical space) / number of columns
+            let expectedRowHeight = (554 - totalExpectedVerticalSpace) / 2 // (view height - total expected vertical space) / number of columns
 
             let expectedX: Float = 10 // content padding
 

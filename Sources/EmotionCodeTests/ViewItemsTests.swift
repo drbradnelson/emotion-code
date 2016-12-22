@@ -76,8 +76,8 @@ final class ViewItemsTests: XCTestCase {
             )
 
             let expectedSize = Size(
-                width: (Float(200) - totalExpectedSpace) / 2, // (view width - total expected space) / number of rows
-                height: (Float(554) - totalExpectedSpace) / 4 // (view width - total expected space) / number of items in column
+                width: (200 - totalExpectedSpace) / 2, // (view width - total expected space) / number of rows
+                height: (554 - totalExpectedSpace) / 4 // (view width - total expected space) / number of items in column
             )
 
             XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)
@@ -103,10 +103,10 @@ final class ViewItemsTests: XCTestCase {
 
             let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
-                + 30     // header
+                + 30     // row header
                 + 5 * 2  // section spacing
             )
-            let expectedItemWidth = (Float(100) - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of rows
+            let expectedItemWidth = (100 - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of rows
 
             let expectedXForColumn1 = Float(0
                 + 10 // content padding
@@ -185,10 +185,10 @@ final class ViewItemsTests: XCTestCase {
 
             let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
-                + 30     // header
+                + 30     // row header
                 + 5 * 2  // section spacing
             )
-            let expectedItemWidth = (Float(200) - totalExpectedHorizontalSpace) / 2  // (view width - total expected horizontal space) / number of columns
+            let expectedItemWidth = (200 - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
 
             let expectedXForColumn1 = Float(0
                 + 10 // content padding
@@ -227,10 +227,10 @@ final class ViewItemsTests: XCTestCase {
 
             let totalExpectedVerticalSpace = Float(0
                 + 10 * 2 // content padding
-                + 30     // header
+                + 30     // column header
                 + 5 * 2  // section spacing
             )
-            let expectedItemHeight = (Float(554) - totalExpectedVerticalSpace) / 4 // (view height - total expected vertical space) / number of items in column
+            let expectedItemHeight = (554 - totalExpectedVerticalSpace) / 4 // (view height - total expected vertical space) / number of items in column
 
             let expectedYForRow1 = Float(0
                 + 10 // content padding
