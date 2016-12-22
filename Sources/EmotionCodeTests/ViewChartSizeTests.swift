@@ -54,22 +54,22 @@ final class ViewChartSizeTests: XCTestCase {
             let view = try! Module.view(for: model)
 
             let width = Float(0
-                + 20  // content padding
-                + 30  // row header
-                + 20  // section spacing
+                + 20              // content padding
+                + 30              // row header
+                + 20              // section spacing
                 + (200 - 20 - 20) // column 1
-                + 20  // section spacing
+                + 20              // section spacing
                 + (200 - 20 - 20) // column 2
-                + 20  // contentPadding
+                + 20              // contentPadding
             )
             let height = Float(0
-                + 20  // content padding
-                + 30  // column header
-                + 20  // section spacing
+                + 20              // content padding
+                + 30              // column header
+                + 20              // section spacing
                 + (300 - 20 - 20) // row 1
-                + 20  // section spacing
+                + 20              // section spacing
                 + (300 - 20 - 20) // row 2
-                + 20  // content padding
+                + 20              // content padding
             )
             XCTAssertEqual(view.chartSize, Size(width: width, height: height))
         }
@@ -88,26 +88,26 @@ final class ViewChartSizeTests: XCTestCase {
             let view = try! Module.view(for: model)
 
             let width = Float(0
-                + 20  // content padding
-                + 30  // row header
-                + 20  // section spacing
+                + 20              // content padding
+                + 30              // row header
+                + 20              // section spacing
                 + (200 - 20 - 20) // column 1
-                + 20  // section spacing
+                + 20              // section spacing
                 + (200 - 20 - 20) // column 2
-                + 20  // contentPadding
+                + 20              // contentPadding
             )
             let height = Float(0
-                + 20  // content padding
-                + 30  // column header
-                + 20  // section spacing
+                + 20              // content padding
+                + 30              // column header
+                + 20              // section spacing
                 + (300 - 20 - 20) // maximum section item 1
-                + 20  // item spacing
+                + 20              // item spacing
                 + (300 - 20 - 20) // maximum section item 2
-                + 20  // section spacing
+                + 20              // section spacing
                 + (300 - 20 - 20) // maximum section item 1
-                + 20  // item spacing
+                + 20              // item spacing
                 + (300 - 20 - 20) // maximum section item 2
-                + 20  // contentPadding
+                + 20              // contentPadding
             )
             XCTAssertEqual(view.chartSize, Size(width: width, height: height))
         }
@@ -119,7 +119,13 @@ final class ViewChartSizeTests: XCTestCase {
             1, 2,
             2
         ]
-        model.viewSize = Size(width: 1, height: 2)
+        model.viewSize = Size(
+            width: 0
+            + 5  // section spacing
+            - 1, // trigger
+            height: 0
+            + 5  // section spacing
+        )
 
         XCTAssertThrowsError(try Module.view(for: model))
     }
@@ -130,7 +136,13 @@ final class ViewChartSizeTests: XCTestCase {
             1, 2,
             2
         ]
-        model.viewSize = Size(width: 6, height: 7)
+        model.viewSize = Size(
+            width: 0
+            + 10 // content padding
+            - 1, // trigger
+            height: 0
+            + 10 // content padding
+        )
 
         XCTAssertThrowsError(try Module.view(for: model))
     }
@@ -141,7 +153,13 @@ final class ViewChartSizeTests: XCTestCase {
             1, 2,
             2
         ]
-        model.viewSize = Size(width: 29, height: 29)
+        model.viewSize = Size(
+            width: 0
+            + 30 // header size
+            - 1, // trigger
+            height: 0
+            + 30 // header size
+        )
 
         XCTAssertThrowsError(try Module.view(for: model))
     }
@@ -152,7 +170,17 @@ final class ViewChartSizeTests: XCTestCase {
             1, 2,
             2
         ]
-        model.viewSize = Size(width: 31, height: 32)
+        model.viewSize = Size(
+            width: Float(0
+            + 10 * 2 // content padding
+            + 5 * 2  // section spacing
+            + 30     // header size
+            - 1),    // trigger
+            height: Float(0
+            + 10 * 2 // content padding
+            + 5 * 2  // section spacing
+            + 30)    // header size
+        )
 
         XCTAssertThrowsError(try Module.view(for: model))
     }
