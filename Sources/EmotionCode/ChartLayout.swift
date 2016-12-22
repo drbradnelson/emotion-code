@@ -76,7 +76,7 @@ final class ChartLayout: UICollectionViewLayout {
 extension ChartLayout: Elm.Delegate {
 
     func program(_ program: Program<ChartLayoutModule>, didUpdate view: ChartLayoutModule.View) {}
-    func program(_ program: Program<ChartLayoutModule>, didEmit command: ()) {}
+    func program(_ program: Program<ChartLayoutModule>, didEmit command: Void) {}
 
 }
 
