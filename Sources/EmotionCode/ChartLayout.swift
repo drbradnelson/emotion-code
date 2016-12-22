@@ -7,6 +7,13 @@ final class ChartLayout: UICollectionViewLayout {
 
     let program = Module.makeProgram()
 
+    func provideData(itemsPerSection: [Int], viewSize: CGSize) {
+        program.dispatch(
+            .setItemsPerSection(itemsPerSection),
+            .setViewSize(viewSize.floatSize)
+        )
+    }
+
     func setMode(_ mode: Module.Mode) {
         program.dispatch(.setMode(mode))
     }
@@ -16,9 +23,9 @@ final class ChartLayout: UICollectionViewLayout {
         guard let collectionView = collectionView else { return }
         let sections = 0..<collectionView.numberOfSections
         let itemsPerSection = sections.map(collectionView.numberOfItems)
-        program.dispatch(
-            .setItemsPerSection(itemsPerSection),
-            .setViewSize(collectionView.visibleContentSize.floatSize)
+        provideData(
+            itemsPerSection: itemsPerSection,
+            viewSize: collectionView.visibleContentSize
         )
     }
 

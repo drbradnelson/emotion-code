@@ -71,16 +71,6 @@ struct ChartLayoutModule: Elm.Module {
 
         let sectionsCount = model.itemsPerSection.count
 
-        guard sectionsCount > 0 else {
-            return View(
-                chartSize: .zero,
-                proposedVerticalContentOffset: nil,
-                itemFrames: [],
-                columnHeaderFrames: [],
-                rowHeaderFrames: []
-            )
-        }
-
         func rowIndex(forSection section: Int) -> Int {
             return section / View.numberOfColumns
         }
