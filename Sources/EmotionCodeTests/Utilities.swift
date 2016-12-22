@@ -20,31 +20,32 @@ extension IndexPath {
 }
 
 extension Mode: Equatable {
-    public static func ==(lhs: Mode, rhs: Mode) -> Bool {
+    public static func == (lhs: Mode, rhs: Mode) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
 }
 
 extension Model: Equatable {
-    public static func ==(lhs: Model, rhs: Model) -> Bool {
+    public static func == (lhs: Model, rhs: Model) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
+
 }
 
 extension View: Equatable {
-    public static func ==(lhs: View, rhs: View) -> Bool {
+    public static func == (lhs: View, rhs: View) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
 }
 
 extension Size: Equatable {
-    public static func ==(lhs: Size, rhs: Size) -> Bool {
+    public static func == (lhs: Size, rhs: Size) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
 }
 
 extension Point: Equatable {
-    public static func ==(lhs: Point, rhs: Point) -> Bool {
+    public static func == (lhs: Point, rhs: Point) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
 }

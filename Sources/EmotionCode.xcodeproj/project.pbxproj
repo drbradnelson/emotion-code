@@ -64,6 +64,10 @@
 		911377811E001A73008627F1 /* Elm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
+		913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
+		913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */; };
+		913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E31E07FB3300069B4E /* BookContainerViewController.swift */; };
+		913A65E51E08042F00069B4E /* AudioBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
@@ -124,6 +128,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				911377811E001A73008627F1 /* Elm.framework in Embed Frameworks */,
+				913A65E51E08042F00069B4E /* AudioBar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +195,8 @@
 		9113777E1E001A69008627F1 /* Elm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elm.framework; path = Carthage/Build/iOS/Elm.framework; sourceTree = "<group>"; };
 		91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterLayoutTests.swift; sourceTree = "<group>"; };
 		91187B221D6776A00098A881 /* ChapterTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleView.swift; sourceTree = "<group>"; };
+		913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBarContainerController.swift; sourceTree = "<group>"; };
+		913A65E31E07FB3300069B4E /* BookContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContainerViewController.swift; sourceTree = "<group>"; };
 		9141D9091D48A2D7009173A9 /* StoryboardLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = StoryboardLint.sh; sourceTree = "<group>"; };
 		915EEC391D460CE1005CC318 /* EmotionCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC3C1D460CE1005CC318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +207,7 @@
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916BED5D1DED81C50048314E /* ChartLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayout.swift; sourceTree = "<group>"; };
+		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
 		91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
 		91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationBookTests.swift; sourceTree = "<group>"; };
@@ -239,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
+				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +278,12 @@
 				B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */,
 				B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */,
 				0F3936631D5B9374003CC6C0 /* BookController.swift */,
+				913A65E31E07FB3300069B4E /* BookContainerViewController.swift */,
 				0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */,
 				0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */,
 				0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */,
 				0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */,
+				913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -371,8 +382,8 @@
 				915EEC3B1D460CE1005CC318 /* EmotionCode */,
 				915EEC501D460CE1005CC318 /* EmotionCodeUITests */,
 				B6B2736E1E05948E00771409 /* EmotionCodeTests */,
+				91A430431DD0DF0E004D466E /* Frameworks */,
 				915EEC3A1D460CE1005CC318 /* Products */,
-				9113777E1E001A69008627F1 /* Elm.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -428,6 +439,15 @@
 				915EEC531D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCodeUITests;
+			sourceTree = "<group>";
+		};
+		91A430431DD0DF0E004D466E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9113777E1E001A69008627F1 /* Elm.framework */,
+				91A4303F1DD0DF08004D466E /* AudioBar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B625D02A1E0827430021570D /* ChartLayoutModule */ = {
@@ -690,7 +710,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftlint lint --strict";
+			shellScript = "swiftlint lint --strict\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
@@ -729,6 +749,7 @@
 				B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */,
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
+				913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */,
@@ -738,6 +759,7 @@
 				916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 				0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */,
+				913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 				B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */,
 			);
