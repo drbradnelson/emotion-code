@@ -45,9 +45,8 @@ struct ChartLayoutModule: Elm.Module {
         case negativeViewSize
         case zeroViewSize
 
-        case viewSizeSmallerThanContentPadding
         case viewSizeSmallerThanSectionSpacing
-        case viewSizeSmallerThanItemSpacing
+        case viewSizeSmallerThanContentPadding
         case viewSizeSmallerThanHeaderSize
         case viewWidthSmallerThanAllSpacingAndRowHeaderWidth
     }
@@ -95,15 +94,12 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Spacing & padding
         //
 
+
         var contentPadding: Float {
             switch model.mode {
             case .all: return 10
             case .section, .emotion: return 20
             }
-        }
-
-        guard model.viewSize.width > contentPadding, model.viewSize.height > contentPadding else {
-            throw Failure.viewSizeSmallerThanContentPadding
         }
 
         var sectionSpacing: Size {
@@ -115,6 +111,11 @@ struct ChartLayoutModule: Elm.Module {
 
         guard model.viewSize.width > sectionSpacing.width, model.viewSize.height > sectionSpacing.height else {
             throw Failure.viewSizeSmallerThanSectionSpacing
+
+        }
+
+        guard model.viewSize.width > contentPadding, model.viewSize.height > contentPadding else {
+            throw Failure.viewSizeSmallerThanContentPadding
         }
 
         var itemSpacing: Float {
@@ -123,10 +124,6 @@ struct ChartLayoutModule: Elm.Module {
             case .section: return 10
             case .emotion: return sectionSpacing.height
             }
-        }
-
-        guard model.viewSize.width > itemSpacing, model.viewSize.height > itemSpacing else {
-            throw Failure.viewSizeSmallerThanItemSpacing
         }
 
         guard model.viewSize.width > Model.headerSize.width, model.viewSize.height > Model.headerSize.height else {

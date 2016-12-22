@@ -112,5 +112,49 @@ final class ViewChartSizeTests: XCTestCase {
             XCTAssertEqual(view.chartSize, Size(width: width, height: height))
         }
     }
-    
+
+    func testViewSizeSmallerThanSectionSpacing() {
+        var model = Model()
+        model.itemsPerSection = [
+            1, 2,
+            2
+        ]
+        model.viewSize = Size(width: 1, height: 2)
+
+        XCTAssertThrowsError(try Module.view(for: model))
+    }
+
+    func testViewSizeSmallerThanContentPadding() {
+        var model = Model()
+        model.itemsPerSection = [
+            1, 2,
+            2
+        ]
+        model.viewSize = Size(width: 6, height: 7)
+
+        XCTAssertThrowsError(try Module.view(for: model))
+    }
+
+    func testViewSizeSmallerThanHeaderSize() {
+        var model = Model()
+        model.itemsPerSection = [
+            1, 2,
+            2
+        ]
+        model.viewSize = Size(width: 29, height: 29)
+
+        XCTAssertThrowsError(try Module.view(for: model))
+    }
+
+    func viewWidthSmallerThanAllSpacingAndRowHeaderWidth() {
+        var model = Model()
+        model.itemsPerSection = [
+            1, 2,
+            2
+        ]
+        model.viewSize = Size(width: 31, height: 32)
+
+        XCTAssertThrowsError(try Module.view(for: model))
+    }
+
 }
