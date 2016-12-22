@@ -105,11 +105,11 @@ struct ChartLayoutModule: Elm.Module {
             }
         }
 
-        guard model.viewSize.width > sectionSpacing.width, model.viewSize.height > sectionSpacing.height else {
+        guard model.viewSize.width >= sectionSpacing.width, model.viewSize.height >= sectionSpacing.height else {
             throw Failure.viewSizeSmallerThanSectionSpacing
         }
 
-        guard model.viewSize.width > contentPadding, model.viewSize.height > contentPadding else {
+        guard model.viewSize.width >= contentPadding, model.viewSize.height >= contentPadding else {
             throw Failure.viewSizeSmallerThanContentPadding
         }
 
@@ -121,11 +121,11 @@ struct ChartLayoutModule: Elm.Module {
             }
         }
 
-        guard model.viewSize.width > Model.headerSize.width, model.viewSize.height > Model.headerSize.height else {
+        guard model.viewSize.width >= Model.headerSize.width, model.viewSize.height >= Model.headerSize.height else {
             throw Failure.viewSizeSmallerThanHeaderSize
         }
 
-        guard model.viewSize.width > (contentPadding * Float(View.numberOfColumns) + sectionSpacing.width * Float(View.numberOfColumns) + Model.headerSize.width) else {
+        guard model.viewSize.width >= (contentPadding * Float(View.numberOfColumns) + sectionSpacing.width * Float(View.numberOfColumns) + Model.headerSize.width) else {
             throw Failure.viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth
         }
 
