@@ -33,7 +33,15 @@ final class ViewItemsTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let expectedSize = Size(width: 20, height: 30)
+            let totalHorizontalSpace = Float(0
+                + 10 * 2 // content padding
+                + 5 * 2  // section spacing
+                + 30     // headerSize
+            )
+            let expectedSize = Size(
+                width: (100 - totalHorizontalSpace) / 2, // (view width - total horizontal space) / number of columns
+                height: 30
+            )
 
             XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)
 
@@ -52,7 +60,10 @@ final class ViewItemsTests: XCTestCase {
                 1, 2,
                 2
             ]
-            model.viewSize = Size(width: 200, height: 554)
+            model.viewSize = Size(
+                width: 200,
+                height: 554 // Module.minViewHeightForCompactLayout
+            )
 
             let view = try! Module.view(for: model)
 
@@ -61,10 +72,11 @@ final class ViewItemsTests: XCTestCase {
                 + 30     // header
                 + 5 * 2  // section spacing
             )
-            let width = (Float(200) - totalSpace) / 2 // (view width - total space) / number of rows
-            let height = (Float(554) - totalSpace) / 4 // (view width - total space) / number of items in column
 
-            let expectedSize = Size(width: width, height: height)
+            let expectedSize = Size(
+                width: (Float(200) - totalSpace) / 2, // (view width - total space) / number of rows
+                height: (Float(554) - totalSpace) / 4 // (view width - total space) / number of items in column
+            )
 
             XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)
 
@@ -144,7 +156,10 @@ final class ViewItemsTests: XCTestCase {
                 1, 2,
                 2
             ]
-            model.viewSize = Size(width: 200, height: 554)
+            model.viewSize = Size(
+                width: 200,
+                height: 554 // Module.minViewHeightForCompactLayout
+            )
 
             let view = try! Module.view(for: model)
 
@@ -153,7 +168,7 @@ final class ViewItemsTests: XCTestCase {
                 + 30     // header
                 + 5 * 2  // section spacing
             )
-            let itemWidth = (Float(200) - totalSpace) / 2 // (view width - total space) / number of columns
+            let itemWidth = (Float(200) - totalSpace) / 2  // (view width - total space) / number of columns
             let itemHeight = (Float(554) - totalSpace) / 4 // (view height - total space) / number of items in column
 
             let column1x = Float(0
@@ -176,18 +191,18 @@ final class ViewItemsTests: XCTestCase {
 
             let row1item2y = Float(0
                 + row1y
-                + itemHeight // item height
+                + itemHeight
             )
 
             let row2y = Float(0
                 + row1item2y
-                + itemHeight // item height
-                + 5  // section spacing
+                + itemHeight
+                + 5 // section spacing
             )
 
             let row2item2y = Float(0
                 + row2y
-                + itemHeight // item height
+                + itemHeight
             )
 
             XCTAssertEqual(view.itemFrames[0][0].origin, Point(x: column1x, y: row1y))
