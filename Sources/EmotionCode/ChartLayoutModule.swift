@@ -91,7 +91,6 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Spacing & padding
         //
 
-
         var contentPadding: Float {
             switch model.mode {
             case .all: return 10
@@ -108,7 +107,6 @@ struct ChartLayoutModule: Elm.Module {
 
         guard model.viewSize.width > sectionSpacing.width, model.viewSize.height > sectionSpacing.height else {
             throw Failure.viewSizeSmallerThanSectionSpacing
-
         }
 
         guard model.viewSize.width > contentPadding, model.viewSize.height > contentPadding else {
@@ -138,7 +136,6 @@ struct ChartLayoutModule: Elm.Module {
 
         var baseItemHeight: Float {
             guard model.viewSize.height >= Model.minViewHeightForCompactLayout else { return Model.baseItemHeight }
-
             let totalSpacing = contentPadding * 2 + Model.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
             let maximumItemsCountInSection = model.itemsPerSection.max()!
@@ -257,7 +254,6 @@ struct ChartLayoutModule: Elm.Module {
         let itemFrames = sectionsRange.map { section -> [Rect] in
             let height = itemHeights[section]
             let size = Size(width: itemWidth, height: height)
-
             let itemsRange = 0..<model.itemsPerSection[section]
             return itemsRange.map { item in
                 let position = itemPositions[section][item]
@@ -289,19 +285,16 @@ struct ChartLayoutModule: Elm.Module {
 
         let positionsForColumnHeaders = columnsRange.map { column -> Point in
             let x = columnXPositions[column]
-
             let y: Float
             switch model.mode {
             case .all: y = contentPadding
             case .section, .emotion: y = contentPadding - columnHeaderSize.height
             }
-
             return Point(x: x, y: y)
         }
 
         let positionsForRowHeaders = rowsRange.map { row -> Point in
             let y = rowYPositions[row]
-
             let x: Float
             switch model.mode {
             case .all: x = contentPadding
@@ -334,7 +327,6 @@ struct ChartLayoutModule: Elm.Module {
             guard
                 let lastRowHeaderFrame = rowHeaderFrames.last,
                 let lastColumnHeaderFrame = columnHeaderFrames.last else { return .zero }
-
             let height = lastRowHeaderFrame.maxY + contentPadding
             let width = lastColumnHeaderFrame.maxX + contentPadding
             return Size(width: width, height: height)
