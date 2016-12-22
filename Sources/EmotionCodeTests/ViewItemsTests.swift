@@ -33,14 +33,14 @@ final class ViewItemsTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let totalHorizontalSpace = Float(0
+            let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
                 + 5 * 2  // section spacing
-                + 30     // headerSize
+                + 30     // header size
             )
             let expectedSize = Size(
-                width: (100 - totalHorizontalSpace) / 2, // (view width - total horizontal space) / number of columns
-                height: 30
+                width: (100 - totalExpectedHorizontalSpace) / 2, // (view width - total expected horizontal space) / number of columns
+                height: 30                                       // header size
             )
 
             XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)
@@ -62,20 +62,20 @@ final class ViewItemsTests: XCTestCase {
             ]
             model.viewSize = Size(
                 width: 200,
-                height: 554 // Module.minViewHeightForCompactLayout
+                height: 554 // minimum view height for compact layout
             )
 
             let view = try! Module.view(for: model)
 
-            let totalSpace = Float(0
+            let totalExpectedSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // header
                 + 5 * 2  // section spacing
             )
 
             let expectedSize = Size(
-                width: (Float(200) - totalSpace) / 2, // (view width - total space) / number of rows
-                height: (Float(554) - totalSpace) / 4 // (view width - total space) / number of items in column
+                width: (Float(200) - totalExpectedSpace) / 2, // (view width - total expected space) / number of rows
+                height: (Float(554) - totalExpectedSpace) / 4 // (view width - total expected space) / number of items in column
             )
 
             XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)
@@ -88,7 +88,7 @@ final class ViewItemsTests: XCTestCase {
         }
     }
 
-    func testOriginsForSmallViewSize() {
+    func testXOriginsForSmallViewSize() {
         do {
             var model = Model()
             model.itemsPerSection = [
@@ -99,57 +99,75 @@ final class ViewItemsTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let totalSpace = Float(0
+            let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // header
                 + 5 * 2  // section spacing
             )
-            let itemWidth = (Float(100) - totalSpace) / 2 // (view width - total space) / number of rows
+            let expectedItemWidth = (Float(100) - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of rows
 
-            let column1x = Float(0
+            let expectedXForColumn1 = Float(0
                 + 10 // content padding
                 + 30 // row header
                 + 5  // section spacing
             )
-            let column2x = Float(0
-                + column1x
-                + itemWidth
+            let expectedXForColumn2 = Float(0
+                + expectedXForColumn1
+                + expectedItemWidth
                 + 5 // section spacing
             )
 
-            let row1y = Float(0
+            XCTAssertEqual(view.itemFrames[0][0].origin.x, expectedXForColumn1)
+
+            XCTAssertEqual(view.itemFrames[1][0].origin.x, expectedXForColumn2)
+            XCTAssertEqual(view.itemFrames[1][1].origin.x, expectedXForColumn2)
+
+            XCTAssertEqual(view.itemFrames[2][0].origin.x, expectedXForColumn1)
+            XCTAssertEqual(view.itemFrames[2][1].origin.x, expectedXForColumn1)
+        }
+    }
+
+    func testYOriginsForSmallViewSize() {
+        do {
+            var model = Model()
+            model.itemsPerSection = [
+                1, 2,
+                2
+            ]
+            model.viewSize = Size(width: 100, height: 100)
+
+            let view = try! Module.view(for: model)
+
+            let expectedYForRow1 = Float(0
                 + 10 // content padding
                 + 30 // column header
                 + 5  // section spacing
             )
-
-            let row1item2y = Float(0
-                + row1y
+            let expectedYForRow1Item2 = Float(0
+                + expectedYForRow1
                 + 30 // item height
             )
-
-            let row2y = Float(0
-                + row1item2y
+            let expectedYForRow2 = Float(0
+                + expectedYForRow1Item2
                 + 30 // item height
                 + 5  // section spacing
             )
-
-            let row2item2y = Float(0
-                + row2y
+            let expectedYForRow2Item2 = Float(0
+                + expectedYForRow2
                 + 30 // item height
             )
 
-            XCTAssertEqual(view.itemFrames[0][0].origin, Point(x: column1x, y: row1y))
+            XCTAssertEqual(view.itemFrames[0][0].origin.y, expectedYForRow1)
 
-            XCTAssertEqual(view.itemFrames[1][0].origin, Point(x: column2x, y: row1y))
-            XCTAssertEqual(view.itemFrames[1][1].origin, Point(x: column2x, y: row1item2y))
+            XCTAssertEqual(view.itemFrames[1][0].origin.y, expectedYForRow1)
+            XCTAssertEqual(view.itemFrames[1][1].origin.y, expectedYForRow1Item2)
 
-            XCTAssertEqual(view.itemFrames[2][0].origin, Point(x: column1x, y: row2y))
-            XCTAssertEqual(view.itemFrames[2][1].origin, Point(x: column1x, y: row2item2y))
+            XCTAssertEqual(view.itemFrames[2][0].origin.y, expectedYForRow2)
+            XCTAssertEqual(view.itemFrames[2][1].origin.y, expectedYForRow2Item2)
         }
     }
 
-    func testOriginsForBigViewSize() {
+    func testXOriginsForBigViewSize() {
         do {
             var model = Model()
             model.itemsPerSection = [
@@ -158,60 +176,86 @@ final class ViewItemsTests: XCTestCase {
             ]
             model.viewSize = Size(
                 width: 200,
-                height: 554 // Module.minViewHeightForCompactLayout
+                height: 554 // minimum view height for compact layout
             )
 
             let view = try! Module.view(for: model)
 
-            let totalSpace = Float(0
+            let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // header
                 + 5 * 2  // section spacing
             )
-            let itemWidth = (Float(200) - totalSpace) / 2  // (view width - total space) / number of columns
-            let itemHeight = (Float(554) - totalSpace) / 4 // (view height - total space) / number of items in column
+            let expectedItemWidth = (Float(200) - totalExpectedHorizontalSpace) / 2  // (view width - total expected horizontal space) / number of columns
 
-            let column1x = Float(0
+            let expectedXForColumn1 = Float(0
                 + 10 // content padding
                 + 30 // row header
                 + 5  // section spacing
             )
-
-            let column2x = Float(0
-                + column1x
-                + itemWidth
+            let expectedXForColumn2 = Float(0
+                + expectedXForColumn1
+                + expectedItemWidth
                 + 5 // section spacing
             )
 
-            let row1y = Float(0
-                + 10 // contentPadding
+            XCTAssertEqual(view.itemFrames[0][0].origin.x, expectedXForColumn1)
+
+            XCTAssertEqual(view.itemFrames[1][0].origin.x, expectedXForColumn2)
+            XCTAssertEqual(view.itemFrames[1][1].origin.x, expectedXForColumn2)
+
+            XCTAssertEqual(view.itemFrames[2][0].origin.x, expectedXForColumn1)
+            XCTAssertEqual(view.itemFrames[2][1].origin.x, expectedXForColumn1)
+        }
+    }
+
+    func testYOriginsForBigViewSize() {
+        do {
+            var model = Model()
+            model.itemsPerSection = [
+                1, 2,
+                2
+            ]
+            model.viewSize = Size(
+                width: 200,
+                height: 554 // minimum view height for compact layout
+            )
+
+            let view = try! Module.view(for: model)
+
+            let totalExpectedVerticalSpace = Float(0
+                + 10 * 2 // content padding
+                + 30     // header
+                + 5 * 2  // section spacing
+            )
+            let expectedItemHeight = (Float(554) - totalExpectedVerticalSpace) / 4 // (view height - total expected vertical space) / number of items in column
+
+            let expectedYForRow1 = Float(0
+                + 10 // content padding
                 + 30 // column header
                 + 5  // section spacing
             )
-
-            let row1item2y = Float(0
-                + row1y
-                + itemHeight
+            let expectedYForRow1Item2 = Float(0
+                + expectedYForRow1
+                + expectedItemHeight
             )
-
-            let row2y = Float(0
-                + row1item2y
-                + itemHeight
+            let expectedYForRow2 = Float(0
+                + expectedYForRow1Item2
+                + expectedItemHeight
                 + 5 // section spacing
             )
-
-            let row2item2y = Float(0
-                + row2y
-                + itemHeight
+            let expectedYForRow2Item2 = Float(0
+                + expectedYForRow2
+                + expectedItemHeight
             )
 
-            XCTAssertEqual(view.itemFrames[0][0].origin, Point(x: column1x, y: row1y))
+            XCTAssertEqual(view.itemFrames[0][0].origin.y, expectedYForRow1)
 
-            XCTAssertEqual(view.itemFrames[1][0].origin, Point(x: column2x, y: row1y))
-            XCTAssertEqual(view.itemFrames[1][1].origin, Point(x: column2x, y: row1item2y))
+            XCTAssertEqual(view.itemFrames[1][0].origin.y, expectedYForRow1)
+            XCTAssertEqual(view.itemFrames[1][1].origin.y, expectedYForRow1Item2)
 
-            XCTAssertEqual(view.itemFrames[2][0].origin, Point(x: column1x, y: row2y))
-            XCTAssertEqual(view.itemFrames[2][1].origin, Point(x: column1x, y: row2item2y))
+            XCTAssertEqual(view.itemFrames[2][0].origin.y, expectedYForRow2)
+            XCTAssertEqual(view.itemFrames[2][1].origin.y, expectedYForRow2Item2)
         }
     }
 

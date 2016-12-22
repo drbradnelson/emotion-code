@@ -33,11 +33,15 @@ final class ViewChartSizeTests: XCTestCase {
                 1, 2,
                 2
             ]
-            model.viewSize = Size(width: 100, height: 554)
+            let viewSize = Size(
+                width: 100,
+                height: 554 // minimular view height for compact layout
+            )
+            model.viewSize = viewSize
 
             let view = try! Module.view(for: model)
 
-            XCTAssertEqual(view.chartSize, Size(width: 100, height: 554))
+            XCTAssertEqual(view.chartSize, viewSize)
         }
     }
 
@@ -53,16 +57,16 @@ final class ViewChartSizeTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let width = Float(0
+            let expectedWidth = Float(0
                 + 20              // content padding
                 + 30              // row header
                 + 20              // section spacing
                 + (200 - 20 - 20) // column 1
                 + 20              // section spacing
                 + (200 - 20 - 20) // column 2
-                + 20              // contentPadding
+                + 20              // content padding
             )
-            let height = Float(0
+            let expectedHeight = Float(0
                 + 20              // content padding
                 + 30              // column header
                 + 20              // section spacing
@@ -71,7 +75,7 @@ final class ViewChartSizeTests: XCTestCase {
                 + (300 - 20 - 20) // row 2
                 + 20              // content padding
             )
-            XCTAssertEqual(view.chartSize, Size(width: width, height: height))
+            XCTAssertEqual(view.chartSize, Size(width: expectedWidth, height: expectedHeight))
         }
     }
 
@@ -87,16 +91,16 @@ final class ViewChartSizeTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let width = Float(0
+            let expectedWidth = Float(0
                 + 20              // content padding
                 + 30              // row header
                 + 20              // section spacing
                 + (200 - 20 - 20) // column 1
                 + 20              // section spacing
                 + (200 - 20 - 20) // column 2
-                + 20              // contentPadding
+                + 20              // content padding
             )
-            let height = Float(0
+            let expectedHeight = Float(0
                 + 20              // content padding
                 + 30              // column header
                 + 20              // section spacing
@@ -107,9 +111,9 @@ final class ViewChartSizeTests: XCTestCase {
                 + (300 - 20 - 20) // maximum section item 1
                 + 20              // item spacing
                 + (300 - 20 - 20) // maximum section item 2
-                + 20              // contentPadding
+                + 20              // content padding
             )
-            XCTAssertEqual(view.chartSize, Size(width: width, height: height))
+            XCTAssertEqual(view.chartSize, Size(width: expectedWidth, height: expectedHeight))
         }
     }
 
@@ -164,7 +168,7 @@ final class ViewChartSizeTests: XCTestCase {
         XCTAssertThrowsError(try Module.view(for: model))
     }
 
-    func viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth() {
+    func testViewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth() {
         var model = Model()
         model.itemsPerSection = [
             1, 2,
@@ -172,14 +176,16 @@ final class ViewChartSizeTests: XCTestCase {
         ]
         model.viewSize = Size(
             width: Float(0
-            + 10 * 2 // content padding
-            + 5 * 2  // section spacing
-            + 30     // header size
-            - 1),    // trigger
+                + 10 * 2 // content padding
+                + 5 * 2  // section spacing
+                + 30     // header size
+                - 1      // trigger
+            ),
             height: Float(0
-            + 10 * 2 // content padding
-            + 5 * 2  // section spacing
-            + 30)    // header size
+                + 10 * 2 // content padding
+                + 5 * 2  // section spacing
+                + 30     // header size
+            )
         )
 
         XCTAssertThrowsError(try Module.view(for: model))

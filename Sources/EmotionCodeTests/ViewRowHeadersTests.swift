@@ -47,20 +47,20 @@ final class ViewRowHeadersTests: XCTestCase {
             ]
             model.viewSize = Size(
                 width: 200,
-                height: 554 // Module.minViewHeightForCompactLayout
+                height: 554 // minimum view height for compact layout
             )
 
             let view = try! Module.view(for: model)
 
-            let totalSpace = Float(0
+            let totalExpectedVerticalSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // column header
                 + 5 * 2  // section spacing
             )
 
             let expectedSize = Size(
-                width: 30,                                   // header size
-                height: (Float(554) - totalSpace) / Float(2) // (view height - all spacings) / number of rows
+                width: 30,                                                   // header size
+                height: (Float(554) - totalExpectedVerticalSpace) / Float(2) // (view height - total expected vertical space) / number of rows
             )
             XCTAssertEqual(view.rowHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.rowHeaderFrames[1].size, expectedSize)
@@ -78,24 +78,21 @@ final class ViewRowHeadersTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let x = Float(0
-                + 10 // content padding
-            )
+            let expectedX: Float = 10 // content padding
 
-            let y1 = Float(0
+            let expectedY1 = Float(0
                 + 10 // content padding
                 + 30 // column header
                 + 5  // section spacing
             )
-
-            let y2 = Float(0
-                + y1
+            let expectedY2 = Float(0
+                + expectedY1
                 + 30 * 2 // item height * 2
                 + 5      // section spacing
             )
 
-            XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: x, y: y1))
-            XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: x, y: y2))
+            XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: expectedX, y: expectedY1))
+            XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: expectedX, y: expectedY2))
         }
     }
 
@@ -108,32 +105,32 @@ final class ViewRowHeadersTests: XCTestCase {
             ]
             model.viewSize = Size(
                 width: 200,
-                height: 554 // Module.minViewHeightForCompactLayout
+                height: 554 // minimum view height for compact layout
             )
 
             let view = try! Module.view(for: model)
 
-            let x: Float = 10 // content padding
-            let y1 = Float(0
-                + 10 // content padding
-                + 30 // column header
-                + 5  // section spacing
-            )
-
-            let totalVerticalSpace = Float(0
+            let totalExpectedVerticalSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // column header
                 + 5 * 2  // section spacing
             )
-            let rowHeight = (Float(554) - totalVerticalSpace) / 2 // (view width - total space) / number of columns
+            let expectedRowHeight = (Float(554) - totalExpectedVerticalSpace) / 2 // (view width - total expected vertical space) / number of columns
 
-            let y2 = Float(y1
-                + rowHeight
+            let expectedX: Float = 10 // content padding
+
+            let expectedY1 = Float(0
+                + 10 // content padding
+                + 30 // column header
+                + 5  // section spacing
+            )
+            let expectedY2 = Float(expectedY1
+                + expectedRowHeight
                 + 5 // section spacing
             )
 
-            XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: x, y: y1))
-            XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: x, y: y2))
+            XCTAssertEqual(view.rowHeaderFrames[0].origin, Point(x: expectedX, y: expectedY1))
+            XCTAssertEqual(view.rowHeaderFrames[1].origin, Point(x: expectedX, y: expectedY2))
         }
     }
 

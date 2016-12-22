@@ -29,15 +29,15 @@ final class ViewColumnHeadersTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let totalHorizontalSpace = Float(0
+            let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
                 + 5 * 2  // section spacing
                 + 30     // header size
             )
 
             let expectedSize = Size(
-                width: (100 - totalHorizontalSpace) / 2, // (view width - total horizontal space) / number of columns
-                height: 30                               // header size
+                width: (100 - totalExpectedHorizontalSpace) / 2, // (view width - total expected horizontal space) / number of columns
+                height: 30                                       // header size
             )
             XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
@@ -51,18 +51,21 @@ final class ViewColumnHeadersTests: XCTestCase {
                 1, 2,
                 2
             ]
-            model.viewSize = Size(width: 100, height: 554) // Model.minViewHeightForCompactLayout
+            model.viewSize = Size(
+                width: 100,
+                height: 554 // minimum view height for compact layout
+            )
 
             let view = try! Module.view(for: model)
 
-            let totalSpace = Float(0
+            let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // row header
                 + 5 * 2  // section spacing
             )
             let expectedSize = Size(width:
-                (Float(100) - totalSpace) / 2,  // (view width - total space) / number of columns
-                height: 30                      // header size
+                (Float(100) - totalExpectedHorizontalSpace) / 2,  // (view width - total expected horizontal space) / number of columns
+                height: 30                                        // header size
             )
             XCTAssertEqual(view.columnHeaderFrames[0].size, expectedSize)
             XCTAssertEqual(view.columnHeaderFrames[1].size, expectedSize)
@@ -80,26 +83,26 @@ final class ViewColumnHeadersTests: XCTestCase {
 
             let view = try! Module.view(for: model)
 
-            let y: Float = 10 // content padding
-            let x1 = Float(0
+            let expectedY: Float = 10 // content padding
+            let expectedX1 = Float(0
                 + 10 // content padding
                 + 30 // column header
                 + 5  // section spacing
             )
 
-            let totalHorizontalSpace = Float(0
+            let totalExpectedHorizontalSpace = Float(0
                 + 10 * 2 // content padding
                 + 30     // row header
                 + 5 * 2  // section spacing
             )
 
-            let x2 = Float(x1
-                + (Float(100) - totalHorizontalSpace) / 2 // (view width - total space) / number of columns
+            let expectedX2 = Float(x1
+                + (Float(100) - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
                 + 5                                       // section spacing
             )
 
-            XCTAssertEqual(view.columnHeaderFrames[0].origin, Point(x: x1, y: y))
-            XCTAssertEqual(view.columnHeaderFrames[1].origin, Point(x: x2, y: y))
+            XCTAssertEqual(view.columnHeaderFrames[0].origin, Point(x: expectedX1, y: expectedY))
+            XCTAssertEqual(view.columnHeaderFrames[1].origin, Point(x: expectedX2, y: expectedY))
         }
     }
 
