@@ -69,12 +69,11 @@ struct ChartLayoutModule: Elm.Module {
 
     static func view(for model: Model) throws -> View {
 
-        let sectionsCount = model.itemsPerSection.count
-
         func rowIndex(forSection section: Int) -> Int {
             return section / View.numberOfColumns
         }
 
+        let sectionsCount = model.itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
         let columnsRange = 0..<View.numberOfColumns
         let rowsCount = (Float(sectionsCount) / Float(View.numberOfColumns)).rounded(.up)

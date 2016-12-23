@@ -101,7 +101,8 @@ final class ViewColumnHeadersTests: XCTestCase {
             )
             let expectedColumnHeight = (100 - totalExpectedHorizontalSpace) / 2 // (view width - total expected horizontal space) / number of columns
 
-            let expectedX2 = Float(expectedX1
+            let expectedX2 = Float(0
+                + expectedX1
                 + expectedColumnHeight
                 + 5 // section spacing
             )

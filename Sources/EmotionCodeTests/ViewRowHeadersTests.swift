@@ -125,7 +125,8 @@ final class ViewRowHeadersTests: XCTestCase {
                 + 30 // column header
                 + 5  // section spacing
             )
-            let expectedY2 = Float(expectedY1
+            let expectedY2 = Float(0
+                + expectedY1
                 + expectedRowHeight
                 + 5 // section spacing
             )
