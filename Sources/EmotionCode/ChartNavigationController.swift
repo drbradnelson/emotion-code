@@ -20,7 +20,13 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
                 viewController.loadViewIfNeeded()
                 let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
 
-                chartLayout.mode = chartPresenter.chartLayoutMode(with: masterCollectionView)
+                let sections = 0..<masterCollectionView.numberOfSections
+                let itemsPerSection = sections.map(masterCollectionView.numberOfItems)
+                let viewSize = masterCollectionView.visibleContentSize
+                chartLayout.provideData(itemsPerSection: itemsPerSection, viewSize: viewSize)
+
+                let chartLayoutMode = chartPresenter.chartLayoutMode(with: masterCollectionView)
+                chartLayout.setMode(chartLayoutMode)
             }
         }
         super.pushViewController(viewController, animated: animated)

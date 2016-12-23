@@ -1,1 +1,2 @@
-github "enfluid/apple-audio-bar" "feature/update-elm-architecture"
+github "salutis/Elm" "master"
+github "enfluid/apple-audio-bar" "master"

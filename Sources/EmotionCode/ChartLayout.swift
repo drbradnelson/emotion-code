@@ -1,31 +1,41 @@
 import UIKit
-import ChartLayoutCalculator
+import Elm
 
-class ChartLayout: UICollectionViewLayout, ChartLayoutCalculator {
+final class ChartLayout: UICollectionViewLayout {
 
-    var numberOfSections: Int {
-        return collectionView?.numberOfSections ?? 0
+    typealias Module = ChartLayoutModule
+
+    let program = Module.makeProgram()
+
+    func provideData(itemsPerSection: [Int], viewSize: CGSize) {
+        program.dispatch(
+            .setItemsPerSection(itemsPerSection),
+            .setViewSize(viewSize.floatSize)
+        )
     }
 
-    func numberOfItems(inSection section: Int) -> Int {
-        return collectionView?.numberOfItems(inSection: section) ?? 0
+    func setMode(_ mode: Module.Mode) {
+        program.dispatch(.setMode(mode))
     }
 
-    var viewWidth: Float {
-        return Float(collectionView?.bounds.width ?? 0)
+    override func prepare() {
+        super.prepare()
+        guard let collectionView = collectionView else { return }
+        let sections = 0..<collectionView.numberOfSections
+        let itemsPerSection = sections.map(collectionView.numberOfItems)
+        provideData(
+            itemsPerSection: itemsPerSection,
+            viewSize: collectionView.visibleContentSize
+        )
     }
 
-    var visibleContentHeight: Float {
-        return Float(collectionView?.visibleContentHeight ?? 0)
+    override var collectionViewContentSize: CGSize {
+        return program.view.chartSize.cgSize
     }
-
-    var mode: ChartLayoutMode = .all
-
-    override var collectionViewContentSize: CGSize { return chartSize.cgSize }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         guard let collectionView = collectionView else { preconditionFailure() }
-        guard let verticalContentOffset = verticalContentOffset else { return proposedContentOffset }
+        guard let verticalContentOffset = program.view.proposedVerticalContentOffset else { return proposedContentOffset }
         let x = proposedContentOffset.x
         let y = CGFloat(verticalContentOffset) - collectionView.contentInset.top
         return CGPoint(x: x, y: y)
@@ -45,22 +55,30 @@ class ChartLayout: UICollectionViewLayout, ChartLayoutCalculator {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let frame = frameForItem(at: indexPath)
+        let frame = program.view.itemFrames[indexPath.section][indexPath.item]
         return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame.cgRect)
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
         case ChartHeaderView.columnKind:
-            guard let frame = frameForColumnHeader(at: indexPath) else { return nil }
+            let column = (indexPath.section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let frame = program.view.columnHeaderFrames[column]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         case ChartHeaderView.rowKind:
-            guard let frame = frameForRowHeader(at: indexPath) else { return nil }
+            let row = indexPath.section / ChartLayoutModule.View.numberOfColumns
+            let frame = program.view.rowHeaderFrames[row]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         default: return nil
         }
     }
 
+}
+
+private extension CGSize {
+    var floatSize: Size {
+        return Size(width: Float(width), height: Float(height))
+    }
 }
 
 private extension UICollectionViewLayoutAttributes {
