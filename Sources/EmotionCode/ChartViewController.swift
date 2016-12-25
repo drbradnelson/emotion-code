@@ -45,13 +45,13 @@ final class ChartViewController: UICollectionViewController {
         switch kind {
         case ChartHeaderView.columnKind:
             let columnHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let column = (indexPath.section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
             let columnName = String.alphabet[column]
             columnHeader.configure(title: columnName)
             return columnHeader
         case ChartHeaderView.rowKind:
             let rowHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let row = (indexPath.section + ChartLayoutModule.View.numberOfColumns) / ChartLayoutModule.View.numberOfColumns
+            let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
             rowHeader.configure(title: String(row))
             return rowHeader
         default:

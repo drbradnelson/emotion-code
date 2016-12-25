@@ -5,12 +5,15 @@ final class ChartLayout: UICollectionViewLayout {
 
     typealias Module = ChartLayoutModule
 
+    static let numberOfColumns = 2
+
     let program = Module.makeProgram()
 
     func provideData(itemsPerSection: [Int], viewSize: CGSize) {
         program.dispatch(
             .setItemsPerSection(itemsPerSection),
-            .setViewSize(viewSize.intSize)
+            .setViewSize(viewSize.intSize),
+            .setNumberOfColumns(ChartLayout.numberOfColumns)
         )
     }
 
@@ -62,11 +65,11 @@ final class ChartLayout: UICollectionViewLayout {
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let column = (indexPath.section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
             let frame = program.view.columnHeaderFrames[column]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         case ChartHeaderView.rowKind:
-            let row = indexPath.section / ChartLayoutModule.View.numberOfColumns
+            let row = indexPath.section / ChartLayout.numberOfColumns
             let frame = program.view.rowHeaderFrames[row]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
         default: return nil

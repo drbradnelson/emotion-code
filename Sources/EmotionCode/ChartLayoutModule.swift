@@ -16,12 +16,23 @@ struct ChartLayoutModule: Elm.Module {
         case setMode(Mode)
         case setItemsPerSection([Int])
         case setViewSize(Size)
+        case setNumberOfColumns(Int)
     }
 
     struct Model: Initable {
+
         var mode = Mode.all
         var itemsPerSection: [Int] = []
         var viewSize: Size = .zero
+        var numberOfColumns = 2
+
+        var minViewHeightForCompactLayout = 554
+        var headerSize = Size(width: 30, height: 30)
+        var itemHeight = 30
+        var contentPadding = 10
+        var sectionSpacing = Size(width: 5, height: 5)
+        var itemSpacing = 10
+
     }
 
     typealias Command = Void
@@ -32,14 +43,6 @@ struct ChartLayoutModule: Elm.Module {
         let itemFrames: [[Rect]]
         let columnHeaderFrames: [Rect]
         let rowHeaderFrames: [Rect]
-
-        static let minViewHeightForCompactLayout: Int = 554
-        static let headerSize = Size(width: 30, height: 30)
-        static let baseItemHeight: Int = 30
-        static let baseContentPadding: Int = 10
-        static let baseSectionSpacing = Size(width: 5, height: 5)
-        static let baseItemSpacing: Int = 10
-        static let numberOfColumns = 2
     }
 
     enum Failure: Error {
@@ -57,12 +60,11 @@ struct ChartLayoutModule: Elm.Module {
         case .setMode(let mode):
             model.mode = mode
         case .setItemsPerSection(let itemsPerSection):
-            guard !itemsPerSection.isEmpty else { throw Failure.missingItems }
             model.itemsPerSection = itemsPerSection
         case .setViewSize(let size):
-            guard size.width != 0, size.height != 0 else { throw Failure.zeroViewSize }
-            guard size.width > 0, size.height > 0 else { throw Failure.negativeViewSize }
             model.viewSize = size
+        case .setNumberOfColumns(let numberOfColumns):
+            model.numberOfColumns = numberOfColumns
         }
         return []
     }
@@ -70,82 +72,60 @@ struct ChartLayoutModule: Elm.Module {
     static func view(for model: Model) throws -> View {
 
         func rowIndex(forSection section: Int) -> Int {
-            return section / View.numberOfColumns
+            return section / model.numberOfColumns
         }
 
         let sectionsCount = model.itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
-        let columnsRange = 0..<View.numberOfColumns
-        let rowsCount = (sectionsCount + View.numberOfColumns - 1) / View.numberOfColumns
+        let columnsRange = 0..<model.numberOfColumns
+        let rowsCount = (sectionsCount + model.numberOfColumns - 1) / model.numberOfColumns
         let rowsRange = 0..<rowsCount
 
         //
         // MARK: -
-        // MARK: Spacing & padding
+        // MARK: Section and item spacing
         //
-
-        let contentPadding: Int = {
-            return View.baseContentPadding
-        }()
 
         let sectionSpacing: Size = {
             switch model.mode {
-            case .all: return View.baseSectionSpacing
-            case .section, .emotion: return Size(width: contentPadding, height: contentPadding + 1)
+            case .all: return model.sectionSpacing
+            case .section, .emotion: return Size(width: model.contentPadding, height: model.contentPadding)
             }
         }()
-
-        guard model.viewSize.width >= sectionSpacing.width, model.viewSize.height >= sectionSpacing.height else {
-            throw Failure.viewSizeSmallerThanSectionSpacing
-        }
-
-        guard model.viewSize.width >= contentPadding, model.viewSize.height >= contentPadding else {
-            throw Failure.viewSizeSmallerThanContentPadding
-        }
 
         let itemSpacing: Int = {
             switch model.mode {
             case .all: return 0
-            case .section: return View.baseItemSpacing
+            case .section: return model.itemSpacing
             case .emotion: return sectionSpacing.height
             }
         }()
-
-        guard model.viewSize.width >= View.headerSize.width, model.viewSize.height >= View.headerSize.height else {
-            throw Failure.viewSizeSmallerThanHeaderSize
-        }
-
-        guard model.viewSize.width >= (contentPadding * View.numberOfColumns + sectionSpacing.width * View.numberOfColumns + View.headerSize.width) else {
-            throw Failure.viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth
-        }
 
         //
         // MARK: -
         // MARK: Item heights
         //
 
-        let baseItemHeight: Int = {
+        let itemHeight: Int = {
             guard
-                model.viewSize.height >= View.minViewHeightForCompactLayout,
-                let maximumItemsCountInSection = model.itemsPerSection.max() else { return View.baseItemHeight }
-            let totalSpacing = contentPadding * 2 + View.headerSize.height + sectionSpacing.height * rowsCount
+                model.viewSize.height >= model.minViewHeightForCompactLayout,
+                let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
+            let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
             return (totalAvailableSpacePerSection + maximumItemsCountInSection - 1) / maximumItemsCountInSection
         }()
 
         let itemHeights = sectionsRange.map { section -> Int in
             switch model.mode {
-            case .all: return baseItemHeight
+            case .all: return itemHeight
             case .section:
                 let itemCount = model.itemsPerSection[section]
-                let totalPaddingHeight = contentPadding * 2
+                let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
                 let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
-                return totalAvailableContentHeight / itemCount
+                return (totalAvailableContentHeight + itemCount - 1) / itemCount
             case .emotion:
-                let totalPaddingHeight = contentPadding * 2
-                let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight
-                return totalAvailableContentHeight
+                return model.viewSize.height - model.contentPadding * 2
             }
         }
 
@@ -168,7 +148,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Row header size
         //
 
-        let rowHeaderSize = Size(width: View.headerSize.width, height: maximumSectionHeight)
+        let rowHeaderSize = Size(width: model.headerSize.width, height: maximumSectionHeight)
 
         //
         // MARK: -
@@ -178,12 +158,12 @@ struct ChartLayoutModule: Elm.Module {
         let itemWidth: Int = {
             switch model.mode {
             case .all:
-                let totalAvailableWidth = model.viewSize.width - contentPadding * 2 - rowHeaderSize.width - sectionSpacing.width
-                let totalSpacingWidth = sectionSpacing.width * (View.numberOfColumns - 1)
+                let totalAvailableWidth = model.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width - sectionSpacing.width
+                let totalSpacingWidth = sectionSpacing.width * (model.numberOfColumns - 1)
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
-                return totalContentWidth / View.numberOfColumns
+                return totalContentWidth / model.numberOfColumns
             case .section, .emotion:
-                return model.viewSize.width - contentPadding * 2
+                return model.viewSize.width - model.contentPadding * 2
             }
         }()
 
@@ -192,7 +172,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Column header size
         //
 
-        let columnHeaderSize = Size(width: itemWidth, height: View.headerSize.height)
+        let columnHeaderSize = Size(width: itemWidth, height: model.headerSize.height)
 
         //
         // MARK: -
@@ -202,11 +182,11 @@ struct ChartLayoutModule: Elm.Module {
         let rowYPositions = rowsRange.map { row -> Int in
             let cumulativeContentHeight = maximumSectionHeight * row
             let cumulativeSpacingHeight = sectionSpacing.height * row
-            return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + contentPadding
+            return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + model.contentPadding
         }
 
         let columnXPositions = columnsRange.map { column -> Int in
-            let xPosition = contentPadding + rowHeaderSize.width + sectionSpacing.width
+            let xPosition = model.contentPadding + rowHeaderSize.width + sectionSpacing.width
             return xPosition + column * (itemWidth + sectionSpacing.width)
         }
 
@@ -227,7 +207,7 @@ struct ChartLayoutModule: Elm.Module {
         }
 
         let itemPositions = sectionsRange.map { section -> [Point] in
-            let column = (section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let column = (section + model.numberOfColumns) % model.numberOfColumns
             let xPosition = columnXPositions[column]
 
             let itemsRange = 0..<model.itemsPerSection[section]
@@ -263,9 +243,9 @@ struct ChartLayoutModule: Elm.Module {
                 return nil
             case .section(let section):
                 let row = rowIndex(forSection: section)
-                return rowYPositions[row] - sectionSpacing.height
+                return rowYPositions[row] - model.contentPadding
             case .emotion(let indexPath):
-                return yPositionsForItems[indexPath.section][indexPath.item] - sectionSpacing.height
+                return yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding
             }
         }()
 
@@ -278,8 +258,8 @@ struct ChartLayoutModule: Elm.Module {
             let x = columnXPositions[column]
             let y: Int
             switch model.mode {
-            case .all: y = contentPadding
-            case .section, .emotion: y = contentPadding - columnHeaderSize.height
+            case .all: y = model.contentPadding
+            case .section, .emotion: y = model.contentPadding - columnHeaderSize.height
             }
             return Point(x: x, y: y)
         }
@@ -288,8 +268,8 @@ struct ChartLayoutModule: Elm.Module {
             let y = rowYPositions[row]
             let x: Int
             switch model.mode {
-            case .all: x = contentPadding
-            case .section, .emotion: x = contentPadding - rowHeaderSize.width
+            case .all: x = model.contentPadding
+            case .section, .emotion: x = model.contentPadding - rowHeaderSize.width
             }
             return Point(x: x, y: y)
         }
@@ -318,8 +298,8 @@ struct ChartLayoutModule: Elm.Module {
             guard
                 let lastRowHeaderFrame = rowHeaderFrames.last,
                 let lastColumnHeaderFrame = columnHeaderFrames.last else { return .zero }
-            let height = lastRowHeaderFrame.maxY + contentPadding
-            let width = lastColumnHeaderFrame.maxX + contentPadding
+            let height = lastRowHeaderFrame.maxY + model.contentPadding
+            let width = lastColumnHeaderFrame.maxX + model.contentPadding
             return Size(width: width, height: height)
         }()
 
@@ -344,17 +324,17 @@ struct ChartLayoutModule: Elm.Module {
 public struct Point {
 
     // swiftlint:disable:next variable_name
-    let x: Int
+    var x: Int
 
     // swiftlint:disable:next variable_name
-    let y: Int
+    var y: Int
 
 }
 
 public struct Size {
 
-    let width: Int
-    let height: Int
+    var width: Int
+    var height: Int
 
     static var zero: Size {
         return Size(width: 0, height: 0)
@@ -364,8 +344,8 @@ public struct Size {
 
 public struct Rect {
 
-    let origin: Point
-    let size: Size
+    var origin: Point
+    var size: Size
 
     var maxX: Int {
         return origin.x + size.width
