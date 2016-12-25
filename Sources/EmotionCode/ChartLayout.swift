@@ -10,7 +10,7 @@ final class ChartLayout: UICollectionViewLayout {
     func provideData(itemsPerSection: [Int], viewSize: CGSize) {
         program.dispatch(
             .setItemsPerSection(itemsPerSection),
-            .setViewSize(viewSize.floatSize)
+            .setViewSize(viewSize.intSize)
         )
     }
 
@@ -76,8 +76,8 @@ final class ChartLayout: UICollectionViewLayout {
 }
 
 private extension CGSize {
-    var floatSize: Size {
-        return Size(width: Float(width), height: Float(height))
+    var intSize: Size {
+        return Size(width: Int(width), height: Int(height))
     }
 }
 
