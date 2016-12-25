@@ -84,19 +84,19 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Spacing & padding
         //
 
-        var contentPadding: Float {
+        let contentPadding: Float = {
             switch model.mode {
             case .all: return View.baseContentPadding
             case .section, .emotion: return View.baseContentPadding * 2
             }
-        }
+        }()
 
-        var sectionSpacing: Size {
+        let sectionSpacing: Size = {
             switch model.mode {
             case .all: return View.baseSectionSpacing
             case .section, .emotion: return Size(width: contentPadding, height: contentPadding)
             }
-        }
+        }()
 
         guard model.viewSize.width >= sectionSpacing.width, model.viewSize.height >= sectionSpacing.height else {
             throw Failure.viewSizeSmallerThanSectionSpacing
@@ -106,13 +106,13 @@ struct ChartLayoutModule: Elm.Module {
             throw Failure.viewSizeSmallerThanContentPadding
         }
 
-        var itemSpacing: Float {
+        let itemSpacing: Float = {
             switch model.mode {
             case .all: return 0
             case .section: return View.baseItemSpacing
             case .emotion: return sectionSpacing.height
             }
-        }
+        }()
 
         guard model.viewSize.width >= View.headerSize.width, model.viewSize.height >= View.headerSize.height else {
             throw Failure.viewSizeSmallerThanHeaderSize
@@ -127,13 +127,13 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Item heights
         //
 
-        var baseItemHeight: Float {
+        let baseItemHeight: Float = {
             guard model.viewSize.height >= View.minViewHeightForCompactLayout else { return View.baseItemHeight }
             let totalSpacing = contentPadding * 2 + View.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
             let maximumItemsCountInSection = model.itemsPerSection.max()!
             return totalAvailableSpacePerSection / Float(maximumItemsCountInSection)
-        }
+        }()
 
         let itemHeights = sectionsRange.map { section -> Float in
             switch model.mode {
@@ -177,7 +177,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Item width
         //
 
-        var itemWidth: Float {
+        let itemWidth: Float = {
             switch model.mode {
             case .all:
                 let totalAvailableWidth = model.viewSize.width - contentPadding * 2 - rowHeaderSize.width - sectionSpacing.width
@@ -187,7 +187,7 @@ struct ChartLayoutModule: Elm.Module {
             case .section, .emotion:
                 return model.viewSize.width - contentPadding * 2
             }
-        }
+        }()
 
         //
         // MARK: -
@@ -259,7 +259,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Content offset
         //
 
-        var proposedVerticalContentOffset: Float? {
+        let proposedVerticalContentOffset: Float? = {
             switch model.mode {
             case .all:
                 return nil
@@ -269,7 +269,7 @@ struct ChartLayoutModule: Elm.Module {
             case .emotion(let indexPath):
                 return yPositionsForItems[indexPath.section][indexPath.item] - sectionSpacing.height
             }
-        }
+        }()
 
         //
         // MARK: -
@@ -316,14 +316,14 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Chart size
         //
 
-        var chartSize: Size {
+        let chartSize: Size = {
             guard
                 let lastRowHeaderFrame = rowHeaderFrames.last,
                 let lastColumnHeaderFrame = columnHeaderFrames.last else { return .zero }
             let height = lastRowHeaderFrame.maxY + contentPadding
             let width = lastColumnHeaderFrame.maxX + contentPadding
             return Size(width: width, height: height)
-        }
+        }()
 
         return View(
             chartSize: chartSize,
