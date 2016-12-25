@@ -5,6 +5,9 @@ import XCTest
 
 typealias Module = ChartLayoutModule
 typealias Message = Module.Message
+typealias Mode = Module.Mode
+typealias Model = Module.Model
+typealias View = Module.View
 
 final class ChartLayoutModuleTests: XCTestCase {
 
@@ -320,78 +323,6 @@ final class ChartLayoutModuleTests: XCTestCase {
         XCTAssertEqual(view.itemFrames[0][0].size.height, expected)
     }
 
-//    func testSizesForBigViewSize() {
-//            var model = Model()
-//            model.itemsPerSection = [
-//                1, 2,
-//                2
-//            ]
-//            model.viewSize = Size(
-//                width: 200,
-//                height: 554 // minimum view height for compact layout
-//            )
-//
-//            let view = try! Module.view(for: model)
-//
-//            let totalExpectedSpace = Int(0
-//                + 10 * 2 // content padding
-//                + 30     // header
-//                + 5 * 2  // section spacing
-//            )
-//
-//            let expectedSize = Size(
-//                width: (200 - totalExpectedSpace) / 2, // (view width - total expected space) / number of rows
-//                height: (554 - totalExpectedSpace) / 4 // (view width - total expected space) / number of items in column
-//            )
-//
-//            XCTAssertEqual(view.itemFrames[0][0].size, expectedSize)
-//
-//            XCTAssertEqual(view.itemFrames[1][0].size, expectedSize)
-//            XCTAssertEqual(view.itemFrames[1][1].size, expectedSize)
-//
-//            XCTAssertEqual(view.itemFrames[2][0].size, expectedSize)
-//            XCTAssertEqual(view.itemFrames[2][1].size, expectedSize)
-//    }
-
-
-
-
-
-    // MARK: PerformanceTests
-
-//    func test1() {
-//
-//        var model = Model()
-//        model.mode = .all
-//        model.numberOfColumns = 1
-//        model.itemsPerSection = Array(repeating: 1000, count: 1000)
-//        model.viewSize = Size(width: 200, height: 554)
-//
-//        measure {
-//            _ = try! Module.view(for: model)
-//        }
-//
-//    }
-
-    //    func test2() {
-    //
-    //        var model = Model()
-    //        model.itemsPerSection = [2]
-    //        model.viewSize = Size(
-    //            width: 200,
-    //            height: 554 // minimum view height for compact layout
-    //        )
-    //
-    //        let view = try! Module.view(for: model)
-    //
-    //        let itemFrame1 = view.itemFrames[0][0]
-    //        let itemFrame2 = view.itemFrames[0][1]
-    //
-    //        XCTAssertEqual(itemFrame1, itemFrame1.integral)
-    //        XCTAssertEqual(itemFrame2, itemFrame2.integral)
-    //
-    //    }
-
 }
 
 // MARK: ...
@@ -400,27 +331,10 @@ extension IndexPath {
     static let arbitrary = IndexPath(item: 10, section: 20)
 }
 
-protocol StringEquatable: Equatable {
-    static func == (lhs: Self, rhs: Self) -> Bool
-}
-
-extension StringEquatable {
-    public static func == (lhs: Self, rhs: Self) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
-
-typealias Mode = Module.Mode
 extension Mode: StringEquatable {}
-
-typealias Model = Module.Model
 extension Model: StringEquatable {}
-
-typealias View = Module.View
 extension View: StringEquatable {}
 
 extension Size: StringEquatable {}
-
 extension Point: StringEquatable {}
-
 extension Rect: StringEquatable {}
