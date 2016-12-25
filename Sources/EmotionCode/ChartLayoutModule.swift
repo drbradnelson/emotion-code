@@ -297,7 +297,7 @@ struct ChartLayoutModule: Elm.Module {
         let chartSize: Size = {
             guard
                 let lastRowHeaderFrame = rowHeaderFrames.last,
-                let lastColumnHeaderFrame = columnHeaderFrames.last else { return .zero }
+                let lastColumnHeaderFrame = columnHeaderFrames.last else { return model.viewSize }
             let height = lastRowHeaderFrame.maxY + model.contentPadding
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
             return Size(width: width, height: height)

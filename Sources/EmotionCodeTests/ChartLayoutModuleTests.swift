@@ -295,10 +295,6 @@ final class ChartLayoutModuleTests: XCTestCase {
         // ...
     }
 
-
-
-
-
     func testItemHeightWhenNotCompact() {
         var model = Model()
         model.numberOfColumns = 1
@@ -311,31 +307,6 @@ final class ChartLayoutModuleTests: XCTestCase {
     }
 
     func testItemHeightWhenCompact() {
-        var model = Model()
-        model.numberOfColumns = 1
-        model.itemsPerSection = [1]
-        model.contentPadding = 2
-        model.headerSize.height = 3
-        model.sectionSpacing.height = 4
-        model.minViewHeightForCompactLayout = 100
-        model.viewSize.height = 100
-        let view = try! Module.view(for: model)
-        let expected = Int(100 - 2 - 2 - 3 - 4)
-        XCTAssertEqual(view.itemFrames[0][0].size.height, expected)
-    }
-
-    func testFractionalItemHeightWhenNotCompact() {
-        var model = Model()
-        model.numberOfColumns = 1
-        model.itemsPerSection = [1]
-        model.itemHeight = 1.99
-        model.minViewHeightForCompactLayout = 101
-        model.viewSize.height = 100
-        let view = try! Module.view(for: model)
-        XCTAssertEqual(view.itemFrames[0][0].size.height, 2)
-    }
-
-    func testFractionalItemHeightWhenCompact() {
         var model = Model()
         model.numberOfColumns = 1
         model.itemsPerSection = [1]
@@ -388,19 +359,19 @@ final class ChartLayoutModuleTests: XCTestCase {
 
     // MARK: PerformanceTests
 
-    func test1() {
-
-        var model = Model()
-        model.mode = .all
-        model.numberOfColumns = 1
-        model.itemsPerSection = Array(repeating: 1000, count: 1000)
-        model.viewSize = Size(width: 200, height: 554)
-
-        measure {
-            _ = try! Module.view(for: model)
-        }
-
-    }
+//    func test1() {
+//
+//        var model = Model()
+//        model.mode = .all
+//        model.numberOfColumns = 1
+//        model.itemsPerSection = Array(repeating: 1000, count: 1000)
+//        model.viewSize = Size(width: 200, height: 554)
+//
+//        measure {
+//            _ = try! Module.view(for: model)
+//        }
+//
+//    }
 
     //    func test2() {
     //
@@ -429,66 +400,27 @@ extension IndexPath {
     static let arbitrary = IndexPath(item: 10, section: 20)
 }
 
-typealias Mode = Module.Mode
-extension Mode: Equatable {
-    public static func == (lhs: Mode, rhs: Mode) -> Bool {
+protocol StringEquatable: Equatable {
+    static func == (lhs: Self, rhs: Self) -> Bool
+}
+
+extension StringEquatable {
+    public static func == (lhs: Self, rhs: Self) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
 }
+
+typealias Mode = Module.Mode
+extension Mode: StringEquatable {}
 
 typealias Model = Module.Model
-extension Model: Equatable {
-    public static func == (lhs: Model, rhs: Model) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-
-}
+extension Model: StringEquatable {}
 
 typealias View = Module.View
-extension View: Equatable {
-    public static func == (lhs: View, rhs: View) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
+extension View: StringEquatable {}
 
-extension Size: Equatable {
-    public static func == (lhs: Size, rhs: Size) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
+extension Size: StringEquatable {}
 
-extension Point: Equatable {
-    public static func == (lhs: Point, rhs: Point) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
+extension Point: StringEquatable {}
 
-extension Rect {
-    var integral: Rect {
-        return Rect(origin: origin.integral, size: size.integral)
-    }
-}
-
-extension Size {
-    var integral: Size {
-        return Size(
-            width: width.rounded(.down),
-            height: height.rounded(.down)
-        )
-    }
-}
-
-extension Point {
-    var integral: Point {
-        return Point(
-            x: x.rounded(.down),
-            y: y.rounded(.down)
-        )
-    }
-}
-
-extension Rect: Equatable {
-    public static func == (lhs: Rect, rhs: Rect) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
-    }
-}
+extension Rect: StringEquatable {}
