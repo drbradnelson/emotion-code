@@ -47,12 +47,10 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Failure: Error {
         case missingItems
+        case negativeNumberOfColumns
+        case zeroNumberOfColumns
         case negativeViewSize
         case zeroViewSize
-        case viewSizeSmallerThanSectionSpacing
-        case viewSizeSmallerThanContentPadding
-        case viewSizeSmallerThanHeaderSize
-        case viewWidthSmallerThanContentPaddingAndSectionSpacingAndRowHeaderWidth
     }
 
     static func update(for message: Message, model: inout Model) throws -> [Command] {
@@ -60,10 +58,15 @@ struct ChartLayoutModule: Elm.Module {
         case .setMode(let mode):
             model.mode = mode
         case .setItemsPerSection(let itemsPerSection):
+            guard !itemsPerSection.isEmpty else { throw Failure.missingItems }
             model.itemsPerSection = itemsPerSection
         case .setViewSize(let size):
+            guard size.width != 0, size.height != 0 else { throw Failure.zeroViewSize }
+            guard size.width > 0, size.height > 0 else { throw Failure.negativeViewSize }
             model.viewSize = size
         case .setNumberOfColumns(let numberOfColumns):
+            guard numberOfColumns != 0 else { throw Failure.zeroNumberOfColumns }
+            guard numberOfColumns > 0 else { throw Failure.negativeNumberOfColumns }
             model.numberOfColumns = numberOfColumns
         }
         return []
@@ -78,7 +81,7 @@ struct ChartLayoutModule: Elm.Module {
         let sectionsCount = model.itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
         let columnsRange = 0..<model.numberOfColumns
-        let rowsCount = (sectionsCount + model.numberOfColumns - 1) / model.numberOfColumns
+        let rowsCount = Int((Double(sectionsCount) / Double(model.numberOfColumns)).rounded())
         let rowsRange = 0..<rowsCount
 
         //
@@ -112,7 +115,7 @@ struct ChartLayoutModule: Elm.Module {
                 let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
-            return totalAvailableSpacePerSection / maximumItemsCountInSection
+            return Int((Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)).rounded())
         }()
 
         let itemHeights = sectionsRange.map { section -> Int in
@@ -123,7 +126,7 @@ struct ChartLayoutModule: Elm.Module {
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
                 let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
-                return totalAvailableContentHeight / itemCount
+                return Int((Double(totalAvailableContentHeight) / Double(itemCount)).rounded())
             case .emotion:
                 return model.viewSize.height - model.contentPadding * 2
             }
