@@ -4,6 +4,11 @@ final class ChartViewController: UICollectionViewController {
 
     private let chart = ChartController().chart
 
+    private let screenIsSmall: Bool = {
+        let screenSize = UIScreen.main.bounds.size
+        return screenSize.height < 554
+    }()
+
     // MARK: View lifecycle
 
     override func viewDidLoad() {
@@ -14,7 +19,7 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        collectionView!.isScrollEnabled = true
+        collectionView!.isScrollEnabled = screenIsSmall
     }
 
     override func viewWillDisappear(_ animated: Bool) {
