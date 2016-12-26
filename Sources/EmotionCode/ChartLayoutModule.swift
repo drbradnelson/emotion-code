@@ -158,8 +158,8 @@ struct ChartLayoutModule: Elm.Module {
         let itemWidth: Int = {
             switch model.mode {
             case .all:
-                let totalAvailableWidth = model.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width - sectionSpacing.width
-                let totalSpacingWidth = sectionSpacing.width * (model.numberOfColumns - 1)
+                let totalAvailableWidth = model.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
+                let totalSpacingWidth = sectionSpacing.width * model.numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
                 return totalContentWidth / model.numberOfColumns
             case .section, .emotion:

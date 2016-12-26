@@ -190,7 +190,36 @@ final class ChartLayoutModuleTests: XCTestCase {
         XCTAssertEqual(view.columnHeaderFrames[0].size.height, 2)
     }
 
-    func testColumnHeaderOriginXForAllModeWhenNotCompact() {
+    func testColumnHeaderXForAllModeWhenNotCompact() {
+        var model = Model()
+        model.mode = .all
+        model.numberOfColumns = 1
+        model.itemsPerSection = [1]
+        model.contentPadding = 2
+        model.headerSize.width = 3
+        model.sectionSpacing.width = 4
+        model.minViewHeightForCompactLayout = 21
+        model.viewSize.height = 20
+        let view = try! Module.view(for: model)
+        XCTAssertEqual(view.columnHeaderFrames[0].origin.x, 2 + 3 + 4)
+    }
+
+    func testSecondColumnHeaderXForAllModeWhenNotCompact() {
+        var model = Model()
+        model.mode = .all
+        model.numberOfColumns = 2
+        model.itemsPerSection = [1, 1]
+        model.contentPadding = 2
+        model.headerSize.width = 3
+        model.sectionSpacing.width = 4
+        model.minViewHeightForCompactLayout = 21
+        model.viewSize.height = 20
+        model.viewSize.width = 20
+        let view = try! Module.view(for: model)
+        XCTAssertEqual(view.columnHeaderFrames[1].origin.x, Int(2 + 3 + 4 + (20 - 2 - 2 - 3 - 4 - 4) / 2 + 4))
+    }
+
+    func testColumnHeaderXForAllModeWhenCompact() {
         var model = Model()
         model.mode = .all
         model.numberOfColumns = 1
@@ -199,16 +228,28 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.headerSize.width = 3
         model.sectionSpacing.width = 4
         model.minViewHeightForCompactLayout = 20
-        model.viewSize.height = 19
+        model.viewSize.height = 20
         let view = try! Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames[0].origin.x, 2 + 3 + 4)
     }
 
-    func testColumnHeaderOriginXForAllModeWhenCompact() {
-        // ...
+    func testSecondColumnHeaderXForAllModeWhenCompact() {
+        var model = Model()
+        model.mode = .all
+        model.numberOfColumns = 2
+        model.itemsPerSection = [1, 1]
+        model.contentPadding = 2
+        model.headerSize.width = 3
+        model.sectionSpacing.width = 4
+        model.minViewHeightForCompactLayout = 20
+        model.viewSize.height = 20
+        model.viewSize.width = 20
+        let view = try! Module.view(for: model)
+        let expected = Int(2 + 3 + 4 + (20 - 2 - 2 - 3 - 4 - 4) / 2 + 4)
+        XCTAssertEqual(view.columnHeaderFrames[1].origin.x, expected)
     }
 
-    func testColumnHeaderOriginYForAllModeWhenNotCompact() {
+    func testColumnHeaderY() {
         var model = Model()
         model.mode = .all
         model.numberOfColumns = 1
@@ -218,10 +259,6 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.viewSize.height = 19
         let view = try! Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames[0].origin.y, 2)
-    }
-
-    func testColumnHeaderOriginYForAllModeWhenCompact() {
-        // ...
     }
 
     func testRowHeaderFrameCount() {
@@ -285,17 +322,40 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.height = 3
         model.sectionSpacing.height = 4
-
         let view = try! Module.view(for: model)
         XCTAssertEqual(view.rowHeaderFrames[0].origin.y, 2 + 3 + 4)
     }
 
-    func testSecondRowHeaderYForAllModeWhenCompact() {
-        // ...
+    func testSecondRowHeaderYForAllModeWhenNotCompact() {
+        var model = Model()
+        model.mode = .all
+        model.numberOfColumns = 1
+        model.itemsPerSection = [1, 1]
+        model.contentPadding = 2
+        model.headerSize.height = 3
+        model.sectionSpacing.height = 4
+        model.itemHeight = 5
+        model.minViewHeightForCompactLayout = 21
+        model.viewSize.height = 20
+        let view = try! Module.view(for: model)
+        let expected = Int(2 + 3 + 4 + 5 + 4)
+        XCTAssertEqual(view.rowHeaderFrames[1].origin.y, expected)
     }
 
-    func testSecondRowHeaderYForAllModeWhenNotCompact() {
-        // ...
+    func testSecondRowHeaderYForAllModeWhenCompact() {
+        var model = Model()
+        model.mode = .all
+        model.numberOfColumns = 1
+        model.itemsPerSection = [1, 1]
+        model.contentPadding = 2
+        model.headerSize.height = 3
+        model.sectionSpacing.height = 4
+        model.minViewHeightForCompactLayout = 20
+        model.viewSize.height = 20
+        let view = try! Module.view(for: model)
+        let expected = Int(2 + 3 + 4 + (20 - 2 - 2 - 3 - 4 - 4) / 2 + 4)
+        XCTAssertEqual(view.rowHeaderFrames[1].origin.y, expected)
+
     }
 
     func testItemHeightWhenNotCompact() {
@@ -309,7 +369,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         XCTAssertEqual(view.itemFrames[0][0].size.height, 2)
     }
 
-    func testItemHeightWhenCompact() {
+    func testItemHeightWhenCompact1() {
         var model = Model()
         model.numberOfColumns = 1
         model.itemsPerSection = [1]
@@ -321,6 +381,46 @@ final class ChartLayoutModuleTests: XCTestCase {
         let view = try! Module.view(for: model)
         let expected = Int(100 - 2 - 2 - 3 - 4)
         XCTAssertEqual(view.itemFrames[0][0].size.height, expected)
+    }
+
+    func testItemHeightWhenCompact2() {
+        var model = Model()
+        model.numberOfColumns = 1
+        model.itemsPerSection = [2]
+        model.contentPadding = 3
+        model.headerSize.height = 4
+        model.sectionSpacing.height = 5
+        model.minViewHeightForCompactLayout = 100
+        model.viewSize.height = 100
+        let view = try! Module.view(for: model)
+        let expected = Int((100 - 3 - 3 - 4 - 5 + (2 - 1)) / 2)
+        XCTAssertEqual(view.itemFrames[0][0].size.height, expected)
+        XCTAssertEqual(view.itemFrames[0][1].size.height, expected)
+    }
+
+    func testItemWidth() {
+        var model = Model()
+        model.numberOfColumns = 1
+        model.itemsPerSection = [1]
+        model.contentPadding = 2
+        model.headerSize.width = 3
+        model.sectionSpacing.width = 4
+        model.viewSize.width = 20
+        let view = try! Module.view(for: model)
+        let expected = Int(20 - 2 - 2 - 3 - 4)
+        XCTAssertEqual(view.itemFrames[0][0].size.width, expected)
+    }
+
+    func testPerformance() {
+        var model = Model()
+        model.mode = .all
+        model.numberOfColumns = 1
+        model.itemsPerSection = Array(repeating: 1000, count: 1000)
+        model.viewSize = Size(width: 200, height: 553)
+
+        measure {
+            _ = try! Module.view(for: model)
+        }
     }
 
 }
