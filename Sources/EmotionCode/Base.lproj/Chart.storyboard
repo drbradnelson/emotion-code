@@ -46,8 +46,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
+                                        <label autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
                                             <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
