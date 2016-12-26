@@ -112,7 +112,7 @@ struct ChartLayoutModule: Elm.Module {
                 let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
-            return (totalAvailableSpacePerSection + maximumItemsCountInSection - 1) / maximumItemsCountInSection
+            return totalAvailableSpacePerSection / maximumItemsCountInSection
         }()
 
         let itemHeights = sectionsRange.map { section -> Int in
@@ -123,7 +123,7 @@ struct ChartLayoutModule: Elm.Module {
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
                 let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
-                return (totalAvailableContentHeight + itemCount - 1) / itemCount
+                return totalAvailableContentHeight / itemCount
             case .emotion:
                 return model.viewSize.height - model.contentPadding * 2
             }
