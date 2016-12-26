@@ -3,7 +3,6 @@ import UIKit
 final class ItemCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet private var titleLabel: UILabel!
-    @IBOutlet private var descriptionTextView: UITextView!
 
     @IBInspectable var oddRowColor: UIColor!
     @IBInspectable var evenRowColor: UIColor!
@@ -12,7 +11,6 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     func configure(with emotion: Chart.Emotion) {
         titleLabel.text = emotion.title
-        descriptionTextView.text = emotion.description
     }
 
     func setBackgroundColor(for indexPath: IndexPath) {
@@ -23,7 +21,6 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     func setDescriptionVisible(_ visible: Bool) {
         titleLabel.alpha = visible ? 0 : 1
-        descriptionTextView.alpha = visible ? 1 : 0
     }
 
 }
