@@ -33,6 +33,7 @@ final class BookChapterViewController: UIViewController {
         super.viewDidLoad()
         bookChapterView.configureWebView()
         loadChapter()
+        NotificationCenter.default.addObserver(self, selector: #selector(preferredFontSizeDidChange(notification:)), name: Notification.Name.UIContentSizeCategoryDidChange, object: nil)
     }
 
     override func viewDidLayoutSubviews() {
@@ -51,6 +52,10 @@ final class BookChapterViewController: UIViewController {
             preconditionFailure(error.localizedDescription)
         }
 
+    }
+
+    func preferredFontSizeDidChange(notification: Notification) {
+        loadChapter()
     }
 
     private func embedHTMLStringIntoTemplate(_ htmlString: String) throws -> String {
