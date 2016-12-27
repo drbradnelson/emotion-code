@@ -4,7 +4,7 @@
 
 In 1939, a Russian electrical technician named Semyon Kirlian discovered what is now known as Kirlian photography.[^1] Kirlian photography uses pulsed, high voltage frequencies to take pictures of the radiating energy fields that surround all living things. The technique is also referred to as Gas Discharge Visualization, or GDV.
 
-Russian scientists have performed a significant amount of research using Kirlian photography over the last 65 years, and have found that all things exhibit the characteristics of an energy field, although living things have a much more vibrant energy field than inanimate objects.[^2]
+Russian scientists have performed a significant amount of research using Kirlian photography over the last 65 years, and have found that all things exhibit the characteristics of an energy field, although living things have a much more vibrant energy field than inanimate objects.[^2](#^2)
 
 
 ![][image-1] 
@@ -350,4 +350,4 @@ Magnets are one of the most ancient healing modalities on earth, and are an inte
 [2]:	http://www.plim.org/Connectedness.htm
 [3]:	http://www.fda.gov/bbs/topics/news/2004/new01124.html
 
-[image-1]:	/1.jpg
+[image-1]:	1.jpg
