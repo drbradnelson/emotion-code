@@ -6,7 +6,8 @@ final class ChartViewController: UICollectionViewController {
 
     private let screenIsSmall: Bool = {
         let screenSize = UIScreen.main.bounds.size
-        return screenSize.height < 554
+        let iphone6ScreenHeight: CGFloat = 667
+        return screenSize.height < iphone6ScreenHeight
     }()
 
     // MARK: View lifecycle

@@ -17,7 +17,6 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
         let isRowEven = (row % 2 == 0)
         backgroundColor = isRowEven ? evenRowColor : oddRowColor
-        titleLabel.backgroundColor = isRowEven ? evenRowColor : oddRowColor
     }
 
     func setDescriptionVisible(_ visible: Bool) {
