@@ -100,7 +100,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         var model = Model()
         model.mode = .all
         model.viewSize.width = 1
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.chartSize.width, 1)
     }
 
@@ -115,7 +115,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemHeight = 5
         model.minViewHeightForCompactLayout = 11
         model.viewSize.height = 10
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.chartSize.height, 2 + 3 + 4 + 5 + 2)
     }
 
@@ -124,7 +124,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.mode = .all
         model.minViewHeightForCompactLayout = 1
         model.viewSize.height = 1 + 1
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.chartSize.height, 1 + 1)
     }
 
@@ -136,7 +136,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.width = 3
         model.viewSize.width = 10
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2
         XCTAssertEqual(view.chartSize.width, expected)
     }
@@ -149,7 +149,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.height = 3
         model.viewSize.height = 10
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2
         XCTAssertEqual(view.chartSize.height, expected)
     }
@@ -161,7 +161,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemsPerSection = [1]
         model.contentPadding = 1
         model.headerSize.height = 2
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.proposedVerticalContentOffset, 1 + 2)
     }
 
@@ -173,7 +173,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.height = 3
         model.viewSize.height = 10
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 2 + 3 + 2 + (10 - 2 - 2)
         XCTAssertEqual(view.proposedVerticalContentOffset, expected)
     }
@@ -187,7 +187,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.height = 3
         model.viewSize.height = 10
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2)
         XCTAssertEqual(view.proposedVerticalContentOffset, expected)
     }
@@ -196,7 +196,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         var model = Model()
         model.numberOfColumns = 2
         model.itemsPerSection = [1, 1]
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames.count, 2)
     }
 
@@ -209,7 +209,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.headerSize.width = 3
         model.sectionSpacing.width = 4
         model.viewSize.width = 100
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = (100 - (2 + 2 + 4 + 3)) / 1
         XCTAssertEqual(view.columnHeaderFrames[0].size.width, expected)
     }
@@ -219,7 +219,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.numberOfColumns = 1
         model.itemsPerSection = [1]
         model.headerSize.height = 2
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames[0].size.height, 2)
     }
 
@@ -233,7 +233,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.sectionSpacing.width = 4
         model.minViewHeightForCompactLayout = 21
         model.viewSize.height = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames[0].origin.x, 2 + 3 + 4)
     }
 
@@ -248,7 +248,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.minViewHeightForCompactLayout = 21
         model.viewSize.height = 20
         model.viewSize.width = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expectedColumnWidth = (20 - 2 - 2 - 3 - 4 - 4) / 2
         let expected = 2 + 3 + 4 + expectedColumnWidth + 4
         XCTAssertEqual(view.columnHeaderFrames[1].origin.x, expected)
@@ -264,7 +264,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.sectionSpacing.width = 4
         model.minViewHeightForCompactLayout = 20
         model.viewSize.height = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames[0].origin.x, 2 + 3 + 4)
     }
 
@@ -279,7 +279,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.minViewHeightForCompactLayout = 20
         model.viewSize.height = 20
         model.viewSize.width = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expectedColumnWidth = (20 - 2 - 2 - 3 - 4 - 4) / 2
         let expected = 2 + 3 + 4 + expectedColumnWidth + 4
         XCTAssertEqual(view.columnHeaderFrames[1].origin.x, expected)
@@ -293,7 +293,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.minViewHeightForCompactLayout = 20
         model.viewSize.height = 19
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.columnHeaderFrames[0].origin.y, 2)
     }
 
@@ -301,7 +301,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         var model = Model()
         model.numberOfColumns = 1
         model.itemsPerSection = [1, 1]
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.rowHeaderFrames.count, 2)
     }
 
@@ -310,7 +310,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.numberOfColumns = 1
         model.itemsPerSection = [1]
         model.headerSize.width = 2
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.rowHeaderFrames[0].size.width, 2)
     }
 
@@ -322,7 +322,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemHeight = 5
         model.minViewHeightForCompactLayout = 101
         model.viewSize.height = 100
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.rowHeaderFrames[0].size.height, 5)
     }
 
@@ -336,7 +336,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.sectionSpacing.height = 4
         model.minViewHeightForCompactLayout = 10
         model.viewSize.height = 10
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = Int((Double(10 - (2 + 2 + 3 + 4)) / Double(1)).rounded())
         XCTAssertEqual(view.rowHeaderFrames[0].size.height, expected)
     }
@@ -346,7 +346,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.numberOfColumns = 1
         model.itemsPerSection = [1]
         model.contentPadding = 2
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.rowHeaderFrames[0].origin.x, 2)
     }
 
@@ -358,7 +358,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.height = 3
         model.sectionSpacing.height = 4
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.rowHeaderFrames[0].origin.y, 2 + 3 + 4)
     }
 
@@ -373,7 +373,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemHeight = 5
         model.minViewHeightForCompactLayout = 21
         model.viewSize.height = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 2 + 3 + 4 + 5 + 4
         XCTAssertEqual(view.rowHeaderFrames[1].origin.y, expected)
     }
@@ -388,7 +388,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.sectionSpacing.height = 4
         model.minViewHeightForCompactLayout = 20
         model.viewSize.height = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expectedRowHeight = (20 - 2 - 2 - 3 - 4 - 4) / 2
         let expected = 2 + 3 + 4 + expectedRowHeight + 4
         XCTAssertEqual(view.rowHeaderFrames[1].origin.y, expected)
@@ -401,7 +401,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemHeight = 2
         model.minViewHeightForCompactLayout = 101
         model.viewSize.height = 100
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.itemFrames[0][0].size.height, 2)
     }
 
@@ -414,7 +414,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.sectionSpacing.height = 4
         model.minViewHeightForCompactLayout = 100
         model.viewSize.height = 100
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 100 - 2 - 2 - 3 - 4
         XCTAssertEqual(view.itemFrames[0][0].size.height, expected)
     }
@@ -428,7 +428,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.sectionSpacing.height = 5
         model.minViewHeightForCompactLayout = 100
         model.viewSize.height = 100
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = Int((Double(100 - 3 - 3 - 4 - 5) / Double(2)).rounded())
         XCTAssertEqual(view.itemFrames[0][0].size.height, expected)
         XCTAssertEqual(view.itemFrames[0][1].size.height, expected)
@@ -442,7 +442,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.headerSize.width = 3
         model.sectionSpacing.width = 4
         model.viewSize.width = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expected = 20 - 2 - 2 - 3 - 4
         XCTAssertEqual(view.itemFrames[0][0].size.width, expected)
     }
@@ -454,7 +454,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.width = 3
         model.sectionSpacing.width = 4
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.itemFrames[0][0].origin.x, 2 + 3 + 4)
     }
 
@@ -466,7 +466,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.headerSize.width = 3
         model.sectionSpacing.width = 4
         model.viewSize.width = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expectedItemWidth = (20 - 2 - 2 - 4 - 4 - 3) / 2
         let expected = 2 + 3 + 4 + expectedItemWidth + 4
         XCTAssertEqual(view.itemFrames[1][0].origin.x, expected)
@@ -479,7 +479,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.contentPadding = 2
         model.headerSize.height = 3
         model.sectionSpacing.height = 4
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.itemFrames[0][0].origin.y, 2 + 3 + 4)
     }
 
@@ -493,7 +493,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemHeight = 5
         model.minViewHeightForCompactLayout = 21
         model.viewSize.height = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         XCTAssertEqual(view.itemFrames[0][1].origin.y, 2 + 3 + 4 + 5)
     }
 
@@ -507,7 +507,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemHeight = 6
         model.minViewHeightForCompactLayout = 20
         model.viewSize.height = 20
-        let view = try! Module.view(for: model)
+        let view = Module.view(for: model)
         let expectedItemHeight: Double = ((20 - 3 - 3 - 4 - 5) / 2).rounded()
         let expected = 3 + 4 + 5 + Int(expectedItemHeight)
         XCTAssertEqual(view.itemFrames[0][1].origin.y, expected)
@@ -521,7 +521,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.viewSize = Size(width: 200, height: 554)
 
         measure {
-            _ = try! Module.view(for: model)
+            _ = Module.view(for: model)
         }
     }
 
