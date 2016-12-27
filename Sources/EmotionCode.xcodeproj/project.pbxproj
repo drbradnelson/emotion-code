@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F09BF4B1E08720A00765EDC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F09BF4D1E08720A00765EDC /* 1.jpg */; };
 		0F0FB5971D7DE65800546BD0 /* css-en.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5961D7DE65800546BD0 /* css-en.patch */; };
 		0F0FB5991D7DE7B100546BD0 /* css-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0F0FB5981D7DE7B100546BD0 /* css-es.patch */; };
 		0F11954F1E02F7AA0013B0B8 /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F11954E1E02F7AA0013B0B8 /* Down.framework */; };
@@ -143,6 +144,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F09BF4C1E08720A00765EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/1.jpg; sourceTree = "<group>"; };
+		0F09BF4E1E08720E00765EDC /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = en.lproj/1.jpg; sourceTree = "<group>"; };
+		0F09BF4F1E08720F00765EDC /* es */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = es; path = es.lproj/1.jpg; sourceTree = "<group>"; };
 		0F0FB5961D7DE65800546BD0 /* css-en.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-en.patch"; sourceTree = "<group>"; };
 		0F0FB5981D7DE7B100546BD0 /* css-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "css-es.patch"; sourceTree = "<group>"; };
 		0F11954E1E02F7AA0013B0B8 /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/iOS/Down.framework; sourceTree = "<group>"; };
@@ -500,6 +504,7 @@
 				E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */,
 				0FF8F9E91D5ACFE4008666E8 /* Book.swift */,
 				0F1195551E02FEFE0013B0B8 /* Chapter 3.md */,
+				0F09BF4D1E08720A00765EDC /* 1.jpg */,
 				0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */,
 			);
 			name = Models;
@@ -658,6 +663,7 @@
 				0FD7E6151D7F1D2D0061BD18 /* chapter5-es.patch in Resources */,
 				0F669F4F1D78AC33003AD410 /* PatchBook.sh in Resources */,
 				0FD7E6191D7F1D2D0061BD18 /* chapter9-es.patch in Resources */,
+				0F09BF4B1E08720A00765EDC /* 1.jpg in Resources */,
 				0FD7E6121D7F1D2D0061BD18 /* chapter2-es.patch in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				0FD7E6171D7F1D2D0061BD18 /* chapter7-es.patch in Resources */,
@@ -846,6 +852,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0F09BF4D1E08720A00765EDC /* 1.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F09BF4C1E08720A00765EDC /* Base */,
+				0F09BF4E1E08720E00765EDC /* en */,
+				0F09BF4F1E08720F00765EDC /* es */,
+			);
+			name = 1.jpg;
+			sourceTree = "<group>";
+		};
 		0F1195551E02FEFE0013B0B8 /* Chapter 3.md */ = {
 			isa = PBXVariantGroup;
 			children = (
