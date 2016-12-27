@@ -8,6 +8,7 @@ typealias Message = Module.Message
 typealias Mode = Module.Mode
 typealias Model = Module.Model
 typealias View = Module.View
+typealias Failure = Module.Failure
 
 final class ChartLayoutModuleTests: XCTestCase {
 
@@ -39,6 +40,12 @@ final class ChartLayoutModuleTests: XCTestCase {
             XCTAssertEqual(model.itemsPerSection, [3, 4])
             XCTAssertTrue(commands.isEmpty)
         }
+        do {
+            var model = Model()
+            XCTAssertThrowsError(try Module.update(for: .setItemsPerSection([]), model: &model), "") { error in
+                XCTAssertEqual(error.localizedDescription, Failure.missingItems.localizedDescription)
+            }
+        }
     }
 
     func testSetViewSize() {
@@ -54,13 +61,39 @@ final class ChartLayoutModuleTests: XCTestCase {
             XCTAssertEqual(model.viewSize, Size(width: 3, height: 4))
             XCTAssertTrue(commands.isEmpty)
         }
+        do {
+            var model = Model()
+            XCTAssertThrowsError(try Module.update(for: .setViewSize(Size(width: 0, height: 1)), model: &model), "") { error in
+                XCTAssertEqual(error.localizedDescription, Failure.zeroViewSize.localizedDescription)
+            }
+        }
+        do {
+            var model = Model()
+            XCTAssertThrowsError(try Module.update(for: .setViewSize(Size(width: 1, height: -1)), model: &model), "") { error in
+                XCTAssertEqual(error.localizedDescription, Failure.negativeViewSize.localizedDescription)
+            }
+        }
     }
 
     func testSetNumberOfColumns() {
-        var model = Model()
-        let commands = try! Module.update(for: .setNumberOfColumns(1), model: &model)
-        XCTAssertEqual(model.numberOfColumns, 1)
-        XCTAssertTrue(commands.isEmpty)
+        do {
+            var model = Model()
+            let commands = try! Module.update(for: .setNumberOfColumns(1), model: &model)
+            XCTAssertEqual(model.numberOfColumns, 1)
+            XCTAssertTrue(commands.isEmpty)
+        }
+        do {
+            var model = Model()
+            XCTAssertThrowsError(try Module.update(for: .setNumberOfColumns(0), model: &model), "") { error in
+                XCTAssertEqual(error.localizedDescription, Failure.zeroNumberOfColumns.localizedDescription)
+            }
+        }
+        do {
+            var model = Model()
+            XCTAssertThrowsError(try Module.update(for: .setNumberOfColumns(-1), model: &model), "") { error in
+                XCTAssertEqual(error.localizedDescription, Failure.negativeNumberOfColumns.localizedDescription)
+            }
+        }
     }
 
     func testChartWidthForAllMode() {
@@ -359,7 +392,6 @@ final class ChartLayoutModuleTests: XCTestCase {
         let expectedRowHeight = (20 - 2 - 2 - 3 - 4 - 4) / 2
         let expected = 2 + 3 + 4 + expectedRowHeight + 4
         XCTAssertEqual(view.rowHeaderFrames[1].origin.y, expected)
-
     }
 
     func testItemHeightWhenNotCompact() {
@@ -462,8 +494,7 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.minViewHeightForCompactLayout = 21
         model.viewSize.height = 20
         let view = try! Module.view(for: model)
-        let expected = 2 + 3 + 4 + 5
-        XCTAssertEqual(view.itemFrames[0][1].origin.y, expected)
+        XCTAssertEqual(view.itemFrames[0][1].origin.y, 2 + 3 + 4 + 5)
     }
 
     func testSecondItemYWhenCompact() {

@@ -72,7 +72,7 @@ struct ChartLayoutModule: Elm.Module {
         return []
     }
 
-    static func view(for model: Model) throws -> View {
+    static func view(for model: Model) -> View {
 
         func rowIndex(forSection section: Int) -> Int {
             return section / model.numberOfColumns
