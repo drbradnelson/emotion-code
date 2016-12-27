@@ -9,7 +9,12 @@ final class BookChapterViewController: UIViewController {
     var chapterURL: URL?
     var preferredTopLayoutGuide: CGFloat = 0
     var preferredBottomLayoutGuide: CGFloat = 0
-
+    private var templateURL: URL {
+        guard let templateURL = Bundle.main.url(forResource: "main", withExtension: "html") else {
+            preconditionFailure("Unable to locate markdown file")
+        }
+        return templateURL
+    }
     // MARK: Instantiating from storyboard
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
@@ -26,6 +31,7 @@ final class BookChapterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        bookChapterView.configureWebView()
         loadChapter()
     }
 
@@ -39,17 +45,23 @@ final class BookChapterViewController: UIViewController {
     func loadChapter() {
         do {
             let htmlString = try loadMarkdownToHTMLString()
-            bookChapterView.webView.loadHTMLString(htmlString, baseURL: nil)
+            let embeddedString = try embedHTMLStringIntoTemplate(htmlString)
+            bookChapterView.webView.loadHTMLString(embeddedString, baseURL: templateURL)
         } catch {
             preconditionFailure(error.localizedDescription)
         }
-//        guard let chapterURL = chapterURL else { return }
-//        do {
-//            let htmlString = try String(contentsOf: chapterURL)
-//            bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
-//        } catch {
-//            preconditionFailure()
-//        }
+
+    }
+
+    private func embedHTMLStringIntoTemplate(_ htmlString: String) throws -> String {
+        let templateHTML = try String(contentsOf: templateURL)
+        guard let bodyTagRange = templateHTML.range(of: "<body>") else {
+            preconditionFailure("Unable to locate body tag")
+        }
+        let bodyStart = templateHTML.substring(to: bodyTagRange.upperBound)
+        let bodyEnd = templateHTML.substring(from: bodyTagRange.upperBound)
+        let embeddedString = bodyStart + htmlString + bodyEnd
+        return embeddedString
     }
 
     private func loadMarkdownToHTMLString() throws ->  String {
