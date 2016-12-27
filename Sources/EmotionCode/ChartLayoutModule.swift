@@ -74,6 +74,8 @@ struct ChartLayoutModule: Elm.Module {
 
     static func view(for model: Model) -> View {
 
+        // We're only rounding itemHeight and itemHeights to closest values
+
         func rowIndex(forSection section: Int) -> Int {
             return section / model.numberOfColumns
         }
@@ -81,7 +83,7 @@ struct ChartLayoutModule: Elm.Module {
         let sectionsCount = model.itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
         let columnsRange = 0..<model.numberOfColumns
-        let rowsCount = Int((Double(sectionsCount) / Double(model.numberOfColumns)).rounded())
+        let rowsCount = Int(round(Double(sectionsCount) / Double(model.numberOfColumns)))
         let rowsRange = 0..<rowsCount
 
         //
@@ -115,7 +117,7 @@ struct ChartLayoutModule: Elm.Module {
                 let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
             let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
-            return Int((Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)).rounded())
+            return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
         }()
 
         let itemHeights = sectionsRange.map { section -> Int in
@@ -126,7 +128,7 @@ struct ChartLayoutModule: Elm.Module {
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
                 let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
-                return Int((Double(totalAvailableContentHeight) / Double(itemCount)).rounded())
+                return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
                 return model.viewSize.height - model.contentPadding * 2
             }
