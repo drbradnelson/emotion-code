@@ -36,9 +36,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 extension ChartEmotionViewController: ChartPresenter {
 
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
-        guard let selectedIndexPath = collectionView.indexPathForSelectedItem else {
-            preconditionFailure()
-        }
+        let selectedIndexPath = collectionView.indexPathForSelectedItem!
         return .emotion(selectedIndexPath)
     }
 

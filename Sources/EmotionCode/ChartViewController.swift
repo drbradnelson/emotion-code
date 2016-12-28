@@ -79,9 +79,7 @@ final class ChartViewController: UICollectionViewController {
     }
 
     private func prepare(for destination: ChartSectionViewController) {
-        guard let section = collectionView?.indexPathForSelectedItem?.section else {
-            preconditionFailure()
-        }
+        let section = collectionView!.indexPathForSelectedItem!.section
         destination.setTitle(forSection: section)
         destination.section = chart.section(atIndex: section)
     }
