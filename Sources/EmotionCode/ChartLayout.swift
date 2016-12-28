@@ -12,7 +12,7 @@ final class ChartLayout: UICollectionViewLayout {
     func provideData(itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
         program.dispatch(
             .setItemsPerSection(itemsPerSection),
-            .setViewSize(viewSize.intSize),
+            .setViewSize(Size(viewSize)),
             .setNumberOfColumns(ChartLayout.numberOfColumns),
             .setTopContentInset(Int(topContentInset))
         )
@@ -100,15 +100,16 @@ private extension Rect {
 }
 
 private extension Size {
+
     var cgSize: CGSize {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
     }
-}
 
-private extension CGSize {
-    var intSize: Size {
-        return Size(width: Int(width), height: Int(height))
+    init(_ size: CGSize) {
+        width = Int(size.width)
+        height = Int(size.height)
     }
+
 }
 
 private extension Point {
