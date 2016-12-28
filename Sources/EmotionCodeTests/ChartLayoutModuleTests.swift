@@ -96,6 +96,27 @@ final class ChartLayoutModuleTests: XCTestCase {
         }
     }
 
+    func testSetTopContentInset() {
+        do {
+            var model = Model()
+            let commands = try! Module.update(for: .setTopContentInset(-1), model: &model)
+            XCTAssertEqual(model.topContentInset, -1)
+            XCTAssertTrue(commands.isEmpty)
+        }
+        do {
+            var model = Model()
+            let commands = try! Module.update(for: .setTopContentInset(0), model: &model)
+            XCTAssertEqual(model.topContentInset, 0)
+            XCTAssertTrue(commands.isEmpty)
+        }
+        do {
+            var model = Model()
+            let commands = try! Module.update(for: .setTopContentInset(1), model: &model)
+            XCTAssertEqual(model.topContentInset, 1)
+            XCTAssertTrue(commands.isEmpty)
+        }
+    }
+
     func testChartWidthForAllMode() {
         var model = Model()
         model.mode = .all
@@ -154,6 +175,13 @@ final class ChartLayoutModuleTests: XCTestCase {
         XCTAssertEqual(view.chartSize.height, expected)
     }
 
+    func testContentOffsetForAllMode() {
+        var model = Model()
+        model.mode = .all
+        let view = Module.view(for: model)
+        XCTAssertNil(view.proposedVerticalContentOffset)
+    }
+
     func testContentOffsetForSectionMode0() {
         var model = Model()
         model.mode = .section(0)
@@ -161,8 +189,9 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemsPerSection = [1]
         model.contentPadding = 2
         model.headerSize.height = 3
+        model.topContentInset = 4
         let view = Module.view(for: model)
-        XCTAssertEqual(view.proposedVerticalContentOffset, 2 + 3)
+        XCTAssertEqual(view.proposedVerticalContentOffset, 2 + 3 - 4)
     }
 
     func testContentOffsetForSectionMode1() {
@@ -172,9 +201,10 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemsPerSection = [1, 1]
         model.contentPadding = 2
         model.headerSize.height = 3
+        model.topContentInset = 4
         model.viewSize.height = 10
         let view = Module.view(for: model)
-        let expected = 2 + 3 + 2 + (10 - 2 - 2)
+        let expected = 2 + 3 + 2 + (10 - 2 - 2) - 4
         XCTAssertEqual(view.proposedVerticalContentOffset, expected)
     }
 
@@ -186,9 +216,10 @@ final class ChartLayoutModuleTests: XCTestCase {
         model.itemsPerSection = [1, 2]
         model.contentPadding = 2
         model.headerSize.height = 3
+        model.topContentInset = 4
         model.viewSize.height = 10
         let view = Module.view(for: model)
-        let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2)
+        let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) - 4
         XCTAssertEqual(view.proposedVerticalContentOffset, expected)
     }
 

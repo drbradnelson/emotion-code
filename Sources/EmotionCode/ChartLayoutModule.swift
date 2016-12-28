@@ -17,6 +17,7 @@ struct ChartLayoutModule: Elm.Module {
         case setItemsPerSection([Int])
         case setViewSize(Size)
         case setNumberOfColumns(Int)
+        case setTopContentInset(Int)
     }
 
     struct Model: Initable {
@@ -32,6 +33,8 @@ struct ChartLayoutModule: Elm.Module {
         var contentPadding = 10
         var sectionSpacing = Size(width: 5, height: 5)
         var itemSpacing = 10
+
+        var topContentInset = 0
 
     }
 
@@ -68,6 +71,8 @@ struct ChartLayoutModule: Elm.Module {
             guard numberOfColumns != 0 else { throw Failure.zeroNumberOfColumns }
             guard numberOfColumns > 0 else { throw Failure.negativeNumberOfColumns }
             model.numberOfColumns = numberOfColumns
+        case .setTopContentInset(let topContentInset):
+            model.topContentInset = topContentInset
         }
         return []
     }
@@ -248,9 +253,9 @@ struct ChartLayoutModule: Elm.Module {
                 return nil
             case .section(let section):
                 let row = rowIndex(forSection: section)
-                return rowYPositions[row] - model.contentPadding
+                return rowYPositions[row] - model.contentPadding - model.topContentInset
             case .emotion(let indexPath):
-                return yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding
+                return yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.topContentInset
             }
         }()
 

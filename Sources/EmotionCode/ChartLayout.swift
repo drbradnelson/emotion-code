@@ -9,11 +9,12 @@ final class ChartLayout: UICollectionViewLayout {
 
     let program = Module.makeProgram()
 
-    func provideData(itemsPerSection: [Int], viewSize: CGSize) {
+    func provideData(itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
         program.dispatch(
             .setItemsPerSection(itemsPerSection),
             .setViewSize(viewSize.intSize),
-            .setNumberOfColumns(ChartLayout.numberOfColumns)
+            .setNumberOfColumns(ChartLayout.numberOfColumns),
+            .setTopContentInset(Int(topContentInset))
         )
     }
 
@@ -28,7 +29,8 @@ final class ChartLayout: UICollectionViewLayout {
         let itemsPerSection = sections.map(collectionView.numberOfItems)
         provideData(
             itemsPerSection: itemsPerSection,
-            viewSize: collectionView.visibleContentSize
+            viewSize: collectionView.visibleContentSize,
+            topContentInset: collectionView.contentInset.top
         )
     }
 
@@ -37,10 +39,9 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
-        guard let collectionView = collectionView else { preconditionFailure() }
         guard let verticalContentOffset = program.view.proposedVerticalContentOffset else { return proposedContentOffset }
         let x = proposedContentOffset.x
-        let y = CGFloat(verticalContentOffset) - collectionView.contentInset.top
+        let y = CGFloat(verticalContentOffset)
         return CGPoint(x: x, y: y)
     }
 
@@ -78,12 +79,6 @@ final class ChartLayout: UICollectionViewLayout {
 
 }
 
-private extension CGSize {
-    var intSize: Size {
-        return Size(width: Int(width), height: Int(height))
-    }
-}
-
 private extension UICollectionViewLayoutAttributes {
 
     convenience init(indexPath: IndexPath, frame: CGRect) {
@@ -107,6 +102,12 @@ private extension Rect {
 private extension Size {
     var cgSize: CGSize {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
+    }
+}
+
+private extension CGSize {
+    var intSize: Size {
+        return Size(width: Int(width), height: Int(height))
     }
 }
 
