@@ -9,7 +9,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     private let program = Module.makeProgram()
 
-    func provideData(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
+    func setProgramModel(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
         program.dispatch(
             .setMode(mode),
             .setItemsPerSection(itemsPerSection),
@@ -17,6 +17,11 @@ final class ChartLayout: UICollectionViewLayout {
             .setNumberOfColumns(ChartLayout.numberOfColumns),
             .setTopContentInset(Int(topContentInset))
         )
+    }
+
+    override func prepare() {
+        super.prepare()
+        program.dispatch(.setViewSize(Size(collectionView!.visibleContentSize)))
     }
 
     override var collectionViewContentSize: CGSize {

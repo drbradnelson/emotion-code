@@ -25,7 +25,7 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
                 let itemsPerSection = sections.map(masterCollectionView.numberOfItems)
                 let viewSize = masterCollectionView.visibleContentSize
                 let topContentInset = masterCollectionView.contentInset.top
-                chartLayout.provideData(mode: chartLayoutMode, itemsPerSection: itemsPerSection, viewSize: viewSize, topContentInset: topContentInset)
+                chartLayout.setProgramModel(mode: chartLayoutMode, itemsPerSection: itemsPerSection, viewSize: viewSize, topContentInset: topContentInset)
             }
         }
         super.pushViewController(viewController, animated: animated)

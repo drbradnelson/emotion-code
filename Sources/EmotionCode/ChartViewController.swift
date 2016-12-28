@@ -14,19 +14,19 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let collectionView = collectionView else { return }
 
-        let sections = 0..<collectionView.numberOfSections
-        let itemsPerSection = sections.map(collectionView.numberOfItems)
-        (collectionViewLayout as! ChartLayout).provideData(
+        let sections = 0..<collectionView!.numberOfSections
+        let itemsPerSection = sections.map(collectionView!.numberOfItems)
+        let chartLayout = collectionViewLayout as! ChartLayout
+        chartLayout.setProgramModel(
             mode: .all,
             itemsPerSection: itemsPerSection,
-            viewSize: collectionView.visibleContentSize,
-            topContentInset: collectionView.contentInset.top
+            viewSize: collectionView!.visibleContentSize,
+            topContentInset: collectionView!.contentInset.top
         )
 
-        collectionView.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
-        collectionView.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
+        collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
     override func viewWillAppear(_ animated: Bool) {
