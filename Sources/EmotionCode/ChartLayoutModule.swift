@@ -289,12 +289,14 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Header frame
         //
 
-        let columnHeaderFrames = columnsRange.map { column -> Rect in
+        let columnHeaderFrames = sectionsRange.map { section -> Rect in
+            let column = (section + model.numberOfColumns) % model.numberOfColumns
             let position = positionsForColumnHeaders[column]
             return Rect(origin: position, size: columnHeaderSize)
         }
 
-        let rowHeaderFrames = rowsRange.map { row -> Rect in
+        let rowHeaderFrames = sectionsRange.map { section -> Rect in
+            let row = section / model.numberOfColumns
             let position = positionsForRowHeaders[row]
             return Rect(origin: position, size: rowHeaderSize)
         }
