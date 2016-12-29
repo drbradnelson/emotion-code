@@ -3,6 +3,7 @@ import UIKit
 final class BookContainerViewController: UIViewController {
 
     private var bookPageViewController: BookPageViewController!
+    @IBOutlet weak var audioBarContainerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,7 +15,7 @@ final class BookContainerViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         bookPageViewController.preferredTopLayoutGuide = topLayoutGuide.length
-        bookPageViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length
+        bookPageViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length + audioBarContainerView.bounds.height
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

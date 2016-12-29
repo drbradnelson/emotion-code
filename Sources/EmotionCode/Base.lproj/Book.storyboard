@@ -50,6 +50,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MB2-yp-Fj1"/>
+                    <connections>
+                        <outlet property="audioBarContainerView" destination="muQ-Dr-sYL" id="oPd-sS-LXd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f18-3e-rz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
