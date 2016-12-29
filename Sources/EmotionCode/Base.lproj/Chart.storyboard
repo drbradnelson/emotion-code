@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,37 +39,28 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="2Lb-D5-bK2" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
+                            <collectionViewCell autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
-                                            <rect key="frame" x="8" y="0.0" width="135" height="40"/>
+                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
+                                            <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDv-NB-PTM">
-                                            <rect key="frame" x="8" y="8" width="135" height="32"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="0SO-Qc-Zk5"/>
-                                    <constraint firstAttribute="bottom" secondItem="VDv-NB-PTM" secondAttribute="bottom" id="8Q0-Bq-4DQ"/>
-                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leadingMargin" id="FIJ-nM-ZuS"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="OUH-O0-X2M"/>
-                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="trailing" secondItem="NsJ-MK-7ts" secondAttribute="trailingMargin" id="Rrd-Z1-D9c"/>
+                                    <constraint firstAttribute="trailing" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="GTg-Wq-RC4"/>
                                     <constraint firstAttribute="bottom" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="UMY-IJ-IyZ"/>
                                     <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="gfg-jA-FPr"/>
-                                    <constraint firstItem="VDv-NB-PTM" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="topMargin" id="zOO-hK-A8p"/>
+                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leading" id="p6N-Et-uSx"/>
                                 </constraints>
                                 <size key="customSize" width="151" height="40"/>
                                 <userDefinedRuntimeAttributes>
@@ -82,7 +72,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="descriptionTextView" destination="VDv-NB-PTM" id="Yu8-UA-uFE"/>
                                     <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
                                 </connections>
                             </collectionViewCell>

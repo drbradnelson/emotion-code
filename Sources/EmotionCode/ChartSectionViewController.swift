@@ -7,8 +7,8 @@ final class ChartSectionViewController: UICollectionViewController {
     // MARK: Title
 
     func setTitle(forSection section: Int) {
-        let column = (section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
-        let row = section / ChartLayoutModule.View.numberOfColumns + 1
+        let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
+        let row = section / ChartLayout.numberOfColumns + 1
         let columnName = String.alphabet[column]
         let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
         navigationItem.title = String.localizedStringWithFormat(localizedFormat, columnName, row)
@@ -44,9 +44,7 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     private func prepare(for destination: ChartEmotionViewController) {
-        guard let item = collectionView?.indexPathForSelectedItem?.item else {
-            preconditionFailure()
-        }
+        let item = collectionView!.indexPathForSelectedItem!.item
         destination.setTitle(for: section.emotions[item])
     }
 
@@ -55,9 +53,7 @@ final class ChartSectionViewController: UICollectionViewController {
 extension ChartSectionViewController: ChartPresenter {
 
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
-        guard let selectedSection = collectionView.indexPathForSelectedItem?.section else {
-            preconditionFailure()
-        }
+        let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection)
     }
 
