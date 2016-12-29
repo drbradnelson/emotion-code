@@ -25,7 +25,7 @@ final class BookController {
         guard let title = dictionary[chapterTitleKey], let fileName = dictionary[chapterFileNameKey] else {
             preconditionFailure("Unable to parse book chapter")
         }
-        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "html") else {
+        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "md") else {
             preconditionFailure("Unable to find book chapter file")
         }
         return Book.Chapter(title: title, fileURL: fileURL)
