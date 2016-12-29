@@ -1,4 +1,5 @@
 import Foundation
+import Down
 
 final class BookController {
 
@@ -49,6 +50,36 @@ final class BookController {
 
     func hasChapter(at index: Int) -> Bool {
         return book.chapters.indices.contains(index)
+    }
+
+    // MARK: HTML string for chapter
+
+    func htmlStringForChapter(at index: Int) throws -> String {
+        let chapterMarkdownURL = book.chapters[index].fileURL
+        let markdownString = try String(contentsOf: chapterMarkdownURL)
+        let markdown = Down(markdownString: markdownString)
+        let htmlString = try markdown.toHTML()
+        return htmlString
+    }
+
+    private func embedHTMLStringIntoTemplate(_ htmlString: String) throws -> String {
+        let templateHTML = try String(contentsOf: BookController.templateHTMLURL)
+        guard let bodyTagRange = templateHTML.range(of: "<body>") else {
+            preconditionFailure("Unable to locate body tag")
+        }
+        let bodyStart = templateHTML.substring(to: bodyTagRange.upperBound)
+        let bodyEnd = templateHTML.substring(from: bodyTagRange.upperBound)
+        let embeddedString = bodyStart + htmlString + bodyEnd
+        return embeddedString
+    }
+
+    // MARK: Template HTML URL
+
+    private static var templateHTMLURL: URL {
+        guard let templateURL = Bundle.main.url(forResource: "main", withExtension: "html") else {
+            preconditionFailure("Unable to locate template file")
+        }
+        return templateURL
     }
 
 }
