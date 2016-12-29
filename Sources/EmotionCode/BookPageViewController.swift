@@ -73,7 +73,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         chapterViewController.chapterURL = chapter.fileURL
         chapterViewController.chapterIndex = chapterIndex
         chapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
-        chapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
+        chapterViewController.preferredBottomLayoutGuide = preferredBottomLayoutGuide
         return chapterViewController
     }
 
