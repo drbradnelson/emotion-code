@@ -59,11 +59,12 @@ final class BookController {
         let markdownString = try String(contentsOf: chapterMarkdownURL)
         let markdown = Down(markdownString: markdownString)
         let htmlString = try markdown.toHTML()
-        return htmlString
+        let embeddedInTepmlateString = try embedHTMLStringIntoTemplate(htmlString)
+        return embeddedInTepmlateString
     }
 
     private func embedHTMLStringIntoTemplate(_ htmlString: String) throws -> String {
-        let templateHTML = try String(contentsOf: BookController.templateHTMLURL)
+        let templateHTML = try String(contentsOf: templateHTMLURL)
         guard let bodyTagRange = templateHTML.range(of: "<body>") else {
             preconditionFailure("Unable to locate body tag")
         }
@@ -75,7 +76,7 @@ final class BookController {
 
     // MARK: Template HTML URL
 
-    private static var templateHTMLURL: URL {
+    var templateHTMLURL: URL {
         guard let templateURL = Bundle.main.url(forResource: "main", withExtension: "html") else {
             preconditionFailure("Unable to locate template file")
         }
