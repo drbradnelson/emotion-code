@@ -70,17 +70,11 @@
 		91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */; };
 		91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */; };
 		91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */; };
-		B607B7271E09CDE9004D3804 /* ViewItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607B7261E09CDE9004D3804 /* ViewItemsTests.swift */; };
-		B625D02C1E0827770021570D /* DefaultModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D02B1E0827770021570D /* DefaultModelTests.swift */; };
-		B625D02E1E0829400021570D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D02D1E0829400021570D /* Utilities.swift */; };
-		B625D0301E082BFF0021570D /* MessagesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D02F1E082BFF0021570D /* MessagesModelTests.swift */; };
-		B625D03A1E0846860021570D /* ViewContentOffsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D0391E0846860021570D /* ViewContentOffsetTests.swift */; };
-		B625D03C1E0849290021570D /* ViewChartSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625D03B1E0849290021570D /* ViewChartSizeTests.swift */; };
-		B637F7B61E09A56B00AEE985 /* ViewColumnHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637F7B51E09A56B00AEE985 /* ViewColumnHeadersTests.swift */; };
-		B637F7B81E09A88000AEE985 /* ViewRowHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637F7B71E09A88000AEE985 /* ViewRowHeadersTests.swift */; };
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
 		B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */; };
 		B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */; };
+		B6A516391E0FFF3600DC5BC2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A516381E0FFF3600DC5BC2 /* Utilities.swift */; };
+		B6AD97CF1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD97CE1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift */; };
 		B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */; };
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
@@ -190,17 +184,11 @@
 		91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+TransitionLayout.swift"; sourceTree = "<group>"; };
 		91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
-		B607B7261E09CDE9004D3804 /* ViewItemsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewItemsTests.swift; sourceTree = "<group>"; };
-		B625D02B1E0827770021570D /* DefaultModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultModelTests.swift; sourceTree = "<group>"; };
-		B625D02D1E0829400021570D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		B625D02F1E082BFF0021570D /* MessagesModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesModelTests.swift; sourceTree = "<group>"; };
-		B625D0391E0846860021570D /* ViewContentOffsetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContentOffsetTests.swift; sourceTree = "<group>"; };
-		B625D03B1E0849290021570D /* ViewChartSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewChartSizeTests.swift; sourceTree = "<group>"; };
-		B637F7B51E09A56B00AEE985 /* ViewColumnHeadersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewColumnHeadersTests.swift; sourceTree = "<group>"; };
-		B637F7B71E09A88000AEE985 /* ViewRowHeadersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRowHeadersTests.swift; sourceTree = "<group>"; };
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSectionViewController.swift; sourceTree = "<group>"; };
+		B6A516381E0FFF3600DC5BC2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B6AD97CE1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleTests.swift; sourceTree = "<group>"; };
 		B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B273711E05948E00771409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartNavigationController.swift; sourceTree = "<group>"; };
@@ -405,21 +393,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B625D02A1E0827430021570D /* ChartLayoutModule */ = {
-			isa = PBXGroup;
-			children = (
-				B625D02B1E0827770021570D /* DefaultModelTests.swift */,
-				B625D02F1E082BFF0021570D /* MessagesModelTests.swift */,
-				B625D03B1E0849290021570D /* ViewChartSizeTests.swift */,
-				B625D0391E0846860021570D /* ViewContentOffsetTests.swift */,
-				B637F7B51E09A56B00AEE985 /* ViewColumnHeadersTests.swift */,
-				B637F7B71E09A88000AEE985 /* ViewRowHeadersTests.swift */,
-				B607B7261E09CDE9004D3804 /* ViewItemsTests.swift */,
-				B625D02D1E0829400021570D /* Utilities.swift */,
-			);
-			name = ChartLayoutModule;
-			sourceTree = "<group>";
-		};
 		B6352F501DC7144D0060D752 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,7 +405,8 @@
 		B6B2736E1E05948E00771409 /* EmotionCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				B625D02A1E0827430021570D /* ChartLayoutModule */,
+				B6AD97CE1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift */,
+				B6A516381E0FFF3600DC5BC2 /* Utilities.swift */,
 				B6B273711E05948E00771409 /* Info.plist */,
 			);
 			path = EmotionCodeTests;
@@ -714,14 +688,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B625D02C1E0827770021570D /* DefaultModelTests.swift in Sources */,
-				B625D02E1E0829400021570D /* Utilities.swift in Sources */,
-				B637F7B81E09A88000AEE985 /* ViewRowHeadersTests.swift in Sources */,
-				B607B7271E09CDE9004D3804 /* ViewItemsTests.swift in Sources */,
-				B625D0301E082BFF0021570D /* MessagesModelTests.swift in Sources */,
-				B637F7B61E09A56B00AEE985 /* ViewColumnHeadersTests.swift in Sources */,
-				B625D03C1E0849290021570D /* ViewChartSizeTests.swift in Sources */,
-				B625D03A1E0846860021570D /* ViewContentOffsetTests.swift in Sources */,
+				B6A516391E0FFF3600DC5BC2 /* Utilities.swift in Sources */,
+				B6AD97CF1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
