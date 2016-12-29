@@ -280,7 +280,16 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
-		0FD852871E156EBD00DBC9BC /* BookMarkdown */ = {
+		0F672ED11E15A2D300A267EB /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				0FD852871E156EBD00DBC9BC /* Content */,
+				0FD852A61E15705D00DBC9BC /* Template */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		0FD852871E156EBD00DBC9BC /* Content */ = {
 			isa = PBXGroup;
 			children = (
 				0FD852881E156F9800DBC9BC /* 1.jpg */,
@@ -296,16 +305,16 @@
 				0FD852911E156F9800DBC9BC /* chapter10.md */,
 				0FD852931E156F9800DBC9BC /* about-author.md */,
 			);
-			name = BookMarkdown;
+			name = Content;
 			sourceTree = "<group>";
 		};
-		0FD852A61E15705D00DBC9BC /* HTMLTemplate */ = {
+		0FD852A61E15705D00DBC9BC /* Template */ = {
 			isa = PBXGroup;
 			children = (
 				0FD852A21E15705200DBC9BC /* main.css */,
 				0FD852A31E15705200DBC9BC /* main.html */,
 			);
-			name = HTMLTemplate;
+			name = Template;
 			sourceTree = "<group>";
 		};
 		91187B211D67768C0098A881 /* Views */ = {
@@ -346,8 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
-				0FD852A61E15705D00DBC9BC /* HTMLTemplate */,
-				0FD852871E156EBD00DBC9BC /* BookMarkdown */,
+				0F672ED11E15A2D300A267EB /* Book */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				B6352F501DC7144D0060D752 /* Layouts */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
