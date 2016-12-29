@@ -56,6 +56,18 @@
 		0FD7E6191D7F1D2D0061BD18 /* chapter9-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60B1D7F1D2D0061BD18 /* chapter9-es.patch */; };
 		0FD7E61A1D7F1D2D0061BD18 /* chapter10-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60C1D7F1D2D0061BD18 /* chapter10-es.patch */; };
 		0FD7E61B1D7F1D2D0061BD18 /* chapter11-es.patch in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7E60D1D7F1D2D0061BD18 /* chapter11-es.patch */; };
+		0FD852941E156F9800DBC9BC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FD852881E156F9800DBC9BC /* 1.jpg */; };
+		0FD852961E156F9800DBC9BC /* Chapter2.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8528A1E156F9800DBC9BC /* Chapter2.md */; };
+		0FD852971E156F9800DBC9BC /* Chapter4.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8528B1E156F9800DBC9BC /* Chapter4.md */; };
+		0FD852981E156F9800DBC9BC /* Chapter5.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8528C1E156F9800DBC9BC /* Chapter5.md */; };
+		0FD852991E156F9800DBC9BC /* Chapter6.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8528D1E156F9800DBC9BC /* Chapter6.md */; };
+		0FD8529A1E156F9800DBC9BC /* Chapter7.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8528E1E156F9800DBC9BC /* Chapter7.md */; };
+		0FD8529B1E156F9800DBC9BC /* Chapter8.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8528F1E156F9800DBC9BC /* Chapter8.md */; };
+		0FD8529C1E156F9800DBC9BC /* Chapter9.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD852901E156F9800DBC9BC /* Chapter9.md */; };
+		0FD8529D1E156F9800DBC9BC /* Chapter10.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD852911E156F9800DBC9BC /* Chapter10.md */; };
+		0FD8529E1E156F9800DBC9BC /* Chapter1.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD852921E156F9800DBC9BC /* Chapter1.md */; };
+		0FD8529F1E156F9800DBC9BC /* abouth-author.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD852931E156F9800DBC9BC /* abouth-author.md */; };
+		0FD852A11E156FFE00DBC9BC /* Chapter3.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FD852A01E156FFE00DBC9BC /* Chapter3.md */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
@@ -185,6 +197,18 @@
 		0FD7E60B1D7F1D2D0061BD18 /* chapter9-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter9-es.patch"; sourceTree = "<group>"; };
 		0FD7E60C1D7F1D2D0061BD18 /* chapter10-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter10-es.patch"; sourceTree = "<group>"; };
 		0FD7E60D1D7F1D2D0061BD18 /* chapter11-es.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chapter11-es.patch"; sourceTree = "<group>"; };
+		0FD852881E156F9800DBC9BC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		0FD8528A1E156F9800DBC9BC /* Chapter2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter2.md; sourceTree = "<group>"; };
+		0FD8528B1E156F9800DBC9BC /* Chapter4.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter4.md; sourceTree = "<group>"; };
+		0FD8528C1E156F9800DBC9BC /* Chapter5.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter5.md; sourceTree = "<group>"; };
+		0FD8528D1E156F9800DBC9BC /* Chapter6.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter6.md; sourceTree = "<group>"; };
+		0FD8528E1E156F9800DBC9BC /* Chapter7.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter7.md; sourceTree = "<group>"; };
+		0FD8528F1E156F9800DBC9BC /* Chapter8.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter8.md; sourceTree = "<group>"; };
+		0FD852901E156F9800DBC9BC /* Chapter9.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter9.md; sourceTree = "<group>"; };
+		0FD852911E156F9800DBC9BC /* Chapter10.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter10.md; sourceTree = "<group>"; };
+		0FD852921E156F9800DBC9BC /* Chapter1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter1.md; sourceTree = "<group>"; };
+		0FD852931E156F9800DBC9BC /* abouth-author.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "abouth-author.md"; sourceTree = "<group>"; };
+		0FD852A01E156FFE00DBC9BC /* Chapter3.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Chapter3.md; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
 		0FF8F9E51D5ACD2D008666E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
@@ -363,6 +387,25 @@
 			path = Spanish;
 			sourceTree = "<group>";
 		};
+		0FD852871E156EBD00DBC9BC /* BookMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				0FD852881E156F9800DBC9BC /* 1.jpg */,
+				0FD852921E156F9800DBC9BC /* Chapter1.md */,
+				0FD8528A1E156F9800DBC9BC /* Chapter2.md */,
+				0FD852A01E156FFE00DBC9BC /* Chapter3.md */,
+				0FD8528B1E156F9800DBC9BC /* Chapter4.md */,
+				0FD8528C1E156F9800DBC9BC /* Chapter5.md */,
+				0FD8528D1E156F9800DBC9BC /* Chapter6.md */,
+				0FD8528E1E156F9800DBC9BC /* Chapter7.md */,
+				0FD8528F1E156F9800DBC9BC /* Chapter8.md */,
+				0FD852901E156F9800DBC9BC /* Chapter9.md */,
+				0FD852911E156F9800DBC9BC /* Chapter10.md */,
+				0FD852931E156F9800DBC9BC /* abouth-author.md */,
+			);
+			name = BookMarkdown;
+			sourceTree = "<group>";
+		};
 		91187B211D67768C0098A881 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +445,7 @@
 			children = (
 				0F669F131D78AB66003AD410 /* BookPatches */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
+				0FD852871E156EBD00DBC9BC /* BookMarkdown */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				B6352F501DC7144D0060D752 /* Layouts */,
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
@@ -619,6 +663,7 @@
 				0FD7E5F91D7F19390061BD18 /* chapter5-en.patch in Resources */,
 				0FD7E6141D7F1D2D0061BD18 /* chapter4-es.patch in Resources */,
 				0FD7E60E1D7F1D2D0061BD18 /* book-add-chapters-es.patch in Resources */,
+				0FD852941E156F9800DBC9BC /* 1.jpg in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0FD7E5F21D7F19390061BD18 /* book-add-chapters-en.patch in Resources */,
 				0FD7E5F71D7F19390061BD18 /* chapter3-en.patch in Resources */,
@@ -735,12 +780,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD8529C1E156F9800DBC9BC /* Chapter9.md in Sources */,
 				B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */,
 				B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */,
 				91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */,
+				0FD8529B1E156F9800DBC9BC /* Chapter8.md in Sources */,
 				0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */,
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
+				0FD852971E156F9800DBC9BC /* Chapter4.md in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
+				0FD852991E156F9800DBC9BC /* Chapter6.md in Sources */,
 				911377741DFFF9C6008627F1 /* ChartLayoutModule.swift in Sources */,
 				91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */,
 				91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */,
@@ -750,17 +799,24 @@
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
 				913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */,
+				0FD8529D1E156F9800DBC9BC /* Chapter10.md in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */,
+				0FD8529F1E156F9800DBC9BC /* abouth-author.md in Sources */,
 				0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */,
 				B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */,
+				0FD8529A1E156F9800DBC9BC /* Chapter7.md in Sources */,
 				91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */,
+				0FD852981E156F9800DBC9BC /* Chapter5.md in Sources */,
+				0FD8529E1E156F9800DBC9BC /* Chapter1.md in Sources */,
 				916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
 				0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */,
 				913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */,
+				0FD852A11E156FFE00DBC9BC /* Chapter3.md in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
+				0FD852961E156F9800DBC9BC /* Chapter2.md in Sources */,
 				B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
