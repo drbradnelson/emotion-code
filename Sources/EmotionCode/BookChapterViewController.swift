@@ -29,11 +29,18 @@ final class BookChapterViewController: UIViewController {
         super.viewDidLoad()
         bookChapterView.configureWebView()
         loadChapter()
+        NotificationCenter.default.addObserver(self, selector: #selector(preferredFontSizeDidChange(notification:)), name: .UIContentSizeCategoryDidChange, object: nil)
     }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         bookChapterView.insetContent(top: preferredTopLayoutGuide, bottom: preferredBottomLayoutGuide)
+    }
+
+    // MARK: Preferred font size change
+
+    func preferredFontSizeDidChange(notification: Notification) {
+        loadChapter()
     }
 
     // MARK: Load chapter
