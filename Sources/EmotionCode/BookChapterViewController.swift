@@ -25,6 +25,7 @@ final class BookChapterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        bookChapterView.configureWebView()
         loadChapter()
     }
 
