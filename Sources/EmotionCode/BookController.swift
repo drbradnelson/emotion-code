@@ -65,10 +65,10 @@ final class BookController {
 
     private func embedHTMLStringIntoTemplate(_ htmlString: String) throws -> String {
         let templateHTML = try String(contentsOf: templateHTMLURL)
-        guard let bodyTagRange = templateHTML.range(of: "<body>") else {
-            preconditionFailure("Unable to locate body tag")
+        guard let bodyTagRange = templateHTML.range(of: "{{content}}") else {
+            preconditionFailure("Unable to locate content placeholder")
         }
-        let bodyStart = templateHTML.substring(to: bodyTagRange.upperBound)
+        let bodyStart = templateHTML.substring(to: bodyTagRange.lowerBound)
         let bodyEnd = templateHTML.substring(from: bodyTagRange.upperBound)
         let embeddedString = bodyStart + htmlString + bodyEnd
         return embeddedString
