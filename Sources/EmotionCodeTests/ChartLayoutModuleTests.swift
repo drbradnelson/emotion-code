@@ -619,18 +619,6 @@ final class ChartLayoutModuleTests: XCTestCase {
         XCTAssertEqual(view.itemFrames[0][1].origin.y, expected)
     }
 
-    func testPerformance() {
-        var model = Model()
-        model.mode = .all
-        model.numberOfColumns = 1
-        model.itemsPerSection = Array(repeating: 1000, count: 1000)
-        model.viewSize = Size(width: 200, height: 554)
-
-        measure {
-            _ = try! Module.view(for: model)
-        }
-    }
-
 }
 
 // MARK: ...
