@@ -16,11 +16,11 @@ final class BookChapterLayoutTests: XCTestCase {
     func testTopLayoutGuideForChapter1() {
         let beginningPredicate = NSPredicate { staticText, _ -> Bool in
             guard let staticText = staticText as? XCUIElementAttributes else { return false }
-            return staticText.label.hasPrefix("Truth is stranger than fiction")
+            return staticText.label.hasPrefix("Prehendit posse")
         }
         let beginningText = app.staticTexts.matching(beginningPredicate).element
         let topLayoutGuide = app.navigationBars.element.frame.maxY
-        let topMargin: CGFloat = 10
+        let topMargin: CGFloat = 12
         XCTAssertEqual(beginningText.frame.minY, topLayoutGuide + topMargin)
     }
 
@@ -29,11 +29,11 @@ final class BookChapterLayoutTests: XCTestCase {
         app.buttons["Next Chapter"].tap()
         let beginningPredicate = NSPredicate { staticText, _ -> Bool in
             guard let staticText = staticText as? XCUIElementAttributes else { return false }
-            return staticText.label.hasPrefix("The doctor of the future")
+            return staticText.label.hasPrefix("Spumantiaque voce te frequentat qua ille deas")
         }
         let beginningText = app.staticTexts.matching(beginningPredicate).element
         let topLayoutGuide = app.navigationBars.element.frame.maxY
-        let topMargin: CGFloat = 10
+        let topMargin: CGFloat = 12
         XCTAssertEqual(beginningText.frame.minY, topLayoutGuide + topMargin)
     }
 
