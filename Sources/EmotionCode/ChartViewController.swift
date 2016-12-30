@@ -4,17 +4,34 @@ final class ChartViewController: UICollectionViewController {
 
     private let chart = ChartController().chart
 
+    private let screenIsSmall: Bool = {
+        let screenSize = UIScreen.main.bounds.size
+        let iphone6ScreenHeight: CGFloat = 667
+        return screenSize.height < iphone6ScreenHeight
+    }()
+
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let sections = 0..<collectionView!.numberOfSections
+        let itemsPerSection = sections.map(collectionView!.numberOfItems)
+        let chartLayout = collectionViewLayout as! ChartLayout
+        chartLayout.setProgramModel(
+            mode: .all,
+            itemsPerSection: itemsPerSection,
+            viewSize: collectionView!.visibleContentSize,
+            topContentInset: collectionView!.contentInset.top
+        )
+
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        collectionView!.isScrollEnabled = true
+        collectionView!.isScrollEnabled = screenIsSmall
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -45,13 +62,13 @@ final class ChartViewController: UICollectionViewController {
         switch kind {
         case ChartHeaderView.columnKind:
             let columnHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let column = (indexPath.section + ChartLayoutModule.View.numberOfColumns) % ChartLayoutModule.View.numberOfColumns
+            let column = (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
             let columnName = String.alphabet[column]
             columnHeader.configure(title: columnName)
             return columnHeader
         case ChartHeaderView.rowKind:
             let rowHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let row = (indexPath.section + ChartLayoutModule.View.numberOfColumns) / ChartLayoutModule.View.numberOfColumns
+            let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
             rowHeader.configure(title: String(row))
             return rowHeader
         default:
@@ -73,9 +90,7 @@ final class ChartViewController: UICollectionViewController {
     }
 
     private func prepare(for destination: ChartSectionViewController) {
-        guard let section = collectionView?.indexPathForSelectedItem?.section else {
-            preconditionFailure()
-        }
+        let section = collectionView!.indexPathForSelectedItem!.section
         destination.setTitle(forSection: section)
         destination.section = chart.section(atIndex: section)
     }
