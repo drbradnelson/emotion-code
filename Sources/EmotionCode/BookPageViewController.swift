@@ -35,7 +35,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         currentBookChapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
-        currentBookChapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
+        currentBookChapterViewController.preferredBottomLayoutGuide = preferredBottomLayoutGuide
     }
 
     // MARK: Page view controller data source
@@ -73,7 +73,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         chapterViewController.chapterURL = chapter.fileURL
         chapterViewController.chapterIndex = chapterIndex
         chapterViewController.preferredTopLayoutGuide = preferredTopLayoutGuide
-        chapterViewController.preferredBottomLayoutGuide = preferredTopLayoutGuide
+        chapterViewController.preferredBottomLayoutGuide = preferredBottomLayoutGuide
         return chapterViewController
     }
 

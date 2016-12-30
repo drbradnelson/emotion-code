@@ -1,8 +1,24 @@
 import UIKit
+import WebKit
 
 final class BookChapterView: UIView {
 
-    @IBOutlet private(set) var webView: UIWebView!
+    let webView = WKWebView()
+
+    // MARK: Web view constraints
+
+
+    // MARK: Configure web view
+
+    func configureWebView() {
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(webView)
+        let webViewConstraints = [webView.topAnchor.constraint(equalTo: topAnchor),
+                                  webView.leadingAnchor.constraint(equalTo: leadingAnchor),
+                                  webView.bottomAnchor.constraint(equalTo: bottomAnchor),
+                                  webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
+        NSLayoutConstraint.activate(webViewConstraints)
+    }
 
     // MARK: Content inset
 
