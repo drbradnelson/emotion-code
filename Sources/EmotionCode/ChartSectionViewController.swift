@@ -1,5 +1,4 @@
 import UIKit
-import ChartLayoutCalculator
 
 final class ChartSectionViewController: UICollectionViewController {
 
@@ -45,9 +44,7 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     private func prepare(for destination: ChartEmotionViewController) {
-        guard let item = collectionView?.indexPathForSelectedItem?.item else {
-            preconditionFailure()
-        }
+        let item = collectionView!.indexPathForSelectedItem!.item
         destination.setTitle(for: section.emotions[item])
     }
 
@@ -55,10 +52,8 @@ final class ChartSectionViewController: UICollectionViewController {
 
 extension ChartSectionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode {
-        guard let selectedSection = collectionView.indexPathForSelectedItem?.section else {
-            preconditionFailure()
-        }
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
+        let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection)
     }
 

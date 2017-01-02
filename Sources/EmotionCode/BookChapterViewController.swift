@@ -9,6 +9,8 @@ final class BookChapterViewController: UIViewController {
     var preferredTopLayoutGuide: CGFloat = 0
     var preferredBottomLayoutGuide: CGFloat = 0
 
+    private let bookController = BookController()
+
     // MARK: Instantiating from storyboard
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
@@ -25,7 +27,9 @@ final class BookChapterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        bookChapterView.configureWebView()
         loadChapter()
+        NotificationCenter.default.addObserver(self, selector: #selector(preferredFontSizeDidChange(notification:)), name: .UIContentSizeCategoryDidChange, object: nil)
     }
 
     override func viewWillLayoutSubviews() {
@@ -33,13 +37,18 @@ final class BookChapterViewController: UIViewController {
         bookChapterView.insetContent(top: preferredTopLayoutGuide, bottom: preferredBottomLayoutGuide)
     }
 
+    // MARK: Preferred font size change
+
+    func preferredFontSizeDidChange(notification: Notification) {
+        loadChapter()
+    }
+
     // MARK: Load chapter
 
     func loadChapter() {
-        guard let chapterURL = chapterURL else { return }
         do {
-            let htmlString = try String(contentsOf: chapterURL)
-            bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
+            let htmlString = try bookController.htmlStringForChapter(at: chapterIndex)
+            bookChapterView.webView.loadHTMLString(htmlString, baseURL: bookController.templateHTMLURL)
         } catch {
             preconditionFailure()
         }

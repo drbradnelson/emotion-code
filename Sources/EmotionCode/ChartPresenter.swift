@@ -1,8 +1,7 @@
 import UIKit
-import ChartLayoutCalculator
 
 protocol ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode
 
 }

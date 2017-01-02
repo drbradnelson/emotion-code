@@ -1,5 +1,4 @@
 import UIKit
-import ChartLayoutCalculator
 
 final class ChartEmotionViewController: UICollectionViewController {
 
@@ -12,13 +11,11 @@ final class ChartEmotionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setDescriptionVisibleAlongsideTransition(true)
-        layoutCellsAlongsideTransition()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
-        layoutCellsAlongsideTransition()
     }
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
@@ -38,10 +35,8 @@ final class ChartEmotionViewController: UICollectionViewController {
 
 extension ChartEmotionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutMode {
-        guard let selectedIndexPath = collectionView.indexPathForSelectedItem else {
-            preconditionFailure()
-        }
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
+        let selectedIndexPath = collectionView.indexPathForSelectedItem!
         return .emotion(selectedIndexPath)
     }
 
