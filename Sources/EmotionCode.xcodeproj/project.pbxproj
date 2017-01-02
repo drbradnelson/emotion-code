@@ -29,7 +29,6 @@
 		0FD852A41E15705200DBC9BC /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 0FD852A21E15705200DBC9BC /* main.css */; };
 		0FD852A51E15705200DBC9BC /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = 0FD852A31E15705200DBC9BC /* main.html */; };
 		0FD852A81E15741300DBC9BC /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD852A71E15741300DBC9BC /* Down.framework */; };
-		0FD852A91E15742A00DBC9BC /* Down.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD852A71E15741300DBC9BC /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FD852AA1E15780400DBC9BC /* chapter1.md in Resources */ = {isa = PBXBuildFile; fileRef = 0FD852921E156F9800DBC9BC /* chapter1.md */; };
 		0FD852AB1E15780400DBC9BC /* chapter2.md in Resources */ = {isa = PBXBuildFile; fileRef = 0FD8528A1E156F9800DBC9BC /* chapter2.md */; };
 		0FD852AC1E15780400DBC9BC /* chapter3.md in Resources */ = {isa = PBXBuildFile; fileRef = 0FD852A01E156FFE00DBC9BC /* chapter3.md */; };
@@ -46,13 +45,11 @@
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
 		911377741DFFF9C6008627F1 /* ChartLayoutModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutModule.swift */; };
 		911377801E001A73008627F1 /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
-		911377811E001A73008627F1 /* Elm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
 		913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
 		913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */; };
 		913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E31E07FB3300069B4E /* BookContainerViewController.swift */; };
-		913A65E51E08042F00069B4E /* AudioBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
@@ -98,22 +95,6 @@
 			remoteInfo = EmotionCode;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		91F833FB1DEDD8F800F27AD5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0FD852A91E15742A00DBC9BC /* Down.framework in Embed Frameworks */,
-				911377811E001A73008627F1 /* Elm.framework in Embed Frameworks */,
-				913A65E51E08042F00069B4E /* AudioBar.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarLayoutTests.swift; sourceTree = "<group>"; };
@@ -436,7 +417,7 @@
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
-				91F833FB1DEDD8F800F27AD5 /* Embed Frameworks */,
+				91C655AF1E1AE14D008D1F21 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -624,6 +605,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PROJECT_NAME\"/StoryboardLint.sh";
 			showEnvVarsInLog = 0;
+		};
+		91C655AF1E1AE14D008D1F21 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AudioBar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Elm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Down.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
