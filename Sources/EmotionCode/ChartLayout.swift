@@ -7,15 +7,15 @@ final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    private let program = Module.makeProgram()
+    private var program: Program<ChartLayoutModule>!
 
     func setProgramModel(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
-        program.dispatch(
-            .setMode(mode),
-            .setItemsPerSection(itemsPerSection),
-            .setViewSize(Size(viewSize)),
-            .setNumberOfColumns(ChartLayout.numberOfColumns),
-            .setTopContentInset(Int(topContentInset))
+        program = ChartLayoutModule.makeProgram(flags: .init(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: ChartLayout.numberOfColumns,
+            topContentInset: Int(topContentInset)
+            )
         )
     }
 
