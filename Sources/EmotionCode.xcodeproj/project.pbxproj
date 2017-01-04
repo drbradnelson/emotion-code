@@ -54,6 +54,10 @@
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
+		916289E41E1D0B1F0004D27E /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
+		916289E61E1D36680004D27E /* ChartLayoutModuleStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916289E51E1D36680004D27E /* ChartLayoutModuleStartTests.swift */; };
+		916289E81E1D36700004D27E /* ChartLayoutModuleUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916289E71E1D36700004D27E /* ChartLayoutModuleUpdateTests.swift */; };
+		916289EA1E1D36B60004D27E /* ChartLayoutModuleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916289E91E1D36B60004D27E /* ChartLayoutModuleViewTests.swift */; };
 		916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BED5D1DED81C50048314E /* ChartLayout.swift */; };
 		91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */; };
 		91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */; };
@@ -70,7 +74,6 @@
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
 		B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */; };
 		B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */; };
-		B6A516391E0FFF3600DC5BC2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A516381E0FFF3600DC5BC2 /* Utilities.swift */; };
 		B6AD97CF1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD97CE1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift */; };
 		B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */; };
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
@@ -151,6 +154,9 @@
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916289E51E1D36680004D27E /* ChartLayoutModuleStartTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleStartTests.swift; sourceTree = "<group>"; };
+		916289E71E1D36700004D27E /* ChartLayoutModuleUpdateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleUpdateTests.swift; sourceTree = "<group>"; };
+		916289E91E1D36B60004D27E /* ChartLayoutModuleViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleViewTests.swift; sourceTree = "<group>"; };
 		916BED5D1DED81C50048314E /* ChartLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayout.swift; sourceTree = "<group>"; };
 		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
@@ -168,7 +174,6 @@
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSectionViewController.swift; sourceTree = "<group>"; };
-		B6A516381E0FFF3600DC5BC2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B6AD97CE1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleTests.swift; sourceTree = "<group>"; };
 		B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B273711E05948E00771409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916289E41E1D0B1F0004D27E /* Elm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +393,9 @@
 			isa = PBXGroup;
 			children = (
 				B6AD97CE1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift */,
-				B6A516381E0FFF3600DC5BC2 /* Utilities.swift */,
+				916289E51E1D36680004D27E /* ChartLayoutModuleStartTests.swift */,
+				916289E71E1D36700004D27E /* ChartLayoutModuleUpdateTests.swift */,
+				916289E91E1D36B60004D27E /* ChartLayoutModuleViewTests.swift */,
 				B6B273711E05948E00771409 /* Info.plist */,
 			);
 			path = EmotionCodeTests;
@@ -686,8 +694,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A516391E0FFF3600DC5BC2 /* Utilities.swift in Sources */,
 				B6AD97CF1E0FF37C004FC5DB /* ChartLayoutModuleTests.swift in Sources */,
+				916289E61E1D36680004D27E /* ChartLayoutModuleStartTests.swift in Sources */,
+				916289EA1E1D36B60004D27E /* ChartLayoutModuleViewTests.swift in Sources */,
+				916289E81E1D36700004D27E /* ChartLayoutModuleUpdateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +935,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = FU4W8383YY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EmotionCodeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -942,6 +956,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = FU4W8383YY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EmotionCodeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
