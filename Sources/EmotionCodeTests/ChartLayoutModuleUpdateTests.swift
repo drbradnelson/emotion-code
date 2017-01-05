@@ -11,14 +11,12 @@ final class ChartLayoutModuleUpdateTests: XCTestCase, Tests {
     let failureReporter = XCTFail
 
     func testSetViewSize1() {
-        // Add explicit viewSize
-        let update = expectUpdate(for: .setViewSize(.init(width: 1, height: 2)), model: .init())
+        let update = expectUpdate(for: .setViewSize(.init(width: 1, height: 2)), model: .init(viewSize: .zero))
         expect(update?.model.viewSize, Size(width: 1, height: 2))
     }
 
     func testSetViewSize2() {
-        // Add explicit viewSize
-        let update = expectUpdate(for: .setViewSize(.init(width: 3, height: 4)), model: .init())
+        let update = expectUpdate(for: .setViewSize(.init(width: 3, height: 4)), model: .init(viewSize: .zero))
         expect(update?.model.viewSize, Size(width: 3, height: 4))
     }
 
