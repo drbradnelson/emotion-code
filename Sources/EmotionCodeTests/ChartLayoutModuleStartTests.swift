@@ -5,38 +5,42 @@ import Elm
 
 // swiftlint:disable type_body_length
 
-final class ChartLayoutModuleStartTests: XCTestCase, StartTests {
+final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
-    var fixture = StartFixture<ChartLayoutModule>()
+    typealias Module = ChartLayoutModule
     let failureReporter = XCTFail
 
+    // MARK: Start
+
     func testLoadFlags1() {
-        flags = .init(mode: .section(1), itemsPerSection: [2, 3], numberOfColumns: 4, topContentInset: 5)
-        expect(model.flags, flags)
+        let flags: Module.Flags = .init(mode: .section(1), itemsPerSection: [2, 3], numberOfColumns: 4, topContentInset: 5)
+        let model = expectModel(loading: flags)
+        expect(model?.flags, flags)
     }
 
     func testLoadFlags2() {
-        flags = .init(mode: .section(5), itemsPerSection: [4, 3], numberOfColumns: 2, topContentInset: 1)
-        expect(model.flags, flags)
+        let flags: Module.Flags = .init(mode: .section(5), itemsPerSection: [4, 3], numberOfColumns: 2, topContentInset: 1)
+        let model = expectModel(loading: flags)
+        expect(model?.flags, flags)
     }
 
     func testLoadInvalidItemsPerSection() {
-        flags = .init(itemsPerSection: [])
+        let failure = expectFailure(loading: .init(itemsPerSection: []))
         expect(failure, .missingItems)
     }
 
     func testSetNumberOfColumnsInvalid1() {
-        flags = .init(numberOfColumns: 0)
+        let failure = expectFailure(loading: .init(numberOfColumns: 0))
         expect(failure, .invalidNumberOfColums)
     }
 
     func testSetNumberOfColumnsInvalid2() {
-        flags = .init(numberOfColumns: -1)
+        let failure = expectFailure(loading: .init(numberOfColumns: -1))
         expect(failure, .invalidNumberOfColums)
     }
 
     func testSetNumberOfColumnsInvalid3() {
-        flags = .init(numberOfColumns: -2)
+        let failure = expectFailure(loading: .init(numberOfColumns: -2))
         expect(failure, .invalidNumberOfColums)
     }
 

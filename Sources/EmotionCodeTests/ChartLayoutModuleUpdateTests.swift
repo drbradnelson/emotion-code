@@ -5,44 +5,40 @@ import Elm
 
 // swiftlint:disable type_body_length
 
-final class ChartLayoutModuleUpdateTests: XCTestCase, UpdateTests {
+final class ChartLayoutModuleUpdateTests: XCTestCase, Tests {
 
-    var fixture = UpdateFixture<ChartLayoutModule>()
+    typealias Module = ChartLayoutModule
     let failureReporter = XCTFail
 
     func testSetViewSize1() {
-        model = .init()
-        message = .setViewSize(Size(width: 1, height: 2))
-        expect(model.viewSize, Size(width: 1, height: 2))
+        // Add explicit viewSize
+        let update = expectUpdate(for: .setViewSize(.init(width: 1, height: 2)), model: .init())
+        expect(update?.model.viewSize, Size(width: 1, height: 2))
     }
 
     func testSetViewSize2() {
-        model = .init()
-        message = .setViewSize(Size(width: 3, height: 4))
-        expect(model.viewSize, Size(width: 3, height: 4))
+        // Add explicit viewSize
+        let update = expectUpdate(for: .setViewSize(.init(width: 3, height: 4)), model: .init())
+        expect(update?.model.viewSize, Size(width: 3, height: 4))
     }
 
     func testSetViewSizeInvalid1() {
-        model = .init()
-        message = .setViewSize(Size(width: 0, height: 10))
+        let failure = expectFailure(for: .setViewSize(.init(width: 0, height: 10)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
     func testSetViewSizeInvalid2() {
-        model = .init()
-        message = .setViewSize(Size(width: -1, height: 10))
+        let failure = expectFailure(for: .setViewSize(.init(width: -1, height: 10)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
     func testSetViewSizeInvalid3() {
-        model = .init()
-        message = .setViewSize(Size(width: 10, height: 0))
+        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: 0)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
     func testSetViewSizeInvalid4() {
-        model = .init()
-        message = .setViewSize(Size(width: 10, height: -1))
+        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: -1)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
