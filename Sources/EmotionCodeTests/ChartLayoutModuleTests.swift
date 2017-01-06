@@ -115,7 +115,8 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         let view = expectView(presenting: .init(
             flags: .init(
                 mode: .all,
-                itemsPerSection: [1]
+                itemsPerSection: [1],
+                numberOfColumns: 1
             ),
             minViewHeightForCompactLayout: 1,
             viewSize: Size(height: 1 + 1)
@@ -155,8 +156,12 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
     func testContentOffsetForAllMode() {
         let view = expectView(presenting: .init(
-            flags: .init(mode: .all)
-            ))
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            )
+        ))
         expect(view?.proposedVerticalContentOffset, nil)
     }
 
@@ -170,7 +175,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 2,
             headerSize: Size(height: 3)
-            ))
+        ))
         expect(view?.proposedVerticalContentOffset, 2 + 3 - 4)
     }
 
