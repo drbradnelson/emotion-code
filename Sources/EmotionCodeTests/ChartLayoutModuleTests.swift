@@ -80,10 +80,18 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
     func testChartWidthForAllMode() {
         let view = expectView(presenting: .init(
-            flags: .init(mode: .all),
-            viewSize: Size(width: 1)
-            ))
-        expect(view?.chartSize.width, 1)
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2,
+            headerSize: Size(width: 3),
+            sectionSpacing: Size(width: 4),
+            viewSize: Size(width: 20)
+        ))
+        let expected = 2 + 3 + 4 + (20 - 2 - 2 - 3 - 4) / 1 + 2
+        expect(view?.chartSize.width, expected)
     }
 
     func testChartHeightForAllModeWhenNotCompact() {
@@ -105,10 +113,13 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
     func testChartHeightForAllModeWhenCompact() {
         let view = expectView(presenting: .init(
-            flags: .init(mode: .all),
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [1]
+            ),
             minViewHeightForCompactLayout: 1,
             viewSize: Size(height: 1 + 1)
-            ))
+        ))
         expect(view?.chartSize.height, 1 + 1)
     }
 
@@ -633,8 +644,8 @@ extension ChartLayoutModule.Flags {
 
     init(
         mode: ChartLayoutModule.Mode = .all,
-        itemsPerSection: [Int] = [],
-        numberOfColumns: Int = 2,
+        itemsPerSection: [Int] = [1],
+        numberOfColumns: Int = 1,
         topContentInset: Int = 0
         ) {
         self.mode = mode
