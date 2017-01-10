@@ -1,3 +1,3 @@
-github "iwasrobbed/Down" "3131e3bfb564eaeb5a46b4538df4aa9b89e9df8b"
-github "salutis/Elm" "6227bc5800b293202a588dbd088a2a914f8cce01"
-github "enfluid/apple-audio-bar" "8f242d5d7de64b779460b4d2203c04a492eb1f20"
+github "iwasrobbed/Down" "v0.3"
+github "salutis/Elm" "0.9.1"
+github "enfluid/apple-audio-bar" "0.3.0"
