@@ -53,9 +53,12 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     // MARK: Page view controller delegate
 
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        let chapterIndex = currentBookChapterViewController.chapterIndex
-        chapterTitleView.setChapterIndex(chapterIndex)
+        chapterTitleView.setChapterIndex(currentChapterIndex)
         enableDisablePreviousNextChapterButtons()
+    }
+
+    var currentChapterIndex: Int {
+        return currentBookChapterViewController.chapterIndex
     }
 
     // MARK: Chapter view controller
@@ -89,7 +92,6 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     // MARK: Update bar button items
 
     private func enableDisablePreviousNextChapterButtons() {
-        let currentChapterIndex = currentBookChapterViewController.chapterIndex
         previousChapterButtonItem.isEnabled = bookController.hasChapter(at: currentChapterIndex - 1)
         nextChapterButtonItem.isEnabled = bookController.hasChapter(at: currentChapterIndex + 1)
     }
@@ -97,13 +99,13 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     // MARK: Navigation bar button actions
 
     @IBAction func userDidTapPreviousChapterButton() {
-        guard bookController.hasChapter(at: currentBookChapterViewController.chapterIndex - 1) else { return }
-        showChapter(at: currentBookChapterViewController.chapterIndex - 1, direction: .reverse, animated: true)
+        guard bookController.hasChapter(at: currentChapterIndex - 1) else { return }
+        showChapter(at: currentChapterIndex - 1, direction: .reverse, animated: true)
     }
 
     @IBAction func userDidTapNextChapterButton() {
-        guard bookController.hasChapter(at: currentBookChapterViewController.chapterIndex + 1) else { return }
-        showChapter(at: currentBookChapterViewController.chapterIndex + 1, direction: .forward, animated: true)
+        guard bookController.hasChapter(at: currentChapterIndex + 1) else { return }
+        showChapter(at: currentChapterIndex + 1, direction: .forward, animated: true)
     }
 
     // MARK: Storyboard segues
