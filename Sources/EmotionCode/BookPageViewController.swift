@@ -82,11 +82,14 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
 
     // MARK: ???
 
+    var didShowChapter: (Int) -> Void = { _ in }
+
     func showChapter(at chapterIndex: Int, direction: UIPageViewControllerNavigationDirection, animated: Bool) {
         let chapterViewController = chapterViewControllerWithChapter(at: chapterIndex)
         chapterTitleView.setChapterIndex(chapterViewController.chapterIndex)
         setViewControllers([chapterViewController], direction: direction, animated: animated, completion: nil)
         enableDisablePreviousNextChapterButtons()
+        didShowChapter(chapterIndex)
     }
 
     // MARK: Update bar button items
