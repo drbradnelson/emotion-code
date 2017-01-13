@@ -53,8 +53,10 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     // MARK: Page view controller delegate
 
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        guard completed else { return }
         chapterTitleView.setChapterIndex(currentChapterIndex)
         enableDisablePreviousNextChapterButtons()
+        didShowChapter(currentChapterIndex)
     }
 
     var currentChapterIndex: Int {
