@@ -414,7 +414,7 @@
 			buildConfigurationList = 915EEC561D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCode" */;
 			buildPhases = (
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
-				0FF641891D5A6A3100EDF903 /* Run MarkupLint */,
+				0FF641891D5A6A3100EDF903 /* Run ConvertBook */,
 				915EEC351D460CE1005CC318 /* Sources */,
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
@@ -531,6 +531,7 @@
 				0FD852B21E15780400DBC9BC /* chapter9.md in Resources */,
 				0FD852B31E15780400DBC9BC /* chapter10.md in Resources */,
 				0FD852B41E15780400DBC9BC /* about-author.md in Resources */,
+				0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */,
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
 				0FD852941E156F9800DBC9BC /* 1.jpg in Resources */,
@@ -563,19 +564,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FF641891D5A6A3100EDF903 /* Run MarkupLint */ = {
+		0FF641891D5A6A3100EDF903 /* Run ConvertBook */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run MarkupLint";
+			name = "Run ConvertBook";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PROJECT_NAME\"/MarkupLint.sh";
+			shellScript = "\"$PROJECT_NAME\"/ConvertBook.sh";
 			showEnvVarsInLog = 0;
 		};
 		9141D9081D48A256009173A9 /* Run SwiftLint */ = {
