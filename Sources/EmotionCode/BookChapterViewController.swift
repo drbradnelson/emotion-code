@@ -46,9 +46,10 @@ final class BookChapterViewController: UIViewController {
     // MARK: Load chapter
 
     func loadChapter() {
+        guard let chapterURL = chapterURL else { return }
         do {
-            let htmlString = try bookController.htmlStringForChapter(at: chapterIndex)
-            bookChapterView.webView.loadHTMLString(htmlString, baseURL: bookController.templateHTMLURL)
+            let htmlString = try String(contentsOf: chapterURL)
+            bookChapterView.webView.loadHTMLString(htmlString, baseURL: chapterURL)
         } catch {
             preconditionFailure()
         }
