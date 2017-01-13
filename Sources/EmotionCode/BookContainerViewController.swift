@@ -3,6 +3,8 @@ import UIKit
 final class BookContainerViewController: UIViewController {
 
     private var bookPageViewController: BookPageViewController!
+    private var audioBarContainerController: AudioBarContainerController!
+
     @IBOutlet weak var audioBarContainerView: UIView!
 
     override func viewDidLoad() {
@@ -10,6 +12,10 @@ final class BookContainerViewController: UIViewController {
         navigationItem.leftBarButtonItem = bookPageViewController.previousChapterButtonItem
         navigationItem.titleView = bookPageViewController.chapterTitleView
         navigationItem.rightBarButtonItem = bookPageViewController.nextChapterButtonItem
+        bookPageViewController.didShowChapter = { [weak audioBarContainerController] chapter in
+            audioBarContainerController?.loadChapter(chapter)
+        }
+        audioBarContainerController.loadChapter(bookPageViewController.currentBookChapterViewController.chapterIndex)
     }
 
     override func viewWillLayoutSubviews() {
@@ -20,8 +26,13 @@ final class BookContainerViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let bookPageViewController = segue.destination as? BookPageViewController {
+        switch segue.destination {
+        case let bookPageViewController as BookPageViewController:
             self.bookPageViewController = bookPageViewController
+        case let audioBarContainerController as AudioBarContainerController:
+            self.audioBarContainerController = audioBarContainerController
+        default:
+            fatalError()
         }
     }
 
