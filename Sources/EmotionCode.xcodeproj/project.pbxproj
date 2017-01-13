@@ -26,7 +26,6 @@
 		0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */; };
 		0FCA00FF1D60EEBD0020018A /* BookNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */; };
 		0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA26481E2951F3001C6E7E /* ConvertBook.sh */; };
-		0FD852A81E15741300DBC9BC /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD852A71E15741300DBC9BC /* Down.framework */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
@@ -160,7 +159,6 @@
 			files = (
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
-				0FD852A81E15741300DBC9BC /* Down.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
