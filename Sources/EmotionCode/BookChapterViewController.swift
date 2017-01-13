@@ -9,8 +9,6 @@ final class BookChapterViewController: UIViewController {
     var preferredTopLayoutGuide: CGFloat = 0
     var preferredBottomLayoutGuide: CGFloat = 0
 
-    private let bookController = BookController()
-
     // MARK: Instantiating from storyboard
 
     static func instantiateFromStoryboard() -> BookChapterViewController {
