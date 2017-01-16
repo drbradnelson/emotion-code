@@ -3,3 +3,4 @@ body { font: -apple-system-body; word-wrap: break-word; }
 h1 { font: -apple-system-headline; }
 h2, h3 { font: -apple-system-subheadline; }
 p { font: -apple-system-body; }
+code { font: -apple-system-caption2; font-style: italic; display: inline-block; width: 100%; text-align: center; }
