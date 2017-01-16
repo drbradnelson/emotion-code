@@ -8,7 +8,7 @@ mkdir -p $ENGLISH_LOCALIZATION_FOLDER_PATH
 mkdir -p $SPANISH_LOCALIZATION_FOLDER_PATH
 
 #English version
-cp -r ../Resources/English/CSS/. $ENGLISH_LOCALIZATION_FOLDER_PATH/
+cp -r ../Resources/CSS/. $ENGLISH_LOCALIZATION_FOLDER_PATH/
 cp -r ../Resources/English/Images/. $ENGLISH_LOCALIZATION_FOLDER_PATH/
 pandoc ../Resources/English/Markdown/chapter1.md --from=markdown --to=html5 --standalone --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter1.html --css=main.css
 pandoc ../Resources/English/Markdown/chapter2.md --from=markdown --to=html5 --standalone --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/chapter2.html --css=main.css
@@ -23,7 +23,7 @@ pandoc ../Resources/English/Markdown/chapter10.md --from=markdown --to=html5 --s
 pandoc ../Resources/English/Markdown/about-author.md --from=markdown --to=html5 --standalone --output=$ENGLISH_LOCALIZATION_FOLDER_PATH/about-author.html --css=main.css
 
 #Spanish version
-cp -r ../Resources/Spanish/CSS/. $SPANISH_LOCALIZATION_FOLDER_PATH/
+cp -r ../Resources/CSS/. $SPANISH_LOCALIZATION_FOLDER_PATH/
 cp -r ../Resources/Spanish/Images/. $SPANISH_LOCALIZATION_FOLDER_PATH/
 pandoc ../Resources/Spanish/Markdown/chapter1.md --from=markdown --to=html5 --standalone --output=$SPANISH_LOCALIZATION_FOLDER_PATH/chapter1.html --css=main.css
 pandoc ../Resources/Spanish/Markdown/chapter2.md --from=markdown --to=html5 --standalone --output=$SPANISH_LOCALIZATION_FOLDER_PATH/chapter2.html --css=main.css
