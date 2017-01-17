@@ -20,10 +20,9 @@ final class BookChapterLayoutTests: XCTestCase {
         }
         let beginningText = app.staticTexts.matching(beginningPredicate).element
         let topLayoutGuide = app.navigationBars.element.frame.maxY
-        let topMargin: CGFloat = 12
+        let topMargin: CGFloat = 18
         XCTAssertEqual(beginningText.frame.minY, topLayoutGuide + topMargin)
     }
-
 
     func testTopLayoutGuideForChapter2() {
         app.buttons["Next Chapter"].tap()
@@ -33,7 +32,7 @@ final class BookChapterLayoutTests: XCTestCase {
         }
         let beginningText = app.staticTexts.matching(beginningPredicate).element
         let topLayoutGuide = app.navigationBars.element.frame.maxY
-        let topMargin: CGFloat = 12
+        let topMargin: CGFloat = 18
         XCTAssertEqual(beginningText.frame.minY, topLayoutGuide + topMargin)
     }
 
