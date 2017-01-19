@@ -212,14 +212,14 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		0F28D0C01D4E7659002C98E7 /* Shared */ = {
+		0F28D0C01D4E7659002C98E7 /* Build */ = {
 			isa = PBXGroup;
 			children = (
 				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 				0FF6418A1D5A725500EDF903 /* MarkupLint.sh */,
 				0FCA26481E2951F3001C6E7E /* ConvertBook.sh */,
 			);
-			name = Shared;
+			name = Build;
 			sourceTree = "<group>";
 		};
 		91187B211D67768C0098A881 /* Views */ = {
@@ -265,7 +265,7 @@
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				91187B211D67768C0098A881 /* Views */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
-				0F28D0C01D4E7659002C98E7 /* Shared */,
+				0F28D0C01D4E7659002C98E7 /* Build */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
 				91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */,
 				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
