@@ -1,5 +1,4 @@
 import Foundation
-import Down
 
 final class BookController {
 
@@ -25,7 +24,7 @@ final class BookController {
         guard let title = dictionary[chapterTitleKey], let fileName = dictionary[chapterFileNameKey] else {
             preconditionFailure("Unable to parse book chapter")
         }
-        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "md") else {
+        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "html") else {
             preconditionFailure("Unable to find book chapter file")
         }
         return Book.Chapter(title: title, fileURL: fileURL)
@@ -50,37 +49,6 @@ final class BookController {
 
     func hasChapter(at index: Int) -> Bool {
         return book.chapters.indices.contains(index)
-    }
-
-    // MARK: HTML string for chapter
-
-    func htmlStringForChapter(at index: Int) throws -> String {
-        let chapterMarkdownURL = book.chapters[index].fileURL
-        let markdownString = try String(contentsOf: chapterMarkdownURL)
-        let markdown = Down(markdownString: markdownString)
-        let htmlString = try markdown.toHTML()
-        let embeddedInTepmlateString = try embedHTMLStringIntoTemplate(htmlString)
-        return embeddedInTepmlateString
-    }
-
-    private func embedHTMLStringIntoTemplate(_ htmlString: String) throws -> String {
-        let templateHTML = try String(contentsOf: templateHTMLURL)
-        guard let bodyTagRange = templateHTML.range(of: "{{content}}") else {
-            preconditionFailure("Unable to locate content placeholder")
-        }
-        let bodyStart = templateHTML.substring(to: bodyTagRange.lowerBound)
-        let bodyEnd = templateHTML.substring(from: bodyTagRange.upperBound)
-        let embeddedString = bodyStart + htmlString + bodyEnd
-        return embeddedString
-    }
-
-    // MARK: Template HTML URL
-
-    var templateHTMLURL: URL {
-        guard let templateURL = Bundle.main.url(forResource: "main", withExtension: "html") else {
-            preconditionFailure("Unable to locate template file")
-        }
-        return templateURL
     }
 
 }

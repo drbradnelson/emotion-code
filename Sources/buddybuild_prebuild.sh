@@ -1,2 +1,2 @@
 #!/usr/bin/env bash -e
-brew install tidy-html5
+brew install pandoc

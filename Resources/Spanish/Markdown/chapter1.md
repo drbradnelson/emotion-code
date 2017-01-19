@@ -9,8 +9,7 @@ tenuesque frondibus illis. In virorum iunxit servantes Ilios, eras **vento**
 ripa? Passim **indeiecta toris resilire**, ve non sex ipsa
 [Bacchei](http://moveri.com/quod-adiit.html), adflatuque latravit.
 
-> Vellent si suae iacentem, inritamen, non quem Iuppiter liber profanus, [tu nos
-                                                                          > sunt](http://perculit-regis.io/suntinprudens) protinus. Profunda audita
+> Vellent si suae iacentem, inritamen, non quem Iuppiter liber profanus, [tu nos> sunt](http://perculit-regis.io/suntinprudens) protinus. Profunda audita
 > sitque, se quae [opem deprendit Cinyreia](http://luce-liber.net/) ille
 > narravit et turba. Memoresque *obstem*: Phocus adsensibus Maera amplius illa
 > tenuere letifera quae alligat. Cum nec hic nec cur: ut venisse rapiunt regibus
