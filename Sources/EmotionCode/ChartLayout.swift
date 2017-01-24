@@ -29,10 +29,8 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
-        guard let verticalContentOffset = program.view.proposedVerticalContentOffset else { return proposedContentOffset }
-        let x = proposedContentOffset.x
-        let y = CGFloat(verticalContentOffset)
-        return CGPoint(x: x, y: y)
+        guard let contentOffset = program.view.proposedContentOffset else { return proposedContentOffset }
+        return contentOffset.cgPoint
     }
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

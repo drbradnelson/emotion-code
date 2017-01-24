@@ -38,7 +38,7 @@ struct ChartLayoutModule: Elm.Module {
 
     struct View {
         let chartSize: Size
-        let proposedVerticalContentOffset: Int?
+        let proposedContentOffset: Point?
         let itemFrames: [[Rect]]
         let columnHeaderFrames: [Rect]
         let rowHeaderFrames: [Rect]
@@ -81,6 +81,10 @@ struct ChartLayoutModule: Elm.Module {
 
         func rowIndex(forSection section: Int) -> Int {
             return section / model.flags.numberOfColumns
+        }
+
+        func columnIndex(forSection section: Int) -> Int {
+            return (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
         }
 
         let sectionsCount = model.flags.itemsPerSection.count
@@ -245,15 +249,21 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Content offset
         //
 
-        let proposedVerticalContentOffset: Int? = {
+        let proposedContentOffset: Point? = {
             switch model.flags.mode {
             case .all:
                 return nil
             case .section(let section):
+                let column = columnIndex(forSection: section)
+                let x = columnXPositions[column] - model.contentPadding
                 let row = rowIndex(forSection: section)
-                return rowYPositions[row] - model.contentPadding - model.flags.topContentInset
+                let y = rowYPositions[row] - model.contentPadding - model.flags.topContentInset
+                return Point(x: x, y: y)
             case .emotion(let indexPath):
-                return yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.flags.topContentInset
+                let column = columnIndex(forSection: indexPath.section)
+                let x = columnXPositions[column] - model.contentPadding
+                let y = yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.flags.topContentInset
+                return Point(x: x, y: y)
             }
         }()
 
@@ -315,7 +325,7 @@ struct ChartLayoutModule: Elm.Module {
 
         return View(
             chartSize: chartSize,
-            proposedVerticalContentOffset: proposedVerticalContentOffset,
+            proposedContentOffset: proposedContentOffset,
             itemFrames: itemFrames,
             columnHeaderFrames: columnHeaderFrames,
             rowHeaderFrames: rowHeaderFrames
