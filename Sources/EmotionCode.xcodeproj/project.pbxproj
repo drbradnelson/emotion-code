@@ -7,31 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
-		0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */; };
-		0F283E441D6DFC8A00A38B89 /* BookChapterSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E431D6DFC8A00A38B89 /* BookChapterSelectionTests.swift */; };
 		0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B51D4E74E3002C98E7 /* Book.storyboard */; };
 		0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B81D4E7501002C98E7 /* Chart.storyboard */; };
 		0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0BB1D4E755B002C98E7 /* Help.storyboard */; };
 		0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3936631D5B9374003CC6C0 /* BookController.swift */; };
-		0F3EAFDE1D6CA34B0059C312 /* XCUIElementQuery+FirstLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3EAFDD1D6CA34B0059C312 /* XCUIElementQuery+FirstLast.swift */; };
 		0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */; };
-		0F464FB41D621D4E0036D762 /* BookSwipeGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */; };
 		0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */; };
 		0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */; };
 		0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */; };
 		0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */; };
 		0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */; };
-		0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */; };
-		0FCA00FF1D60EEBD0020018A /* BookNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */; };
 		0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA26481E2951F3001C6E7E /* ConvertBook.sh */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
 		911377741DFFF9C6008627F1 /* ChartLayoutModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutModule.swift */; };
 		911377801E001A73008627F1 /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
-		91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
 		913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
 		913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */; };
@@ -43,13 +35,6 @@
 		916289E41E1D0B1F0004D27E /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
 		916289E61E1D36680004D27E /* ChartLayoutModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916289E51E1D36680004D27E /* ChartLayoutModuleTests.swift */; };
 		916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BED5D1DED81C50048314E /* ChartLayout.swift */; };
-		91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */; };
-		91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */; };
-		91AD7CE41D534D2500FBEBF7 /* TabNavigationBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */; };
-		91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */; };
-		91AD7CE81D534D3400FBEBF7 /* TabNavigationHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */; };
-		91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */; };
-		91AD7CEC1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */; };
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
 		91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */; };
@@ -66,13 +51,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		915EEC4E1D460CE1005CC318 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 915EEC311D460CE1005CC318 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 915EEC381D460CE1005CC318;
-			remoteInfo = EmotionCode;
-		};
 		B6B273721E05948E00771409 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 915EEC311D460CE1005CC318 /* Project object */;
@@ -83,24 +61,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarLayoutTests.swift; sourceTree = "<group>"; };
 		0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSegueController.swift; sourceTree = "<group>"; };
-		0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterSelectionLayoutTests.swift; sourceTree = "<group>"; };
-		0F283E431D6DFC8A00A38B89 /* BookChapterSelectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterSelectionTests.swift; sourceTree = "<group>"; };
 		0F28D0B61D4E74E3002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Book.storyboard; sourceTree = "<group>"; };
 		0F28D0B91D4E7501002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.storyboard; sourceTree = "<group>"; };
 		0F28D0BC1D4E755B002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Help.storyboard; sourceTree = "<group>"; };
 		0F3936631D5B9374003CC6C0 /* BookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
-		0F3EAFDD1D6CA34B0059C312 /* XCUIElementQuery+FirstLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+FirstLast.swift"; sourceTree = "<group>"; };
 		0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterView.swift; sourceTree = "<group>"; };
-		0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSwipeGesturesTests.swift; sourceTree = "<group>"; };
 		0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageViewController.swift; sourceTree = "<group>"; };
 		0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterViewController.swift; sourceTree = "<group>"; };
 		0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersTableView.swift; sourceTree = "<group>"; };
 		0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
 		0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterListViewController.swift; sourceTree = "<group>"; };
-		0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Window.swift"; sourceTree = "<group>"; };
-		0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNavigationBarButtonTests.swift; sourceTree = "<group>"; };
 		0FCA26481E2951F3001C6E7E /* ConvertBook.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ConvertBook.sh; sourceTree = "<group>"; };
 		0FD852A71E15741300DBC9BC /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/iOS/Down.framework; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
@@ -111,7 +82,6 @@
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
 		911377731DFFF9C6008627F1 /* ChartLayoutModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModule.swift; sourceTree = "<group>"; };
 		9113777E1E001A69008627F1 /* Elm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elm.framework; path = Carthage/Build/iOS/Elm.framework; sourceTree = "<group>"; };
-		91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterLayoutTests.swift; sourceTree = "<group>"; };
 		91187B221D6776A00098A881 /* ChapterTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleView.swift; sourceTree = "<group>"; };
 		913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBarContainerController.swift; sourceTree = "<group>"; };
 		913A65E31E07FB3300069B4E /* BookContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContainerViewController.swift; sourceTree = "<group>"; };
@@ -122,18 +92,9 @@
 		915EEC431D460CE1005CC318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915EEC461D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		915EEC531D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916289E51E1D36680004D27E /* ChartLayoutModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModuleTests.swift; sourceTree = "<group>"; };
 		916BED5D1DED81C50048314E /* ChartLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayout.swift; sourceTree = "<group>"; };
 		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
-		91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationLayoutTests.swift; sourceTree = "<group>"; };
-		91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationDefaultTests.swift; sourceTree = "<group>"; };
-		91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationBookTests.swift; sourceTree = "<group>"; };
-		91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationChartTests.swift; sourceTree = "<group>"; };
-		91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationHelpTests.swift; sourceTree = "<group>"; };
-		91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+App.swift"; sourceTree = "<group>"; };
-		91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+SafeLaunch.swift"; sourceTree = "<group>"; };
 		91B88ACC1D58B8E600DFCDB2 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+TransitionLayout.swift"; sourceTree = "<group>"; };
@@ -159,13 +120,6 @@
 			files = (
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		915EEC4A1D460CE1005CC318 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,14 +166,14 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		0F28D0C01D4E7659002C98E7 /* Shared */ = {
+		0F28D0C01D4E7659002C98E7 /* Build */ = {
 			isa = PBXGroup;
 			children = (
 				9141D9091D48A2D7009173A9 /* StoryboardLint.sh */,
 				0FF6418A1D5A725500EDF903 /* MarkupLint.sh */,
 				0FCA26481E2951F3001C6E7E /* ConvertBook.sh */,
 			);
-			name = Shared;
+			name = Build;
 			sourceTree = "<group>";
 		};
 		91187B211D67768C0098A881 /* Views */ = {
@@ -239,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				915EEC3B1D460CE1005CC318 /* EmotionCode */,
-				915EEC501D460CE1005CC318 /* EmotionCodeUITests */,
 				B6B2736E1E05948E00771409 /* EmotionCodeTests */,
 				91A430431DD0DF0E004D466E /* Frameworks */,
 				915EEC3A1D460CE1005CC318 /* Products */,
@@ -250,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				915EEC391D460CE1005CC318 /* EmotionCode.app */,
-				915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */,
 				B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */,
 			);
 			name = Products;
@@ -265,7 +217,7 @@
 				0F28D0BE1D4E7624002C98E7 /* Controllers */,
 				91187B211D67768C0098A881 /* Views */,
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
-				0F28D0C01D4E7659002C98E7 /* Shared */,
+				0F28D0C01D4E7659002C98E7 /* Build */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
 				91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */,
 				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
@@ -274,29 +226,6 @@
 				915EEC481D460CE1005CC318 /* Info.plist */,
 			);
 			path = EmotionCode;
-			sourceTree = "<group>";
-		};
-		915EEC501D460CE1005CC318 /* EmotionCodeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				91AD7CDF1D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift */,
-				91AD7CE11D534D0400FBEBF7 /* TabNavigationDefaultTests.swift */,
-				91AD7CE31D534D2500FBEBF7 /* TabNavigationBookTests.swift */,
-				91AD7CE51D534D2D00FBEBF7 /* TabNavigationChartTests.swift */,
-				91AD7CE71D534D3400FBEBF7 /* TabNavigationHelpTests.swift */,
-				0F1687271D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift */,
-				0FCA00FE1D60EEBD0020018A /* BookNavigationBarButtonTests.swift */,
-				0F464FB31D621D4E0036D762 /* BookSwipeGesturesTests.swift */,
-				91187B1F1D676FFB0098A881 /* BookChapterLayoutTests.swift */,
-				0F283E411D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift */,
-				0F283E431D6DFC8A00A38B89 /* BookChapterSelectionTests.swift */,
-				91AD7CE91D534D6400FBEBF7 /* XCTestCase+App.swift */,
-				0FCA00FC1D60EDCC0020018A /* XCUIApplication+Window.swift */,
-				91AD7CEB1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift */,
-				0F3EAFDD1D6CA34B0059C312 /* XCUIElementQuery+FirstLast.swift */,
-				915EEC531D460CE1005CC318 /* Info.plist */,
-			);
-			path = EmotionCodeUITests;
 			sourceTree = "<group>";
 		};
 		91A430431DD0DF0E004D466E /* Frameworks */ = {
@@ -362,24 +291,6 @@
 			productReference = 915EEC391D460CE1005CC318 /* EmotionCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		915EEC4C1D460CE1005CC318 /* EmotionCodeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 915EEC591D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCodeUITests" */;
-			buildPhases = (
-				915EEC491D460CE1005CC318 /* Sources */,
-				915EEC4A1D460CE1005CC318 /* Frameworks */,
-				915EEC4B1D460CE1005CC318 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				915EEC4F1D460CE1005CC318 /* PBXTargetDependency */,
-			);
-			name = EmotionCodeUITests;
-			productName = EmotionCodeUITests;
-			productReference = 915EEC4D1D460CE1005CC318 /* EmotionCodeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		B6B2736C1E05948E00771409 /* EmotionCodeTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6B273741E05948E00771409 /* Build configuration list for PBXNativeTarget "EmotionCodeTests" */;
@@ -413,11 +324,6 @@
 						DevelopmentTeam = 977T8AV26N;
 						LastSwiftMigration = 0800;
 					};
-					915EEC4C1D460CE1005CC318 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 915EEC381D460CE1005CC318;
-					};
 					B6B2736C1E05948E00771409 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = FU4W8383YY;
@@ -441,7 +347,6 @@
 			projectRoot = "";
 			targets = (
 				915EEC381D460CE1005CC318 /* EmotionCode */,
-				915EEC4C1D460CE1005CC318 /* EmotionCodeUITests */,
 				B6B2736C1E05948E00771409 /* EmotionCodeTests */,
 			);
 		};
@@ -462,13 +367,6 @@
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		915EEC4B1D460CE1005CC318 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,28 +478,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		915EEC491D460CE1005CC318 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91AD7CE41D534D2500FBEBF7 /* TabNavigationBookTests.swift in Sources */,
-				91AD7CEC1D534D6E00FBEBF7 /* XCUIApplication+SafeLaunch.swift in Sources */,
-				0F283E441D6DFC8A00A38B89 /* BookChapterSelectionTests.swift in Sources */,
-				91AD7CE81D534D3400FBEBF7 /* TabNavigationHelpTests.swift in Sources */,
-				91AD7CE21D534D0400FBEBF7 /* TabNavigationDefaultTests.swift in Sources */,
-				0FCA00FD1D60EDCC0020018A /* XCUIApplication+Window.swift in Sources */,
-				0F3EAFDE1D6CA34B0059C312 /* XCUIElementQuery+FirstLast.swift in Sources */,
-				0FCA00FF1D60EEBD0020018A /* BookNavigationBarButtonTests.swift in Sources */,
-				91187B201D676FFB0098A881 /* BookChapterLayoutTests.swift in Sources */,
-				91AD7CE61D534D2D00FBEBF7 /* TabNavigationChartTests.swift in Sources */,
-				91AD7CEA1D534D6400FBEBF7 /* XCTestCase+App.swift in Sources */,
-				0F1687281D6515A8006C3FE2 /* BookNavigationBarLayoutTests.swift in Sources */,
-				0F283E421D6DF93000A38B89 /* BookChapterSelectionLayoutTests.swift in Sources */,
-				0F464FB41D621D4E0036D762 /* BookSwipeGesturesTests.swift in Sources */,
-				91AD7CE01D534CEB00FBEBF7 /* TabNavigationLayoutTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6B273691E05948E00771409 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -613,11 +489,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		915EEC4F1D460CE1005CC318 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 915EEC381D460CE1005CC318 /* EmotionCode */;
-			targetProxy = 915EEC4E1D460CE1005CC318 /* PBXContainerItemProxy */;
-		};
 		B6B273731E05948E00771409 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 915EEC381D460CE1005CC318 /* EmotionCode */;
@@ -814,30 +685,6 @@
 			};
 			name = Release;
 		};
-		915EEC5A1D460CE1005CC318 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = EmotionCodeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TBD.EmotionCodeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = EmotionCode;
-			};
-			name = Debug;
-		};
-		915EEC5B1D460CE1005CC318 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = EmotionCodeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TBD.EmotionCodeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = EmotionCode;
-			};
-			name = Release;
-		};
 		B6B273751E05948E00771409 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -896,15 +743,6 @@
 			buildConfigurations = (
 				915EEC571D460CE1005CC318 /* Debug */,
 				915EEC581D460CE1005CC318 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		915EEC591D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCodeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				915EEC5A1D460CE1005CC318 /* Debug */,
-				915EEC5B1D460CE1005CC318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
