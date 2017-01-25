@@ -47,6 +47,20 @@
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
+		B6EE04641E3903D000013226 /* HotlineIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04631E3903D000013226 /* HotlineIO.framework */; };
+		B6EE04691E3903DB00013226 /* HLLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04651E3903DB00013226 /* HLLocalization.bundle */; };
+		B6EE046A1E3903DB00013226 /* HLResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04661E3903DB00013226 /* HLResources.bundle */; };
+		B6EE046B1E3903DB00013226 /* KonotorModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04671E3903DB00013226 /* KonotorModels.bundle */; };
+		B6EE046C1E3903DB00013226 /* libFDHotlineSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04681E3903DB00013226 /* libFDHotlineSDK.a */; };
+		B6EE04761E39044400013226 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046E1E39044400013226 /* AudioToolbox.framework */; };
+		B6EE04771E39044400013226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046F1E39044400013226 /* AVFoundation.framework */; };
+		B6EE04781E39044400013226 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04701E39044400013226 /* CoreData.framework */; };
+		B6EE04791E39044400013226 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04711E39044400013226 /* CoreMedia.framework */; };
+		B6EE047A1E39044400013226 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04721E39044400013226 /* Foundation.framework */; };
+		B6EE047B1E39044400013226 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04731E39044400013226 /* ImageIO.framework */; };
+		B6EE047C1E39044400013226 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04741E39044400013226 /* Security.framework */; };
+		B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04751E39044400013226 /* SystemConfiguration.framework */; };
+		B6EE047F1E39046B00013226 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE047E1E39046B00013226 /* HelpViewController.swift */; };
 		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +123,20 @@
 		B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartEmotionViewController.swift; sourceTree = "<group>"; };
 		B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Alphabet.swift"; sourceTree = "<group>"; };
 		B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
+		B6EE04631E3903D000013226 /* HotlineIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HotlineIO.framework; path = Carthage/Build/iOS/HotlineIO.framework; sourceTree = "<group>"; };
+		B6EE04651E3903DB00013226 /* HLLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HLLocalization.bundle; path = Carthage/Build/iOS/HotlineIO.framework/HLLocalization.bundle; sourceTree = "<group>"; };
+		B6EE04661E3903DB00013226 /* HLResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HLResources.bundle; path = Carthage/Build/iOS/HotlineIO.framework/HLResources.bundle; sourceTree = "<group>"; };
+		B6EE04671E3903DB00013226 /* KonotorModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KonotorModels.bundle; path = Carthage/Build/iOS/HotlineIO.framework/KonotorModels.bundle; sourceTree = "<group>"; };
+		B6EE04681E3903DB00013226 /* libFDHotlineSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDHotlineSDK.a; path = Carthage/Build/iOS/HotlineIO.framework/libFDHotlineSDK.a; sourceTree = "<group>"; };
+		B6EE046E1E39044400013226 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B6EE046F1E39044400013226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6EE04701E39044400013226 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6EE04711E39044400013226 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B6EE04721E39044400013226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6EE04731E39044400013226 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B6EE04741E39044400013226 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B6EE04751E39044400013226 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6EE047E1E39046B00013226 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 		E7ED2B611D5213DF00F85992 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +146,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6EE04761E39044400013226 /* AudioToolbox.framework in Frameworks */,
+				B6EE04771E39044400013226 /* AVFoundation.framework in Frameworks */,
+				B6EE04781E39044400013226 /* CoreData.framework in Frameworks */,
+				B6EE04791E39044400013226 /* CoreMedia.framework in Frameworks */,
+				B6EE047A1E39044400013226 /* Foundation.framework in Frameworks */,
+				B6EE047B1E39044400013226 /* ImageIO.framework in Frameworks */,
+				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
+				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
+				B6EE04641E3903D000013226 /* HotlineIO.framework in Frameworks */,
+				B6EE046C1E3903DB00013226 /* libFDHotlineSDK.a in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +188,7 @@
 				0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */,
 				0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */,
 				913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */,
+				B6EE047E1E39046B00013226 /* HelpViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -231,6 +270,15 @@
 		91A430431DD0DF0E004D466E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6EE046D1E3903E000013226 /* HotlineIO */,
+				B6EE046E1E39044400013226 /* AudioToolbox.framework */,
+				B6EE046F1E39044400013226 /* AVFoundation.framework */,
+				B6EE04701E39044400013226 /* CoreData.framework */,
+				B6EE04711E39044400013226 /* CoreMedia.framework */,
+				B6EE04721E39044400013226 /* Foundation.framework */,
+				B6EE04731E39044400013226 /* ImageIO.framework */,
+				B6EE04741E39044400013226 /* Security.framework */,
+				B6EE04751E39044400013226 /* SystemConfiguration.framework */,
 				0FD852A71E15741300DBC9BC /* Down.framework */,
 				9113777E1E001A69008627F1 /* Elm.framework */,
 				91A4303F1DD0DF08004D466E /* AudioBar.framework */,
@@ -254,6 +302,18 @@
 				B6B273711E05948E00771409 /* Info.plist */,
 			);
 			path = EmotionCodeTests;
+			sourceTree = "<group>";
+		};
+		B6EE046D1E3903E000013226 /* HotlineIO */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE04631E3903D000013226 /* HotlineIO.framework */,
+				B6EE04651E3903DB00013226 /* HLLocalization.bundle */,
+				B6EE04661E3903DB00013226 /* HLResources.bundle */,
+				B6EE04671E3903DB00013226 /* KonotorModels.bundle */,
+				B6EE04681E3903DB00013226 /* libFDHotlineSDK.a */,
+			);
+			name = HotlineIO;
 			sourceTree = "<group>";
 		};
 		E7BF74B01D4F607300AF6198 /* Models */ = {
@@ -358,15 +418,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */,
+				B6EE046A1E3903DB00013226 /* HLResources.bundle in Resources */,
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Help.storyboard in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
+				B6EE04691E3903DB00013226 /* HLLocalization.bundle in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
+				B6EE046B1E3903DB00013226 /* KonotorModels.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +518,7 @@
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				911377741DFFF9C6008627F1 /* ChartLayoutModule.swift in Sources */,
+				B6EE047F1E39046B00013226 /* HelpViewController.swift in Sources */,
 				91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */,
 				91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */,
 				B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */,
@@ -662,6 +726,10 @@
 				);
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/HotlineIO.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -679,6 +747,10 @@
 				);
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/HotlineIO.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
