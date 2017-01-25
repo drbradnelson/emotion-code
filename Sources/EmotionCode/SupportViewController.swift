@@ -1,7 +1,7 @@
 import UIKit
 import HotlineIO
 
-final class HelpViewController: UITableViewController {
+final class SupportViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)!

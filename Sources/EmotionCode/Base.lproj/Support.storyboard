@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Help-->
+        <!--Support-->
         <scene sceneID="OY9-9x-09T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1v-0o-LEL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Help" image="Standard/Help" selectedImage="Selected/Help" id="jFO-Qr-akh"/>
+                    <tabBarItem key="tabBarItem" title="Support" image="Standard/Help" selectedImage="Selected/Help" id="jFO-Qr-akh"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jac-GK-A6w">
@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="1361" y="1214"/>
         </scene>
-        <!--Help-->
+        <!--Support-->
         <scene sceneID="GLC-o4-4QL">
             <objects>
-                <tableViewController id="yNA-vL-XKo" customClass="HelpViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="yNA-vL-XKo" customClass="SupportViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="JyS-SW-xbc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
                             <outlet property="delegate" destination="yNA-vL-XKo" id="toZ-1o-3Dd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Help" id="LmA-8J-f5J"/>
+                    <navigationItem key="navigationItem" title="Support" id="LmA-8J-f5J"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAv-Ua-ZXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
