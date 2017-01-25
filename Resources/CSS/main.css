@@ -1,0 +1,7 @@
+html, body { font-family: -apple-system; }
+body { font: -apple-system-body; word-wrap: break-word; }
+h1 { font: -apple-system-title1; }
+h2 { font: -apple-system-title2; }
+h3 { font: -apple-system-title3; }
+p { font: -apple-system-body; }
+code { font: -apple-system-caption2; font-style: italic; display: inline-block; width: 100%; text-align: center; }

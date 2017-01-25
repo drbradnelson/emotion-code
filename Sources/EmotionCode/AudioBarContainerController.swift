@@ -19,15 +19,21 @@ final class AudioBarContainerController: UIViewController {
             view.addSubview(audioBarController.view)
             audioBarController.didMove(toParentViewController: self)
         }
-        do {
-            let url = URL(string: "http://www.healerslibrary.com/audiobook/english/The_Emotion_Code_Ch_1.mp3")!
-            audioBarController.loadURL(url: url)
-        }
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         audioBarController.view.frame = view.bounds
+    }
+
+    func loadChapter(_ chapter: Int) {
+        let path = "http://www.healerslibrary.com/audiobook/english"
+        let file = "The_Emotion_Code_Ch_" + String(chapter + 1)
+        let fileExtension = "mp3"
+        let url = URL(string: path)!
+            .appendingPathComponent(file)
+            .appendingPathExtension(fileExtension)
+        audioBarController.loadURL(url: url)
     }
 
 }
