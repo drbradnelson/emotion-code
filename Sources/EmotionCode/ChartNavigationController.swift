@@ -7,6 +7,7 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+        interactivePopGestureRecognizer!.isEnabled = false
     }
 
     // MARK: Navigation stack

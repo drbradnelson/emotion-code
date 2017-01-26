@@ -22,14 +22,6 @@ final class ChartSectionViewController: UICollectionViewController {
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if transitionCoordinator!.isCancelled {
-            let contentOffset = collectionViewLayout.targetContentOffset(forProposedContentOffset: .zero)
-            collectionView!.setContentOffset(contentOffset, animated: false)
-        }
-    }
-
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()

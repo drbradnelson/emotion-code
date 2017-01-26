@@ -13,14 +13,6 @@ final class ChartEmotionViewController: UICollectionViewController {
         setDescriptionVisibleAlongsideTransition(true)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if transitionCoordinator!.isCancelled {
-            let contentOffset = collectionViewLayout.targetContentOffset(forProposedContentOffset: .zero)
-            collectionView!.setContentOffset(contentOffset, animated: false)
-        }
-    }
-
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
