@@ -14,10 +14,6 @@ import HotlineIO
         let hotlineConfig = HotlineConfig.init(appID: app.id, andAppKey: app.key)
         Hotline.sharedInstance().initWith(hotlineConfig)
 
-        let notificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-        UIApplication.shared.registerUserNotificationSettings(notificationSettings)
-        UIApplication.shared.registerForRemoteNotifications()
-
         if Hotline.sharedInstance().isHotlineNotification(launchOptions) {
             Hotline.sharedInstance().handleRemoteNotification(launchOptions, andAppstate: application.applicationState)
         }
