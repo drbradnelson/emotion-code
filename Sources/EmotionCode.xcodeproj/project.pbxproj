@@ -496,6 +496,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AudioBar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Elm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/HotlineIO.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
