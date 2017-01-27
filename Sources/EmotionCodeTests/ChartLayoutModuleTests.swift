@@ -135,7 +135,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(width: 3),
             viewSize: Size(width: 10)
         ))
-        let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2
+        let expected = 2 + (10 - 2 - 2) + 2
         expect(view?.chartSize.width, expected)
     }
 
@@ -150,7 +150,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(height: 3),
             viewSize: Size(height: 10)
         ))
-        let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2
+        let expected = 2 + (10 - 2 - 2) + 2
         expect(view?.chartSize.height, expected)
     }
 
@@ -176,10 +176,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 2,
             headerSize: Size(width: 3, height: 3)
         ))
-        let expected = Point(
-            x: 2 + 3,
-            y: 2 + 3 - 4
-        )
+        let expected = Point(y: -4)
         expect(view?.proposedContentOffset, expected)
     }
 
@@ -195,10 +192,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(width: 3, height: 3),
             viewSize: Size(width: 10, height: 10)
         ))
-        let expected = Point(
-            x: 2 + 3,
-            y: 2 + 3 + 2 + (10 - 2 - 2) - 4
-        )
+        let expected = Point(y: 2 + (10 - 2 - 2) - 4)
         expect(view?.proposedContentOffset, expected)
     }
 
@@ -214,10 +208,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(width: 3, height: 3),
             viewSize: Size(height: 10)
         ))
-        let expected = Point(
-            x: 2 + 3,
-            y: 2 + 3 + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) - 4
-        )
+        let expected = Point(y: 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) - 4)
         expect(view?.proposedContentOffset, expected)
     }
 
@@ -690,6 +681,14 @@ extension ChartLayoutModule.Model {
         self.itemSpacing = itemSpacing
         self.minViewHeightForCompactLayout = minViewHeightForCompactLayout
         self.viewSize = viewSize
+    }
+}
+
+extension Point {
+    // swiftlint:disable:next variable_name
+    init(x: Int = 0, y: Int = 0) {
+        self.x = x
+        self.y = y
     }
 }
 
