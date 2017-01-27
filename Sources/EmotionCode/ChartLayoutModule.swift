@@ -194,12 +194,24 @@ struct ChartLayoutModule: Elm.Module {
         let rowYPositions = rowsRange.map { row -> Int in
             let cumulativeContentHeight = maximumSectionHeight * row
             let cumulativeSpacingHeight = sectionSpacing.height * row
-            return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + model.contentPadding
+            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + model.contentPadding
+            switch model.flags.mode {
+            case .all:
+                return y
+            case .section, .emotion:
+                return y - model.contentPadding - columnHeaderSize.height
+            }
         }
 
         let columnXPositions = columnsRange.map { column -> Int in
             let xPosition = model.contentPadding + rowHeaderSize.width + sectionSpacing.width
-            return xPosition + column * (itemWidth + sectionSpacing.width)
+            let x = xPosition + column * (itemWidth + sectionSpacing.width)
+            switch model.flags.mode {
+            case .all:
+                return x
+            case .section, .emotion:
+                return x - model.contentPadding - rowHeaderSize.width
+            }
         }
 
         //
@@ -277,7 +289,7 @@ struct ChartLayoutModule: Elm.Module {
             let y: Int
             switch model.flags.mode {
             case .all: y = model.contentPadding
-            case .section, .emotion: y = model.contentPadding - columnHeaderSize.height
+            case .section, .emotion: y = -columnHeaderSize.height
             }
             return Point(x: x, y: y)
         }
@@ -287,7 +299,7 @@ struct ChartLayoutModule: Elm.Module {
             let x: Int
             switch model.flags.mode {
             case .all: x = model.contentPadding
-            case .section, .emotion: x = model.contentPadding - rowHeaderSize.width
+            case .section, .emotion: x = -rowHeaderSize.width
             }
             return Point(x: x, y: y)
         }
