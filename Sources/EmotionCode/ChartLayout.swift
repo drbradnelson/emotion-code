@@ -3,21 +3,9 @@ import Elm
 
 final class ChartLayout: UICollectionViewLayout {
 
-    typealias Module = ChartLayoutModule
-
     static let numberOfColumns = 2
 
-    private var program: Program<ChartLayoutModule>!
-
-    func setProgramModel(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
-        program = ChartLayoutModule.makeProgram(flags: .init(
-            mode: mode,
-            itemsPerSection: itemsPerSection,
-            numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: Int(topContentInset)
-            )
-        )
-    }
+    var program: Program<ChartLayoutModule>!
 
     override func prepare() {
         super.prepare()

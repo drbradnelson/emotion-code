@@ -18,12 +18,12 @@ final class ChartViewController: UICollectionViewController {
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
         let chartLayout = collectionViewLayout as! ChartLayout
-        chartLayout.setProgramModel(
+        chartLayout.program = ChartLayoutModule.makeProgram(flags: .init(
             mode: .all,
             itemsPerSection: itemsPerSection,
-            viewSize: collectionView!.visibleContentSize,
-            topContentInset: collectionView!.contentInset.top
-        )
+            numberOfColumns: ChartLayout.numberOfColumns,
+            topContentInset: Int(collectionView!.contentInset.top)
+        ))
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
