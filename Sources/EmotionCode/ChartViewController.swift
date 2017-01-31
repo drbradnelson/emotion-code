@@ -89,7 +89,7 @@ final class ChartViewController: UICollectionViewController {
     private func prepare(for destination: ChartSectionViewController) {
         let section = collectionView!.indexPathForSelectedItem!.section
         destination.setTitle(forSection: section)
-        destination.section = chart.section(atIndex: section)
+        destination.chart = chart
     }
 
 }

@@ -43,7 +43,9 @@ struct ChartLayoutModule: Elm.Module {
         var viewSize: Size?
     }
 
-    enum Command {}
+    enum Command {
+        case setSection(Int)
+    }
 
     struct View {
         let chartSize: Size
@@ -132,6 +134,7 @@ struct ChartLayoutModule: Elm.Module {
                 newSection = sectionIndex(forRow: newRow, forColumn: currentColumn)
             }
 
+            perform(.setSection(newSection))
             model = Model(
                 flags: Flags(
                     mode: .section(newSection),

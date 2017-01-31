@@ -1,8 +1,9 @@
 import UIKit
+import Elm
 
 final class ChartSectionViewController: UICollectionViewController {
 
-    var section: Chart.Section!
+    var chart: Chart!
 
     // MARK: Title
 
@@ -15,6 +16,12 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     // MARK: View lifecycle
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let chartLayout = collectionViewLayout as! ChartLayout
+        chartLayout.program.setDelegate(self)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -58,8 +65,9 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     private func prepare(for destination: ChartEmotionViewController) {
-        let item = collectionView!.indexPathForSelectedItem!.item
-        destination.setTitle(for: section.emotions[item])
+        let indexPath = collectionView!.indexPathForSelectedItem!
+        let emotion = chart.section(atIndex: indexPath.section).emotions[indexPath.item]
+        destination.setTitle(for: emotion)
     }
 
 }
@@ -70,5 +78,18 @@ extension ChartSectionViewController: ChartPresenter {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection)
     }
+
+}
+
+extension ChartSectionViewController: Elm.Delegate {
+
+    typealias Module = ChartLayoutModule
+
+    func program(_ program: Program<Module>, didEmit command: Module.Command) {
+        guard case let .setSection(section) = command else { return }
+        setTitle(forSection: section)
+    }
+
+    func program(_ program: Program<Module>, didUpdate view: Module.View) {}
 
 }
