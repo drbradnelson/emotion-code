@@ -19,6 +19,7 @@ final class ChartSectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
+        collectionView!.isScrollEnabled = true
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
@@ -32,6 +33,19 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowEmotion", sender: self)
+    }
+
+    // MARK: Scroll view delegate
+
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let chartLayout = collectionViewLayout as! ChartLayout
+        chartLayout.program.dispatch(.updateWithProposedContentOffset(Point(targetContentOffset.pointee)))
+        targetContentOffset.pointee = chartLayout.program.view.proposedContentOffset!.cgPoint
+    }
+
+    override func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        let chartLayout = collectionViewLayout as! ChartLayout
+        scrollView.setContentOffset(chartLayout.program.view.proposedContentOffset!.cgPoint, animated: true)
     }
 
     // MARK: Storyboard segue

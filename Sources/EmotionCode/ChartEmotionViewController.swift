@@ -10,6 +10,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        collectionView!.isScrollEnabled = false
         setDescriptionVisibleAlongsideTransition(true)
     }
 

@@ -15,6 +15,8 @@ final class ChartViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView!.isDirectionalLockEnabled = true
+
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
         let chartLayout = collectionViewLayout as! ChartLayout

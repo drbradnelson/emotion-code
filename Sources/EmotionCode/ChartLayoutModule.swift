@@ -3,6 +3,7 @@ import Elm
 
 // swiftlint:disable mark
 // swiftlint:disable cyclomatic_complexity
+// swiftlint:disable type_body_length
 
 struct ChartLayoutModule: Elm.Module {
 
@@ -21,6 +22,7 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Message {
         case setViewSize(Size)
+        case updateWithProposedContentOffset(Point)
     }
 
     struct Model {
@@ -49,6 +51,7 @@ struct ChartLayoutModule: Elm.Module {
         case missingViewSize
         case invalidNumberOfColums
         case invalidViewSize
+        case invalidMode
     }
 
     static func model(loading flags: Flags) throws -> Model {
@@ -68,6 +71,22 @@ struct ChartLayoutModule: Elm.Module {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
+        case .updateWithProposedContentOffset(let targetContentOffset):
+            guard let viewSize = model.viewSize else {
+                throw Failure.missingViewSize
+            }
+            let currentRowIndex = targetContentOffset.y / viewSize.height
+            let currentColumnIndex = targetContentOffset.x / viewSize.width
+            let section = currentRowIndex * model.flags.numberOfColumns + currentColumnIndex
+            model = Model(
+                flags: Flags(
+                    mode: .section(section),
+                    itemsPerSection: model.flags.itemsPerSection,
+                    numberOfColumns: model.flags.numberOfColumns,
+                    topContentInset: model.flags.topContentInset
+                ),
+                viewSize: model.viewSize
+            )
         }
     }
 
@@ -346,7 +365,6 @@ struct ChartLayoutModule: Elm.Module {
     }
 
 }
-
 
 //
 // MARK: -

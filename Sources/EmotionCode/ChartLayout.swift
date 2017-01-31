@@ -86,8 +86,16 @@ private extension Size {
 
 }
 
-private extension Point {
+extension Point {
+
     var cgPoint: CGPoint {
         return CGPoint(x: CGFloat(x), y: CGFloat(y))
     }
+
+    // swiftlint:disable:next_variable variable_name
+    init(_ point: CGPoint) {
+        x = Int(point.x)
+        y = Int(point.y)
+    }
+
 }
