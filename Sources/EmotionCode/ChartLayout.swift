@@ -92,7 +92,6 @@ extension Point {
         return CGPoint(x: CGFloat(x), y: CGFloat(y))
     }
 
-    // swiftlint:disable:next_variable variable_name
     init(_ point: CGPoint) {
         x = Int(point.x)
         y = Int(point.y)

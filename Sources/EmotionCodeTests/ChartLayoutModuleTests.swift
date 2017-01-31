@@ -76,6 +76,135 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
+    func testUpdateWithHorizontalVelocity1() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 1, y: 0)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithHorizontalVelocity2() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: -1, y: 0)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithHorizontalVelocity3() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 1, y: 0)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 2
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testUpdateWithHorizontalVelocity4() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: -1, y: 0)), model:
+            .init(
+                flags: .init(
+                    mode: .section(1),
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 2
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithVerticalVelocity1() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: 1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithVerticalVelocity2() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+
+    func testUpdateWithVerticalVelocity3() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: 1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testUpdateWithVerticalVelocity4() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(1),
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithHorizontalVerticalVelocity() {
+        let update = expectUpdate(for: .updateWithVelocity(.init(x: 1, y: 1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1, 1, 1],
+                    numberOfColumns: 2
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithVelocityWithInvalidMode() {
+        let failure = expectFailure(for: .updateWithVelocity(.init(x: 0, y: 0)), model:
+            .init(
+                flags: .init(
+                    mode: .all
+                )
+            )
+        )
+        expect(failure, .invalidMode)
+    }
+
     // MARK: View
 
     func testChartWidthForAllMode() {
