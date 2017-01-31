@@ -22,7 +22,14 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Message {
         case setViewSize(Size)
-        case updateWithProposedContentOffset(Point)
+        case updateWithVelocity(Point)
+    }
+
+    enum ScrollDirection {
+        case right
+        case left
+        case down
+        case up
     }
 
     struct Model {
@@ -52,6 +59,7 @@ struct ChartLayoutModule: Elm.Module {
         case invalidNumberOfColums
         case invalidViewSize
         case invalidMode
+        case invalidVelocity
     }
 
     static func model(loading flags: Flags) throws -> Model {
@@ -71,16 +79,62 @@ struct ChartLayoutModule: Elm.Module {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
-        case .updateWithProposedContentOffset(let targetContentOffset):
-            guard let viewSize = model.viewSize else {
-                throw Failure.missingViewSize
+        case .updateWithVelocity(let velocity):
+            guard case .section(let currentSection) = model.flags.mode else {
+                throw Failure.invalidMode
             }
-            let currentRowIndex = targetContentOffset.y / viewSize.height
-            let currentColumnIndex = targetContentOffset.x / viewSize.width
-            let section = currentRowIndex * model.flags.numberOfColumns + currentColumnIndex
+            // Check if user is scrolling in vertical or horizontal only
+            guard !(velocity.x != 0 && velocity.y != 0) && (velocity.x != 0 || velocity.y != 0) else {
+                return
+            }
+            let scrollDirection: ScrollDirection = try! {
+                if velocity.x > 0 {
+                    return .right
+                }
+                if velocity.x < 0 {
+                    return .left
+                }
+                if velocity.y > 0 {
+                    return .down
+                }
+                if velocity.y < 0 {
+                    return .up
+                }
+                throw Failure.invalidVelocity
+            }()
+
+            let currentColumn = (currentSection + model.flags.numberOfColumns) % model.flags.numberOfColumns
+            let currentRow = currentSection / model.flags.numberOfColumns
+
+            func sectionIndex(forRow row: Int, forColumn column: Int) -> Int {
+                return row * model.flags.numberOfColumns + column
+            }
+
+            // Very messy, need to rewrite this
+            let newSection: Int
+            switch scrollDirection {
+            case .right:
+                let newColumn = currentColumn + 1
+                guard newColumn < model.flags.numberOfColumns else { return }
+                newSection = sectionIndex(forRow: currentRow, forColumn: newColumn)
+            case .left:
+                let newColumn = currentColumn - 1
+                guard newColumn >= 0 else { return }
+                newSection = sectionIndex(forRow: currentRow, forColumn: newColumn)
+            case .up:
+                let newRow = currentRow - 1
+                guard newRow >= 0 else { return }
+                newSection = sectionIndex(forRow: newRow, forColumn: currentColumn)
+            case .down:
+                let newRow = currentRow + 1
+                let numberOfRows = Int(round(Double(model.flags.itemsPerSection.count) / Double(model.flags.numberOfColumns)))
+                guard newRow < numberOfRows else { return }
+                newSection = sectionIndex(forRow: newRow, forColumn: currentColumn)
+            }
+
             model = Model(
                 flags: Flags(
-                    mode: .section(section),
+                    mode: .section(newSection),
                     itemsPerSection: model.flags.itemsPerSection,
                     numberOfColumns: model.flags.numberOfColumns,
                     topContentInset: model.flags.topContentInset
@@ -89,6 +143,7 @@ struct ChartLayoutModule: Elm.Module {
             )
         }
     }
+
 
     static func view(presenting model: Model) throws -> View {
 

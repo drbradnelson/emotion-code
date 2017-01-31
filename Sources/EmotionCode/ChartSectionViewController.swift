@@ -39,7 +39,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let chartLayout = collectionViewLayout as! ChartLayout
-        chartLayout.program.dispatch(.updateWithProposedContentOffset(Point(targetContentOffset.pointee)))
+        chartLayout.program.dispatch(.updateWithVelocity(Point(velocity)))
         targetContentOffset.pointee = chartLayout.program.view.proposedContentOffset!.cgPoint
     }
 

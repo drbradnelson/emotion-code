@@ -36,11 +36,6 @@ final class ChartViewController: UICollectionViewController {
         collectionView!.isScrollEnabled = screenIsSmall
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        collectionView!.isScrollEnabled = false
-    }
-
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
