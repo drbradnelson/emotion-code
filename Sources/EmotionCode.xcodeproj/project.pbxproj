@@ -47,7 +47,6 @@
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
-		B6EE04641E3903D000013226 /* HotlineIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04631E3903D000013226 /* HotlineIO.framework */; };
 		B6EE04691E3903DB00013226 /* HLLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04651E3903DB00013226 /* HLLocalization.bundle */; };
 		B6EE046A1E3903DB00013226 /* HLResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04661E3903DB00013226 /* HLResources.bundle */; };
 		B6EE046B1E3903DB00013226 /* KonotorModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04671E3903DB00013226 /* KonotorModels.bundle */; };
@@ -87,7 +86,6 @@
 		0FA620E31D6D3A4A00E48335 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
 		0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterListViewController.swift; sourceTree = "<group>"; };
 		0FCA26481E2951F3001C6E7E /* ConvertBook.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ConvertBook.sh; sourceTree = "<group>"; };
-		0FD852A71E15741300DBC9BC /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/iOS/Down.framework; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
 		0FF8F9E51D5ACD2D008666E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
 				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
-				B6EE04641E3903D000013226 /* HotlineIO.framework in Frameworks */,
 				B6EE046C1E3903DB00013226 /* libFDHotlineSDK.a in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
@@ -279,7 +276,6 @@
 				B6EE04731E39044400013226 /* ImageIO.framework */,
 				B6EE04741E39044400013226 /* Security.framework */,
 				B6EE04751E39044400013226 /* SystemConfiguration.framework */,
-				0FD852A71E15741300DBC9BC /* Down.framework */,
 				9113777E1E001A69008627F1 /* Elm.framework */,
 				91A4303F1DD0DF08004D466E /* AudioBar.framework */,
 			);
@@ -496,7 +492,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AudioBar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Elm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/HotlineIO.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
