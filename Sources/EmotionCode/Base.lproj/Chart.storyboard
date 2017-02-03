@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E144f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,14 +53,24 @@
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
+                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udn-n3-ix2">
+                                            <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="udn-n3-ix2" secondAttribute="trailing" id="0XQ-WD-TB6"/>
                                     <constraint firstAttribute="trailing" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="GTg-Wq-RC4"/>
                                     <constraint firstAttribute="bottom" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="UMY-IJ-IyZ"/>
+                                    <constraint firstItem="udn-n3-ix2" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leading" id="Vcx-v6-cwF"/>
                                     <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="gfg-jA-FPr"/>
+                                    <constraint firstAttribute="bottom" secondItem="udn-n3-ix2" secondAttribute="bottom" id="j1H-nN-VJO"/>
                                     <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leading" id="p6N-Et-uSx"/>
+                                    <constraint firstItem="udn-n3-ix2" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="piK-6q-npO"/>
                                 </constraints>
                                 <size key="customSize" width="151" height="40"/>
                                 <userDefinedRuntimeAttributes>
@@ -72,7 +82,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="titleLabel" destination="YUc-xH-BmN" id="2nz-fn-YEP"/>
+                                    <outlet property="largeTitleLabel" destination="udn-n3-ix2" id="ln6-yQ-GmJ"/>
+                                    <outlet property="smallTitleLabel" destination="YUc-xH-BmN" id="r6f-Qc-lZV"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

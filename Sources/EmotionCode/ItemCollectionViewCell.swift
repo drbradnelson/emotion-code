@@ -2,7 +2,8 @@ import UIKit
 
 final class ItemCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet var smallTitleLabel: UILabel!
+    @IBOutlet var largeTitleLabel: UILabel!
 
     @IBInspectable var oddRowColor: UIColor!
     @IBInspectable var evenRowColor: UIColor!
@@ -10,7 +11,8 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     static let preferredReuseIdentifier = "ItemCell"
 
     func configure(with emotion: Chart.Emotion) {
-        titleLabel.text = emotion.title
+        smallTitleLabel.text = emotion.title
+        largeTitleLabel.text = emotion.title
     }
 
     func setBackgroundColor(for indexPath: IndexPath) {
@@ -20,7 +22,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     }
 
     func setDescriptionVisible(_ visible: Bool) {
-        titleLabel.alpha = visible ? 0 : 1
+        largeTitleLabel.alpha = visible ? 0 : 1
     }
 
 }

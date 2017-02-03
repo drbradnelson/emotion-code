@@ -19,6 +19,7 @@ final class ChartSectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
+        toggleLabelsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
@@ -50,13 +51,23 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    func layoutCellsAlongsideTransition() {
+    private func layoutCellsAlongsideTransition() {
         transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
             collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
         }, completion: nil)
     }
 
-    func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
+    private func toggleLabelsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            collectionView!.visibleCells.forEach { cell in
+                guard let cell = cell as? ItemCollectionViewCell else { return }
+                cell.smallTitleLabel.alpha = 0
+                cell.largeTitleLabel.alpha = 1
+            }
+        }, completion: nil)
+    }
+
+    private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
         transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
             let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
             supplementaryViews.forEach { $0.layoutIfNeeded() }
