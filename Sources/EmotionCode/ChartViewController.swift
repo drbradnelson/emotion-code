@@ -34,6 +34,7 @@ final class ChartViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView!.isScrollEnabled = screenIsSmall
+        collectionView!.bounces = true
     }
 
     // MARK: Collection view data source

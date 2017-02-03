@@ -27,6 +27,7 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
         collectionView!.isScrollEnabled = true
+        collectionView!.bounces = false
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 

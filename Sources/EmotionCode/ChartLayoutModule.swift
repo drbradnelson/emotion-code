@@ -108,36 +108,32 @@ struct ChartLayoutModule: Elm.Module {
             let currentColumn = (currentSection + model.flags.numberOfColumns) % model.flags.numberOfColumns
             let currentRow = currentSection / model.flags.numberOfColumns
 
-            func sectionIndex(forRow row: Int, forColumn column: Int) -> Int {
-                return row * model.flags.numberOfColumns + column
+            func sectionIndex(forRow row: Int, forColumn column: Int) -> Int? {
+                let section = row * model.flags.numberOfColumns + column
+                guard section < model.flags.itemsPerSection.count else { return nil }
+                return section
             }
 
-            // Very messy, need to rewrite this
-            let newSection: Int
+            let newSection: Int?
             switch scrollDirection {
             case .right:
-                let newColumn = currentColumn + 1
-                guard newColumn < model.flags.numberOfColumns else { return }
-                newSection = sectionIndex(forRow: currentRow, forColumn: newColumn)
+                guard currentColumn + 1 < model.flags.numberOfColumns else { return }
+                newSection = sectionIndex(forRow: currentRow, forColumn: currentColumn + 1)
             case .left:
-                let newColumn = currentColumn - 1
-                guard newColumn >= 0 else { return }
-                newSection = sectionIndex(forRow: currentRow, forColumn: newColumn)
+                guard currentColumn - 1 >= 0 else { return }
+                newSection = sectionIndex(forRow: currentRow, forColumn: currentColumn - 1)
             case .up:
-                let newRow = currentRow - 1
-                guard newRow >= 0 else { return }
-                newSection = sectionIndex(forRow: newRow, forColumn: currentColumn)
+                guard currentRow - 1 >= 0 else { return }
+                newSection = sectionIndex(forRow: currentRow - 1, forColumn: currentColumn)
             case .down:
-                let newRow = currentRow + 1
-                let numberOfRows = Int(round(Double(model.flags.itemsPerSection.count) / Double(model.flags.numberOfColumns)))
-                guard newRow < numberOfRows else { return }
-                newSection = sectionIndex(forRow: newRow, forColumn: currentColumn)
+                newSection = sectionIndex(forRow: currentRow + 1, forColumn: currentColumn)
             }
+            guard let section = newSection else { return }
 
-            perform(.setSection(newSection))
+            perform(.setSection(section))
             model = Model(
                 flags: Flags(
-                    mode: .section(newSection),
+                    mode: .section(section),
                     itemsPerSection: model.flags.itemsPerSection,
                     numberOfColumns: model.flags.numberOfColumns,
                     topContentInset: model.flags.topContentInset
