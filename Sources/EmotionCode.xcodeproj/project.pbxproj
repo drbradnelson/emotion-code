@@ -46,7 +46,6 @@
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
-		B6EE04641E3903D000013226 /* HotlineIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04631E3903D000013226 /* HotlineIO.framework */; };
 		B6EE04691E3903DB00013226 /* HLLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04651E3903DB00013226 /* HLLocalization.bundle */; };
 		B6EE046A1E3903DB00013226 /* HLResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04661E3903DB00013226 /* HLResources.bundle */; };
 		B6EE046B1E3903DB00013226 /* KonotorModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04671E3903DB00013226 /* KonotorModels.bundle */; };
@@ -152,7 +151,6 @@
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
 				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
-				B6EE04641E3903D000013226 /* HotlineIO.framework in Frameworks */,
 				B6EE046C1E3903DB00013226 /* libFDHotlineSDK.a in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
@@ -491,7 +489,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AudioBar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Elm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/HotlineIO.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
