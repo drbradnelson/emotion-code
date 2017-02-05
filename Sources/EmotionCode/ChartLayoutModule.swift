@@ -21,8 +21,8 @@ struct ChartLayoutModule: Elm.Module {
     }
 
     enum Message {
-        case setViewSize(Size)
-        case updateWithVelocity(Point)
+        case systemDidSetViewSize(Size)
+        case userDidScroll(withVelocity: Point)
     }
 
     enum ScrollDirection {
@@ -76,12 +76,12 @@ struct ChartLayoutModule: Elm.Module {
 
     static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {
         switch message {
-        case .setViewSize(let size):
+        case .systemDidSetViewSize(let size):
             guard size.width > 0, size.height > 0 else {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
-        case .updateWithVelocity(let velocity):
+        case .userDidScroll(let velocity):
             guard case .section(let currentSection) = model.flags.mode else {
                 throw Failure.invalidMode
             }

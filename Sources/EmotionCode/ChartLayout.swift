@@ -9,7 +9,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     override func prepare() {
         super.prepare()
-        program.dispatch(.setViewSize(Size(collectionView!.visibleContentSize)))
+        program.dispatch(.systemDidSetViewSize(Size(collectionView!.visibleContentSize)))
     }
 
     override var collectionViewContentSize: CGSize {
