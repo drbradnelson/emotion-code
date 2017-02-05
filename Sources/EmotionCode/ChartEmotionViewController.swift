@@ -22,7 +22,7 @@ final class ChartEmotionViewController: UICollectionViewController {
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
             itemCell.setDescriptionVisible(descriptionVisible)
-            }, completion: nil)
+        }, completion: nil)
     }
 
     // MARK: Cell

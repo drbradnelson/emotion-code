@@ -30,6 +30,8 @@ struct ChartLayoutModule: Elm.Module {
         case left
         case down
         case up
+        case crazy
+        case none
     }
 
     struct Model {
@@ -85,11 +87,14 @@ struct ChartLayoutModule: Elm.Module {
             guard case .section(let currentSection) = model.flags.mode else {
                 throw Failure.invalidMode
             }
-            // Check if user is scrolling in vertical or horizontal only
-            guard !(velocity.x != 0 && velocity.y != 0) && (velocity.x != 0 || velocity.y != 0) else {
-                return
-            }
-            let scrollDirection: ScrollDirection = try! {
+            let isScrolling = (
+                horizontally: velocity.x != 0,
+                vertically: velocity.y != 0
+            )
+            let scrollDirection: ScrollDirection = {
+                if velocity.x != 0 && velocity.y != 0 {
+                    return .crazy
+                }
                 if velocity.x > 0 {
                     return .right
                 }
@@ -102,7 +107,7 @@ struct ChartLayoutModule: Elm.Module {
                 if velocity.y < 0 {
                     return .up
                 }
-                throw Failure.invalidVelocity
+                return .none
             }()
 
             let currentColumn = (currentSection + model.flags.numberOfColumns) % model.flags.numberOfColumns
@@ -127,6 +132,8 @@ struct ChartLayoutModule: Elm.Module {
                 newSection = sectionIndex(forRow: currentRow - 1, forColumn: currentColumn)
             case .down:
                 newSection = sectionIndex(forRow: currentRow + 1, forColumn: currentColumn)
+            case .crazy, .none:
+                return
             }
             guard let section = newSection else { return }
 
