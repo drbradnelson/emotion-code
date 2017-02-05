@@ -79,9 +79,9 @@ private extension Size {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
     }
 
-    init(_ size: CGSize) {
-        width = Int(size.width)
-        height = Int(size.height)
+    init(_ cgSize: CGSize) {
+        width = Int(cgSize.width)
+        height = Int(cgSize.height)
     }
 
 }
@@ -92,9 +92,9 @@ extension Point {
         return CGPoint(x: CGFloat(x), y: CGFloat(y))
     }
 
-    init(_ point: CGPoint) {
-        x = Int(point.x)
-        y = Int(point.y)
+    init(_ cgPoint: CGPoint) {
+        x = Int(cgPoint.x)
+        y = Int(cgPoint.y)
     }
 
 }
