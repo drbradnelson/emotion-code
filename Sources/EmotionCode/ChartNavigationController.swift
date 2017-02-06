@@ -29,7 +29,7 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
                     mode: chartLayoutMode,
                     itemsPerSection: itemsPerSection,
                     numberOfColumns: ChartLayout.numberOfColumns,
-                    topContentInset: Int(topContentInset)
+                    topContentInset: .init(topContentInset)
                 ))
             }
         }

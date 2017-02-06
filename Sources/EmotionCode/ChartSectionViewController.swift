@@ -5,6 +5,10 @@ final class ChartSectionViewController: UICollectionViewController {
 
     var chart: Chart!
 
+    private var chartLayout: ChartLayout {
+        return collectionViewLayout as! ChartLayout
+    }
+
     // MARK: Title
 
     func setTitle(forSection section: Int) {
@@ -17,18 +21,17 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: View lifecycle
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let chartLayout = collectionViewLayout as! ChartLayout
-        chartLayout.program.setDelegate(self)
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
-        collectionView!.isScrollEnabled = true
-        collectionView!.bounces = false
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        chartLayout.program.setDelegate(self)
+        collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
+        collectionView!.bounces = false
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -46,13 +49,11 @@ final class ChartSectionViewController: UICollectionViewController {
     // MARK: Scroll view delegate
 
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let chartLayout = collectionViewLayout as! ChartLayout
-        chartLayout.program.dispatch(.userDidScroll(withVelocity: Point(velocity)))
+        chartLayout.program.dispatch(.userDidScroll(withVelocity: .init(velocity)))
         targetContentOffset.pointee = chartLayout.program.view.proposedContentOffset!.cgPoint
     }
 
     override func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        let chartLayout = collectionViewLayout as! ChartLayout
         scrollView.setContentOffset(chartLayout.program.view.proposedContentOffset!.cgPoint, animated: true)
     }
 

@@ -4,18 +4,14 @@ final class ChartViewController: UICollectionViewController {
 
     private let chart = ChartController().chart
 
-    private let screenIsSmall: Bool = {
-        let screenSize = UIScreen.main.bounds.size
-        let iphone6ScreenHeight: CGFloat = 667
-        return screenSize.height < iphone6ScreenHeight
-    }()
+    private var chartLayout: ChartLayout {
+        return collectionViewLayout as! ChartLayout
+    }
 
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        collectionView!.isDirectionalLockEnabled = true
 
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
@@ -24,16 +20,16 @@ final class ChartViewController: UICollectionViewController {
             mode: .all,
             itemsPerSection: itemsPerSection,
             numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: Int(collectionView!.contentInset.top)
+            topContentInset: .init(collectionView!.contentInset.top)
         ))
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        collectionView!.isScrollEnabled = screenIsSmall
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
         collectionView!.bounces = true
     }
 

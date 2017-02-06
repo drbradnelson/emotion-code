@@ -55,6 +55,7 @@ struct ChartLayoutModule: Elm.Module {
         let itemFrames: [[Rect]]
         let columnHeaderFrames: [Rect]
         let rowHeaderFrames: [Rect]
+        let isScrollEnabled: Bool
     }
 
     enum Failure: Error {
@@ -92,7 +93,7 @@ struct ChartLayoutModule: Elm.Module {
                 vertically: velocity.y != 0
             )
             let scrollDirection: ScrollDirection = {
-                if velocity.x != 0 && velocity.y != 0 {
+                if isScrolling.horizontally && isScrolling.vertically {
                     return .crazy
                 }
                 if velocity.x > 0 {
@@ -415,12 +416,29 @@ struct ChartLayoutModule: Elm.Module {
             return Size(width: width, height: height)
         }()
 
+        //
+        // MARK: -
+        // MARK: Is scroll enabled
+        //
+
+        let isScrollEnabled: Bool = {
+            switch model.flags.mode {
+            case .all:
+                return viewSize.height < model.minViewHeightForCompactLayout
+            case .section:
+                return true
+            case .emotion:
+                return false
+            }
+        }()
+
         return View(
             chartSize: chartSize,
             proposedContentOffset: proposedContentOffset,
             itemFrames: itemFrames,
             columnHeaderFrames: columnHeaderFrames,
-            rowHeaderFrames: rowHeaderFrames
+            rowHeaderFrames: rowHeaderFrames,
+            isScrollEnabled: isScrollEnabled
         )
 
     }
