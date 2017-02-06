@@ -46,38 +46,38 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
     // MARK: Update
 
-    func testSetViewSize1() {
-        let update = expectUpdate(for: .setViewSize(.init(width: 1, height: 2)), model: .init(viewSize: .zero))
+    func testSystemDidSetViewSize1() {
+        let update = expectUpdate(for: .systemDidSetViewSize(.init(width: 1, height: 2)), model: .init(viewSize: .zero))
         expect(update?.model.viewSize, Size(width: 1, height: 2))
     }
 
-    func testSetViewSize2() {
-        let update = expectUpdate(for: .setViewSize(.init(width: 3, height: 4)), model: .init(viewSize: .zero))
+    func testSystemDidSetViewSize2() {
+        let update = expectUpdate(for: .systemDidSetViewSize(.init(width: 3, height: 4)), model: .init(viewSize: .zero))
         expect(update?.model.viewSize, Size(width: 3, height: 4))
     }
 
-    func testSetViewSizeInvalid1() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 0, height: 10)), model: .init())
+    func testSystemDidSetViewSizeInvalid1() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(height: 10)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid2() {
-        let failure = expectFailure(for: .setViewSize(.init(width: -1, height: 10)), model: .init())
+    func testSystemDidSetViewSizeInvalid2() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: -1, height: 10)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid3() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: 0)), model: .init())
+    func testSystemDidSetViewSizeInvalid3() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 10)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid4() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: -1)), model: .init())
+    func testSystemDidSetViewSizeInvalid4() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 10, height: -1)), model: .init())
         expect(failure, .invalidViewSize)
     }
 
     func testUpdateWithHorizontalVelocity1() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 1, y: 0)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -90,7 +90,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithHorizontalVelocity2() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: -1, y: 0)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -103,7 +103,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithHorizontalVelocity3() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 1, y: 0)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -116,7 +116,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithHorizontalVelocity4() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: -1, y: 0)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
             .init(
                 flags: .init(
                     mode: .section(1),
@@ -129,7 +129,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithVerticalVelocity1() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: 1)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -142,7 +142,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithVerticalVelocity2() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: -1)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -156,7 +156,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
 
     func testUpdateWithVerticalVelocity3() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: 1)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -169,7 +169,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithVerticalVelocity4() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 0, y: -1)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
             .init(
                 flags: .init(
                     mode: .section(1),
@@ -182,7 +182,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testUpdateWithHorizontalVerticalVelocity() {
-        let update = expectUpdate(for: .updateWithVelocity(.init(x: 1, y: 1)), model:
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1, y: 1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
@@ -194,11 +194,22 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithVelocityWithInvalidMode() {
-        let failure = expectFailure(for: .updateWithVelocity(.init(x: 0, y: 0)), model:
+    func testuserDidScrollWithInvalidMode1() {
+        let failure = expectFailure(for: .userDidScroll(withVelocity: .init()), model:
             .init(
                 flags: .init(
                     mode: .all
+                )
+            )
+        )
+        expect(failure, .invalidMode)
+    }
+
+    func testuserDidScrollWithInvalidMode2() {
+        let failure = expectFailure(for: .userDidScroll(withVelocity: .init()), model:
+            .init(
+                flags: .init(
+                    mode: .emotion(IndexPath.arbitrary)
                 )
             )
         )
