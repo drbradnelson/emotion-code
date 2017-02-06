@@ -76,7 +76,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
-    func testUpdateWithHorizontalVelocity1() {
+    func testUpdateWithRightScrollDirection1() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
             .init(
                 flags: .init(
@@ -89,20 +89,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithHorizontalVelocity2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1],
-                    numberOfColumns: 1
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-    func testUpdateWithHorizontalVelocity3() {
+    func testUpdateWithRightScrollDirection2() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
             .init(
                 flags: .init(
@@ -115,7 +102,33 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithHorizontalVelocity4() {
+    func testUpdateWithRightScrollDirection3() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(1),
+                    itemsPerSection: [1, 1, 1],
+                    numberOfColumns: 3
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(2))
+    }
+
+    func testUpdateWithLeftScrollDirection1() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithLeftScrollDirection2() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
             .init(
                 flags: .init(
@@ -128,7 +141,20 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithVerticalVelocity1() {
+    func testUpdateWithLeftScrollDirection3() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(2),
+                    itemsPerSection: [1, 1, 1],
+                    numberOfColumns: 3
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testUpdateWithDownScrollDirection1() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
             .init(
                 flags: .init(
@@ -141,21 +167,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithVerticalVelocity2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1],
-                    numberOfColumns: 1
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-
-    func testUpdateWithVerticalVelocity3() {
+    func testUpdateWithDownScrollDirection2() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
             .init(
                 flags: .init(
@@ -168,7 +180,33 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithVerticalVelocity4() {
+    func testUpdateWithDownScrollDirection3() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(1),
+                    itemsPerSection: [1, 1, 1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(2))
+    }
+
+    func testUpdateWithUpScrollDirection1() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testUpdateWithUpScrollDirection2() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
             .init(
                 flags: .init(
@@ -181,12 +219,25 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithHorizontalVerticalVelocity() {
+    func testUpdateWithUpScrollDirection3() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(2),
+                    itemsPerSection: [1, 1, 1],
+                    numberOfColumns: 1
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testUpdateWithCrazyScrollDirection1() {
         let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1, y: 1)), model:
             .init(
                 flags: .init(
                     mode: .section(0),
-                    itemsPerSection: [1, 1, 1],
+                    itemsPerSection: [1, 1, 1, 1],
                     numberOfColumns: 2
                 )
             )
@@ -194,7 +245,72 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testuserDidScrollWithInvalidMode1() {
+    func testUpdateWithCrazyScrollDirection2() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1, y: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(3),
+                    itemsPerSection: [1, 1, 1, 1],
+                    numberOfColumns: 2
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(3))
+    }
+
+    func testUpdateWithCrazyScrollDirection3() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1, y: -1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(2),
+                    itemsPerSection: [1, 1, 1, 1],
+                    numberOfColumns: 2
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(2))
+    }
+
+    func testUpdateWithCrazyScrollDirection4() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1, y: 1)), model:
+            .init(
+                flags: .init(
+                    mode: .section(1),
+                    itemsPerSection: [1, 1, 1, 1],
+                    numberOfColumns: 2
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testUpdateWithNoneScrollDirection1() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init()), model:
+            .init(
+                flags: .init(
+                    mode: .section(3),
+                    itemsPerSection: Array(repeating: 1, count: 9),
+                    numberOfColumns: 3
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(3))
+    }
+
+    func testUpdateWithNoneScrollDirection2() {
+        let update = expectUpdate(for: .userDidScroll(withVelocity: .init()), model:
+            .init(
+                flags: .init(
+                    mode: .section(5),
+                    itemsPerSection: Array(repeating: 1, count: 11),
+                    numberOfColumns: 4
+                )
+            )
+        )
+        expect(update?.model.flags.mode, .section(5))
+    }
+
+    func testUserDidScrollWithInvalidMode1() {
         let failure = expectFailure(for: .userDidScroll(withVelocity: .init()), model:
             .init(
                 flags: .init(
@@ -205,7 +321,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidMode)
     }
 
-    func testuserDidScrollWithInvalidMode2() {
+    func testUserDidScrollWithInvalidMode2() {
         let failure = expectFailure(for: .userDidScroll(withVelocity: .init()), model:
             .init(
                 flags: .init(

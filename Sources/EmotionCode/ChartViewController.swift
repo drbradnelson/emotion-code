@@ -15,7 +15,6 @@ final class ChartViewController: UICollectionViewController {
 
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
-        let chartLayout = collectionViewLayout as! ChartLayout
         chartLayout.program = ChartLayoutModule.makeProgram(flags: .init(
             mode: .all,
             itemsPerSection: itemsPerSection,
