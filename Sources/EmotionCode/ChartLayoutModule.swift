@@ -22,7 +22,7 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Message {
         case systemDidSetViewSize(Size)
-        case userDidScroll(withVelocity: Point)
+        case scrollViewWillEndDragging(at: Point, velocity: Point)
     }
 
     enum ScrollDirection {
@@ -84,32 +84,58 @@ struct ChartLayoutModule: Elm.Module {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
-        case .userDidScroll(let velocity):
+        case .scrollViewWillEndDragging(let contentOffset, let velocity):
             guard case .section(let currentSection) = model.flags.mode else {
                 throw Failure.invalidMode
             }
-            let isScrolling = (
-                horizontally: velocity.x != 0,
-                vertically: velocity.y != 0
-            )
+            guard let viewSize = model.viewSize else {
+                throw Failure.missingViewSize
+            }
+            let proposedContentOffset = try! view(presenting: model).proposedContentOffset!
+
             let scrollDirection: ScrollDirection = {
+                let isScrolling = (
+                    horizontally: contentOffset.x != proposedContentOffset.x,
+                    vertically: contentOffset.y != proposedContentOffset.y
+                )
                 if isScrolling.horizontally && isScrolling.vertically {
                     return .crazy
                 }
-                if velocity.x > 0 {
+                if contentOffset.x > proposedContentOffset.x {
                     return .right
                 }
-                if velocity.x < 0 {
+                if contentOffset.x < proposedContentOffset.x {
                     return .left
                 }
-                if velocity.y > 0 {
+                if contentOffset.y > proposedContentOffset.y {
                     return .down
                 }
-                if velocity.y < 0 {
+                if contentOffset.y < proposedContentOffset.y {
                     return .up
                 }
                 return .none
             }()
+
+            let overHalf: Bool
+            let canScroll: Bool
+            switch scrollDirection {
+            case .right:
+                canScroll = velocity.x > 0
+                overHalf = contentOffset.x >= (proposedContentOffset.x + viewSize.width / 2)
+            case .left:
+                canScroll = velocity.x < 0
+                overHalf = contentOffset.x <= (proposedContentOffset.x - viewSize.width / 2)
+            case .down:
+                canScroll = velocity.y > 0
+                overHalf = contentOffset.y >= (proposedContentOffset.y + viewSize.height / 2)
+            case .up:
+                canScroll = velocity.y < 0
+                overHalf = contentOffset.y <= (proposedContentOffset.y - viewSize.height / 2)
+            case .crazy, .none:
+                canScroll = false
+                overHalf = false
+            }
+            guard canScroll || overHalf && (velocity == .zero) else { return }
 
             let currentColumn = (currentSection + model.flags.numberOfColumns) % model.flags.numberOfColumns
             let currentRow = currentSection / model.flags.numberOfColumns
@@ -182,7 +208,7 @@ struct ChartLayoutModule: Elm.Module {
         let sectionSpacing: Size = {
             switch model.flags.mode {
             case .all: return model.sectionSpacing
-            case .section, .emotion: return Size(width: model.contentPadding, height: model.contentPadding)
+            case .section, .emotion: return .init(width: model.contentPadding * 2, height: model.contentPadding * 2)
             }
         }()
 
@@ -280,7 +306,7 @@ struct ChartLayoutModule: Elm.Module {
             case .all:
                 return y
             case .section, .emotion:
-                return y - model.contentPadding - columnHeaderSize.height
+                return y - sectionSpacing.height - columnHeaderSize.height
             }
         }
 
@@ -291,7 +317,7 @@ struct ChartLayoutModule: Elm.Module {
             case .all:
                 return x
             case .section, .emotion:
-                return x - model.contentPadding - rowHeaderSize.width
+                return x - sectionSpacing.width - rowHeaderSize.width
             }
         }
 
@@ -458,6 +484,14 @@ public struct Point {
     // swiftlint:disable:next variable_name
     var y: Int
 
+    static var zero: Point {
+        return .init(x: 0, y: 0)
+    }
+
+    static func == (lhs: Point, rhs: Point) -> Bool {
+        return String(describing: lhs) == String(describing: rhs)
+    }
+
 }
 
 public struct Size {
@@ -466,7 +500,7 @@ public struct Size {
     var height: Int
 
     static var zero: Size {
-        return Size(width: 0, height: 0)
+        return .init(width: 0, height: 0)
     }
 
 }

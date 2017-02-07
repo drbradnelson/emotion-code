@@ -76,260 +76,440 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
-    func testUpdateWithRightScrollDirection1() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1],
-                    numberOfColumns: 1
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-    func testUpdateWithRightScrollDirection2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1, 1],
-                    numberOfColumns: 2
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndPositiveVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1), velocity: .init(x: 1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithRightScrollDirection3() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(1),
-                    itemsPerSection: [1, 1, 1],
-                    numberOfColumns: 3
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(2))
-    }
-
-    func testUpdateWithLeftScrollDirection1() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1],
-                    numberOfColumns: 1
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-    func testUpdateWithLeftScrollDirection2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(1),
-                    itemsPerSection: [1, 1],
-                    numberOfColumns: 2
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-    func testUpdateWithLeftScrollDirection3() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(2),
-                    itemsPerSection: [1, 1, 1],
-                    numberOfColumns: 3
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndPositiveVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11), velocity: .init(x: 1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithDownScrollDirection1() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1],
-                    numberOfColumns: 1
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndNegativeVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1), velocity: .init(x: -1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithDownScrollDirection2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1, 1],
-                    numberOfColumns: 1
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndNegativeVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11), velocity: .init(x: -1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithDownScrollDirection3() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(1),
-                    itemsPerSection: [1, 1, 1],
-                    numberOfColumns: 1
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(2))
-    }
-
-    func testUpdateWithUpScrollDirection1() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1],
-                    numberOfColumns: 1
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUpdateWithUpScrollDirection2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(1),
-                    itemsPerSection: [1, 1],
-                    numberOfColumns: 1
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-    func testUpdateWithUpScrollDirection3() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(y: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(2),
-                    itemsPerSection: [1, 1, 1],
-                    numberOfColumns: 1
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithCrazyScrollDirection1() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1, y: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(0),
-                    itemsPerSection: [1, 1, 1, 1],
-                    numberOfColumns: 2
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(0))
-    }
-
-    func testUpdateWithCrazyScrollDirection2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1, y: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(3),
-                    itemsPerSection: [1, 1, 1, 1],
-                    numberOfColumns: 2
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(3))
-    }
-
-    func testUpdateWithCrazyScrollDirection3() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: 1, y: -1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(2),
-                    itemsPerSection: [1, 1, 1, 1],
-                    numberOfColumns: 2
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(2))
-    }
-
-    func testUpdateWithCrazyScrollDirection4() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init(x: -1, y: 1)), model:
-            .init(
-                flags: .init(
-                    mode: .section(1),
-                    itemsPerSection: [1, 1, 1, 1],
-                    numberOfColumns: 2
-                )
-            )
-        )
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocityAndOverHalf1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 5), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithNoneScrollDirection1() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init()), model:
-            .init(
-                flags: .init(
-                    mode: .section(3),
-                    itemsPerSection: Array(repeating: 1, count: 9),
-                    numberOfColumns: 3
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(3))
+    func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocityAndOverHalf2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 15), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
     }
 
-    func testUpdateWithNoneScrollDirection2() {
-        let update = expectUpdate(for: .userDidScroll(withVelocity: .init()), model:
-            .init(
-                flags: .init(
-                    mode: .section(5),
-                    itemsPerSection: Array(repeating: 1, count: 11),
-                    numberOfColumns: 4
-                )
-            )
-        )
-        expect(update?.model.flags.mode, .section(5))
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndNegativeVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -1), velocity: .init(x: -1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
     }
 
-    func testUserDidScrollWithInvalidMode1() {
-        let failure = expectFailure(for: .userDidScroll(withVelocity: .init()), model:
-            .init(
-                flags: .init(
-                    mode: .all
-                )
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndNegativeVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9), velocity: .init(x: -1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndPositiveVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -1), velocity: .init(x: 1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndPositiveVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9), velocity: .init(x: 1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -1), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocityAndOverHalf1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -5), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocityAndOverHalf2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 5), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndPositiveVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 1), velocity: .init(y: 1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndPositiveVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 11), velocity: .init(y: 1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndNegativeVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 1), velocity: .init(y: -1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndNegativeVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 11), velocity: .init(y: -1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 1), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 11), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocityAndOverHalf1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 5), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocityAndOverHalf2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 15), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndNegativeVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -1), velocity: .init(y: -1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndNegativeVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init(y: -1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndPositiveVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -1), velocity: .init(y: 1)), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndPositiveVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init(y: 1)), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocity1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -1), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocity2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(1))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocityAndOverHalf1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -5), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocityAndOverHalf2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 5), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(1),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: .init(height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithCrazyScrollDirection() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1, y: 1), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(4),
+                itemsPerSection: .init(repeating: 1, count: 9),
+                numberOfColumns: 3
+            ),
+            viewSize: .init(width: 10, height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(4))
+    }
+
+    func testScrollViewWillEndDraggingWithNoneScrollDirection() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1, 1],
+                numberOfColumns: 2
+            ),
+            viewSize: .init(width: 10, height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(0))
+    }
+
+    func testScrollViewWillEndDraggingWithInvalidMode1() {
+        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .all
             )
-        )
+        ))
         expect(failure, .invalidMode)
     }
 
-    func testUserDidScrollWithInvalidMode2() {
-        let failure = expectFailure(for: .userDidScroll(withVelocity: .init()), model:
-            .init(
-                flags: .init(
-                    mode: .emotion(IndexPath.arbitrary)
-                )
+    func testScrollViewWillEndDraggingWithInvalidMode2() {
+        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .emotion(.arbitrary)
             )
-        )
+        ))
         expect(failure, .invalidMode)
+    }
+
+    func testScrollViewWillEndDraggingWithMissingViewSize() {
+        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(0)
+            ),
+            viewSize: nil
+        ))
+        expect(failure, .missingViewSize)
     }
 
     // MARK: View
@@ -445,10 +625,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 topContentInset: 4
             ),
             contentPadding: 2,
-            headerSize: Size(width: 3, height: 3),
             viewSize: Size(width: 10, height: 10)
         ))
-        let expected = Point(y: 2 + (10 - 2 - 2) - 4)
+        let expected = Point(y: -4 + 10)
         expect(view?.proposedContentOffset, expected)
     }
 
@@ -461,10 +640,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 topContentInset: 4
             ),
             contentPadding: 2,
-            headerSize: Size(width: 3, height: 3),
             viewSize: Size(height: 10)
         ))
-        let expected = Point(y: 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) - 4)
+        let expected = Point(y: -4 + 10 + 10 + 10)
         expect(view?.proposedContentOffset, expected)
     }
 
