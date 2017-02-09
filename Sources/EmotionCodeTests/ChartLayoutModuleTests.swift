@@ -180,7 +180,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 3
             ),
             viewSize: .init(width: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -252,7 +252,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 3
             ),
             viewSize: .init(width: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
@@ -285,10 +285,10 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
-                numberOfColumns: 2
+                numberOfColumns: 3
             ),
             viewSize: .init(width: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -324,7 +324,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 3
             ),
             viewSize: .init(width: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -360,7 +360,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 3
             ),
             viewSize: .init(width: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
@@ -396,7 +396,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -432,7 +432,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -468,7 +468,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -504,7 +504,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -540,7 +540,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
@@ -576,7 +576,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(2))
     }
 
@@ -612,7 +612,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
@@ -648,12 +648,48 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
-            ))
+        ))
         expect(update?.model.flags.mode, .section(1))
     }
 
-    func testScrollViewWillEndDraggingWithCrazyScrollDirection() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1, y: 1), velocity: .init()), model: .init(
+    func testScrollViewWillEndDraggingWithCrazyScrollDirection1() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11, y: 11), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(4),
+                itemsPerSection: .init(repeating: 1, count: 9),
+                numberOfColumns: 3
+            ),
+            viewSize: .init(width: 10, height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(4))
+    }
+
+    func testScrollViewWillEndDraggingWithCrazyScrollDirection2() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9, y: 11), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(4),
+                itemsPerSection: .init(repeating: 1, count: 9),
+                numberOfColumns: 3
+            ),
+            viewSize: .init(width: 10, height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(4))
+    }
+
+    func testScrollViewWillEndDraggingWithCrazyScrollDirection3() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11, y: 9), velocity: .init()), model: .init(
+            flags: .init(
+                mode: .section(4),
+                itemsPerSection: .init(repeating: 1, count: 9),
+                numberOfColumns: 3
+            ),
+            viewSize: .init(width: 10, height: 10)
+        ))
+        expect(update?.model.flags.mode, .section(4))
+    }
+
+    func testScrollViewWillEndDraggingWithCrazyScrollDirection4() {
+        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9, y: 9), velocity: .init()), model: .init(
             flags: .init(
                 mode: .section(4),
                 itemsPerSection: .init(repeating: 1, count: 9),
