@@ -116,26 +116,26 @@ struct ChartLayoutModule: Elm.Module {
                 return .none
             }()
 
-            let overHalf: Bool
-            let canScroll: Bool
+            let isOverHalf: Bool
+            let velocityIsCorrect: Bool
             switch scrollDirection {
             case .right:
-                canScroll = velocity.x > 0
-                overHalf = contentOffset.x >= (proposedContentOffset.x + viewSize.width / 2)
+                velocityIsCorrect = velocity.x > 0
+                isOverHalf = contentOffset.x >= (proposedContentOffset.x + viewSize.width / 2)
             case .left:
-                canScroll = velocity.x < 0
-                overHalf = contentOffset.x <= (proposedContentOffset.x - viewSize.width / 2)
+                velocityIsCorrect = velocity.x < 0
+                isOverHalf = contentOffset.x <= (proposedContentOffset.x - viewSize.width / 2)
             case .down:
-                canScroll = velocity.y > 0
-                overHalf = contentOffset.y >= (proposedContentOffset.y + viewSize.height / 2)
+                velocityIsCorrect = velocity.y > 0
+                isOverHalf = contentOffset.y >= (proposedContentOffset.y + viewSize.height / 2)
             case .up:
-                canScroll = velocity.y < 0
-                overHalf = contentOffset.y <= (proposedContentOffset.y - viewSize.height / 2)
+                velocityIsCorrect = velocity.y < 0
+                isOverHalf = contentOffset.y <= (proposedContentOffset.y - viewSize.height / 2)
             case .crazy, .none:
-                canScroll = false
-                overHalf = false
+                velocityIsCorrect = false
+                isOverHalf = false
             }
-            guard canScroll || overHalf && (velocity == .zero) else { return }
+            guard velocityIsCorrect || isOverHalf && (velocity == .zero) else { return }
 
             let currentColumn = (currentSection + model.flags.numberOfColumns) % model.flags.numberOfColumns
             let currentRow = currentSection / model.flags.numberOfColumns
