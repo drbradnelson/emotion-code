@@ -22,7 +22,7 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Message {
         case systemDidSetViewSize(Size)
-        case scrollViewWillEndDragging(at: Point, velocity: Point)
+        case scrollViewWillEndDragging(at: Point, velocity: Point, currentContentOffset: Point)
     }
 
     enum ScrollDirection {
@@ -84,33 +84,32 @@ struct ChartLayoutModule: Elm.Module {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
-        case .scrollViewWillEndDragging(let contentOffset, let velocity):
+        case .scrollViewWillEndDragging(let contentOffset, let velocity, let currentContentOffset):
             guard case .section(let currentSection) = model.flags.mode else {
                 throw Failure.invalidMode
             }
             guard let viewSize = model.viewSize else {
                 throw Failure.missingViewSize
             }
-            let proposedContentOffset = try! view(presenting: model).proposedContentOffset!
 
             let scrollDirection: ScrollDirection = {
                 let isScrolling = (
-                    horizontally: contentOffset.x != proposedContentOffset.x,
-                    vertically: contentOffset.y != proposedContentOffset.y
+                    horizontally: contentOffset.x != currentContentOffset.x,
+                    vertically: contentOffset.y != currentContentOffset.y
                 )
                 if isScrolling.horizontally && isScrolling.vertically {
                     return .crazy
                 }
-                if contentOffset.x > proposedContentOffset.x {
+                if contentOffset.x > currentContentOffset.x {
                     return .right
                 }
-                if contentOffset.x < proposedContentOffset.x {
+                if contentOffset.x < currentContentOffset.x {
                     return .left
                 }
-                if contentOffset.y > proposedContentOffset.y {
+                if contentOffset.y > currentContentOffset.y {
                     return .down
                 }
-                if contentOffset.y < proposedContentOffset.y {
+                if contentOffset.y < currentContentOffset.y {
                     return .up
                 }
                 return .none
@@ -121,16 +120,16 @@ struct ChartLayoutModule: Elm.Module {
             switch scrollDirection {
             case .right:
                 velocityIsCorrect = velocity.x > 0
-                isOverHalf = contentOffset.x >= (proposedContentOffset.x + viewSize.width / 2)
+                isOverHalf = contentOffset.x >= (currentContentOffset.x + viewSize.width / 2)
             case .left:
                 velocityIsCorrect = velocity.x < 0
-                isOverHalf = contentOffset.x <= (proposedContentOffset.x - viewSize.width / 2)
+                isOverHalf = contentOffset.x <= (currentContentOffset.x - viewSize.width / 2)
             case .down:
                 velocityIsCorrect = velocity.y > 0
-                isOverHalf = contentOffset.y >= (proposedContentOffset.y + viewSize.height / 2)
+                isOverHalf = contentOffset.y >= (currentContentOffset.y + viewSize.height / 2)
             case .up:
                 velocityIsCorrect = velocity.y < 0
-                isOverHalf = contentOffset.y <= (proposedContentOffset.y - viewSize.height / 2)
+                isOverHalf = contentOffset.y <= (currentContentOffset.y - viewSize.height / 2)
             case .crazy, .none:
                 velocityIsCorrect = false
                 isOverHalf = false

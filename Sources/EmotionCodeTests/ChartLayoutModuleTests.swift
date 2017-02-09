@@ -77,7 +77,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndPositiveVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1), velocity: .init(x: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 1),
+            velocity: .init(x: 1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -89,7 +93,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndPositiveVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11), velocity: .init(x: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 11),
+            velocity: .init(x: 1),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -101,7 +109,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndPositiveVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 21), velocity: .init(x: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 21),
+            velocity: .init(x: 1),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -113,7 +125,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndNegativeVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1), velocity: .init(x: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 1),
+            velocity: .init(x: -1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -125,7 +141,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndNegativeVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11), velocity: .init(x: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 11),
+            velocity: .init(x: -1),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -137,7 +157,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndNegativeVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 21), velocity: .init(x: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 21),
+            velocity: .init(x: -1),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -149,7 +173,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 1), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 1),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -161,7 +189,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 11),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -173,7 +205,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 21), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 21),
+            velocity: .init(),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -185,7 +221,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocityAndOverHalf1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 5), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 5),
+            velocity: .init(),
+            currentContentOffset: .init(x: 0)
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -197,7 +237,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocityAndOverHalf2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 15), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 15),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -209,7 +253,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithRightScrollDirectionAndZeroVelocityAndOverHalf3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 25), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 25),
+            velocity: .init(),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -221,7 +269,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndNegativeVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -1), velocity: .init(x: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: -1),
+            velocity: .init(x: -1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -233,7 +285,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndNegativeVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9), velocity: .init(x: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 9),
+            velocity: .init(x: -1),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -245,7 +301,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndNegativeVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 19), velocity: .init(x: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 19),
+            velocity: .init(x: -1),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -257,7 +317,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndPositiveVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -1), velocity: .init(x: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: -1),
+            velocity: .init(x: 1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -269,7 +333,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndPositiveVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9), velocity: .init(x: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 9),
+            velocity: .init(x: 1),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -281,7 +349,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndPositiveVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 19), velocity: .init(x: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 19),
+            velocity: .init(x: 1),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -293,7 +365,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -1), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: -1),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -305,7 +381,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 9),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -317,7 +397,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 19), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 19),
+            velocity: .init(),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -329,7 +413,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocityAndOverHalf1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: -5), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: -5),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -341,7 +429,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocityAndOverHalf2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 5), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 5),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -353,7 +445,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithLeftScrollDirectionAndZeroVelocityAndOverHalf3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 15), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 15),
+            velocity: .init(),
+            currentContentOffset: .init(x: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -365,7 +461,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndPositiveVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 1), velocity: .init(y: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 1),
+            velocity: .init(y: 1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -377,7 +477,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndPositiveVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 11), velocity: .init(y: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 11),
+            velocity: .init(y: 1),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -389,7 +493,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndPositiveVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 21), velocity: .init(y: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 21),
+            velocity: .init(y: 1),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -401,7 +509,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndNegativeVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 1), velocity: .init(y: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 1),
+            velocity: .init(y: -1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -413,7 +525,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndNegativeVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 11), velocity: .init(y: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 11),
+            velocity: .init(y: -1),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -425,7 +541,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndNegativeVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 21), velocity: .init(y: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 21),
+            velocity: .init(y: -1),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -437,7 +557,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 1), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 1),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -449,7 +573,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 11), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 11),
+            velocity: .init(),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -461,7 +589,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 21), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 21),
+            velocity: .init(),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -473,7 +605,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocityAndOverHalf1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 5), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 5),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -485,7 +621,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocityAndOverHalf2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 15), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 15),
+            velocity: .init(),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -497,7 +637,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithDownScrollDirectionAndZeroVelocityAndOverHalf3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 25), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 25),
+            velocity: .init(),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -509,7 +653,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndNegativeVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -1), velocity: .init(y: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: -1),
+            velocity: .init(y: -1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -521,7 +669,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndNegativeVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init(y: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 9),
+            velocity: .init(y: -1),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -533,7 +685,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndNegativeVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 19), velocity: .init(y: -1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 19),
+            velocity: .init(y: -1),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -545,7 +701,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndPositiveVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -1), velocity: .init(y: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: -1),
+            velocity: .init(y: 1),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -557,7 +717,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndPositiveVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init(y: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 9),
+            velocity: .init(y: 1),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -569,7 +733,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndPositiveVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 19), velocity: .init(y: 1)), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 19),
+            velocity: .init(y: 1),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -581,7 +749,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocity1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -1), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: -1),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -593,7 +765,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocity2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 9),
+            velocity: .init(),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -605,19 +781,27 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocity3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 9), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 19),
+            velocity: .init(),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(2),
                 itemsPerSection: [1, 1, 1],
                 numberOfColumns: 1
             ),
             viewSize: .init(height: 10)
         ))
-        expect(update?.model.flags.mode, .section(1))
+        expect(update?.model.flags.mode, .section(2))
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocityAndOverHalf1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: -5), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: -5),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -629,7 +813,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocityAndOverHalf2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 5), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 5),
+            velocity: .init(),
+            currentContentOffset: .init(y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(1),
                 itemsPerSection: [1, 1, 1],
@@ -641,7 +829,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithUpScrollDirectionAndZeroVelocityAndOverHalf3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(y: 15), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(y: 15),
+            velocity: .init(),
+            currentContentOffset: .init(y: 20)
+        ), model: .init(
             flags: .init(
                 mode: .section(2),
                 itemsPerSection: [1, 1, 1],
@@ -653,7 +845,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithCrazyScrollDirection1() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11, y: 11), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 11, y: 11),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10, y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(4),
                 itemsPerSection: .init(repeating: 1, count: 9),
@@ -665,7 +861,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithCrazyScrollDirection2() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9, y: 11), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 9, y: 11),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10, y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(4),
                 itemsPerSection: .init(repeating: 1, count: 9),
@@ -677,7 +877,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithCrazyScrollDirection3() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 11, y: 9), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 11, y: 9),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10, y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(4),
                 itemsPerSection: .init(repeating: 1, count: 9),
@@ -689,7 +893,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithCrazyScrollDirection4() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(x: 9, y: 9), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(x: 9, y: 9),
+            velocity: .init(),
+            currentContentOffset: .init(x: 10, y: 10)
+        ), model: .init(
             flags: .init(
                 mode: .section(4),
                 itemsPerSection: .init(repeating: 1, count: 9),
@@ -701,7 +909,11 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithNoneScrollDirection() {
-        let update = expectUpdate(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+        let update = expectUpdate(for: .scrollViewWillEndDragging(
+            at: .init(),
+            velocity: .init(),
+            currentContentOffset: .init()
+        ), model: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1, 1, 1],
@@ -713,7 +925,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithInvalidMode1() {
-        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init(), currentContentOffset: .init()), model: .init(
             flags: .init(
                 mode: .all
             )
@@ -722,7 +934,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithInvalidMode2() {
-        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init(), currentContentOffset: .init()), model: .init(
             flags: .init(
                 mode: .emotion(.arbitrary)
             )
@@ -731,7 +943,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testScrollViewWillEndDraggingWithMissingViewSize() {
-        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init()), model: .init(
+        let failure = expectFailure(for: .scrollViewWillEndDragging(at: .init(), velocity: .init(), currentContentOffset: .init()), model: .init(
             flags: .init(
                 mode: .section(0)
             ),
