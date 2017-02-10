@@ -5,10 +5,8 @@ final class SupportViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let notificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-        UIApplication.shared.registerUserNotificationSettings(notificationSettings)
-        UIApplication.shared.registerForRemoteNotifications()
+        setUpNotifications()
+        updateUsername()
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -22,6 +20,20 @@ final class SupportViewController: UITableViewController {
         default:
             break
         }
+    }
+
+    private func setUpNotifications() {
+        let notificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        let application = UIApplication.shared
+        application.registerUserNotificationSettings(notificationSettings)
+        application.registerForRemoteNotifications()
+    }
+
+    private func updateUsername() {
+        let defaultName = "Anonymous Mobile User"
+        guard let user = HotlineUser.sharedInstance(), user.name != defaultName else { return }
+        user.name = defaultName
+        Hotline.sharedInstance().update(user)
     }
 
 }
