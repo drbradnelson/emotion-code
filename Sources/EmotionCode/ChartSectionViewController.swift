@@ -31,7 +31,6 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewDidAppear(animated)
         chartLayout.program.setDelegate(self)
         collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
-        collectionView!.bounces = false
     }
 
     override func viewWillDisappear(_ animated: Bool) {

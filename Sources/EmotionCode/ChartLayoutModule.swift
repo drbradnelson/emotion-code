@@ -266,7 +266,16 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Row header size
         //
 
-        let rowHeaderSize = Size(width: model.headerSize.width, height: maximumSectionHeight)
+        let rowHeaderSize: Size = {
+            let width: Int
+            switch model.flags.mode {
+            case .all:
+                width = model.headerSize.width
+            case .section, .emotion:
+                width = 0
+            }
+            return .init(width: width, height: maximumSectionHeight)
+        }()
 
         //
         // MARK: -
@@ -290,7 +299,16 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Column header size
         //
 
-        let columnHeaderSize = Size(width: itemWidth, height: model.headerSize.height)
+        let columnHeaderSize: Size = {
+            let height: Int
+            switch model.flags.mode {
+            case .all:
+                height = model.headerSize.height
+            case .section, .emotion:
+                height = 0
+            }
+            return .init(width: itemWidth, height: height)
+        }()
 
         //
         // MARK: -
