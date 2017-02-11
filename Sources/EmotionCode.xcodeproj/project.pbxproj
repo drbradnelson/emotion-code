@@ -330,10 +330,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 915EEC561D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCode" */;
 			buildPhases = (
+				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
 				0FF641891D5A6A3100EDF903 /* Run ConvertBook */,
 				915EEC351D460CE1005CC318 /* Sources */,
-				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
 				91C655AF1E1AE14D008D1F21 /* Copy Frameworks */,
@@ -466,7 +466,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftlint lint --strict\n";
+			shellScript = "set -ex\ntest \"$(swiftlint version)\" = 0.16.1\nswiftlint lint --strict\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
