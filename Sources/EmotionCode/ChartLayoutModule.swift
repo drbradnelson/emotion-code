@@ -325,7 +325,6 @@ struct ChartLayoutModule: Elm.Module {
 
 }
 
-
 //
 // MARK: -
 // MARK: Geometry

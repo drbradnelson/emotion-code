@@ -90,6 +90,7 @@
 		0FF8F9E71D5ACD2E008666E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E81D5ACD2F008666E8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0FF8F9E91D5ACFE4008666E8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		9105A61E1E4E66A9004F94E7 /* EmotionCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmotionCode.entitlements; sourceTree = "<group>"; };
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
 		911377731DFFF9C6008627F1 /* ChartLayoutModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutModule.swift; sourceTree = "<group>"; };
 		9113777E1E001A69008627F1 /* Elm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elm.framework; path = Carthage/Build/iOS/Elm.framework; sourceTree = "<group>"; };
@@ -245,6 +246,7 @@
 		915EEC3B1D460CE1005CC318 /* EmotionCode */ = {
 			isa = PBXGroup;
 			children = (
+				9105A61E1E4E66A9004F94E7 /* EmotionCode.entitlements */,
 				915EEC3C1D460CE1005CC318 /* AppDelegate.swift */,
 				E7BF74B01D4F607300AF6198 /* Models */,
 				B6352F501DC7144D0060D752 /* Layouts */,
@@ -327,10 +329,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 915EEC561D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCode" */;
 			buildPhases = (
+				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
 				0FF641891D5A6A3100EDF903 /* Run ConvertBook */,
 				915EEC351D460CE1005CC318 /* Sources */,
-				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
 				91C655AF1E1AE14D008D1F21 /* Copy Frameworks */,
@@ -376,6 +378,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 977T8AV26N;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					B6B2736C1E05948E00771409 = {
 						CreatedOnToolsVersion = 8.2;
@@ -463,7 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftlint lint --strict\n";
+			shellScript = "set -ex\ntest \"$(swiftlint version)\" = 0.16.1\nswiftlint lint --strict\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
@@ -711,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EmotionCode/EmotionCode.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -732,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EmotionCode/EmotionCode.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
