@@ -21,8 +21,4 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         backgroundColor = isRowEven ? evenRowColor : oddRowColor
     }
 
-    func setDescriptionVisible(_ visible: Bool) {
-        largeTitleLabel.alpha = visible ? 0 : 1
-    }
-
 }

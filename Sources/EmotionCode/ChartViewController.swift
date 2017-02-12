@@ -81,7 +81,6 @@ final class ChartViewController: UICollectionViewController {
         performSegue(withIdentifier: "ShowSection", sender: self)
     }
 
-
     // MARK: Storyboard segue
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
