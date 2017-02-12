@@ -68,6 +68,8 @@ final class ChartViewController: UICollectionViewController {
         }
     }
 
+    // MARK: Collection view delegate
+
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowSection", sender: self)
     }
