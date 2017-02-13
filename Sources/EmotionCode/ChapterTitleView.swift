@@ -25,11 +25,4 @@ final class ChapterTitleView: UIView {
         return "▼"
     }
 
-    // MARK: Chapter title
-
-    func titleOfChapter(at index: Int) -> String {
-        let format = NSLocalizedString("Chapter %i", comment: "")
-        return String.localizedStringWithFormat(format, index + 1)
-    }
-
 }
