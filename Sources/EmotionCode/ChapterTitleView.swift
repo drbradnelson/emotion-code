@@ -8,11 +8,10 @@ final class ChapterTitleView: UIView {
 
     // MARK: Chapter index
 
-    func setChapterIndex(_ index: Int) {
-        let title = titleOfChapter(at: index)
-        let decoratedTitle = decoratedChapterTitle(title)
+    func setChapterTitle(_ chapterTitle: String) {
+        let decoratedTitle = decoratedChapterTitle(chapterTitle)
         chapterTitleButton.setTitle(decoratedTitle, for: UIControlState())
-        chapterTitleButton.accessibilityLabel = title
+        chapterTitleButton.accessibilityLabel = chapterTitle
         sizeToFit()
     }
 
