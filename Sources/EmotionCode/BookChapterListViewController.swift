@@ -18,7 +18,13 @@ final class BookChapterListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let chapter = bookChapters[indexPath.row]
         let cell = bookChaptersTableView.dequeueReusableChapterCell(for: indexPath)
-        cell.setChapterTitle(chapter.title)
+        let title: String
+        if let subtitle = chapter.subtitle {
+            title = "\(chapter.title): \(subtitle)"
+        } else {
+            title = chapter.title
+        }
+        cell.setChapterTitle(title)
         cell.setChapterSelected(indexPath.row == selectedChapterIndex)
         return cell
     }
