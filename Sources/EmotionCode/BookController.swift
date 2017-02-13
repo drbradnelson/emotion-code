@@ -27,10 +27,12 @@ final class BookController {
         guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "html") else {
             preconditionFailure("Unable to find book chapter file")
         }
-        return Book.Chapter(title: title, fileURL: fileURL)
+        let subtitle = dictionary[chapterSubtitleNameKey]
+        return Book.Chapter(title: title, subtitle: subtitle, fileURL: fileURL)
     }
 
     private static let chapterTitleKey = "Title"
+    private static let chapterSubtitleNameKey = "Subtitle"
     private static let chapterFileNameKey = "Filename"
 
     // MARK: Book URL
