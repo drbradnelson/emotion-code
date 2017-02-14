@@ -10,6 +10,15 @@ final class ChapterTableViewCell: UITableViewCell {
 
     @IBOutlet private var chapterTitleLabel: UILabel!
 
+    // MARK: Chapter subtitle
+
+    func setChapterSubtitle(_ subtitle: String?) {
+        chapterSubtitleLabel.isHidden = subtitle == nil
+        chapterSubtitleLabel.text = subtitle
+    }
+
+    @IBOutlet private var chapterSubtitleLabel: UILabel!
+
     // MARK: Chapter selection
 
     func setChapterSelected(_ selected: Bool) {
