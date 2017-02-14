@@ -22,16 +22,6 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Message {
         case systemDidSetViewSize(Size)
-        case scrollViewWillEndDragging(at: Point, velocity: Point, currentContentOffset: Point)
-    }
-
-    enum ScrollDirection {
-        case right
-        case left
-        case down
-        case up
-        case crazy
-        case none
     }
 
     struct Model {
@@ -45,9 +35,7 @@ struct ChartLayoutModule: Elm.Module {
         var viewSize: Size?
     }
 
-    enum Command {
-        case setSection(Int)
-    }
+    typealias Command = Void
 
     struct View {
         let chartSize: Size
@@ -63,8 +51,6 @@ struct ChartLayoutModule: Elm.Module {
         case missingViewSize
         case invalidNumberOfColums
         case invalidViewSize
-        case invalidMode
-        case invalidVelocity
     }
 
     static func model(loading flags: Flags) throws -> Model {
@@ -84,98 +70,8 @@ struct ChartLayoutModule: Elm.Module {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
-        case .scrollViewWillEndDragging(let contentOffset, let velocity, let currentContentOffset):
-            guard case .section(let currentSection) = model.flags.mode else {
-                throw Failure.invalidMode
-            }
-            guard let viewSize = model.viewSize else {
-                throw Failure.missingViewSize
-            }
-
-            let scrollDirection: ScrollDirection = {
-                let isScrolling = (
-                    horizontally: contentOffset.x != currentContentOffset.x,
-                    vertically: contentOffset.y != currentContentOffset.y
-                )
-                if isScrolling.horizontally && isScrolling.vertically {
-                    return .crazy
-                }
-                if contentOffset.x > currentContentOffset.x {
-                    return .right
-                }
-                if contentOffset.x < currentContentOffset.x {
-                    return .left
-                }
-                if contentOffset.y > currentContentOffset.y {
-                    return .down
-                }
-                if contentOffset.y < currentContentOffset.y {
-                    return .up
-                }
-                return .none
-            }()
-
-            let isOverHalf: Bool
-            let velocityIsCorrect: Bool
-            switch scrollDirection {
-            case .right:
-                velocityIsCorrect = velocity.x > 0
-                isOverHalf = contentOffset.x >= (currentContentOffset.x + viewSize.width / 2)
-            case .left:
-                velocityIsCorrect = velocity.x < 0
-                isOverHalf = contentOffset.x <= (currentContentOffset.x - viewSize.width / 2)
-            case .down:
-                velocityIsCorrect = velocity.y > 0
-                isOverHalf = contentOffset.y >= (currentContentOffset.y + viewSize.height / 2)
-            case .up:
-                velocityIsCorrect = velocity.y < 0
-                isOverHalf = contentOffset.y <= (currentContentOffset.y - viewSize.height / 2)
-            case .crazy, .none:
-                velocityIsCorrect = false
-                isOverHalf = false
-            }
-            guard velocityIsCorrect || isOverHalf && (velocity == .zero) else { return }
-
-            let currentColumn = (currentSection + model.flags.numberOfColumns) % model.flags.numberOfColumns
-            let currentRow = currentSection / model.flags.numberOfColumns
-
-            func sectionIndex(forRow row: Int, forColumn column: Int) -> Int? {
-                let section = row * model.flags.numberOfColumns + column
-                guard section < model.flags.itemsPerSection.count else { return nil }
-                return section
-            }
-
-            let newSection: Int?
-            switch scrollDirection {
-            case .right:
-                guard currentColumn + 1 < model.flags.numberOfColumns else { return }
-                newSection = sectionIndex(forRow: currentRow, forColumn: currentColumn + 1)
-            case .left:
-                guard currentColumn - 1 >= 0 else { return }
-                newSection = sectionIndex(forRow: currentRow, forColumn: currentColumn - 1)
-            case .up:
-                guard currentRow - 1 >= 0 else { return }
-                newSection = sectionIndex(forRow: currentRow - 1, forColumn: currentColumn)
-            case .down:
-                newSection = sectionIndex(forRow: currentRow + 1, forColumn: currentColumn)
-            case .crazy, .none:
-                return
-            }
-            guard let section = newSection else { return }
-
-            perform(.setSection(section))
-            model = Model(
-                flags: Flags(
-                    mode: .section(section),
-                    itemsPerSection: model.flags.itemsPerSection,
-                    numberOfColumns: model.flags.numberOfColumns,
-                    topContentInset: model.flags.topContentInset
-                ),
-                viewSize: model.viewSize
-            )
         }
     }
-
 
     static func view(presenting model: Model) throws -> View {
 
@@ -468,9 +364,7 @@ struct ChartLayoutModule: Elm.Module {
             switch model.flags.mode {
             case .all:
                 return viewSize.height < model.minViewHeightForCompactLayout
-            case .section:
-                return true
-            case .emotion:
+            case .section, .emotion:
                 return false
             }
         }()

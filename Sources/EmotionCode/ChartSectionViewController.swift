@@ -29,7 +29,6 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        chartLayout.program.setDelegate(self)
         collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
     }
 
@@ -43,21 +42,6 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowEmotion", sender: self)
-    }
-
-    // MARK: Scroll view delegate
-
-    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        chartLayout.program.dispatch(.scrollViewWillEndDragging(
-            at: .init(scrollView.contentOffset),
-            velocity: .init(velocity),
-            currentContentOffset: chartLayout.program.view.proposedContentOffset!
-        ))
-        targetContentOffset.pointee = chartLayout.program.view.proposedContentOffset!.cgPoint
-    }
-
-    override func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        scrollView.setContentOffset(chartLayout.program.view.proposedContentOffset!.cgPoint, animated: true)
     }
 
     // MARK: Storyboard segue
@@ -83,18 +67,5 @@ extension ChartSectionViewController: ChartPresenter {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection)
     }
-
-}
-
-extension ChartSectionViewController: Elm.Delegate {
-
-    typealias Module = ChartLayoutModule
-
-    func program(_ program: Program<Module>, didEmit command: Module.Command) {
-        guard case let .setSection(section) = command else { return }
-        setTitle(forSection: section)
-    }
-
-    func program(_ program: Program<Module>, didUpdate view: Module.View) {}
 
 }

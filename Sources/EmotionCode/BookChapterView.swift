@@ -5,9 +5,6 @@ final class BookChapterView: UIView {
 
     let webView = WKWebView()
 
-    // MARK: Web view constraints
-
-
     // MARK: Configure web view
 
     func configureWebView() {
