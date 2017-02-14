@@ -16,7 +16,8 @@ final class ChartViewController: UICollectionViewController {
             mode: .all,
             itemsPerSection: itemsPerSection,
             numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: .init(collectionView!.contentInset.top)
+            topContentInset: .init(collectionView!.contentInset.top),
+            bottomContentInset: .init(collectionView!.contentInset.bottom)
         ))
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)

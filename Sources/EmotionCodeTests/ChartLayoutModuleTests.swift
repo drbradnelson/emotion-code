@@ -76,6 +76,26 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
+    func testSystemDidSetIsFocused1() {
+        let update = expectUpdate(for: .systemDidSetIsFocused(true), model: .init(isFocused: true))
+        expect(update?.model.isFocused, true)
+    }
+
+    func testSystemDidSetIsFocused2() {
+        let update = expectUpdate(for: .systemDidSetIsFocused(true), model: .init(isFocused: false))
+        expect(update?.model.isFocused, true)
+    }
+
+    func testSystemDidSetIsFocused3() {
+        let update = expectUpdate(for: .systemDidSetIsFocused(false), model: .init(isFocused: false))
+        expect(update?.model.isFocused, false)
+    }
+
+    func testSystemDidSetIsFocused4() {
+        let update = expectUpdate(for: .systemDidSetIsFocused(false), model: .init(isFocused: true))
+        expect(update?.model.isFocused, false)
+    }
+
     // MARK: View
 
     func testChartWidthForAllMode() {
@@ -586,13 +606,14 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.items[safe: 0]?[safe: 1]?.frame.origin.y, expected)
     }
 
-    func testHeadersAlphaWhenModeAll() {
+    func testHeadersAlphaWhenModeAllAndNotFocused() {
         let view = expectView(presenting: .init(
             flags: .init(
                 mode: .all,
                 itemsPerSection: [1],
                 numberOfColumns: 1
-            )
+            ),
+            isFocused: false
         ))
         expect(view?.columnHeaders[safe: 0]?.alpha, 1)
         expect(view?.rowHeaders[safe: 0]?.alpha, 1)
@@ -622,12 +643,13 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.rowHeaders[safe: 0]?.alpha, 0)
     }
 
-    func testItemsAlphaWhenModeAll() {
+    func testItemsAlphaWhenModeAllAndFocused() {
         let view = expectView(presenting: .init(
             flags: .init(
                 mode: .all,
                 itemsPerSection: [2, 2]
-            )
+            ),
+            isFocused: true
         ))
         expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
         expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
@@ -635,12 +657,27 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.items[safe: 1]?[safe: 1]?.alpha, 1)
     }
 
-    func testItemsAlphaWhenModeSection() {
+    func testItemsAlphaWhenModeAllAndNotFocused() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [2, 2]
+            ),
+            isFocused: false
+        ))
+        expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 1]?.alpha, 1)
+    }
+
+    func testItemsAlphaWhenModeSectionAndFocused() {
         let view = expectView(presenting: .init(
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [2, 2]
-            )
+            ),
+            isFocused: true
         ))
         expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
         expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
@@ -648,17 +685,46 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.items[safe: 1]?[safe: 1]?.alpha, 0)
     }
 
-    func testItemsAlphaWhenModeEmotion() {
+    func testItemsAlphaWhenModeSectionAndNotFocused() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [2, 2]
+            ),
+            isFocused: false
+        ))
+        expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 1]?.alpha, 1)
+    }
+
+    func testItemsAlphaWhenModeEmotionAndFocused() {
         let view = expectView(presenting: .init(
             flags: .init(
                 mode: .emotion(.init(item: 1, section: 0)),
                 itemsPerSection: [2, 2]
-            )
+            ),
+            isFocused: true
         ))
         expect(view?.items[safe: 0]?[safe: 0]?.alpha, 0)
         expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
         expect(view?.items[safe: 1]?[safe: 0]?.alpha, 0)
         expect(view?.items[safe: 1]?[safe: 1]?.alpha, 0)
+    }
+
+    func testItemsAlphaWhenModeEmotionAndNotFocused() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 1, section: 0)),
+                itemsPerSection: [2, 2]
+            ),
+            isFocused: false
+        ))
+        expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 1]?.alpha, 1)
     }
 
 }
@@ -669,12 +735,14 @@ extension ChartLayoutModule.Flags {
         mode: ChartLayoutModule.Mode = .all,
         itemsPerSection: [Int] = [1],
         numberOfColumns: Int = 1,
-        topContentInset: Int = 0
+        topContentInset: Int = 0,
+        bottomContentInset: Int = 0
         ) {
         self.mode = mode
         self.itemsPerSection = itemsPerSection
         self.numberOfColumns = numberOfColumns
         self.topContentInset = topContentInset
+        self.bottomContentInset = bottomContentInset
     }
 
 }
@@ -688,7 +756,8 @@ extension ChartLayoutModule.Model {
         itemHeight: Int = 30,
         itemSpacing: Int = 10,
         minViewHeightForCompactLayout: Int = 554,
-        viewSize: Size = .zero
+        viewSize: Size = .zero,
+        isFocused: Bool = false
         ) {
         self.flags = flags
         self.contentPadding = contentPadding
@@ -698,6 +767,7 @@ extension ChartLayoutModule.Model {
         self.itemSpacing = itemSpacing
         self.minViewHeightForCompactLayout = minViewHeightForCompactLayout
         self.viewSize = viewSize
+        self.isFocused = isFocused
     }
 }
 

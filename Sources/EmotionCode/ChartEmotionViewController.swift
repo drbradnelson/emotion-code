@@ -2,6 +2,10 @@ import UIKit
 
 final class ChartEmotionViewController: UICollectionViewController {
 
+    var chartLayout: ChartLayout {
+        return collectionViewLayout as! ChartLayout
+    }
+
     func setTitle(for emotion: Chart.Emotion) {
         navigationItem.title = emotion.title
     }
@@ -13,9 +17,16 @@ final class ChartEmotionViewController: UICollectionViewController {
         setDescriptionVisibleAlongsideTransition(true)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        chartLayout.program.dispatch(.systemDidSetIsFocused(true))
+        chartLayout.invalidateLayout()
+    }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
+        chartLayout.program.dispatch(.systemDidSetIsFocused(false))
     }
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {

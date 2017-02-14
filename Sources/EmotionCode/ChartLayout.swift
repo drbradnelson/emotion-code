@@ -37,10 +37,10 @@ final class ChartLayout: UICollectionViewLayout {
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let header = program.view.columnHeaders[indexPath.section]
+            let header = program.view.columnHeaderAt(item: indexPath.item, section: indexPath.section)
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         case ChartHeaderView.rowKind:
-            let header = program.view.rowHeaders[indexPath.section]
+            let header = program.view.rowHeaderAt(item: indexPath.item, section: indexPath.section)
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         default: return nil
         }
@@ -56,7 +56,8 @@ private extension UICollectionViewLayoutAttributes {
         self.alpha = .init(item.alpha)
     }
 
-    convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutModule.Header) {
+    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutModule.Header?) {
+        guard let header = header else { return nil }
         self.init(forSupplementaryViewOfKind: elementKind, with: indexPath)
         self.frame = header.frame.cgRect
         self.alpha = .init(header.alpha)

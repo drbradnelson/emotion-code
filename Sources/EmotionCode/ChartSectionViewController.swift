@@ -5,6 +5,10 @@ final class ChartSectionViewController: UICollectionViewController {
 
     var chart: Chart!
 
+    var chartLayout: ChartLayout {
+        return collectionViewLayout as! ChartLayout
+    }
+
     // MARK: Title
 
     func setTitle(forSection section: Int) {
@@ -23,10 +27,17 @@ final class ChartSectionViewController: UICollectionViewController {
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        chartLayout.program.dispatch(.systemDidSetIsFocused(true))
+        chartLayout.invalidateLayout()
+    }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
+        chartLayout.program.dispatch(.systemDidSetIsFocused(false))
     }
 
     // MARK: Collection view delegate
