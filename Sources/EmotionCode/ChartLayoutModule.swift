@@ -18,6 +18,10 @@ struct ChartLayoutModule: Elm.Module {
         case all
         case section(Int)
         case emotion(IndexPath)
+
+        static func == (lhs: Mode, rhs: Mode) -> Bool {
+            return String(describing: lhs) == String(describing: rhs)
+        }
     }
 
     enum Message {
@@ -347,12 +351,14 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let chartSize: Size = {
+            let isCompact = viewSize.height >= model.minViewHeightForCompactLayout
             guard
+                !(model.flags.mode == .all && isCompact),
                 let lastRowHeaderFrame = rowHeaderFrames.last,
                 let lastColumnHeaderFrame = columnHeaderFrames.last else { return viewSize }
             let height = lastRowHeaderFrame.maxY + model.contentPadding
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
-            return Size(width: width, height: height)
+            return .init(width: width, height: height)
         }()
 
         //
@@ -363,7 +369,7 @@ struct ChartLayoutModule: Elm.Module {
         let isScrollEnabled: Bool = {
             switch model.flags.mode {
             case .all:
-                return viewSize.height < model.minViewHeightForCompactLayout
+                return true
             case .section, .emotion:
                 return false
             }
@@ -397,10 +403,6 @@ public struct Point {
 
     static var zero: Point {
         return .init(x: 0, y: 0)
-    }
-
-    static func == (lhs: Point, rhs: Point) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
     }
 
 }
