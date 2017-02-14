@@ -5,10 +5,6 @@ final class ChartSectionViewController: UICollectionViewController {
 
     var chart: Chart!
 
-    private var chartLayout: ChartLayout {
-        return collectionViewLayout as! ChartLayout
-    }
-
     // MARK: Title
 
     func setTitle(forSection section: Int) {
@@ -25,11 +21,6 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
     }
 
     override func viewWillDisappear(_ animated: Bool) {

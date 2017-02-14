@@ -47,7 +47,6 @@ struct ChartLayoutModule: Elm.Module {
         let itemFrames: [[Rect]]
         let columnHeaderFrames: [Rect]
         let rowHeaderFrames: [Rect]
-        let isScrollEnabled: Bool
     }
 
     enum Failure: Error {
@@ -353,7 +352,8 @@ struct ChartLayoutModule: Elm.Module {
         let chartSize: Size = {
             let isCompact = viewSize.height >= model.minViewHeightForCompactLayout
             guard
-                !(model.flags.mode == .all && isCompact),
+                model.flags.mode == .all,
+                !isCompact,
                 let lastRowHeaderFrame = rowHeaderFrames.last,
                 let lastColumnHeaderFrame = columnHeaderFrames.last else { return viewSize }
             let height = lastRowHeaderFrame.maxY + model.contentPadding
@@ -361,27 +361,12 @@ struct ChartLayoutModule: Elm.Module {
             return .init(width: width, height: height)
         }()
 
-        //
-        // MARK: -
-        // MARK: Is scroll enabled
-        //
-
-        let isScrollEnabled: Bool = {
-            switch model.flags.mode {
-            case .all:
-                return true
-            case .section, .emotion:
-                return false
-            }
-        }()
-
         return View(
             chartSize: chartSize,
             proposedContentOffset: proposedContentOffset,
             itemFrames: itemFrames,
             columnHeaderFrames: columnHeaderFrames,
-            rowHeaderFrames: rowHeaderFrames,
-            isScrollEnabled: isScrollEnabled
+            rowHeaderFrames: rowHeaderFrames
         )
 
     }

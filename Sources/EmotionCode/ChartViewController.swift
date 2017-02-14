@@ -4,10 +4,6 @@ final class ChartViewController: UICollectionViewController {
 
     private let chart = ChartController().chart
 
-    private var chartLayout: ChartLayout {
-        return collectionViewLayout as! ChartLayout
-    }
-
     // MARK: View lifecycle
 
     override func viewDidLoad() {
@@ -15,6 +11,7 @@ final class ChartViewController: UICollectionViewController {
 
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
+        let chartLayout = collectionViewLayout as! ChartLayout
         chartLayout.program = ChartLayoutModule.makeProgram(flags: .init(
             mode: .all,
             itemsPerSection: itemsPerSection,
@@ -24,11 +21,6 @@ final class ChartViewController: UICollectionViewController {
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
     }
 
     // MARK: Collection view data source

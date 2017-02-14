@@ -2,10 +2,6 @@ import UIKit
 
 final class ChartEmotionViewController: UICollectionViewController {
 
-    private var chartLayout: ChartLayout {
-        return collectionViewLayout as! ChartLayout
-    }
-
     func setTitle(for emotion: Chart.Emotion) {
         navigationItem.title = emotion.title
     }
@@ -15,11 +11,6 @@ final class ChartEmotionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setDescriptionVisibleAlongsideTransition(true)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        collectionView!.isScrollEnabled = chartLayout.program.view.isScrollEnabled
     }
 
     override func viewWillDisappear(_ animated: Bool) {
