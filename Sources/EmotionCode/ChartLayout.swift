@@ -30,18 +30,18 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let frame = program.view.itemFrames[indexPath.section][indexPath.item]
-        return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame.cgRect)
+        let item = program.view.items[indexPath.section][indexPath.item]
+        return UICollectionViewLayoutAttributes(indexPath: indexPath, item: item)
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let frame = program.view.columnHeaderFrames[indexPath.section]
-            return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
+            let header = program.view.columnHeaders[indexPath.section]
+            return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         case ChartHeaderView.rowKind:
-            let frame = program.view.rowHeaderFrames[indexPath.section]
-            return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
+            let header = program.view.rowHeaders[indexPath.section]
+            return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         default: return nil
         }
     }
@@ -50,14 +50,16 @@ final class ChartLayout: UICollectionViewLayout {
 
 private extension UICollectionViewLayoutAttributes {
 
-    convenience init(indexPath: IndexPath, frame: CGRect) {
+    convenience init(indexPath: IndexPath, item: ChartLayoutModule.Item) {
         self.init(forCellWith: indexPath)
-        self.frame = frame
+        self.frame = item.frame.cgRect
+        self.alpha = .init(item.alpha)
     }
 
-    convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, frame: CGRect) {
+    convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutModule.Header) {
         self.init(forSupplementaryViewOfKind: elementKind, with: indexPath)
-        self.frame = frame
+        self.frame = header.frame.cgRect
+        self.alpha = .init(header.alpha)
     }
 
 }

@@ -41,11 +41,18 @@ struct ChartLayoutModule: Elm.Module {
 
     typealias Command = Void
 
+    struct Item {
+        let frame: Rect
+        let alpha: Float
+    }
+    typealias Header = Item
+
     struct View {
+
         let chartSize: Size
-        let itemFrames: [[Rect]]
-        let columnHeaderFrames: [Rect]
-        let rowHeaderFrames: [Rect]
+        let items: [[Item]]
+        let columnHeaders: [Header]
+        let rowHeaders: [Header]
     }
 
     enum Failure: Error {
@@ -164,16 +171,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Row header size
         //
 
-        let rowHeaderSize: Size = {
-            let width: Int
-            switch model.flags.mode {
-            case .all:
-                width = model.headerSize.width
-            case .section, .emotion:
-                width = 0
-            }
-            return .init(width: width, height: maximumSectionHeight)
-        }()
+        let rowHeaderSize = Size(width: model.headerSize.width, height: maximumSectionHeight)
 
         //
         // MARK: -
@@ -197,16 +195,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Column header size
         //
 
-        let columnHeaderSize: Size = {
-            let height: Int
-            switch model.flags.mode {
-            case .all:
-                height = model.headerSize.height
-            case .section, .emotion:
-                height = 0
-            }
-            return .init(width: itemWidth, height: height)
-        }()
+        let columnHeaderSize = Size(width: itemWidth, height: model.headerSize.height)
 
         //
         // MARK: -
@@ -288,16 +277,26 @@ struct ChartLayoutModule: Elm.Module {
 
         //
         // MARK: -
-        // MARK: Item frame
+        // MARK: Items
         //
 
-        let itemFrames = sectionsRange.map { section -> [Rect] in
+        let items = sectionsRange.map { section -> [Item] in
             let height = itemHeights[section]
             let size = Size(width: itemWidth, height: height)
             let itemsRange = 0..<model.flags.itemsPerSection[section]
             return itemsRange.map { item in
                 let position = itemPositions[section][item] - proposedContentOffset
-                return .init(origin: position, size: size)
+                let alpha: Float
+                switch model.flags.mode {
+                case .all:
+                    alpha = 1
+                case .section(let currentSection):
+                    alpha = (section == currentSection) ? 1 : 0
+                case .emotion(let indexPath):
+                    alpha = (indexPath.item == item && indexPath.section == section) ? 1 : 0
+                }
+                let frame = Rect(origin: position, size: size)
+                return .init(frame: frame, alpha: alpha)
             }
         }
 
@@ -331,16 +330,32 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Header frame
         //
 
-        let columnHeaderFrames = sectionsRange.map { section -> Rect in
+        let columnHeaders = sectionsRange.map { section -> Header in
             let column = (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
             let position = positionsForColumnHeaders[column]
-            return .init(origin: position, size: columnHeaderSize)
+            let frame = Rect(origin: position, size: columnHeaderSize)
+            let alpha: Float
+            switch model.flags.mode {
+            case .all:
+                alpha = 1
+            case .section, .emotion:
+                alpha = 0
+            }
+            return .init(frame: frame, alpha: alpha)
         }
 
-        let rowHeaderFrames = sectionsRange.map { section -> Rect in
+        let rowHeaders = sectionsRange.map { section -> Header in
             let row = section / model.flags.numberOfColumns
             let position = positionsForRowHeaders[row]
-            return .init(origin: position, size: rowHeaderSize)
+            let frame = Rect(origin: position, size: rowHeaderSize)
+            let alpha: Float
+            switch model.flags.mode {
+            case .all:
+                alpha = 1
+            case .section, .emotion:
+                alpha = 0
+            }
+            return .init(frame: frame, alpha: alpha)
         }
 
         //
@@ -353,8 +368,8 @@ struct ChartLayoutModule: Elm.Module {
             guard
                 model.flags.mode == .all,
                 !isCompact,
-                let lastRowHeaderFrame = rowHeaderFrames.last,
-                let lastColumnHeaderFrame = columnHeaderFrames.last else { return viewSize }
+                let lastRowHeaderFrame = rowHeaders.last?.frame,
+                let lastColumnHeaderFrame = columnHeaders.last?.frame else { return viewSize }
             let height = lastRowHeaderFrame.maxY + model.contentPadding
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
             return .init(width: width, height: height)
@@ -362,9 +377,9 @@ struct ChartLayoutModule: Elm.Module {
 
         return View(
             chartSize: chartSize,
-            itemFrames: itemFrames,
-            columnHeaderFrames: columnHeaderFrames,
-            rowHeaderFrames: rowHeaderFrames
+            items: items,
+            columnHeaders: columnHeaders,
+            rowHeaders: rowHeaders
         )
 
     }

@@ -162,7 +162,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 2
             )
         ))
-        expect(view?.columnHeaderFrames.count, 2)
+        expect(view?.columnHeaders.count, 2)
     }
 
     func testColumnHeaderWidthForAllMode() {
@@ -178,7 +178,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(width: 100)
         ))
         let expected = (100 - (2 + 2 + 4 + 3)) / 1
-        expect(view?.columnHeaderFrames[safe: 0]?.size.width, expected)
+        expect(view?.columnHeaders[safe: 0]?.frame.size.width, expected)
     }
 
     func testColumnHeaderHeight() {
@@ -190,7 +190,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             headerSize: Size(height: 2)
         ))
-        expect(view?.columnHeaderFrames[safe: 0]?.size.height, 2)
+        expect(view?.columnHeaders[safe: 0]?.frame.size.height, 2)
     }
 
     func testColumnHeaderXForAllModeWhenNotCompact() {
@@ -206,7 +206,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 21,
             viewSize: Size(height: 20)
         ))
-        expect(view?.columnHeaderFrames[safe: 0]?.origin.x, 2 + 3 + 4)
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.x, 2 + 3 + 4)
     }
 
     func testSecondColumnHeaderXForAllModeWhenNotCompact() {
@@ -224,7 +224,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         ))
         let expectedColumnWidth = (20 - (3 + 3 + 4 + 5 + 5)) / 2
         let expected = 3 + 4 + 5 + expectedColumnWidth + 5
-        expect(view?.columnHeaderFrames[safe: 1]?.origin.x, expected)
+        expect(view?.columnHeaders[safe: 1]?.frame.origin.x, expected)
     }
 
     func testColumnHeaderXForAllModeWhenCompact() {
@@ -240,7 +240,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 20,
             viewSize: Size(height: 20)
         ))
-        expect(view?.columnHeaderFrames[safe: 0]?.origin.x, 2 + 3 + 4)
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.x, 2 + 3 + 4)
     }
 
     func testSecondColumnHeaderXForAllModeWhenCompact() {
@@ -258,7 +258,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         ))
         let expectedColumnWidth = (20 - (3 + 3 + 4 + 5 + 5)) / 2
         let expected = 3 + 4 + 5 + expectedColumnWidth + 5
-        expect(view?.columnHeaderFrames[safe: 1]?.origin.x, expected)
+        expect(view?.columnHeaders[safe: 1]?.frame.origin.x, expected)
     }
 
     func testColumnHeaderY() {
@@ -272,8 +272,8 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 20,
             viewSize: Size(height: 19)
         ))
-        expect(view?.columnHeaderFrames[safe: 0]?.origin.y, 3)
-        expect(view?.columnHeaderFrames[safe: 1]?.origin.y, 3)
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.y, 3)
+        expect(view?.columnHeaders[safe: 1]?.frame.origin.y, 3)
     }
 
     func testRowHeaderFrameCount() {
@@ -284,7 +284,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 numberOfColumns: 1
             )
         ))
-        expect(view?.rowHeaderFrames.count, 2)
+        expect(view?.rowHeaders.count, 2)
     }
 
     func testRowHeaderWidth() {
@@ -296,7 +296,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             headerSize: Size(width: 2)
         ))
-        expect(view?.rowHeaderFrames[safe: 0]?.size.width, 2)
+        expect(view?.rowHeaders[safe: 0]?.frame.size.width, 2)
     }
 
     func testRowHeaderHeightForAllModeWhenNotCompact() {
@@ -310,7 +310,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 101,
             viewSize: Size(height: 100)
         ))
-        expect(view?.rowHeaderFrames[safe: 0]?.size.height, 2)
+        expect(view?.rowHeaders[safe: 0]?.frame.size.height, 2)
     }
 
     func testSecondRowHeaderHeightForAllModeWhenNotCompact() {
@@ -324,7 +324,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 101,
             viewSize: Size(height: 100)
         ))
-        expect(view?.rowHeaderFrames[safe: 1]?.size.height, 2)
+        expect(view?.rowHeaders[safe: 1]?.frame.size.height, 2)
     }
 
     func testRowHeaderHeightForAllModeWhenCompact() {
@@ -341,7 +341,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(height: 10)
         ))
         let expected = (10 - (2 + 2 + 3 + 4)) / 1
-        expect(view?.rowHeaderFrames[safe: 0]?.size.height, expected)
+        expect(view?.rowHeaders[safe: 0]?.frame.size.height, expected)
     }
 
     func testSecondRowHeaderHeightForAllModeWhenCompact() {
@@ -358,7 +358,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(height: 10)
         ))
         let expected = (10 - (2 + 2 + 3 + 4 + 4)) / 2
-        expect(view?.rowHeaderFrames[safe: 1]?.size.height, expected)
+        expect(view?.rowHeaders[safe: 1]?.frame.size.height, expected)
     }
 
     func testRowHeaderX() {
@@ -370,7 +370,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 2
         ))
-        expect(view?.rowHeaderFrames[safe: 0]?.origin.x, 2)
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.x, 2)
     }
 
     func testRowHeaderYForAllModeWhenNotCompact() {
@@ -384,7 +384,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(height: 3),
             sectionSpacing: Size(height: 4)
         ))
-        expect(view?.rowHeaderFrames[safe: 0]?.origin.y, 2 + 3 + 4)
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.y, 2 + 3 + 4)
     }
 
     func testSecondRowHeaderYForAllModeWhenNotCompact() {
@@ -402,7 +402,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(height: 20)
         ))
         let expected = 2 + 3 + 4 + 5 + 4
-        expect(view?.rowHeaderFrames[safe: 1]?.origin.y, expected)
+        expect(view?.rowHeaders[safe: 1]?.frame.origin.y, expected)
     }
 
     func testRowHeaderYForAllModeWhenCompact() {
@@ -419,7 +419,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(height: 20)
         ))
         let expected = 2 + 3 + 4
-        expect(view?.rowHeaderFrames[safe: 0]?.origin.y, expected)
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.y, expected)
     }
 
     func testSecondRowHeaderYForAllModeWhenCompact() {
@@ -437,7 +437,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         ))
         let expectedRowHeight = (20 - (2 + 2 + 3 + 4 + 4)) / 2
         let expected = 2 + 3 + 4 + expectedRowHeight + 4
-        expect(view?.rowHeaderFrames[safe: 1]?.origin.y, expected)
+        expect(view?.rowHeaders[safe: 1]?.frame.origin.y, expected)
     }
 
     func testItemHeightWhenNotCompact() {
@@ -451,7 +451,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 11,
             viewSize: Size(height: 10)
         ))
-        expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.height, 2)
+        expect(view?.items[safe: 0]?[safe: 0]?.frame.size.height, 2)
     }
 
     func testItemHeightWhenCompact1() {
@@ -468,7 +468,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(height: 100)
         ))
         let expected = 100 - (2 + 2 + 3 + 4)
-        expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.height, expected)
+        expect(view?.items[safe: 0]?[safe: 0]?.frame.size.height, expected)
     }
 
     func testItemHeightWhenCompact2() {
@@ -485,8 +485,8 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(height: 100)
         ))
         let expected = Int(round(Double(100 - (3 + 3 + 4 + 5)) / Double(2)))
-        expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.height, expected)
-        expect(view?.itemFrames[safe: 0]?[safe: 1]?.size.height, expected)
+        expect(view?.items[safe: 0]?[safe: 0]?.frame.size.height, expected)
+        expect(view?.items[safe: 0]?[safe: 1]?.frame.size.height, expected)
     }
 
     func testItemWidth() {
@@ -502,7 +502,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(width: 20)
         ))
         let expected = 20 - (2 + 2 + 3 + 4)
-        expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.width, expected)
+        expect(view?.items[safe: 0]?[safe: 0]?.frame.size.width, expected)
     }
 
     func testItemX() {
@@ -516,7 +516,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(width: 3),
             sectionSpacing: Size(width: 4)
         ))
-        expect(view?.itemFrames[safe: 0]?[safe: 0]?.origin.x, 2 + 3 + 4)
+        expect(view?.items[safe: 0]?[safe: 0]?.frame.origin.x, 2 + 3 + 4)
     }
 
     func testSecondItemX() {
@@ -533,7 +533,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         ))
         let expectedItemWidth = (20 - (3 + 3 + 5 + 5 + 4)) / 2
         let expected = 3 + 4 + 5 + expectedItemWidth + 5
-        expect(view?.itemFrames[safe: 1]?[safe: 0]?.origin.x, expected)
+        expect(view?.items[safe: 1]?[safe: 0]?.frame.origin.x, expected)
     }
 
     func testItemY() {
@@ -547,7 +547,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             headerSize: Size(height: 3),
             sectionSpacing: Size(height: 4)
         ))
-        expect(view?.itemFrames[safe: 0]?[safe: 0]?.origin.y, 2 + 3 + 4)
+        expect(view?.items[safe: 0]?[safe: 0]?.frame.origin.y, 2 + 3 + 4)
     }
 
     func testSecondItemYWhenNotCompact() {
@@ -564,7 +564,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             minViewHeightForCompactLayout: 21,
             viewSize: Size(height: 20)
         ))
-        expect(view?.itemFrames[safe: 0]?[safe: 1]?.origin.y, 3 + 4 + 5 + 6)
+        expect(view?.items[safe: 0]?[safe: 1]?.frame.origin.y, 3 + 4 + 5 + 6)
     }
 
     func testSecondItemYWhenCompact() {
@@ -583,7 +583,82 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         ))
         let expectedItemHeight = Int(round(Double(20 - (3 + 3 + 4 + 5)) / Double(2)))
         let expected = 3 + 4 + 5 + expectedItemHeight
-        expect(view?.itemFrames[safe: 0]?[safe: 1]?.origin.y, expected)
+        expect(view?.items[safe: 0]?[safe: 1]?.frame.origin.y, expected)
+    }
+
+    func testHeadersAlphaWhenModeAll() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            )
+        ))
+        expect(view?.columnHeaders[safe: 0]?.alpha, 1)
+        expect(view?.rowHeaders[safe: 0]?.alpha, 1)
+    }
+
+    func testHeadersAlphaWhenModeSection() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            )
+        ))
+        expect(view?.columnHeaders[safe: 0]?.alpha, 0)
+        expect(view?.rowHeaders[safe: 0]?.alpha, 0)
+    }
+
+    func testHeadersAlphaWhenModeEmotion() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            )
+        ))
+        expect(view?.columnHeaders[safe: 0]?.alpha, 0)
+        expect(view?.rowHeaders[safe: 0]?.alpha, 0)
+    }
+
+    func testItemsAlphaWhenModeAll() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [2, 2]
+            )
+        ))
+        expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 1]?.alpha, 1)
+    }
+
+    func testItemsAlphaWhenModeSection() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [2, 2]
+            )
+        ))
+        expect(view?.items[safe: 0]?[safe: 0]?.alpha, 1)
+        expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 0]?.alpha, 0)
+        expect(view?.items[safe: 1]?[safe: 1]?.alpha, 0)
+    }
+
+    func testItemsAlphaWhenModeEmotion() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 1, section: 0)),
+                itemsPerSection: [2, 2]
+            )
+        ))
+        expect(view?.items[safe: 0]?[safe: 0]?.alpha, 0)
+        expect(view?.items[safe: 0]?[safe: 1]?.alpha, 1)
+        expect(view?.items[safe: 1]?[safe: 0]?.alpha, 0)
+        expect(view?.items[safe: 1]?[safe: 1]?.alpha, 0)
     }
 
 }
