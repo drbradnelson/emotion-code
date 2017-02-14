@@ -43,7 +43,6 @@ struct ChartLayoutModule: Elm.Module {
 
     struct View {
         let chartSize: Size
-        let proposedContentOffset: Point?
         let itemFrames: [[Rect]]
         let columnHeaderFrames: [Rect]
         let rowHeaderFrames: [Rect]
@@ -266,21 +265,6 @@ struct ChartLayoutModule: Elm.Module {
 
         //
         // MARK: -
-        // MARK: Item frame
-        //
-
-        let itemFrames = sectionsRange.map { section -> [Rect] in
-            let height = itemHeights[section]
-            let size = Size(width: itemWidth, height: height)
-            let itemsRange = 0..<model.flags.itemsPerSection[section]
-            return itemsRange.map { item in
-                let position = itemPositions[section][item]
-                return Rect(origin: position, size: size)
-            }
-        }
-
-        //
-        // MARK: -
         // MARK: Content offset
         //
 
@@ -293,14 +277,29 @@ struct ChartLayoutModule: Elm.Module {
                 let x = columnXPositions[column] - model.contentPadding
                 let row = rowIndex(forSection: section)
                 let y = rowYPositions[row] - model.contentPadding - model.flags.topContentInset
-                return Point(x: x, y: y)
+                return Point(x: x, y: y + model.flags.topContentInset)
             case .emotion(let indexPath):
                 let column = columnIndex(forSection: indexPath.section)
                 let x = columnXPositions[column] - model.contentPadding
                 let y = yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.flags.topContentInset
-                return Point(x: x, y: y)
+                return Point(x: x, y: y + model.flags.topContentInset)
             }
         }()
+
+        //
+        // MARK: -
+        // MARK: Item frame
+        //
+
+        let itemFrames = sectionsRange.map { section -> [Rect] in
+            let height = itemHeights[section]
+            let size = Size(width: itemWidth, height: height)
+            let itemsRange = 0..<model.flags.itemsPerSection[section]
+            return itemsRange.map { item in
+                let position = itemPositions[section][item] - proposedContentOffset
+                return .init(origin: position, size: size)
+            }
+        }
 
         //
         // MARK: -
@@ -314,7 +313,7 @@ struct ChartLayoutModule: Elm.Module {
             case .all: y = model.contentPadding
             case .section, .emotion: y = -columnHeaderSize.height
             }
-            return Point(x: x, y: y)
+            return .init(x: x, y: y) - proposedContentOffset
         }
 
         let positionsForRowHeaders = rowsRange.map { row -> Point in
@@ -324,7 +323,7 @@ struct ChartLayoutModule: Elm.Module {
             case .all: x = model.contentPadding
             case .section, .emotion: x = -rowHeaderSize.width
             }
-            return Point(x: x, y: y)
+            return .init(x: x, y: y) - proposedContentOffset
         }
 
         //
@@ -335,13 +334,13 @@ struct ChartLayoutModule: Elm.Module {
         let columnHeaderFrames = sectionsRange.map { section -> Rect in
             let column = (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
             let position = positionsForColumnHeaders[column]
-            return Rect(origin: position, size: columnHeaderSize)
+            return .init(origin: position, size: columnHeaderSize)
         }
 
         let rowHeaderFrames = sectionsRange.map { section -> Rect in
             let row = section / model.flags.numberOfColumns
             let position = positionsForRowHeaders[row]
-            return Rect(origin: position, size: rowHeaderSize)
+            return .init(origin: position, size: rowHeaderSize)
         }
 
         //
@@ -363,7 +362,6 @@ struct ChartLayoutModule: Elm.Module {
 
         return View(
             chartSize: chartSize,
-            proposedContentOffset: proposedContentOffset,
             itemFrames: itemFrames,
             columnHeaderFrames: columnHeaderFrames,
             rowHeaderFrames: rowHeaderFrames
@@ -388,6 +386,13 @@ public struct Point {
 
     static var zero: Point {
         return .init(x: 0, y: 0)
+    }
+
+    static func - (lhs: Point, rhs: Point?) -> Point {
+        guard let rhs = rhs else { return lhs }
+        let x = lhs.x - rhs.x
+        let y = lhs.y - rhs.y
+        return .init(x: x, y: y)
     }
 
 }

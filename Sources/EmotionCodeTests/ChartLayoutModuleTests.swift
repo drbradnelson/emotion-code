@@ -154,62 +154,6 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.chartSize.height, expected)
     }
 
-    func testContentOffsetForAllMode() {
-        let view = expectView(presenting: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            )
-        ))
-        expect(view?.proposedContentOffset, nil)
-    }
-
-    func testContentOffsetForSectionMode0() {
-        let view = expectView(presenting: .init(
-            flags: .init(
-                mode: .section(0),
-                itemsPerSection: [1],
-                numberOfColumns: 1,
-                topContentInset: 4
-            ),
-            contentPadding: 2,
-            headerSize: Size(width: 3, height: 3)
-        ))
-        let expected = Point(y: -4)
-        expect(view?.proposedContentOffset, expected)
-    }
-
-    func testContentOffsetForSectionMode1() {
-        let view = expectView(presenting: .init(
-            flags: .init(
-                mode: .section(1),
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1,
-                topContentInset: 4
-            ),
-            contentPadding: 2,
-            viewSize: Size(width: 10, height: 10)
-        ))
-        let expected = Point(y: -4 + 10)
-        expect(view?.proposedContentOffset, expected)
-    }
-
-    func testContentOffsetForEmotionMode() {
-        let view = expectView(presenting: .init(
-            flags: .init(
-                mode: .emotion(IndexPath(item: 1, section: 1)),
-                itemsPerSection: [1, 2],
-                numberOfColumns: 1,
-                topContentInset: 4
-            ),
-            contentPadding: 2,
-            viewSize: Size(height: 10)
-        ))
-        let expected = Point(y: -4 + 10 + 10 + 10)
-        expect(view?.proposedContentOffset, expected)
-    }
-
     func testColumnHeaderFrameCount() {
         let view = expectView(presenting: .init(
             flags: .init(

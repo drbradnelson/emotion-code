@@ -16,11 +16,6 @@ final class ChartLayout: UICollectionViewLayout {
         return program.view.chartSize.cgSize
     }
 
-    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
-        guard let contentOffset = program.view.proposedContentOffset else { return proposedContentOffset }
-        return contentOffset.cgPoint
-    }
-
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let collectionView = collectionView else { return nil }
         let items = collectionView.indexPaths.flatMap(layoutAttributesForItem)
