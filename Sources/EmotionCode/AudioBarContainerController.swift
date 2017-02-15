@@ -26,14 +26,13 @@ final class AudioBarContainerController: UIViewController {
         audioBarController.view.frame = view.bounds
     }
 
-    func loadChapter(_ chapter: Int) {
-        let path = "https://media.discoverhealing.com/en/The_Emotion_Code_Audiobook"
-        let file = "The+Emotion+Code+Ch+" + String(chapter + 1)
-        let fileExtension = "mp3"
-        let url = URL(string: path)!
-            .appendingPathComponent(file)
-            .appendingPathExtension(fileExtension)
-        audioBarController.loadURL(url: url)
+    func loadChapter(_ chapter: Book.Chapter) {
+        guard let audioURL = chapter.audioURL else {
+            disableAudioBar()
+            return
+        }
+        enableAudioBar()
+        audioBarController.loadURL(url: audioURL)
     }
 
     private func enableAudioBar() {
