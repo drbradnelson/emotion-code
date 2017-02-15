@@ -27,8 +27,8 @@ final class AudioBarContainerController: UIViewController {
     }
 
     func loadChapter(_ chapter: Int) {
-        let path = "http://www.healerslibrary.com/audiobook/english"
-        let file = "The_Emotion_Code_Ch_" + String(chapter + 1)
+        let path = "https://media.discoverhealing.com/en/The_Emotion_Code_Audiobook"
+        let file = "The+Emotion+Code+Ch+" + String(chapter + 1)
         let fileExtension = "mp3"
         let url = URL(string: path)!
             .appendingPathComponent(file)
