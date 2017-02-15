@@ -2,6 +2,13 @@ import UIKit
 
 final class ChapterTableViewCell: UITableViewCell {
 
+    // MARK: Initialization
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layoutIfNeeded()
+    }
+    
     // MARK: Chapter title
 
     func setChapterTitle(_ title: String) {
