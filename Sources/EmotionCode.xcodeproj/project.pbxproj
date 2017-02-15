@@ -81,7 +81,7 @@
 		0F3936631D5B9374003CC6C0 /* BookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
 		0F3EAFDF1D6CD6480059C312 /* BookChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterView.swift; sourceTree = "<group>"; };
 		0F455F751E54C99C00A0D284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BookChapters.plist; sourceTree = "<group>"; };
-		0F455F761E54C9A300A0D284 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
+		0F455F771E54CBFC00A0D284 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		0F4BA9C71D636765003CCFE9 /* BookPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPageViewController.swift; sourceTree = "<group>"; };
 		0F4BA9C91D6368DA003CCFE9 /* BookChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapterViewController.swift; sourceTree = "<group>"; };
 		0F74006A1D6F476E00ADAC99 /* BookChaptersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChaptersTableView.swift; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F455F751E54C99C00A0D284 /* en */,
-				0F455F761E54C9A300A0D284 /* es */,
+				0F455F771E54CBFC00A0D284 /* es */,
 			);
 			name = BookChapters.plist;
 			sourceTree = "<group>";
