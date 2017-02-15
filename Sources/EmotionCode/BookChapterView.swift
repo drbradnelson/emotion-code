@@ -10,6 +10,7 @@ final class BookChapterView: UIView {
     // MARK: Configure web view
 
     func configureWebView() {
+        webView.navigationDelegate = self
         webView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(webView)
         let webViewConstraints = [webView.topAnchor.constraint(equalTo: topAnchor),
@@ -26,6 +27,17 @@ final class BookChapterView: UIView {
         webView.scrollView.contentInset.bottom = bottom
         webView.scrollView.scrollIndicatorInsets.top = top
         webView.scrollView.scrollIndicatorInsets.bottom = bottom
+    }
+
+}
+
+extension BookChapterView: WKNavigationDelegate {
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        if contentOffset != .zero {
+            webView.scrollView.setContentOffset(contentOffset, animated: true)
+            contentOffset = .zero
+        }
     }
 
 }
