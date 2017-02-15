@@ -151,12 +151,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 itemsPerSection: [1],
                 numberOfColumns: 1
             ),
-            contentPadding: 2,
-            headerSize: Size(width: 3),
             viewSize: Size(width: 10)
         ))
-        let expected = 2 + (10 - 2 - 2) + 2
-        expect(view?.chartSize.width, expected)
+        expect(view?.chartSize.width, 10)
     }
 
     func testChartHeightForSectionMode() {
@@ -166,12 +163,33 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 itemsPerSection: [1],
                 numberOfColumns: 1
             ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
             viewSize: Size(height: 10)
         ))
-        let expected = 2 + (10 - 2 - 2) + 2
-        expect(view?.chartSize.height, expected)
+        expect(view?.chartSize.height, 10)
+    }
+
+    func testChartWidthForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            viewSize: Size(width: 10)
+        ))
+        expect(view?.chartSize.width, 10)
+    }
+
+    func testChartHeightForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            viewSize: Size(height: 10)
+            ))
+        expect(view?.chartSize.height, 10)
     }
 
     func testColumnHeaderFrameCount() {
@@ -198,6 +216,34 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             viewSize: Size(width: 100)
         ))
         let expected = (100 - (2 + 2 + 4 + 3)) / 1
+        expect(view?.columnHeaders[safe: 0]?.frame.size.width, expected)
+    }
+
+    func testColumnHeaderWidthForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2,
+            viewSize: Size(width: 100)
+        ))
+        let expected = 100 - (2 + 2)
+        expect(view?.columnHeaders[safe: 0]?.frame.size.width, expected)
+    }
+
+    func testColumnHeaderWidthForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2,
+            viewSize: Size(width: 100)
+        ))
+        let expected = 100 - (2 + 2)
         expect(view?.columnHeaders[safe: 0]?.frame.size.width, expected)
     }
 
@@ -281,19 +327,90 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.columnHeaders[safe: 1]?.frame.origin.x, expected)
     }
 
-    func testColumnHeaderY() {
+    func testColumnHeaderXForSectionMode() {
         let view = expectView(presenting: .init(
             flags: .init(
-                mode: .all,
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2
+        ))
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.x, 2)
+    }
+
+    func testSecondColumnHeaderXForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2
             ),
-            contentPadding: 3,
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(height: 19)
+            contentPadding: 2,
+            viewSize: Size(width: 100)
         ))
-        expect(view?.columnHeaders[safe: 0]?.frame.origin.y, 3)
-        expect(view?.columnHeaders[safe: 1]?.frame.origin.y, 3)
+        expect(view?.columnHeaders[safe: 1]?.frame.origin.x, 100 + 2)
+    }
+
+    func testColumnHeaderXForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2
+        ))
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.x, 2)
+    }
+
+    func testSecondColumnHeaderXForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+            mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 2
+            ),
+            contentPadding: 2,
+            viewSize: Size(width: 100)
+        ))
+        expect(view?.columnHeaders[safe: 1]?.frame.origin.x, 100 + 2)
+    }
+
+    func testColumnHeaderYForAllMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .all,
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2
+        ))
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.y, 2)
+    }
+
+    func testColumnHeaderYForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            headerSize: Size(height: 10)
+        ))
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.y, -10)
+    }
+
+    func testColumnHeaderYForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            headerSize: Size(height: 10)
+        ))
+        expect(view?.columnHeaders[safe: 0]?.frame.origin.y, -10)
     }
 
     func testRowHeaderFrameCount() {
@@ -381,7 +498,33 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.rowHeaders[safe: 1]?.frame.size.height, expected)
     }
 
-    func testRowHeaderX() {
+    func testRowHeaderHeightForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2,
+            viewSize: Size(height: 10)
+        ))
+        expect(view?.rowHeaders[safe: 0]?.frame.size.height, 10 - 2 - 2)
+    }
+
+    func testRowHeaderHeightForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2,
+            viewSize: Size(height: 10)
+        ))
+        expect(view?.rowHeaders[safe: 0]?.frame.size.height, 10 - 2 - 2)
+    }
+
+    func testRowHeaderXForAllMode() {
         let view = expectView(presenting: .init(
             flags: .init(
                 mode: .all,
@@ -391,6 +534,30 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 2
         ))
         expect(view?.rowHeaders[safe: 0]?.frame.origin.x, 2)
+    }
+
+    func testRowHeaderXForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            headerSize: Size(width: 2)
+        ))
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.x, -2)
+    }
+
+    func testRowHeaderXForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            headerSize: Size(width: 2)
+        ))
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.x, -2)
     }
 
     func testRowHeaderYForAllModeWhenNotCompact() {
@@ -458,6 +625,54 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         let expectedRowHeight = (20 - (2 + 2 + 3 + 4 + 4)) / 2
         let expected = 2 + 3 + 4 + expectedRowHeight + 4
         expect(view?.rowHeaders[safe: 1]?.frame.origin.y, expected)
+    }
+
+    func testRowHeaderYForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2
+        ))
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.y, 2)
+    }
+
+    func testSecondRowHeaderYForSectionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .section(0),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: Size(height: 10)
+        ))
+        expect(view?.rowHeaders[safe: 1]?.frame.origin.y, 10)
+    }
+
+    func testRowHeaderYForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1],
+                numberOfColumns: 1
+            ),
+            contentPadding: 2
+        ))
+        expect(view?.rowHeaders[safe: 0]?.frame.origin.y, 2)
+    }
+
+    func testSecondRowHeaderYForEmotionMode() {
+        let view = expectView(presenting: .init(
+            flags: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [1, 1],
+                numberOfColumns: 1
+            ),
+            viewSize: Size(height: 10)
+        ))
+        expect(view?.rowHeaders[safe: 1]?.frame.origin.y, 10)
     }
 
     func testItemHeightWhenNotCompact() {
@@ -612,8 +827,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 mode: .all,
                 itemsPerSection: [1],
                 numberOfColumns: 1
-            ),
-            isFocused: false
+            )
         ))
         expect(view?.columnHeaders[safe: 0]?.alpha, 1)
         expect(view?.rowHeaders[safe: 0]?.alpha, 1)
