@@ -5,12 +5,13 @@ final class BookChapterView: UIView {
 
     let webView = WKWebView()
 
-    var contentOffset: CGPoint = .zero
+    fileprivate var contentOffset: CGPoint = .zero
 
     // MARK: Configure web view
 
     func configureWebView() {
         webView.navigationDelegate = self
+        webView.restorationIdentifier = "BookChapterWebView"
         webView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(webView)
         let webViewConstraints = [webView.topAnchor.constraint(equalTo: topAnchor),
@@ -27,6 +28,20 @@ final class BookChapterView: UIView {
         webView.scrollView.contentInset.bottom = bottom
         webView.scrollView.scrollIndicatorInsets.top = top
         webView.scrollView.scrollIndicatorInsets.bottom = bottom
+    }
+
+    // MARK: State preservation/restoration
+
+    private let contentOffsetKey = "contentOffsetKey"
+
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        coder.encode(webView.scrollView.contentOffset, forKey: contentOffsetKey)
+    }
+
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        contentOffset = coder.decodeCGPoint(forKey: contentOffsetKey)
     }
 
 }

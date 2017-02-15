@@ -38,17 +38,14 @@ final class BookChapterViewController: UIViewController {
     // MARK: State preservation/restoration
 
     private let chapterIndexKey = "ChapterIndex"
-    private let chapterContentOffsetKey = "ChapterContentOffsetKey"
 
     override func encodeRestorableState(with coder: NSCoder) {
         super.encodeRestorableState(with: coder)
         coder.encode(chapterIndex, forKey: chapterIndexKey)
-        coder.encode(bookChapterView.webView.scrollView.contentOffset, forKey: chapterContentOffsetKey)
     }
 
     override func decodeRestorableState(with coder: NSCoder) {
         super.decodeRestorableState(with: coder)
-        bookChapterView.contentOffset = coder.decodeCGPoint(forKey: chapterContentOffsetKey)
         chapterIndex = coder.decodeInteger(forKey: chapterIndexKey)
         chapterURL = BookController().book.chapters[chapterIndex].fileURL
     }
