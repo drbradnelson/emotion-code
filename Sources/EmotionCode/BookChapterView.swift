@@ -5,6 +5,8 @@ final class BookChapterView: UIView {
 
     let webView = WKWebView()
 
+    var contentOffset: CGPoint = .zero
+
     // MARK: Configure web view
 
     func configureWebView() {
