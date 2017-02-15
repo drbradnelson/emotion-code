@@ -36,4 +36,14 @@ final class AudioBarContainerController: UIViewController {
         audioBarController.loadURL(url: url)
     }
 
+    private func enableAudioBar() {
+        audioBarController.view.isUserInteractionEnabled = true
+        audioBarController.view.tintColor = view.tintColor
+    }
+
+    private func disableAudioBar() {
+        audioBarController.view.isUserInteractionEnabled = false
+        audioBarController.view.tintColor = .lightGray
+    }
+
 }
