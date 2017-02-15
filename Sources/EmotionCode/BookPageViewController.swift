@@ -38,6 +38,27 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         currentBookChapterViewController.preferredBottomLayoutGuide = preferredBottomLayoutGuide
     }
 
+    // MARK: State preservation/restoration
+
+    private let chapterViewControllerKey = "ChapterViewController"
+
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        if let chapterViewController = childViewControllers.first {
+            coder.encode(chapterViewController, forKey: chapterViewControllerKey)
+        }
+    }
+
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+    }
+
+    override func applicationFinishedRestoringState() {
+        chapterTitleView.setChapterIndex(currentChapterIndex)
+        enableDisablePreviousNextChapterButtons()
+        didShowChapter(currentChapterIndex)
+    }
+
     // MARK: Page view controller data source
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {

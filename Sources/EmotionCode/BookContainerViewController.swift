@@ -24,6 +24,19 @@ final class BookContainerViewController: UIViewController {
         bookPageViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length + audioBarContainerView.bounds.height
     }
 
+    // MARK: State preservation/restoration
+
+    private let bookPageViewControllerKey = "BookPageViewController"
+
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        coder.encode(bookPageViewController, forKey: bookPageViewControllerKey)
+    }
+
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         switch segue.destination {
