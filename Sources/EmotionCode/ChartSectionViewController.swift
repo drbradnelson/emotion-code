@@ -1,5 +1,4 @@
 import UIKit
-import Elm
 
 final class ChartSectionViewController: UICollectionViewController {
 
