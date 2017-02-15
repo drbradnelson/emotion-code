@@ -57,7 +57,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         let chapter = bookController.book.chapters[currentChapterIndex]
         chapterTitleView.setChapterTitle(chapter.title)
         enableDisablePreviousNextChapterButtons()
-        didShowChapter(currentChapterIndex)
+        didShowChapter(chapter)
     }
 
     var currentChapterIndex: Int {
@@ -85,7 +85,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
 
     // MARK: ???
 
-    var didShowChapter: (Int) -> Void = { _ in }
+    var didShowChapter: (Book.Chapter) -> Void = { _ in }
 
     func showChapter(at chapterIndex: Int, direction: UIPageViewControllerNavigationDirection, animated: Bool) {
         let chapterViewController = chapterViewControllerWithChapter(at: chapterIndex)
@@ -93,7 +93,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
         chapterTitleView.setChapterTitle(chapter.title)
         setViewControllers([chapterViewController], direction: direction, animated: animated, completion: nil)
         enableDisablePreviousNextChapterButtons()
-        didShowChapter(chapterIndex)
+        didShowChapter(chapter)
     }
 
     // MARK: Update bar button items
