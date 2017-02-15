@@ -8,6 +8,7 @@ struct Book {
         let title: String
         let subtitle: String?
         let fileURL: URL
+        let audioURL: URL?
     }
 
     let chapters: [Chapter]
