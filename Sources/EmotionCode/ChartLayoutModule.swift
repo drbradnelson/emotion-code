@@ -113,7 +113,7 @@ struct ChartLayoutModule: Elm.Module {
             throw Failure.missingViewSize
         }
 
-        // We're only rounding itemHeight and itemHeights to closest values
+        // We're rounding itemHeight and itemHeights to closest values
 
         func rowIndex(forSection section: Int) -> Int {
             return section / model.flags.numberOfColumns
@@ -140,6 +140,7 @@ struct ChartLayoutModule: Elm.Module {
                 return model.sectionSpacing
             case .section, .emotion:
                 let width = model.contentPadding * 2
+                // Not focused items should go completely off the visible area in order to disappear
                 let height = model.contentPadding + max(model.flags.topContentInset, model.flags.bottomContentInset)
                 return .init(width: width, height: height)
             }
@@ -320,17 +321,9 @@ struct ChartLayoutModule: Elm.Module {
                 case .all:
                     alpha = 1
                 case .section(let currentSection):
-                    if model.isFocused {
-                        alpha = (section == currentSection) ? 1 : 0
-                    } else {
-                        alpha = 1
-                    }
+                    alpha = (!model.isFocused || currentSection == section) ? 1 : 0
                 case .emotion(let indexPath):
-                    if model.isFocused {
-                        alpha = (indexPath.item == item && indexPath.section == section) ? 1 : 0
-                    } else {
-                        alpha = 1
-                    }
+                    alpha = (!model.isFocused || indexPath.item == item && indexPath.section == section) ? 1 : 0
                 }
                 let frame = Rect(origin: position, size: size)
                 return .init(frame: frame, alpha: alpha)
