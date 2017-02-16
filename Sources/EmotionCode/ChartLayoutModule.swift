@@ -100,7 +100,7 @@ struct ChartLayoutModule: Elm.Module {
         }
 
         func columnIndex(forSection section: Int) -> Int {
-            return (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
+            return section % model.flags.numberOfColumns
         }
 
         let sectionsCount = model.flags.itemsPerSection.count
@@ -251,10 +251,10 @@ struct ChartLayoutModule: Elm.Module {
         }
 
         let itemPositions = sectionsRange.map { section -> [Point] in
-            let column = (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
-            let xPosition = columnXPositions[column]
-
             let itemsRange = 0..<model.flags.itemsPerSection[section]
+            let column = columnIndex(forSection: section)
+
+            let xPosition = columnXPositions[column]
             return itemsRange.map { item in
                 let yPosition = yPositionsForItems[section][item]
                 return Point(x: xPosition, y: yPosition)
