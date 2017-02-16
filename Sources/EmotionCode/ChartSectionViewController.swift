@@ -2,8 +2,6 @@ import UIKit
 
 final class ChartSectionViewController: UICollectionViewController {
 
-    var section: Chart.Section!
-
     // MARK: Title
 
     func setTitle(forSection section: Int) {
@@ -45,8 +43,10 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     private func prepare(for destination: ChartEmotionViewController) {
-        let item = collectionView!.indexPathForSelectedItem!.item
-        destination.setTitle(for: section.emotions[item])
+        let selectedIndexPath = collectionView!.indexPathForSelectedItem!
+        let chartDataSource = collectionView!.dataSource as! ChartViewControllerDataSource
+        let emotion = chartDataSource.chart.section(atIndex: selectedIndexPath.section).emotions[selectedIndexPath.item]
+        destination.setTitle(for: emotion)
     }
 
     // MARK: Layout
