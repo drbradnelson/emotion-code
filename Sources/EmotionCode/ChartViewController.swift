@@ -29,6 +29,7 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        toggleLabelsAlongsideTransition()
         collectionView!.isScrollEnabled = screenIsSmall
     }
 
@@ -55,6 +56,18 @@ final class ChartViewController: UICollectionViewController {
     private func prepare(for destination: ChartSectionViewController) {
         let section = collectionView!.indexPathForSelectedItem!.section
         destination.setTitle(forSection: section)
+    }
+
+    // MARK: Layout
+
+    private func toggleLabelsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            collectionView!.visibleCells.forEach { cell in
+                guard let cell = cell as? ItemCollectionViewCell else { return }
+                cell.smallTitleLabel.alpha = 1
+                cell.largeTitleLabel.alpha = 0
+            }
+        }, completion: nil)
     }
 
 }

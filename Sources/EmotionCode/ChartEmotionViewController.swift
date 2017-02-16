@@ -20,7 +20,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
-            itemCell.setDescriptionVisible(descriptionVisible)
+            itemCell.largeTitleLabel.alpha = 0
         }, completion: nil)
     }
 

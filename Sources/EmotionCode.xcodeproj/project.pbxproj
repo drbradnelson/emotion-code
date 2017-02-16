@@ -37,7 +37,6 @@
 		916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BED5D1DED81C50048314E /* ChartLayout.swift */; };
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
-		91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */; };
 		91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */; };
 		91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */; };
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
@@ -111,7 +110,6 @@
 		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91B88ACC1D58B8E600DFCDB2 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
-		91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+TransitionLayout.swift"; sourceTree = "<group>"; };
 		91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
 				0F28D0C01D4E7659002C98E7 /* Build */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
-				91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */,
 				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				910C68421D6AE193004E7E7F /* TabIcons.xcassets */,
@@ -525,7 +522,6 @@
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				911377741DFFF9C6008627F1 /* ChartLayoutModule.swift in Sources */,
 				B6EE047F1E39046B00013226 /* SupportViewController.swift in Sources */,
-				91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */,
 				91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */,
 				B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
