@@ -87,7 +87,7 @@
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="rEs-Oe-nW8" id="Sw5-WY-SXR"/>
+                            <outlet property="dataSource" destination="p3s-HC-Syr" id="cYl-Ce-4No"/>
                             <outlet property="delegate" destination="rEs-Oe-nW8" id="AZJ-dd-Ika"/>
                         </connections>
                     </collectionView>
@@ -98,6 +98,7 @@
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBQ-ci-T9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="p3s-HC-Syr" customClass="ChartViewControllerDataSource" customModule="EmotionCode" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>
