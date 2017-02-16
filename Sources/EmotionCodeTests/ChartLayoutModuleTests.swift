@@ -1367,50 +1367,6 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.items[safe: 1]?[safe: 1]?.alpha, 1)
     }
 
-    func testViewHeadersAt1() {
-        let view = expectView(presenting: .init(
-            flags: .init(
-                itemsPerSection: [1, 2, 3],
-                numberOfColumns: 3
-            )
-            ))
-        let indexPaths: [IndexPath] = [
-            .init(item: 0, section: 0), .init(item: 0, section: 1), .init(item: 0, section: 2),
-            .init(item: 1, section: 0), .init(item: 1, section: 1), .init(item: 1, section: 2)
-        ]
-        let columnHeaders = indexPaths.flatMap { indexPath in
-            view?.columnHeaderAt(item: indexPath.item, section: indexPath.section)
-        }
-        let rowHeaders = indexPaths.flatMap { indexPath in
-            view?.rowHeaderAt(item: indexPath.item, section: indexPath.section)
-        }
-        expect(columnHeaders.count, 3)
-        expect(rowHeaders.count, 1)
-    }
-
-    func testViewHeadersAt2() {
-        let view = expectView(presenting: .init(
-            flags: .init(
-                itemsPerSection: [1, 2, 3],
-                numberOfColumns: 2
-            )
-        ))
-        let indexPaths: [IndexPath] = [
-            .init(item: 0, section: 0), .init(item: 0, section: 1),
-            .init(item: 1, section: 0), .init(item: 1, section: 1),
-            .init(item: 0, section: 2),
-            .init(item: 1, section: 2)
-        ]
-        let columnHeaders = indexPaths.flatMap { indexPath in
-            view?.columnHeaderAt(item: indexPath.item, section: indexPath.section)
-        }
-        let rowHeaders = indexPaths.flatMap { indexPath in
-            view?.rowHeaderAt(item: indexPath.item, section: indexPath.section)
-        }
-        expect(columnHeaders.count, 2)
-        expect(rowHeaders.count, 2)
-    }
-
 }
 
 extension ChartLayoutModule.Flags {
