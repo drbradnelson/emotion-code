@@ -88,7 +88,7 @@
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBQ-ci-T9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="p3s-HC-Syr" customClass="ChartDataSource" customModule="EmotionCode" customModuleProvider="target"/>
+                <customObject id="p3s-HC-Syr" customClass="ChartViewControllerDataSource" customModule="EmotionCode" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>

@@ -1,6 +1,6 @@
 import UIKit
 
-final class ChartDataSource: NSObject, UICollectionViewDataSource {
+final class ChartViewControllerDataSource: NSObject, UICollectionViewDataSource {
 
     let chart = ChartController().chart
 
