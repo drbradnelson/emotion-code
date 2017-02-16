@@ -1,6 +1,8 @@
 import UIKit
 import Elm
 
+// swiftlint:disable cyclomatic_complexity
+
 final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
@@ -35,12 +37,16 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        guard indexPath.item == 0 else { return nil }
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let header = program.view.columnHeaderAt(item: indexPath.item, section: indexPath.section)
+            guard indexPath.section < ChartLayout.numberOfColumns else { return nil }
+            let header = program.view.columnHeaders[indexPath.section]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         case ChartHeaderView.rowKind:
-            let header = program.view.rowHeaderAt(item: indexPath.item, section: indexPath.section)
+            guard (indexPath.section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns == 0 else { return nil }
+            let row = indexPath.section / ChartLayout.numberOfColumns
+            let header = program.view.rowHeaders[row]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         default: return nil
         }

@@ -52,24 +52,10 @@ struct ChartLayoutModule: Elm.Module {
     typealias Header = Item
 
     struct View {
-
         let chartSize: Size
         let items: [[Item]]
         let columnHeaders: [Header]
         let rowHeaders: [Header]
-
-        func columnHeaderAt(item: Int, section: Int) -> Header? {
-            guard section < columnHeaders.count, item == 0 else { return nil }
-            let column = section
-            return columnHeaders[column]
-        }
-
-        func rowHeaderAt(item: Int, section: Int) -> Header? {
-            guard (section + columnHeaders.count) % columnHeaders.count == 0, item == 0 else { return nil }
-            let row = section / columnHeaders.count
-            return rowHeaders[row]
-        }
-
     }
 
     enum Failure: Error {
