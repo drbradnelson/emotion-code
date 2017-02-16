@@ -76,24 +76,24 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
-    func testSystemDidSetIsFocused1() {
-        let update = expectUpdate(for: .systemDidSetIsFocused(true), model: .init(isFocused: true))
-        expect(update?.model.isFocused, true)
-    }
-
-    func testSystemDidSetIsFocused2() {
-        let update = expectUpdate(for: .systemDidSetIsFocused(true), model: .init(isFocused: false))
-        expect(update?.model.isFocused, true)
-    }
-
-    func testSystemDidSetIsFocused3() {
-        let update = expectUpdate(for: .systemDidSetIsFocused(false), model: .init(isFocused: false))
+    func testWillTransition1() {
+        let update = expectUpdate(for: .viewWillTransition, model: .init(isFocused: false))
         expect(update?.model.isFocused, false)
     }
 
-    func testSystemDidSetIsFocused4() {
-        let update = expectUpdate(for: .systemDidSetIsFocused(false), model: .init(isFocused: true))
+    func testWillTransition2() {
+        let update = expectUpdate(for: .viewWillTransition, model: .init(isFocused: true))
         expect(update?.model.isFocused, false)
+    }
+
+    func testViewDidTransition1() {
+        let update = expectUpdate(for: .viewDidTransition, model: .init(isFocused: true))
+        expect(update?.model.isFocused, true)
+    }
+
+    func testViewDidTransition2() {
+        let update = expectUpdate(for: .viewDidTransition, model: .init(isFocused: false))
+        expect(update?.model.isFocused, true)
     }
 
     // MARK: View

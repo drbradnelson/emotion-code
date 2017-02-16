@@ -19,14 +19,14 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        chartLayout.program.dispatch(.systemDidSetIsFocused(true))
+        chartLayout.program.dispatch(.viewDidTransition)
         chartLayout.invalidateLayout()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
-        chartLayout.program.dispatch(.systemDidSetIsFocused(false))
+        chartLayout.program.dispatch(.viewWillTransition)
     }
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {

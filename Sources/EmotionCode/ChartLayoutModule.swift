@@ -27,7 +27,8 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Message {
         case systemDidSetViewSize(Size)
-        case systemDidSetIsFocused(Bool)
+        case viewDidTransition
+        case viewWillTransition
     }
 
     struct Model {
@@ -95,8 +96,10 @@ struct ChartLayoutModule: Elm.Module {
                 throw Failure.invalidViewSize
             }
             model.viewSize = size
-        case .systemDidSetIsFocused(let isFocused):
-            model.isFocused = isFocused
+        case .viewDidTransition:
+            model.isFocused = true
+        case .viewWillTransition:
+            model.isFocused = false
         }
     }
 

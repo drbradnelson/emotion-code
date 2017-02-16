@@ -29,7 +29,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        chartLayout.program.dispatch(.systemDidSetIsFocused(true))
+        chartLayout.program.dispatch(.viewDidTransition)
         chartLayout.invalidateLayout()
     }
 
@@ -37,7 +37,7 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
-        chartLayout.program.dispatch(.systemDidSetIsFocused(false))
+        chartLayout.program.dispatch(.viewWillTransition)
     }
 
     // MARK: Collection view delegate
