@@ -24,6 +24,11 @@ final class ChartViewController: UICollectionViewController {
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        toggleLabelsAlongsideTransition()
+    }
+
     // MARK: Collection view data source
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -80,6 +85,18 @@ final class ChartViewController: UICollectionViewController {
         let section = collectionView!.indexPathForSelectedItem!.section
         destination.setTitle(forSection: section)
         destination.chart = chart
+    }
+
+    // MARK: Layout
+
+    private func toggleLabelsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            collectionView!.visibleCells.forEach { cell in
+                guard let cell = cell as? ItemCollectionViewCell else { return }
+                cell.smallTitleLabel.alpha = 1
+                cell.largeTitleLabel.alpha = 0
+            }
+        }, completion: nil)
     }
 
 }
