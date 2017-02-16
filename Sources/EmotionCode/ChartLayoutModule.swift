@@ -69,13 +69,6 @@ struct ChartLayoutModule: Elm.Module {
             return rowHeaders[row]
         }
 
-        init(chartSize: Size, items: [[Item]], columnHeaders: [Header], rowHeaders: [Header]) {
-            self.chartSize = chartSize
-            self.items = items
-            self.columnHeaders = columnHeaders
-            self.rowHeaders = rowHeaders
-        }
-
     }
 
     enum Failure: Error {
@@ -113,8 +106,6 @@ struct ChartLayoutModule: Elm.Module {
             throw Failure.missingViewSize
         }
 
-        // We're rounding itemHeight and itemHeights to closest values
-
         func rowIndex(forSection section: Int) -> Int {
             return section / model.flags.numberOfColumns
         }
@@ -140,7 +131,6 @@ struct ChartLayoutModule: Elm.Module {
                 return model.sectionSpacing
             case .section, .emotion:
                 let width = model.contentPadding * 2
-                // Not focused items should go completely off the visible area in order to disappear
                 let height = model.contentPadding + max(model.flags.topContentInset, model.flags.bottomContentInset)
                 return .init(width: width, height: height)
             }
