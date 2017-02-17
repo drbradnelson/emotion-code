@@ -32,16 +32,16 @@ final class BookChapterView: UIView {
 
     // MARK: State preservation/restoration
 
-    private let webViewcontentOffsetKey = "WebViewContentOffsetKey"
+    private let webViewContentOffsetKey = "WebViewContentOffsetKey"
 
     override func encodeRestorableState(with coder: NSCoder) {
         super.encodeRestorableState(with: coder)
-        coder.encode(webView.scrollView.contentOffset, forKey: webViewcontentOffsetKey)
+        coder.encode(webView.scrollView.contentOffset, forKey: webViewContentOffsetKey)
     }
 
     override func decodeRestorableState(with coder: NSCoder) {
         super.decodeRestorableState(with: coder)
-        restoredWebViewContentOffset = coder.decodeCGPoint(forKey: webViewcontentOffsetKey)
+        restoredWebViewContentOffset = coder.decodeCGPoint(forKey: webViewContentOffsetKey)
     }
 
 }
