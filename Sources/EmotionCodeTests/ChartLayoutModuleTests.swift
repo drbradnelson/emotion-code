@@ -72,6 +72,16 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(start?.model.topContentInset, 2)
     }
 
+    func testLoadViewSize1() {
+        let start = expectStart(with: .init(viewSize: .init(width: 1, height: 2)))
+        expect(start?.model.viewSize, Size(width: 1, height: 2))
+    }
+
+    func testLoadViewSize2() {
+        let start = expectStart(with: .init(viewSize: .init(width: 3, height: 4)))
+        expect(start?.model.viewSize, Size(width: 3, height: 4))
+    }
+
     // MARK: Update
 
     func testSetViewSize1() {
@@ -605,12 +615,14 @@ extension ChartLayoutModule.Flags {
         mode: ChartLayoutModule.Mode = .all,
         itemsPerSection: [Int] = [1],
         numberOfColumns: Int = 1,
-        topContentInset: Int = 0
+        topContentInset: Int = 0,
+        viewSize: Size = .init()
         ) {
         self.mode = mode
         self.itemsPerSection = itemsPerSection
         self.numberOfColumns = numberOfColumns
         self.topContentInset = topContentInset
+        self.viewSize = viewSize
     }
 
 }

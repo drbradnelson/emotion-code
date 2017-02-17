@@ -14,14 +14,15 @@ final class ChartLayout: UICollectionViewLayout {
             mode: mode,
             itemsPerSection: itemsPerSection,
             numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: Int(topContentInset)
+            topContentInset: Int(topContentInset),
+            viewSize: .init(cgSize: viewSize)
             )
         )
     }
 
     override func prepare() {
         super.prepare()
-        program.dispatch(.setViewSize(Size(collectionView!.visibleContentSize)))
+        program.dispatch(.setViewSize(Size(cgSize: collectionView!.visibleContentSize)))
     }
 
     override var collectionViewContentSize: CGSize {
@@ -100,9 +101,9 @@ private extension Size {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
     }
 
-    init(_ size: CGSize) {
-        width = Int(size.width)
-        height = Int(size.height)
+    init(cgSize: CGSize) {
+        width = Int(cgSize.width)
+        height = Int(cgSize.height)
     }
 
 }

@@ -11,6 +11,7 @@ struct ChartLayoutModule: Elm.Module {
         let itemsPerSection: [Int]
         let numberOfColumns: Int
         let topContentInset: Int
+        let viewSize: Size
     }
 
     enum Mode {
@@ -34,7 +35,7 @@ struct ChartLayoutModule: Elm.Module {
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10
-        var viewSize: Size?
+        var viewSize: Size
     }
 
     enum Command {}
@@ -49,7 +50,6 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Failure: Error {
         case missingItems
-        case missingViewSize
         case invalidNumberOfColums
         case invalidViewSize
     }
@@ -61,7 +61,7 @@ struct ChartLayoutModule: Elm.Module {
         guard !flags.itemsPerSection.isEmpty else {
             throw Failure.missingItems
         }
-        return Model(mode: flags.mode, itemsPerSection: flags.itemsPerSection, numberOfColumns: flags.numberOfColumns, topContentInset: flags.topContentInset, viewSize: .zero)
+        return Model(mode: flags.mode, itemsPerSection: flags.itemsPerSection, numberOfColumns: flags.numberOfColumns, topContentInset: flags.topContentInset, viewSize: flags.viewSize)
     }
 
     static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {
@@ -75,10 +75,6 @@ struct ChartLayoutModule: Elm.Module {
     }
 
     static func view(for model: Model) throws -> View {
-
-        guard let viewSize = model.viewSize else {
-            throw Failure.missingViewSize
-        }
 
         // We're only rounding itemHeight and itemHeights to closest values
 
@@ -119,10 +115,10 @@ struct ChartLayoutModule: Elm.Module {
 
         let itemHeight: Int = {
             guard
-                viewSize.height >= model.minViewHeightForCompactLayout,
+                model.viewSize.height >= model.minViewHeightForCompactLayout,
                 let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
-            let totalAvailableSpacePerSection = (viewSize.height - totalSpacing) / rowsCount
+            let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
             return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
         }()
 
@@ -133,10 +129,10 @@ struct ChartLayoutModule: Elm.Module {
                 let itemCount = model.itemsPerSection[section]
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
-                let totalAvailableContentHeight = viewSize.height - totalPaddingHeight - totalSpacingHeight
+                let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
                 return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
-                return viewSize.height - model.contentPadding * 2
+                return model.viewSize.height - model.contentPadding * 2
             }
         }
 
@@ -169,12 +165,12 @@ struct ChartLayoutModule: Elm.Module {
         let itemWidth: Int = {
             switch model.mode {
             case .all:
-                let totalAvailableWidth = viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
+                let totalAvailableWidth = model.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
                 let totalSpacingWidth = sectionSpacing.width * model.numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
                 return totalContentWidth / model.numberOfColumns
             case .section, .emotion:
-                return viewSize.width - model.contentPadding * 2
+                return model.viewSize.width - model.contentPadding * 2
             }
         }()
 
@@ -310,7 +306,7 @@ struct ChartLayoutModule: Elm.Module {
         let chartSize: Size = {
             guard
                 let lastRowHeaderFrame = rowHeaderFrames.last,
-                let lastColumnHeaderFrame = columnHeaderFrames.last else { return viewSize }
+                let lastColumnHeaderFrame = columnHeaderFrames.last else { return model.viewSize }
             let height = lastRowHeaderFrame.maxY + model.contentPadding
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
             return Size(width: width, height: height)
