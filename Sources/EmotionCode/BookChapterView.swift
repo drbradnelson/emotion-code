@@ -5,7 +5,7 @@ final class BookChapterView: UIView {
 
     let webView = WKWebView()
 
-    fileprivate var contentOffset: CGPoint = .zero
+    fileprivate var restoredWebViewContentOffset: CGPoint?
 
     // MARK: Configure web view
 
@@ -32,16 +32,16 @@ final class BookChapterView: UIView {
 
     // MARK: State preservation/restoration
 
-    private let contentOffsetKey = "contentOffsetKey"
+    private let webViewcontentOffsetKey = "WebViewContentOffsetKey"
 
     override func encodeRestorableState(with coder: NSCoder) {
         super.encodeRestorableState(with: coder)
-        coder.encode(webView.scrollView.contentOffset, forKey: contentOffsetKey)
+        coder.encode(webView.scrollView.contentOffset, forKey: webViewcontentOffsetKey)
     }
 
     override func decodeRestorableState(with coder: NSCoder) {
         super.decodeRestorableState(with: coder)
-        contentOffset = coder.decodeCGPoint(forKey: contentOffsetKey)
+        restoredWebViewContentOffset = coder.decodeCGPoint(forKey: webViewcontentOffsetKey)
     }
 
 }
@@ -49,10 +49,9 @@ final class BookChapterView: UIView {
 extension BookChapterView: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        if contentOffset != .zero {
-            webView.scrollView.setContentOffset(contentOffset, animated: true)
-            contentOffset = .zero
-        }
+        guard let restoredWebViewContentOffset = restoredWebViewContentOffset else { return }
+        webView.scrollView.setContentOffset(restoredWebViewContentOffset, animated: true)
+        self.restoredWebViewContentOffset = nil
     }
 
 }
