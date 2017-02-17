@@ -49,9 +49,9 @@ final class BookChapterView: UIView {
 extension BookChapterView: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        guard let restoredWebViewContentOffset = restoredWebViewContentOffset else { return }
-        webView.scrollView.setContentOffset(restoredWebViewContentOffset, animated: true)
-        self.restoredWebViewContentOffset = nil
+        guard let contentOffset = restoredWebViewContentOffset else { return }
+        webView.scrollView.setContentOffset(contentOffset, animated: true)
+        restoredWebViewContentOffset = nil
     }
 
 }
