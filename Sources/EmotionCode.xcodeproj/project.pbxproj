@@ -533,7 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -ex\ntest \"$(swiftlint version)\" = 0.16.1\nswiftlint lint --strict\n";
+			shellScript = "set -ex\ntest \"$(swiftlint version)\" = 0.16.1\nswiftlint lint\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
