@@ -533,7 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -ex\ntest \"$(swiftlint version)\" = 0.16.1\n#swiftlint lint --strict\n";
+			shellScript = "set -ex\ntest \"$(swiftlint version)\" = 0.16.1\nswiftlint lint --strict\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
@@ -933,6 +933,7 @@
 				91B94E6E1E57148A006680E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6B273741E05948E00771409 /* Build configuration list for PBXNativeTarget "EmotionCodeTests" */ = {
 			isa = XCConfigurationList;
