@@ -10,7 +10,7 @@ final class ChartLayout: UICollectionViewLayout {
     private var program: Program<ChartLayoutModule>!
 
     func setProgramModel(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
-        program = ChartLayoutModule.makeProgram(flags: .init(
+        program = ChartLayoutModule.makeProgram(delegate: self, flags: .init(
             mode: mode,
             itemsPerSection: itemsPerSection,
             numberOfColumns: ChartLayout.numberOfColumns,
@@ -64,6 +64,13 @@ final class ChartLayout: UICollectionViewLayout {
         default: return nil
         }
     }
+
+}
+
+extension ChartLayout: Elm.Delegate {
+
+    public func program(_ program: Program<ChartLayoutModule>, didUpdate view: ChartLayoutModule.View) {}
+    public func program(_ program: Program<ChartLayoutModule>, didEmit command: ChartLayoutModule.Command) {}
 
 }
 

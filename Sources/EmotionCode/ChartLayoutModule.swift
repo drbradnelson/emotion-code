@@ -51,7 +51,7 @@ struct ChartLayoutModule: Elm.Module {
         case invalidViewSize
     }
 
-    static func model(loading flags: Flags) throws -> Model {
+    public static func start(with flags: Flags, perform: (Command) -> Void) throws -> Model {
         guard flags.numberOfColumns > 0 else {
             throw Failure.invalidNumberOfColums
         }
@@ -71,7 +71,7 @@ struct ChartLayoutModule: Elm.Module {
         }
     }
 
-    static func view(presenting model: Model) throws -> View {
+    static func view(for model: Model) throws -> View {
 
         guard let viewSize = model.viewSize else {
             throw Failure.missingViewSize

@@ -37,12 +37,12 @@
 		916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BED5D1DED81C50048314E /* ChartLayout.swift */; };
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
-		91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */; };
 		91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */; };
 		91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */; };
 		B65C13F51DB0F518008B4A77 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F41DB0F518008B4A77 /* ChartViewController.swift */; };
 		B65C13F71DB0F572008B4A77 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */; };
 		B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */; };
+		B65E38731E54F73F00AA3CC7 /* ChartViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E38721E54F73F00AA3CC7 /* ChartViewControllerDataSource.swift */; };
 		B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */; };
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
@@ -109,12 +109,12 @@
 		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91B88ACC1D58B8E600DFCDB2 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
-		91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+TransitionLayout.swift"; sourceTree = "<group>"; };
 		91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSectionViewController.swift; sourceTree = "<group>"; };
+		B65E38721E54F73F00AA3CC7 /* ChartViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewControllerDataSource.swift; sourceTree = "<group>"; };
 		B6B2736D1E05948E00771409 /* EmotionCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B273711E05948E00771409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartNavigationController.swift; sourceTree = "<group>"; };
@@ -172,6 +172,7 @@
 		0F28D0BE1D4E7624002C98E7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B65E38721E54F73F00AA3CC7 /* ChartViewControllerDataSource.swift */,
 				91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */,
 				B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */,
 				91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */,
@@ -256,7 +257,6 @@
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
 				0F28D0C01D4E7659002C98E7 /* Build */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
-				91C5D83F1DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift */,
 				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				910C68421D6AE193004E7E7F /* TabIcons.xcassets */,
@@ -521,7 +521,6 @@
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				911377741DFFF9C6008627F1 /* ChartLayoutModule.swift in Sources */,
 				B6EE047F1E39046B00013226 /* SupportViewController.swift in Sources */,
-				91C5D8401DCB600700844D24 /* UICollectionViewController+TransitionLayout.swift in Sources */,
 				91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */,
 				B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */,
 				91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */,
@@ -537,6 +536,7 @@
 				91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */,
 				916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
+				B65E38731E54F73F00AA3CC7 /* ChartViewControllerDataSource.swift in Sources */,
 				0FA620E61D6D3AA900E48335 /* BookChapterListViewController.swift in Sources */,
 				913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
