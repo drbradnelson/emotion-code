@@ -25,12 +25,13 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
                 let sections = 0..<masterCollectionView.numberOfSections
                 let itemsPerSection = sections.map(masterCollectionView.numberOfItems)
                 let contentInset = masterCollectionView.contentInset
-                chartLayout.program = ChartLayoutModule.makeProgram(flags: .init(
+                chartLayout.program = ChartLayoutModule.makeProgram(delegate: chartLayout, flags: .init(
                     mode: chartLayoutMode,
                     itemsPerSection: itemsPerSection,
                     numberOfColumns: ChartLayout.numberOfColumns,
                     topContentInset: .init(contentInset.top),
-                    bottomContentInset: .init(contentInset.bottom)
+                    bottomContentInset: .init(contentInset.bottom),
+                    viewSize: Size(masterCollectionView.visibleContentSize)
                 ))
             }
         }

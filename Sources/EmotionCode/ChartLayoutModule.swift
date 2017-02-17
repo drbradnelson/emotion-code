@@ -13,6 +13,7 @@ struct ChartLayoutModule: Elm.Module {
         let numberOfColumns: Int
         let topContentInset: Int
         let bottomContentInset: Int
+        let viewSize: Size
     }
 
     enum Mode: Equatable {
@@ -26,7 +27,6 @@ struct ChartLayoutModule: Elm.Module {
     }
 
     enum Message {
-        case systemDidSetViewSize(Size)
         case viewDidTransition
         case viewWillTransition
     }
@@ -39,7 +39,6 @@ struct ChartLayoutModule: Elm.Module {
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10
-        var viewSize: Size?
         var isFocused = false
     }
 
@@ -60,28 +59,25 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Failure: Error {
         case missingItems
-        case missingViewSize
         case invalidNumberOfColums
         case invalidViewSize
     }
 
-    static func model(loading flags: Flags) throws -> Model {
+    public static func start(with flags: Flags, perform: (Command) -> Void) throws -> Model {
         guard flags.numberOfColumns > 0 else {
             throw Failure.invalidNumberOfColums
         }
         guard !flags.itemsPerSection.isEmpty else {
             throw Failure.missingItems
         }
-        return Model(flags: flags, viewSize: nil, isFocused: false)
+        guard flags.viewSize.width > 0, flags.viewSize.height > 0 else {
+            throw Failure.invalidViewSize
+        }
+        return Model(flags: flags, isFocused: false)
     }
 
     static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {
         switch message {
-        case .systemDidSetViewSize(let size):
-            guard size.width > 0, size.height > 0 else {
-                throw Failure.invalidViewSize
-            }
-            model.viewSize = size
         case .viewDidTransition:
             model.isFocused = true
         case .viewWillTransition:
@@ -89,11 +85,7 @@ struct ChartLayoutModule: Elm.Module {
         }
     }
 
-    static func view(presenting model: Model) throws -> View {
-
-        guard let viewSize = model.viewSize else {
-            throw Failure.missingViewSize
-        }
+    static func view(for model: Model) throws -> View {
 
         func rowIndex(forSection section: Int) -> Int {
             return section / model.flags.numberOfColumns
@@ -140,10 +132,10 @@ struct ChartLayoutModule: Elm.Module {
 
         let itemHeight: Int = {
             guard
-                viewSize.height >= model.minViewHeightForCompactLayout,
+                model.flags.viewSize.height >= model.minViewHeightForCompactLayout,
                 let maximumItemsCountInSection = model.flags.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
-            let totalAvailableSpacePerSection = (viewSize.height - totalSpacing) / rowsCount
+            let totalAvailableSpacePerSection = (model.flags.viewSize.height - totalSpacing) / rowsCount
             return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
         }()
 
@@ -154,10 +146,10 @@ struct ChartLayoutModule: Elm.Module {
                 let itemCount = model.flags.itemsPerSection[section]
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
-                let totalAvailableContentHeight = viewSize.height - totalPaddingHeight - totalSpacingHeight
+                let totalAvailableContentHeight = model.flags.viewSize.height - totalPaddingHeight - totalSpacingHeight
                 return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
-                return viewSize.height - model.contentPadding * 2
+                return model.flags.viewSize.height - model.contentPadding * 2
             }
         }
 
@@ -190,12 +182,12 @@ struct ChartLayoutModule: Elm.Module {
         let itemWidth: Int = {
             switch model.flags.mode {
             case .all:
-                let totalAvailableWidth = viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
+                let totalAvailableWidth = model.flags.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
                 let totalSpacingWidth = sectionSpacing.width * model.flags.numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
                 return totalContentWidth / model.flags.numberOfColumns
             case .section, .emotion:
-                return viewSize.width - model.contentPadding * 2
+                return model.flags.viewSize.width - model.contentPadding * 2
             }
         }()
 
@@ -371,12 +363,12 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let chartSize: Size = {
-            let isCompact = viewSize.height >= model.minViewHeightForCompactLayout
+            let isCompact = model.flags.viewSize.height >= model.minViewHeightForCompactLayout
             guard
                 model.flags.mode == .all,
                 !isCompact,
                 let lastRowHeaderFrame = rowHeaders.last?.frame,
-                let lastColumnHeaderFrame = columnHeaders.last?.frame else { return viewSize }
+                let lastColumnHeaderFrame = columnHeaders.last?.frame else { return model.flags.viewSize }
             let height = lastRowHeaderFrame.maxY + model.contentPadding
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
             return .init(width: width, height: height)

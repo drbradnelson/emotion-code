@@ -9,11 +9,6 @@ final class ChartLayout: UICollectionViewLayout {
 
     var program: Program<ChartLayoutModule>!
 
-    override func prepare() {
-        super.prepare()
-        program.dispatch(.systemDidSetViewSize(.init(collectionView!.visibleContentSize)))
-    }
-
     override var collectionViewContentSize: CGSize {
         return program.view.chartSize.cgSize
     }
@@ -57,6 +52,13 @@ final class ChartLayout: UICollectionViewLayout {
 
 }
 
+extension ChartLayout: Elm.Delegate {
+
+    public func program(_ program: Program<ChartLayoutModule>, didUpdate view: ChartLayoutModule.View) {}
+    public func program(_ program: Program<ChartLayoutModule>, didEmit command: ChartLayoutModule.Command) {}
+
+}
+
 private extension UICollectionViewLayoutAttributes {
 
     convenience init(indexPath: IndexPath, item: ChartLayoutModule.Item) {
@@ -80,7 +82,7 @@ private extension Rect {
     }
 }
 
-private extension Size {
+extension Size {
 
     var cgSize: CGSize {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
