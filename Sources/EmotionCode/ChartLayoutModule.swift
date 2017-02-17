@@ -27,8 +27,9 @@ struct ChartLayoutModule: Elm.Module {
     }
 
     enum Message {
-        case viewDidTransition
+        case systemDidSetViewSize(Size)
         case viewWillTransition
+        case viewDidTransition
     }
 
     struct Model {
@@ -82,10 +83,26 @@ struct ChartLayoutModule: Elm.Module {
             model.isFocused = true
         case .viewWillTransition:
             model.isFocused = false
+        case .systemDidSetViewSize(let viewSize):
+            guard viewSize.width > 0, viewSize.height > 0 else {
+                throw Failure.invalidViewSize
+            }
+            model = Model(
+                flags: .init(
+                    mode: model.flags.mode,
+                    itemsPerSection: model.flags.itemsPerSection,
+                    numberOfColumns: model.flags.numberOfColumns,
+                    topContentInset: model.flags.topContentInset,
+                    bottomContentInset: model.flags.bottomContentInset,
+                    viewSize: viewSize
+                ),
+                isFocused: model.isFocused
+            )
         }
     }
 
     static func view(for model: Model) throws -> View {
+        print(#function)
 
         func rowIndex(forSection section: Int) -> Int {
             return section / model.flags.numberOfColumns

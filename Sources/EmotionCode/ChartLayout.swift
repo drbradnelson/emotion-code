@@ -13,6 +13,11 @@ final class ChartLayout: UICollectionViewLayout {
         return program.view.chartSize.cgSize
     }
 
+    override func prepare() {
+        super.prepare()
+        program.dispatch(.systemDidSetViewSize(.init(collectionView!.visibleContentSize)))
+    }
+
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let collectionView = collectionView else { return nil }
         let items = collectionView.indexPaths.flatMap(layoutAttributesForItem)

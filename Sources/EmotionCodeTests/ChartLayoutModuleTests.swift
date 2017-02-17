@@ -64,6 +64,28 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
+    // MARK: Update
+
+    func testSystemDidSetViewSizeInvalid1() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 0, height: 10)), model: .init())
+        expect(failure, .invalidViewSize)
+    }
+
+    func testSystemDidSetViewSizeInvalid2() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: -1, height: 10)), model: .init())
+        expect(failure, .invalidViewSize)
+    }
+
+    func testSystemDidSetViewSizeInvalid3() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 10, height: 0)), model: .init())
+        expect(failure, .invalidViewSize)
+    }
+
+    func testSystemDidSetViewSizeInvalid4() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 10, height: -1)), model: .init())
+        expect(failure, .invalidViewSize)
+    }
+
     func testWillTransition1() {
         let update = expectUpdate(for: .viewWillTransition, model: .init(isFocused: false))
         expect(update?.model.isFocused, false)
@@ -83,6 +105,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         let update = expectUpdate(for: .viewDidTransition, model: .init(isFocused: false))
         expect(update?.model.isFocused, true)
     }
+
 
     // MARK: View
 
