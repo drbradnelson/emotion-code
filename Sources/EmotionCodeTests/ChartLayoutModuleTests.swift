@@ -13,66 +13,54 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     // MARK: Start
 
     func testLoadFlags1() {
-        let flags: Module.Flags = .init(mode: .section(1), itemsPerSection: [2, 3], numberOfColumns: 4, topContentInset: 5)
+        let flags: Module.Flags = .init(mode: .all, itemsPerSection: [1], numberOfColumns: 1, topContentInset: 2, viewSize: .init(width: 3, height: 4))
         let start = expectStart(with: flags)
         expect(start?.model.flags, flags)
     }
 
     func testLoadFlags2() {
-        let flags: Module.Flags = .init(mode: .section(5), itemsPerSection: [4, 3], numberOfColumns: 2, topContentInset: 1)
+        let flags: Module.Flags = .init(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 3, topContentInset: 4, viewSize: .init(width: 5, height: 6))
         let start = expectStart(with: flags)
         expect(start?.model.flags, flags)
     }
 
-    func testLoadInvalidItemsPerSection() {
+    func testLoadItemsPerSectionInvalid() {
         let failure = expectFailure(with: .init(itemsPerSection: []))
         expect(failure, .missingItems)
     }
 
-    func testSetNumberOfColumnsInvalid1() {
+    func testLoadNumberOfColumnsInvalid1() {
         let failure = expectFailure(with: .init(numberOfColumns: 0))
         expect(failure, .invalidNumberOfColums)
     }
 
-    func testSetNumberOfColumnsInvalid2() {
+    func testLoadNumberOfColumnsInvalid2() {
         let failure = expectFailure(with: .init(numberOfColumns: -1))
         expect(failure, .invalidNumberOfColums)
     }
 
-    func testSetNumberOfColumnsInvalid3() {
+    func testLoadNumberOfColumnsInvalid3() {
         let failure = expectFailure(with: .init(numberOfColumns: -2))
         expect(failure, .invalidNumberOfColums)
     }
 
-    // MARK: Update
-
-    func testSetViewSize1() {
-        let update = expectUpdate(for: .setViewSize(.init(width: 1, height: 2)), model: .init(viewSize: .zero))
-        expect(update?.model.viewSize, Size(width: 1, height: 2))
-    }
-
-    func testSetViewSize2() {
-        let update = expectUpdate(for: .setViewSize(.init(width: 3, height: 4)), model: .init(viewSize: .zero))
-        expect(update?.model.viewSize, Size(width: 3, height: 4))
-    }
-
-    func testSetViewSizeInvalid1() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 0, height: 10)), model: .init())
+    func testLoadViewSizeInvalid1() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 0, height: 10))))
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid2() {
-        let failure = expectFailure(for: .setViewSize(.init(width: -1, height: 10)), model: .init())
+    func testLoadViewSizeInvalid2() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: -1, height: 10))))
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid3() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: 0)), model: .init())
+    func testLoadViewSizeInvalid3() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 10, height: 0))))
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid4() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: -1)), model: .init())
+    func testLoadViewSizeInvalid4() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 10, height: -1))))
         expect(failure, .invalidViewSize)
     }
 
@@ -83,13 +71,14 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .all,
                 itemsPerSection: [1],
-                numberOfColumns: 1
+                numberOfColumns: 1,
+                viewSize: Size(width: 20)
             ),
             contentPadding: 2,
             headerSize: Size(width: 3),
-            sectionSpacing: Size(width: 4),
-            viewSize: Size(width: 20)
-        ))
+            sectionSpacing: Size(width: 4)
+            )
+        )
         let expected = 2 + 3 + 4 + (20 - 2 - 2 - 3 - 4) / 1 + 2
         expect(view?.chartSize.width, expected)
     }
@@ -99,15 +88,16 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .all,
                 itemsPerSection: [1],
-                numberOfColumns: 1
+                numberOfColumns: 1,
+                viewSize: Size(height: 10)
             ),
             contentPadding: 2,
             headerSize: Size(height: 3),
             sectionSpacing: Size(height: 4),
             itemHeight: 5,
-            minViewHeightForCompactLayout: 11,
-            viewSize: Size(height: 10)
-            ))
+            minViewHeightForCompactLayout: 11
+            )
+        )
         expect(view?.chartSize.height, 2 + 3 + 4 + 5 + 2)
     }
 
@@ -116,11 +106,12 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .all,
                 itemsPerSection: [1],
-                numberOfColumns: 1
+                numberOfColumns: 1,
+                viewSize: Size(height: 1 + 1)
             ),
-            minViewHeightForCompactLayout: 1,
-            viewSize: Size(height: 1 + 1)
-        ))
+            minViewHeightForCompactLayout: 1
+            )
+        )
         expect(view?.chartSize.height, 1 + 1)
     }
 
@@ -129,124 +120,141 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .section(0),
                 itemsPerSection: [1],
-                numberOfColumns: 1
+                numberOfColumns: 1,
+                viewSize: Size(width: 10)
             ),
             contentPadding: 2,
-            headerSize: Size(width: 3),
-            viewSize: Size(width: 10)
-            ))
+            headerSize: Size(width: 3)
+            )
+        )
         let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2
         expect(view?.chartSize.width, expected)
     }
 
     func testChartHeightForSectionMode() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .section(0),
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            viewSize: Size(height: 10)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 10)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3)
+            )
+        )
         let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2
         expect(view?.chartSize.height, expected)
     }
 
     func testContentOffsetForAllMode() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                )
             )
-        ))
+        )
         expect(view?.proposedVerticalContentOffset, nil)
     }
 
     func testContentOffsetForSectionMode0() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .section(0),
-                itemsPerSection: [1],
-                numberOfColumns: 1,
-                topContentInset: 4
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3)
-        ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .section(0),
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    topContentInset: 4
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3)
+            )
+        )
         expect(view?.proposedVerticalContentOffset, 2 + 3 - 4)
     }
 
     func testContentOffsetForSectionMode1() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .section(1),
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1,
-                topContentInset: 4
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            viewSize: Size(height: 10)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .section(1),
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1,
+                    topContentInset: 4,
+                    viewSize: Size(height: 10)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3)
+            )
+        )
         let expected = 2 + 3 + 2 + (10 - 2 - 2) - 4
         expect(view?.proposedVerticalContentOffset, expected)
     }
 
     func testContentOffsetForEmotionMode() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .emotion(IndexPath(item: 1, section: 1)),
-                itemsPerSection: [1, 2],
-                numberOfColumns: 1,
-                topContentInset: 4
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            viewSize: Size(height: 10)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .emotion(IndexPath(item: 1, section: 1)),
+                    itemsPerSection: [1, 2],
+                    numberOfColumns: 1,
+                    topContentInset: 4,
+                    viewSize: Size(height: 10)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3)
+            )
+        )
         let expected = 2 + 3 + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) + 2 + (10 - 2 - 2) - 4
         expect(view?.proposedVerticalContentOffset, expected)
     }
 
     func testColumnHeaderFrameCount() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 2
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 2
+                )
             )
-            ))
+        )
         expect(view?.columnHeaderFrames.count, 2)
     }
 
     func testColumnHeaderWidthForAllMode() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(width: 3),
-            sectionSpacing: Size(width: 4),
-            viewSize: Size(width: 100)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(width: 100)
+                ),
+                contentPadding: 2,
+                headerSize: Size(width: 3),
+                sectionSpacing: Size(width: 4)
+            )
+        )
         let expected = (100 - (2 + 2 + 4 + 3)) / 1
         expect(view?.columnHeaderFrames[safe: 0]?.size.width, expected)
     }
 
     func testColumnHeaderHeight() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            headerSize: Size(height: 2)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                ),
+                headerSize: Size(height: 2)
+            )
+        )
         expect(view?.columnHeaderFrames[safe: 0]?.size.height, 2)
     }
 
@@ -255,48 +263,53 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .all,
                 itemsPerSection: [1],
-                numberOfColumns: 1
+                numberOfColumns: 1,
+                viewSize: Size(height: 20)
             ),
             contentPadding: 2,
             headerSize: Size(width: 3),
             sectionSpacing: Size(width: 4),
-            minViewHeightForCompactLayout: 21,
-            viewSize: Size(height: 20)
-            ))
+            minViewHeightForCompactLayout: 21
+            )
+        )
         expect(view?.columnHeaderFrames[safe: 0]?.origin.x, 2 + 3 + 4)
     }
 
     func testSecondColumnHeaderXForAllModeWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 2
-            ),
-            contentPadding: 3,
-            headerSize: Size(width: 4),
-            sectionSpacing: Size(width: 5),
-            minViewHeightForCompactLayout: 21,
-            viewSize: Size(width: 20, height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 2,
+                    viewSize: Size(width: 20, height: 20)
+                ),
+                contentPadding: 3,
+                headerSize: Size(width: 4),
+                sectionSpacing: Size(width: 5),
+                minViewHeightForCompactLayout: 21
+            )
+        )
         let expectedColumnWidth = (20 - (3 + 3 + 4 + 5 + 5)) / 2
         let expected = 3 + 4 + 5 + expectedColumnWidth + 5
         expect(view?.columnHeaderFrames[safe: 1]?.origin.x, expected)
     }
 
     func testColumnHeaderXForAllModeWhenCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(width: 3),
-            sectionSpacing: Size(width: 4),
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 20)
+                ),
+                contentPadding: 2,
+                headerSize: Size(width: 3),
+                sectionSpacing: Size(width: 4),
+                minViewHeightForCompactLayout: 20
+            )
+        )
         expect(view?.columnHeaderFrames[safe: 0]?.origin.x, 2 + 3 + 4)
     }
 
@@ -305,225 +318,254 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .all,
                 itemsPerSection: [1, 1],
-                numberOfColumns: 2
+                numberOfColumns: 2,
+                viewSize: Size(width: 20, height: 20)
             ),
             contentPadding: 3,
             headerSize: Size(width: 4),
             sectionSpacing: Size(width: 5),
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(width: 20, height: 20)
-            ))
+            minViewHeightForCompactLayout: 20
+            )
+        )
         let expectedColumnWidth = (20 - (3 + 3 + 4 + 5 + 5)) / 2
         let expected = 3 + 4 + 5 + expectedColumnWidth + 5
         expect(view?.columnHeaderFrames[safe: 1]?.origin.x, expected)
     }
 
     func testColumnHeaderY() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 2
-            ),
-            contentPadding: 3,
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(height: 19)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 2,
+                    viewSize: Size(height: 19)
+                ),
+                contentPadding: 3,
+                minViewHeightForCompactLayout: 20
+            )
+        )
         expect(view?.columnHeaderFrames[safe: 0]?.origin.y, 3)
         expect(view?.columnHeaderFrames[safe: 1]?.origin.y, 3)
     }
 
     func testRowHeaderFrameCount() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1
+                )
             )
-            ))
+        )
         expect(view?.rowHeaderFrames.count, 2)
     }
 
     func testRowHeaderWidth() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            headerSize: Size(width: 2)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                ),
+                headerSize: Size(width: 2)
+            )
+        )
         expect(view?.rowHeaderFrames[safe: 0]?.size.width, 2)
     }
 
     func testRowHeaderHeightForAllModeWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            itemHeight: 2,
-            minViewHeightForCompactLayout: 101,
-            viewSize: Size(height: 100)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 100)
+                ),
+                itemHeight: 2,
+                minViewHeightForCompactLayout: 101
+            )
+        )
         expect(view?.rowHeaderFrames[safe: 0]?.size.height, 2)
     }
 
     func testSecondRowHeaderHeightForAllModeWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1
-            ),
-            itemHeight: 2,
-            minViewHeightForCompactLayout: 101,
-            viewSize: Size(height: 100)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 100)
+                ),
+                itemHeight: 2,
+                minViewHeightForCompactLayout: 101
+            )
+        )
         expect(view?.rowHeaderFrames[safe: 1]?.size.height, 2)
     }
 
     func testRowHeaderHeightForAllModeWhenCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4),
-            minViewHeightForCompactLayout: 10,
-            viewSize: Size(height: 10)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 10)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4),
+                minViewHeightForCompactLayout: 10
+            )
+        )
         let expected = (10 - (2 + 2 + 3 + 4)) / 1
         expect(view?.rowHeaderFrames[safe: 0]?.size.height, expected)
     }
 
     func testSecondRowHeaderHeightForAllModeWhenCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4),
-            minViewHeightForCompactLayout: 10,
-            viewSize: Size(height: 10)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 10)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4),
+                minViewHeightForCompactLayout: 10
+            )
+        )
         let expected = (10 - (2 + 2 + 3 + 4 + 4)) / 2
         expect(view?.rowHeaderFrames[safe: 1]?.size.height, expected)
     }
 
     func testRowHeaderX() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                ),
+                contentPadding: 2
+            )
+        )
         expect(view?.rowHeaderFrames[safe: 0]?.origin.x, 2)
     }
 
     func testRowHeaderYForAllModeWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4)
+            )
+        )
         expect(view?.rowHeaderFrames[safe: 0]?.origin.y, 2 + 3 + 4)
     }
 
     func testSecondRowHeaderYForAllModeWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4),
-            itemHeight: 5,
-            minViewHeightForCompactLayout: 21,
-            viewSize: Size(height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 20)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4),
+                itemHeight: 5,
+                minViewHeightForCompactLayout: 21
+            )
+        )
         let expected = 2 + 3 + 4 + 5 + 4
         expect(view?.rowHeaderFrames[safe: 1]?.origin.y, expected)
     }
 
     func testRowHeaderYForAllModeWhenCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4),
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 20)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4),
+                minViewHeightForCompactLayout: 20
+            )
+        )
         let expected = 2 + 3 + 4
         expect(view?.rowHeaderFrames[safe: 0]?.origin.y, expected)
     }
 
     func testSecondRowHeaderYForAllModeWhenCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4),
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 20)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4),
+                minViewHeightForCompactLayout: 20
+            )
+        )
         let expectedRowHeight = (20 - (2 + 2 + 3 + 4 + 4)) / 2
         let expected = 2 + 3 + 4 + expectedRowHeight + 4
         expect(view?.rowHeaderFrames[safe: 1]?.origin.y, expected)
     }
 
     func testItemHeightWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            itemHeight: 2,
-            minViewHeightForCompactLayout: 11,
-            viewSize: Size(height: 10)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 10)
+                ),
+                itemHeight: 2,
+                minViewHeightForCompactLayout: 11
+            )
+        )
         expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.height, 2)
     }
 
     func testItemHeightWhenCompact1() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4),
-            minViewHeightForCompactLayout: 100,
-            viewSize: Size(height: 100)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 100)
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4),
+                minViewHeightForCompactLayout: 100
+            )
+        )
         let expected = 100 - (2 + 2 + 3 + 4)
         expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.height, expected)
     }
@@ -533,111 +575,124 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             flags: .init(
                 mode: .all,
                 itemsPerSection: [2],
-                numberOfColumns: 1
+                numberOfColumns: 1,
+                viewSize: Size(height: 100)
             ),
             contentPadding: 3,
             headerSize: Size(height: 4),
             sectionSpacing: Size(height: 5),
-            minViewHeightForCompactLayout: 100,
-            viewSize: Size(height: 100)
-            ))
+            minViewHeightForCompactLayout: 100
+            )
+        )
         let expected = Int(round(Double(100 - (3 + 3 + 4 + 5)) / Double(2)))
         expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.height, expected)
         expect(view?.itemFrames[safe: 0]?[safe: 1]?.size.height, expected)
     }
 
     func testItemWidth() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(width: 3),
-            sectionSpacing: Size(width: 4),
-            viewSize: Size(width: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1,
+                    viewSize: Size(width: 20)
+                ),
+                contentPadding: 2,
+                headerSize: Size(width: 3),
+                sectionSpacing: Size(width: 4)
+            )
+        )
         let expected = 20 - (2 + 2 + 3 + 4)
         expect(view?.itemFrames[safe: 0]?[safe: 0]?.size.width, expected)
     }
 
     func testItemX() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(width: 3),
-            sectionSpacing: Size(width: 4)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                ),
+                contentPadding: 2,
+                headerSize: Size(width: 3),
+                sectionSpacing: Size(width: 4)
+            )
+        )
         expect(view?.itemFrames[safe: 0]?[safe: 0]?.origin.x, 2 + 3 + 4)
     }
 
     func testSecondItemX() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1, 1],
-                numberOfColumns: 2
-            ),
-            contentPadding: 3,
-            headerSize: Size(width: 4),
-            sectionSpacing: Size(width: 5),
-            viewSize: Size(width: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1, 1],
+                    numberOfColumns: 2,
+                    viewSize: Size(width: 20)
+                ),
+                contentPadding: 3,
+                headerSize: Size(width: 4),
+                sectionSpacing: Size(width: 5)
+            )
+        )
         let expectedItemWidth = (20 - (3 + 3 + 5 + 5 + 4)) / 2
         let expected = 3 + 4 + 5 + expectedItemWidth + 5
         expect(view?.itemFrames[safe: 1]?[safe: 0]?.origin.x, expected)
     }
 
     func testItemY() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [1],
-                numberOfColumns: 1
-            ),
-            contentPadding: 2,
-            headerSize: Size(height: 3),
-            sectionSpacing: Size(height: 4)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [1],
+                    numberOfColumns: 1
+                ),
+                contentPadding: 2,
+                headerSize: Size(height: 3),
+                sectionSpacing: Size(height: 4)
+            )
+        )
         expect(view?.itemFrames[safe: 0]?[safe: 0]?.origin.y, 2 + 3 + 4)
     }
 
     func testSecondItemYWhenNotCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [2],
-                numberOfColumns: 1
-            ),
-            contentPadding: 3,
-            headerSize: Size(height: 4),
-            sectionSpacing: Size(height: 5),
-            itemHeight: 6,
-            minViewHeightForCompactLayout: 21,
-            viewSize: Size(height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [2],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 20)
+                ),
+                contentPadding: 3,
+                headerSize: Size(height: 4),
+                sectionSpacing: Size(height: 5),
+                itemHeight: 6,
+                minViewHeightForCompactLayout: 21
+            )
+        )
         expect(view?.itemFrames[safe: 0]?[safe: 1]?.origin.y, 3 + 4 + 5 + 6)
     }
 
     func testSecondItemYWhenCompact() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [2],
-                numberOfColumns: 1
-            ),
-            contentPadding: 3,
-            headerSize: Size(height: 4),
-            sectionSpacing: Size(height: 5),
-            itemHeight: 6,
-            minViewHeightForCompactLayout: 20,
-            viewSize: Size(height: 20)
-            ))
+        let view = expectView(for:
+            .init(
+                flags: .init(
+                    mode: .all,
+                    itemsPerSection: [2],
+                    numberOfColumns: 1,
+                    viewSize: Size(height: 20)
+                ),
+                contentPadding: 3,
+                headerSize: Size(height: 4),
+                sectionSpacing: Size(height: 5),
+                itemHeight: 6,
+                minViewHeightForCompactLayout: 20
+            )
+        )
         let expectedItemHeight = Int(round(Double(20 - (3 + 3 + 4 + 5)) / Double(2)))
         let expected = 3 + 4 + 5 + expectedItemHeight
         expect(view?.itemFrames[safe: 0]?[safe: 1]?.origin.y, expected)
@@ -651,12 +706,14 @@ extension ChartLayoutModule.Flags {
         mode: ChartLayoutModule.Mode = .all,
         itemsPerSection: [Int] = [1],
         numberOfColumns: Int = 1,
-        topContentInset: Int = 0
+        topContentInset: Int = 0,
+        viewSize: Size = .init(width: 1, height: 1)
         ) {
         self.mode = mode
         self.itemsPerSection = itemsPerSection
         self.numberOfColumns = numberOfColumns
         self.topContentInset = topContentInset
+        self.viewSize = viewSize
     }
 
 }
@@ -669,8 +726,7 @@ extension ChartLayoutModule.Model {
         sectionSpacing: Size = Size(width: 5, height: 5),
         itemHeight: Int = 30,
         itemSpacing: Int = 10,
-        minViewHeightForCompactLayout: Int = 554,
-        viewSize: Size = .zero
+        minViewHeightForCompactLayout: Int = 554
         ) {
         self.flags = flags
         self.contentPadding = contentPadding
@@ -679,7 +735,6 @@ extension ChartLayoutModule.Model {
         self.itemHeight = itemHeight
         self.itemSpacing = itemSpacing
         self.minViewHeightForCompactLayout = minViewHeightForCompactLayout
-        self.viewSize = viewSize
     }
 }
 
