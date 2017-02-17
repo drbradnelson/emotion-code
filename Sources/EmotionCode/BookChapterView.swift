@@ -11,7 +11,6 @@ final class BookChapterView: UIView {
 
     func configureWebView() {
         webView.navigationDelegate = self
-        webView.restorationIdentifier = "BookChapterWebView"
         webView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(webView)
         let webViewConstraints = [webView.topAnchor.constraint(equalTo: topAnchor),
