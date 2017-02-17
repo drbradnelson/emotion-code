@@ -303,23 +303,51 @@ Trapped emotions lower immune function and make the body more vulnerable to dise
 
 On the following page is a list of conditions and diseases that my patients came to me with, where trapped emotions appeared as a contributing factor, and many times as the entire cause of the condition.
 
-|   |    |   |    |
-|---|---|---|---|
-|Acid Reflux |Diabetes|Learning Disabilities|
-| ADD/ADHD | Dyslexia |  Low Back Pain |
-| Allergies | Eye Pain | Hypothyroidism |
-|Abdominal Pain |Fibromyalgia | Lupus|
-| Asthma |Frigidity | Migraines |
-| Back Pain | Headaches | Multiple Sclerosis | 
-|Bell’s Palsy |Heartburn (GERD) | Neck pain | 
-|Cancer | Hip Pain | Night Terrors|
-|Carpal Tunnel | Hypoglycemia | Panic Attacks |
-|Chest Pain | Impotency | Parkinson’s disease |
-|Chronic Fatigue | Infertility | Phobias| 
-|Chron’s Disease | Insomnia | Shoulder pain |
-|Colitis | Irritable Bowel (IBS) | Sinus problems| |Constipation | Joint Pain | Tennis Elbow | 
-|Depression | Knee Pain | Vertigo |
-|   |  |   |   |
+- Acid Reflux 
+- Diabetes
+- Learning Disabilities
+- ADD/ADHD
+- Dyslexia
+- Low Back Pain
+- Allergies
+- Eye Pain
+- Hypothyroidism
+- Abdominal Pain
+- Fibromyalgia
+- Lupus
+- Asthma
+- Frigidity
+- Migraines
+- Back Pain
+- Headaches
+- Multiple Sclerosis 
+- Bell’s Palsy
+- Heartburn (GERD)
+- Neck pain 
+- Cancer
+- Hip Pain
+- Night Terrors
+- Carpal Tunnel
+- Hypoglycemia
+- Panic Attacks
+- Chest Pain
+- Impotency
+- Parkinson’s disease
+- Chronic Fatigue
+- Infertility
+- Phobias 
+- Chron’s Disease
+- Insomnia
+- Shoulder pain
+- Colitis
+- Irritable Bowel (IBS)
+- Sinus problems
+- Constipation
+- Joint Pain
+- Tennis Elbow 
+- Depression
+- Knee Pain
+- Vertigo
 
 I am not saying that releasing trapped emotions is a cure-all. The Emotion Code should not be used by itself in attempting to address any major disease or medical condition, but rather, it should be looked upon as an adjunctive therapy. When trapped emotions are contributing to physical illness, removing them can only help. 
 
