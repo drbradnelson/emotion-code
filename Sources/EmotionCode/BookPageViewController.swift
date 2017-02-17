@@ -44,8 +44,7 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
 
     override func encodeRestorableState(with coder: NSCoder) {
         super.encodeRestorableState(with: coder)
-        guard let chapterViewController = childViewControllers.first else { preconditionFailure() }
-        coder.encode(chapterViewController, forKey: chapterViewControllerKey)
+        coder.encode(childViewControllers.first!, forKey: chapterViewControllerKey)
     }
 
     override func decodeRestorableState(with coder: NSCoder) {
