@@ -27,22 +27,7 @@ final class AudioBarContainerController: UIViewController {
     }
 
     func loadChapter(_ chapter: Book.Chapter) {
-        guard let audioURL = chapter.audioURL else {
-            disableAudioBar()
-            return
-        }
-        enableAudioBar()
-        audioBarController.loadURL(url: audioURL)
-    }
-
-    private func enableAudioBar() {
-        audioBarController.view.isUserInteractionEnabled = true
-        audioBarController.view.tintColor = view.tintColor
-    }
-
-    private func disableAudioBar() {
-        audioBarController.view.isUserInteractionEnabled = false
-        audioBarController.view.tintColor = .lightGray
+        audioBarController.loadURL(url: chapter.audioURL)
     }
 
 }
