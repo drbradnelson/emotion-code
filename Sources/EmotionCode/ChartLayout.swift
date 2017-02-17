@@ -20,11 +20,6 @@ final class ChartLayout: UICollectionViewLayout {
         )
     }
 
-    override func prepare() {
-        super.prepare()
-        program.dispatch(.setViewSize(Size(cgSize: collectionView!.visibleContentSize)))
-    }
-
     override var collectionViewContentSize: CGSize {
         return program.view.chartSize.cgSize
     }

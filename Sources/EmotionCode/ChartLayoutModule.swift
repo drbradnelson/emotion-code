@@ -20,9 +20,7 @@ struct ChartLayoutModule: Elm.Module {
         case emotion(IndexPath)
     }
 
-    enum Message {
-        case setViewSize(Size)
-    }
+    enum Message {}
 
     struct Model {
         let mode: Mode
@@ -35,7 +33,7 @@ struct ChartLayoutModule: Elm.Module {
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10
-        var viewSize: Size
+        let viewSize: Size
     }
 
     enum Command {}
@@ -61,18 +59,13 @@ struct ChartLayoutModule: Elm.Module {
         guard !flags.itemsPerSection.isEmpty else {
             throw Failure.missingItems
         }
+        guard flags.viewSize.width > 0, flags.viewSize.height > 0 else {
+            throw Failure.invalidViewSize
+        }
         return Model(mode: flags.mode, itemsPerSection: flags.itemsPerSection, numberOfColumns: flags.numberOfColumns, topContentInset: flags.topContentInset, viewSize: flags.viewSize)
     }
 
-    static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {
-        switch message {
-        case .setViewSize(let size):
-            guard size.width > 0, size.height > 0 else {
-                throw Failure.invalidViewSize
-            }
-            model.viewSize = size
-        }
-    }
+    static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {}
 
     static func view(for model: Model) throws -> View {
 

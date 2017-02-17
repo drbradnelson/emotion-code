@@ -82,35 +82,23 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(start?.model.viewSize, Size(width: 3, height: 4))
     }
 
-    // MARK: Update
-
-    func testSetViewSize1() {
-        let update = expectUpdate(for: .setViewSize(.init(width: 1, height: 2)), model: .init(viewSize: .zero))
-        expect(update?.model.viewSize, Size(width: 1, height: 2))
-    }
-
-    func testSetViewSize2() {
-        let update = expectUpdate(for: .setViewSize(.init(width: 3, height: 4)), model: .init(viewSize: .zero))
-        expect(update?.model.viewSize, Size(width: 3, height: 4))
-    }
-
-    func testSetViewSizeInvalid1() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 0, height: 10)), model: .init())
+    func testLoadViewSizeInvalid1() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 0, height: 10))))
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid2() {
-        let failure = expectFailure(for: .setViewSize(.init(width: -1, height: 10)), model: .init())
+    func testLoadViewSizeInvalid2() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: -1, height: 10))))
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid3() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: 0)), model: .init())
+    func testLoadViewSizeInvalid3() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 10, height: 0))))
         expect(failure, .invalidViewSize)
     }
 
-    func testSetViewSizeInvalid4() {
-        let failure = expectFailure(for: .setViewSize(.init(width: 10, height: -1)), model: .init())
+    func testLoadViewSizeInvalid4() {
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 10, height: -1))))
         expect(failure, .invalidViewSize)
     }
 
@@ -616,7 +604,7 @@ extension ChartLayoutModule.Flags {
         itemsPerSection: [Int] = [1],
         numberOfColumns: Int = 1,
         topContentInset: Int = 0,
-        viewSize: Size = .init()
+        viewSize: Size = .init(width: 1, height: 1)
         ) {
         self.mode = mode
         self.itemsPerSection = itemsPerSection
