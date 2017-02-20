@@ -10,18 +10,14 @@ final class ChartLayout: UICollectionViewLayout {
     private var program: Program<ChartLayoutModule>!
 
     func setProgramModel(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
-        program = ChartLayoutModule.makeProgram(flags: .init(
+        program = ChartLayoutModule.makeProgram(delegate: self, flags: .init(
             mode: mode,
             itemsPerSection: itemsPerSection,
             numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: Int(topContentInset)
+            topContentInset: Int(topContentInset),
+            viewSize: .init(cgSize: viewSize)
             )
         )
-    }
-
-    override func prepare() {
-        super.prepare()
-        program.dispatch(.setViewSize(Size(collectionView!.visibleContentSize)))
     }
 
     override var collectionViewContentSize: CGSize {
@@ -67,6 +63,13 @@ final class ChartLayout: UICollectionViewLayout {
 
 }
 
+extension ChartLayout: Elm.Delegate {
+
+    public func program(_ program: Program<ChartLayoutModule>, didUpdate view: ChartLayoutModule.View) {}
+    public func program(_ program: Program<ChartLayoutModule>, didEmit command: ChartLayoutModule.Command) {}
+
+}
+
 private extension UICollectionViewLayoutAttributes {
 
     convenience init(indexPath: IndexPath, frame: CGRect) {
@@ -93,9 +96,9 @@ private extension Size {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
     }
 
-    init(_ size: CGSize) {
-        width = Int(size.width)
-        height = Int(size.height)
+    init(cgSize: CGSize) {
+        width = Int(cgSize.width)
+        height = Int(cgSize.height)
     }
 
 }
