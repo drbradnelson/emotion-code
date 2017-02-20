@@ -25,14 +25,12 @@ final class ChartViewControllerDataSource: NSObject, UICollectionViewDataSource 
         switch kind {
         case ChartHeaderView.columnKind:
             let columnHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let column = indexPath.section % ChartLayout.numberOfColumns
-            let columnName = String.alphabet[column]
+            let columnName = String.alphabet[indexPath.section]
             columnHeader.configure(title: columnName)
             return columnHeader
         case ChartHeaderView.rowKind:
             let rowHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier, for: indexPath) as! ChartHeaderView
-            let row = (indexPath.section + ChartLayout.numberOfColumns) / ChartLayout.numberOfColumns
-            rowHeader.configure(title: String(row))
+            rowHeader.configure(title: String(indexPath.section + 1))
             return rowHeader
         default:
             return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "", for: indexPath)

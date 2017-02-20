@@ -53,9 +53,9 @@ struct ChartLayoutModule: Elm.Module {
 
     struct View {
         let chartSize: Size
-        let items: [[Item]]
-        let columnHeaders: [Header]
-        let rowHeaders: [Header]
+        let items: [IndexPath: Item]
+        let columnHeaders: [IndexPath: Header]
+        let rowHeaders: [IndexPath: Header]
     }
 
     enum Failure: Error {
@@ -102,7 +102,6 @@ struct ChartLayoutModule: Elm.Module {
     }
 
     static func view(for model: Model) throws -> View {
-        print(#function)
 
         func rowIndex(forSection section: Int) -> Int {
             return section / model.flags.numberOfColumns
@@ -298,11 +297,11 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Items
         //
 
-        let items = sectionsRange.map { section -> [Item] in
+        let items: [IndexPath: Item] = sectionsRange.reduce([:]) { items, section in
             let height = itemHeights[section]
             let size = Size(width: itemWidth, height: height)
-            let itemsRange = 0..<model.flags.itemsPerSection[section]
-            return itemsRange.map { item in
+            var items = items
+            for item in 0..<model.flags.itemsPerSection[section] {
                 let position = itemPositions[section][item] - proposedContentOffset
                 let alpha: Float
                 switch model.flags.mode {
@@ -314,8 +313,10 @@ struct ChartLayoutModule: Elm.Module {
                     alpha = (!model.isFocused || indexPath.item == item && indexPath.section == section) ? 1 : 0
                 }
                 let frame = Rect(origin: position, size: size)
-                return .init(frame: frame, alpha: alpha)
+                let indexPath = IndexPath(item: item, section: section)
+                items[indexPath] = Header(frame: frame, alpha: alpha)
             }
+            return items
         }
 
         //
@@ -348,7 +349,7 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Header frame
         //
 
-        let columnHeaders = columnsRange.map { column -> Header in
+        let columnHeaders: [IndexPath: Header] = columnsRange.reduce([:]) { headers, column in
             let position = positionsForColumnHeaders[column]
             let frame = Rect(origin: position, size: columnHeaderSize)
             let alpha: Float
@@ -358,10 +359,13 @@ struct ChartLayoutModule: Elm.Module {
             case .section, .emotion:
                 alpha = 0
             }
-            return .init(frame: frame, alpha: alpha)
+            let indexPath = IndexPath(section: column)
+            var headers = headers
+            headers[indexPath] = Header(frame: frame, alpha: alpha)
+            return headers
         }
 
-        let rowHeaders = rowsRange.map { row -> Header in
+        let rowHeaders: [IndexPath: Header] = rowsRange.reduce([:]) { headers, row in
             let position = positionsForRowHeaders[row]
             let frame = Rect(origin: position, size: rowHeaderSize)
             let alpha: Float
@@ -371,7 +375,10 @@ struct ChartLayoutModule: Elm.Module {
             case .section, .emotion:
                 alpha = 0
             }
-            return .init(frame: frame, alpha: alpha)
+            let indexPath = IndexPath(section: row)
+            var headers = headers
+            headers[indexPath] = Header(frame: frame, alpha: alpha)
+            return headers
         }
 
         //
@@ -381,13 +388,15 @@ struct ChartLayoutModule: Elm.Module {
 
         let chartSize: Size = {
             let isCompact = model.flags.viewSize.height >= model.minViewHeightForCompactLayout
-            guard
-                model.flags.mode == .all,
-                !isCompact,
-                let lastRowHeaderFrame = rowHeaders.last?.frame,
-                let lastColumnHeaderFrame = columnHeaders.last?.frame else { return model.flags.viewSize }
-            let height = lastRowHeaderFrame.maxY + model.contentPadding
+            guard model.flags.mode == .all, !isCompact else { return model.flags.viewSize }
+
+            let lastColumnIndexPath = IndexPath(section: model.flags.numberOfColumns - 1)
+            let lastRowIndexPath = IndexPath(section: rowsCount - 1)
+            let lastColumnHeaderFrame = columnHeaders[lastColumnIndexPath]!.frame
+            let lastRowHeaderFrame = rowHeaders[lastRowIndexPath]!.frame
+
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
+            let height = lastRowHeaderFrame.maxY + model.contentPadding
             return .init(width: width, height: height)
         }()
 
@@ -400,6 +409,12 @@ struct ChartLayoutModule: Elm.Module {
 
     }
 
+}
+
+private extension IndexPath {
+    init(section: Int) {
+        self.init(item: 0, section: section)
+    }
 }
 
 //

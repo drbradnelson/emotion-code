@@ -32,24 +32,17 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let item = program.view.items[indexPath.section][indexPath.item]
+        let item = program.view.items[indexPath]!
         return UICollectionViewLayoutAttributes(indexPath: indexPath, item: item)
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let isFirstItem = indexPath.item == 0
-        guard isFirstItem else { return nil }
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let isFirstRow = (indexPath.section < ChartLayout.numberOfColumns)
-            guard isFirstRow else { return nil }
-            let header = program.view.columnHeaders[indexPath.section]
+            let header = program.view.columnHeaders[indexPath]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         case ChartHeaderView.rowKind:
-            let isFirstColumn = (indexPath.section % ChartLayout.numberOfColumns == 0)
-            guard isFirstColumn else { return nil }
-            let row = indexPath.section / ChartLayout.numberOfColumns
-            let header = program.view.rowHeaders[row]
+            let header = program.view.rowHeaders[indexPath]
             return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
         default: return nil
         }
