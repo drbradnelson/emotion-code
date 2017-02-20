@@ -1,8 +1,6 @@
 import UIKit
 import Elm
 
-// swiftlint:disable cyclomatic_complexity
-
 final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
