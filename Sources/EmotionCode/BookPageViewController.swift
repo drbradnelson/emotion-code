@@ -52,9 +52,10 @@ final class BookPageViewController: UIPageViewController, UIPageViewControllerDa
     }
 
     override func applicationFinishedRestoringState() {
-        chapterTitleView.setChapterIndex(currentChapterIndex)
+        let chapter = bookController.book.chapters[currentChapterIndex]
+        chapterTitleView.setChapterTitle(chapter.title)
         enableDisablePreviousNextChapterButtons()
-        didShowChapter(currentChapterIndex)
+        didShowChapter(chapter)
     }
 
     // MARK: Page view controller data source
