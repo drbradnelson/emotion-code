@@ -21,17 +21,26 @@ final class BookController {
     }
 
     private static func chapterWith(dictionary: [String: String]) -> Book.Chapter {
-        guard let title = dictionary[chapterTitleKey], let fileName = dictionary[chapterFileNameKey] else {
+        guard let title = dictionary[chapterTitleKey], let fileName = dictionary[chapterFilenameKey] else {
             preconditionFailure("Unable to parse book chapter")
         }
         guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "html") else {
             preconditionFailure("Unable to find book chapter file")
         }
-        return Book.Chapter(title: title, fileURL: fileURL)
+        let subtitle = dictionary[chapterSubtitleKey]
+        let audioURL: URL?
+        if let auidioFilename = dictionary[chapterAudioKey], let pathURL = URL(string: audioPath) {
+            audioURL = pathURL.appendingPathComponent(auidioFilename).appendingPathExtension(audioFileExtension)
+        } else {
+            audioURL = nil
+        }
+        return Book.Chapter(title: title, subtitle: subtitle, fileURL: fileURL, audioURL: audioURL)
     }
 
     private static let chapterTitleKey = "Title"
-    private static let chapterFileNameKey = "Filename"
+    private static let chapterSubtitleKey = "Subtitle"
+    private static let chapterFilenameKey = "Filename"
+    private static let chapterAudioKey = "Audio"
 
     // MARK: Book URL
 
@@ -44,6 +53,11 @@ final class BookController {
 
     private static let bookResource = "BookChapters"
     private static let bookResourceExtension = "plist"
+
+    // MARK: Audio URL
+
+    private static let audioPath = "https://media.discoverhealing.com/en/The_Emotion_Code_Audiobook"
+    private static let audioFileExtension = "mp3"
 
     // MARK: Book chapter query
 
