@@ -13,7 +13,7 @@
         <!--Book Container View Controller-->
         <scene sceneID="SqM-33-d4q">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PQB-gq-P8U" customClass="BookContainerViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookContainerViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PQB-gq-P8U" customClass="BookContainerViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRP-yX-566"/>
                         <viewControllerLayoutGuide type="bottom" id="c1Q-VO-gpR"/>
@@ -61,7 +61,7 @@
         <!--Book Page View Controller-->
         <scene sceneID="ReO-jZ-k3q">
             <objects>
-                <pageViewController transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="BookPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PGN-AK-z9e" customClass="BookPageViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <outlet property="chapterTitleView" destination="pXr-Nk-9Ei" id="gRz-Qm-bbU"/>
                         <outlet property="nextChapterButtonItem" destination="pD0-t1-PtU" id="bzX-4b-riA"/>
@@ -114,7 +114,7 @@
         <!--Table of Contents-->
         <scene sceneID="GAZ-BA-Lme">
             <objects>
-                <tableViewController id="Fa1-R9-9bY" customClass="BookChapterListViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BookChapterListViewController" id="Fa1-R9-9bY" customClass="BookChapterListViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="tNg-Au-maq" customClass="BookChaptersTableView" customModule="EmotionCode" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,19 +128,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rol-Ov-HfP">
-                                            <rect key="frame" x="8" y="8" width="359" height="54.5"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="53.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6LV-62-VI0">
-                                                    <rect key="frame" x="8" y="8" width="343" height="38.5"/>
+                                                    <rect key="frame" x="8" y="8" width="343" height="37.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqF-QX-Xli">
-                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="18"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="17.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COL-fh-394">
-                                                            <rect key="frame" x="0.0" y="18" width="343" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="17.5" width="343" height="20"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
@@ -195,12 +195,12 @@
         <!--Book Chapter View Controller-->
         <scene sceneID="bo4-8Q-k5e">
             <objects>
-                <viewController storyboardIdentifier="BookChapterViewController" id="ypO-iY-5D6" customClass="BookChapterViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookChapterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ypO-iY-5D6" customClass="BookChapterViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QUW-Rw-k4J"/>
                         <viewControllerLayoutGuide type="bottom" id="xgq-bc-mMu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kjV-K7-8I9" customClass="BookChapterView" customModule="EmotionCode" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="BookChapterView" id="kjV-K7-8I9" customClass="BookChapterView" customModule="EmotionCode" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -216,7 +216,7 @@
         <!--Book-->
         <scene sceneID="Mqy-5i-NmU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AVR-qB-fiv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BookNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AVR-qB-fiv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Book" image="Standard/Book" selectedImage="Selected/Book" id="DvA-Rv-bTe"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -236,7 +236,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Km9-He-RKn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0M1-OL-JCf" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BookChapterListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="0M1-OL-JCf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbk-Df-SnC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -254,7 +254,7 @@
         <!--Audio Bar Container Controller-->
         <scene sceneID="ahz-i0-35o">
             <objects>
-                <viewController id="hIg-Dc-7MS" customClass="AudioBarContainerController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AudioBarContainerController" id="hIg-Dc-7MS" customClass="AudioBarContainerController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GfS-WR-vNo"/>
                         <viewControllerLayoutGuide type="bottom" id="Ti7-gR-WD1"/>

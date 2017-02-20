@@ -12,7 +12,7 @@
         <!--Support-->
         <scene sceneID="OY9-9x-09T">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1v-0o-LEL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SupportNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p1v-0o-LEL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Support" image="Standard/Help" selectedImage="Selected/Help" id="jFO-Qr-akh"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -32,7 +32,7 @@
         <!--Support-->
         <scene sceneID="GLC-o4-4QL">
             <objects>
-                <tableViewController id="yNA-vL-XKo" customClass="SupportViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SupportViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yNA-vL-XKo" customClass="SupportViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="JyS-SW-xbc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
