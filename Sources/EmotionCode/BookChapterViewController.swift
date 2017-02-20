@@ -35,6 +35,25 @@ final class BookChapterViewController: UIViewController {
         bookChapterView.insetContent(top: preferredTopLayoutGuide, bottom: preferredBottomLayoutGuide)
     }
 
+    // MARK: State preservation/restoration
+
+    private let chapterIndexKey = "ChapterIndex"
+
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        coder.encode(chapterIndex, forKey: chapterIndexKey)
+    }
+
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        chapterIndex = coder.decodeInteger(forKey: chapterIndexKey)
+        chapterURL = BookController().book.chapters[chapterIndex].fileURL
+    }
+
+    override func applicationFinishedRestoringState() {
+        loadChapter()
+    }
+
     // MARK: Preferred font size change
 
     func preferredFontSizeDidChange(notification: Notification) {
