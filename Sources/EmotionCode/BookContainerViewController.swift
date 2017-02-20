@@ -15,7 +15,7 @@ final class BookContainerViewController: UIViewController {
         bookPageViewController.didShowChapter = { [weak audioBarContainerController] chapter in
             audioBarContainerController?.loadChapter(chapter)
         }
-        audioBarContainerController.loadChapter(bookPageViewController.currentBookChapterViewController.chapterIndex)
+        audioBarContainerController.loadChapter(bookPageViewController.bookController.book.chapters[bookPageViewController.currentChapterIndex])
     }
 
     override func viewWillLayoutSubviews() {

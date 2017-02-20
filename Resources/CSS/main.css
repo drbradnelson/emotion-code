@@ -5,3 +5,4 @@ h2 { font: -apple-system-title2; }
 h3 { font: -apple-system-title3; }
 p { font: -apple-system-body; }
 code { font: -apple-system-caption2; font-style: italic; display: inline-block; width: 100%; text-align: center; }
+img { display: block; max-width: 100%; margin-left: auto; margin-right: auto}
