@@ -15,13 +15,26 @@ final class BookContainerViewController: UIViewController {
         bookPageViewController.didShowChapter = { [weak audioBarContainerController] chapter in
             audioBarContainerController?.loadChapter(chapter)
         }
-        audioBarContainerController.loadChapter(bookPageViewController.currentBookChapterViewController.chapterIndex)
+        audioBarContainerController.loadChapter(bookPageViewController.bookController.book.chapters[bookPageViewController.currentChapterIndex])
     }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         bookPageViewController.preferredTopLayoutGuide = topLayoutGuide.length
         bookPageViewController.preferredBottomLayoutGuide = bottomLayoutGuide.length + audioBarContainerView.bounds.height
+    }
+
+    // MARK: State preservation/restoration
+
+    private let bookPageViewControllerKey = "BookPageViewController"
+
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        coder.encode(bookPageViewController, forKey: bookPageViewControllerKey)
+    }
+
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

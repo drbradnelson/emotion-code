@@ -2,14 +2,12 @@ import UIKit
 
 final class ChapterTableViewCell: UITableViewCell {
 
-    // MARK: Chapter number
+    // MARK: Initialization
 
-    func setChapterNumber(_ number: Int) {
-        chapterNumberLabel.text = ChapterTableViewCell.numberFormatter.string(from: number as NSNumber)
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layoutIfNeeded()
     }
-
-    @IBOutlet private var chapterNumberLabel: UILabel!
-    private static let numberFormatter = NumberFormatter()
 
     // MARK: Chapter title
 
@@ -18,6 +16,15 @@ final class ChapterTableViewCell: UITableViewCell {
     }
 
     @IBOutlet private var chapterTitleLabel: UILabel!
+
+    // MARK: Chapter subtitle
+
+    func setChapterSubtitle(_ subtitle: String?) {
+        chapterSubtitleLabel.isHidden = subtitle == nil
+        chapterSubtitleLabel.text = subtitle
+    }
+
+    @IBOutlet private var chapterSubtitleLabel: UILabel!
 
     // MARK: Chapter selection
 
