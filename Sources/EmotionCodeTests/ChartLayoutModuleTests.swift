@@ -13,15 +13,45 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     // MARK: Start
 
     func testLoadFlags1() {
-        let flags: Module.Flags = .init(mode: .all, itemsPerSection: [1], numberOfColumns: 1, topContentInset: 2, viewSize: .init(width: 3, height: 4))
+        let flags: Module.Flags = .init(
+            mode: .all,
+            itemsPerSection: [1],
+            numberOfColumns: 1,
+            topContentInset: 2,
+            bottomContentInset: 3,
+            viewSize: .init(width: 4, height: 5)
+        )
         let start = expectStart(with: flags)
-        expect(start?.model.flags, flags)
+        let expected = Module.Model(
+            mode: .all,
+            itemsPerSection: [1],
+            numberOfColumns: 1,
+            topContentInset: 2,
+            bottomContentInset: 3,
+            viewSize: .init(width: 4, height: 5)
+        )
+        expect(start?.model, expected)
     }
 
     func testLoadFlags2() {
-        let flags: Module.Flags = .init(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 3, topContentInset: 4, viewSize: .init(width: 5, height: 6))
+        let flags: Module.Flags = .init(
+            mode: .section(0),
+            itemsPerSection: [1, 2],
+            numberOfColumns: 3,
+            topContentInset: 4,
+            bottomContentInset: 5,
+            viewSize: .init(width: 6, height: 7)
+        )
         let start = expectStart(with: flags)
-        expect(start?.model.flags, flags)
+        let expected = Module.Model(
+            mode: .section(0),
+            itemsPerSection: [1, 2],
+            numberOfColumns: 3,
+            topContentInset: 4,
+            bottomContentInset: 5,
+            viewSize: .init(width: 6, height: 7)
+        )
+        expect(start?.model, expected)
     }
 
     func testLoadItemsPerSectionInvalid1() {
@@ -100,28 +130,28 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         let update = expectUpdate(for: .viewWillTransition, model: .init(
             flags: .init(mode: .section(0, isFocused: false))
         ))
-        expect(update?.model.flags.mode, .section(0, isFocused: false))
+        expect(update?.model.mode, .section(0, isFocused: false))
     }
 
     func testWillTransitionForSectionMode2() {
         let update = expectUpdate(for: .viewWillTransition, model: .init(
             flags: .init(mode: .section(0, isFocused: true))
         ))
-        expect(update?.model.flags.mode, .section(0, isFocused: false))
+        expect(update?.model.mode, .section(0, isFocused: false))
     }
 
     func testWillTransitionForEmotionMode1() {
         let update = expectUpdate(for: .viewWillTransition, model: .init(
             flags: .init(mode: .emotion(.arbitrary, isFocused: false))
         ))
-        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: false))
+        expect(update?.model.mode, .emotion(.arbitrary, isFocused: false))
     }
 
     func testWillTransitionForEmotionMode2() {
         let update = expectUpdate(for: .viewWillTransition, model: .init(
             flags: .init(mode: .emotion(.arbitrary, isFocused: true))
         ))
-        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: false))
+        expect(update?.model.mode, .emotion(.arbitrary, isFocused: false))
     }
 
     func testWillTransitionForInvalidMode() {
@@ -135,28 +165,28 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         let update = expectUpdate(for: .viewDidTransition, model: .init(
             flags: .init(mode: .section(0, isFocused: false))
         ))
-        expect(update?.model.flags.mode, .section(0, isFocused: true))
+        expect(update?.model.mode, .section(0, isFocused: true))
     }
 
     func testDidTransitionForSectionMode2() {
         let update = expectUpdate(for: .viewDidTransition, model: .init(
             flags: .init(mode: .section(0, isFocused: true))
         ))
-        expect(update?.model.flags.mode, .section(0, isFocused: true))
+        expect(update?.model.mode, .section(0, isFocused: true))
     }
 
     func testDidTransitionForEmotionMode1() {
         let update = expectUpdate(for: .viewDidTransition, model: .init(
             flags: .init(mode: .emotion(.arbitrary, isFocused: false))
         ))
-        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: true))
+        expect(update?.model.mode, .emotion(.arbitrary, isFocused: true))
     }
 
     func testDidTransitionForEmotionMode2() {
         let update = expectUpdate(for: .viewDidTransition, model: .init(
             flags: .init(mode: .emotion(.arbitrary, isFocused: true))
         ))
-        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: true))
+        expect(update?.model.mode, .emotion(.arbitrary, isFocused: true))
     }
 
     func testDidTransitionForInvalidMode() {
@@ -1454,7 +1484,12 @@ extension Module.Model {
         itemSpacing: Int = 10,
         minViewHeightForCompactLayout: Int = 554
         ) {
-        self.flags = flags
+        self.mode = flags.mode
+        self.itemsPerSection = flags.itemsPerSection
+        self.numberOfColumns = flags.numberOfColumns
+        self.topContentInset = flags.topContentInset
+        self.bottomContentInset = flags.bottomContentInset
+        self.viewSize = flags.viewSize
         self.contentPadding = contentPadding
         self.headerSize = headerSize
         self.sectionSpacing = sectionSpacing
