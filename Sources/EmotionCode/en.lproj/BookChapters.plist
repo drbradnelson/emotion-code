@@ -132,11 +132,5 @@
 		<key>Filename</key>
 		<string>about-author</string>
 	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Index</string>
-		<key>Filename</key>
-		<string>index</string>
-	</dict>
 </array>
 </plist>
