@@ -79,28 +79,23 @@ private extension Rect {
     }
 }
 
-extension Size {
-
+private extension Size {
     var cgSize: CGSize {
-        return CGSize(width: CGFloat(width), height: CGFloat(height))
+        return CGSize(width: width, height: height)
     }
-
-    init(cgSize: CGSize) {
-        width = Int(cgSize.width)
-        height = Int(cgSize.height)
-    }
-
 }
 
-extension Point {
+extension Size {
+    init(cgSize: CGSize) {
+        width = .init(cgSize.width)
+        height = .init(cgSize.height)
+    }
+}
+
+private extension Point {
 
     var cgPoint: CGPoint {
-        return CGPoint(x: CGFloat(x), y: CGFloat(y))
-    }
-
-    init(cgPoint: CGPoint) {
-        x = Int(cgPoint.x)
-        y = Int(cgPoint.y)
+        return CGPoint(x: x, y: y)
     }
 
 }

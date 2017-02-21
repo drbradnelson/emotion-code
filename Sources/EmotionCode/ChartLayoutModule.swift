@@ -472,9 +472,7 @@ public struct Point {
     // swiftlint:disable:next variable_name
     var y: Int
 
-    static var zero: Point {
-        return .init(x: 0, y: 0)
-    }
+    static let zero = Point(x: 0, y: 0)
 
     static func - (lhs: Point, rhs: Point?) -> Point {
         guard let rhs = rhs else { return lhs }
@@ -490,9 +488,7 @@ public struct Size {
     var width: Int
     var height: Int
 
-    static var zero: Size {
-        return .init(width: 0, height: 0)
-    }
+    static let zero = Size(width: 0, height: 0)
 
 }
 
