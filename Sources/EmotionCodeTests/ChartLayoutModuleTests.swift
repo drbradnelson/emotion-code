@@ -54,6 +54,27 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(start?.model, expected)
     }
 
+    func testLoadFlags3() {
+        let flags: Module.Flags = .init(
+            mode: .section(0),
+            itemsPerSection: [1, 0],
+            numberOfColumns: 3,
+            topContentInset: 4,
+            bottomContentInset: 5,
+            viewSize: .init(width: 6, height: 7)
+        )
+        let start = expectStart(with: flags)
+        let expected = Module.Model(
+            mode: .section(0),
+            itemsPerSection: [1, 0],
+            numberOfColumns: 3,
+            topContentInset: 4,
+            bottomContentInset: 5,
+            viewSize: .init(width: 6, height: 7)
+        )
+        expect(start?.model, expected)
+    }
+
     func testLoadItemsPerSectionInvalid1() {
         let failure = expectFailure(with: .init(itemsPerSection: []))
         expect(failure, .missingItems)
