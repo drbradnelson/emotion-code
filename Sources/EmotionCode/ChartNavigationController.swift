@@ -31,7 +31,7 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
                     numberOfColumns: ChartLayout.numberOfColumns,
                     topContentInset: .init(contentInset.top),
                     bottomContentInset: .init(contentInset.bottom),
-                    viewSize: .init(masterCollectionView.visibleContentSize)
+                    viewSize: .init(cgSize: masterCollectionView.visibleContentSize)
                 ))
             }
         }

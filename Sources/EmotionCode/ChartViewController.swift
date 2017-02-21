@@ -16,7 +16,7 @@ final class ChartViewController: UICollectionViewController {
             numberOfColumns: ChartLayout.numberOfColumns,
             topContentInset: .init(collectionView!.contentInset.top),
             bottomContentInset: .init(collectionView!.contentInset.bottom),
-            viewSize: .init(collectionView!.visibleContentSize)
+            viewSize: .init(cgSize: collectionView!.visibleContentSize)
         ))
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)

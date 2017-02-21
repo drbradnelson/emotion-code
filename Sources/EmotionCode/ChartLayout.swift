@@ -13,7 +13,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     override func prepare() {
         super.prepare()
-        program.dispatch(.systemDidSetViewSize(.init(collectionView!.visibleContentSize)))
+        program.dispatch(.systemDidSetViewSize(.init(cgSize: collectionView!.visibleContentSize)))
     }
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -85,7 +85,7 @@ extension Size {
         return CGSize(width: CGFloat(width), height: CGFloat(height))
     }
 
-    init(_ cgSize: CGSize) {
+    init(cgSize: CGSize) {
         width = Int(cgSize.width)
         height = Int(cgSize.height)
     }
@@ -98,7 +98,7 @@ extension Point {
         return CGPoint(x: CGFloat(x), y: CGFloat(y))
     }
 
-    init(_ cgPoint: CGPoint) {
+    init(cgPoint: CGPoint) {
         x = Int(cgPoint.x)
         y = Int(cgPoint.y)
     }
