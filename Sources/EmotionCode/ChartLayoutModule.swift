@@ -55,19 +55,19 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Failure: Error {
         case missingItems
-        case invalidItems
-        case invalidNumberOfColums
+        case invalidAmountOfItems
+        case invalidNumberOfColumns
         case invalidViewSize
         case invalidMode
     }
 
     public static func start(with flags: Flags, perform: (Command) -> Void) throws -> Model {
         guard flags.numberOfColumns > 0 else {
-            throw Failure.invalidNumberOfColums
+            throw Failure.invalidNumberOfColumns
         }
         for items in flags.itemsPerSection {
             guard items >= 0 else {
-                throw Failure.invalidItems
+                throw Failure.invalidAmountOfItems
             }
         }
         guard flags.itemsPerSection.reduce(0, +) > 0 else {
