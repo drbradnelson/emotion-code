@@ -9,6 +9,12 @@ final class BookChapterView: UIView {
     fileprivate var preferredTopContentInset: CGFloat = 0
     fileprivate var preferredBottomContentInset: CGFloat = 0
 
+    private let webViewContentOffsetKeyPath = "webView.scrollView.contentSize"
+
+    deinit {
+        removeObserver(self, forKeyPath: webViewContentOffsetKeyPath)
+    }
+
     // MARK: Configure web view
 
     func configureWebView() {
@@ -20,6 +26,14 @@ final class BookChapterView: UIView {
                                   webView.bottomAnchor.constraint(equalTo: bottomAnchor),
                                   webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
         NSLayoutConstraint.activate(webViewConstraints)
+        addObserver(self, forKeyPath: webViewContentOffsetKeyPath, options: .new, context: nil)
+    }
+
+    // MARK: KVO
+
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard keyPath == webViewContentOffsetKeyPath else { return }
+        updateContentInset()
     }
 
     // MARK: Content inset
@@ -29,6 +43,20 @@ final class BookChapterView: UIView {
         webView.scrollView.scrollIndicatorInsets.top = top
         preferredTopContentInset = top
         preferredBottomContentInset = bottom
+    }
+
+    private func updateContentInset() {
+//        print("preferredTopContentInset \(preferredTopContentInset)")
+//        print("preferredBottomContentInset \(preferredBottomContentInset)")
+//        print("contentSize \(webView.scrollView.contentSize.height)")
+//        print("bounds \(webView.bounds.height)")
+        if webView.scrollView.contentSize.height <= webView.bounds.height {
+            webView.scrollView.contentInset.bottom = 0
+            webView.scrollView.scrollIndicatorInsets.bottom = preferredBottomContentInset
+        } else {
+            webView.scrollView.contentInset.bottom = preferredBottomContentInset
+            webView.scrollView.scrollIndicatorInsets.bottom = preferredBottomContentInset
+        }
     }
 
     // MARK: State preservation/restoration
