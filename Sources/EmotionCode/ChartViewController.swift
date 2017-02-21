@@ -7,17 +7,8 @@ final class ChartViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let sections = 0..<collectionView!.numberOfSections
-        let itemsPerSection = sections.map(collectionView!.numberOfItems)
         let chartLayout = collectionViewLayout as! ChartLayout
-        chartLayout.program = ChartLayoutModule.makeProgram(delegate: chartLayout, flags: .init(
-            mode: .all,
-            itemsPerSection: itemsPerSection,
-            numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: .init(collectionView!.contentInset.top),
-            bottomContentInset: .init(collectionView!.contentInset.bottom),
-            viewSize: .init(cgSize: collectionView!.visibleContentSize)
-        ))
+        chartLayout.mode = chartLayoutMode(with: collectionView!)
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)

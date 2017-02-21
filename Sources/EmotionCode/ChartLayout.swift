@@ -5,15 +5,27 @@ final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    var program: Program<ChartLayoutModule>!
+    typealias Module = ChartLayoutModule
 
-    override var collectionViewContentSize: CGSize {
-        return program.view.chartSize.cgSize
-    }
+    var program: Program<Module>!
+    var mode: Module.Mode!
 
     override func prepare() {
         super.prepare()
-        program.dispatch(.systemDidSetViewSize(.init(cgSize: collectionView!.visibleContentSize)))
+        let sections = 0..<collectionView!.numberOfSections
+        let itemsPerSection = sections.map(collectionView!.numberOfItems)
+        program = Module.makeProgram(delegate: self, flags: .init(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: ChartLayout.numberOfColumns,
+            topContentInset: .init(collectionView!.contentInset.top),
+            bottomContentInset: .init(collectionView!.contentInset.bottom),
+            viewSize: .init(cgSize: collectionView!.visibleContentSize)
+        ))
+    }
+
+    override var collectionViewContentSize: CGSize {
+        return program.view.chartSize.cgSize
     }
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

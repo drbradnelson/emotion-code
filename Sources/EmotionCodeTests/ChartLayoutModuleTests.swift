@@ -127,26 +127,6 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
 
     // MARK: Update
 
-    func testSystemDidSetViewSizeInvalid1() {
-        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 0, height: 10)), model: .init())
-        expect(failure, .invalidViewSize)
-    }
-
-    func testSystemDidSetViewSizeInvalid2() {
-        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: -1, height: 10)), model: .init())
-        expect(failure, .invalidViewSize)
-    }
-
-    func testSystemDidSetViewSizeInvalid3() {
-        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 10, height: 0)), model: .init())
-        expect(failure, .invalidViewSize)
-    }
-
-    func testSystemDidSetViewSizeInvalid4() {
-        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 10, height: -1)), model: .init())
-        expect(failure, .invalidViewSize)
-    }
-
     func testWillTransitionForSectionMode1() {
         let update = expectUpdate(for: .viewWillTransition, model: .init(
             flags: .init(mode: .section(0, isFocused: false))
@@ -230,8 +210,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 2,
             headerSize: Size(width: 3),
             sectionSpacing: Size(width: 4)
-            )
-        )
+        ))
         let expected = 2 + 3 + 4 + (20 - 2 - 2 - 3 - 4) / 1 + 2
         expect(view?.chartSize.width, expected)
     }
@@ -262,8 +241,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
                 viewSize: Size(height: 1 + 1)
             ),
             minViewHeightForCompactLayout: 1
-            )
-        )
+        ))
         expect(view?.chartSize.height, 1 + 1)
     }
 

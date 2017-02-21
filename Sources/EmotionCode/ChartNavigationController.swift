@@ -13,29 +13,15 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     // MARK: Navigation stack
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if let collectionViewController = viewController as? UICollectionViewController {
-            collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
-            if let chartPresenter = viewController as? ChartPresenter {
-                let masterCollectionView = (viewControllers[0] as! UICollectionViewController).collectionView!
-
-                viewController.loadViewIfNeeded()
-                let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
-
-                let chartLayoutMode = chartPresenter.chartLayoutMode(with: masterCollectionView)
-                let sections = 0..<masterCollectionView.numberOfSections
-                let itemsPerSection = sections.map(masterCollectionView.numberOfItems)
-                let contentInset = masterCollectionView.contentInset
-                chartLayout.program = ChartLayoutModule.makeProgram(delegate: chartLayout, flags: .init(
-                    mode: chartLayoutMode,
-                    itemsPerSection: itemsPerSection,
-                    numberOfColumns: ChartLayout.numberOfColumns,
-                    topContentInset: .init(contentInset.top),
-                    bottomContentInset: .init(contentInset.bottom),
-                    viewSize: .init(cgSize: masterCollectionView.visibleContentSize)
-                ))
-            }
-        }
+        let collectionViewController = viewController as! UICollectionViewController
+        collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
         super.pushViewController(viewController, animated: animated)
+
+        let masterCollectionView = (viewControllers[0] as! UICollectionViewController).collectionView!
+        let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
+        let chartPresenter = viewController as! ChartPresenter
+        let chartLayoutMode = chartPresenter.chartLayoutMode(with: masterCollectionView)
+        chartLayout.mode = chartLayoutMode
     }
 
     // MARK: Navigation controller delegate
