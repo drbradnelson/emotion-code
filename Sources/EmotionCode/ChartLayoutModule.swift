@@ -55,6 +55,7 @@ struct ChartLayoutModule: Elm.Module {
 
     enum Failure: Error {
         case missingItems
+        case invalidItems
         case invalidNumberOfColums
         case invalidViewSize
         case invalidMode
@@ -64,7 +65,12 @@ struct ChartLayoutModule: Elm.Module {
         guard flags.numberOfColumns > 0 else {
             throw Failure.invalidNumberOfColums
         }
-        guard !flags.itemsPerSection.isEmpty else {
+        for items in flags.itemsPerSection {
+            guard items >= 0 else {
+                throw Failure.invalidItems
+            }
+        }
+        guard flags.itemsPerSection.reduce(0, +) > 0 else {
             throw Failure.missingItems
         }
         guard flags.viewSize.width > 0, flags.viewSize.height > 0 else {

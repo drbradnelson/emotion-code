@@ -24,9 +24,19 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(start?.model.flags, flags)
     }
 
-    func testLoadItemsPerSectionInvalid() {
+    func testLoadItemsPerSectionInvalid1() {
         let failure = expectFailure(with: .init(itemsPerSection: []))
         expect(failure, .missingItems)
+    }
+
+    func testLoadItemsPerSectionInvalid2() {
+        let failure = expectFailure(with: .init(itemsPerSection: [0]))
+        expect(failure, .missingItems)
+    }
+
+    func testLoadItemsPerSectionInvalid3() {
+        let failure = expectFailure(with: .init(itemsPerSection: [-1]))
+        expect(failure, .invalidItems)
     }
 
     func testLoadNumberOfColumnsInvalid1() {
