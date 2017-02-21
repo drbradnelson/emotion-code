@@ -6,6 +6,8 @@ final class BookChapterView: UIView {
     let webView = WKWebView()
 
     fileprivate var restoredWebViewContentOffset: CGPoint?
+    fileprivate var preferredTopContentInset: CGFloat = 0
+    fileprivate var preferredBottomContentInset: CGFloat = 0
 
     // MARK: Configure web view
 
@@ -24,9 +26,9 @@ final class BookChapterView: UIView {
 
     func insetContent(top: CGFloat, bottom: CGFloat) {
         webView.scrollView.contentInset.top = top
-        webView.scrollView.contentInset.bottom = bottom
         webView.scrollView.scrollIndicatorInsets.top = top
-        webView.scrollView.scrollIndicatorInsets.bottom = bottom
+        preferredTopContentInset = top
+        preferredBottomContentInset = bottom
     }
 
     // MARK: State preservation/restoration
