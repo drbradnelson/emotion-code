@@ -19,7 +19,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     }
 
     func testLoadFlags2() {
-        let flags: Module.Flags = .init(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 3, topContentInset: 4, viewSize: .init(width: 5, height: 6))
+        let flags: Module.Flags = .init(mode: .section(0, isFocused: false), itemsPerSection: [1, 2], numberOfColumns: 3, topContentInset: 4, viewSize: .init(width: 5, height: 6))
         let start = expectStart(with: flags)
         expect(start?.model.flags, flags)
     }
@@ -86,26 +86,75 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(failure, .invalidViewSize)
     }
 
-    func testWillTransition1() {
-        let update = expectUpdate(for: .viewWillTransition, model: .init(isFocused: false))
-        expect(update?.model.isFocused, false)
+    func testWillTransitionForSectionMode1() {
+        let update = expectUpdate(for: .viewWillTransition, model: .init(
+            flags: .init(mode: .section(0, isFocused: false))
+        ))
+        expect(update?.model.flags.mode, .section(0, isFocused: false))
     }
 
-    func testWillTransition2() {
-        let update = expectUpdate(for: .viewWillTransition, model: .init(isFocused: true))
-        expect(update?.model.isFocused, false)
+    func testWillTransitionForSectionMode2() {
+        let update = expectUpdate(for: .viewWillTransition, model: .init(
+            flags: .init(mode: .section(0, isFocused: true))
+        ))
+        expect(update?.model.flags.mode, .section(0, isFocused: false))
     }
 
-    func testViewDidTransition1() {
-        let update = expectUpdate(for: .viewDidTransition, model: .init(isFocused: true))
-        expect(update?.model.isFocused, true)
+    func testWillTransitionForEmotionMode1() {
+        let update = expectUpdate(for: .viewWillTransition, model: .init(
+            flags: .init(mode: .emotion(.arbitrary, isFocused: false))
+        ))
+        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: false))
     }
 
-    func testViewDidTransition2() {
-        let update = expectUpdate(for: .viewDidTransition, model: .init(isFocused: false))
-        expect(update?.model.isFocused, true)
+    func testWillTransitionForEmotionMode2() {
+        let update = expectUpdate(for: .viewWillTransition, model: .init(
+            flags: .init(mode: .emotion(.arbitrary, isFocused: true))
+        ))
+        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: false))
     }
 
+    func testWillTransitionForInvalidMode() {
+        let failure = expectFailure(for: .viewWillTransition, model: .init(
+            flags: .init(mode: .all)
+        ))
+        expect(failure, .invalidMode)
+    }
+
+    func testDidTransitionForSectionMode1() {
+        let update = expectUpdate(for: .viewDidTransition, model: .init(
+            flags: .init(mode: .section(0, isFocused: false))
+        ))
+        expect(update?.model.flags.mode, .section(0, isFocused: true))
+    }
+
+    func testDidTransitionForSectionMode2() {
+        let update = expectUpdate(for: .viewDidTransition, model: .init(
+            flags: .init(mode: .section(0, isFocused: true))
+        ))
+        expect(update?.model.flags.mode, .section(0, isFocused: true))
+    }
+
+    func testDidTransitionForEmotionMode1() {
+        let update = expectUpdate(for: .viewDidTransition, model: .init(
+            flags: .init(mode: .emotion(.arbitrary, isFocused: false))
+        ))
+        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: true))
+    }
+
+    func testDidTransitionForEmotionMode2() {
+        let update = expectUpdate(for: .viewDidTransition, model: .init(
+            flags: .init(mode: .emotion(.arbitrary, isFocused: true))
+        ))
+        expect(update?.model.flags.mode, .emotion(.arbitrary, isFocused: true))
+    }
+
+    func testDidTransitionForInvalidMode() {
+        let failure = expectFailure(for: .viewDidTransition, model: .init(
+            flags: .init(mode: .all)
+        ))
+        expect(failure, .invalidMode)
+    }
 
     // MARK: View
 
@@ -160,7 +209,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testChartWidthForSectionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(width: 10)
@@ -172,7 +221,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testChartHeightForSectionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(height: 10)
@@ -184,7 +233,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testChartWidthForEmotionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(width: 10)
@@ -196,7 +245,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testChartHeightForEmotionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(height: 10)
@@ -235,7 +284,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderWidthForSectionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(width: 100)
@@ -249,7 +298,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderWidthForEmotionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(width: 100)
@@ -343,7 +392,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderXForSectionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 10)
@@ -357,7 +406,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderXForSectionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 10)
@@ -371,7 +420,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderXForEmotionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 10)
@@ -385,7 +434,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderXForEmotionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 1)),
+                mode: .emotion(.init(item: 0, section: 1), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 10)
@@ -411,7 +460,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderYForSectionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1
             ),
@@ -423,7 +472,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderYForSectionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -439,7 +488,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderYForSectionMode3() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -455,7 +504,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderYForEmotionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1
             ),
@@ -467,7 +516,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderYForEmotionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 1, section: 0)),
+                mode: .emotion(.init(item: 1, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -483,7 +532,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testColumnHeaderYForEmotionMode3() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 1, section: 0)),
+                mode: .emotion(.init(item: 1, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -584,7 +633,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderHeightForSectionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(height: 10)
@@ -597,7 +646,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderHeightForEmotionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1,
                 viewSize: Size(height: 10)
@@ -622,7 +671,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderXForSectionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1
             ),
@@ -634,7 +683,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderXForSectionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 10)
@@ -647,7 +696,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderXForEmotionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1
             ),
@@ -659,7 +708,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderXForEmotionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 1)),
+                mode: .emotion(.init(item: 0, section: 1), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 10)
@@ -739,7 +788,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForSectionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -755,7 +804,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForSectionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -771,7 +820,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForSectionMode3() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -787,7 +836,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForSectionMode4() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -803,7 +852,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForEmotionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -819,7 +868,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForEmotionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -835,7 +884,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForEmotionMode3() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 1)),
+                mode: .emotion(.init(item: 0, section: 1), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -851,7 +900,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testRowHeaderYForEmotionMode4() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 1)),
+                mode: .emotion(.init(item: 0, section: 1), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 1,
                 topContentInset: 2,
@@ -916,7 +965,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemHeightForSectionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 viewSize: Size(height: 100)
@@ -932,7 +981,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemHeightForEmotionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 viewSize: Size(height: 100)
@@ -963,7 +1012,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemWidthForSectionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 viewSize: Size(width: 20)
@@ -978,7 +1027,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemWidthForEmotionMode() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 viewSize: Size(width: 20)
@@ -1011,7 +1060,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemXForSectionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 20)
@@ -1025,7 +1074,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemXForSectionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 20)
@@ -1039,7 +1088,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemXForEmotionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 20)
@@ -1053,7 +1102,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemXForEmotionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 1)),
+                mode: .emotion(.init(item: 0, section: 1), isFocused: false),
                 itemsPerSection: [1, 1],
                 numberOfColumns: 2,
                 viewSize: Size(width: 20)
@@ -1117,7 +1166,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForSectionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [2, 2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1137,7 +1186,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForSectionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [2, 2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1157,7 +1206,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForSectionMode3() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [2, 2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1177,7 +1226,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForSectionMode4() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(1),
+                mode: .section(1, isFocused: false),
                 itemsPerSection: [2, 2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1197,7 +1246,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForEmotionMode1() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1213,7 +1262,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForEmotionMode2() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1229,7 +1278,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForEmotionMode3() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 1, section: 0)),
+                mode: .emotion(.init(item: 1, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1246,7 +1295,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemYForEmotionMode4() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 1, section: 0)),
+                mode: .emotion(.init(item: 1, section: 0), isFocused: false),
                 itemsPerSection: [2],
                 numberOfColumns: 1,
                 topContentInset: 3,
@@ -1275,7 +1324,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testHeadersAlphaWhenModeSection() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1
             )
@@ -1287,7 +1336,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testHeadersAlphaWhenModeEmotion() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 0, section: 0)),
+                mode: .emotion(.init(item: 0, section: 0), isFocused: false),
                 itemsPerSection: [1],
                 numberOfColumns: 1
             )
@@ -1296,27 +1345,12 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
         expect(view?.rowHeaders[.init(section: 0)]?.alpha, 0)
     }
 
-    func testItemsAlphaWhenModeAllAndFocused() {
+    func testItemsAlphaWhenModeAll() {
         let view = expectView(for: .init(
             flags: .init(
                 mode: .all,
                 itemsPerSection: [2, 2]
-            ),
-            isFocused: false
-        ))
-        expect(view?.items[.init(item: 0, section: 0)]?.alpha, 1)
-        expect(view?.items[.init(item: 1, section: 0)]?.alpha, 1)
-        expect(view?.items[.init(item: 0, section: 1)]?.alpha, 1)
-        expect(view?.items[.init(item: 1, section: 1)]?.alpha, 1)
-    }
-
-    func testItemsAlphaWhenModeAllAndNotFocused() {
-        let view = expectView(for: .init(
-            flags: .init(
-                mode: .all,
-                itemsPerSection: [2, 2]
-            ),
-            isFocused: false
+            )
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.alpha, 1)
         expect(view?.items[.init(item: 1, section: 0)]?.alpha, 1)
@@ -1327,10 +1361,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemsAlphaWhenModeSectionAndFocused() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: true),
                 itemsPerSection: [2, 2]
-            ),
-            isFocused: true
+            )
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.alpha, 1)
         expect(view?.items[.init(item: 1, section: 0)]?.alpha, 1)
@@ -1341,10 +1374,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemsAlphaWhenModeSectionAndNotFocused() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .section(0),
+                mode: .section(0, isFocused: false),
                 itemsPerSection: [2, 2]
-            ),
-            isFocused: false
+            )
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.alpha, 1)
         expect(view?.items[.init(item: 1, section: 0)]?.alpha, 1)
@@ -1355,10 +1387,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemsAlphaWhenModeEmotionAndFocused() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 1, section: 0)),
+                mode: .emotion(.init(item: 1, section: 0), isFocused: true),
                 itemsPerSection: [2, 2]
-            ),
-            isFocused: true
+            )
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.alpha, 0)
         expect(view?.items[.init(item: 1, section: 0)]?.alpha, 1)
@@ -1369,10 +1400,9 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
     func testItemsAlphaWhenModeEmotionAndNotFocused() {
         let view = expectView(for: .init(
             flags: .init(
-                mode: .emotion(.init(item: 1, section: 0)),
+                mode: .emotion(.init(item: 1, section: 0), isFocused: false),
                 itemsPerSection: [2, 2]
-            ),
-            isFocused: false
+            )
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.alpha, 1)
         expect(view?.items[.init(item: 1, section: 0)]?.alpha, 1)
@@ -1405,7 +1435,6 @@ extension ChartLayoutModule.Flags {
 extension ChartLayoutModule.Model {
     init(
         flags: ChartLayoutModule.Flags = .init(),
-        isFocused: Bool = false,
         contentPadding: Int = 10,
         headerSize: Size = Size(width: 30, height: 30),
         sectionSpacing: Size = Size(width: 5, height: 5),
@@ -1414,13 +1443,18 @@ extension ChartLayoutModule.Model {
         minViewHeightForCompactLayout: Int = 554
         ) {
         self.flags = flags
-        self.isFocused = isFocused
         self.contentPadding = contentPadding
         self.headerSize = headerSize
         self.sectionSpacing = sectionSpacing
         self.itemHeight = itemHeight
         self.itemSpacing = itemSpacing
         self.minViewHeightForCompactLayout = minViewHeightForCompactLayout
+    }
+}
+
+extension ChartLayoutModule.Mode: Equatable {
+    public static func == (lhs: ChartLayoutModule.Mode, rhs: ChartLayoutModule.Mode) -> Bool {
+        return String(describing: lhs) == String(describing: rhs)
     }
 }
 

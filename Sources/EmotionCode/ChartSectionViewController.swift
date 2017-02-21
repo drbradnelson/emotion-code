@@ -91,7 +91,7 @@ extension ChartSectionViewController: ChartPresenter {
 
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
-        return .section(selectedSection)
+        return .section(selectedSection, isFocused: false)
     }
 
 }

@@ -16,20 +16,16 @@ struct ChartLayoutModule: Elm.Module {
         let viewSize: Size
     }
 
-    enum Mode: Equatable {
+    enum Mode {
         case all
-        case section(Int)
-        case emotion(IndexPath)
-
-        static func == (lhs: Mode, rhs: Mode) -> Bool {
-            return String(describing: lhs) == String(describing: rhs)
-        }
+        case section(Int, isFocused: Bool)
+        case emotion(IndexPath, isFocused: Bool)
     }
 
     enum Message {
-        case systemDidSetViewSize(Size)
         case viewWillTransition
         case viewDidTransition
+        case systemDidSetViewSize(Size)
     }
 
     struct Model {
@@ -40,7 +36,6 @@ struct ChartLayoutModule: Elm.Module {
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10
-        var isFocused = false
     }
 
     typealias Command = Void
@@ -62,6 +57,7 @@ struct ChartLayoutModule: Elm.Module {
         case missingItems
         case invalidNumberOfColums
         case invalidViewSize
+        case invalidMode
     }
 
     public static func start(with flags: Flags, perform: (Command) -> Void) throws -> Model {
@@ -74,15 +70,57 @@ struct ChartLayoutModule: Elm.Module {
         guard flags.viewSize.width > 0, flags.viewSize.height > 0 else {
             throw Failure.invalidViewSize
         }
-        return Model(flags: flags, isFocused: false)
+        return Model(flags: flags)
     }
 
     static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {
         switch message {
-        case .viewDidTransition:
-            model.isFocused = true
         case .viewWillTransition:
-            model.isFocused = false
+            switch model.flags.mode {
+            case .all:
+                throw Failure.invalidMode
+            case .section(let section, _):
+                model = Model(flags: .init(
+                    mode: .section(section, isFocused: false),
+                    itemsPerSection: model.flags.itemsPerSection,
+                    numberOfColumns: model.flags.numberOfColumns,
+                    topContentInset: model.flags.topContentInset,
+                    bottomContentInset: model.flags.bottomContentInset,
+                    viewSize: model.flags.viewSize
+                ))
+            case .emotion(let emotion, _):
+                model = Model(flags: .init(
+                    mode: .emotion(emotion, isFocused: false),
+                    itemsPerSection: model.flags.itemsPerSection,
+                    numberOfColumns: model.flags.numberOfColumns,
+                    topContentInset: model.flags.topContentInset,
+                    bottomContentInset: model.flags.bottomContentInset,
+                    viewSize: model.flags.viewSize
+                ))
+            }
+        case .viewDidTransition:
+            switch model.flags.mode {
+            case .all:
+                throw Failure.invalidMode
+            case .section(let section, _):
+                model = Model(flags: .init(
+                    mode: .section(section, isFocused: true),
+                    itemsPerSection: model.flags.itemsPerSection,
+                    numberOfColumns: model.flags.numberOfColumns,
+                    topContentInset: model.flags.topContentInset,
+                    bottomContentInset: model.flags.bottomContentInset,
+                    viewSize: model.flags.viewSize
+                ))
+            case .emotion(let emotion, _):
+                model = Model(flags: .init(
+                    mode: .emotion(emotion, isFocused: true),
+                    itemsPerSection: model.flags.itemsPerSection,
+                    numberOfColumns: model.flags.numberOfColumns,
+                    topContentInset: model.flags.topContentInset,
+                    bottomContentInset: model.flags.bottomContentInset,
+                    viewSize: model.flags.viewSize
+                ))
+            }
         case .systemDidSetViewSize(let viewSize):
             guard viewSize.width > 0, viewSize.height > 0 else {
                 throw Failure.invalidViewSize
@@ -95,8 +133,7 @@ struct ChartLayoutModule: Elm.Module {
                     topContentInset: model.flags.topContentInset,
                     bottomContentInset: model.flags.bottomContentInset,
                     viewSize: viewSize
-                ),
-                isFocused: model.isFocused
+                )
             )
         }
     }
@@ -278,13 +315,13 @@ struct ChartLayoutModule: Elm.Module {
             switch model.flags.mode {
             case .all:
                 return nil
-            case .section(let section):
+            case .section(let section, _):
                 let column = columnIndex(forSection: section)
                 let x = columnXPositions[column] - model.contentPadding
                 let row = rowIndex(forSection: section)
                 let y = rowYPositions[row] - model.contentPadding - model.flags.topContentInset
                 return Point(x: x, y: y + model.flags.topContentInset)
-            case .emotion(let indexPath):
+            case .emotion(let indexPath, _):
                 let column = columnIndex(forSection: indexPath.section)
                 let x = columnXPositions[column] - model.contentPadding
                 let y = yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.flags.topContentInset
@@ -307,10 +344,10 @@ struct ChartLayoutModule: Elm.Module {
                 switch model.flags.mode {
                 case .all:
                     alpha = 1
-                case .section(let currentSection):
-                    alpha = (!model.isFocused || currentSection == section) ? 1 : 0
-                case .emotion(let indexPath):
-                    alpha = (!model.isFocused || indexPath.item == item && indexPath.section == section) ? 1 : 0
+                case .section(let currentSection, let isFocused):
+                    alpha = (!isFocused || currentSection == section) ? 1 : 0
+                case .emotion(let indexPath, let isFocused):
+                    alpha = (!isFocused || indexPath.item == item && indexPath.section == section) ? 1 : 0
                 }
                 let frame = Rect(origin: position, size: size)
                 let indexPath = IndexPath(item: item, section: section)
@@ -387,8 +424,13 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let chartSize: Size = {
-            let isCompact = model.flags.viewSize.height >= model.minViewHeightForCompactLayout
-            guard model.flags.mode == .all, !isCompact else { return model.flags.viewSize }
+            switch model.flags.mode {
+            case .all:
+                let isCompact = model.flags.viewSize.height >= model.minViewHeightForCompactLayout
+                if isCompact { return model.flags.viewSize }
+            case .section, .emotion:
+                return model.flags.viewSize
+            }
 
             let lastColumnIndexPath = IndexPath(section: model.flags.numberOfColumns - 1)
             let lastRowIndexPath = IndexPath(section: rowsCount - 1)

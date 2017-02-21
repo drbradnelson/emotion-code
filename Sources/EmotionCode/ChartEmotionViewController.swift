@@ -48,7 +48,7 @@ extension ChartEmotionViewController: ChartPresenter {
 
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
         let selectedIndexPath = collectionView.indexPathForSelectedItem!
-        return .emotion(selectedIndexPath)
+        return .emotion(selectedIndexPath, isFocused: false)
     }
 
 }
