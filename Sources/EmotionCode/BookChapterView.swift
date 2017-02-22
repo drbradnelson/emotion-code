@@ -55,7 +55,7 @@ extension BookChapterView: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         guard let url = navigationAction.request.url, navigationAction.navigationType == .linkActivated, !url.isFileURL else {
-             decisionHandler(.allow)
+            decisionHandler(.allow)
             return
         }
         decisionHandler(.cancel)
