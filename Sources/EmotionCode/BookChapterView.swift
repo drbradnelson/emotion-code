@@ -6,14 +6,9 @@ final class BookChapterView: UIView {
     let webView = WKWebView()
 
     fileprivate var restoredWebViewContentOffset: CGPoint?
-    fileprivate var preferredTopContentInset: CGFloat = 0
-    fileprivate var preferredBottomContentInset: CGFloat = 0
 
-    private let webViewContentOffsetKeyPath = "webView.scrollView.contentSize"
-
-    deinit {
-        removeObserver(self, forKeyPath: webViewContentOffsetKeyPath)
-    }
+    private var webViewTopConstraint: NSLayoutConstraint?
+    private var webViewBottomConstraint: NSLayoutConstraint?
 
     // MARK: Configure web view
 
@@ -21,42 +16,23 @@ final class BookChapterView: UIView {
         webView.navigationDelegate = self
         webView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(webView)
-        let webViewConstraints = [webView.topAnchor.constraint(equalTo: topAnchor),
-                                  webView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                                  webView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        webViewTopConstraint = webView.topAnchor.constraint(equalTo: topAnchor)
+        webViewBottomConstraint = webView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        guard let webViewTopConstraint = webViewTopConstraint, let webViewBottomConstraint = webViewBottomConstraint else { return }
+        let webViewConstraints = [webViewTopConstraint,
+                                 webView.leadingAnchor.constraint(equalTo: leadingAnchor),
+                                  webViewBottomConstraint,
                                   webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
         NSLayoutConstraint.activate(webViewConstraints)
-        addObserver(self, forKeyPath: webViewContentOffsetKeyPath, options: .new, context: nil)
-    }
-
-    // MARK: KVO
-
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        guard keyPath == webViewContentOffsetKeyPath else { return }
-        updateContentInset()
+        webView.scrollView.layer.masksToBounds = false
     }
 
     // MARK: Content inset
 
     func insetContent(top: CGFloat, bottom: CGFloat) {
-        webView.scrollView.contentInset.top = top
-        webView.scrollView.scrollIndicatorInsets.top = top
-        preferredTopContentInset = top
-        preferredBottomContentInset = bottom
-    }
-
-    private func updateContentInset() {
-//        print("preferredTopContentInset \(preferredTopContentInset)")
-//        print("preferredBottomContentInset \(preferredBottomContentInset)")
-//        print("contentSize \(webView.scrollView.contentSize.height)")
-//        print("bounds \(webView.bounds.height)")
-        if webView.scrollView.contentSize.height <= webView.bounds.height {
-            webView.scrollView.contentInset.bottom = 0
-            webView.scrollView.scrollIndicatorInsets.bottom = preferredBottomContentInset
-        } else {
-            webView.scrollView.contentInset.bottom = preferredBottomContentInset
-            webView.scrollView.scrollIndicatorInsets.bottom = preferredBottomContentInset
-        }
+        // NOTE: Workaround for WKWebView content insets http://stackoverflow.com/questions/33922076/wkwebviewcontentinset-makes-content-size-wrong
+        webViewTopConstraint?.constant = top
+        webViewBottomConstraint?.constant = -bottom
     }
 
     // MARK: State preservation/restoration
