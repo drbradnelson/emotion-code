@@ -19,10 +19,11 @@ final class BookChapterView: UIView {
         webViewTopConstraint = webView.topAnchor.constraint(equalTo: topAnchor)
         webViewBottomConstraint = webView.bottomAnchor.constraint(equalTo: bottomAnchor)
         guard let webViewTopConstraint = webViewTopConstraint, let webViewBottomConstraint = webViewBottomConstraint else { return }
-        let webViewConstraints = [webViewTopConstraint,
-                                 webView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                                  webViewBottomConstraint,
-                                  webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
+        let webViewConstraints = [
+            webViewTopConstraint,
+            webView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            webViewBottomConstraint,
+            webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
         NSLayoutConstraint.activate(webViewConstraints)
         webView.scrollView.layer.masksToBounds = false
     }
@@ -30,7 +31,8 @@ final class BookChapterView: UIView {
     // MARK: Content inset
 
     func insetContent(top: CGFloat, bottom: CGFloat) {
-        // NOTE: Workaround for WKWebView content insets http://stackoverflow.com/questions/33922076/wkwebviewcontentinset-makes-content-size-wrong
+        // NOTE: Workaround for WKWebView content insets 
+        // http://stackoverflow.com/questions/33922076/wkwebviewcontentinset-makes-content-size-wrong
         webViewTopConstraint?.constant = top
         webViewBottomConstraint?.constant = -bottom
     }
