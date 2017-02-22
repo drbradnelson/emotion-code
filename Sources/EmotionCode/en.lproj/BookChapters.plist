@@ -22,12 +22,6 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Contents</string>
-		<key>Filename</key>
-		<string>contents</string>
-	</dict>
-	<dict>
-		<key>Title</key>
 		<string>Acknowledgements</string>
 		<key>Filename</key>
 		<string>acknowledgements</string>
@@ -137,12 +131,6 @@
 		<string>About the Author</string>
 		<key>Filename</key>
 		<string>about-author</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Index</string>
-		<key>Filename</key>
-		<string>index</string>
 	</dict>
 </array>
 </plist>
