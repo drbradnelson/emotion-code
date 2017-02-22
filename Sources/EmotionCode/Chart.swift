@@ -22,7 +22,7 @@ struct Chart {
     }
 
     func section(atIndex index: Int) -> Section {
-        let columnIndex = (index + columns.count) % columns.count
+        let columnIndex = index % columns.count
         let sectionIndex = index / columns.count
         return columns[columnIndex].sections[sectionIndex]
     }
