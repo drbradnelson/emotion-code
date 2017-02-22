@@ -12,6 +12,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     override func prepare() {
         super.prepare()
+        guard program == nil else { return }
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
         program = Module.makeProgram(delegate: self, flags: .init(
