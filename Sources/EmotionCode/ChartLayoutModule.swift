@@ -194,7 +194,7 @@ struct ChartLayoutModule: Elm.Module {
             return totalItemHeights + verticalItemSpacing
         }
 
-        let maximumSectionHeight = sectionHeights.max() ?? 0
+        let maximumSectionHeight = sectionHeights.max()!
 
         //
         // MARK: -
