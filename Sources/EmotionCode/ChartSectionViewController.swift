@@ -2,10 +2,14 @@ import UIKit
 
 final class ChartSectionViewController: UICollectionViewController {
 
+    var chartLayout: ChartLayout {
+        return collectionViewLayout as! ChartLayout
+    }
+
     // MARK: Title
 
     func setTitle(forSection section: Int) {
-        let column = (section + ChartLayout.numberOfColumns) % ChartLayout.numberOfColumns
+        let column = section % ChartLayout.numberOfColumns
         let row = section / ChartLayout.numberOfColumns + 1
         let columnName = String.alphabet[column]
         let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
@@ -21,10 +25,17 @@ final class ChartSectionViewController: UICollectionViewController {
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        chartLayout.program.dispatch(.viewDidTransition)
+        chartLayout.invalidateLayout()
+    }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
+        chartLayout.program.dispatch(.viewWillTransition)
     }
 
     // MARK: Collection view delegate
@@ -80,7 +91,7 @@ extension ChartSectionViewController: ChartPresenter {
 
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
-        return .section(selectedSection)
+        return .section(selectedSection, isFocused: false)
     }
 
 }
