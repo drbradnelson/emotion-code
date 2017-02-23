@@ -2,26 +2,13 @@ import UIKit
 
 final class ChartViewController: UICollectionViewController {
 
-    private let screenIsSmall: Bool = {
-        let screenSize = UIScreen.main.bounds.size
-        let iphone6ScreenHeight: CGFloat = 667
-        return screenSize.height < iphone6ScreenHeight
-    }()
-
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let sections = 0..<collectionView!.numberOfSections
-        let itemsPerSection = sections.map(collectionView!.numberOfItems)
         let chartLayout = collectionViewLayout as! ChartLayout
-        chartLayout.setProgramModel(
-            mode: .all,
-            itemsPerSection: itemsPerSection,
-            viewSize: collectionView!.visibleContentSize,
-            topContentInset: collectionView!.contentInset.top
-        )
+        chartLayout.mode = chartLayoutMode(with: collectionView!)
 
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
@@ -30,12 +17,6 @@ final class ChartViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         toggleLabelsAlongsideTransition()
-        collectionView!.isScrollEnabled = screenIsSmall
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        collectionView!.isScrollEnabled = false
     }
 
     // MARK: Collection view delegate

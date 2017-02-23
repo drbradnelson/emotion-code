@@ -3,32 +3,30 @@ import Elm
 
 final class ChartLayout: UICollectionViewLayout {
 
-    typealias Module = ChartLayoutModule
-
     static let numberOfColumns = 2
 
-    private var program: Program<ChartLayoutModule>!
+    typealias Module = ChartLayoutModule
 
-    func setProgramModel(mode: Module.Mode, itemsPerSection: [Int], viewSize: CGSize, topContentInset: CGFloat) {
-        program = ChartLayoutModule.makeProgram(delegate: self, flags: .init(
+    var program: Program<Module>!
+    var mode: Module.Mode!
+
+    override func prepare() {
+        super.prepare()
+        guard program == nil else { return }
+        let sections = 0..<collectionView!.numberOfSections
+        let itemsPerSection = sections.map(collectionView!.numberOfItems)
+        program = Module.makeProgram(delegate: self, flags: .init(
             mode: mode,
             itemsPerSection: itemsPerSection,
             numberOfColumns: ChartLayout.numberOfColumns,
-            topContentInset: Int(topContentInset),
-            viewSize: .init(cgSize: viewSize)
-            )
-        )
+            topContentInset: .init(collectionView!.contentInset.top),
+            bottomContentInset: .init(collectionView!.contentInset.bottom),
+            viewSize: .init(cgSize: collectionView!.visibleContentSize)
+        ))
     }
 
     override var collectionViewContentSize: CGSize {
         return program.view.chartSize.cgSize
-    }
-
-    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
-        guard let verticalContentOffset = program.view.proposedVerticalContentOffset else { return proposedContentOffset }
-        let x = proposedContentOffset.x
-        let y = CGFloat(verticalContentOffset)
-        return CGPoint(x: x, y: y)
     }
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -45,20 +43,21 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let frame = program.view.itemFrames[indexPath.section][indexPath.item]
-        return UICollectionViewLayoutAttributes(indexPath: indexPath, frame: frame.cgRect)
+        let item = program.view.items[indexPath]!
+        return UICollectionViewLayoutAttributes(indexPath: indexPath, item: item)
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        let header: ChartLayoutModule.Header?
         switch elementKind {
         case ChartHeaderView.columnKind:
-            let frame = program.view.columnHeaderFrames[indexPath.section]
-            return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
+            header = program.view.columnHeaders[indexPath]
         case ChartHeaderView.rowKind:
-            let frame = program.view.rowHeaderFrames[indexPath.section]
-            return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, frame: frame.cgRect)
-        default: return nil
+            header = program.view.rowHeaders[indexPath]
+        default:
+            header = nil
         }
+        return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
     }
 
 }
@@ -72,14 +71,17 @@ extension ChartLayout: Elm.Delegate {
 
 private extension UICollectionViewLayoutAttributes {
 
-    convenience init(indexPath: IndexPath, frame: CGRect) {
+    convenience init(indexPath: IndexPath, item: ChartLayoutModule.Item) {
         self.init(forCellWith: indexPath)
-        self.frame = frame
+        self.frame = item.frame.cgRect
+        self.alpha = .init(item.alpha)
     }
 
-    convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, frame: CGRect) {
+    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutModule.Header?) {
+        guard let header = header else { return nil }
         self.init(forSupplementaryViewOfKind: elementKind, with: indexPath)
-        self.frame = frame
+        self.frame = header.frame.cgRect
+        self.alpha = .init(header.alpha)
     }
 
 }
@@ -91,20 +93,22 @@ private extension Rect {
 }
 
 private extension Size {
-
     var cgSize: CGSize {
-        return CGSize(width: CGFloat(width), height: CGFloat(height))
+        return CGSize(width: width, height: height)
     }
+}
 
+extension Size {
     init(cgSize: CGSize) {
-        width = Int(cgSize.width)
-        height = Int(cgSize.height)
+        width = .init(cgSize.width)
+        height = .init(cgSize.height)
     }
-
 }
 
 private extension Point {
+
     var cgPoint: CGPoint {
-        return CGPoint(x: CGFloat(x), y: CGFloat(y))
+        return CGPoint(x: x, y: y)
     }
+
 }
