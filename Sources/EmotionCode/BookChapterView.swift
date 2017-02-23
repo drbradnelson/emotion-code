@@ -7,26 +7,33 @@ final class BookChapterView: UIView {
 
     fileprivate var restoredWebViewContentOffset: CGPoint?
 
+    private var webViewTopConstraint: NSLayoutConstraint!
+    private var webViewBottomConstraint: NSLayoutConstraint!
+
     // MARK: Configure web view
 
     func configureWebView() {
         webView.navigationDelegate = self
         webView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(webView)
-        let webViewConstraints = [webView.topAnchor.constraint(equalTo: topAnchor),
-                                  webView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                                  webView.bottomAnchor.constraint(equalTo: bottomAnchor),
-                                  webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
+        webViewTopConstraint = webView.topAnchor.constraint(equalTo: topAnchor)
+        webViewBottomConstraint = webView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        let webViewConstraints = [
+            webViewTopConstraint!,
+            webView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            webViewBottomConstraint!,
+            webView.trailingAnchor.constraint(equalTo: trailingAnchor)]
         NSLayoutConstraint.activate(webViewConstraints)
+        webView.scrollView.layer.masksToBounds = false
     }
 
     // MARK: Content inset
 
     func insetContent(top: CGFloat, bottom: CGFloat) {
-        webView.scrollView.contentInset.top = top
-        webView.scrollView.contentInset.bottom = bottom
-        webView.scrollView.scrollIndicatorInsets.top = top
-        webView.scrollView.scrollIndicatorInsets.bottom = bottom
+        // NOTE: Workaround for WKWebView content insets 
+        // http://stackoverflow.com/questions/33922076/wkwebviewcontentinset-makes-content-size-wrong
+        webViewTopConstraint.constant = top
+        webViewBottomConstraint.constant = -bottom
     }
 
     // MARK: State preservation/restoration
