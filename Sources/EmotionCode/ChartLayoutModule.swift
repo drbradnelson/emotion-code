@@ -3,6 +3,7 @@ import Elm
 
 // swiftlint:disable mark
 // swiftlint:disable cyclomatic_complexity
+// swiftlint:disable type_body_length
 
 struct ChartLayoutModule: Elm.Module {
 
@@ -11,19 +12,29 @@ struct ChartLayoutModule: Elm.Module {
         let itemsPerSection: [Int]
         let numberOfColumns: Int
         let topContentInset: Int
+        let bottomContentInset: Int
         let viewSize: Size
     }
 
     enum Mode {
         case all
-        case section(Int)
-        case emotion(IndexPath)
+        case section(Int, isFocused: Bool)
+        case emotion(IndexPath, isFocused: Bool)
     }
 
-    enum Message {}
+    enum Message {
+        case viewWillTransition
+        case viewDidTransition
+    }
 
     struct Model {
-        let flags: Flags
+        var mode: Mode
+        let itemsPerSection: [Int]
+        let numberOfColumns: Int
+        let topContentInset: Int
+        let bottomContentInset: Int
+        var viewSize: Size
+
         let minViewHeightForCompactLayout = 554
         let headerSize = Size(width: 30, height: 30)
         let itemHeight = 30
@@ -32,49 +43,91 @@ struct ChartLayoutModule: Elm.Module {
         let itemSpacing = 10
     }
 
-    enum Command {}
+    typealias Command = Void
+
+    struct Item {
+        let frame: Rect
+        let alpha: Float
+    }
+    typealias Header = Item
 
     struct View {
         let chartSize: Size
-        let proposedVerticalContentOffset: Int?
-        let itemFrames: [[Rect]]
-        let columnHeaderFrames: [Rect]
-        let rowHeaderFrames: [Rect]
+        let items: [IndexPath: Item]
+        let columnHeaders: [IndexPath: Header]
+        let rowHeaders: [IndexPath: Header]
     }
 
     enum Failure: Error {
         case missingItems
-        case invalidNumberOfColums
+        case invalidAmountOfItems
+        case invalidNumberOfColumns
         case invalidViewSize
+        case invalidMode
     }
 
     public static func start(with flags: Flags, perform: (Command) -> Void) throws -> Model {
         guard flags.numberOfColumns > 0 else {
-            throw Failure.invalidNumberOfColums
+            throw Failure.invalidNumberOfColumns
         }
-        guard !flags.itemsPerSection.isEmpty else {
+        for items in flags.itemsPerSection {
+            guard items >= 0 else {
+                throw Failure.invalidAmountOfItems
+            }
+        }
+        guard flags.itemsPerSection.reduce(0, +) > 0 else {
             throw Failure.missingItems
         }
         guard flags.viewSize.width > 0, flags.viewSize.height > 0 else {
             throw Failure.invalidViewSize
         }
-        return Model(flags: flags)
+        return Model(
+            mode: flags.mode,
+            itemsPerSection: flags.itemsPerSection,
+            numberOfColumns: flags.numberOfColumns,
+            topContentInset: flags.topContentInset,
+            bottomContentInset: flags.bottomContentInset,
+            viewSize: flags.viewSize
+        )
     }
 
-    static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {}
+    static func update(for message: Message, model: inout Model, perform: (Command) -> Void) throws {
+        switch message {
+        case .viewWillTransition:
+            switch model.mode {
+            case .all:
+                throw Failure.invalidMode
+            case .section(let section, _):
+                model.mode = .section(section, isFocused: false)
+            case .emotion(let emotion, _):
+                model.mode = .emotion(emotion, isFocused: false)
+            }
+        case .viewDidTransition:
+            switch model.mode {
+            case .all:
+                throw Failure.invalidMode
+            case .section(let section, _):
+                model.mode = .section(section, isFocused: true)
+            case .emotion(let emotion, _):
+                model.mode = .emotion(emotion, isFocused: true)
+            }
+        }
+    }
 
     static func view(for model: Model) throws -> View {
 
-        // We're only rounding itemHeight and itemHeights to closest values
-
         func rowIndex(forSection section: Int) -> Int {
-            return section / model.flags.numberOfColumns
+            return section / model.numberOfColumns
         }
 
-        let sectionsCount = model.flags.itemsPerSection.count
+        func columnIndex(forSection section: Int) -> Int {
+            return section % model.numberOfColumns
+        }
+
+        let sectionsCount = model.itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
-        let columnsRange = 0..<model.flags.numberOfColumns
-        let rowsCount = Int(round(Double(sectionsCount) / Double(model.flags.numberOfColumns)))
+        let columnsRange = 0..<model.numberOfColumns
+        let rowsCount = Int(round(Double(sectionsCount) / Double(model.numberOfColumns)))
         let rowsRange = 0..<rowsCount
 
         //
@@ -83,14 +136,18 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let sectionSpacing: Size = {
-            switch model.flags.mode {
-            case .all: return model.sectionSpacing
-            case .section, .emotion: return Size(width: model.contentPadding, height: model.contentPadding)
+            switch model.mode {
+            case .all:
+                return model.sectionSpacing
+            case .section, .emotion:
+                let width = model.contentPadding * 2
+                let height = model.contentPadding + max(model.topContentInset, model.bottomContentInset)
+                return .init(width: width, height: height)
             }
         }()
 
         let itemSpacing: Int = {
-            switch model.flags.mode {
+            switch model.mode {
             case .all: return 0
             case .section: return model.itemSpacing
             case .emotion: return sectionSpacing.height
@@ -104,24 +161,24 @@ struct ChartLayoutModule: Elm.Module {
 
         let itemHeight: Int = {
             guard
-                model.flags.viewSize.height >= model.minViewHeightForCompactLayout,
-                let maximumItemsCountInSection = model.flags.itemsPerSection.max() else { return model.itemHeight }
+                model.viewSize.height >= model.minViewHeightForCompactLayout,
+                let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
-            let totalAvailableSpacePerSection = (model.flags.viewSize.height - totalSpacing) / rowsCount
+            let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
             return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
         }()
 
         let itemHeights = sectionsRange.map { section -> Int in
-            switch model.flags.mode {
+            switch model.mode {
             case .all: return itemHeight
             case .section:
-                let itemCount = model.flags.itemsPerSection[section]
+                let itemCount = model.itemsPerSection[section]
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
-                let totalAvailableContentHeight = model.flags.viewSize.height - totalPaddingHeight - totalSpacingHeight
+                let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
                 return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
-                return model.flags.viewSize.height - model.contentPadding * 2
+                return model.viewSize.height - model.contentPadding * 2
             }
         }
 
@@ -131,13 +188,13 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let sectionHeights = sectionsRange.map { section -> Int in
-            let itemCount = model.flags.itemsPerSection[section]
+            let itemCount = model.itemsPerSection[section]
             let verticalItemSpacing = (itemCount - 1) * itemSpacing
             let totalItemHeights = itemCount * itemHeights[section]
             return totalItemHeights + verticalItemSpacing
         }
 
-        let maximumSectionHeight = sectionHeights.max() ?? 0
+        let maximumSectionHeight = sectionHeights.max()!
 
         //
         // MARK: -
@@ -152,14 +209,14 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let itemWidth: Int = {
-            switch model.flags.mode {
+            switch model.mode {
             case .all:
-                let totalAvailableWidth = model.flags.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
-                let totalSpacingWidth = sectionSpacing.width * model.flags.numberOfColumns
+                let totalAvailableWidth = model.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
+                let totalSpacingWidth = sectionSpacing.width * model.numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
-                return totalContentWidth / model.flags.numberOfColumns
+                return totalContentWidth / model.numberOfColumns
             case .section, .emotion:
-                return model.flags.viewSize.width - model.contentPadding * 2
+                return model.viewSize.width - model.contentPadding * 2
             }
         }()
 
@@ -178,12 +235,24 @@ struct ChartLayoutModule: Elm.Module {
         let rowYPositions = rowsRange.map { row -> Int in
             let cumulativeContentHeight = maximumSectionHeight * row
             let cumulativeSpacingHeight = sectionSpacing.height * row
-            return columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + model.contentPadding
+            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + model.contentPadding
+            switch model.mode {
+            case .all:
+                return y
+            case .section, .emotion:
+                return y - sectionSpacing.height - columnHeaderSize.height
+            }
         }
 
         let columnXPositions = columnsRange.map { column -> Int in
             let xPosition = model.contentPadding + rowHeaderSize.width + sectionSpacing.width
-            return xPosition + column * (itemWidth + sectionSpacing.width)
+            let x = xPosition + column * (itemWidth + sectionSpacing.width)
+            switch model.mode {
+            case .all:
+                return x
+            case .section, .emotion:
+                return x - sectionSpacing.width - rowHeaderSize.width
+            }
         }
 
         //
@@ -192,7 +261,7 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let yPositionsForItems = sectionsRange.map { section -> [Int] in
-            let itemsRange = 0..<model.flags.itemsPerSection[section]
+            let itemsRange = 0..<model.itemsPerSection[section]
             let row = rowIndex(forSection: section)
 
             return itemsRange.map { item in
@@ -203,10 +272,10 @@ struct ChartLayoutModule: Elm.Module {
         }
 
         let itemPositions = sectionsRange.map { section -> [Point] in
-            let column = (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
-            let xPosition = columnXPositions[column]
+            let itemsRange = 0..<model.itemsPerSection[section]
+            let column = columnIndex(forSection: section)
 
-            let itemsRange = 0..<model.flags.itemsPerSection[section]
+            let xPosition = columnXPositions[column]
             return itemsRange.map { item in
                 let yPosition = yPositionsForItems[section][item]
                 return Point(x: xPosition, y: yPosition)
@@ -215,35 +284,63 @@ struct ChartLayoutModule: Elm.Module {
 
         //
         // MARK: -
-        // MARK: Item frame
-        //
-
-        let itemFrames = sectionsRange.map { section -> [Rect] in
-            let height = itemHeights[section]
-            let size = Size(width: itemWidth, height: height)
-            let itemsRange = 0..<model.flags.itemsPerSection[section]
-            return itemsRange.map { item in
-                let position = itemPositions[section][item]
-                return Rect(origin: position, size: size)
-            }
-        }
-
-        //
-        // MARK: -
         // MARK: Content offset
         //
 
-        let proposedVerticalContentOffset: Int? = {
-            switch model.flags.mode {
+        let proposedContentOffset: Point? = {
+            switch model.mode {
             case .all:
                 return nil
-            case .section(let section):
+            case .section(let section, _):
+                let column = columnIndex(forSection: section)
+                let x = columnXPositions[column] - model.contentPadding
                 let row = rowIndex(forSection: section)
-                return rowYPositions[row] - model.contentPadding - model.flags.topContentInset
-            case .emotion(let indexPath):
-                return yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.flags.topContentInset
+                let y = rowYPositions[row] - model.contentPadding - model.topContentInset
+                return Point(x: x, y: y + model.topContentInset)
+            case .emotion(let indexPath, _):
+                let column = columnIndex(forSection: indexPath.section)
+                let x = columnXPositions[column] - model.contentPadding
+                let y = yPositionsForItems[indexPath.section][indexPath.item] - model.contentPadding - model.topContentInset
+                return Point(x: x, y: y + model.topContentInset)
             }
         }()
+
+        //
+        // MARK: -
+        // MARK: Items
+        //
+
+        let items: [IndexPath: Item] = sectionsRange.reduce([:]) { items, section in
+            let height = itemHeights[section]
+            let size = Size(width: itemWidth, height: height)
+            var items = items
+            for item in 0..<model.itemsPerSection[section] {
+                let itemPosition = itemPositions[section][item]
+                let position: Point
+                switch proposedContentOffset {
+                case .some(let proposedContentOffset):
+                    position = .init(
+                        x: itemPosition.x - proposedContentOffset.x,
+                        y: itemPosition.y - proposedContentOffset.y
+                    )
+                case .none:
+                    position = itemPosition
+                }
+                let alpha: Float
+                switch model.mode {
+                case .all:
+                    alpha = 1
+                case .section(let currentSection, let isFocused):
+                    alpha = (!isFocused || currentSection == section) ? 1 : 0
+                case .emotion(let indexPath, let isFocused):
+                    alpha = (!isFocused || indexPath.item == item && indexPath.section == section) ? 1 : 0
+                }
+                let frame = Rect(origin: position, size: size)
+                let indexPath = IndexPath(item: item, section: section)
+                items[indexPath] = Header(frame: frame, alpha: alpha)
+            }
+            return items
+        }
 
         //
         // MARK: -
@@ -253,21 +350,41 @@ struct ChartLayoutModule: Elm.Module {
         let positionsForColumnHeaders = columnsRange.map { column -> Point in
             let x = columnXPositions[column]
             let y: Int
-            switch model.flags.mode {
+            switch model.mode {
             case .all: y = model.contentPadding
-            case .section, .emotion: y = model.contentPadding - columnHeaderSize.height
+            case .section, .emotion: y = -columnHeaderSize.height
             }
-            return Point(x: x, y: y)
+            let position: Point
+            switch proposedContentOffset {
+            case .some(let proposedContentOffset):
+                position = .init(
+                    x: x - proposedContentOffset.x,
+                    y: y - proposedContentOffset.y
+                )
+            case .none:
+                position = .init(x: x, y: y)
+            }
+            return position
         }
 
         let positionsForRowHeaders = rowsRange.map { row -> Point in
-            let y = rowYPositions[row]
             let x: Int
-            switch model.flags.mode {
+            switch model.mode {
             case .all: x = model.contentPadding
-            case .section, .emotion: x = model.contentPadding - rowHeaderSize.width
+            case .section, .emotion: x = -rowHeaderSize.width
             }
-            return Point(x: x, y: y)
+            let y = rowYPositions[row]
+            let position: Point
+            switch proposedContentOffset {
+            case .some(let proposedContentOffset):
+                position = .init(
+                    x: x - proposedContentOffset.x,
+                    y: y - proposedContentOffset.y
+                )
+            case .none:
+                position = .init(x: x, y: y)
+            }
+            return position
         }
 
         //
@@ -275,16 +392,36 @@ struct ChartLayoutModule: Elm.Module {
         // MARK: Header frame
         //
 
-        let columnHeaderFrames = sectionsRange.map { section -> Rect in
-            let column = (section + model.flags.numberOfColumns) % model.flags.numberOfColumns
+        let columnHeaders: [IndexPath: Header] = columnsRange.reduce([:]) { headers, column in
             let position = positionsForColumnHeaders[column]
-            return Rect(origin: position, size: columnHeaderSize)
+            let frame = Rect(origin: position, size: columnHeaderSize)
+            let alpha: Float
+            switch model.mode {
+            case .all:
+                alpha = 1
+            case .section, .emotion:
+                alpha = 0
+            }
+            let indexPath = IndexPath(section: column)
+            var headers = headers
+            headers[indexPath] = Header(frame: frame, alpha: alpha)
+            return headers
         }
 
-        let rowHeaderFrames = sectionsRange.map { section -> Rect in
-            let row = section / model.flags.numberOfColumns
+        let rowHeaders: [IndexPath: Header] = rowsRange.reduce([:]) { headers, row in
             let position = positionsForRowHeaders[row]
-            return Rect(origin: position, size: rowHeaderSize)
+            let frame = Rect(origin: position, size: rowHeaderSize)
+            let alpha: Float
+            switch model.mode {
+            case .all:
+                alpha = 1
+            case .section, .emotion:
+                alpha = 0
+            }
+            let indexPath = IndexPath(section: row)
+            var headers = headers
+            headers[indexPath] = Header(frame: frame, alpha: alpha)
+            return headers
         }
 
         //
@@ -293,24 +430,39 @@ struct ChartLayoutModule: Elm.Module {
         //
 
         let chartSize: Size = {
-            guard
-                let lastRowHeaderFrame = rowHeaderFrames.last,
-                let lastColumnHeaderFrame = columnHeaderFrames.last else { return model.flags.viewSize }
-            let height = lastRowHeaderFrame.maxY + model.contentPadding
+            switch model.mode {
+            case .all:
+                let isCompact = model.viewSize.height >= model.minViewHeightForCompactLayout
+                if isCompact { return model.viewSize }
+            case .section, .emotion:
+                return model.viewSize
+            }
+
+            let lastColumnIndexPath = IndexPath(section: model.numberOfColumns - 1)
+            let lastRowIndexPath = IndexPath(section: rowsCount - 1)
+            let lastColumnHeaderFrame = columnHeaders[lastColumnIndexPath]!.frame
+            let lastRowHeaderFrame = rowHeaders[lastRowIndexPath]!.frame
+
             let width = lastColumnHeaderFrame.maxX + model.contentPadding
-            return Size(width: width, height: height)
+            let height = lastRowHeaderFrame.maxY + model.contentPadding
+            return .init(width: width, height: height)
         }()
 
         return View(
             chartSize: chartSize,
-            proposedVerticalContentOffset: proposedVerticalContentOffset,
-            itemFrames: itemFrames,
-            columnHeaderFrames: columnHeaderFrames,
-            rowHeaderFrames: rowHeaderFrames
+            items: items,
+            columnHeaders: columnHeaders,
+            rowHeaders: rowHeaders
         )
 
     }
 
+}
+
+private extension IndexPath {
+    init(section: Int) {
+        self.init(item: 0, section: section)
+    }
 }
 
 //
@@ -326,6 +478,8 @@ public struct Point {
     // swiftlint:disable:next variable_name
     var y: Int
 
+    static let zero = Point(x: 0, y: 0)
+
 }
 
 public struct Size {
@@ -333,9 +487,7 @@ public struct Size {
     var width: Int
     var height: Int
 
-    static var zero: Size {
-        return Size(width: 0, height: 0)
-    }
+    static let zero = Size(width: 0, height: 0)
 
 }
 

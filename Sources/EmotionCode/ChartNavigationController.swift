@@ -7,35 +7,27 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+        interactivePopGestureRecognizer!.isEnabled = false
     }
 
     // MARK: Navigation stack
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if let collectionViewController = viewController as? UICollectionViewController {
-            collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
-            if let chartPresenter = viewController as? ChartPresenter {
-                let masterCollectionView = (viewControllers[0] as! UICollectionViewController).collectionView!
-
-                viewController.loadViewIfNeeded()
-                let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
-
-                let chartLayoutMode = chartPresenter.chartLayoutMode(with: masterCollectionView)
-                let sections = 0..<masterCollectionView.numberOfSections
-                let itemsPerSection = sections.map(masterCollectionView.numberOfItems)
-                let viewSize = masterCollectionView.visibleContentSize
-                let topContentInset = masterCollectionView.contentInset.top
-                chartLayout.setProgramModel(mode: chartLayoutMode, itemsPerSection: itemsPerSection, viewSize: viewSize, topContentInset: topContentInset)
-            }
-        }
+        let collectionViewController = viewController as! UICollectionViewController
+        collectionViewController.useLayoutToLayoutNavigationTransitions = !(viewController is ChartViewController)
         super.pushViewController(viewController, animated: animated)
+
+        let masterCollectionView = (viewControllers[0] as! UICollectionViewController).collectionView!
+        let chartLayout = (viewController as! UICollectionViewController).collectionViewLayout as! ChartLayout
+        let chartPresenter = viewController as! ChartPresenter
+        let chartLayoutMode = chartPresenter.chartLayoutMode(with: masterCollectionView)
+        chartLayout.mode = chartLayoutMode
     }
 
     // MARK: Navigation controller delegate
 
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        guard let destination = viewController as? UICollectionViewController else { return }
-        destination.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 }
