@@ -31,7 +31,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     private var emotionDescriptionView: UITextView!
 
-    func addEmotionDescriptionView(text: String) {
+    func addEmotionDescriptionView(withDescription description: String) {
         guard emotionDescriptionView == nil else { return }
         emotionDescriptionView = UITextView(frame: bounds)
         emotionDescriptionView.isOpaque = true
@@ -40,7 +40,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         emotionDescriptionView.font = .preferredFont(forTextStyle: .body)
         emotionDescriptionView.textAlignment = .center
         emotionDescriptionView.isEditable = false
-        emotionDescriptionView.text = text
+        emotionDescriptionView.text = description
         addSubview(emotionDescriptionView)
     }
 

@@ -21,7 +21,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        itemCell.addEmotionDescriptionView(text: emotion.description)
+        itemCell.addEmotionDescriptionView(withDescription: emotion.description)
         setDescriptionVisibleAlongsideTransition(true)
     }
 
