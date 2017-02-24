@@ -22,8 +22,8 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     @IBInspectable var evenRowColor: UIColor!
 
     func setBackgroundColor(for indexPath: IndexPath) {
-        let row = indexPath.section / ChartLayout.numberOfColumns + 1
-        let isRowEven = (row % ChartLayout.numberOfColumns == 0)
+        let row = indexPath.section / 2 + 1
+        let isRowEven = (row % 2 == 0)
         backgroundColor = isRowEven ? evenRowColor : oddRowColor
     }
 
