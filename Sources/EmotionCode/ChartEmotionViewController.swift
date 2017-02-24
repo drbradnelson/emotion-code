@@ -4,7 +4,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     private var emotion: Chart.Emotion!
 
-    var chartLayout: ChartLayout {
+    private var chartLayout: ChartLayout {
         return collectionViewLayout as! ChartLayout
     }
 

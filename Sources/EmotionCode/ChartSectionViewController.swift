@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartSectionViewController: UICollectionViewController {
 
-    var chartLayout: ChartLayout {
+    private var chartLayout: ChartLayout {
         return collectionViewLayout as! ChartLayout
     }
 
