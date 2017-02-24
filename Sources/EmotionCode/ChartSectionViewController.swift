@@ -57,7 +57,7 @@ final class ChartSectionViewController: UICollectionViewController {
         let selectedIndexPath = collectionView!.indexPathForSelectedItem!
         let chartDataSource = collectionView!.dataSource as! ChartViewControllerDataSource
         let emotion = chartDataSource.chart.section(atIndex: selectedIndexPath.section).emotions[selectedIndexPath.item]
-        destination.setTitle(for: emotion)
+        destination.set(emotion)
     }
 
     // MARK: Layout

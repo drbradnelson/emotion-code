@@ -2,11 +2,18 @@ import UIKit
 
 final class ChartEmotionViewController: UICollectionViewController {
 
+    private var emotion: Chart.Emotion!
+
     var chartLayout: ChartLayout {
         return collectionViewLayout as! ChartLayout
     }
 
-    func setTitle(for emotion: Chart.Emotion) {
+    func set(_ emotion: Chart.Emotion) {
+        self.emotion = emotion
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
         navigationItem.title = emotion.title
     }
 
@@ -14,6 +21,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        itemCell.addEmotionDescriptionView(text: emotion.description)
         setDescriptionVisibleAlongsideTransition(true)
     }
 
@@ -32,7 +40,13 @@ final class ChartEmotionViewController: UICollectionViewController {
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
             itemCell.largeTitleLabel.alpha = 0
-        }, completion: nil)
+            itemCell.updateEmotionDescriptionFrame()
+            itemCell.setEmotionDescriptionVisible(descriptionVisible)
+        }) { [itemCell] _ in
+            if !descriptionVisible {
+                itemCell.removeEmotionDescriptionView()
+            }
+        }
     }
 
     // MARK: Cell
