@@ -521,7 +521,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 4,
             headerSize: Size(height: 5)
         ))
-        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -5 - (10 - 4 + 3))
+        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -5 - ((10 - 2 - 3) - 4 + 3))
     }
 
     func testColumnHeaderYForSectionMode3() {
@@ -537,7 +537,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 4,
             headerSize: Size(height: 5)
         ))
-        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -5 - (10 - 4 + 2))
+        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -5 - ((10 - 2) - 4 + 2))
     }
 
     func testColumnHeaderYForEmotionMode1() {
@@ -565,7 +565,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5,
             headerSize: Size(height: 6)
         ))
-        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -6 - (10 - 5 + 4))
+        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -6 - ((10 - 3 - 4) - 5 + 4))
     }
 
     func testColumnHeaderYForEmotionMode3() {
@@ -581,7 +581,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5,
             headerSize: Size(height: 6)
         ))
-        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -6 - (10 - 5 + 3))
+        expect(view?.columnHeaders[.init(section: 0)]?.frame.origin.y, -6 - ((10 - 3) - 5 + 3))
     }
 
     func testRowHeaderFrameCount() {
@@ -837,7 +837,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 4
         ))
         expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4)
-        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 10 - 4 + 3 + 4)
+        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, (10 - 2 - 3) - 4 + 3 + 4)
     }
 
     func testRowHeaderYForSectionMode2() {
@@ -853,7 +853,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 4
         ))
         expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4)
-        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 10 - 4 + 2 + 4)
+        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, (10 - 2) - 4 + 2 + 4)
     }
 
     func testRowHeaderYForSectionMode3() {
@@ -868,7 +868,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 4
         ))
-        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 3 - 10 + 4)
+        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 3 - (10 - 2 - 3) + 4)
         expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 4)
     }
 
@@ -884,7 +884,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 4
         ))
-        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 2 - 10 + 4)
+        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 2 - (10 - 2) + 4)
         expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 4)
     }
 
@@ -901,7 +901,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 4
         ))
         expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4)
-        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 10 - 4 + 3 + 4)
+        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, (10 - 2 - 3) - 4 + 3 + 4)
     }
 
     func testRowHeaderYForEmotionMode2() {
@@ -917,7 +917,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 4
         ))
         expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4)
-        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 10 - 4 + 2 + 4)
+        expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, (10 - 2) - 4 + 2 + 4)
     }
 
     func testRowHeaderYForEmotionMode3() {
@@ -932,7 +932,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 4
         ))
-        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 3 - 10 + 4)
+        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 3 - (10 - 2 - 3) + 4)
         expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 4)
     }
 
@@ -948,7 +948,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 4
         ))
-        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 2 - 10 + 4)
+        expect(view?.rowHeaders[.init(section: 0)]?.frame.origin.y, 4 - 2 - (10 - 2) + 4)
         expect(view?.rowHeaders[.init(section: 1)]?.frame.origin.y, 4)
     }
 
@@ -1215,7 +1215,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5,
             itemSpacing: 6
         ))
-        let expectedItemHeight = Int(round(Double(20 - (5 + 5 + 6)) / Double(2)))
+        let expectedItemHeight = Int(round(Double((20 - 3 - 4) - (5 + 5 + 6)) / Double(2)))
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, 5)
         expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, 5 + expectedItemHeight + 6)
         expect(view?.items[.init(item: 0, section: 1)]?.frame.origin.y, 5 + expectedItemHeight + 6 + expectedItemHeight + 5 + 4)
@@ -1235,7 +1235,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5,
             itemSpacing: 6
         ))
-        let expectedItemHeight = Int(round(Double(20 - (5 + 5 + 6)) / Double(2)))
+        let expectedItemHeight = Int(round(Double((20 - 3) - (5 + 5 + 6)) / Double(2)))
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, 5)
         expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, 5 + expectedItemHeight + 6)
         expect(view?.items[.init(item: 0, section: 1)]?.frame.origin.y, 5 + expectedItemHeight + 6 + expectedItemHeight + 5 + 3)
@@ -1255,7 +1255,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5,
             itemSpacing: 6
         ))
-        let expectedItemHeight = Int(round(Double(20 - (5 + 5 + 6)) / Double(2)))
+        let expectedItemHeight = Int(round(Double((20 - 3 - 4) - (5 + 5 + 6)) / Double(2)))
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, -4 - expectedItemHeight - 6 - expectedItemHeight)
         expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, -4 - expectedItemHeight)
         expect(view?.items[.init(item: 0, section: 1)]?.frame.origin.y, 5)
@@ -1275,7 +1275,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5,
             itemSpacing: 6
         ))
-        let expectedItemHeight = Int(round(Double(20 - (5 + 5 + 6)) / Double(2)))
+        let expectedItemHeight = Int(round(Double((20 - 3) - (5 + 5 + 6)) / Double(2)))
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, -3 - expectedItemHeight - 6 - expectedItemHeight)
         expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, -3 - expectedItemHeight)
         expect(view?.items[.init(item: 0, section: 1)]?.frame.origin.y, 5)
@@ -1295,7 +1295,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, 5)
-        expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, 20 - 5 + 5 + 4)
+        expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, (20 - 3 - 4) - 5 + 5 + 4)
     }
 
     func testItemYForEmotionMode2() {
@@ -1311,7 +1311,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             contentPadding: 5
         ))
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, 5)
-        expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, 20 - 5 + 5 + 3)
+        expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, (20 - 3) - 5 + 5 + 3)
     }
 
     func testItemYForEmotionMode3() {
@@ -1326,7 +1326,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 5
         ))
-        let expectedItemHeight = 20 - 5 - 5
+        let expectedItemHeight = 20 - 5 - 5 - 3 - 4
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, -4 - expectedItemHeight)
         expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, 5)
     }
@@ -1343,7 +1343,7 @@ final class ChartLayoutModuleStartTests: XCTestCase, Tests {
             ),
             contentPadding: 5
         ))
-        let expectedItemHeight = 20 - 5 - 5
+        let expectedItemHeight = 20 - 5 - 5 - 3
         expect(view?.items[.init(item: 0, section: 0)]?.frame.origin.y, -3 - expectedItemHeight)
         expect(view?.items[.init(item: 1, section: 0)]?.frame.origin.y, 5)
     }
