@@ -37,7 +37,7 @@ struct ChartLayoutModule: Elm.Module {
 
         let minViewHeightForCompactLayout = 554
         let headerSize = Size(width: 30, height: 30)
-        let itemHeight = 30
+        let itemHeight = 18
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10

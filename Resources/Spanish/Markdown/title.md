@@ -14,7 +14,7 @@ First Edition, June 2007
 
 Copyright © 2007-2011 Dr. Bradley B. Nelson
 
-All rights reserved under International and Pan-American Copyright Conven-tions. No portion of this book may be used or reproduced in any manner what-soever without the written permission of the publisher, except in the case of brief quotations embodied in critical articles and reviews. For information contact: Wellness Unmasked Publishing
+All rights reserved under International and Pan-American Copyright Conventions. No portion of this book may be used or reproduced in any manner whatsoever without the written permission of the publisher, except in the case of brief quotations embodied in critical articles and reviews. For information contact: Wellness Unmasked Publishing
 
 450 Hillside Drive
 
@@ -34,6 +34,6 @@ Includes bibliographic references and index. ISBN 978-0-9795537-0-7 (pbk.)
 
 Printed in the United States of America
 
-The scanning, uploading and distribution of this book via the Internet or via any other means without the permission of the publisher is illegal and punishable by law. Please pur-chase only authorized electronic editions, and do not participate in or encourage electronic piracy of copyrighted materials. Your support of the author’s rights is appreciated.
+The scanning, uploading and distribution of this book via the Internet or via any other means without the permission of the publisher is illegal and punishable by law. Please purchase only authorized electronic editions, and do not participate in or encourage electronic piracy of copyrighted materials. Your support of the author’s rights is appreciated.
 
 
