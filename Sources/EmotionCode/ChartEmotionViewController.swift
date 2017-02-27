@@ -41,11 +41,11 @@ final class ChartEmotionViewController: UICollectionViewController {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
             itemCell.largeTitleLabel.alpha = 0
             itemCell.setEmotionDescriptionVisible(descriptionVisible)
-        }) { [itemCell] _ in
+        }, completion: { [itemCell] _ in
             if !descriptionVisible {
                 itemCell.removeEmotionDescriptionView()
             }
-        }
+        })
     }
 
     // MARK: Cell
