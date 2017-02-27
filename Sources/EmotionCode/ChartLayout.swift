@@ -21,7 +21,7 @@ final class ChartLayout: UICollectionViewLayout {
             numberOfColumns: ChartLayout.numberOfColumns,
             topContentInset: .init(collectionView!.contentInset.top),
             bottomContentInset: .init(collectionView!.contentInset.bottom),
-            viewSize: .init(cgSize: collectionView!.visibleContentSize)
+            viewSize: .init(cgSize: collectionView!.bounds.size)
         ))
     }
 

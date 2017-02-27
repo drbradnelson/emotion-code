@@ -33,7 +33,7 @@ struct ChartLayoutModule: Elm.Module {
         let numberOfColumns: Int
         let topContentInset: Int
         let bottomContentInset: Int
-        var viewSize: Size
+        let viewSize: Size
 
         let minViewHeightForCompactLayout = 554
         let headerSize = Size(width: 30, height: 30)
@@ -130,6 +130,11 @@ struct ChartLayoutModule: Elm.Module {
         let rowsCount = Int(round(Double(sectionsCount) / Double(model.numberOfColumns)))
         let rowsRange = 0..<rowsCount
 
+        let visibleViewSize = Size(
+            width: model.viewSize.width,
+            height: model.viewSize.height - model.topContentInset - model.bottomContentInset
+        )
+
         //
         // MARK: -
         // MARK: Section and item spacing
@@ -161,10 +166,10 @@ struct ChartLayoutModule: Elm.Module {
 
         let itemHeight: Int = {
             guard
-                model.viewSize.height >= model.minViewHeightForCompactLayout,
+                visibleViewSize.height >= model.minViewHeightForCompactLayout,
                 let maximumItemsCountInSection = model.itemsPerSection.max() else { return model.itemHeight }
             let totalSpacing = model.contentPadding * 2 + model.headerSize.height + sectionSpacing.height * rowsCount
-            let totalAvailableSpacePerSection = (model.viewSize.height - totalSpacing) / rowsCount
+            let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
             return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
         }()
 
@@ -175,10 +180,10 @@ struct ChartLayoutModule: Elm.Module {
                 let itemCount = model.itemsPerSection[section]
                 let totalPaddingHeight = model.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
-                let totalAvailableContentHeight = model.viewSize.height - totalPaddingHeight - totalSpacingHeight
+                let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
                 return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
-                return model.viewSize.height - model.contentPadding * 2
+                return visibleViewSize.height - model.contentPadding * 2
             }
         }
 
@@ -211,12 +216,12 @@ struct ChartLayoutModule: Elm.Module {
         let itemWidth: Int = {
             switch model.mode {
             case .all:
-                let totalAvailableWidth = model.viewSize.width - model.contentPadding * 2 - rowHeaderSize.width
+                let totalAvailableWidth = visibleViewSize.width - model.contentPadding * 2 - rowHeaderSize.width
                 let totalSpacingWidth = sectionSpacing.width * model.numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
                 return totalContentWidth / model.numberOfColumns
             case .section, .emotion:
-                return model.viewSize.width - model.contentPadding * 2
+                return visibleViewSize.width - model.contentPadding * 2
             }
         }()
 
@@ -432,10 +437,10 @@ struct ChartLayoutModule: Elm.Module {
         let chartSize: Size = {
             switch model.mode {
             case .all:
-                let isCompact = model.viewSize.height >= model.minViewHeightForCompactLayout
-                if isCompact { return model.viewSize }
+                let isCompact = visibleViewSize.height >= model.minViewHeightForCompactLayout
+                if isCompact { return visibleViewSize }
             case .section, .emotion:
-                return model.viewSize
+                return visibleViewSize
             }
 
             let lastColumnIndexPath = IndexPath(section: model.numberOfColumns - 1)
