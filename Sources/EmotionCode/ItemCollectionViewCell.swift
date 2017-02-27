@@ -6,6 +6,13 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     static let preferredReuseIdentifier = "ItemCell"
 
+    // MARK: View Lifecycle
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateEmotionDescriptionFrame()
+    }
+
     // MARK: Title labels
 
     @IBOutlet var smallTitleLabel: UILabel!
@@ -29,11 +36,14 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     // MARK: Emotion description text view
 
-    private var emotionDescriptionView: UITextView!
+    private var emotionDescriptionView: UITextView? {
+        let textViews = contentView.subviews.flatMap { $0 as? UITextView }
+        precondition(textViews.count <= 1)
+        return textViews.first
+    }
 
     func addEmotionDescriptionView(withDescription description: String) {
-        guard emotionDescriptionView == nil else { return }
-        emotionDescriptionView = UITextView(frame: bounds)
+        let emotionDescriptionView = UITextView(frame: contentView.bounds)
         emotionDescriptionView.isOpaque = true
         emotionDescriptionView.alpha = 0
         emotionDescriptionView.backgroundColor = backgroundColor
@@ -41,21 +51,19 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         emotionDescriptionView.textAlignment = .center
         emotionDescriptionView.isEditable = false
         emotionDescriptionView.text = description
-        addSubview(emotionDescriptionView)
+        contentView.addSubview(emotionDescriptionView)
     }
 
     func removeEmotionDescriptionView() {
-        guard emotionDescriptionView != nil else { return }
-        emotionDescriptionView.removeFromSuperview()
-        emotionDescriptionView = nil
+        emotionDescriptionView!.removeFromSuperview()
     }
 
     func setEmotionDescriptionVisible(_ descriptionVisible: Bool) {
-        emotionDescriptionView.alpha = descriptionVisible ? 1 : 0
+        emotionDescriptionView!.alpha = descriptionVisible ? 1 : 0
     }
 
     func updateEmotionDescriptionFrame() {
-        emotionDescriptionView.frame = bounds
+        emotionDescriptionView?.frame = contentView.bounds
     }
 
 }
