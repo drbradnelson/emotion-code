@@ -10,7 +10,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        updateEmotionDescriptionFrame()
+        emotionDescriptionView?.frame = contentView.bounds
     }
 
     // MARK: Title labels
@@ -60,10 +60,6 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     func setEmotionDescriptionVisible(_ descriptionVisible: Bool) {
         emotionDescriptionView!.alpha = descriptionVisible ? 1 : 0
-    }
-
-    func updateEmotionDescriptionFrame() {
-        emotionDescriptionView?.frame = contentView.bounds
     }
 
 }
