@@ -1,3 +1,3 @@
 github "enfluid/hotline-io" "1.0.0"
 github "salutis/swift-elm-architecture" "0.13.0"
-github "enfluid/apple-audio-bar" "56bb590509d534766bed711d91e069396bf272f2"
+github "enfluid/apple-audio-bar" "0.5.2"
