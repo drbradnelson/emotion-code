@@ -29,7 +29,7 @@ final class ChartEmotionViewController: UICollectionViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
-        chartLayout.program.dispatch(.viewWillTransition)
+        chartLayout.store.dispatch(.viewWillTransition)
     }
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
@@ -40,7 +40,7 @@ final class ChartEmotionViewController: UICollectionViewController {
             if !descriptionVisible {
                 itemCell.removeEmotionDescriptionView()
             } else {
-                chartLayout.program.dispatch(.viewDidTransition)
+                chartLayout.store.dispatch(.viewDidTransition)
                 chartLayout.invalidateLayout()
             }
         })
@@ -57,7 +57,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
 extension ChartEmotionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
         let selectedIndexPath = collectionView.indexPathForSelectedItem!
         return .emotion(selectedIndexPath, isFocused: false)
     }
