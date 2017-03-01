@@ -10,6 +10,8 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+        smallTitleLabel.frame = contentView.bounds
+        largeTitleLabel.frame = contentView.bounds
         emotionDescriptionView?.frame = contentView.bounds
     }
 
@@ -31,7 +33,10 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     func setBackgroundColor(for indexPath: IndexPath) {
         let row = indexPath.section / 2 + 1
         let isRowEven = (row % 2 == 0)
-        backgroundColor = isRowEven ? evenRowColor : oddRowColor
+        let color = isRowEven ? evenRowColor : oddRowColor
+        contentView.backgroundColor = color
+        smallTitleLabel.backgroundColor = color
+        largeTitleLabel.backgroundColor = color
     }
 
     // MARK: Emotion description text view
@@ -46,7 +51,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         let emotionDescriptionView = UITextView(frame: contentView.bounds)
         emotionDescriptionView.isOpaque = true
         emotionDescriptionView.alpha = 0
-        emotionDescriptionView.backgroundColor = backgroundColor
+        emotionDescriptionView.backgroundColor = contentView.backgroundColor
         emotionDescriptionView.font = .preferredFont(forTextStyle: .body)
         emotionDescriptionView.textAlignment = .center
         emotionDescriptionView.isEditable = false
