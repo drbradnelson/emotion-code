@@ -55,7 +55,7 @@ final class ChartViewController: UICollectionViewController {
 
 extension ChartViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
         return .all
     }
 
