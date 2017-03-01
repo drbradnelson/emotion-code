@@ -22,19 +22,10 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
         toggleLabelsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: ChartHeaderView.rowKind, ChartHeaderView.columnKind)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.program.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        layoutCellsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: ChartHeaderView.rowKind, ChartHeaderView.columnKind)
         chartLayout.program.dispatch(.viewWillTransition)
     }
 
@@ -69,7 +60,11 @@ final class ChartSectionViewController: UICollectionViewController {
                 cell.smallTitleLabel.alpha = 0
                 cell.largeTitleLabel.alpha = 1
             }
-        }, completion: nil)
+        }, completion: { [chartLayout] context in
+            guard !context.isCancelled else { return }
+            chartLayout.program.dispatch(.viewDidTransition)
+            chartLayout.invalidateLayout()
+        })
     }
 
 }

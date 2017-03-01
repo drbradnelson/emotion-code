@@ -22,13 +22,8 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        layoutCellsAlongsideTransition()
         setDescriptionVisibleAlongsideTransition(true)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.program.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,21 +34,24 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
-            itemCell.largeTitleLabel.alpha = 0
             itemCell.setEmotionDescriptionVisible(descriptionVisible)
-        }, completion: { [itemCell] _ in
+        }, completion: { [itemCell, chartLayout] context in
+            guard !context.isCancelled else { return }
             if !descriptionVisible {
                 itemCell.removeEmotionDescriptionView()
+            } else {
+                chartLayout.program.dispatch(.viewDidTransition)
+                chartLayout.invalidateLayout()
             }
         })
     }
 
     // MARK: Cell
 
-    private var itemCell: ItemCollectionViewCell {
-        let indexPath = collectionView!.indexPathForSelectedItem!
-        return collectionView!.cellForItem(at: indexPath) as! ItemCollectionViewCell
-    }
+    private lazy var itemCell: ItemCollectionViewCell = {
+        let indexPath = self.collectionView!.indexPathForSelectedItem!
+        return self.collectionView!.cellForItem(at: indexPath) as! ItemCollectionViewCell
+    }()
 
 }
 
