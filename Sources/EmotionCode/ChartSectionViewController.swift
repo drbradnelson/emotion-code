@@ -2,7 +2,7 @@ import UIKit
 
 final class ChartSectionViewController: UICollectionViewController {
 
-    var chartLayout: ChartLayout {
+    private var chartLayout: ChartLayout {
         return collectionViewLayout as! ChartLayout
     }
 
@@ -27,7 +27,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        chartLayout.program.dispatch(.viewDidTransition)
+        chartLayout.store.dispatch(.viewDidTransition)
         chartLayout.invalidateLayout()
     }
 
@@ -35,7 +35,7 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewWillDisappear(animated)
         layoutCellsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
-        chartLayout.program.dispatch(.viewWillTransition)
+        chartLayout.store.dispatch(.viewWillTransition)
     }
 
     // MARK: Collection view delegate
@@ -57,7 +57,7 @@ final class ChartSectionViewController: UICollectionViewController {
         let selectedIndexPath = collectionView!.indexPathForSelectedItem!
         let chartDataSource = collectionView!.dataSource as! ChartViewControllerDataSource
         let emotion = chartDataSource.chart.section(atIndex: selectedIndexPath.section).emotions[selectedIndexPath.item]
-        destination.setTitle(for: emotion)
+        destination.set(emotion)
     }
 
     // MARK: Layout
@@ -89,7 +89,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
 extension ChartSectionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection, isFocused: false)
     }

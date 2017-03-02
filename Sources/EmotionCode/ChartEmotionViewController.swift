@@ -2,15 +2,23 @@ import UIKit
 
 final class ChartEmotionViewController: UICollectionViewController {
 
-    var chartLayout: ChartLayout {
+    private var emotionDescription: String!
+
+    private var chartLayout: ChartLayout {
         return collectionViewLayout as! ChartLayout
     }
 
-    func setTitle(for emotion: Chart.Emotion) {
+    func set(_ emotion: Chart.Emotion) {
         navigationItem.title = emotion.title
+        emotionDescription = emotion.description
     }
 
     // MARK: View lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        itemCell.addEmotionDescriptionView(withDescription: emotionDescription)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -19,34 +27,39 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        chartLayout.program.dispatch(.viewDidTransition)
+        chartLayout.store.dispatch(.viewDidTransition)
         chartLayout.invalidateLayout()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
-        chartLayout.program.dispatch(.viewWillTransition)
+        chartLayout.store.dispatch(.viewWillTransition)
     }
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
             itemCell.largeTitleLabel.alpha = 0
-        }, completion: nil)
+            itemCell.setEmotionDescriptionVisible(descriptionVisible)
+        }, completion: { [itemCell] _ in
+            if !descriptionVisible {
+                itemCell.removeEmotionDescriptionView()
+            }
+        })
     }
 
     // MARK: Cell
 
     private var itemCell: ItemCollectionViewCell {
         let indexPath = collectionView!.indexPathForSelectedItem!
-        return collectionView?.cellForItem(at: indexPath) as! ItemCollectionViewCell
+        return collectionView!.cellForItem(at: indexPath) as! ItemCollectionViewCell
     }
 
 }
 
 extension ChartEmotionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutModule.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
         let selectedIndexPath = collectionView.indexPathForSelectedItem!
         return .emotion(selectedIndexPath, isFocused: false)
     }
