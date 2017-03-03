@@ -16,12 +16,14 @@ generateMarkdown() {
     done
 }
 
-# Fix ugly "Back" button in Pandoc footnotes
+# Replace "back" icon in Pandoc footnotes with text
 # $0 - Path to directory with HTML files
+# $1 - Text used instead of "back" icons
 fixFootnotes() {
     LOCATION="$1"
+    TEXT="$2"
     sed \
-        -e 's/↩/Back/g' \
+        -e "s/↩/$TEXT/g" \
         -e 's/\(<a href="#fnref\)/\&nbsp;\1/g' \
         -i "" \
             "$LOCATION"/*.html
@@ -32,5 +34,5 @@ BUNDLE="$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH"
 generateMarkdown "$RESOURCES"/English/Markdown "$BUNDLE"/en.lproj
 generateMarkdown "$RESOURCES"/Spanish/Markdown "$BUNDLE"/es.lproj
 
-fixFootnotes "$BUNDLE"/en.lproj
-fixFootnotes "$BUNDLE"/es.lproj
+fixFootnotes "$BUNDLE"/en.lproj "Back"
+fixFootnotes "$BUNDLE"/es.lproj "Atrás"
