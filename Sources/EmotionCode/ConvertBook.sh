@@ -2,7 +2,10 @@
 
 RESOURCES="../Resources"
 
-function install {
+# Convert Markdown files to HTML
+# $0 - Source directory with Markdown files
+# $1 - Destination directory for HTML files
+generateMarkdown() {
     SOURCE="$1"
     DESTINATION="$2"
     mkdir -p "$DESTINATION"
@@ -13,7 +16,21 @@ function install {
     done
 }
 
+# Fix ugly "Back" button in Pandoc footnotes
+# $0 - Path to directory with HTML files
+fixFootnotes() {
+    LOCATION="$1"
+    sed \
+        -e 's/↩/Back/g' \
+        -e 's/\(<a href="#fnref\)/\&nbsp;\1/g' \
+        -i "" \
+            "$LOCATION"/*.html
+}
+
 BUNDLE="$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH"
 
-install "$RESOURCES"/English/Markdown "$BUNDLE"/en.lproj
-install "$RESOURCES"/Spanish/Markdown "$BUNDLE"/es.lproj
+generateMarkdown "$RESOURCES"/English/Markdown "$BUNDLE"/en.lproj
+generateMarkdown "$RESOURCES"/Spanish/Markdown "$BUNDLE"/es.lproj
+
+fixFootnotes "$BUNDLE"/en.lproj
+fixFootnotes "$BUNDLE"/es.lproj
