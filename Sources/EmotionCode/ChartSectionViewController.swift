@@ -12,7 +12,7 @@ final class ChartSectionViewController: UICollectionViewController {
         let column = section % ChartLayout.numberOfColumns
         let row = section / ChartLayout.numberOfColumns + 1
         let columnName = String.alphabet[column]
-        let localizedFormat = NSLocalizedString("Column %@ - Row %i", comment: "")
+        let localizedFormat = NSLocalizedString("Column %@ \u{2013} Row %i", comment: "")
         navigationItem.title = String.localizedStringWithFormat(localizedFormat, columnName, row)
     }
 
