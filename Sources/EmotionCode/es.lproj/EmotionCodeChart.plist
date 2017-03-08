@@ -1,394 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <array>
-        <array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Abandono</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Traición</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Desamparo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Perdido</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Amor sin recibir</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Ansiedad</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Desesperación</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Asco</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Nerviosismo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Preocupación</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Llanto</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Desanimo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Rechazo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Tristeza</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Pesar</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Ira</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Amargura</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Culpa</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Odio</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Resentimiento</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Acusar</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Pavor</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Miedo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Horror</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Fastidio</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Humillación</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Celos</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Nostalgia</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Lujuria</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Agobio</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-        </array>
-        <array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Esfuerzo no recibido</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Pena en el corazón</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Inseguridad</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Demasiada alegría</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Vulnerabilidad</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Fracaso</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Impotencia</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Desesperanza</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Falta de control</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Baja autoestima</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Confusión</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Actitud defensiva</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Dolor Profundo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Autolesión</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Obstinación</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Depresión</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Frustración</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Indecisión</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Pánico</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>No valorado</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Conflicto</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Inseguridad creativa</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Terror</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Sin apoyo</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Falta de personalidad</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-            <array>
-                <dict>
-                    <key>Title</key>
-                    <string>Soberbia</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Vergüenza</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Shock</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Indignidad</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-                <dict>
-                    <key>Title</key>
-                    <string>Desprecio</string>
-                    <key>Description</key>
-                    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
-                </dict>
-            </array>
-        </array>
-    </array>
+<array>
+	<array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Abandono</string>
+				<key>Description</key>
+				<string>El abandonamiento físico de ser dejado solo; dejado/ atras o abandonado ( este tipo de abandonamiento es mas común en la niñez ). El abandonamiento físico es cuando alguien renuncia a ti; se aleja de ti ; emocionalmente dejado o separado ; un sentimiento de ser dejado atras en una forma no física.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Traición</string>
+				<key>Description</key>
+				<string>La traición es tener tu confianza rota, es ser abandonado por alguien en el cual confías. La traición de otro es ser infiel, en confiar; ser infiel o violar una confianza , abandonar a alguien que confía en ti. la traición de uno mismo es romper integridad; actuar contra unos propios morales , abusar el cuerpo y el alma.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Desamparo</string>
+				<key>Description</key>
+				<string>Miserable; triste, solo por abandonamiento, desolación o vacío; desesperado; desamparado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Perdido</string>
+				<key>Description</key>
+				<string>sin poder ver el camino correcto o aceptable; no tener dirección. Físicamente perdido normalmente visto mas en la niñez- (e.g. estar perdido en el bosque y no poder encontrar el camino a casa etc.) Emocionalmente perdido se refiere a no poder ver cual es la decisión o dirección correcta, no poder encontrar estabilidad emocional. (e.g. El se sintió perdido después de que su esposa murió; Ella no a hecho nada con su vida, parece verdaderamente perdida.)</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Amor sin recibir</string>
+				<key>Description</key>
+				<string>Una sensación de que el amor expresado es o ha sido rechazado. Sentirse undeseado, no cuidado, no aceptado, la falta de amor en lo que desea.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Ansiedad</string>
+				<key>Description</key>
+				<string>Una sensación general de inquietud y presentimiento; el miedo a lo desconocido; miedo sin un tema; (e.g. ella se siente ansiosa y con miedo todo el tiempo por ninguna razón aparente.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Desesperación</string>
+				<key>Description</key>
+				<string>una perdida completa de esperanza ; miseria; dificultad de ser ayudado o confortado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Asco</string>
+				<key>Description</key>
+				<string>Una sensación de odio; cuando un buen sentido moral es ofendido; una aversión importante.(e.g. Ella sintió asco cuando el asesino fue pagado).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Nerviosismo</string>
+				<key>Description</key>
+				<string>no natural o agudamente incomodo o aprensivo;con miedo; tímido; sentirse nervioso .</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Preocupación</string>
+				<key>Description</key>
+				<string>pensar en la dificultad o problemas; incomodo y ansioso de una situación o persona; preocupación extrema de problemas potenciales; preocupación de un ser amado que esta en angustia.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Llanto</string>
+				<key>Description</key>
+				<string>El (a menudo) acto involuntario de expresar una emoción fuerte, una respuesta al dolor o sufrimiento (físico o emocional). Una respuesta o expresión de impotencia. Una sensación física se siente en la garganta, el pecho y / o el diafragma. A menudo queda atrapado cuando uno no permite que él / ella llore (es decir, la supresión de la reacción).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Desanimo</string>
+				<key>Description</key>
+				<string>Sintiendo la falta de coraje, esperanza y confianza, desalentado, desanimado. Perder el deseo de tratar o intentar algo.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Rechazo</string>
+				<key>Description</key>
+				<string>Sentirse negado, rechazado o anulado; descartado como inútil o sin importancia, expulsado; no deseados; abandonado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Tristeza</string>
+				<key>Description</key>
+				<string>Infeliz, triste, de duelo, afectada por el dolor.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Pesar</string>
+				<key>Description</key>
+				<string>Triste, angustia causada por la pérdida, desilusión o tristeza, de sentir o expresar el dolor, la infelicidad, la tristeza.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Ira</string>
+				<key>Description</key>
+				<string>Un fuerte descontento y la beligerancia despertados por algo real o supuesto mal, la ira. La ira es a menudo utilizada como un encubrimiento o la forma de negación de las emociones de dolor o miedo.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Amargura</string>
+				<key>Description</key>
+				<string>Una actitud dura, desagradable o cínica. Estar enojado o resentido debido a experiencias dolorosas o injustas.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Culpa</string>
+				<key>Description</key>
+				<string>La sensación de haber hecho algo malo o cometido un delito. Sintiéndose responsable por las acciones dañinas de otro (por ejemplo, el abuso, el divorcio de los padres, la muerte, etc) suele ir acompañada de sentimientos de depresión, vergüenza y auto-abuso.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Odio</string>
+				<key>Description</key>
+				<string>Para odiar, despreciar, gran antipatía o aversión. A menudo viene como resultado del &quot;amor herido&quot;. A menudo el odio es una situación en lugar de una persona (por ejemplo, el odio de la conducta de otro, las circunstancias injustas, etc) Auto-odio genera conductas destructivas y enfermedades.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Resentimiento</string>
+				<key>Description</key>
+				<string>Un sentimiento de desagrado o indignación ante alguien o algo considerado como la causa de la una lesión o insulto; amargado por haber sido tratado injustamente; dispuesto a perdonar. A menudo, esta emoción viene junto con la animosidad (mala voluntad que se manifiesta en la acción, fuerte hostilidad o antagonismo).</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Acusar</string>
+				<key>Description</key>
+				<string>Ser culpado, se hace responsable de una culpa, acusado, o condenado por algo (independientemente de la culpa real). Echarle la culpa a otro es mantener responsables; acusar; encontrar defectos. Poner la responsabilidad en alguien o algo más para evitar asumir la responsabilidad. Esta es una emoción fundamental en la creación de una mentalidad de víctima y puede causar un deterioro del poder personal. Echarle la culpa a uno mismo es encontrar faltas en sí mismo, lo que puede llevar a sentimientos de auto-abuso, depresión, etc.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Pavor</string>
+				<key>Description</key>
+				<string>El miedo de algo que está a punto de suceder, aprensión a algo en el futuro, por lo general real, pero a veces desconocido. (por ejemplo Temía ir a la reunión de secundaria y enfrentar a los que lo habían atormentado).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Miedo</string>
+				<key>Description</key>
+				<string>Una emoción muy penosa suscitada por el peligro inminente, el mal o el dolor, la amenaza puede ser real o imaginaria.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Horror</string>
+				<key>Description</key>
+				<string>Un fuerte sentimiento de alarma, el disgusto o la indignación causada por algo terrible o chocante (por ejemplo, un caso de extrema violencia, la crueldad, o algo macabro.)</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Fastidio</string>
+				<key>Description</key>
+				<string>Irritado, molesto, irritado, molestado, agravado.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Humillación</string>
+				<key>Description</key>
+				<string>Una dolorosa pérdida de orgullo, la dignidad o autoestima; sentirse mortificada; avergonzada.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Celos</string>
+				<key>Description</key>
+				<string>Resentido y envidioso del éxito de una persona, los logros o ventajas. Tener miedos sospechosos; temores de rivalidad o de infidelidad. Los resultados de un miedo a no ser amado y / o de la inseguridad.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Nostalgia</string>
+				<key>Description</key>
+				<string>Para tener un fuerte deseo o anhelo, un anhelo o aspiración, anhelando, de extrañar a alguien o algo, querer algo que no tiene (por ejemplo, Ella anhelaba una vida diferente).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Lujuria</string>
+				<key>Description</key>
+				<string>El intenso deseo sexual o el apetito, un deseo o ansia abrumadora (por ejemplo, la lujuria por el poder), la pasión; codiciar.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Agobio</string>
+				<key>Description</key>
+				<string>Ser dominado en la mente o las emociones, el estrés extremo, sensación dominó con fuerza superior; sentirse excesivamente cargado.</string>
+			</dict>
+		</array>
+	</array>
+	<array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Esfuerzo no recibido</string>
+				<key>Description</key>
+				<string>Cuando el trabajo de uno no es apreciado, logros, intentos o esfuerzos no son aceptados o reconocidos; cuando el mayor esfuerzo de alguien no es considerado suficientemente; un sentimiento de no ser bien apreciado. No sentirse aprobado o validado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Pena en el corazón</string>
+				<key>Description</key>
+				<string>Angustia o dolor del corazón; angustia usualmente como un resultado de dificultad y tristeza en una relación. sentir un aplastamiento o quemar físicamente en el pecho.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Inseguridad</string>
+				<key>Description</key>
+				<string>Escasez de confianza; tímido. sentirse inseguro del peligro o ridiculizado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Demasiada alegría</string>
+				<key>Description</key>
+				<string>Felicidad intensa la cual es bastante arrolladora para el cuerpo; felicidad que es una conmoción para el cuerpo. Felicidad que es inapropiada o equivocada.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Vulnerabilidad</string>
+				<key>Description</key>
+				<string>Sentimiento susceptible daño emocional o físico; inestable e inseguro.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Fracaso</string>
+				<key>Description</key>
+				<string>Cuando uno obtiene poco éxito en algo esperado, intentado o deseado; (e.g. el fallo de un matrimonio o otra relación, ser despedido, quedar en quiebra, realizar mal desempeño en los deportes, el arte, académicos, etc).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Impotencia</string>
+				<key>Description</key>
+				<string>Ser incapaz de ayudarse a sí mismo, el estar sin la ayuda o protección de otro. Tener poca fuerza o poder personal. Una emoción común para aquellos que sufren de una &quot;mentalidad de víctima&quot;. Sintiéndose incapaces de cambiar las circunstancias de uno.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Desesperanza</string>
+				<key>Description</key>
+				<string>Desprovisto de la esperanza, no tener ninguna expectativa de bien; que no tiene remedio o cura, ninguna perspectiva de cambio o mejora.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Falta de control</string>
+				<key>Description</key>
+				<string>Ausencia de limitaciones o de dirigir, sin poder regular o sin poder de mando, la sensación de que alguien o algo más determina su curso.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Baja autoestima</string>
+				<key>Description</key>
+				<string>Baja valoración de la propia valía o valor, sentir o centrarse en uno de sus defectos, la celebración de un sentimiento de falta de respeto por sí mismo, sin confianza, la falta de amor propio.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Confusión</string>
+				<key>Description</key>
+				<string>Una sensación de desorientación, pensamiento confuso, el caos, la falta de nitidez o claridad, confundidas a causa de desconcierto, un estado mental alterado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Actitud defensiva</string>
+				<key>Description</key>
+				<string>Un estado de resistir un ataque o protegerse a sí mismo, ser sensible a la amenaza de la crítica o el daño a su ego, estar en guardia contra las amenazas reales o imaginarias a su persona, física y / o emocional.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Dolor Profundo</string>
+				<key>Description</key>
+				<string>Sufrimiento emocional intenso causado por la pérdida, desastre, desgracia, etc, un dolor agudo y profunda tristeza. Una reacción universal a duelo. También puede sentirse acosado, vejado o exasperado (por ejemplo, si alguien te da pena).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Autolesión</string>
+				<key>Description</key>
+				<string>Abusar de uno mismo incluye emocionalmente el diálogo interno negativo (por ejemplo, &quot;yo soy un idiota.&quot;), Culpandose a sí mismo, etc. Abusar del yo físico incluye maltratar el cuerpo o la mente mediante el uso de sustancias o conductas adictivas, que no se preocupan por el cuerpo por la falta de sueño, una dieta adecuada y nutrición, para trabajar más allá de lo que uno puede o debe soportar, para castigar o gravar excesivamente a sí mismo. Este abuso puede ayudar a expiar los &quot;pecados&quot;, real o imaginarios, y por lo general es impulsado por la ira. Las enfermedades pueden ser formas de auto-abuso (por ejemplo, &quot;no merezco ser sanado.&quot;)</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Obstinación</string>
+				<key>Description</key>
+				<string>Being difficult; unbendable; unable or unwilling to forgive; obstinate; headstrong; resistant.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Depresión</string>
+				<key>Description</key>
+				<string>Un estado de ser triste, desanimado, abatido. A menudo, una emoción secundaria causada por &quot;mantener la ira hacia adentro&quot; en el mismo y sentimientos de vergüenza y culpa, etc</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Frustración</string>
+				<key>Description</key>
+				<string>Estar atascado o sin poder avanzar, sensación de bloqueo para causar un cambio o lograr un objetivo o meta. Indecisión: La incapacidad de tomar una decisión; vacilante de ida y vuelta entre una opción u otra. La raiz de la desconfianza en el mismo o dudar de la capacidad de tomar una buena decisión.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Indecisión</string>
+				<key>Description</key>
+				<string>La incapacidad de tomar una decisión; vacilante de ida y vuelta entre una opción u otra. La raiz de la desconfianza en el mismo o dudar de la capacidad de tomar una buena decisión.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Pánico</string>
+				<key>Description</key>
+				<string>Un miedo repentino, abrumador que produce un comportamiento histérico, pensamientos excesivamente temerosos o síntomas físicos como temblores y la hiperventilación, una fuerte sensación de muerte inminente.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>No valorado</string>
+				<key>Description</key>
+				<string>Se siente tratado con indiferencia, no dar gracias por algo consumado, similar a ignorar.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Conflicto</string>
+				<key>Description</key>
+				<string>Conflicto interno es una lucha mental y emocional dentro de uno mismo, que surgen de las demandas o impulsos (por ejemplo, él se sentía en conflicto acerca de si debe o no tomar el nuevo puesto de trabajo) opuestos. Conflicto externo es luchar, en desacuerdo o ser desagradable, luchar o luchar encontra; para antagonizar. Conflicto o lucha prolongada. (por ejemplo, ella y su ex marido experimentan un continuo conflicto sobre la custodia de sus hijos).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Inseguridad creativa</string>
+				<key>Description</key>
+				<string>Sentirse inseguro o desconfiado de si mismo sobre la creación o el desarrollo de cualquier cosa, relaciones, familia, salud, dinero, la carrera y / o actividades artísticas. Una sensación de inseguridad que se presenta para el proceso creativo. (por ejemplo, el bloqueo del escritor).</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Terror</string>
+				<key>Description</key>
+				<string>Intenso, agudo, el miedo irresistible; miedo extremo, alarma.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Sin apoyo</string>
+				<key>Description</key>
+				<string>La falta de apoyo, ayuda o estímulo, no proveído por otra, no defendió cuando se necesita la ayuda, sintiendo que la carga es demasiado pesada para soportar por sí solo, etc</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Falta de personalidad</string>
+				<key>Description</key>
+				<string>Débil, sin espíritu; indeciso irresoluto, sin fuerza de carácter. Carecer de convicción, sin un caracter.</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Soberbia</string>
+				<key>Description</key>
+				<string>Una excesivamente alta estima de uno mismo por algún mérito o superioridad real o imaginaria; vanidad (un excesivo deseo de hacerse notar, ser alabado, o aprobado); sentirse mejor que los demás, altanera, no enseñable, tiene que estar en lo cierto, espera más crédito que lo ganado, o trata a los demás con desdén o desprecio. Tener una buena cantidad de orgullo (la autoestima o la autoestima) es una buena cosa, y este tipo de orgullo por lo general no se presenta como una emoción atrapada, a menos que se lesione.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Vergüenza</string>
+				<key>Description</key>
+				<string>Un sentimiento de estar equivocado, defectuosos o de mala reputación. La sensación dolorosa de haber hecho o experimentado algo deshonroso, impropio o tonto; deshonra; humillación, un motivo de pesar. La vibración más baja de todas las emociones. Conduce a la culpa, la depresión e incluso el suicidio.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Shock</string>
+				<key>Description</key>
+				<string>Una perturbación repentina o violenta de las emociones o sensibilidades; extrema sorpresa, sentirse traumatizado o aturdido.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Indignidad</string>
+				<key>Description</key>
+				<string>No sentirse suficiente, por debajo de la dignidad; impropia, no digno de elogio o de credibilidad, no lo merecen, no valioso o adecuado.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Desprecio</string>
+				<key>Description</key>
+				<string>De ninguna importancia o valor, sin la excelencia de carácter, calidad o estima, no sirve ningún propósito.</string>
+			</dict>
+		</array>
+	</array>
+</array>
 </plist>
