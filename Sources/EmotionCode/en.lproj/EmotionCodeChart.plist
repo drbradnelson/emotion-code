@@ -8,31 +8,31 @@
 				<key>Title</key>
 				<string>Abandonment</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Physical abandonment is being left alone; left behind or deserted (this is the type of abandonment that we most often see in childhood). Emotional abandonment is being given up on; withdrew from; emotionally deserted or separated from; a feeling of being “left behind” in a non-physical form.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Betrayal</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Betrayed is to have your trust broken, to be deserted or hurt by a trusted one. Betrayal of another is to be unfaithful in guarding or fulfilling a trust; to be disloyal or violate a confidence, to desert someone who trusts you. Betrayal of the self is to break integrity; act against oneʼs morals, to abuse the body or soul.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Forlorn</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Miserable; sad and lonely by reason of abandonment, desolation or emptiness; hopeless; forsaken.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Lost</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Unable to see the correct or acceptable course; having no direction. Physically lost most often shows up from childhood- (e.g. being lost in the woods and canʼt find the way home, etc.) Emotionally lost refers to a feeling of being unable to see what the right decision or direction, being unable to find emotional stability (e.g. He felt lost after his wife died; She hasnʼt done anything with her life, she seems really lost.)</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Love Unreceived</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A feeling that love expressed is or has been rejected. Feeling unwanted, not cared for; not accepted; a lack of love where it is desired.</string>
 			</dict>
 		</array>
 		<array>
@@ -40,31 +40,31 @@
 				<key>Title</key>
 				<string>Anxiety</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A generalized feeling of uneasiness and foreboding; a fear of the unknown; fear without a subject (e.g. she feels anxious and fearful all the time for no apparent reason).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Despair</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A complete loss of hope; misery; difficult or unable to be helped or comforted.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Disgust</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A feeling of loathing; when good taste or moral sense is offended; a strong aversion. (e.g. She felt disgusted when the killer was acquitted).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Nervousness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Unnaturally or acutely uneasy or apprehensive; fearful; timid; to feel jumpy or on edge.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Worry</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Dwelling on difficulty or troubles; unease or anxiety about a situation or a person; extreme concern over potential problems; concern about a loved one in possible distress.</string>
 			</dict>
 		</array>
 		<array>
@@ -72,31 +72,31 @@
 				<key>Title</key>
 				<string>Crying</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>The (often) involuntary act of expressing a strong emotion; a response to pain or suffering (emotional or physical). A response to or expression of helplessness. A physical sensation felt in the throat, chest and/or diaphragm. Often becomes trapped when one does not allow him/herself to cry (i.e. suppressing this reaction or stuffing it down).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Discouragement</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Feeling a lack of courage, hope or confidence; disheartened, dispirited. Losing the nerve to try or attempt something.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Rejection</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Feeling denied, refused or rebuffed; discarded as useless or unimportant; cast out; unwanted; forsaken.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Sadness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Unhappy; sorrowful; mournful; affected by grief.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Sorrow</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A sad regret; distress caused by loss, disappointment or grief; to feel or express grief, unhappiness, or sadness.</string>
 			</dict>
 		</array>
 		<array>
@@ -104,31 +104,31 @@
 				<key>Title</key>
 				<string>Anger</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A strong displeasure and belligerence aroused by a real or supposed wrong; wrath. Anger is often used as a cover-up or form of denial for emotions of hurt or fear.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Bitterness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A harsh, disagreeable or cynical attitude. Being angry or resentful because of hurtful or unfair experiences.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Guilt</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>The feeling of having done wrong or committed an offense. Feeling responsible for the harmful actions of another (e.g., abuse, parents&apos; divorce, death, etc.) Often accompanied by feelings of depression, shame and self-abuse.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Hatred</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>To loathe; despise; great dislike or aversion. Often comes as a result of “hurt love”. Often hatred is of a situation rather than a person (e.g. hatred of anotherʼs behavior, unjust circumstances, etc.) Self-hatred creates destructive behaviors and illnesses.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Resentment</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A feeling of displeasure or indignation at someone or something regarded as the cause of injury or insult; bitter for having been treated unfairly; unwilling to forgive. Often this emotion comes along with animosity (ill-will that displays itself in action, strong hostility or antagonism).</string>
 			</dict>
 		</array>
 		<array>
@@ -136,31 +136,31 @@
 				<key>Title</key>
 				<string>Blaming</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Being Blamed is to be held responsible; accused; or held guilty for something. Blaming another is to hold responsible; accuse; find fault with. Putting responsibility on someone or something else to avoid taking responsibility. This is a key emotion in creating a victim mentality and can cause a deterioration of personal power. Blaming the self is finding fault with oneself, which can lead to feelings of self-abuse, depression, etc.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Dread</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Fear of something that is about to happen; apprehension as to something in the future, usually real but sometimes unknown. (e.g. He dreaded going to the high school reunion and facing the bullies who had tormented him).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Fear</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A strongly distressing emotion aroused by impending danger, evil or pain; the threat may be real or imagined.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Horror</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A strong emotion of alarm, disgust, or outrage caused by something frightful or shocking (e.g. an event of extreme violence, cruelty, or macabre.)</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Peeved</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Irritated; annoyed; exasperated; irked; aggravated; ticked off.</string>
 			</dict>
 		</array>
 		<array>
@@ -168,31 +168,31 @@
 				<key>Title</key>
 				<string>Humiliation</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A painful loss of pride, dignity or self-respect; to feel mortified; embarrassed.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Jealousy</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Resentful and envious of someone&apos;s success, achievements, or advantages. Having suspicious fears; fears of rivalry or unfaithfulness. Results from a fear of not being loved and/or from insecurity.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Longing</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>To have a strong desire or craving; a yearning or pining; aching for; to miss someone or something; to want something you do not have (e.g. She longed for a different life).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Lust</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Intense sexual desire or appetite; an overwhelming want or craving (e.g., lust for power); passion; to covet.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Overwhelm</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>To be overpowered in mind or emotion; extreme stress; feeling overpowered with superior force; feeling excessively burdened.</string>
 			</dict>
 		</array>
 	</array>
@@ -202,31 +202,31 @@
 				<key>Title</key>
 				<string>Effort Unreceived</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>When one&apos;s work, achievement, attempts or endeavors are not accepted or recognized; when one&apos;s best effort is not considered good enough; a feeling of being unappreciated. Not feeling approved of or validated.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Heartache</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Anguish and pain of the heart; distress usually as a result of difficulty or sadness in a relationship. Felt as a crushing or burning physical sensation in the chest.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Insecurity</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A lack of confidence; self-conscious; shy. Feeling unsafe from danger or ridicule.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Overjoy</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Intense delight or elation which is too overpowering for the body; joy that it is a shock to the system.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Vulnerability</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Feeling susceptible to harm, either emotional or physical; unsafe; unstable.</string>
 			</dict>
 		</array>
 		<array>
@@ -234,31 +234,31 @@
 				<key>Title</key>
 				<string>Failure</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>When one falls short of success or achievement in something expected, attempted, or desired; (e.g. The failure of a marriage or other relationship, being fired, bankruptcy, performing poorly in athletics, art, academics, etc.).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Helplessness </string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Being unable to help oneself; being without the aid or protection of another. Having little strength or personal power. A common emotion for those suffering from a “victim mentality”. Feeling unable to change oneʼs circumstances or state.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Hopelessness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Devoid of hope; having no expectation of good; having no remedy or cure; no prospect of change or improvement.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Lack of Control</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Lacking restraint or direction; unable to regulate or command; a feeling that someone or something else determines your course.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Low Self-Esteem</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A low appraisal of oneʼs own worth or value; feeling and focusing on oneʼs flaws; holding a feeling of disrespect for the self; not confident; lack of self-love.</string>
 			</dict>
 		</array>
 		<array>
@@ -266,31 +266,31 @@
 				<key>Title</key>
 				<string>Confusion</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A disoriented feeling; foggy thinking; chaos; lack of distinctness or clearness; perplexity; bewilderment; a disturbed mental state.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Defensiveness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A state of resisting attack or protecting oneself; being sensitive to the threat of criticism or injury to one&apos;s ego; being on guard against real or imagined threats to one&apos;s person, physical and/or emotional.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Grief</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Intense emotional suffering caused by loss, disaster, misfortune, etc.; an acute sorrow and deep sadness. A universal reaction to bereavement. Also can be feeling harassed, vexed or exasperated (e.g. if someone gives you grief).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Self-Abuse</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Abusing the self emotionally includes negative self-talk (e.g. “Iʼm such an idiot.”), blaming the self, etc. Abusing the self physically includes mistreating the body by use of addictive substances; to not care for the body by lack of sleep, proper diet or nutrition; to work beyond what one can or should endure; to punish or tax oneself excessively. This abuse may help atone for &quot;sins&quot;, real or imagined, and usually is driven by anger. Illnesses can be forms of self-abuse (e.g., &quot;I don&apos;t deserve to be healed.&quot;)</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Stubborness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Being difficult; unbendable; unable or unwilling to forgive; obstinate; headstrong; resistant.</string>
 			</dict>
 		</array>
 		<array>
@@ -298,31 +298,31 @@
 				<key>Title</key>
 				<string>Depression</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A state of being sad, gloomy, low in spirits, dejected. Often a secondary emotion caused by “anger turned inward” at the self and feelings of shame and guilt, etc.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Frustration</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Exasperation; being stuck or unable to progress; feeling blocked from causing a change or achieving an objective or goal.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Indecisiveness</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>An inability to make a decision; wavering back and forth between one choice or another. Stems from distrust of the self or doubting the ability to make a good decision.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Panic</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A sudden, overwhelming fear that produces hysterical behavior, unreasonably fearful thoughts or physical symptoms such as trembling and hyperventilation; a strong feeling of impending doom.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Taken for Granted</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Feels treated with careless indifference; not given thanks or for something accomplished, similar to ignored.</string>
 			</dict>
 		</array>
 		<array>
@@ -330,31 +330,31 @@
 				<key>Title</key>
 				<string>Conflict</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Internal Conflict is a mental and emotional struggle within the self, arising from opposing demands or impulses. (e.g. He was feeling conflicted about whether or not to take the new job) External Conflict is to fight; to disagree or be disagreeable; to struggle or battle against; to antagonize. Prolonged strife or struggle. (e.g. She and her ex-husband experience continual conflict about custody of their children).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Creative Insecurity</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Feeling unsafe or untrusting the self about the creation or development of anything- relationships, family, health, money, career and/or artistic endeavors. A feeling of insecurity that arises and blocks the creative process. (e.g. writerʼs block).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Terror</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Intense, sharp, overmastering fear; extreme fright; alarm.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Unsupported</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A lack of support, help or encouragement; not provided for by another; not defended when help is needed; feeling the burden is too heavy to bear alone, etc.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Wishy Washy</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Weak, spiritless; undecided irresolute; without strength of character. To lack conviction; without a backbone.</string>
 			</dict>
 		</array>
 		<array>
@@ -362,31 +362,31 @@
 				<key>Title</key>
 				<string>Pride</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>An overly high esteeming of oneself for some real or imagined merit or superiority; vanity (an excessive desire to be noticed, praised, or approved); feeling better than others; haughty; non-teachable; has to be right; expects more credit than earned; or treats others with disdain or contempt. Having a healthy amount of pride (self-respect or self-esteem) is a good thing, and this type of pride usually doesnʼt show up as a trapped emotion (although it may show up if oneʼs healthy pride is injured).</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Shame</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A feeling of being wrong, defective or disreputable. The painful feeling of having done or experienced something dishonorable, improper or foolish; disgrace; humiliation; a cause for regret. The lowest vibration of all the emotions. Leads to guilt, depression and even suicide.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Shock</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>A sudden or violent disturbance of the emotions or sensibilities; extreme surprise; to feel traumatized or stunned.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Unworthy</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Not good enough; beneath the dignity of; not commendable or credible; undeserving; not valuable or suitable; unbecoming.</string>
 			</dict>
 			<dict>
 				<key>Title</key>
-				<string>Wishy Washy</string>
+				<string>Worthless</string>
 				<key>Description</key>
-				<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dolor ullamcorper dui porta semper.</string>
+				<string>Of no importance or value; without excellence of character, quality or esteem; serving no purpose.</string>
 			</dict>
 		</array>
 	</array>
