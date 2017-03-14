@@ -93,17 +93,17 @@ private extension Rect {
     }
 }
 
-private extension Size {
+extension Size {
+
     var cgSize: CGSize {
         return CGSize(width: width, height: height)
     }
-}
 
-extension Size {
     init(cgSize: CGSize) {
         width = .init(cgSize.width)
         height = .init(cgSize.height)
     }
+
 }
 
 private extension Point {

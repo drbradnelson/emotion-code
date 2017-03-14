@@ -26,25 +26,30 @@ final class ChartEmotionViewController: UICollectionViewController {
         setDescriptionVisibleAlongsideTransition(true)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.store.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
-    }
-
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         setDescriptionVisibleAlongsideTransition(false)
         chartLayout.store.dispatch(.viewWillTransition)
     }
 
+    // MARK: Layout
+
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
             itemCell.setEmotionDescriptionVisible(descriptionVisible)
-        }, completion: { [itemCell] _ in
-            if !descriptionVisible {
-                itemCell.removeEmotionDescriptionView()
-            }
+        }, completion: { [itemCell] context in
+            guard !context.isCancelled, !descriptionVisible else { return }
+            itemCell.removeEmotionDescriptionView()
+        })
+    }
+
+    private func layoutCellsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
+        }, completion: { [chartLayout] context in
+            guard !context.isCancelled else { return }
+            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.invalidateLayout()
         })
     }
 

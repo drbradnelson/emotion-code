@@ -10,6 +10,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+        titleLabel.center = contentView.center
         emotionDescriptionView?.frame = contentView.bounds
     }
 
@@ -19,6 +20,21 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     func configure(with emotion: Chart.Emotion) {
         titleLabel.text = emotion.title
+    }
+
+    func setTitleLabelSize(to size: CGSize) {
+        titleLabel.bounds.size = size
+    }
+
+    func shrinkTitleLabel() {
+        let widthScale = bounds.width / titleLabel.intrinsicContentSize.width
+        let heightScale = bounds.height / titleLabel.intrinsicContentSize.height
+        let scale = min(widthScale, heightScale)
+        titleLabel.transform = .init(scaleX: scale, y: scale)
+    }
+
+    func enlargeTitleLabel() {
+        titleLabel.transform = .identity
     }
 
     // MARK: Background color
@@ -58,6 +74,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     func setEmotionDescriptionVisible(_ descriptionVisible: Bool) {
         emotionDescriptionView!.alpha = descriptionVisible ? 1 : 0
+        titleLabel.alpha = descriptionVisible ? 0 : 1
     }
 
 }

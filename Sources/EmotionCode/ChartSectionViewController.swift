@@ -23,12 +23,6 @@ final class ChartSectionViewController: UICollectionViewController {
         layoutCellsAlongsideTransition()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.store.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
-    }
-
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         chartLayout.store.dispatch(.viewWillTransition)
@@ -36,8 +30,32 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: Collection view delegate
 
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        layout(cell, with: indexPath)
+    }
+
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowEmotion", sender: self)
+    }
+
+    // MARK: Layout
+
+    private func layoutCellsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
+            collectionView!.visibleCellsWithIndexPaths.forEach(layout)
+        }, completion: { [chartLayout] context in
+            guard !context.isCancelled else { return }
+            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.invalidateLayout()
+        })
+    }
+
+    private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
+        let cell = cell as! ItemCollectionViewCell
+        let labelSize = chartLayout.store.view.labelSizes[indexPath]!
+        cell.setTitleLabelSize(to: labelSize.cgSize)
+        cell.enlargeTitleLabel()
+        cell.layoutIfNeeded()
     }
 
     // MARK: Storyboard segue

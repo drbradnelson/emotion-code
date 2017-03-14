@@ -46,21 +46,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udn-n3-ix2">
+                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udn-n3-ix2">
                                             <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="udn-n3-ix2" secondAttribute="trailing" id="0XQ-WD-TB6"/>
-                                    <constraint firstItem="udn-n3-ix2" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leading" id="Vcx-v6-cwF"/>
-                                    <constraint firstAttribute="bottom" secondItem="udn-n3-ix2" secondAttribute="bottom" id="j1H-nN-VJO"/>
-                                    <constraint firstItem="udn-n3-ix2" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="piK-6q-npO"/>
-                                </constraints>
                                 <size key="customSize" width="151" height="40"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="oddRowColor">

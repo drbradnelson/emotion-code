@@ -2,14 +2,15 @@ import UIKit
 
 final class ChartViewController: UICollectionViewController {
 
+    private var chartLayout: ChartLayout {
+        return collectionViewLayout as! ChartLayout
+    }
+
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let chartLayout = collectionViewLayout as! ChartLayout
         chartLayout.mode = chartLayoutMode(with: collectionView!)
-
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
@@ -27,8 +28,35 @@ final class ChartViewController: UICollectionViewController {
 
     // MARK: Collection view delegate
 
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        layout(cell, with: indexPath)
+    }
+
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowSection", sender: self)
+    }
+
+    // MARK: Layout
+
+    private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
+        let cell = cell as! ItemCollectionViewCell
+        let labelSize = chartLayout.store.view.labelSizes[indexPath]!
+        cell.setTitleLabelSize(to: labelSize.cgSize)
+        cell.shrinkTitleLabel()
+        cell.layoutIfNeeded()
+    }
+
+    private func layoutCellsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
+            collectionView!.visibleCellsWithIndexPaths.forEach(layout)
+        }, completion: nil)
+    }
+
+    private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
+            supplementaryViews.forEach { $0.layoutIfNeeded() }
+        }, completion: nil)
     }
 
     // MARK: Storyboard segue
