@@ -35,8 +35,11 @@ final class ChartEmotionViewController: UICollectionViewController {
     // MARK: Layout
 
     private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
-        transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
+        transitionCoordinator?.animate(alongsideTransition: { [itemCell, collectionView, chartLayout] _ in
             itemCell.setEmotionDescriptionVisible(descriptionVisible)
+            let indexPath = collectionView!.indexPath(for: itemCell)!
+            let size = chartLayout.store.view.items[indexPath]!.frame.size
+            itemCell.setEmotionDescriptionSize(to: size.cgSize)
         }, completion: { [itemCell] context in
             guard !context.isCancelled, !descriptionVisible else { return }
             itemCell.removeEmotionDescriptionView()

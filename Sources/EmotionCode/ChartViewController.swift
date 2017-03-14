@@ -49,7 +49,17 @@ final class ChartViewController: UICollectionViewController {
     private func layoutCellsAlongsideTransition() {
         transitionCoordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
             collectionView!.visibleCellsWithIndexPaths.forEach(layout)
-        }, completion: nil)
+            for cell in collectionView!.visibleCells {
+                guard let cell = cell as? ItemCollectionViewCell else { return }
+                cell.setEmotionDescriptionVisible(false)
+            }
+        }, completion: { [collectionView] context in
+            guard !context.isCancelled else { return }
+            for cell in collectionView!.visibleCells {
+                guard let cell = cell as? ItemCollectionViewCell else { return }
+                cell.removeEmotionDescriptionView()
+            }
+        })
     }
 
     private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {

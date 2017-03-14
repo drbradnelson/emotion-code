@@ -11,7 +11,6 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         titleLabel.center = contentView.center
-        emotionDescriptionView?.frame = contentView.bounds
     }
 
     // MARK: Title labels
@@ -68,12 +67,16 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(emotionDescriptionView)
     }
 
+    func setEmotionDescriptionSize(to size: CGSize) {
+        emotionDescriptionView?.frame.size = size
+    }
+
     func removeEmotionDescriptionView() {
-        emotionDescriptionView!.removeFromSuperview()
+        emotionDescriptionView?.removeFromSuperview()
     }
 
     func setEmotionDescriptionVisible(_ descriptionVisible: Bool) {
-        emotionDescriptionView!.alpha = descriptionVisible ? 1 : 0
+        emotionDescriptionView?.alpha = descriptionVisible ? 1 : 0
         titleLabel.alpha = descriptionVisible ? 0 : 1
     }
 
