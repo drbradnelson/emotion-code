@@ -168,18 +168,15 @@ struct ChartLayoutProgram: Program {
         // MARK: Item heights
         //
 
-        let itemHeight: Int = {
-            guard
-                visibleViewSize.height >= state.minViewHeightForCompactLayout,
-                let maximumItemsCountInSection = state.itemsPerSection.max() else { return state.itemHeight }
-            let totalSpacing = state.contentPadding * 2 + state.headerSize.height + sectionSpacing.height * rowsCount
-            let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
-            return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
-        }()
-
         let itemHeights = sectionsRange.map { section -> Int in
             switch state.mode {
-            case .all: return itemHeight
+            case .all:
+                guard
+                    visibleViewSize.height >= state.minViewHeightForCompactLayout,
+                    let maximumItemsCountInSection = state.itemsPerSection.max() else { return state.itemHeight }
+                let totalSpacing = state.contentPadding * 2 + state.headerSize.height + sectionSpacing.height * rowsCount
+                let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
+                return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
             case .section:
                 let itemCount = state.itemsPerSection[section]
                 let totalPaddingHeight = state.contentPadding * 2
