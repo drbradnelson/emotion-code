@@ -188,6 +188,11 @@ struct ChartLayoutProgram: Program {
             }
         }
 
+        //
+        // MARK: -
+        // MARK: Label sizes
+        //
+
         let labelSizes: [IndexPath: Size] = {
             switch state.mode {
             case .all, .section:
