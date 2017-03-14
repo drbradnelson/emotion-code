@@ -38,6 +38,7 @@ struct ChartLayoutProgram: Program {
         let minViewHeightForCompactLayout = 554
         let headerSize = Size(width: 30, height: 30)
         let itemHeight = 18
+        let itemPadding = 8
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10
@@ -194,12 +195,12 @@ struct ChartLayoutProgram: Program {
             switch state.mode {
             case .all, .section:
                 return sectionsRange.reduce([:]) { labelSizes, section in
-                    let width = visibleViewSize.width - state.contentPadding * 2
+                    let width = visibleViewSize.width - state.contentPadding * 2 - state.itemPadding * 2
                     let itemCount = state.itemsPerSection[section]
                     let totalPaddingHeight = state.contentPadding * 2
                     let totalSpacingHeight = state.itemSpacing * (itemCount - 1)
                     let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
-                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
+                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount))) - state.itemPadding * 2
                     let size = Size(width: width, height: height)
                     var labelSizes = labelSizes
                     for item in 0..<itemCount {
