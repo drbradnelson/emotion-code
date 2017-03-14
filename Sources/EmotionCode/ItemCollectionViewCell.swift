@@ -30,7 +30,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         let widthScale = bounds.width / titleLabel.intrinsicContentSize.width
         let heightScale = bounds.height / titleLabel.intrinsicContentSize.height
         let scale = min(widthScale, heightScale)
-        titleLabel.transform = .init(scaleX: scale, y: scale)
+        titleLabel.transform = (scale < 1) ? .init(scaleX: scale, y: scale) : .identity
     }
 
     func enlargeTitleLabel() {
