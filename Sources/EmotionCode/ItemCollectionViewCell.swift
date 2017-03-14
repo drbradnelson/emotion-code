@@ -15,12 +15,10 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     // MARK: Title labels
 
-    @IBOutlet var smallTitleLabel: UILabel!
-    @IBOutlet var largeTitleLabel: UILabel!
+    @IBOutlet private var titleLabel: UILabel!
 
     func configure(with emotion: Chart.Emotion) {
-        smallTitleLabel.text = emotion.title
-        largeTitleLabel.text = emotion.title
+        titleLabel.text = emotion.title
     }
 
     // MARK: Background color
