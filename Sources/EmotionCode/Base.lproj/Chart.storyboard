@@ -102,7 +102,7 @@
             </objects>
             <point key="canvasLocation" x="2093.5999999999999" y="525.78710644677665"/>
         </scene>
-        <!--Title-->
+        <!--Chart Section View Controller-->
         <scene sceneID="OTd-Lr-Dj3">
             <objects>
                 <collectionViewController storyboardIdentifier="ChartSectionViewController" id="QSz-Q4-vOB" customClass="ChartSectionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,8 +117,8 @@
                             <outlet property="delegate" destination="QSz-Q4-vOB" id="ZhF-VO-Po2"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Title" id="4SK-AI-bdC">
-                        <barButtonItem key="leftBarButtonItem" title="Reset" id="uuk-G0-dTV">
+                    <navigationItem key="navigationItem" id="4SK-AI-bdC">
+                        <barButtonItem key="leftBarButtonItem" image="view-module" id="uuk-G0-dTV">
                             <connections>
                                 <segue destination="k3W-2f-SSc" kind="unwind" unwindAction="unwindToChartViewControllerWith:" id="Gmw-BV-Lps"/>
                             </connections>
@@ -133,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
-        <!--Title-->
+        <!--Chart Emotion View Controller-->
         <scene sceneID="ALC-mo-bBU">
             <objects>
                 <collectionViewController storyboardIdentifier="ChartEmotionViewController" id="3AH-pL-I16" customClass="ChartEmotionViewController" customModule="EmotionCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -149,8 +149,8 @@
                         </connections>
                     </collectionView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="Nkd-wU-Abh">
-                        <barButtonItem key="leftBarButtonItem" title="Reset" id="EXK-Fi-LZC">
+                    <navigationItem key="navigationItem" id="Nkd-wU-Abh">
+                        <barButtonItem key="leftBarButtonItem" image="view-module" id="EXK-Fi-LZC">
                             <connections>
                                 <segue destination="9sd-SF-gnP" kind="unwind" unwindAction="unwindToChartViewControllerWith:" id="foK-ni-ozm"/>
                             </connections>
@@ -167,5 +167,6 @@
     <resources>
         <image name="Selected/Chart" width="32" height="32"/>
         <image name="Standard/Chart" width="32" height="32"/>
+        <image name="view-module" width="24" height="24"/>
     </resources>
 </document>
