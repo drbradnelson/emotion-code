@@ -56,6 +56,7 @@ struct ChartLayoutProgram: Program {
         let items: [IndexPath: Item]
         let columnHeaders: [IndexPath: Header]
         let rowHeaders: [IndexPath: Header]
+        let labelSizes: [IndexPath: Size]
     }
 
     enum Failure: Error {
@@ -188,6 +189,29 @@ struct ChartLayoutProgram: Program {
                 return visibleViewSize.height - state.contentPadding * 2
             }
         }
+
+        let labelSizes: [IndexPath: Size] = {
+            switch state.mode {
+            case .all, .section:
+                return sectionsRange.reduce([:]) { labelSizes, section in
+                    let width = visibleViewSize.width - state.contentPadding * 2
+                    let itemCount = state.itemsPerSection[section]
+                    let totalPaddingHeight = state.contentPadding * 2
+                    let totalSpacingHeight = state.itemSpacing * (itemCount - 1)
+                    let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
+                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
+                    let size = Size(width: width, height: height)
+                    var labelSizes = labelSizes
+                    for item in 0..<itemCount {
+                        let indexPath = IndexPath(item: item, section: section)
+                        labelSizes[indexPath] = size
+                    }
+                    return labelSizes
+                }
+            case .emotion:
+                return [:]
+            }
+        }()
 
         //
         // MARK: -
@@ -459,7 +483,8 @@ struct ChartLayoutProgram: Program {
             chartSize: chartSize,
             items: items,
             columnHeaders: columnHeaders,
-            rowHeaders: rowHeaders
+            rowHeaders: rowHeaders,
+            labelSizes: labelSizes
         )
         return .success(view)
 
