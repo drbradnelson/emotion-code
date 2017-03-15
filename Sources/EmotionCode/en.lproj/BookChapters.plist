@@ -7,18 +7,24 @@
 		<string>Title</string>
 		<key>Filename</key>
 		<string>title</string>
+		<key>Audio</key>
+		<string>The+Emotion+Code+Ch+0.1+Title+Page</string>
 	</dict>
 	<dict>
 		<key>Title</key>
 		<string>Dedication</string>
 		<key>Filename</key>
 		<string>dedication</string>
+		<key>Audio</key>
+		<string>The+Emotion+Code+Ch+0.2+Dedication</string>
 	</dict>
 	<dict>
 		<key>Title</key>
 		<string>A Note to Readers</string>
 		<key>Filename</key>
 		<string>note-to-readers</string>
+		<key>Audio</key>
+		<string>The+Emotion+Code+Ch+0.3+Note+to+Listeners</string>
 	</dict>
 	<dict>
 		<key>Title</key>
