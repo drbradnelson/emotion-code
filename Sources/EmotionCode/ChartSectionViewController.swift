@@ -22,19 +22,10 @@ final class ChartSectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         layoutCellsAlongsideTransition()
         toggleLabelsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.store.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        layoutCellsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
         chartLayout.store.dispatch(.viewWillTransition)
     }
 
@@ -62,12 +53,6 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    private func layoutCellsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
-        }, completion: nil)
-    }
-
     private func toggleLabelsAlongsideTransition() {
         transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
             collectionView!.visibleCells.forEach { cell in
@@ -75,14 +60,11 @@ final class ChartSectionViewController: UICollectionViewController {
                 cell.smallTitleLabel.alpha = 0
                 cell.largeTitleLabel.alpha = 1
             }
-        }, completion: nil)
-    }
-
-    private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
-            supplementaryViews.forEach { $0.layoutIfNeeded() }
-        }, completion: nil)
+        }, completion: { [chartLayout] context in
+            guard !context.isCancelled else { return }
+            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.invalidateLayout()
+        })
     }
 
 }

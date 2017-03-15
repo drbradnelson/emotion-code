@@ -16,7 +16,14 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        layoutCellsAlongsideTransition()
+        layoutSupplementaryViewsAlongsideTransition(withKinds: ChartHeaderView.rowKind, ChartHeaderView.columnKind)
         toggleLabelsAlongsideTransition()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        layoutSupplementaryViewsAlongsideTransition(withKinds: ChartHeaderView.rowKind, ChartHeaderView.columnKind)
     }
 
     // MARK: Collection view delegate

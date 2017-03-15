@@ -61,6 +61,7 @@
 		B6EE047C1E39044400013226 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04741E39044400013226 /* Security.framework */; };
 		B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04751E39044400013226 /* SystemConfiguration.framework */; };
 		B6EE047F1E39046B00013226 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE047E1E39046B00013226 /* SupportViewController.swift */; };
+		B6F7D4C51E662AC4002717CF /* UICollectionViewController+layoutContentAlongsideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4C41E662AC4002717CF /* UICollectionViewController+layoutContentAlongsideTransition.swift */; };
 		E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +146,7 @@
 		B6EE04741E39044400013226 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B6EE04751E39044400013226 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B6EE047E1E39046B00013226 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		B6F7D4C41E662AC4002717CF /* UICollectionViewController+layoutContentAlongsideTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+layoutContentAlongsideTransition.swift"; sourceTree = "<group>"; };
 		E7ED2B601D52135B00F85992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 		E7ED2B611D5213DF00F85992 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/EmotionCodeChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,6 +278,7 @@
 				0F28D0BF1D4E763B002C98E7 /* Storyboards */,
 				0F28D0C01D4E7659002C98E7 /* Build */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
+				B6F7D4C41E662AC4002717CF /* UICollectionViewController+layoutContentAlongsideTransition.swift */,
 				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				910C68421D6AE193004E7E7F /* TabIcons.xcassets */,
@@ -590,6 +593,7 @@
 				0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */,
 				0F3EAFE01D6CD6480059C312 /* BookChapterView.swift in Sources */,
 				913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */,
+				B6F7D4C51E662AC4002717CF /* UICollectionViewController+layoutContentAlongsideTransition.swift in Sources */,
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */,
