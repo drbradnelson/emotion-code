@@ -10,17 +10,30 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        emotionDescriptionView?.frame = contentView.bounds
+        titleLabel.center = contentView.center
     }
 
     // MARK: Title labels
 
-    @IBOutlet var smallTitleLabel: UILabel!
-    @IBOutlet var largeTitleLabel: UILabel!
+    @IBOutlet private var titleLabel: UILabel!
 
     func configure(with emotion: Chart.Emotion) {
-        smallTitleLabel.text = emotion.title
-        largeTitleLabel.text = emotion.title
+        titleLabel.text = emotion.title
+    }
+
+    func setTitleLabelSize(to size: CGSize) {
+        titleLabel.bounds.size = size
+    }
+
+    func shrinkTitleLabel() {
+        let widthScale = bounds.width / titleLabel.intrinsicContentSize.width
+        let heightScale = bounds.height / titleLabel.intrinsicContentSize.height
+        let scale = min(widthScale, heightScale)
+        titleLabel.transform = (scale < 1) ? .init(scaleX: scale, y: scale) : .identity
+    }
+
+    func enlargeTitleLabel() {
+        titleLabel.transform = .identity
     }
 
     // MARK: Background color
@@ -54,12 +67,17 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(emotionDescriptionView)
     }
 
+    func setEmotionDescriptionSize(to size: CGSize) {
+        emotionDescriptionView?.frame.size = size
+    }
+
     func removeEmotionDescriptionView() {
-        emotionDescriptionView!.removeFromSuperview()
+        emotionDescriptionView?.removeFromSuperview()
     }
 
     func setEmotionDescriptionVisible(_ descriptionVisible: Bool) {
-        emotionDescriptionView!.alpha = descriptionVisible ? 1 : 0
+        emotionDescriptionView?.alpha = descriptionVisible ? 1 : 0
+        titleLabel.alpha = descriptionVisible ? 0 : 1
     }
 
 }

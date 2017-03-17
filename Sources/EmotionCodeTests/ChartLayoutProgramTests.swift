@@ -1452,6 +1452,54 @@ final class ChartLayoutProgramTests: XCTestCase, Tests {
         expect(view?.items[.init(item: 1, section: 1)]?.alpha, 1)
     }
 
+    func testLabelSizesWhenModeAll() {
+        let view = expectView(for: .init(
+            seed: .init(
+                mode: .all,
+                itemsPerSection: [2],
+                viewSize: Size(width: 20, height: 20)
+            ),
+            contentPadding: 3,
+            itemSpacing: 4,
+            itemPadding: 5
+        ))
+        let expected = Size(
+            width: 20 - 3 - 3 - 5 - 5,
+            height: (20 - 3 - 3 - 4) / 2 - 5 - 5
+        )
+        expect(view?.labelSizes[.init(item: 0, section: 0)], expected)
+        expect(view?.labelSizes[.init(item: 1, section: 0)], expected)
+    }
+
+    func testLabelSizesWhenModeSection() {
+        let view = expectView(for: .init(
+            seed: .init(
+                mode: .section(0),
+                itemsPerSection: [2],
+                viewSize: Size(width: 20, height: 20)
+            ),
+            contentPadding: 3,
+            itemSpacing: 4,
+            itemPadding: 5
+        ))
+        let expected = Size(
+            width: 20 - 3 - 3 - 5 - 5,
+            height: (20 - 3 - 3 - 4) / 2 - 5 - 5
+        )
+        expect(view?.labelSizes[.init(item: 0, section: 0)], expected)
+        expect(view?.labelSizes[.init(item: 1, section: 0)], expected)
+    }
+
+    func testLabelSizesWhenModeEmotion() {
+        let view = expectView(for: .init(
+            seed: .init(
+                mode: .emotion(.init(item: 0, section: 0)),
+                itemsPerSection: [2]
+            )
+        ))
+        expect(view?.labelSizes.isEmpty, true)
+    }
+
 }
 
 typealias Program = ChartLayoutProgram
@@ -1484,6 +1532,7 @@ extension Program.State {
         sectionSpacing: Size = Size(width: 5, height: 5),
         itemHeight: Int = 30,
         itemSpacing: Int = 10,
+        itemPadding: Int = 8,
         minViewHeightForCompactLayout: Int = 554
         ) {
         self.mode = seed.mode
@@ -1497,6 +1546,7 @@ extension Program.State {
         self.sectionSpacing = sectionSpacing
         self.itemHeight = itemHeight
         self.itemSpacing = itemSpacing
+        self.itemPadding = itemPadding
         self.minViewHeightForCompactLayout = minViewHeightForCompactLayout
     }
 }
