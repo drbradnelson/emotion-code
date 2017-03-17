@@ -20,9 +20,8 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition()
+        layoutContentAlongsideTransition()
         toggleLabelsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -33,8 +32,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        layoutCellsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
+        layoutContentAlongsideTransition()
         chartLayout.store.dispatch(.viewWillTransition)
     }
 
@@ -62,10 +60,11 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    private func layoutCellsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
-        }, completion: nil)
+    private func layoutContentAlongsideTransition() {
+        transitionCoordinator?.animateAlongsideTransition { [collectionView] in
+            collectionView?.layoutVisibleCells()
+            collectionView?.layoutVisibleSupplementaryViews(ofKinds: [ChartHeaderView.rowKind, ChartHeaderView.columnKind])
+        }
     }
 
     private func toggleLabelsAlongsideTransition() {
@@ -75,14 +74,7 @@ final class ChartSectionViewController: UICollectionViewController {
                 cell.smallTitleLabel.alpha = 0
                 cell.largeTitleLabel.alpha = 1
             }
-        }, completion: nil)
-    }
-
-    private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
-            supplementaryViews.forEach { $0.layoutIfNeeded() }
-        }, completion: nil)
+            }, completion: nil)
     }
 
 }
@@ -92,6 +84,33 @@ extension ChartSectionViewController: ChartPresenter {
     func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection, isFocused: false)
+    }
+
+}
+
+extension UICollectionView {
+
+    func layoutVisibleCells() {
+        for visibleCell in visibleCells {
+            visibleCell.layoutIfNeeded()
+        }
+    }
+
+    func layoutVisibleSupplementaryViews(ofKinds kinds: [String]) {
+        for kind in kinds {
+            let visibleSupplementaryView = visibleSupplementaryViews(ofKind: kind)
+            for supplementaryView in visibleSupplementaryView {
+                supplementaryView.layoutIfNeeded()
+            }
+        }
+    }
+
+}
+
+extension UIViewControllerTransitionCoordinator {
+
+    func animateAlongsideTransition(_ animations: @escaping () -> Void) {
+        animate(alongsideTransition: { _ in animations() }, completion: nil)
     }
 
 }

@@ -117,11 +117,19 @@
                             <outlet property="delegate" destination="QSz-Q4-vOB" id="ZhF-VO-Po2"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="4SK-AI-bdC">
+                        <barButtonItem key="leftBarButtonItem" image="view-module" id="uuk-G0-dTV">
+                            <connections>
+                                <segue destination="k3W-2f-SSc" kind="unwind" unwindAction="unwindToChartViewControllerWith:" id="Gmw-BV-Lps"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="3AH-pL-I16" kind="show" identifier="ShowEmotion" id="WiV-ZG-j5d"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="k3W-2f-SSc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
@@ -140,8 +148,18 @@
                             <outlet property="delegate" destination="3AH-pL-I16" id="hnf-qS-u5e"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Nkd-wU-Abh">
+                        <barButtonItem key="leftBarButtonItem" image="view-module" id="EXK-Fi-LZC">
+                            <connections>
+                                <segue destination="9sd-SF-gnP" kind="unwind" unwindAction="unwindToChartViewControllerWith:" id="foK-ni-ozm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJY-PR-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9sd-SF-gnP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3625" y="526"/>
         </scene>
@@ -149,5 +167,6 @@
     <resources>
         <image name="Selected/Chart" width="32" height="32"/>
         <image name="Standard/Chart" width="32" height="32"/>
+        <image name="view-module" width="24" height="24"/>
     </resources>
 </document>

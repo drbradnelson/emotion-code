@@ -51,6 +51,8 @@ final class ChartViewController: UICollectionViewController {
         }, completion: nil)
     }
 
+    @IBAction func unwindToChartViewController(with segue: UIStoryboardSegue) {}
+
 }
 
 extension ChartViewController: ChartPresenter {
