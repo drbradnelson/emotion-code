@@ -83,6 +83,8 @@ final class ChartViewController: UICollectionViewController {
         destination.setTitle(forSection: section)
     }
 
+    @IBAction func unwindToChartViewController(with segue: UIStoryboardSegue) {}
+
 }
 
 extension ChartViewController: ChartPresenter {
