@@ -45,6 +45,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         let row = indexPath.section / 2 + 1
         let isRowEven = (row % 2 == 0)
         backgroundColor = isRowEven ? evenRowColor : oddRowColor
+        titleLabel.textColor = isRowEven ? .black : .white
     }
 
     // MARK: Emotion description text view
@@ -60,6 +61,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         emotionDescriptionView.isOpaque = true
         emotionDescriptionView.alpha = 0
         emotionDescriptionView.backgroundColor = backgroundColor
+        emotionDescriptionView.textColor = titleLabel.textColor
         emotionDescriptionView.font = .preferredFont(forTextStyle: .body)
         emotionDescriptionView.textAlignment = .center
         emotionDescriptionView.isEditable = false
