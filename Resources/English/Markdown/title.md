@@ -1,3 +1,5 @@
+![](book-cover.png)
+
 # THE EMOTION CODE
 
 **How to Release Your Trapped Emotions for Abundant Health, Love and Happiness**
