@@ -22,29 +22,33 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setDescriptionVisibleAlongsideTransition(true)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.store.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
+        layoutCellsAlongsideTransition()
+        showDescriptionAlongsideTransition()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        setDescriptionVisibleAlongsideTransition(false)
         chartLayout.store.dispatch(.viewWillTransition)
     }
 
-    private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
-        transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
-            itemCell.largeTitleLabel.alpha = 0
-            itemCell.setEmotionDescriptionVisible(descriptionVisible)
-        }, completion: { [itemCell] _ in
-            if !descriptionVisible {
-                itemCell.removeEmotionDescriptionView()
-            }
+    // MARK: Layout
+
+    private func showDescriptionAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [itemCell, collectionView, chartLayout] _ in
+            itemCell.setEmotionDescriptionVisible(true)
+            let indexPath = collectionView!.indexPath(for: itemCell)!
+            let size = chartLayout.store.view.items[indexPath]!.frame.size
+            itemCell.setEmotionDescriptionSize(to: size.cgSize)
+        }, completion: nil)
+    }
+
+    private func layoutCellsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
+        }, completion: { [chartLayout] context in
+            guard !context.isCancelled else { return }
+            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.invalidateLayout()
         })
     }
 
