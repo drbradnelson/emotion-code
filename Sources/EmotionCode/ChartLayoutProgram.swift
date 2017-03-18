@@ -25,6 +25,7 @@ struct ChartLayoutProgram: Program {
     enum Event {
         case viewWillTransition
         case viewDidTransition
+        case systemDidSetViewSize(Size)
     }
 
     struct State {
@@ -33,7 +34,7 @@ struct ChartLayoutProgram: Program {
         let numberOfColumns: Int
         let topContentInset: Int
         let bottomContentInset: Int
-        let viewSize: Size
+        var viewSize: Size
 
         let minViewHeightForCompactLayout = 554
         let headerSize = Size(width: 30, height: 30)
@@ -114,6 +115,11 @@ struct ChartLayoutProgram: Program {
             case .emotion(let emotion, _):
                 state.mode = .emotion(emotion, isFocused: true)
             }
+        case .systemDidSetViewSize(let viewSize):
+            guard viewSize.width > 0, viewSize.height > 0 else {
+                return .failure(.invalidViewSize)
+            }
+            state.viewSize = viewSize
         }
         return .success()
     }
