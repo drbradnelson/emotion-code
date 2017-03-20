@@ -38,6 +38,7 @@ final class AudioBarContainerController: UIViewController {
         }
         nowPlayingInfo[MPMediaItemPropertyArtist] = "Dr. Bradley Nelson"
         nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = "The Emotion Code"
+        nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(image: UIImage(named: "artwork")!)
         nowPlayingInfoCenter.nowPlayingInfo = nowPlayingInfo
     }
 
