@@ -59,10 +59,10 @@
                                 <size key="customSize" width="151" height="40"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="oddRowColor">
-                                        <color key="value" red="0.55976581569999995" green="0.78158503769999998" blue="0.78176909689999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.11574623733758926" green="0.51861709356307983" blue="0.89603966474533081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="evenRowColor">
-                                        <color key="value" red="0.6580919623" green="0.8796262145" blue="0.9753685594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.74740558862686157" green="0.86260384321212769" blue="0.95822387933731079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
