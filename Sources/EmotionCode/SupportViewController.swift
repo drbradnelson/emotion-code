@@ -1,5 +1,4 @@
 import UIKit
-import HotlineIO
 
 final class SupportViewController: UITableViewController {
 
