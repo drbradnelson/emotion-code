@@ -22,6 +22,10 @@
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
+		9111B5561E7FC5EA00CCBC5E /* HLLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9111B5521E7FC5EA00CCBC5E /* HLLocalization.bundle */; };
+		9111B5571E7FC5EA00CCBC5E /* HLResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9111B5531E7FC5EA00CCBC5E /* HLResources.bundle */; };
+		9111B5591E7FC5EA00CCBC5E /* KonotorModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9111B5551E7FC5EA00CCBC5E /* KonotorModels.bundle */; };
+		9111B55C1E7FCB5700CCBC5E /* libFDHotlineSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9111B55B1E7FCB5700CCBC5E /* libFDHotlineSDK.a */; };
 		911377741DFFF9C6008627F1 /* ChartLayoutProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutProgram.swift */; };
 		911377801E001A73008627F1 /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
@@ -48,10 +52,6 @@
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
-		B6EE04691E3903DB00013226 /* HLLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04651E3903DB00013226 /* HLLocalization.bundle */; };
-		B6EE046A1E3903DB00013226 /* HLResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04661E3903DB00013226 /* HLResources.bundle */; };
-		B6EE046B1E3903DB00013226 /* KonotorModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6EE04671E3903DB00013226 /* KonotorModels.bundle */; };
-		B6EE046C1E3903DB00013226 /* libFDHotlineSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04681E3903DB00013226 /* libFDHotlineSDK.a */; };
 		B6EE04761E39044400013226 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046E1E39044400013226 /* AudioToolbox.framework */; };
 		B6EE04771E39044400013226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046F1E39044400013226 /* AVFoundation.framework */; };
 		B6EE04781E39044400013226 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE04701E39044400013226 /* CoreData.framework */; };
@@ -99,6 +99,10 @@
 		0FF8F9E91D5ACFE4008666E8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		9105A61E1E4E66A9004F94E7 /* EmotionCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmotionCode.entitlements; sourceTree = "<group>"; };
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
+		9111B5521E7FC5EA00CCBC5E /* HLLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HLLocalization.bundle; path = Carthage/Build/iOS/Hotline.framework/HLLocalization.bundle; sourceTree = "<group>"; };
+		9111B5531E7FC5EA00CCBC5E /* HLResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HLResources.bundle; path = Carthage/Build/iOS/Hotline.framework/HLResources.bundle; sourceTree = "<group>"; };
+		9111B5551E7FC5EA00CCBC5E /* KonotorModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KonotorModels.bundle; path = Carthage/Build/iOS/Hotline.framework/KonotorModels.bundle; sourceTree = "<group>"; };
+		9111B55B1E7FCB5700CCBC5E /* libFDHotlineSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDHotlineSDK.a; path = Carthage/Build/iOS/Hotline.framework/libFDHotlineSDK.a; sourceTree = "<group>"; };
 		911377731DFFF9C6008627F1 /* ChartLayoutProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutProgram.swift; sourceTree = "<group>"; };
 		9113777E1E001A69008627F1 /* Elm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elm.framework; path = Carthage/Build/iOS/Elm.framework; sourceTree = "<group>"; };
 		91187B221D6776A00098A881 /* ChapterTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleView.swift; sourceTree = "<group>"; };
@@ -131,11 +135,6 @@
 		B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartEmotionViewController.swift; sourceTree = "<group>"; };
 		B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Alphabet.swift"; sourceTree = "<group>"; };
 		B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
-		B6EE04631E3903D000013226 /* HotlineIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HotlineIO.framework; path = Carthage/Build/iOS/HotlineIO.framework; sourceTree = "<group>"; };
-		B6EE04651E3903DB00013226 /* HLLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HLLocalization.bundle; path = Carthage/Build/iOS/HotlineIO.framework/HLLocalization.bundle; sourceTree = "<group>"; };
-		B6EE04661E3903DB00013226 /* HLResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HLResources.bundle; path = Carthage/Build/iOS/HotlineIO.framework/HLResources.bundle; sourceTree = "<group>"; };
-		B6EE04671E3903DB00013226 /* KonotorModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KonotorModels.bundle; path = Carthage/Build/iOS/HotlineIO.framework/KonotorModels.bundle; sourceTree = "<group>"; };
-		B6EE04681E3903DB00013226 /* libFDHotlineSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDHotlineSDK.a; path = Carthage/Build/iOS/HotlineIO.framework/libFDHotlineSDK.a; sourceTree = "<group>"; };
 		B6EE046E1E39044400013226 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B6EE046F1E39044400013226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B6EE04701E39044400013226 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -163,7 +162,7 @@
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
 				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
 				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
-				B6EE046C1E3903DB00013226 /* libFDHotlineSDK.a in Frameworks */,
+				9111B55C1E7FCB5700CCBC5E /* libFDHotlineSDK.a in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,11 +331,10 @@
 		B6EE046D1E3903E000013226 /* HotlineIO */ = {
 			isa = PBXGroup;
 			children = (
-				B6EE04631E3903D000013226 /* HotlineIO.framework */,
-				B6EE04651E3903DB00013226 /* HLLocalization.bundle */,
-				B6EE04661E3903DB00013226 /* HLResources.bundle */,
-				B6EE04671E3903DB00013226 /* KonotorModels.bundle */,
-				B6EE04681E3903DB00013226 /* libFDHotlineSDK.a */,
+				9111B5521E7FC5EA00CCBC5E /* HLLocalization.bundle */,
+				9111B5531E7FC5EA00CCBC5E /* HLResources.bundle */,
+				9111B5551E7FC5EA00CCBC5E /* KonotorModels.bundle */,
+				9111B55B1E7FCB5700CCBC5E /* libFDHotlineSDK.a */,
 			);
 			name = HotlineIO;
 			sourceTree = "<group>";
@@ -475,18 +473,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */,
-				B6EE046A1E3903DB00013226 /* HLResources.bundle in Resources */,
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
+				9111B5561E7FC5EA00CCBC5E /* HLLocalization.bundle in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Support.storyboard in Resources */,
 				0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */,
 				E7ED2B5D1D52135600F85992 /* EmotionCodeChart.plist in Resources */,
-				B6EE04691E3903DB00013226 /* HLLocalization.bundle in Resources */,
 				0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */,
 				915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */,
+				9111B5591E7FC5EA00CCBC5E /* KonotorModels.bundle in Resources */,
 				915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */,
-				B6EE046B1E3903DB00013226 /* KonotorModels.bundle in Resources */,
+				9111B5571E7FC5EA00CCBC5E /* HLResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +805,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/HotlineIO.framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Hotline.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -829,6 +828,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/HotlineIO.framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Hotline.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
