@@ -17,7 +17,7 @@ final class ChartViewControllerDataSource: NSObject, UICollectionViewDataSource 
         let chartSection = chart.section(atIndex: indexPath.section)
         let emotion = chartSection.emotions[indexPath.item]
         cell.configure(with: emotion)
-        cell.setBackgroundColor(for: indexPath)
+        cell.setColors(for: indexPath)
         return cell
     }
 

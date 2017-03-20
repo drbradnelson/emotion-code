@@ -24,10 +24,4 @@ final class ChartNavigationController: UINavigationController, UINavigationContr
         chartLayout.mode = chartLayoutMode
     }
 
-    // MARK: Navigation controller delegate
-
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-    }
-
 }
