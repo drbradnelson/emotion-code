@@ -61,6 +61,10 @@ final class ChartLayout: UICollectionViewLayout {
         return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
     }
 
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        return collectionView!.bounds.size != newBounds.size
+    }
+
 }
 
 extension ChartLayout: StoreDelegate {
@@ -93,17 +97,17 @@ private extension Rect {
     }
 }
 
-private extension Size {
+extension Size {
+
     var cgSize: CGSize {
         return CGSize(width: width, height: height)
     }
-}
 
-extension Size {
     init(cgSize: CGSize) {
         width = .init(cgSize.width)
         height = .init(cgSize.height)
     }
+
 }
 
 private extension Point {

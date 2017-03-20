@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E191a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J1V-Tc-VYI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,50 +39,34 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="2Lb-D5-bK2" customClass="ChartLayout" customModule="EmotionCode" customModuleProvider="target"/>
                         <cells>
-                            <collectionViewCell autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
+                            <collectionViewCell autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="NsJ-MK-7ts" customClass="ItemCollectionViewCell" customModule="EmotionCode" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-xH-BmN">
+                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udn-n3-ix2">
                                             <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udn-n3-ix2">
-                                            <rect key="frame" x="0.0" y="0.0" width="151" height="40"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="udn-n3-ix2" secondAttribute="trailing" id="0XQ-WD-TB6"/>
-                                    <constraint firstAttribute="trailing" secondItem="YUc-xH-BmN" secondAttribute="trailing" id="GTg-Wq-RC4"/>
-                                    <constraint firstAttribute="bottom" secondItem="YUc-xH-BmN" secondAttribute="bottom" id="UMY-IJ-IyZ"/>
-                                    <constraint firstItem="udn-n3-ix2" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leading" id="Vcx-v6-cwF"/>
-                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="gfg-jA-FPr"/>
-                                    <constraint firstAttribute="bottom" secondItem="udn-n3-ix2" secondAttribute="bottom" id="j1H-nN-VJO"/>
-                                    <constraint firstItem="YUc-xH-BmN" firstAttribute="leading" secondItem="NsJ-MK-7ts" secondAttribute="leading" id="p6N-Et-uSx"/>
-                                    <constraint firstItem="udn-n3-ix2" firstAttribute="top" secondItem="NsJ-MK-7ts" secondAttribute="top" id="piK-6q-npO"/>
-                                </constraints>
                                 <size key="customSize" width="151" height="40"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="oddRowColor">
-                                        <color key="value" red="0.55976581569999995" green="0.78158503769999998" blue="0.78176909689999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.11574623733758926" green="0.51861709356307983" blue="0.89603966474533081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="evenRowColor">
-                                        <color key="value" red="0.6580919623" green="0.8796262145" blue="0.9753685594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.74740558862686157" green="0.86260384321212769" blue="0.95822387933731079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="largeTitleLabel" destination="udn-n3-ix2" id="ln6-yQ-GmJ"/>
-                                    <outlet property="smallTitleLabel" destination="YUc-xH-BmN" id="r6f-Qc-lZV"/>
+                                    <outlet property="titleLabel" destination="udn-n3-ix2" id="Nba-HJ-jBO"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -117,11 +101,19 @@
                             <outlet property="delegate" destination="QSz-Q4-vOB" id="ZhF-VO-Po2"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="fbB-2s-k4P">
+                        <barButtonItem key="leftBarButtonItem" image="view-module" id="6ky-zv-IzB">
+                            <connections>
+                                <segue destination="6Gq-W8-PuU" kind="unwind" unwindAction="unwindToChartViewControllerWith:" id="VYq-ze-uMZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="3AH-pL-I16" kind="show" identifier="ShowEmotion" id="WiV-ZG-j5d"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhm-rH-PC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6Gq-W8-PuU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2864.8000000000002" y="525.78710644677665"/>
         </scene>
@@ -140,8 +132,16 @@
                             <outlet property="delegate" destination="3AH-pL-I16" id="hnf-qS-u5e"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="sel-u8-GRe">
+                        <barButtonItem key="leftBarButtonItem" image="view-module" id="3kV-HW-a0H">
+                            <connections>
+                                <segue destination="HPu-8n-Lei" kind="unwind" unwindAction="unwindToChartViewControllerWith:" id="76K-rM-4KW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJY-PR-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HPu-8n-Lei" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3625" y="526"/>
         </scene>
@@ -149,5 +149,6 @@
     <resources>
         <image name="Selected/Chart" width="32" height="32"/>
         <image name="Standard/Chart" width="32" height="32"/>
+        <image name="view-module" width="24" height="24"/>
     </resources>
 </document>

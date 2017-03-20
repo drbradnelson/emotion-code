@@ -1,5 +1,4 @@
 import UIKit
-import HotlineIO
 
 @UIApplicationMain final class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,8 +22,9 @@ import HotlineIO
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        let unreadCount = Hotline.sharedInstance().unreadCount()
-        UIApplication.shared.applicationIconBadgeNumber = unreadCount
+        Hotline.sharedInstance().unreadCount { count in
+            UIApplication.shared.applicationIconBadgeNumber = count
+        }
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

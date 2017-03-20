@@ -25,6 +25,7 @@ struct ChartLayoutProgram: Program {
     enum Event {
         case viewWillTransition
         case viewDidTransition
+        case systemDidSetViewSize(Size)
     }
 
     struct State {
@@ -33,11 +34,12 @@ struct ChartLayoutProgram: Program {
         let numberOfColumns: Int
         let topContentInset: Int
         let bottomContentInset: Int
-        let viewSize: Size
+        var viewSize: Size
 
         let minViewHeightForCompactLayout = 554
         let headerSize = Size(width: 30, height: 30)
         let itemHeight = 18
+        let itemPadding = 8
         let contentPadding = 10
         let sectionSpacing = Size(width: 5, height: 5)
         let itemSpacing = 10
@@ -56,6 +58,7 @@ struct ChartLayoutProgram: Program {
         let items: [IndexPath: Item]
         let columnHeaders: [IndexPath: Header]
         let rowHeaders: [IndexPath: Header]
+        let labelSizes: [IndexPath: Size]
     }
 
     enum Failure: Error {
@@ -112,6 +115,11 @@ struct ChartLayoutProgram: Program {
             case .emotion(let emotion, _):
                 state.mode = .emotion(emotion, isFocused: true)
             }
+        case .systemDidSetViewSize(let viewSize):
+            guard viewSize.width > 0, viewSize.height > 0 else {
+                return .failure(.invalidViewSize)
+            }
+            state.viewSize = viewSize
         }
         return .success()
     }
@@ -166,18 +174,15 @@ struct ChartLayoutProgram: Program {
         // MARK: Item heights
         //
 
-        let itemHeight: Int = {
-            guard
-                visibleViewSize.height >= state.minViewHeightForCompactLayout,
-                let maximumItemsCountInSection = state.itemsPerSection.max() else { return state.itemHeight }
-            let totalSpacing = state.contentPadding * 2 + state.headerSize.height + sectionSpacing.height * rowsCount
-            let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
-            return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
-        }()
-
         let itemHeights = sectionsRange.map { section -> Int in
             switch state.mode {
-            case .all: return itemHeight
+            case .all:
+                guard
+                    visibleViewSize.height >= state.minViewHeightForCompactLayout,
+                    let maximumItemsCountInSection = state.itemsPerSection.max() else { return state.itemHeight }
+                let totalSpacing = state.contentPadding * 2 + state.headerSize.height + sectionSpacing.height * rowsCount
+                let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
+                return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
             case .section:
                 let itemCount = state.itemsPerSection[section]
                 let totalPaddingHeight = state.contentPadding * 2
@@ -188,6 +193,34 @@ struct ChartLayoutProgram: Program {
                 return visibleViewSize.height - state.contentPadding * 2
             }
         }
+
+        //
+        // MARK: -
+        // MARK: Label sizes
+        //
+
+        let labelSizes: [IndexPath: Size] = {
+            switch state.mode {
+            case .all, .section:
+                return sectionsRange.reduce([:]) { labelSizes, section in
+                    let width = visibleViewSize.width - state.contentPadding * 2 - state.itemPadding * 2
+                    let itemCount = state.itemsPerSection[section]
+                    let totalPaddingHeight = state.contentPadding * 2
+                    let totalSpacingHeight = state.itemSpacing * (itemCount - 1)
+                    let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
+                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount))) - state.itemPadding * 2
+                    let size = Size(width: width, height: height)
+                    var labelSizes = labelSizes
+                    for item in 0..<itemCount {
+                        let indexPath = IndexPath(item: item, section: section)
+                        labelSizes[indexPath] = size
+                    }
+                    return labelSizes
+                }
+            case .emotion:
+                return [:]
+            }
+        }()
 
         //
         // MARK: -
@@ -459,7 +492,8 @@ struct ChartLayoutProgram: Program {
             chartSize: chartSize,
             items: items,
             columnHeaders: columnHeaders,
-            rowHeaders: rowHeaders
+            rowHeaders: rowHeaders,
+            labelSizes: labelSizes
         )
         return .success(view)
 

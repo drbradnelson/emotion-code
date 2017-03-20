@@ -16,4 +16,10 @@ extension UICollectionView {
         return items.map { item in IndexPath(item: item, section: section) }
     }
 
+    var visibleCellsWithIndexPaths: Zip2Sequence<[UICollectionViewCell], [IndexPath]> {
+        let cells = visibleCells
+        let indexPaths = cells.map { indexPath(for: $0)! }
+        return zip(cells, indexPaths)
+    }
+
 }

@@ -22,30 +22,46 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setDescriptionVisibleAlongsideTransition(true)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        chartLayout.store.dispatch(.viewDidTransition)
-        chartLayout.invalidateLayout()
+        layoutCellsAlongsideTransition()
+        showDescriptionAlongsideTransition()
+        setDescriptionSizeAlongsideTransition(with: transitionCoordinator)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        setDescriptionVisibleAlongsideTransition(false)
         chartLayout.store.dispatch(.viewWillTransition)
     }
 
-    private func setDescriptionVisibleAlongsideTransition(_ descriptionVisible: Bool) {
+    // MARK: Layout
+
+    private func showDescriptionAlongsideTransition() {
         transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
-            itemCell.largeTitleLabel.alpha = 0
-            itemCell.setEmotionDescriptionVisible(descriptionVisible)
-        }, completion: { [itemCell] _ in
-            if !descriptionVisible {
-                itemCell.removeEmotionDescriptionView()
-            }
+            itemCell.setEmotionDescriptionVisible(true)
+        }, completion: nil)
+    }
+
+    private func setDescriptionSizeAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+        coordinator?.animate(alongsideTransition: { [itemCell, collectionView, chartLayout] _ in
+            let indexPath = collectionView!.indexPath(for: itemCell)!
+            let size = chartLayout.store.view.items[indexPath]!.frame.size
+            itemCell.setEmotionDescriptionSize(to: size.cgSize)
+        }, completion: nil)
+    }
+
+    private func layoutCellsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
+        }, completion: { [chartLayout] context in
+            guard !context.isCancelled else { return }
+            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.invalidateLayout()
         })
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        setDescriptionSizeAlongsideTransition(with: coordinator)
     }
 
     // MARK: Cell
