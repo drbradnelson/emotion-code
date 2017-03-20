@@ -109,22 +109,22 @@ final class ChartLayoutProgramTests: XCTestCase, Tests {
     }
 
     func testLoadViewSizeInvalid1() {
-        let failure = expectFailure(with: .init(viewSize: (.init(width: 0, height: 10))))
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 0, height: 1))))
         expect(failure, .invalidViewSize)
     }
 
     func testLoadViewSizeInvalid2() {
-        let failure = expectFailure(with: .init(viewSize: (.init(width: -1, height: 10))))
+        let failure = expectFailure(with: .init(viewSize: (.init(width: -1, height: 1))))
         expect(failure, .invalidViewSize)
     }
 
     func testLoadViewSizeInvalid3() {
-        let failure = expectFailure(with: .init(viewSize: (.init(width: 10, height: 0))))
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 1, height: 0))))
         expect(failure, .invalidViewSize)
     }
 
     func testLoadViewSizeInvalid4() {
-        let failure = expectFailure(with: .init(viewSize: (.init(width: 10, height: -1))))
+        let failure = expectFailure(with: .init(viewSize: (.init(width: 1, height: -1))))
         expect(failure, .invalidViewSize)
     }
 
@@ -198,6 +198,40 @@ final class ChartLayoutProgramTests: XCTestCase, Tests {
             seed: .init(mode: .all)
         ))
         expect(failure, .invalidMode)
+    }
+
+    func testSystemDidSetViewSize1() {
+        let update = expectUpdate(for: .systemDidSetViewSize(.init(width: 1, height: 2)), state: .init(
+            seed: .init(viewSize: .init(width: 3, height: 4))
+        ))
+        expect(update?.state.viewSize, Size(width: 1, height: 2))
+    }
+
+    func testSystemDidSetViewSize2() {
+        let update = expectUpdate(for: .systemDidSetViewSize(.init(width: 7, height: 8)), state: .init(
+            seed: .init(viewSize: .init(width: 5, height: 6))
+        ))
+        expect(update?.state.viewSize, Size(width: 7, height: 8))
+    }
+
+    func testSystemDidSetViewSizeInvalid1() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 0, height: 1)), state: .init())
+        expect(failure, .invalidViewSize)
+    }
+
+    func testSystemDidSetViewSizeInvalid2() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: -1, height: 1)), state: .init())
+        expect(failure, .invalidViewSize)
+    }
+
+    func testSystemDidSetViewSizeInvalid3() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 1, height: 0)), state: .init())
+        expect(failure, .invalidViewSize)
+    }
+
+    func testSystemDidSetViewSizeInvalid4() {
+        let failure = expectFailure(for: .systemDidSetViewSize(.init(width: 1, height: -1)), state: .init())
+        expect(failure, .invalidViewSize)
     }
 
     // MARK: View

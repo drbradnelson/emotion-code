@@ -20,7 +20,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition()
+        layoutCellsAlongsideTransition(with: transitionCoordinator)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -40,8 +40,8 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    private func layoutCellsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
+    private func layoutCellsAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+        coordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
             collectionView!.visibleCellsWithIndexPaths.forEach(layout)
         }, completion: { [chartLayout] context in
             guard !context.isCancelled else { return }
@@ -72,6 +72,12 @@ final class ChartSectionViewController: UICollectionViewController {
         let chartDataSource = collectionView!.dataSource as! ChartViewControllerDataSource
         let emotion = chartDataSource.chart.section(atIndex: selectedIndexPath.section).emotions[selectedIndexPath.item]
         destination.set(emotion)
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        layoutCellsAlongsideTransition(with: coordinator)
     }
 
 }

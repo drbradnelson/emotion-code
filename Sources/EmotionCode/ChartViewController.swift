@@ -17,7 +17,8 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition()
+        layoutCellsAlongsideTransition(with: transitionCoordinator)
+        removeEmotionDescriptionsAlongsideTransition()
         layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.columnKind, ChartHeaderView.rowKind])
     }
 
@@ -46,9 +47,14 @@ final class ChartViewController: UICollectionViewController {
         cell.layoutIfNeeded()
     }
 
-    private func layoutCellsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
+    private func layoutCellsAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+        coordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
             collectionView!.visibleCellsWithIndexPaths.forEach(layout)
+        }, completion: nil)
+    }
+
+    private func removeEmotionDescriptionsAlongsideTransition() {
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
             for cell in collectionView!.visibleCells {
                 guard let cell = cell as? ItemCollectionViewCell else { return }
                 cell.setEmotionDescriptionVisible(false)
@@ -84,6 +90,12 @@ final class ChartViewController: UICollectionViewController {
     }
 
     @IBAction func unwindToChartViewController(with segue: UIStoryboardSegue) {}
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        layoutCellsAlongsideTransition(with: coordinator)
+    }
 
 }
 

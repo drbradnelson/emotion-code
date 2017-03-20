@@ -61,6 +61,10 @@ final class ChartLayout: UICollectionViewLayout {
         return UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: elementKind, with: indexPath, header: header)
     }
 
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        return collectionView!.bounds.size != newBounds.size
+    }
+
 }
 
 extension ChartLayout: StoreDelegate {
