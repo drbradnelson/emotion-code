@@ -17,14 +17,19 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition(with: transitionCoordinator)
-        removeEmotionDescriptionsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.columnKind, ChartHeaderView.rowKind])
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.columnKind, ChartHeaderView.rowKind])
+        layoutContentAlongsideTransition(with: transitionCoordinator)
+        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
+            for cell in collectionView!.visibleCells {
+                let cell = cell as! ItemCollectionViewCell
+                cell.setEmotionDescriptionVisible(false)
+            }
+        }, completion: { [collectionView] context in
+            guard !context.isCancelled else { return }
+            for cell in collectionView!.visibleCells {
+                let cell = cell as! ItemCollectionViewCell
+                cell.removeEmotionDescriptionView()
+            }
+        })
     }
 
     // MARK: Collection view delegate
@@ -39,40 +44,21 @@ final class ChartViewController: UICollectionViewController {
 
     // MARK: Layout
 
+    private func layoutContentAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+        coordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
+            collectionView!.visibleCellsWithIndexPaths.forEach(layout)
+            let kinds = [ChartHeaderView.columnKind, ChartHeaderView.rowKind]
+            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
+            for view in supplementaryViews { view.layoutIfNeeded() }
+        }, completion: nil)
+    }
+
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
         let cell = cell as! ItemCollectionViewCell
         let labelSize = chartLayout.store.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.shrinkTitleLabel()
         cell.layoutIfNeeded()
-    }
-
-    private func layoutCellsAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
-        coordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
-            collectionView!.visibleCellsWithIndexPaths.forEach(layout)
-        }, completion: nil)
-    }
-
-    private func removeEmotionDescriptionsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            for cell in collectionView!.visibleCells {
-                guard let cell = cell as? ItemCollectionViewCell else { return }
-                cell.setEmotionDescriptionVisible(false)
-            }
-        }, completion: { [collectionView] context in
-            guard !context.isCancelled else { return }
-            for cell in collectionView!.visibleCells {
-                guard let cell = cell as? ItemCollectionViewCell else { return }
-                cell.removeEmotionDescriptionView()
-            }
-        })
-    }
-
-    private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
-            supplementaryViews.forEach { $0.layoutIfNeeded() }
-        }, completion: nil)
     }
 
     // MARK: Storyboard segue
@@ -94,7 +80,7 @@ final class ChartViewController: UICollectionViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
-        layoutCellsAlongsideTransition(with: coordinator)
+        layoutContentAlongsideTransition(with: coordinator)
     }
 
 }
