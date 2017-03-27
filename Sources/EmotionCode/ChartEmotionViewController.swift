@@ -52,9 +52,9 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     // MARK: Cell
 
-    private var itemCell: ItemCollectionViewCell {
+    private var itemCell: EmotionViewCell {
         let indexPath = collectionView!.indexPathForSelectedItem!
-        return collectionView!.cellForItem(at: indexPath) as! ItemCollectionViewCell
+        return collectionView!.cellForItem(at: indexPath) as! EmotionViewCell
     }
 
 }

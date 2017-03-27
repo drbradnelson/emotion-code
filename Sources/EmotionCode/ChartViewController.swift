@@ -34,13 +34,13 @@ final class ChartViewController: UICollectionViewController {
         layoutContentAlongsideTransition(with: transitionCoordinator)
         transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
             for cell in collectionView!.visibleCells {
-                let cell = cell as! ItemCollectionViewCell
+                let cell = cell as! EmotionViewCell
                 cell.setEmotionDescriptionVisible(false)
             }
         }, completion: { [collectionView] context in
             guard !context.isCancelled else { return }
             for cell in collectionView!.visibleCells {
-                let cell = cell as! ItemCollectionViewCell
+                let cell = cell as! EmotionViewCell
                 cell.removeEmotionDescriptionView()
             }
         })
@@ -68,7 +68,7 @@ final class ChartViewController: UICollectionViewController {
     }
 
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
-        let cell = cell as! ItemCollectionViewCell
+        let cell = cell as! EmotionViewCell
         let labelSize = store.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.shrinkTitleLabel()

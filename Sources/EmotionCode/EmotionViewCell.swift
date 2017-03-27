@@ -1,10 +1,10 @@
 import UIKit
 
-final class ItemCollectionViewCell: UICollectionViewCell {
+final class EmotionViewCell: UICollectionViewCell {
 
     // MARK: Reuse identifier
 
-    static let preferredReuseIdentifier = "ItemCell"
+    static let preferredReuseIdentifier = "EmotionCell"
 
     // MARK: View Lifecycle
 

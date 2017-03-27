@@ -54,7 +54,7 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
-        let cell = cell as! ItemCollectionViewCell
+        let cell = cell as! EmotionViewCell
         let labelSize = chartLayout.store.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.enlargeTitleLabel()
