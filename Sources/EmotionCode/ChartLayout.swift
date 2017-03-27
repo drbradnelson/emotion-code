@@ -5,25 +5,10 @@ final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    var store: Store<ChartLayoutProgram>!
-    var mode: ChartLayoutProgram.Mode!
+    private var store: Store<ChartLayoutProgram>!
 
-    override func prepare() {
-        super.prepare()
-        guard store == nil else { return }
-        let sections = 0..<collectionView!.numberOfSections
-        let itemsPerSection = sections.map(collectionView!.numberOfItems)
-        store = ChartLayoutProgram.makeStore(
-            delegate: self,
-            seed: .init(
-                mode: mode,
-                itemsPerSection: itemsPerSection,
-                numberOfColumns: ChartLayout.numberOfColumns,
-                topContentInset: .init(collectionView!.contentInset.top),
-                bottomContentInset: .init(collectionView!.contentInset.bottom),
-                viewSize: .init(cgSize: collectionView!.bounds.size)
-            )
-        )
+    func set(_ store: Store<ChartLayoutProgram>) {
+        self.store = store
     }
 
     override var collectionViewContentSize: CGSize {
@@ -64,13 +49,6 @@ final class ChartLayout: UICollectionViewLayout {
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return collectionView!.bounds.size != newBounds.size
     }
-
-}
-
-extension ChartLayout: StoreDelegate {
-
-    func store(_ store: Store<ChartLayoutProgram>, didUpdate view: ChartLayoutProgram.View) {}
-    func store(_ store: Store<ChartLayoutProgram>, didRequest action: ChartLayoutProgram.Action) {}
 
 }
 

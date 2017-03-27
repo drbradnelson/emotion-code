@@ -1,16 +1,30 @@
 import UIKit
+import Elm
 
 final class ChartViewController: UICollectionViewController {
 
-    private var chartLayout: ChartLayout {
-        return collectionViewLayout as! ChartLayout
-    }
+    private var store: Store<ChartLayoutProgram>!
 
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        chartLayout.mode = chartLayoutMode(with: collectionView!)
+        navigationController!.interactivePopGestureRecognizer!.isEnabled = false
+        let sectionsRange = 0..<collectionView!.numberOfSections
+        let itemsPerSection = sectionsRange.map(collectionView!.numberOfItems)
+        store = ChartLayoutProgram.makeStore(
+            delegate: self,
+            seed: ChartLayoutProgram.Seed(
+                mode: .all,
+                itemsPerSection: itemsPerSection,
+                numberOfColumns: ChartLayout.numberOfColumns,
+                topContentInset: .init(collectionView!.contentInset.top),
+                bottomContentInset: .init(collectionView!.contentInset.bottom),
+                viewSize: .init(cgSize: collectionView!.bounds.size)
+            )
+        )
+        let chartLayout = collectionViewLayout as! ChartLayout
+        chartLayout.set(store)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
@@ -55,7 +69,7 @@ final class ChartViewController: UICollectionViewController {
 
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
         let cell = cell as! ItemCollectionViewCell
-        let labelSize = chartLayout.store.view.labelSizes[indexPath]!
+        let labelSize = store.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.shrinkTitleLabel()
         cell.layoutIfNeeded()
@@ -79,9 +93,16 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
         layoutContentAlongsideTransition(with: coordinator)
     }
+
+}
+
+extension ChartViewController: StoreDelegate {
+
+    func store(_ store: Store<ChartLayoutProgram>, didUpdate view: ChartLayoutProgram.View) {}
+    func store(_ store: Store<ChartLayoutProgram>, didRequest action: ChartLayoutProgram.Action) {}
 
 }
 
