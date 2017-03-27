@@ -14,7 +14,7 @@ final class ChartViewController: UICollectionViewController {
         let itemsPerSection = sectionsRange.map(collectionView!.numberOfItems)
         store = ChartLayoutProgram.makeStore(
             delegate: self,
-            seed: ChartLayoutProgram.Seed(
+            seed: .init(
                 mode: .all,
                 itemsPerSection: itemsPerSection,
                 numberOfColumns: ChartLayout.numberOfColumns,
@@ -103,13 +103,5 @@ extension ChartViewController: StoreDelegate {
 
     func store(_ store: Store<ChartLayoutProgram>, didUpdate view: ChartLayoutProgram.View) {}
     func store(_ store: Store<ChartLayoutProgram>, didRequest action: ChartLayoutProgram.Action) {}
-
-}
-
-extension ChartViewController: ChartPresenter {
-
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
-        return .all
-    }
 
 }

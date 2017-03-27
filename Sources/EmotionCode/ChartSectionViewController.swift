@@ -84,12 +84,3 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
 }
-
-extension ChartSectionViewController: ChartPresenter {
-
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
-        let selectedSection = collectionView.indexPathForSelectedItem!.section
-        return .section(selectedSection, isFocused: false)
-    }
-
-}

@@ -5,7 +5,7 @@ final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    private var store: Store<ChartLayoutProgram>!
+    var store: Store<ChartLayoutProgram>!
 
     func set(_ store: Store<ChartLayoutProgram>) {
         self.store = store
