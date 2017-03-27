@@ -1,36 +1,59 @@
 import UIKit
+import Elm
 
 final class ChartViewController: UICollectionViewController {
 
-    private var chartLayout: ChartLayout {
-        return collectionViewLayout as! ChartLayout
+    private var store: Store<ChartProgram>!
+
+    private var visibleEmotionCells: [EmotionViewCell] {
+        return collectionView!.visibleCells as! [EmotionViewCell]
+    }
+
+    private var visibleEmotionCellsWithIndexPaths: Zip2Sequence<[EmotionViewCell], [IndexPath]> {
+        let visibleEmotionCells = collectionView!.visibleCells as! [EmotionViewCell]
+        let indexPaths = visibleEmotionCells.map { cell in collectionView!.indexPath(for: cell)! }
+        return zip(visibleEmotionCells, indexPaths)
     }
 
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        chartLayout.mode = chartLayoutMode(with: collectionView!)
+        navigationController!.interactivePopGestureRecognizer!.isEnabled = false
+        let sectionsRange = 0..<collectionView!.numberOfSections
+        let itemsPerSection = sectionsRange.map(collectionView!.numberOfItems)
+        store = ChartProgram.makeStore(
+            delegate: self,
+            seed: .init(
+                mode: .all,
+                itemsPerSection: itemsPerSection,
+                numberOfColumns: ChartLayout.numberOfColumns,
+                topContentInset: .init(collectionView!.contentInset.top),
+                bottomContentInset: .init(collectionView!.contentInset.bottom),
+                viewSize: .init(cgSize: collectionView!.bounds.size)
+            )
+        )
+        let chartLayout = collectionViewLayout as! ChartLayout
+        chartLayout.set(store)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.columnKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
         collectionView!.register(ChartHeaderView.self, forSupplementaryViewOfKind: ChartHeaderView.rowKind, withReuseIdentifier: ChartHeaderView.preferredReuseIdentifier)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition(with: transitionCoordinator)
-        removeEmotionDescriptionsAlongsideTransition()
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.columnKind, ChartHeaderView.rowKind])
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        layoutSupplementaryViewsAlongsideTransition(withKinds: [ChartHeaderView.columnKind, ChartHeaderView.rowKind])
+        layoutContentAlongsideTransition(with: transitionCoordinator)
+        transitionCoordinator?.animate(alongsideTransition: { [visibleEmotionCells] _ in
+            for cell in visibleEmotionCells { cell.setEmotionDescriptionVisible(false) }
+        }, completion: { [visibleEmotionCells] context in
+            guard !context.isCancelled else { return }
+            for cell in visibleEmotionCells { cell.removeEmotionDescriptionView() }
+        })
     }
 
     // MARK: Collection view delegate
 
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        layout(cell, with: indexPath)
+        layout(cell as! EmotionViewCell, with: indexPath)
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -39,40 +62,20 @@ final class ChartViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
-        let cell = cell as! ItemCollectionViewCell
-        let labelSize = chartLayout.store.view.labelSizes[indexPath]!
+    private func layoutContentAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+        coordinator?.animate(alongsideTransition: { [visibleEmotionCellsWithIndexPaths, collectionView, layout] _ in
+            visibleEmotionCellsWithIndexPaths.forEach(layout)
+            let kinds = [ChartHeaderView.columnKind, ChartHeaderView.rowKind]
+            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
+            for view in supplementaryViews { view.layoutIfNeeded() }
+        }, completion: nil)
+    }
+
+    private func layout(_ cell: EmotionViewCell, with indexPath: IndexPath) {
+        let labelSize = store.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.shrinkTitleLabel()
         cell.layoutIfNeeded()
-    }
-
-    private func layoutCellsAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
-        coordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
-            collectionView!.visibleCellsWithIndexPaths.forEach(layout)
-        }, completion: nil)
-    }
-
-    private func removeEmotionDescriptionsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            for cell in collectionView!.visibleCells {
-                guard let cell = cell as? ItemCollectionViewCell else { return }
-                cell.setEmotionDescriptionVisible(false)
-            }
-        }, completion: { [collectionView] context in
-            guard !context.isCancelled else { return }
-            for cell in collectionView!.visibleCells {
-                guard let cell = cell as? ItemCollectionViewCell else { return }
-                cell.removeEmotionDescriptionView()
-            }
-        })
-    }
-
-    private func layoutSupplementaryViewsAlongsideTransition(withKinds kinds: [String]) {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
-            supplementaryViews.forEach { $0.layoutIfNeeded() }
-        }, completion: nil)
     }
 
     // MARK: Storyboard segue
@@ -93,16 +96,15 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
-        layoutCellsAlongsideTransition(with: coordinator)
+        store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        layoutContentAlongsideTransition(with: coordinator)
     }
 
 }
 
-extension ChartViewController: ChartPresenter {
+extension ChartViewController: StoreDelegate {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
-        return .all
-    }
+    func store(_ store: Store<ChartProgram>, didUpdate view: ChartProgram.View) {}
+    func store(_ store: Store<ChartProgram>, didRequest action: ChartProgram.Action) {}
 
 }

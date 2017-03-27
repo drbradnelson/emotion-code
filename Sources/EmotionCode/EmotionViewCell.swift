@@ -1,10 +1,10 @@
 import UIKit
 
-final class ItemCollectionViewCell: UICollectionViewCell {
+final class EmotionViewCell: UICollectionViewCell {
 
     // MARK: Reuse identifier
 
-    static let preferredReuseIdentifier = "ItemCell"
+    static let preferredReuseIdentifier = "EmotionCell"
 
     // MARK: View Lifecycle
 
@@ -69,10 +69,6 @@ final class ItemCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(emotionDescriptionView)
     }
 
-    func setEmotionDescriptionSize(to size: CGSize) {
-        emotionDescriptionView?.frame.size = size
-    }
-
     func removeEmotionDescriptionView() {
         emotionDescriptionView?.removeFromSuperview()
     }
@@ -80,6 +76,10 @@ final class ItemCollectionViewCell: UICollectionViewCell {
     func setEmotionDescriptionVisible(_ descriptionVisible: Bool) {
         emotionDescriptionView?.alpha = descriptionVisible ? 1 : 0
         titleLabel.alpha = descriptionVisible ? 0 : 1
+    }
+
+    func layoutEmotionDescriptionView() {
+        emotionDescriptionView?.frame = contentView.bounds
     }
 
 }

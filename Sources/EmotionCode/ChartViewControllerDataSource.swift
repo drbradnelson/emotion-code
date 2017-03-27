@@ -13,7 +13,7 @@ final class ChartViewControllerDataSource: NSObject, UICollectionViewDataSource 
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.preferredReuseIdentifier, for: indexPath) as! ItemCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EmotionViewCell.preferredReuseIdentifier, for: indexPath) as! EmotionViewCell
         let chartSection = chart.section(atIndex: indexPath.section)
         let emotion = chartSection.emotions[indexPath.item]
         cell.configure(with: emotion)

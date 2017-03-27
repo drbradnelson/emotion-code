@@ -20,7 +20,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition(with: transitionCoordinator)
+        layoutContentAlongsideTransition(with: transitionCoordinator)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -40,9 +40,12 @@ final class ChartSectionViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    private func layoutCellsAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+    private func layoutContentAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
         coordinator?.animate(alongsideTransition: { [collectionView, layout] _ in
             collectionView!.visibleCellsWithIndexPaths.forEach(layout)
+            let kinds = [ChartHeaderView.columnKind, ChartHeaderView.rowKind]
+            let supplementaryViews = kinds.flatMap(collectionView!.visibleSupplementaryViews)
+            for view in supplementaryViews { view.layoutIfNeeded() }
         }, completion: { [chartLayout] context in
             guard !context.isCancelled else { return }
             chartLayout.store.dispatch(.viewDidTransition)
@@ -51,7 +54,7 @@ final class ChartSectionViewController: UICollectionViewController {
     }
 
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
-        let cell = cell as! ItemCollectionViewCell
+        let cell = cell as! EmotionViewCell
         let labelSize = chartLayout.store.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.enlargeTitleLabel()
@@ -77,16 +80,7 @@ final class ChartSectionViewController: UICollectionViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
-        layoutCellsAlongsideTransition(with: coordinator)
-    }
-
-}
-
-extension ChartSectionViewController: ChartPresenter {
-
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
-        let selectedSection = collectionView.indexPathForSelectedItem!.section
-        return .section(selectedSection, isFocused: false)
+        layoutContentAlongsideTransition(with: coordinator)
     }
 
 }

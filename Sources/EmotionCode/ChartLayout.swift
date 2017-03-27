@@ -5,25 +5,10 @@ final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    var store: Store<ChartLayoutProgram>!
-    var mode: ChartLayoutProgram.Mode!
+    var store: Store<ChartProgram>!
 
-    override func prepare() {
-        super.prepare()
-        guard store == nil else { return }
-        let sections = 0..<collectionView!.numberOfSections
-        let itemsPerSection = sections.map(collectionView!.numberOfItems)
-        store = ChartLayoutProgram.makeStore(
-            delegate: self,
-            seed: .init(
-                mode: mode,
-                itemsPerSection: itemsPerSection,
-                numberOfColumns: ChartLayout.numberOfColumns,
-                topContentInset: .init(collectionView!.contentInset.top),
-                bottomContentInset: .init(collectionView!.contentInset.bottom),
-                viewSize: .init(cgSize: collectionView!.bounds.size)
-            )
-        )
+    func set(_ store: Store<ChartProgram>) {
+        self.store = store
     }
 
     override var collectionViewContentSize: CGSize {
@@ -49,7 +34,7 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let header: ChartLayoutProgram.Header?
+        let header: ChartProgram.Header?
         switch elementKind {
         case ChartHeaderView.columnKind:
             header = store.view.columnHeaders[indexPath]
@@ -67,22 +52,15 @@ final class ChartLayout: UICollectionViewLayout {
 
 }
 
-extension ChartLayout: StoreDelegate {
-
-    func store(_ store: Store<ChartLayoutProgram>, didUpdate view: ChartLayoutProgram.View) {}
-    func store(_ store: Store<ChartLayoutProgram>, didRequest action: ChartLayoutProgram.Action) {}
-
-}
-
 private extension UICollectionViewLayoutAttributes {
 
-    convenience init(indexPath: IndexPath, item: ChartLayoutProgram.Item) {
+    convenience init(indexPath: IndexPath, item: ChartProgram.Item) {
         self.init(forCellWith: indexPath)
         self.frame = item.frame.cgRect
         self.alpha = .init(item.alpha)
     }
 
-    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutProgram.Header?) {
+    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartProgram.Header?) {
         guard let header = header else { return nil }
         self.init(forSupplementaryViewOfKind: elementKind, with: indexPath)
         self.frame = header.frame.cgRect

@@ -22,9 +22,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        layoutCellsAlongsideTransition()
-        showDescriptionAlongsideTransition()
-        setDescriptionSizeAlongsideTransition(with: transitionCoordinator)
+        layoutContentAlongsideTransition(with: transitionCoordinator)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -34,23 +32,11 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     // MARK: Layout
 
-    private func showDescriptionAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [itemCell] _ in
+    private func layoutContentAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
+        coordinator?.animate(alongsideTransition: { [collectionView, itemCell] _ in
+            for cell in collectionView!.visibleCells { cell.layoutIfNeeded() }
             itemCell.setEmotionDescriptionVisible(true)
-        }, completion: nil)
-    }
-
-    private func setDescriptionSizeAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
-        coordinator?.animate(alongsideTransition: { [itemCell, collectionView, chartLayout] _ in
-            let indexPath = collectionView!.indexPath(for: itemCell)!
-            let size = chartLayout.store.view.items[indexPath]!.frame.size
-            itemCell.setEmotionDescriptionSize(to: size.cgSize)
-        }, completion: nil)
-    }
-
-    private func layoutCellsAlongsideTransition() {
-        transitionCoordinator?.animate(alongsideTransition: { [collectionView] _ in
-            collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
+            itemCell.layoutEmotionDescriptionView()
         }, completion: { [chartLayout] context in
             guard !context.isCancelled else { return }
             chartLayout.store.dispatch(.viewDidTransition)
@@ -61,23 +47,14 @@ final class ChartEmotionViewController: UICollectionViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
-        setDescriptionSizeAlongsideTransition(with: coordinator)
+        layoutContentAlongsideTransition(with: coordinator)
     }
 
     // MARK: Cell
 
-    private var itemCell: ItemCollectionViewCell {
+    private var itemCell: EmotionViewCell {
         let indexPath = collectionView!.indexPathForSelectedItem!
-        return collectionView!.cellForItem(at: indexPath) as! ItemCollectionViewCell
-    }
-
-}
-
-extension ChartEmotionViewController: ChartPresenter {
-
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
-        let selectedIndexPath = collectionView.indexPathForSelectedItem!
-        return .emotion(selectedIndexPath, isFocused: false)
+        return collectionView!.cellForItem(at: indexPath) as! EmotionViewCell
     }
 
 }
