@@ -5,9 +5,9 @@ import Elm
 
 // swiftlint:disable type_body_length
 
-final class ChartLayoutProgramTests: XCTestCase, Tests {
+final class ChartProgramTests: XCTestCase, Tests {
 
-    typealias Program = ChartLayoutProgram
+    typealias Program = ChartProgram
 
     func fail(_ message: String, file: StaticString, line: Int) {
         XCTFail(message, file: file, line: UInt(line))
@@ -1536,7 +1536,7 @@ final class ChartLayoutProgramTests: XCTestCase, Tests {
 
 }
 
-typealias Program = ChartLayoutProgram
+typealias Program = ChartProgram
 
 extension Program.Seed {
 

@@ -5,9 +5,9 @@ final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    var store: Store<ChartLayoutProgram>!
+    var store: Store<ChartProgram>!
 
-    func set(_ store: Store<ChartLayoutProgram>) {
+    func set(_ store: Store<ChartProgram>) {
         self.store = store
     }
 
@@ -34,7 +34,7 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let header: ChartLayoutProgram.Header?
+        let header: ChartProgram.Header?
         switch elementKind {
         case ChartHeaderView.columnKind:
             header = store.view.columnHeaders[indexPath]
@@ -54,13 +54,13 @@ final class ChartLayout: UICollectionViewLayout {
 
 private extension UICollectionViewLayoutAttributes {
 
-    convenience init(indexPath: IndexPath, item: ChartLayoutProgram.Item) {
+    convenience init(indexPath: IndexPath, item: ChartProgram.Item) {
         self.init(forCellWith: indexPath)
         self.frame = item.frame.cgRect
         self.alpha = .init(item.alpha)
     }
 
-    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutProgram.Header?) {
+    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartProgram.Header?) {
         guard let header = header else { return nil }
         self.init(forSupplementaryViewOfKind: elementKind, with: indexPath)
         self.frame = header.frame.cgRect

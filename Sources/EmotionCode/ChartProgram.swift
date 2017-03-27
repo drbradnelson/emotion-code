@@ -5,7 +5,7 @@ import Elm
 // swiftlint:disable cyclomatic_complexity
 // swiftlint:disable type_body_length
 
-struct ChartLayoutProgram: Program {
+struct ChartProgram: Program {
 
     struct Seed {
         let mode: Mode

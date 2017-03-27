@@ -3,7 +3,7 @@ import Elm
 
 final class ChartViewController: UICollectionViewController {
 
-    private var store: Store<ChartLayoutProgram>!
+    private var store: Store<ChartProgram>!
 
     // MARK: View lifecycle
 
@@ -12,7 +12,7 @@ final class ChartViewController: UICollectionViewController {
         navigationController!.interactivePopGestureRecognizer!.isEnabled = false
         let sectionsRange = 0..<collectionView!.numberOfSections
         let itemsPerSection = sectionsRange.map(collectionView!.numberOfItems)
-        store = ChartLayoutProgram.makeStore(
+        store = ChartProgram.makeStore(
             delegate: self,
             seed: .init(
                 mode: .all,
@@ -101,7 +101,7 @@ final class ChartViewController: UICollectionViewController {
 
 extension ChartViewController: StoreDelegate {
 
-    func store(_ store: Store<ChartLayoutProgram>, didUpdate view: ChartLayoutProgram.View) {}
-    func store(_ store: Store<ChartLayoutProgram>, didRequest action: ChartLayoutProgram.Action) {}
+    func store(_ store: Store<ChartProgram>, didUpdate view: ChartProgram.View) {}
+    func store(_ store: Store<ChartProgram>, didRequest action: ChartProgram.Action) {}
 
 }
