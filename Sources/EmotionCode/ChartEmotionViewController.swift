@@ -29,7 +29,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        chartLayout.store.dispatch(.viewWillTransition)
+        chartLayout.core.viewWillTransition()
     }
 
     // MARK: Layout
@@ -43,7 +43,7 @@ final class ChartEmotionViewController: UICollectionViewController {
     private func setDescriptionSizeAlongsideTransition(with coordinator: UIViewControllerTransitionCoordinator?) {
         coordinator?.animate(alongsideTransition: { [itemCell, collectionView, chartLayout] _ in
             let indexPath = collectionView!.indexPath(for: itemCell)!
-            let size = chartLayout.store.view.items[indexPath]!.frame.size
+            let size = chartLayout.core.view.items[indexPath]!.frame.size
             itemCell.setEmotionDescriptionSize(to: size.cgSize)
         }, completion: nil)
     }
@@ -53,14 +53,14 @@ final class ChartEmotionViewController: UICollectionViewController {
             collectionView!.visibleCells.forEach { $0.layoutIfNeeded() }
         }, completion: { [chartLayout] context in
             guard !context.isCancelled else { return }
-            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.core.viewDidTransition()
             chartLayout.invalidateLayout()
         })
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        chartLayout.core.systemDidSet(viewSize: .init(cgSize: size))
         setDescriptionSizeAlongsideTransition(with: coordinator)
     }
 
@@ -75,7 +75,7 @@ final class ChartEmotionViewController: UICollectionViewController {
 
 extension ChartEmotionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutCore.Mode {
         let selectedIndexPath = collectionView.indexPathForSelectedItem!
         return .emotion(selectedIndexPath, isFocused: false)
     }

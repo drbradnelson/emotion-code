@@ -41,7 +41,7 @@ final class ChartViewController: UICollectionViewController {
 
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
         let cell = cell as! ItemCollectionViewCell
-        let labelSize = chartLayout.store.view.labelSizes[indexPath]!
+        let labelSize = chartLayout.core.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.shrinkTitleLabel()
         cell.layoutIfNeeded()
@@ -93,7 +93,7 @@ final class ChartViewController: UICollectionViewController {
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        chartLayout.core.systemDidSet(viewSize: .init(cgSize: size))
         layoutCellsAlongsideTransition(with: coordinator)
     }
 
@@ -101,7 +101,7 @@ final class ChartViewController: UICollectionViewController {
 
 extension ChartViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutCore.Mode {
         return .all
     }
 

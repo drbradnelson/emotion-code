@@ -2,6 +2,6 @@ import UIKit
 
 protocol ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutCore.Mode
 
 }
