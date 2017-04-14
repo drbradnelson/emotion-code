@@ -4,7 +4,7 @@ import Foundation
 // swiftlint:disable cyclomatic_complexity
 // swiftlint:disable type_body_length
 
-class ChartLayoutCore {
+final class ChartLayoutCore {
 
     enum Mode {
         case all
@@ -12,12 +12,12 @@ class ChartLayoutCore {
         case emotion(IndexPath, isFocused: Bool)
     }
 
-    var mode: Mode
-    let itemsPerSection: [Int]
-    let numberOfColumns: Int
-    let topContentInset: Int
-    let bottomContentInset: Int
-    var viewSize: Size
+    private var mode: Mode
+    private let itemsPerSection: [Int]
+    private let numberOfColumns: Int
+    private let topContentInset: Int
+    private let bottomContentInset: Int
+    private var viewSize: Size
 
     init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
         self.mode = mode
@@ -61,7 +61,7 @@ class ChartLayoutCore {
     func viewWillTransition() {
         switch mode {
         case .all:
-//            throw Failure.invalidMode
+            //            throw Failure.invalidMode
             return
         case .section(let section, _):
             mode = .section(section, isFocused: false)
@@ -74,7 +74,7 @@ class ChartLayoutCore {
     func viewDidTransition() {
         switch mode {
         case .all:
-//            throw Failure.invalidMode
+            //            throw Failure.invalidMode
             return
         case .section(let section, _):
             mode = .section(section, isFocused: true)
@@ -86,7 +86,7 @@ class ChartLayoutCore {
 
     func systemDidSet(viewSize: Size) {
         guard viewSize.width > 0, viewSize.height > 0 else {
-//            throw Failure.invalidViewSize
+            //            throw Failure.invalidViewSize
             return
         }
         self.viewSize = viewSize
