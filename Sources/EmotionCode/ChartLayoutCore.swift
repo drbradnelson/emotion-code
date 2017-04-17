@@ -12,13 +12,6 @@ final class ChartLayoutCore {
         case emotion(IndexPath, isFocused: Bool)
     }
 
-    private var mode: Mode
-    private let itemsPerSection: [Int]
-    private let numberOfColumns: Int
-    private let topContentInset: Int
-    private let bottomContentInset: Int
-    private var viewSize: Size
-
     init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
         self.mode = mode
         self.itemsPerSection = itemsPerSection
@@ -28,13 +21,22 @@ final class ChartLayoutCore {
         self.viewSize = viewSize
     }
 
-    private let minViewHeightForCompactLayout = 554
-    private let headerSize = Size(width: 30, height: 30)
-    private let itemHeight = 18
-    private let itemPadding = 8
-    private let contentPadding = 10
-    private let sectionSpacing = Size(width: 5, height: 5)
-    private let itemSpacing = 10
+    private var mode: Mode
+    private let itemsPerSection: [Int]
+    private let numberOfColumns: Int
+    private let topContentInset: Int
+    private let bottomContentInset: Int
+    private var viewSize: Size
+
+    private struct Parameters {
+        static let minViewHeightForCompactLayout = 554
+        static let headerSize = Size(width: 30, height: 30)
+        static let itemHeight = 18
+        static let itemPadding = 8
+        static let contentPadding = 10
+        static let sectionSpacing = Size(width: 5, height: 5)
+        static let itemSpacing = 10
+    }
 
     struct Item {
         let frame: Rect
@@ -124,10 +126,10 @@ final class ChartLayoutCore {
         let sectionSpacing: Size = {
             switch mode {
             case .all:
-                return self.sectionSpacing
+                return Parameters.sectionSpacing
             case .section, .emotion:
-                let width = contentPadding * 2
-                let height = contentPadding + max(topContentInset, bottomContentInset)
+                let width = Parameters.contentPadding * 2
+                let height = Parameters.contentPadding + max(topContentInset, bottomContentInset)
                 return .init(width: width, height: height)
             }
         }()
@@ -135,7 +137,7 @@ final class ChartLayoutCore {
         let itemSpacing: Int = {
             switch mode {
             case .all: return 0
-            case .section: return self.itemSpacing
+            case .section: return Parameters.itemSpacing
             case .emotion: return sectionSpacing.height
             }
         }()
@@ -149,19 +151,19 @@ final class ChartLayoutCore {
             switch mode {
             case .all:
                 guard
-                    visibleViewSize.height >= minViewHeightForCompactLayout,
-                    let maximumItemsCountInSection = itemsPerSection.max() else { return itemHeight }
-                let totalSpacing = contentPadding * 2 + headerSize.height + sectionSpacing.height * rowsCount
+                    visibleViewSize.height >= Parameters.minViewHeightForCompactLayout,
+                    let maximumItemsCountInSection = itemsPerSection.max() else { return Parameters.itemHeight }
+                let totalSpacing = Parameters.contentPadding * 2 + Parameters.headerSize.height + sectionSpacing.height * rowsCount
                 let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
                 return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
             case .section:
                 let itemCount = itemsPerSection[section]
-                let totalPaddingHeight = contentPadding * 2
+                let totalPaddingHeight = Parameters.contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
                 let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
                 return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
-                return visibleViewSize.height - contentPadding * 2
+                return visibleViewSize.height - Parameters.contentPadding * 2
             }
         }
 
@@ -174,12 +176,12 @@ final class ChartLayoutCore {
             switch mode {
             case .all, .section:
                 return sectionsRange.reduce([:]) { labelSizes, section in
-                    let width = visibleViewSize.width - contentPadding * 2 - itemPadding * 2
+                    let width = visibleViewSize.width - Parameters.contentPadding * 2 - Parameters.itemPadding * 2
                     let itemCount = itemsPerSection[section]
-                    let totalPaddingHeight = contentPadding * 2
+                    let totalPaddingHeight = Parameters.contentPadding * 2
                     let totalSpacingHeight = itemSpacing * (itemCount - 1)
                     let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
-                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount))) - itemPadding * 2
+                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount))) - Parameters.itemPadding * 2
                     let size = Size(width: width, height: height)
                     var labelSizes = labelSizes
                     for item in 0..<itemCount {
@@ -212,7 +214,7 @@ final class ChartLayoutCore {
         // MARK: Row header size
         //
 
-        let rowHeaderSize = Size(width: headerSize.width, height: maximumSectionHeight)
+        let rowHeaderSize = Size(width: Parameters.headerSize.width, height: maximumSectionHeight)
 
         //
         // MARK: -
@@ -222,12 +224,12 @@ final class ChartLayoutCore {
         let itemWidth: Int = {
             switch mode {
             case .all:
-                let totalAvailableWidth = visibleViewSize.width - contentPadding * 2 - rowHeaderSize.width
+                let totalAvailableWidth = visibleViewSize.width - Parameters.contentPadding * 2 - rowHeaderSize.width
                 let totalSpacingWidth = sectionSpacing.width * numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
                 return totalContentWidth / numberOfColumns
             case .section, .emotion:
-                return visibleViewSize.width - contentPadding * 2
+                return visibleViewSize.width - Parameters.contentPadding * 2
             }
         }()
 
@@ -236,7 +238,7 @@ final class ChartLayoutCore {
         // MARK: Column header size
         //
 
-        let columnHeaderSize = Size(width: itemWidth, height: headerSize.height)
+        let columnHeaderSize = Size(width: itemWidth, height: Parameters.headerSize.height)
 
         //
         // MARK: -
@@ -246,7 +248,7 @@ final class ChartLayoutCore {
         let rowYPositions = rowsRange.map { row -> Int in
             let cumulativeContentHeight = maximumSectionHeight * row
             let cumulativeSpacingHeight = sectionSpacing.height * row
-            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + contentPadding
+            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + Parameters.contentPadding
             switch mode {
             case .all:
                 return y
@@ -256,7 +258,7 @@ final class ChartLayoutCore {
         }
 
         let columnXPositions = columnsRange.map { column -> Int in
-            let xPosition = contentPadding + rowHeaderSize.width + sectionSpacing.width
+            let xPosition = Parameters.contentPadding + rowHeaderSize.width + sectionSpacing.width
             let x = xPosition + column * (itemWidth + sectionSpacing.width)
             switch mode {
             case .all:
@@ -304,14 +306,14 @@ final class ChartLayoutCore {
                 return nil
             case .section(let section, _):
                 let column = columnIndex(forSection: section)
-                let x = columnXPositions[column] - contentPadding
+                let x = columnXPositions[column] - Parameters.contentPadding
                 let row = rowIndex(forSection: section)
-                let y = rowYPositions[row] - contentPadding - topContentInset
+                let y = rowYPositions[row] - Parameters.contentPadding - topContentInset
                 return Point(x: x, y: y + topContentInset)
             case .emotion(let indexPath, _):
                 let column = columnIndex(forSection: indexPath.section)
-                let x = columnXPositions[column] - contentPadding
-                let y = yPositionsForItems[indexPath.section][indexPath.item] - contentPadding - topContentInset
+                let x = columnXPositions[column] - Parameters.contentPadding
+                let y = yPositionsForItems[indexPath.section][indexPath.item] - Parameters.contentPadding - topContentInset
                 return Point(x: x, y: y + topContentInset)
             }
         }()
@@ -362,7 +364,7 @@ final class ChartLayoutCore {
             let x = columnXPositions[column]
             let y: Int
             switch mode {
-            case .all: y = contentPadding
+            case .all: y = Parameters.contentPadding
             case .section, .emotion: y = -columnHeaderSize.height
             }
             let position: Point
@@ -381,7 +383,7 @@ final class ChartLayoutCore {
         let positionsForRowHeaders = rowsRange.map { row -> Point in
             let x: Int
             switch mode {
-            case .all: x = contentPadding
+            case .all: x = Parameters.contentPadding
             case .section, .emotion: x = -rowHeaderSize.width
             }
             let y = rowYPositions[row]
@@ -443,7 +445,7 @@ final class ChartLayoutCore {
         let chartSize: Size = {
             switch mode {
             case .all:
-                let isCompact = visibleViewSize.height >= minViewHeightForCompactLayout
+                let isCompact = visibleViewSize.height >= Parameters.minViewHeightForCompactLayout
                 if isCompact { return visibleViewSize }
             case .section, .emotion:
                 return visibleViewSize
@@ -454,8 +456,8 @@ final class ChartLayoutCore {
             let lastColumnHeaderFrame = columnHeaders[lastColumnIndexPath]!.frame
             let lastRowHeaderFrame = rowHeaders[lastRowIndexPath]!.frame
 
-            let width = lastColumnHeaderFrame.maxX + contentPadding
-            let height = lastRowHeaderFrame.maxY + contentPadding
+            let width = lastColumnHeaderFrame.maxX + Parameters.contentPadding
+            let height = lastRowHeaderFrame.maxY + Parameters.contentPadding
             return .init(width: width, height: height)
         }()
 
