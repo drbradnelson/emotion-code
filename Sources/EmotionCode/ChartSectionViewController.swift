@@ -25,7 +25,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        chartLayout.store.dispatch(.viewWillTransition)
+        chartLayout.core.viewWillTransition()
     }
 
     // MARK: Collection view delegate
@@ -45,14 +45,14 @@ final class ChartSectionViewController: UICollectionViewController {
             collectionView!.visibleCellsWithIndexPaths.forEach(layout)
         }, completion: { [chartLayout] context in
             guard !context.isCancelled else { return }
-            chartLayout.store.dispatch(.viewDidTransition)
+            chartLayout.core.viewDidTransition()
             chartLayout.invalidateLayout()
         })
     }
 
     private func layout(_ cell: UICollectionViewCell, with indexPath: IndexPath) {
         let cell = cell as! ItemCollectionViewCell
-        let labelSize = chartLayout.store.view.labelSizes[indexPath]!
+        let labelSize = chartLayout.core.view.labelSizes[indexPath]!
         cell.setTitleLabelSize(to: labelSize.cgSize)
         cell.enlargeTitleLabel()
         cell.layoutIfNeeded()
@@ -76,7 +76,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        chartLayout.store.dispatch(.systemDidSetViewSize(.init(cgSize: size)))
+        chartLayout.core.systemDidSet(viewSize: .init(cgSize: size))
         layoutCellsAlongsideTransition(with: coordinator)
     }
 
@@ -84,7 +84,7 @@ final class ChartSectionViewController: UICollectionViewController {
 
 extension ChartSectionViewController: ChartPresenter {
 
-    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutProgram.Mode {
+    func chartLayoutMode(with collectionView: UICollectionView) -> ChartLayoutCore.Mode {
         let selectedSection = collectionView.indexPathForSelectedItem!.section
         return .section(selectedSection, isFocused: false)
     }

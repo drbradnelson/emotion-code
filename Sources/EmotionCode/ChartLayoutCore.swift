@@ -1,20 +1,10 @@
 import Foundation
-import Elm
 
 // swiftlint:disable mark
 // swiftlint:disable cyclomatic_complexity
 // swiftlint:disable type_body_length
 
-struct ChartLayoutProgram: Program {
-
-    struct Seed {
-        let mode: Mode
-        let itemsPerSection: [Int]
-        let numberOfColumns: Int
-        let topContentInset: Int
-        let bottomContentInset: Int
-        let viewSize: Size
-    }
+final class ChartLayoutCore {
 
     enum Mode {
         case all
@@ -22,30 +12,29 @@ struct ChartLayoutProgram: Program {
         case emotion(IndexPath, isFocused: Bool)
     }
 
-    enum Event {
-        case viewWillTransition
-        case viewDidTransition
-        case systemDidSetViewSize(Size)
+    private var mode: Mode
+    private let itemsPerSection: [Int]
+    private let numberOfColumns: Int
+    private let topContentInset: Int
+    private let bottomContentInset: Int
+    private var viewSize: Size
+
+    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
+        self.mode = mode
+        self.itemsPerSection = itemsPerSection
+        self.numberOfColumns = numberOfColumns
+        self.topContentInset = topContentInset
+        self.bottomContentInset = bottomContentInset
+        self.viewSize = viewSize
     }
 
-    struct State {
-        var mode: Mode
-        let itemsPerSection: [Int]
-        let numberOfColumns: Int
-        let topContentInset: Int
-        let bottomContentInset: Int
-        var viewSize: Size
-
-        let minViewHeightForCompactLayout = 554
-        let headerSize = Size(width: 30, height: 30)
-        let itemHeight = 18
-        let itemPadding = 8
-        let contentPadding = 10
-        let sectionSpacing = Size(width: 5, height: 5)
-        let itemSpacing = 10
-    }
-
-    enum Action {}
+    private let minViewHeightForCompactLayout = 554
+    private let headerSize = Size(width: 30, height: 30)
+    private let itemHeight = 18
+    private let itemPadding = 8
+    private let contentPadding = 10
+    private let sectionSpacing = Size(width: 5, height: 5)
+    private let itemSpacing = 10
 
     struct Item {
         let frame: Rect
@@ -69,80 +58,62 @@ struct ChartLayoutProgram: Program {
         case invalidMode
     }
 
-    static func start(with seed: Seed, perform: (Action) -> Void) -> Result<State, Failure> {
-        guard seed.numberOfColumns > 0 else {
-            return .failure(.invalidNumberOfColumns)
+    func viewWillTransition() {
+        switch mode {
+        case .all:
+            //            throw Failure.invalidMode
+            return
+        case .section(let section, _):
+            mode = .section(section, isFocused: false)
+        case .emotion(let indexPath, _):
+            mode = .emotion(indexPath, isFocused: false)
         }
-        for items in seed.itemsPerSection {
-            guard items >= 0 else {
-                return .failure(.invalidAmountOfItems)
-            }
-        }
-        guard seed.itemsPerSection.reduce(0, +) > 0 else {
-            return .failure(.missingItems)
-        }
-        guard seed.viewSize.width > 0, seed.viewSize.height > 0 else {
-            return .failure(.invalidViewSize)
-        }
-        let state = State(
-            mode: seed.mode,
-            itemsPerSection: seed.itemsPerSection,
-            numberOfColumns: seed.numberOfColumns,
-            topContentInset: seed.topContentInset,
-            bottomContentInset: seed.bottomContentInset,
-            viewSize: seed.viewSize
-        )
-        return .success(state)
+        view = chartView()
     }
 
-    static func update(for event: Event, state: inout State, perform: (Action) -> Void) -> Result<Success, Failure> {
-        switch event {
-        case .viewWillTransition:
-            switch state.mode {
-            case .all:
-                return .failure(.invalidMode)
-            case .section(let section, _):
-                state.mode = .section(section, isFocused: false)
-            case .emotion(let emotion, _):
-                state.mode = .emotion(emotion, isFocused: false)
-            }
-        case .viewDidTransition:
-            switch state.mode {
-            case .all:
-                return .failure(.invalidMode)
-            case .section(let section, _):
-                state.mode = .section(section, isFocused: true)
-            case .emotion(let emotion, _):
-                state.mode = .emotion(emotion, isFocused: true)
-            }
-        case .systemDidSetViewSize(let viewSize):
-            guard viewSize.width > 0, viewSize.height > 0 else {
-                return .failure(.invalidViewSize)
-            }
-            state.viewSize = viewSize
+    func viewDidTransition() {
+        switch mode {
+        case .all:
+            //            throw Failure.invalidMode
+            return
+        case .section(let section, _):
+            mode = .section(section, isFocused: true)
+        case .emotion(let indexPath, _):
+            mode = .emotion(indexPath, isFocused: true)
         }
-        return .success()
+        view = chartView()
     }
 
-    static func view(for state: State) -> Result<View, Failure> {
+    func systemDidSet(viewSize: Size) {
+        guard viewSize.width > 0, viewSize.height > 0 else {
+            //            throw Failure.invalidViewSize
+            return
+        }
+        self.viewSize = viewSize
+        view = chartView()
+    }
+
+    lazy var view: View = self.chartView()
+
+    func chartView() -> View {
 
         func rowIndex(forSection section: Int) -> Int {
-            return section / state.numberOfColumns
+            return section / numberOfColumns
         }
 
         func columnIndex(forSection section: Int) -> Int {
-            return section % state.numberOfColumns
+            return section % numberOfColumns
         }
 
-        let sectionsCount = state.itemsPerSection.count
+        let sectionsCount = itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
-        let columnsRange = 0..<state.numberOfColumns
-        let rowsCount = Int(round(Double(sectionsCount) / Double(state.numberOfColumns)))
+        let columnsRange = 0..<numberOfColumns
+        let rowsCount = Int(round(Double(sectionsCount) / Double(numberOfColumns)))
         let rowsRange = 0..<rowsCount
 
         let visibleViewSize = Size(
-            width: state.viewSize.width,
-            height: state.viewSize.height - state.topContentInset - state.bottomContentInset
+            width: viewSize.width,
+            height: viewSize.height - topContentInset - bottomContentInset
         )
 
         //
@@ -151,20 +122,20 @@ struct ChartLayoutProgram: Program {
         //
 
         let sectionSpacing: Size = {
-            switch state.mode {
+            switch mode {
             case .all:
-                return state.sectionSpacing
+                return self.sectionSpacing
             case .section, .emotion:
-                let width = state.contentPadding * 2
-                let height = state.contentPadding + max(state.topContentInset, state.bottomContentInset)
+                let width = contentPadding * 2
+                let height = contentPadding + max(topContentInset, bottomContentInset)
                 return .init(width: width, height: height)
             }
         }()
 
         let itemSpacing: Int = {
-            switch state.mode {
+            switch mode {
             case .all: return 0
-            case .section: return state.itemSpacing
+            case .section: return self.itemSpacing
             case .emotion: return sectionSpacing.height
             }
         }()
@@ -175,22 +146,22 @@ struct ChartLayoutProgram: Program {
         //
 
         let itemHeights = sectionsRange.map { section -> Int in
-            switch state.mode {
+            switch mode {
             case .all:
                 guard
-                    visibleViewSize.height >= state.minViewHeightForCompactLayout,
-                    let maximumItemsCountInSection = state.itemsPerSection.max() else { return state.itemHeight }
-                let totalSpacing = state.contentPadding * 2 + state.headerSize.height + sectionSpacing.height * rowsCount
+                    visibleViewSize.height >= minViewHeightForCompactLayout,
+                    let maximumItemsCountInSection = itemsPerSection.max() else { return itemHeight }
+                let totalSpacing = contentPadding * 2 + headerSize.height + sectionSpacing.height * rowsCount
                 let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
                 return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
             case .section:
-                let itemCount = state.itemsPerSection[section]
-                let totalPaddingHeight = state.contentPadding * 2
+                let itemCount = itemsPerSection[section]
+                let totalPaddingHeight = contentPadding * 2
                 let totalSpacingHeight = itemSpacing * (itemCount - 1)
                 let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
                 return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
             case .emotion:
-                return visibleViewSize.height - state.contentPadding * 2
+                return visibleViewSize.height - contentPadding * 2
             }
         }
 
@@ -200,15 +171,15 @@ struct ChartLayoutProgram: Program {
         //
 
         let labelSizes: [IndexPath: Size] = {
-            switch state.mode {
+            switch mode {
             case .all, .section:
                 return sectionsRange.reduce([:]) { labelSizes, section in
-                    let width = visibleViewSize.width - state.contentPadding * 2 - state.itemPadding * 2
-                    let itemCount = state.itemsPerSection[section]
-                    let totalPaddingHeight = state.contentPadding * 2
-                    let totalSpacingHeight = state.itemSpacing * (itemCount - 1)
+                    let width = visibleViewSize.width - contentPadding * 2 - itemPadding * 2
+                    let itemCount = itemsPerSection[section]
+                    let totalPaddingHeight = contentPadding * 2
+                    let totalSpacingHeight = itemSpacing * (itemCount - 1)
                     let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
-                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount))) - state.itemPadding * 2
+                    let height = Int(round(Double(totalAvailableContentHeight) / Double(itemCount))) - itemPadding * 2
                     let size = Size(width: width, height: height)
                     var labelSizes = labelSizes
                     for item in 0..<itemCount {
@@ -228,7 +199,7 @@ struct ChartLayoutProgram: Program {
         //
 
         let sectionHeights = sectionsRange.map { section -> Int in
-            let itemCount = state.itemsPerSection[section]
+            let itemCount = itemsPerSection[section]
             let verticalItemSpacing = (itemCount - 1) * itemSpacing
             let totalItemHeights = itemCount * itemHeights[section]
             return totalItemHeights + verticalItemSpacing
@@ -241,7 +212,7 @@ struct ChartLayoutProgram: Program {
         // MARK: Row header size
         //
 
-        let rowHeaderSize = Size(width: state.headerSize.width, height: maximumSectionHeight)
+        let rowHeaderSize = Size(width: headerSize.width, height: maximumSectionHeight)
 
         //
         // MARK: -
@@ -249,14 +220,14 @@ struct ChartLayoutProgram: Program {
         //
 
         let itemWidth: Int = {
-            switch state.mode {
+            switch mode {
             case .all:
-                let totalAvailableWidth = visibleViewSize.width - state.contentPadding * 2 - rowHeaderSize.width
-                let totalSpacingWidth = sectionSpacing.width * state.numberOfColumns
+                let totalAvailableWidth = visibleViewSize.width - contentPadding * 2 - rowHeaderSize.width
+                let totalSpacingWidth = sectionSpacing.width * numberOfColumns
                 let totalContentWidth = totalAvailableWidth - totalSpacingWidth
-                return totalContentWidth / state.numberOfColumns
+                return totalContentWidth / numberOfColumns
             case .section, .emotion:
-                return visibleViewSize.width - state.contentPadding * 2
+                return visibleViewSize.width - contentPadding * 2
             }
         }()
 
@@ -265,7 +236,7 @@ struct ChartLayoutProgram: Program {
         // MARK: Column header size
         //
 
-        let columnHeaderSize = Size(width: itemWidth, height: state.headerSize.height)
+        let columnHeaderSize = Size(width: itemWidth, height: headerSize.height)
 
         //
         // MARK: -
@@ -275,8 +246,8 @@ struct ChartLayoutProgram: Program {
         let rowYPositions = rowsRange.map { row -> Int in
             let cumulativeContentHeight = maximumSectionHeight * row
             let cumulativeSpacingHeight = sectionSpacing.height * row
-            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + state.contentPadding
-            switch state.mode {
+            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + contentPadding
+            switch mode {
             case .all:
                 return y
             case .section, .emotion:
@@ -285,9 +256,9 @@ struct ChartLayoutProgram: Program {
         }
 
         let columnXPositions = columnsRange.map { column -> Int in
-            let xPosition = state.contentPadding + rowHeaderSize.width + sectionSpacing.width
+            let xPosition = contentPadding + rowHeaderSize.width + sectionSpacing.width
             let x = xPosition + column * (itemWidth + sectionSpacing.width)
-            switch state.mode {
+            switch mode {
             case .all:
                 return x
             case .section, .emotion:
@@ -301,7 +272,7 @@ struct ChartLayoutProgram: Program {
         //
 
         let yPositionsForItems = sectionsRange.map { section -> [Int] in
-            let itemsRange = 0..<state.itemsPerSection[section]
+            let itemsRange = 0..<itemsPerSection[section]
             let row = rowIndex(forSection: section)
 
             return itemsRange.map { item in
@@ -312,7 +283,7 @@ struct ChartLayoutProgram: Program {
         }
 
         let itemPositions = sectionsRange.map { section -> [Point] in
-            let itemsRange = 0..<state.itemsPerSection[section]
+            let itemsRange = 0..<itemsPerSection[section]
             let column = columnIndex(forSection: section)
 
             let xPosition = columnXPositions[column]
@@ -328,20 +299,20 @@ struct ChartLayoutProgram: Program {
         //
 
         let proposedContentOffset: Point? = {
-            switch state.mode {
+            switch mode {
             case .all:
                 return nil
             case .section(let section, _):
                 let column = columnIndex(forSection: section)
-                let x = columnXPositions[column] - state.contentPadding
+                let x = columnXPositions[column] - contentPadding
                 let row = rowIndex(forSection: section)
-                let y = rowYPositions[row] - state.contentPadding - state.topContentInset
-                return Point(x: x, y: y + state.topContentInset)
+                let y = rowYPositions[row] - contentPadding - topContentInset
+                return Point(x: x, y: y + topContentInset)
             case .emotion(let indexPath, _):
                 let column = columnIndex(forSection: indexPath.section)
-                let x = columnXPositions[column] - state.contentPadding
-                let y = yPositionsForItems[indexPath.section][indexPath.item] - state.contentPadding - state.topContentInset
-                return Point(x: x, y: y + state.topContentInset)
+                let x = columnXPositions[column] - contentPadding
+                let y = yPositionsForItems[indexPath.section][indexPath.item] - contentPadding - topContentInset
+                return Point(x: x, y: y + topContentInset)
             }
         }()
 
@@ -354,7 +325,7 @@ struct ChartLayoutProgram: Program {
             let height = itemHeights[section]
             let size = Size(width: itemWidth, height: height)
             var items = items
-            for item in 0..<state.itemsPerSection[section] {
+            for item in 0..<itemsPerSection[section] {
                 let itemPosition = itemPositions[section][item]
                 let position: Point
                 switch proposedContentOffset {
@@ -367,7 +338,7 @@ struct ChartLayoutProgram: Program {
                     position = itemPosition
                 }
                 let alpha: Float
-                switch state.mode {
+                switch mode {
                 case .all:
                     alpha = 1
                 case .section(let currentSection, let isFocused):
@@ -390,8 +361,8 @@ struct ChartLayoutProgram: Program {
         let positionsForColumnHeaders = columnsRange.map { column -> Point in
             let x = columnXPositions[column]
             let y: Int
-            switch state.mode {
-            case .all: y = state.contentPadding
+            switch mode {
+            case .all: y = contentPadding
             case .section, .emotion: y = -columnHeaderSize.height
             }
             let position: Point
@@ -409,8 +380,8 @@ struct ChartLayoutProgram: Program {
 
         let positionsForRowHeaders = rowsRange.map { row -> Point in
             let x: Int
-            switch state.mode {
-            case .all: x = state.contentPadding
+            switch mode {
+            case .all: x = contentPadding
             case .section, .emotion: x = -rowHeaderSize.width
             }
             let y = rowYPositions[row]
@@ -436,7 +407,7 @@ struct ChartLayoutProgram: Program {
             let position = positionsForColumnHeaders[column]
             let frame = Rect(origin: position, size: columnHeaderSize)
             let alpha: Float
-            switch state.mode {
+            switch mode {
             case .all:
                 alpha = 1
             case .section, .emotion:
@@ -452,7 +423,7 @@ struct ChartLayoutProgram: Program {
             let position = positionsForRowHeaders[row]
             let frame = Rect(origin: position, size: rowHeaderSize)
             let alpha: Float
-            switch state.mode {
+            switch mode {
             case .all:
                 alpha = 1
             case .section, .emotion:
@@ -470,32 +441,31 @@ struct ChartLayoutProgram: Program {
         //
 
         let chartSize: Size = {
-            switch state.mode {
+            switch mode {
             case .all:
-                let isCompact = visibleViewSize.height >= state.minViewHeightForCompactLayout
+                let isCompact = visibleViewSize.height >= minViewHeightForCompactLayout
                 if isCompact { return visibleViewSize }
             case .section, .emotion:
                 return visibleViewSize
             }
 
-            let lastColumnIndexPath = IndexPath(section: state.numberOfColumns - 1)
+            let lastColumnIndexPath = IndexPath(section: numberOfColumns - 1)
             let lastRowIndexPath = IndexPath(section: rowsCount - 1)
             let lastColumnHeaderFrame = columnHeaders[lastColumnIndexPath]!.frame
             let lastRowHeaderFrame = rowHeaders[lastRowIndexPath]!.frame
 
-            let width = lastColumnHeaderFrame.maxX + state.contentPadding
-            let height = lastRowHeaderFrame.maxY + state.contentPadding
+            let width = lastColumnHeaderFrame.maxX + contentPadding
+            let height = lastRowHeaderFrame.maxY + contentPadding
             return .init(width: width, height: height)
         }()
 
-        let view = View(
+        return View(
             chartSize: chartSize,
             items: items,
             columnHeaders: columnHeaders,
             rowHeaders: rowHeaders,
             labelSizes: labelSizes
         )
-        return .success(view)
 
     }
 

@@ -26,8 +26,7 @@
 		9111B5571E7FC5EA00CCBC5E /* HLResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9111B5531E7FC5EA00CCBC5E /* HLResources.bundle */; };
 		9111B5591E7FC5EA00CCBC5E /* KonotorModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9111B5551E7FC5EA00CCBC5E /* KonotorModels.bundle */; };
 		9111B55C1E7FCB5700CCBC5E /* libFDHotlineSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9111B55B1E7FCB5700CCBC5E /* libFDHotlineSDK.a */; };
-		911377741DFFF9C6008627F1 /* ChartLayoutProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutProgram.swift */; };
-		911377801E001A73008627F1 /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
+		911377741DFFF9C6008627F1 /* ChartLayoutCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutCore.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
 		913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
 		913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */; };
@@ -36,7 +35,6 @@
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
-		916289E41E1D0B1F0004D27E /* Elm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9113777E1E001A69008627F1 /* Elm.framework */; };
 		916289E61E1D36680004D27E /* ChartLayoutProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916289E51E1D36680004D27E /* ChartLayoutProgramTests.swift */; };
 		916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BED5D1DED81C50048314E /* ChartLayout.swift */; };
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
@@ -104,8 +102,7 @@
 		9111B5551E7FC5EA00CCBC5E /* KonotorModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KonotorModels.bundle; path = Carthage/Build/iOS/Hotline.framework/KonotorModels.bundle; sourceTree = "<group>"; };
 		9111B55B1E7FCB5700CCBC5E /* libFDHotlineSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDHotlineSDK.a; path = Carthage/Build/iOS/Hotline.framework/libFDHotlineSDK.a; sourceTree = "<group>"; };
 		9111B56B1E7FD35B00CCBC5E /* EmotionCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmotionCode-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		911377731DFFF9C6008627F1 /* ChartLayoutProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutProgram.swift; sourceTree = "<group>"; };
-		9113777E1E001A69008627F1 /* Elm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elm.framework; path = Carthage/Build/iOS/Elm.framework; sourceTree = "<group>"; };
+		911377731DFFF9C6008627F1 /* ChartLayoutCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutCore.swift; sourceTree = "<group>"; };
 		91187B221D6776A00098A881 /* ChapterTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleView.swift; sourceTree = "<group>"; };
 		913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBarContainerController.swift; sourceTree = "<group>"; };
 		913A65E31E07FB3300069B4E /* BookContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContainerViewController.swift; sourceTree = "<group>"; };
@@ -162,7 +159,6 @@
 				B6EE047B1E39044400013226 /* ImageIO.framework in Frameworks */,
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
 				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
-				911377801E001A73008627F1 /* Elm.framework in Frameworks */,
 				9111B55C1E7FCB5700CCBC5E /* libFDHotlineSDK.a in Frameworks */,
 				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
@@ -179,7 +175,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916289E41E1D0B1F0004D27E /* Elm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +292,6 @@
 				B6EE04731E39044400013226 /* ImageIO.framework */,
 				B6EE04741E39044400013226 /* Security.framework */,
 				B6EE04751E39044400013226 /* SystemConfiguration.framework */,
-				9113777E1E001A69008627F1 /* Elm.framework */,
 				91A4303F1DD0DF08004D466E /* AudioBar.framework */,
 			);
 			name = Frameworks;
@@ -316,7 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				916BED5D1DED81C50048314E /* ChartLayout.swift */,
-				911377731DFFF9C6008627F1 /* ChartLayoutProgram.swift */,
+				911377731DFFF9C6008627F1 /* ChartLayoutCore.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -534,7 +528,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -ex\ntest $(swiftlint version) == \"0.16.1\"\nFLAGS=$(test $CONFIGURATION == \"Release\" && echo \"--strict\" || echo \"\")\nswiftlint lint $FLAGS\n";
+			shellScript = "set -ex\ntest $(swiftlint version) == \"0.18.1\"\nFLAGS=$(test $CONFIGURATION == \"Release\" && echo \"--strict\" || echo \"\")\nswiftlint lint $FLAGS\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
@@ -581,7 +575,7 @@
 				0F74006B1D6F476E00ADAC99 /* BookChaptersTableView.swift in Sources */,
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
-				911377741DFFF9C6008627F1 /* ChartLayoutProgram.swift in Sources */,
+				911377741DFFF9C6008627F1 /* ChartLayoutCore.swift in Sources */,
 				B6EE047F1E39046B00013226 /* SupportViewController.swift in Sources */,
 				91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */,
 				B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */,

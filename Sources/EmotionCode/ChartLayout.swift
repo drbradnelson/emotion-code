@@ -1,33 +1,29 @@
 import UIKit
-import Elm
 
 final class ChartLayout: UICollectionViewLayout {
 
     static let numberOfColumns = 2
 
-    var store: Store<ChartLayoutProgram>!
-    var mode: ChartLayoutProgram.Mode!
+    var core: ChartLayoutCore!
+    var mode: ChartLayoutCore.Mode!
 
     override func prepare() {
         super.prepare()
-        guard store == nil else { return }
+        guard core == nil else { return }
         let sections = 0..<collectionView!.numberOfSections
         let itemsPerSection = sections.map(collectionView!.numberOfItems)
-        store = ChartLayoutProgram.makeStore(
-            delegate: self,
-            seed: .init(
-                mode: mode,
-                itemsPerSection: itemsPerSection,
-                numberOfColumns: ChartLayout.numberOfColumns,
-                topContentInset: .init(collectionView!.contentInset.top),
-                bottomContentInset: .init(collectionView!.contentInset.bottom),
-                viewSize: .init(cgSize: collectionView!.bounds.size)
-            )
+        core = ChartLayoutCore(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: ChartLayout.numberOfColumns,
+            topContentInset: .init(collectionView!.contentInset.top),
+            bottomContentInset: .init(collectionView!.contentInset.bottom),
+            viewSize: .init(cgSize: collectionView!.bounds.size)
         )
     }
 
     override var collectionViewContentSize: CGSize {
-        return store.view.chartSize.cgSize
+        return core.view.chartSize.cgSize
     }
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -44,17 +40,17 @@ final class ChartLayout: UICollectionViewLayout {
     }
 
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let item = store.view.items[indexPath]!
+        let item = core.view.items[indexPath]!
         return UICollectionViewLayoutAttributes(indexPath: indexPath, item: item)
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let header: ChartLayoutProgram.Header?
+        let header: ChartLayoutCore.Header?
         switch elementKind {
         case ChartHeaderView.columnKind:
-            header = store.view.columnHeaders[indexPath]
+            header = core.view.columnHeaders[indexPath]
         case ChartHeaderView.rowKind:
-            header = store.view.rowHeaders[indexPath]
+            header = core.view.rowHeaders[indexPath]
         default:
             header = nil
         }
@@ -67,22 +63,15 @@ final class ChartLayout: UICollectionViewLayout {
 
 }
 
-extension ChartLayout: StoreDelegate {
-
-    func store(_ store: Store<ChartLayoutProgram>, didUpdate view: ChartLayoutProgram.View) {}
-    func store(_ store: Store<ChartLayoutProgram>, didRequest action: ChartLayoutProgram.Action) {}
-
-}
-
 private extension UICollectionViewLayoutAttributes {
 
-    convenience init(indexPath: IndexPath, item: ChartLayoutProgram.Item) {
+    convenience init(indexPath: IndexPath, item: ChartLayoutCore.Item) {
         self.init(forCellWith: indexPath)
         self.frame = item.frame.cgRect
         self.alpha = .init(item.alpha)
     }
 
-    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutProgram.Header?) {
+    convenience init?(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath, header: ChartLayoutCore.Header?) {
         guard let header = header else { return nil }
         self.init(forSupplementaryViewOfKind: elementKind, with: indexPath)
         self.frame = header.frame.cgRect
