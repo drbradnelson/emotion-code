@@ -30,4 +30,8 @@ final class AudioBarContainerController: UIViewController {
         audioBarController.loadURL(url: chapter.audioURL)
     }
 
+    func setDelegate(_ delegate: AudioBarDelegate) {
+        audioBarController.delegate = delegate
+    }
+
 }
