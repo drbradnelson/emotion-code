@@ -10,30 +10,12 @@ final class ChartLayoutCore {
         case emotion(IndexPath, isFocused: Bool)
     }
 
-    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
-        dataSource = DataSource(
-            mode: mode,
-            itemsPerSection: itemsPerSection,
-            numberOfColumns: numberOfColumns,
-            topContentInset: topContentInset,
-            bottomContentInset: bottomContentInset,
-            viewSize: viewSize
-        )
-    }
-
-    private var dataSource: DataSource {
-        didSet {
-            view = chartView()
-        }
-    }
-
-    private struct DataSource {
-        var mode: Mode
-        let itemsPerSection: [Int]
-        let numberOfColumns: Int
-        let topContentInset: Int
-        let bottomContentInset: Int
-        var viewSize: Size
+    private enum Failure: Error {
+        case missingItems
+        case invalidAmountOfItems
+        case invalidNumberOfColumns
+        case invalidViewSize
+        case invalidMode
     }
 
     private struct Parameters {
@@ -60,18 +42,37 @@ final class ChartLayoutCore {
         let labelSizes: [IndexPath: Size]
     }
 
-    enum Failure: Error {
-        case missingItems
-        case invalidAmountOfItems
-        case invalidNumberOfColumns
-        case invalidViewSize
-        case invalidMode
+    private struct DataSource {
+        var mode: Mode
+        let itemsPerSection: [Int]
+        let numberOfColumns: Int
+        let topContentInset: Int
+        let bottomContentInset: Int
+        var viewSize: Size
     }
+
+    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
+        dataSource = DataSource(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: numberOfColumns,
+            topContentInset: topContentInset,
+            bottomContentInset: bottomContentInset,
+            viewSize: viewSize
+        )
+    }
+
+    private var dataSource: DataSource {
+        didSet {
+            view = chartView()
+        }
+    }
+
+    lazy var view: View = self.chartView()
 
     func viewWillTransition() {
         switch dataSource.mode {
         case .all:
-//            throw Failure.invalidMode
             return
         case .section(let section, _):
             dataSource.mode = .section(section, isFocused: false)
@@ -83,7 +84,6 @@ final class ChartLayoutCore {
     func viewDidTransition() {
         switch dataSource.mode {
         case .all:
-//            throw Failure.invalidMode
             return
         case .section(let section, _):
             dataSource.mode = .section(section, isFocused: true)
@@ -94,13 +94,64 @@ final class ChartLayoutCore {
 
     func systemDidSet(viewSize: Size) {
         guard viewSize.width > 0, viewSize.height > 0 else {
-//            throw Failure.invalidViewSize
             return
         }
         dataSource.viewSize = viewSize
     }
 
-    lazy var view: View = self.chartView()
+    private var visibleViewSize: Size {
+        return .init(
+            width: dataSource.viewSize.width,
+            height: dataSource.viewSize.height - dataSource.topContentInset - dataSource.bottomContentInset
+        )
+    }
+
+    private var columnsRange: CountableRange<Int> {
+        return 0..<dataSource.numberOfColumns
+    }
+
+    private var headerAlpha: Float {
+        switch dataSource.mode {
+        case .all: return 0
+        case .section, .emotion: return 1
+        }
+    }
+
+    private var columnWidth: Int {
+        let totalHorizontalSectionSpacing = Parameters.sectionSpacing.width * dataSource.numberOfColumns
+        let totalHorizontalContentPadding = Parameters.contentPadding * 2
+        let availableWidth = visibleViewSize.width - totalHorizontalSectionSpacing - totalHorizontalContentPadding - Parameters.headerSize.width
+        return availableWidth / dataSource.numberOfColumns
+    }
+
+    private var columnHeaderSize: Size {
+        return Size(width: columnWidth, height: Parameters.headerSize.height)
+    }
+
+    private func position(forColumn column: Int) -> Point {
+        let defaultXPosition = Parameters.contentPadding + Parameters.headerSize.width + Parameters.sectionSpacing.width
+        return Point(
+            x: defaultXPosition + column * (columnWidth + Parameters.sectionSpacing.width),
+            y: Parameters.contentPadding
+        )
+    }
+
+    private func frame(forColumn column: Int) -> Rect {
+        return Rect(origin: position(forColumn: column), size: columnHeaderSize)
+    }
+
+    private var columnHeaderFrames: [Rect] {
+        return columnsRange.map { column in frame(forColumn: column) }
+    }
+
+    var columnHeaders: [IndexPath: Header] {
+        var headers: [IndexPath: Header] = [:]
+        for column in columnsRange {
+            let indexPath = IndexPath(section: column)
+            headers[indexPath] = Header(frame: columnHeaderFrames[column], alpha: headerAlpha)
+        }
+        return headers
+    }
 
     private func chartView() -> View {
 
@@ -114,14 +165,8 @@ final class ChartLayoutCore {
 
         let sectionsCount = dataSource.itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
-        let columnsRange = 0..<dataSource.numberOfColumns
         let rowsCount = Int(round(Double(sectionsCount) / Double(dataSource.numberOfColumns)))
         let rowsRange = 0..<rowsCount
-
-        let visibleViewSize = Size(
-            width: dataSource.viewSize.width,
-            height: dataSource.viewSize.height - dataSource.topContentInset - dataSource.bottomContentInset
-        )
 
         //
         // MARK: -
@@ -365,26 +410,6 @@ final class ChartLayoutCore {
         // MARK: Header position
         //
 
-        let positionsForColumnHeaders = columnsRange.map { column -> Point in
-            let x = columnXPositions[column]
-            let y: Int
-            switch dataSource.mode {
-            case .all: y = Parameters.contentPadding
-            case .section, .emotion: y = -columnHeaderSize.height
-            }
-            let position: Point
-            switch proposedContentOffset {
-            case .some(let proposedContentOffset):
-                position = .init(
-                    x: x - proposedContentOffset.x,
-                    y: y - proposedContentOffset.y
-                )
-            case .none:
-                position = .init(x: x, y: y)
-            }
-            return position
-        }
-
         let positionsForRowHeaders = rowsRange.map { row -> Point in
             let x: Int
             switch dataSource.mode {
@@ -409,22 +434,6 @@ final class ChartLayoutCore {
         // MARK: -
         // MARK: Header frame
         //
-
-        let columnHeaders: [IndexPath: Header] = columnsRange.reduce([:]) { headers, column in
-            let position = positionsForColumnHeaders[column]
-            let frame = Rect(origin: position, size: columnHeaderSize)
-            let alpha: Float
-            switch dataSource.mode {
-            case .all:
-                alpha = 1
-            case .section, .emotion:
-                alpha = 0
-            }
-            let indexPath = IndexPath(section: column)
-            var headers = headers
-            headers[indexPath] = Header(frame: frame, alpha: alpha)
-            return headers
-        }
 
         let rowHeaders: [IndexPath: Header] = rowsRange.reduce([:]) { headers, row in
             let position = positionsForRowHeaders[row]
@@ -489,19 +498,19 @@ private extension IndexPath {
 // MARK: Geometry
 //
 
-public struct Point {
+struct Point {
 
-    // swiftlint:disable:next variable_name
+    // swiftlint:disable:next identifier_name
     var x: Int
 
-    // swiftlint:disable:next variable_name
+    // swiftlint:disable:next identifier_name
     var y: Int
 
     static let zero = Point(x: 0, y: 0)
 
 }
 
-public struct Size {
+struct Size {
 
     var width: Int
     var height: Int
@@ -510,7 +519,7 @@ public struct Size {
 
 }
 
-public struct Rect {
+struct Rect {
 
     var origin: Point
     var size: Size
@@ -523,4 +532,9 @@ public struct Rect {
         return origin.y + size.height
     }
 
+}
+
+private struct Spacing {
+    var horizontal: Int
+    var vertical: Int
 }
