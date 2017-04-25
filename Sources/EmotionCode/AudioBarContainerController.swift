@@ -6,6 +6,15 @@ final class AudioBarContainerController: UIViewController {
 
     private let audioBarController = AudioBarViewController.instantiateFromStoryboard()
 
+    weak var delegate: AudioBarDelegate? {
+        get {
+            return audioBarController.delegate
+        }
+        set {
+            audioBarController.delegate = newValue
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
@@ -28,6 +37,10 @@ final class AudioBarContainerController: UIViewController {
 
     func loadChapter(_ chapter: Book.Chapter) {
         audioBarController.loadURL(url: chapter.audioURL)
+    }
+
+    func play() {
+        audioBarController.play()
     }
 
 }
