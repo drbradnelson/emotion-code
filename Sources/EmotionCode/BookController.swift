@@ -29,8 +29,8 @@ final class BookController {
         }
         let subtitle = dictionary[chapterSubtitleKey]
         let audioURL: URL?
-        if let auidioFilename = dictionary[chapterAudioKey], let pathURL = URL(string: audioPath) {
-            audioURL = pathURL.appendingPathComponent(auidioFilename).appendingPathExtension(audioFileExtension)
+        if let audioFilename = dictionary[chapterAudioKey], let pathURL = URL(string: audioPath) {
+            audioURL = pathURL.appendingPathComponent(audioFilename).appendingPathExtension(audioFileExtension)
         } else {
             audioURL = nil
         }
