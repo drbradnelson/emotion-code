@@ -2,6 +2,19 @@ import Foundation
 
 // swiftlint:disable mark cyclomatic_complexity type_body_length
 
+protocol ChartLayoutCoreInterface: class {
+
+    associatedtype Item
+    associatedtype Header
+
+    var chartSize: Size { get }
+    var items: [IndexPath: Item] { get }
+    var columnHeaders: [IndexPath: Header] { get }
+    var rowHeaders: [IndexPath: Header] { get }
+    var labelSizes: [IndexPath: Size] { get }
+
+}
+
 final class ChartLayoutCore {
 
     enum Mode {
