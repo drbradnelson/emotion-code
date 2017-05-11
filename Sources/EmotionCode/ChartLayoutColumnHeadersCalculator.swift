@@ -23,19 +23,16 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
         let horizontalSectionSpacing: Int
     }
 
-    private let dataSource: DataSource
-
     init(dataSource: DataSource) {
         self.dataSource = dataSource
     }
 
     var columnHeaders: [Header] {
+        let columnsRange = 0..<dataSource.numberOfColumns
         return columnsRange.map(header)
     }
 
-    private var columnsRange: CountableRange<Int> {
-        return 0..<dataSource.numberOfColumns
-    }
+    private let dataSource: DataSource
 
     private var headerSize: Size {
         return Size(width: dataSource.columnWidth, height: dataSource.columnHeaderHeight)

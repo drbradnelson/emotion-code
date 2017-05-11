@@ -2,7 +2,7 @@ import XCTest
 
 @testable import EmotionCode
 
-typealias Calculator = ChartLayoutColumnHeadersCalculator
+private typealias Calculator = ChartLayoutColumnHeadersCalculator
 
 final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
@@ -64,7 +64,7 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
 }
 
-typealias DataSource = Calculator.DataSource
+private typealias DataSource = Calculator.DataSource
 
 private extension Calculator {
     convenience init(
