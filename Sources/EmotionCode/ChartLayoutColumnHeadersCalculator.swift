@@ -11,47 +11,58 @@ protocol ChartLayoutColumnHeadersCalculatorInterface: class {
 final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculatorInterface {
 
     typealias Header = ChartLayoutCore.Header
-    private typealias Column = Int
 
     private let numberOfColumns: Int
     private let alpha: Float
+    private let columnWidth: Int
+    private let contentPadding: Int
+    private let rowHeaderWidth: Int
+    private let columnHeaderHeight: Int
     private let horizontalSectionSpacing: Int
 
     init(numberOfColumns: Int, alpha: Float, columnWidth: Int, contentPadding: Int, rowHeaderWidth: Int, columnHeaderHeight: Int, horizontalSectionSpacing: Int) {
         self.numberOfColumns = numberOfColumns
         self.alpha = alpha
+        self.columnWidth = columnWidth
+        self.contentPadding = contentPadding
+        self.rowHeaderWidth = rowHeaderWidth
+        self.columnHeaderHeight = columnHeaderHeight
         self.horizontalSectionSpacing = horizontalSectionSpacing
-
-        headerSize = Size(width: columnWidth, height: columnHeaderHeight)
-        initialXPosition = contentPadding + rowHeaderWidth + horizontalSectionSpacing
-        yPosition = contentPadding
     }
-
-    private let headerSize: Size
-    private let initialXPosition: Int
-    private let yPosition: Int
 
     var columnHeaders: [Header] {
-        return (0..<numberOfColumns).map(header)
+        return columnsRange.map(header)
     }
 
-    private func xPosition(for column: Column) -> Int {
-        return initialXPosition + column * (headerSize.width + horizontalSectionSpacing)
+    private var columnsRange: CountableRange<Int> {
+        return 0..<numberOfColumns
     }
 
-    private func position(for column: Column) -> Point {
-        let x = xPosition(for: column)
+    private var headerSize: Size {
+        return Size(width: columnWidth, height: columnHeaderHeight)
+    }
+
+    private var initialXPosition: Int {
+        return contentPadding + rowHeaderWidth + horizontalSectionSpacing
+    }
+
+    private var yPosition: Int {
+        return contentPadding
+    }
+
+    private func position(forColumn column: Int) -> Point {
+        let x = initialXPosition + column * (headerSize.width + horizontalSectionSpacing)
         return Point(x: x, y: yPosition)
     }
 
-    private func frame(for column: Column) -> Rect {
-        let position = self.position(for: column)
+    private func frame(forColumn column: Int) -> Rect {
+        let position = self.position(forColumn: column)
         return Rect(origin: position, size: headerSize)
     }
 
-    private func header(for column: Column) -> Header {
-        let frame = self.frame(for: column)
+    private func header(forColumn column: Int) -> Header {
+        let frame = self.frame(forColumn: column)
         return Header(frame: frame, alpha: alpha)
     }
-    
+
 }
