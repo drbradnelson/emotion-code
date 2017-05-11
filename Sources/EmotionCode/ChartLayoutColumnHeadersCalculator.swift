@@ -1,10 +1,11 @@
 protocol ChartLayoutColumnHeadersCalculatorInterface: class {
 
     associatedtype Header
+    associatedtype DataSource
 
     var columnHeaders: [Header] { get }
 
-    init(numberOfColumns: Int, alpha: Float, columnWidth: Int, contentPadding: Int, rowHeaderWidth: Int, columnHeaderHeight: Int, horizontalSectionSpacing: Int)
+    init(dataSource: DataSource)
 
 }
 
@@ -12,22 +13,20 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
 
     typealias Header = ChartLayoutCore.Header
 
-    private let numberOfColumns: Int
-    private let alpha: Float
-    private let columnWidth: Int
-    private let contentPadding: Int
-    private let rowHeaderWidth: Int
-    private let columnHeaderHeight: Int
-    private let horizontalSectionSpacing: Int
+    struct DataSource {
+        let numberOfColumns: Int
+        let alpha: Float
+        let columnWidth: Int
+        let contentPadding: Int
+        let rowHeaderWidth: Int
+        let columnHeaderHeight: Int
+        let horizontalSectionSpacing: Int
+    }
 
-    init(numberOfColumns: Int, alpha: Float, columnWidth: Int, contentPadding: Int, rowHeaderWidth: Int, columnHeaderHeight: Int, horizontalSectionSpacing: Int) {
-        self.numberOfColumns = numberOfColumns
-        self.alpha = alpha
-        self.columnWidth = columnWidth
-        self.contentPadding = contentPadding
-        self.rowHeaderWidth = rowHeaderWidth
-        self.columnHeaderHeight = columnHeaderHeight
-        self.horizontalSectionSpacing = horizontalSectionSpacing
+    private let dataSource: DataSource
+
+    init(dataSource: DataSource) {
+        self.dataSource = dataSource
     }
 
     var columnHeaders: [Header] {
@@ -35,23 +34,23 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
     }
 
     private var columnsRange: CountableRange<Int> {
-        return 0..<numberOfColumns
+        return 0..<dataSource.numberOfColumns
     }
 
     private var headerSize: Size {
-        return Size(width: columnWidth, height: columnHeaderHeight)
+        return Size(width: dataSource.columnWidth, height: dataSource.columnHeaderHeight)
     }
 
     private var initialXPosition: Int {
-        return contentPadding + rowHeaderWidth + horizontalSectionSpacing
+        return dataSource.contentPadding + dataSource.rowHeaderWidth + dataSource.horizontalSectionSpacing
     }
 
     private var yPosition: Int {
-        return contentPadding
+        return dataSource.contentPadding
     }
 
     private func position(forColumn column: Int) -> Point {
-        let x = initialXPosition + column * (headerSize.width + horizontalSectionSpacing)
+        let x = initialXPosition + column * (headerSize.width + dataSource.horizontalSectionSpacing)
         return Point(x: x, y: yPosition)
     }
 
@@ -62,7 +61,7 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
 
     private func header(forColumn column: Int) -> Header {
         let frame = self.frame(forColumn: column)
-        return Header(frame: frame, alpha: alpha)
+        return Header(frame: frame, alpha: dataSource.alpha)
     }
 
 }
