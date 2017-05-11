@@ -1,6 +1,7 @@
 import UIKit
+import AudioBar
 
-final class BookContainerViewController: UIViewController {
+final class BookContainerViewController: UIViewController, AudioBarDelegate {
 
     private var bookPageViewController: BookPageViewController!
     private var audioBarContainerController: AudioBarContainerController!
@@ -9,6 +10,7 @@ final class BookContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        audioBarContainerController.delegate = self
         navigationItem.leftBarButtonItem = bookPageViewController.previousChapterButtonItem
         navigationItem.titleView = bookPageViewController.chapterTitleView
         navigationItem.rightBarButtonItem = bookPageViewController.nextChapterButtonItem
@@ -47,6 +49,16 @@ final class BookContainerViewController: UIViewController {
         default:
             fatalError()
         }
+    }
+
+    // MARK: Audio bar delegate
+
+    func audioBarDidPlayToEnd() {
+        let bookController = bookPageViewController.bookController
+        let nextChapterIndex = bookPageViewController.currentChapterIndex + 1
+        guard bookController.hasChapter(at: nextChapterIndex), bookController.book.chapters[nextChapterIndex].audioURL != nil else { return }
+        bookPageViewController.showChapter(at: nextChapterIndex, direction: .forward, animated: true)
+        audioBarContainerController.play()
     }
 
 }
