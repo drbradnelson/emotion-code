@@ -50,6 +50,7 @@
 		B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */; };
 		B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */; };
 		B6C104EE1DE119FD00BB4796 /* String+Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */; };
+		B6C136F11EC4B92500E6F0BC /* ChartLayoutColumnHeadersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C136F01EC4B92500E6F0BC /* ChartLayoutColumnHeadersCalculator.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
 		B6EE04761E39044400013226 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046E1E39044400013226 /* AudioToolbox.framework */; };
 		B6EE04771E39044400013226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046F1E39044400013226 /* AVFoundation.framework */; };
@@ -134,6 +135,7 @@
 		B6BB7F9E1DB670460063EBD7 /* ChartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartNavigationController.swift; sourceTree = "<group>"; };
 		B6BF17B31DBA0E11008657DF /* ChartEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartEmotionViewController.swift; sourceTree = "<group>"; };
 		B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Alphabet.swift"; sourceTree = "<group>"; };
+		B6C136F01EC4B92500E6F0BC /* ChartLayoutColumnHeadersCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutColumnHeadersCalculator.swift; sourceTree = "<group>"; };
 		B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
 		B6EE046E1E39044400013226 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B6EE046F1E39044400013226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -313,6 +315,7 @@
 			children = (
 				916BED5D1DED81C50048314E /* ChartLayout.swift */,
 				911377731DFFF9C6008627F1 /* ChartLayoutCore.swift */,
+				B6C136F01EC4B92500E6F0BC /* ChartLayoutColumnHeadersCalculator.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */,
 				0F4BA9CA1D6368DA003CCFE9 /* BookChapterViewController.swift in Sources */,
 				B65C13F91DB10EDD008B4A77 /* ChartSectionViewController.swift in Sources */,
+				B6C136F11EC4B92500E6F0BC /* ChartLayoutColumnHeadersCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
