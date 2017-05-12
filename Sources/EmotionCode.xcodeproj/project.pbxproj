@@ -54,6 +54,8 @@
 		B6C136F51EC4B99500E6F0BC /* ChartLayoutColumnHeadersCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C136F41EC4B99500E6F0BC /* ChartLayoutColumnHeadersCalculatorTests.swift */; };
 		B6C136F71EC4DC6000E6F0BC /* ChartLayoutRowHeadersCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C136F61EC4DC6000E6F0BC /* ChartLayoutRowHeadersCalculator.swift */; };
 		B6C136F91EC4DDB100E6F0BC /* ChartLayoutRowHeadersCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C136F81EC4DDB100E6F0BC /* ChartLayoutRowHeadersCalculatorTests.swift */; };
+		B6C136FB1EC5FDC600E6F0BC /* ChartLayoutItemsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C136FA1EC5FDC600E6F0BC /* ChartLayoutItemsCalculator.swift */; };
+		B6C136FD1EC6063100E6F0BC /* ChartLayoutItemsCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C136FC1EC6063100E6F0BC /* ChartLayoutItemsCalculatorTests.swift */; };
 		B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */; };
 		B6EE04761E39044400013226 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046E1E39044400013226 /* AudioToolbox.framework */; };
 		B6EE04771E39044400013226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE046F1E39044400013226 /* AVFoundation.framework */; };
@@ -142,6 +144,8 @@
 		B6C136F41EC4B99500E6F0BC /* ChartLayoutColumnHeadersCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartLayoutColumnHeadersCalculatorTests.swift; path = EmotionCodeTests/ChartLayoutColumnHeadersCalculatorTests.swift; sourceTree = SOURCE_ROOT; };
 		B6C136F61EC4DC6000E6F0BC /* ChartLayoutRowHeadersCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutRowHeadersCalculator.swift; sourceTree = "<group>"; };
 		B6C136F81EC4DDB100E6F0BC /* ChartLayoutRowHeadersCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartLayoutRowHeadersCalculatorTests.swift; path = EmotionCodeTests/ChartLayoutRowHeadersCalculatorTests.swift; sourceTree = SOURCE_ROOT; };
+		B6C136FA1EC5FDC600E6F0BC /* ChartLayoutItemsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutItemsCalculator.swift; sourceTree = "<group>"; };
+		B6C136FC1EC6063100E6F0BC /* ChartLayoutItemsCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartLayoutItemsCalculatorTests.swift; path = EmotionCodeTests/ChartLayoutItemsCalculatorTests.swift; sourceTree = SOURCE_ROOT; };
 		B6DBAB5B1DCCC0F500E4BA4B /* ChartHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
 		B6EE046E1E39044400013226 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B6EE046F1E39044400013226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -325,6 +329,8 @@
 				B6C136F41EC4B99500E6F0BC /* ChartLayoutColumnHeadersCalculatorTests.swift */,
 				B6C136F61EC4DC6000E6F0BC /* ChartLayoutRowHeadersCalculator.swift */,
 				B6C136F81EC4DDB100E6F0BC /* ChartLayoutRowHeadersCalculatorTests.swift */,
+				B6C136FA1EC5FDC600E6F0BC /* ChartLayoutItemsCalculator.swift */,
+				B6C136FC1EC6063100E6F0BC /* ChartLayoutItemsCalculatorTests.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -590,6 +596,7 @@
 				91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */,
 				0F3936641D5B9374003CC6C0 /* BookController.swift in Sources */,
 				911377741DFFF9C6008627F1 /* ChartLayoutCore.swift in Sources */,
+				B6C136FB1EC5FDC600E6F0BC /* ChartLayoutItemsCalculator.swift in Sources */,
 				B6EE047F1E39046B00013226 /* SupportViewController.swift in Sources */,
 				91F66B5B1DED907A003B58F1 /* ChartPresenter.swift in Sources */,
 				B6BB7F9F1DB670460063EBD7 /* ChartNavigationController.swift in Sources */,
@@ -631,6 +638,7 @@
 				916289E61E1D36680004D27E /* ChartLayoutProgramTests.swift in Sources */,
 				B6C136F51EC4B99500E6F0BC /* ChartLayoutColumnHeadersCalculatorTests.swift in Sources */,
 				B6C136F91EC4DDB100E6F0BC /* ChartLayoutRowHeadersCalculatorTests.swift in Sources */,
+				B6C136FD1EC6063100E6F0BC /* ChartLayoutItemsCalculatorTests.swift in Sources */,
 				B64AA50F1EB3752400C3CCE1 /* ChartLayoutCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
