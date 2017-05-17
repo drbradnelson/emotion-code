@@ -46,9 +46,9 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
     }
 
     func testX2() {
-        let calculator = Calculator(numberOfColumns: 2, columnWidth: 3, initialPosition: Point(x: 4), horizontalSectionSpacing: 5)
-        XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 4)
-        XCTAssertEqual(calculator.columnHeaders[1].frame.origin.x, 4 + 3 + 5)
+        let calculator = Calculator(numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, horizontalSectionSpacing: 5)
+        XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 3)
+        XCTAssertEqual(calculator.columnHeaders[1].frame.origin.x, 3 + 4 + 5)
     }
 
     func testY1() {
@@ -70,8 +70,8 @@ private extension Calculator {
     convenience init(
         numberOfColumns: Int = 1,
         alpha: Float = 1,
-        columnWidth: Int = 2,
-        initialPosition: Point = Point(x: 3, y: 4),
+        initialPosition: Point = Point(x: 2, y: 3),
+        columnWidth: Int = 4,
         columnHeaderHeight: Int = 5,
         horizontalSectionSpacing: Int = 6
     ) {

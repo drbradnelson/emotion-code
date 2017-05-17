@@ -34,7 +34,7 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
     }
 
     func testSizes2() {
-        let calculator = Calculator(numberOfRows: 2, rowHeaderWidth: 4, rowHeight: 3)
+        let calculator = Calculator(numberOfRows: 2, rowHeaderWidth: 3, rowHeight: 4)
         let expected = Size(width: 3, height: 4)
         XCTAssertEqual(calculator.rowHeaders[0].frame.size, expected)
         XCTAssertEqual(calculator.rowHeaders[1].frame.size, expected)
@@ -46,7 +46,7 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
     }
 
     func testX2() {
-        let calculator = Calculator(numberOfRows: 2, initialPosition: Point(y: 2))
+        let calculator = Calculator(numberOfRows: 2, initialPosition: Point(x: 3))
         XCTAssertEqual(calculator.rowHeaders[0].frame.origin.x, 3)
         XCTAssertEqual(calculator.rowHeaders[1].frame.origin.x, 3)
     }
@@ -57,9 +57,9 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
     }
 
     func testY2() {
-        let calculator = Calculator(numberOfRows: 2, rowHeight: 3, initialPosition(y: 4), verticalSectionSpacing: 5)
-        XCTAssertEqual(calculator.rowHeaders[0].frame.origin.y, 4)
-        XCTAssertEqual(calculator.rowHeaders[1].frame.origin.y, 4 + 3 + 5)
+        let calculator = Calculator(numberOfRows: 2, initialPosition: Point(y: 3), rowHeight: 4, verticalSectionSpacing: 5)
+        XCTAssertEqual(calculator.rowHeaders[0].frame.origin.y, 3)
+        XCTAssertEqual(calculator.rowHeaders[1].frame.origin.y, 3 + 4 + 5)
     }
 
 }
@@ -70,9 +70,9 @@ private extension Calculator {
     convenience init(
         numberOfRows: Int = 1,
         alpha: Float = 1,
-        rowHeaderWidth: Int = 2,
-        rowHeight: Int = 3,
-        initialPosition: Point = Point(x: 4, y: 5),
+        initialPosition: Point = Point(x: 2, y: 3),
+        rowHeaderWidth: Int = 4,
+        rowHeight: Int = 5,
         verticalSectionSpacing: Int = 6
         ) {
         let dataSource = DataSource(
