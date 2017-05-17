@@ -17,8 +17,7 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
         let numberOfColumns: Int
         let alpha: Float
         let columnWidth: Int
-        let contentPadding: Int
-        let rowHeaderWidth: Int
+        let initialPosition: Point
         let columnHeaderHeight: Int
         let horizontalSectionSpacing: Int
     }
@@ -38,17 +37,10 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
         return Size(width: dataSource.columnWidth, height: dataSource.columnHeaderHeight)
     }
 
-    private var initialXPosition: Int {
-        return dataSource.contentPadding + dataSource.rowHeaderWidth + dataSource.horizontalSectionSpacing
-    }
-
-    private var yPosition: Int {
-        return dataSource.contentPadding
-    }
-
     private func position(forColumn column: Int) -> Point {
-        let x = initialXPosition + column * (headerSize.width + dataSource.horizontalSectionSpacing)
-        return Point(x: x, y: yPosition)
+        let x = dataSource.initialPosition.x + column * (headerSize.width + dataSource.horizontalSectionSpacing)
+        let y = dataSource.initialPosition.y
+        return Point(x: x, y: y)
     }
 
     private func frame(forColumn column: Int) -> Rect {

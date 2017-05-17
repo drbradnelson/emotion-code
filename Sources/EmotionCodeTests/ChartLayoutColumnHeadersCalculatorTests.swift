@@ -41,23 +41,23 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
     }
 
     func testX1() {
-        let calculator = Calculator(numberOfColumns: 1, contentPadding: 2, rowHeaderWidth: 3, horizontalSectionSpacing: 4)
-        XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 2 + 3 + 4)
+        let calculator = Calculator(numberOfColumns: 1, initialPosition: Point(x: 2), horizontalSectionSpacing: 3)
+        XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 2 + 3)
     }
 
     func testX2() {
-        let calculator = Calculator(numberOfColumns: 2, columnWidth: 3, contentPadding: 4, rowHeaderWidth: 5, horizontalSectionSpacing: 6)
-        XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 4 + 5 + 6)
-        XCTAssertEqual(calculator.columnHeaders[1].frame.origin.x, 4 + 5 + 6 + 3 + 6)
+        let calculator = Calculator(numberOfColumns: 2, columnWidth: 3, initialPosition: Point(x: 4), horizontalSectionSpacing: 5)
+        XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 4)
+        XCTAssertEqual(calculator.columnHeaders[1].frame.origin.x, 4 + 3 + 5)
     }
 
     func testY1() {
-        let calculator = Calculator(numberOfColumns: 1, contentPadding: 2)
+        let calculator = Calculator(numberOfColumns: 1, initialPosition: Point(y: 2))
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.y, 2)
     }
 
     func testY2() {
-        let calculator = Calculator(numberOfColumns: 2, contentPadding: 3)
+        let calculator = Calculator(numberOfColumns: 2, initialPosition: Point(y: 3))
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.y, 3)
         XCTAssertEqual(calculator.columnHeaders[1].frame.origin.y, 3)
     }
@@ -71,8 +71,7 @@ private extension Calculator {
         numberOfColumns: Int = 1,
         alpha: Float = 1,
         columnWidth: Int = 2,
-        contentPadding: Int = 3,
-        rowHeaderWidth: Int = 4,
+        initialPosition: Point = Point(x: 3, y: 4),
         columnHeaderHeight: Int = 5,
         horizontalSectionSpacing: Int = 6
     ) {
@@ -80,8 +79,7 @@ private extension Calculator {
             numberOfColumns: numberOfColumns,
             alpha: alpha,
             columnWidth: columnWidth,
-            contentPadding: contentPadding,
-            rowHeaderWidth: rowHeaderWidth,
+            initialPosition: initialPosition,
             columnHeaderHeight: columnHeaderHeight,
             horizontalSectionSpacing: horizontalSectionSpacing
         )
@@ -92,5 +90,13 @@ private extension Calculator {
 extension Size: Equatable {
     public static func == (lhs: Size, rhs: Size) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
+    }
+}
+
+extension Point {
+    // swiftlint:disable:next identifier_name next_identifier
+    init(x: Int = 0, y: Int = 0) {
+        self.x = x
+        self.y = y
     }
 }
