@@ -62,8 +62,22 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         return isVisible ? 1 : 0
     }
 
+    private func itemHeight(at indexPath: IndexPath) -> Int {
+        switch dataSource.mode {
+        case .all:
+            let maxNumberOfItemsInSection = dataSource.itemsPerSection.max()!
+            let totalItemSpacing = dataSource.itemSpacing * (maxNumberOfItemsInSection - 1)
+            return Int(round(Double(dataSource.rowHeight - totalItemSpacing) / Double(maxNumberOfItemsInSection)))
+        case .section, .emotion:
+            let numberOfItems = dataSource.itemsPerSection[indexPath.section]
+            let totalItemSpacing = dataSource.itemSpacing * (numberOfItems - 1)
+            return Int(round(Double(dataSource.rowHeight - totalItemSpacing) / Double(numberOfItems)))
+        }
+    }
+
     private func sizeForItem(at indexPath: IndexPath) -> Size {
-        return Size(width: dataSource.columnWidth, height: 0)
+        let height = itemHeight(at: indexPath)
+        return Size(width: dataSource.columnWidth, height: height)
     }
 
     private func frameForItem(at indexPath: IndexPath) -> Rect {
