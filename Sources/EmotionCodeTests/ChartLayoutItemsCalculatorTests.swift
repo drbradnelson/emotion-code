@@ -6,16 +6,115 @@ private typealias Calculator = ChartLayoutItemsCalculator
 
 final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
-    func testAlphasWithModeAll1() {
+    // MARK: - Alpha
+
+    func testAlphaWithModeAll1() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
     }
 
-    func testAlphasWithModeAll2() {
+    func testAlphaWithModeAll2() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
+    func testAlphaWithModeSectionFocused1() {
+        let calculator = Calculator(mode: .section(0, isFocused: true), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 0)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 0)
+    }
+
+    func testAlphaWithModeSectionFocused2() {
+        let calculator = Calculator(mode: .section(1, isFocused: true), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
+    }
+
+    func testAlphaWithModeSectionNotFocused1() {
+        let calculator = Calculator(mode: .section(0, isFocused: false), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
+    }
+
+    func testAlphaWithModeSectionNotFocused2() {
+        let calculator = Calculator(mode: .section(1, isFocused: false), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
+    }
+
+    func testAlphaWithModeEmotionFocused1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0), isFocused: true), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 0)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 0)
+    }
+
+    func testAlphaWithModeEmotionFocused2() {
+        let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1), isFocused: true), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 0)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
+    }
+
+    func testAlphaWithModeEmotionNotFocused1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0), isFocused: false), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
+    }
+
+    func testAlphaWithModeEmotionNotFocused2() {
+        let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1), isFocused: false), itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
+    }
+
+    // MARK: - Size
+
+    func testSizeWithModeAll1() {
+        let calculator = Calculator(mode: .all, itemsPerSection: [1], columnWidth: 2)
+        let expected = Size(width: 2, height: 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+    }
+
+    func testSizeWithModeAll2() {
+        let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], columnWidth: 3)
+        let expected = Size(width: 3, height: 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+    }
+
+}
+
+private extension Calculator {
+    convenience init(
+        mode: Mode = .all,
+        itemsPerSection: [Int] = [1],
+        numberOfColumns: Int = 2,
+        visibleViewSize: Int = 3,
+        initialPosition: Point = Point(x: 3, y: 4),
+        columnWidth: Int = 5,
+        rowHeight: Int = 6,
+        itemSpacing: Int = 7,
+        sectionSpacing: Size = Size(width: 8, height: 9)
+        ) {
+        let dataSource = DataSource(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: numberOfColumns,
+            visibleViewSize: visibleViewSize,
+            initialPosition: initialPosition,
+            columnWidth: columnWidth,
+            rowHeight: rowHeight,
+            itemSpacing: itemSpacing,
+            sectionSpacing: sectionSpacing
+        )
+        self.init(dataSource: dataSource)
+    }
 }

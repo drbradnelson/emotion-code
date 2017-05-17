@@ -2,9 +2,12 @@ protocol ChartLayoutItemsCalculatorInterface: class {
 
     associatedtype Mode
     associatedtype Item
+    associatedtype DataSource
 
     var items: [IndexPath: Item] { get }
     var contentOffset: Point { get }
+
+    init(dataSource: DataSource)
 
 }
 
@@ -13,21 +16,30 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     typealias Mode = ChartLayoutCore.Mode
     typealias Item = ChartLayoutCore.Item
 
-    private let mode: Mode
-    private let itemsPerSection: [Int]
+    struct DataSource {
+        let mode: Mode
+        let itemsPerSection: [Int]
+        let numberOfColumns: Int
+        let visibleViewSize: Int
+        let initialPosition: Point
+        let columnWidth: Int
+        let rowHeight: Int
+        let itemSpacing: Int
+        let sectionSpacing: Size
+    }
 
-    init(mode: Mode, itemsPerSection: [Int]) {
-        self.mode = mode
-        self.itemsPerSection = itemsPerSection
+    init(dataSource: DataSource) {
+        self.dataSource = dataSource
     }
 
     var items: [IndexPath: Item] {
         var items: [IndexPath: Item] = [:]
-        for (section, itemsCount) in itemsPerSection.enumerated() {
+        for (section, itemsCount) in dataSource.itemsPerSection.enumerated() {
             for item in 0..<itemsCount {
                 let indexPath = IndexPath(item: item, section: section)
+                let frame = frameForItem(at: indexPath)
                 let alpha = alphaForItem(at: indexPath)
-                items[indexPath] = Item(frame: .zero, alpha: alpha)
+                items[indexPath] = Item(frame: frame, alpha: alpha)
             }
         }
         return items
@@ -35,17 +47,28 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
 
     var contentOffset: Point = .zero
 
+    private let dataSource: DataSource
+
     private func alphaForItem(at indexPath: IndexPath) -> Float {
-        let isHidden: Bool
-        switch mode {
+        let isVisible: Bool
+        switch dataSource.mode {
         case .all:
-            isHidden = false
+            isVisible = true
         case .section(let section, let isFocused):
-            isHidden = !isFocused || indexPath.section == section
+            isVisible = !isFocused || indexPath.section == section
         case .emotion(let emotionIndexPath, let isFocused):
-            isHidden = !isFocused || emotionIndexPath == indexPath
+            isVisible = !isFocused || emotionIndexPath == indexPath
         }
-        return isHidden ? 0 : 1
+        return isVisible ? 1 : 0
+    }
+
+    private func sizeForItem(at indexPath: IndexPath) -> Size {
+        return Size(width: dataSource.columnWidth, height: 0)
+    }
+
+    private func frameForItem(at indexPath: IndexPath) -> Rect {
+        let size = sizeForItem(at: indexPath)
+        return Rect(origin: .zero, size: size)
     }
 
 }
