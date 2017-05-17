@@ -88,6 +88,50 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], columnWidth: 3)
         let expected = Size(width: 3, height: 0)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.size, expected)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.size, expected)
+    }
+
+    func testSizeWithModeSection1() {
+        let calculator = Calculator(mode: .section(0), itemsPerSection: [1], columnWidth: 2)
+        let expected = Size(width: 2, height: 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+    }
+
+    func testSizeWithModeSection2() {
+        let calculator = Calculator(mode: .section(1), itemsPerSection: [1, 2], columnWidth: 3)
+        let expected = Size(width: 3, height: 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.size, expected)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.size, expected)
+    }
+
+    func testSizeWithModeEmotion1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1], columnWidth: 2)
+        let expected = Size(width: 2, height: 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+    }
+
+    func testSizeWithModeEmotion2() {
+        let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1)), itemsPerSection: [1, 2], columnWidth: 3)
+        let expected = Size(width: 3, height: 0)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.size, expected)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.size, expected)
+    }
+
+}
+
+private typealias Mode = Calculator.Mode
+
+private extension Mode {
+
+    static func section(_ section: Int) -> Mode {
+        return .section(section, isFocused: false)
+    }
+
+    static func emotion(_ indexPath: IndexPath) -> Mode {
+        return .emotion(indexPath, isFocused: false)
     }
 
 }
