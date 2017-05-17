@@ -16,10 +16,9 @@ final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInte
     struct DataSource {
         let numberOfRows: Int
         let alpha: Float
-        let sectionHeight: Int
-        let contentPadding: Int
         let rowHeaderWidth: Int
-        let columnHeaderHeight: Int
+        let rowHeight: Int
+        let initialPosition: Point
         let verticalSectionSpacing: Int
     }
 
@@ -35,20 +34,13 @@ final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInte
     private let dataSource: DataSource
 
     private var headerSize: Size {
-        return Size(width: dataSource.rowHeaderWidth, height: dataSource.sectionHeight)
-    }
-
-    private var initialYPosition: Int {
-        return dataSource.contentPadding + dataSource.columnHeaderHeight + dataSource.verticalSectionSpacing
-    }
-
-    private var xPosition: Int {
-        return dataSource.contentPadding
+        return Size(width: dataSource.rowHeaderWidth, height: dataSource.rowHeight)
     }
 
     private func position(forRow row: Int) -> Point {
-        let y = initialYPosition + row * (headerSize.height + dataSource.verticalSectionSpacing)
-        return Point(x: xPosition, y: y)
+        let x = dataSource.initialPosition.x
+        let y = dataSource.initialPosition.y + row * (headerSize.height + dataSource.verticalSectionSpacing)
+        return Point(x: x, y: y)
     }
 
     private func frame(forRow row: Int) -> Rect {
