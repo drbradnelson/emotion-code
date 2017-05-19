@@ -20,7 +20,7 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         let mode: Mode
         let itemsPerSection: [Int]
         let numberOfColumns: Int
-        let visibleViewSize: Int
+        let visibleViewSize: Size
         let initialPosition: Point
         let columnWidth: Int
         let rowHeight: Int
@@ -80,9 +80,21 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         return Size(width: dataSource.columnWidth, height: height)
     }
 
+    private func xPositionForItem(at indexPath: IndexPath) -> Int {
+        let column = indexPath.section % dataSource.numberOfColumns
+        return dataSource.initialPosition.x + column * (dataSource.columnWidth + dataSource.sectionSpacing.width)
+    }
+
+    private func positionForItem(at indexPath: IndexPath) -> Point {
+        let x = xPositionForItem(at: indexPath)
+        let y = 0
+        return Point(x: x, y: y)
+    }
+
     private func frameForItem(at indexPath: IndexPath) -> Rect {
+        let position = positionForItem(at: indexPath)
         let size = sizeForItem(at: indexPath)
-        return Rect(origin: .zero, size: size)
+        return Rect(origin: position, size: size)
     }
 
 }

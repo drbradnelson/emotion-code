@@ -120,6 +120,65 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.size, expected)
     }
 
+    // MARK: - X offset
+
+    func testXModeAll1() {
+        let calculator = Calculator(mode: .all, itemsPerSection: [1], numberOfColumns: 1, initialPosition: Point(x: 2))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
+    }
+
+    func testXModeAll2() {
+        let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 2)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 2)
+    }
+
+    func testXModeAll3() {
+        let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, sectionSpacing: Size(width: 5, height: 0))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 3)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 3 + 4 + 5)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 3 + 4 + 5)
+    }
+
+    func testXModeSection1() {
+        let calculator = Calculator(mode: .section(0), itemsPerSection: [1], numberOfColumns: 1, initialPosition: Point(x: 2))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
+    }
+
+    func testXModeSection2() {
+        let calculator = Calculator(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 2)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 2)
+    }
+
+    func testXModeSection3() {
+        let calculator = Calculator(mode: .section(1), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, sectionSpacing: Size(width: 5, height: 0))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 3)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 3 + 4 + 5)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 3 + 4 + 5)
+    }
+
+    func testXModeEmotion1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1], numberOfColumns: 1, initialPosition: Point(x: 2))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
+    }
+
+    func testXModeEmotion2() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 2)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 2)
+    }
+
+    func testXModeEmotion3() {
+        let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1)), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, sectionSpacing: Size(width: 5, height: 0))
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 3)
+        XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 3 + 4 + 5)
+        XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 3 + 4 + 5)
+    }
+
 }
 
 private typealias Mode = Calculator.Mode
@@ -141,12 +200,12 @@ private extension Calculator {
         mode: Mode = .all,
         itemsPerSection: [Int] = [1],
         numberOfColumns: Int = 1,
-        visibleViewSize: Int = 2,
-        initialPosition: Point = Point(x: 3, y: 4),
-        columnWidth: Int = 5,
-        rowHeight: Int = 6,
-        itemSpacing: Int = 7,
-        sectionSpacing: Size = Size(width: 8, height: 9)
+        visibleViewSize: Size = Size(width: 2, height: 3),
+        initialPosition: Point = Point(x: 4, y: 5),
+        columnWidth: Int = 6,
+        rowHeight: Int = 7,
+        itemSpacing: Int = 8,
+        sectionSpacing: Size = Size(width: 9, height: 10)
         ) {
         let dataSource = DataSource(
             mode: mode,
