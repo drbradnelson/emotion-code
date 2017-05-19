@@ -62,7 +62,7 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         return isVisible ? 1 : 0
     }
 
-    private func itemHeight(at indexPath: IndexPath) -> Int {
+    private func heightForItem(at indexPath: IndexPath) -> Int {
         switch dataSource.mode {
         case .all:
             let maxNumberOfItemsInSection = dataSource.itemsPerSection.max()!
@@ -76,7 +76,7 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     }
 
     private func sizeForItem(at indexPath: IndexPath) -> Size {
-        let height = itemHeight(at: indexPath)
+        let height = heightForItem(at: indexPath)
         return Size(width: dataSource.columnWidth, height: height)
     }
 
@@ -85,9 +85,21 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         return dataSource.initialPosition.x + column * (dataSource.columnWidth + dataSource.sectionSpacing.width)
     }
 
+    private func yPositionForSection(_ section: Int) -> Int {
+        let row = section / dataSource.numberOfColumns
+        return dataSource.initialPosition.y + row * (dataSource.rowHeight + dataSource.sectionSpacing.height)
+    }
+
+    private func yPositionForItem(at indexPath: IndexPath) -> Int {
+        let sectionY = yPositionForSection(indexPath.section)
+        let itemHeight = heightForItem(at: indexPath)
+        let itemYInSection = indexPath.item * (itemHeight + dataSource.itemSpacing)
+        return sectionY + itemYInSection
+    }
+
     private func positionForItem(at indexPath: IndexPath) -> Point {
         let x = xPositionForItem(at: indexPath)
-        let y = 0
+        let y = yPositionForItem(at: indexPath)
         return Point(x: x, y: y)
     }
 
