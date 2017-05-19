@@ -5,7 +5,6 @@ protocol ChartLayoutItemsCalculatorInterface: class {
     associatedtype DataSource
 
     var items: [IndexPath: Item] { get }
-    var contentOffset: Point { get }
 
     init(dataSource: DataSource)
 
@@ -44,8 +43,6 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         }
         return items
     }
-
-    var contentOffset: Point = .zero
 
     private let dataSource: DataSource
 
@@ -93,8 +90,8 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     private func yPositionForItem(at indexPath: IndexPath) -> Int {
         let sectionY = yPositionForSection(indexPath.section)
         let itemHeight = heightForItem(at: indexPath)
-        let itemYInSection = indexPath.item * (itemHeight + dataSource.itemSpacing)
-        return sectionY + itemYInSection
+        let itemY = indexPath.item * (itemHeight + dataSource.itemSpacing)
+        return sectionY + itemY
     }
 
     private func positionForItem(at indexPath: IndexPath) -> Point {
