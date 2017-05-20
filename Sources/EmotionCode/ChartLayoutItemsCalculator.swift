@@ -2,11 +2,10 @@ protocol ChartLayoutItemsCalculatorInterface: class {
 
     associatedtype Mode
     associatedtype Item
-    associatedtype DataSource
 
     var items: [IndexPath: Item] { get }
 
-    init(dataSource: DataSource)
+    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, columnWidth: Int, rowHeight: Int, initialPosition: Point, itemSpacing: Int, sectionSpacing: Size)
 
 }
 
@@ -15,25 +14,29 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     typealias Mode = ChartLayoutCore.Mode
     typealias Item = ChartLayoutCore.Item
 
-    struct DataSource {
-        let mode: Mode
-        let itemsPerSection: [Int]
-        let numberOfColumns: Int
-        let visibleViewSize: Size
-        let initialPosition: Point
-        let columnWidth: Int
-        let rowHeight: Int
-        let itemSpacing: Int
-        let sectionSpacing: Size
-    }
+    private let mode: Mode
+    private let itemsPerSection: [Int]
+    private let numberOfColumns: Int
+    private let columnWidth: Int
+    private let rowHeight: Int
+    private let initialPosition: Point
+    private let itemSpacing: Int
+    private let sectionSpacing: Size
 
-    init(dataSource: DataSource) {
-        self.dataSource = dataSource
+    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, columnWidth: Int, rowHeight: Int, initialPosition: Point, itemSpacing: Int, sectionSpacing: Size) {
+        self.mode = mode
+        self.itemsPerSection = itemsPerSection
+        self.numberOfColumns = numberOfColumns
+        self.columnWidth = columnWidth
+        self.rowHeight = rowHeight
+        self.initialPosition = initialPosition
+        self.itemSpacing = itemSpacing
+        self.sectionSpacing = sectionSpacing
     }
 
     var items: [IndexPath: Item] {
         var items: [IndexPath: Item] = [:]
-        for (section, itemsCount) in dataSource.itemsPerSection.enumerated() {
+        for (section, itemsCount) in itemsPerSection.enumerated() {
             for item in 0..<itemsCount {
                 let indexPath = IndexPath(item: item, section: section)
                 let frame = frameForItem(at: indexPath)
@@ -44,11 +47,9 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         return items
     }
 
-    private let dataSource: DataSource
-
     private func alphaForItem(at indexPath: IndexPath) -> Float {
         let isVisible: Bool
-        switch dataSource.mode {
+        switch mode {
         case .all:
             isVisible = true
         case .section(let section, let isFocused):
@@ -60,37 +61,37 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     }
 
     private func heightForItem(at indexPath: IndexPath) -> Int {
-        switch dataSource.mode {
+        switch mode {
         case .all:
-            let maxNumberOfItemsInSection = dataSource.itemsPerSection.max()!
-            let totalItemSpacing = dataSource.itemSpacing * (maxNumberOfItemsInSection - 1)
-            return Int(round(Double(dataSource.rowHeight - totalItemSpacing) / Double(maxNumberOfItemsInSection)))
+            let maxNumberOfItemsInSection = itemsPerSection.max()!
+            let totalItemSpacing = itemSpacing * (maxNumberOfItemsInSection - 1)
+            return Int(round(Double(rowHeight - totalItemSpacing) / Double(maxNumberOfItemsInSection)))
         case .section, .emotion:
-            let numberOfItems = dataSource.itemsPerSection[indexPath.section]
-            let totalItemSpacing = dataSource.itemSpacing * (numberOfItems - 1)
-            return Int(round(Double(dataSource.rowHeight - totalItemSpacing) / Double(numberOfItems)))
+            let numberOfItems = itemsPerSection[indexPath.section]
+            let totalItemSpacing = itemSpacing * (numberOfItems - 1)
+            return Int(round(Double(rowHeight - totalItemSpacing) / Double(numberOfItems)))
         }
     }
 
     private func sizeForItem(at indexPath: IndexPath) -> Size {
         let height = heightForItem(at: indexPath)
-        return Size(width: dataSource.columnWidth, height: height)
+        return Size(width: columnWidth, height: height)
     }
 
     private func xPositionForItem(at indexPath: IndexPath) -> Int {
-        let column = indexPath.section % dataSource.numberOfColumns
-        return dataSource.initialPosition.x + column * (dataSource.columnWidth + dataSource.sectionSpacing.width)
+        let column = indexPath.section % numberOfColumns
+        return initialPosition.x + column * (columnWidth + sectionSpacing.width)
     }
 
     private func yPositionForSection(_ section: Int) -> Int {
-        let row = section / dataSource.numberOfColumns
-        return dataSource.initialPosition.y + row * (dataSource.rowHeight + dataSource.sectionSpacing.height)
+        let row = section / numberOfColumns
+        return initialPosition.y + row * (rowHeight + sectionSpacing.height)
     }
 
     private func yPositionForItem(at indexPath: IndexPath) -> Int {
         let sectionY = yPositionForSection(indexPath.section)
         let itemHeight = heightForItem(at: indexPath)
-        let itemY = indexPath.item * (itemHeight + dataSource.itemSpacing)
+        let itemY = indexPath.item * (itemHeight + itemSpacing)
         return sectionY + itemY
     }
 

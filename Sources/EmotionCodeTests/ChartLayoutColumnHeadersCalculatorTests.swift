@@ -64,8 +64,6 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
 }
 
-private typealias DataSource = Calculator.DataSource
-
 private extension Calculator {
     convenience init(
         numberOfColumns: Int = 1,
@@ -75,15 +73,14 @@ private extension Calculator {
         columnHeaderHeight: Int = 5,
         horizontalSectionSpacing: Int = 6
     ) {
-        let dataSource = DataSource(
+        self.init(
             numberOfColumns: numberOfColumns,
             alpha: alpha,
             columnWidth: columnWidth,
-            initialPosition: initialPosition,
             columnHeaderHeight: columnHeaderHeight,
+            initialPosition: initialPosition,
             horizontalSectionSpacing: horizontalSectionSpacing
         )
-        self.init(dataSource: dataSource)
     }
 }
 
@@ -94,7 +91,7 @@ extension Size: Equatable {
 }
 
 extension Point {
-    // swiftlint:disable:next identifier_name next_identifier
+    // swiftlint:disable:next identifier_name
     init(x: Int = 0, y: Int = 0) {
         self.x = x
         self.y = y

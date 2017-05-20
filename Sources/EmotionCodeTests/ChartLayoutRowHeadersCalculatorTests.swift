@@ -64,8 +64,6 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
 
 }
 
-private typealias DataSource = Calculator.DataSource
-
 private extension Calculator {
     convenience init(
         numberOfRows: Int = 1,
@@ -74,8 +72,8 @@ private extension Calculator {
         rowHeaderWidth: Int = 4,
         rowHeight: Int = 5,
         verticalSectionSpacing: Int = 6
-        ) {
-        let dataSource = DataSource(
+    ) {
+        self.init(
             numberOfRows: numberOfRows,
             alpha: alpha,
             rowHeaderWidth: rowHeaderWidth,
@@ -83,6 +81,5 @@ private extension Calculator {
             initialPosition: initialPosition,
             verticalSectionSpacing: verticalSectionSpacing
         )
-        self.init(dataSource: dataSource)
     }
 }

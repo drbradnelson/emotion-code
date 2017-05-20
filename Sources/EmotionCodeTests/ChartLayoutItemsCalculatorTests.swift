@@ -272,24 +272,21 @@ private extension Calculator {
         mode: Mode = .all,
         itemsPerSection: [Int] = [1],
         numberOfColumns: Int = 1,
-        visibleViewSize: Size = Size(width: 2, height: 3),
         initialPosition: Point = Point(x: 4, y: 5),
         columnWidth: Int = 6,
         rowHeight: Int = 7,
         itemSpacing: Int = 8,
         sectionSpacing: Size = Size(width: 9, height: 10)
-        ) {
-        let dataSource = DataSource(
+    ) {
+        self.init(
             mode: mode,
             itemsPerSection: itemsPerSection,
             numberOfColumns: numberOfColumns,
-            visibleViewSize: visibleViewSize,
-            initialPosition: initialPosition,
             columnWidth: columnWidth,
             rowHeight: rowHeight,
+            initialPosition: initialPosition,
             itemSpacing: itemSpacing,
             sectionSpacing: sectionSpacing
         )
-        self.init(dataSource: dataSource)
     }
 }
