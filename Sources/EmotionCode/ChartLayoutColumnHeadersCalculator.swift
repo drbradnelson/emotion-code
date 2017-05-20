@@ -28,10 +28,10 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
         self.horizontalSectionSpacing = horizontalSectionSpacing
     }
 
-    var columnHeaders: [Header] {
-        let columnsRange = 0..<numberOfColumns
-        return columnsRange.map(header)
-    }
+    private(set) lazy var columnHeaders: [Header] = {
+        let columnsRange = 0..<self.numberOfColumns
+        return columnsRange.map(self.header)
+    }()
 
     private var headerSize: Size {
         return Size(width: columnWidth, height: columnHeaderHeight)

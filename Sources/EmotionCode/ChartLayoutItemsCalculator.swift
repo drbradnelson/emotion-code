@@ -34,18 +34,18 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         self.sectionSpacing = sectionSpacing
     }
 
-    var items: [IndexPath: Item] {
+    private(set) lazy var items: [IndexPath: Item] = {
         var items: [IndexPath: Item] = [:]
-        for (section, itemsCount) in itemsPerSection.enumerated() {
+        for (section, itemsCount) in self.itemsPerSection.enumerated() {
             for item in 0..<itemsCount {
                 let indexPath = IndexPath(item: item, section: section)
-                let frame = frameForItem(at: indexPath)
-                let alpha = alphaForItem(at: indexPath)
+                let frame = self.frameForItem(at: indexPath)
+                let alpha = self.alphaForItem(at: indexPath)
                 items[indexPath] = Item(frame: frame, alpha: alpha)
             }
         }
         return items
-    }
+    }()
 
     private func alphaForItem(at indexPath: IndexPath) -> Float {
         let isVisible: Bool

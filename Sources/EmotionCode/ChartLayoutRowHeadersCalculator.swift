@@ -28,10 +28,10 @@ final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInte
         self.verticalSectionSpacing = verticalSectionSpacing
     }
 
-    var rowHeaders: [Header] {
-        let rowsRange = 0..<numberOfRows
-        return rowsRange.map(header)
-    }
+    private(set) lazy var rowHeaders: [Header] = {
+        let rowsRange = 0..<self.numberOfRows
+        return rowsRange.map(self.header)
+    }()
 
     private var headerSize: Size {
         return Size(width: rowHeaderWidth, height: rowHeight)
