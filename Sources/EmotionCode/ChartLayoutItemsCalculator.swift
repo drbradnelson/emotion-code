@@ -37,11 +37,10 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     private(set) lazy var items: [IndexPath: Item] = {
         var items: [IndexPath: Item] = [:]
         for (section, itemsCount) in self.itemsPerSection.enumerated() {
-            for item in 0..<itemsCount {
-                let indexPath = IndexPath(item: item, section: section)
-                let frame = self.frameForItem(at: indexPath)
-                let alpha = self.alphaForItem(at: indexPath)
-                items[indexPath] = Item(frame: frame, alpha: alpha)
+            for itemIndex in 0..<itemsCount {
+                let indexPath = IndexPath(item: itemIndex, section: section)
+                let item = self.item(at: indexPath)
+                items[indexPath] = item
             }
         }
         return items
@@ -105,6 +104,12 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
         let position = positionForItem(at: indexPath)
         let size = sizeForItem(at: indexPath)
         return Rect(origin: position, size: size)
+    }
+
+    private func item(at indexPath: IndexPath) -> Item {
+        let frame = frameForItem(at: indexPath)
+        let alpha = alphaForItem(at: indexPath)
+        return Item(frame: frame, alpha: alpha)
     }
 
 }
