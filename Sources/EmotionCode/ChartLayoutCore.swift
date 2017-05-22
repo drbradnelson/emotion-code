@@ -23,13 +23,13 @@ final class ChartLayoutCore {
         case emotion(IndexPath, isFocused: Bool)
     }
 
-    private enum Failure: Error {
-        case missingItems
-        case invalidAmountOfItems
-        case invalidNumberOfColumns
-        case invalidViewSize
-        case invalidMode
-    }
+//    private enum Failure: Error {
+//        case missingItems
+//        case invalidAmountOfItems
+//        case invalidNumberOfColumns
+//        case invalidViewSize
+//        case invalidMode
+//    }
 
     private struct Parameters {
         static let minViewHeightForCompactLayout = 554
@@ -55,53 +55,53 @@ final class ChartLayoutCore {
         let labelSizes: [IndexPath: Size]
     }
 
-    private struct DataSource {
-        var mode: Mode
-        let itemsPerSection: [Int]
-        let numberOfColumns: Int
-        let topContentInset: Int
-        let bottomContentInset: Int
-        var viewSize: Size
+    private var mode: Mode {
+        didSet {
+            view = chartView()
+        }
     }
-
-    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
-        dataSource = DataSource(
-            mode: mode,
-            itemsPerSection: itemsPerSection,
-            numberOfColumns: numberOfColumns,
-            topContentInset: topContentInset,
-            bottomContentInset: bottomContentInset,
-            viewSize: viewSize
-        )
-    }
-
-    private var dataSource: DataSource {
+    private let itemsPerSection: [Int]
+    private let numberOfColumns: Int
+    private let topContentInset: Int
+    private let bottomContentInset: Int
+    private var viewSize: Size {
         didSet {
             view = chartView()
         }
     }
 
+    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, topContentInset: Int, bottomContentInset: Int, viewSize: Size) {
+        self.mode = mode
+        self.itemsPerSection = itemsPerSection
+        self.numberOfColumns = numberOfColumns
+        self.topContentInset = topContentInset
+        self.bottomContentInset = bottomContentInset
+        self.viewSize = viewSize
+    }
+
     lazy var view: View = self.chartView()
 
+    // MARK: - Actions
+
     func viewWillTransition() {
-        switch dataSource.mode {
+        switch mode {
         case .all:
             return
         case .section(let section, _):
-            dataSource.mode = .section(section, isFocused: false)
+            mode = .section(section, isFocused: false)
         case .emotion(let indexPath, _):
-            dataSource.mode = .emotion(indexPath, isFocused: false)
+            mode = .emotion(indexPath, isFocused: false)
         }
     }
 
     func viewDidTransition() {
-        switch dataSource.mode {
+        switch mode {
         case .all:
             return
         case .section(let section, _):
-            dataSource.mode = .section(section, isFocused: true)
+            mode = .section(section, isFocused: true)
         case .emotion(let indexPath, _):
-            dataSource.mode = .emotion(indexPath, isFocused: true)
+            mode = .emotion(indexPath, isFocused: true)
         }
     }
 
@@ -109,126 +109,94 @@ final class ChartLayoutCore {
         guard viewSize.width > 0, viewSize.height > 0 else {
             return
         }
-        dataSource.viewSize = viewSize
+        self.viewSize = viewSize
     }
 
     private var visibleViewSize: Size {
         return .init(
-            width: dataSource.viewSize.width,
-            height: dataSource.viewSize.height - dataSource.topContentInset - dataSource.bottomContentInset
+            width: viewSize.width,
+            height: viewSize.height - topContentInset - bottomContentInset
         )
     }
 
-    private var columnsRange: CountableRange<Int> {
-        return 0..<dataSource.numberOfColumns
-    }
-
     private var headerAlpha: Float {
-        switch dataSource.mode {
-        case .all: return 0
-        case .section, .emotion: return 1
+        switch mode {
+        case .all: return 1
+        case .section, .emotion: return 0
         }
     }
 
     private var columnWidth: Int {
-        let totalHorizontalSectionSpacing = Parameters.sectionSpacing.width * dataSource.numberOfColumns
-        let totalHorizontalContentPadding = Parameters.contentPadding * 2
-        let availableWidth = visibleViewSize.width - totalHorizontalSectionSpacing - totalHorizontalContentPadding - Parameters.headerSize.width
-        return availableWidth / dataSource.numberOfColumns
-    }
-
-    private var columnHeaderSize: Size {
-        return Size(width: columnWidth, height: Parameters.headerSize.height)
-    }
-
-    private func position(forColumn column: Int) -> Point {
-        let defaultXPosition = Parameters.contentPadding + Parameters.headerSize.width + Parameters.sectionSpacing.width
-        return Point(
-            x: defaultXPosition + column * (columnWidth + Parameters.sectionSpacing.width),
-            y: Parameters.contentPadding
-        )
-    }
-
-    private func frame(forColumn column: Int) -> Rect {
-        return Rect(origin: position(forColumn: column), size: columnHeaderSize)
-    }
-
-    private var columnHeaderFrames: [Rect] {
-        return columnsRange.map { column in frame(forColumn: column) }
-    }
-
-    var columnHeaders: [IndexPath: Header] {
-        var headers: [IndexPath: Header] = [:]
-        for column in columnsRange {
-            let indexPath = IndexPath(section: column)
-            headers[indexPath] = Header(frame: columnHeaderFrames[column], alpha: headerAlpha)
+        switch mode {
+        case .all:
+            let totalHorizontalSectionSpacing = Parameters.sectionSpacing.width * numberOfColumns
+            let totalHorizontalContentPadding = Parameters.contentPadding * 2
+            let availableWidth = visibleViewSize.width - totalHorizontalSectionSpacing - totalHorizontalContentPadding - Parameters.headerSize.width
+            return availableWidth / numberOfColumns
+        case .section, .emotion:
+            return visibleViewSize.width - Parameters.contentPadding * 2
         }
-        return headers
+    }
+
+    private var rowHeight: Int {
+        switch mode {
+        case .all:
+            if isCompact {
+                let rowsCount = Int(round(Double(itemsPerSection.count) / Double(numberOfColumns)))
+                let totalSpacing = Parameters.contentPadding * 2 + Parameters.headerSize.height + sectionSpacing.height * rowsCount
+                return (visibleViewSize.height - totalSpacing) / rowsCount
+            } else {
+                let maxItemsCountInSection = itemsPerSection.max()!
+                let maxItemSpacingInSection = maxItemsCountInSection * (itemSpacing - 1)
+                let maxItemHeightInSection = maxItemsCountInSection * Parameters.itemHeight
+                return maxItemSpacingInSection + maxItemHeightInSection
+            }
+        case .section:
+            return visibleViewSize.height - Parameters.contentPadding * 2
+        case .emotion:
+            let itemHeight = visibleViewSize.height - Parameters.contentPadding * 2
+            let maxItemsCountInSection = itemsPerSection.max()!
+            let maxItemSpacingInSection = (maxItemsCountInSection - 1) * itemSpacing
+            return maxItemSpacingInSection + itemHeight * maxItemsCountInSection
+        }
+    }
+
+    private var sectionSpacing: Size {
+        switch mode {
+        case .all:
+            return Parameters.sectionSpacing
+        case .section, .emotion:
+            let width = Parameters.contentPadding * 2
+            let height = Parameters.contentPadding + max(topContentInset, bottomContentInset)
+            return .init(width: width, height: height)
+        }
+    }
+
+    private var itemSpacing: Int {
+        switch mode {
+        case .all: return 0
+        case .section: return Parameters.itemSpacing
+        case .emotion: return sectionSpacing.height
+        }
+    }
+
+    private var isCompact: Bool {
+        return visibleViewSize.height >= Parameters.minViewHeightForCompactLayout
     }
 
     private func chartView() -> View {
 
         func rowIndex(forSection section: Int) -> Int {
-            return section / dataSource.numberOfColumns
+            return section / numberOfColumns
         }
 
         func columnIndex(forSection section: Int) -> Int {
-            return section % dataSource.numberOfColumns
+            return section % numberOfColumns
         }
 
-        let sectionsCount = dataSource.itemsPerSection.count
+        let sectionsCount = itemsPerSection.count
         let sectionsRange = 0..<sectionsCount
-        let rowsCount = Int(round(Double(sectionsCount) / Double(dataSource.numberOfColumns)))
-        let rowsRange = 0..<rowsCount
-
-        //
-        // MARK: -
-        // MARK: Section and item spacing
-        //
-
-        let sectionSpacing: Size = {
-            switch dataSource.mode {
-            case .all:
-                return Parameters.sectionSpacing
-            case .section, .emotion:
-                let width = Parameters.contentPadding * 2
-                let height = Parameters.contentPadding + max(dataSource.topContentInset, dataSource.bottomContentInset)
-                return .init(width: width, height: height)
-            }
-        }()
-
-        let itemSpacing: Int = {
-            switch dataSource.mode {
-            case .all: return 0
-            case .section: return Parameters.itemSpacing
-            case .emotion: return sectionSpacing.height
-            }
-        }()
-
-        //
-        // MARK: -
-        // MARK: Item heights
-        //
-
-        let itemHeights = sectionsRange.map { section -> Int in
-            switch dataSource.mode {
-            case .all:
-                guard
-                    visibleViewSize.height >= Parameters.minViewHeightForCompactLayout,
-                    let maximumItemsCountInSection = dataSource.itemsPerSection.max() else { return Parameters.itemHeight }
-                let totalSpacing = Parameters.contentPadding * 2 + Parameters.headerSize.height + sectionSpacing.height * rowsCount
-                let totalAvailableSpacePerSection = (visibleViewSize.height - totalSpacing) / rowsCount
-                return Int(round(Double(totalAvailableSpacePerSection) / Double(maximumItemsCountInSection)))
-            case .section:
-                let itemCount = dataSource.itemsPerSection[section]
-                let totalPaddingHeight = Parameters.contentPadding * 2
-                let totalSpacingHeight = itemSpacing * (itemCount - 1)
-                let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
-                return Int(round(Double(totalAvailableContentHeight) / Double(itemCount)))
-            case .emotion:
-                return visibleViewSize.height - Parameters.contentPadding * 2
-            }
-        }
+        let rowsCount = Int(round(Double(itemsPerSection.count) / Double(numberOfColumns)))
 
         //
         // MARK: -
@@ -236,11 +204,11 @@ final class ChartLayoutCore {
         //
 
         let labelSizes: [IndexPath: Size] = {
-            switch dataSource.mode {
+            switch mode {
             case .all, .section:
                 return sectionsRange.reduce([:]) { labelSizes, section in
                     let width = visibleViewSize.width - Parameters.contentPadding * 2 - Parameters.itemPadding * 2
-                    let itemCount = dataSource.itemsPerSection[section]
+                    let itemCount = itemsPerSection[section]
                     let totalPaddingHeight = Parameters.contentPadding * 2
                     let totalSpacingHeight = itemSpacing * (itemCount - 1)
                     let totalAvailableContentHeight = visibleViewSize.height - totalPaddingHeight - totalSpacingHeight
@@ -258,227 +226,127 @@ final class ChartLayoutCore {
             }
         }()
 
-        //
-        // MARK: -
-        // MARK: Section height
-        //
+        let itemsPosition = Point(
+            x: Parameters.contentPadding + Parameters.headerSize.width + sectionSpacing.width,
+            y: Parameters.contentPadding + Parameters.headerSize.height + sectionSpacing.height
+        )
+        let itemsCalculator = ChartLayoutItemsCalculator(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: numberOfColumns,
+            columnWidth: columnWidth,
+            rowHeight: rowHeight,
+            initialPosition: itemsPosition,
+            itemSpacing: itemSpacing,
+            sectionSpacing: sectionSpacing
+        )
 
-        let sectionHeights = sectionsRange.map { section -> Int in
-            let itemCount = dataSource.itemsPerSection[section]
-            let verticalItemSpacing = (itemCount - 1) * itemSpacing
-            let totalItemHeights = itemCount * itemHeights[section]
-            return totalItemHeights + verticalItemSpacing
-        }
+        let columnHeadersPosition = Point(
+            x: Parameters.contentPadding + Parameters.headerSize.width + sectionSpacing.width,
+            y: Parameters.contentPadding
+        )
+        let columnHeadersCalculator = ChartLayoutColumnHeadersCalculator(
+            numberOfColumns: numberOfColumns,
+            alpha: headerAlpha,
+            columnWidth: columnWidth,
+            columnHeaderHeight: Parameters.headerSize.height,
+            initialPosition: columnHeadersPosition,
+            horizontalSectionSpacing: sectionSpacing.width
+        )
 
-        let maximumSectionHeight = sectionHeights.max()!
-
-        //
-        // MARK: -
-        // MARK: Row header size
-        //
-
-        let rowHeaderSize = Size(width: Parameters.headerSize.width, height: maximumSectionHeight)
-
-        //
-        // MARK: -
-        // MARK: Item width
-        //
-
-        let itemWidth: Int = {
-            switch dataSource.mode {
-            case .all:
-                let totalAvailableWidth = visibleViewSize.width - Parameters.contentPadding * 2 - rowHeaderSize.width
-                let totalSpacingWidth = sectionSpacing.width * dataSource.numberOfColumns
-                let totalContentWidth = totalAvailableWidth - totalSpacingWidth
-                return totalContentWidth / dataSource.numberOfColumns
-            case .section, .emotion:
-                return visibleViewSize.width - Parameters.contentPadding * 2
-            }
-        }()
-
-        //
-        // MARK: -
-        // MARK: Column header size
-        //
-
-        let columnHeaderSize = Size(width: itemWidth, height: Parameters.headerSize.height)
-
-        //
-        // MARK: -
-        // MARK: Column and row positions
-        //
-
-        let rowYPositions = rowsRange.map { row -> Int in
-            let cumulativeContentHeight = maximumSectionHeight * row
-            let cumulativeSpacingHeight = sectionSpacing.height * row
-            let y = columnHeaderSize.height + cumulativeSpacingHeight + cumulativeContentHeight + sectionSpacing.height + Parameters.contentPadding
-            switch dataSource.mode {
-            case .all:
-                return y
-            case .section, .emotion:
-                return y - sectionSpacing.height - columnHeaderSize.height
-            }
-        }
-
-        let columnXPositions = columnsRange.map { column -> Int in
-            let xPosition = Parameters.contentPadding + rowHeaderSize.width + sectionSpacing.width
-            let x = xPosition + column * (itemWidth + sectionSpacing.width)
-            switch dataSource.mode {
-            case .all:
-                return x
-            case .section, .emotion:
-                return x - sectionSpacing.width - rowHeaderSize.width
-            }
-        }
-
-        //
-        // MARK: -
-        // MARK: Item position
-        //
-
-        let yPositionsForItems = sectionsRange.map { section -> [Int] in
-            let itemsRange = 0..<dataSource.itemsPerSection[section]
-            let row = rowIndex(forSection: section)
-
-            return itemsRange.map { item in
-                let cumulativeSpacingHeight = item * itemSpacing
-                let cumulativeContentHeight = item * itemHeights[section]
-                return rowYPositions[row] + cumulativeContentHeight + cumulativeSpacingHeight
-            }
-        }
-
-        let itemPositions = sectionsRange.map { section -> [Point] in
-            let itemsRange = 0..<dataSource.itemsPerSection[section]
-            let column = columnIndex(forSection: section)
-
-            let xPosition = columnXPositions[column]
-            return itemsRange.map { item in
-                let yPosition = yPositionsForItems[section][item]
-                return Point(x: xPosition, y: yPosition)
-            }
-        }
-
-        //
-        // MARK: -
-        // MARK: Content offset
-        //
-
-        let proposedContentOffset: Point? = {
-            switch dataSource.mode {
-            case .all:
-                return nil
-            case .section(let section, _):
-                let column = columnIndex(forSection: section)
-                let x = columnXPositions[column] - Parameters.contentPadding
-                let row = rowIndex(forSection: section)
-                let y = rowYPositions[row] - Parameters.contentPadding - dataSource.topContentInset
-                return Point(x: x, y: y + dataSource.topContentInset)
-            case .emotion(let indexPath, _):
-                let column = columnIndex(forSection: indexPath.section)
-                let x = columnXPositions[column] - Parameters.contentPadding
-                let y = yPositionsForItems[indexPath.section][indexPath.item] - Parameters.contentPadding - dataSource.topContentInset
-                return Point(x: x, y: y + dataSource.topContentInset)
-            }
-        }()
-
-        //
-        // MARK: -
-        // MARK: Items
-        //
-
-        let items: [IndexPath: Item] = sectionsRange.reduce([:]) { items, section in
-            let height = itemHeights[section]
-            let size = Size(width: itemWidth, height: height)
-            var items = items
-            for item in 0..<dataSource.itemsPerSection[section] {
-                let itemPosition = itemPositions[section][item]
-                let position: Point
-                switch proposedContentOffset {
-                case .some(let proposedContentOffset):
-                    position = .init(
-                        x: itemPosition.x - proposedContentOffset.x,
-                        y: itemPosition.y - proposedContentOffset.y
-                    )
-                case .none:
-                    position = itemPosition
-                }
-                let alpha: Float
-                switch dataSource.mode {
-                case .all:
-                    alpha = 1
-                case .section(let currentSection, let isFocused):
-                    alpha = (!isFocused || currentSection == section) ? 1 : 0
-                case .emotion(let indexPath, let isFocused):
-                    alpha = (!isFocused || indexPath.item == item && indexPath.section == section) ? 1 : 0
-                }
-                let frame = Rect(origin: position, size: size)
-                let indexPath = IndexPath(item: item, section: section)
-                items[indexPath] = Header(frame: frame, alpha: alpha)
-            }
-            return items
-        }
-
-        //
-        // MARK: -
-        // MARK: Header position
-        //
-
-        let positionsForRowHeaders = rowsRange.map { row -> Point in
-            let x: Int
-            switch dataSource.mode {
-            case .all: x = Parameters.contentPadding
-            case .section, .emotion: x = -rowHeaderSize.width
-            }
-            let y = rowYPositions[row]
-            let position: Point
-            switch proposedContentOffset {
-            case .some(let proposedContentOffset):
-                position = .init(
-                    x: x - proposedContentOffset.x,
-                    y: y - proposedContentOffset.y
-                )
-            case .none:
-                position = .init(x: x, y: y)
-            }
-            return position
-        }
-
-        //
-        // MARK: -
-        // MARK: Header frame
-        //
-
-        let rowHeaders: [IndexPath: Header] = rowsRange.reduce([:]) { headers, row in
-            let position = positionsForRowHeaders[row]
-            let frame = Rect(origin: position, size: rowHeaderSize)
-            let alpha: Float
-            switch dataSource.mode {
-            case .all:
-                alpha = 1
-            case .section, .emotion:
-                alpha = 0
-            }
-            let indexPath = IndexPath(section: row)
-            var headers = headers
-            headers[indexPath] = Header(frame: frame, alpha: alpha)
-            return headers
-        }
+        let rowHeadersPosition = Point(
+            x: Parameters.contentPadding,
+            y: Parameters.contentPadding + Parameters.headerSize.height + sectionSpacing.height
+        )
+        let rowHeadersCalculator = ChartLayoutRowHeadersCalculator(
+            numberOfRows: rowsCount,
+            alpha: headerAlpha,
+            rowHeaderWidth: Parameters.headerSize.width,
+            rowHeight: rowHeight,
+            initialPosition: rowHeadersPosition,
+            verticalSectionSpacing: sectionSpacing.height
+        )
 
         //
         // MARK: -
         // MARK: Chart size
         //
 
-        let chartSize: Size = {
-            switch dataSource.mode {
+        let contentOffset: Point? = {
+            switch mode {
             case .all:
-                let isCompact = visibleViewSize.height >= Parameters.minViewHeightForCompactLayout
+                return nil
+            case .section(let section, _):
+                let indexPath = IndexPath(section: section)
+                let itemOffset = itemsCalculator.items[indexPath]!.frame.origin
+                return Point(
+                    x: itemOffset.x - Parameters.contentPadding,
+                    y: itemOffset.y - Parameters.contentPadding
+                )
+            case .emotion(let indexPath, _):
+                let itemOffset = itemsCalculator.items[indexPath]!.frame.origin
+                return Point(
+                    x: itemOffset.x - Parameters.contentPadding,
+                    y: itemOffset.y - Parameters.contentPadding
+                )
+            }
+        }()
+
+        let items = itemsCalculator.items.map { indexPath, item -> (IndexPath, Item) in
+            let point: Point
+            switch contentOffset {
+            case .some(let wrapped):
+                point = item.frame.origin - wrapped
+            case .none:
+                point = item.frame.origin
+            }
+            let frame = Rect(origin: point, size: item.frame.size)
+            return (indexPath, Item(frame: frame, alpha: item.alpha))
+        }
+
+        let columnHeaders: [IndexPath: Header] = {
+            var headers: [IndexPath: Header] = [:]
+            for (headerIndex, header) in columnHeadersCalculator.columnHeaders.enumerated() {
+                let indexPath = IndexPath(section: headerIndex)
+                let point: Point
+                switch contentOffset {
+                case .some(let wrapped):
+                    point = header.frame.origin - wrapped
+                case .none:
+                    point = header.frame.origin
+                }
+                let frame = Rect(origin: point, size: header.frame.size)
+                headers[indexPath] = Header(frame: frame, alpha: header.alpha)
+            }
+            return headers
+        }()
+
+        let rowHeaders: [IndexPath: Header] = {
+            var headers: [IndexPath: Header] = [:]
+            for (headerIndex, header) in rowHeadersCalculator.rowHeaders.enumerated() {
+                let indexPath = IndexPath(section: headerIndex)
+                let point: Point
+                switch contentOffset {
+                case .some(let wrapped):
+                    point = header.frame.origin - wrapped
+                case .none:
+                    point = header.frame.origin
+                }
+                let frame = Rect(origin: point, size: header.frame.size)
+                headers[indexPath] = Header(frame: frame, alpha: header.alpha)
+            }
+            return headers
+        }()
+
+        let chartSize: Size = {
+            switch mode {
+            case .all:
                 if isCompact { return visibleViewSize }
             case .section, .emotion:
                 return visibleViewSize
             }
 
-            let lastColumnIndexPath = IndexPath(section: dataSource.numberOfColumns - 1)
+            let lastColumnIndexPath = IndexPath(section: numberOfColumns - 1)
             let lastRowIndexPath = IndexPath(section: rowsCount - 1)
             let lastColumnHeaderFrame = columnHeaders[lastColumnIndexPath]!.frame
             let lastRowHeaderFrame = rowHeaders[lastRowIndexPath]!.frame
@@ -506,6 +374,19 @@ private extension IndexPath {
     }
 }
 
+private extension Dictionary {
+
+    func map<T: Hashable, U>(transform: (Key, Value) -> (T, U)) -> [T: U] {
+        var result: [T: U] = [:]
+        for (key, value) in self {
+            let (transformedKey, transformedValue) = transform(key, value)
+            result[transformedKey] = transformedValue
+        }
+        return result
+    }
+
+}
+
 //
 // MARK: -
 // MARK: Geometry
@@ -520,6 +401,12 @@ struct Point {
     var y: Int
 
     static let zero = Point(x: 0, y: 0)
+
+    public static func - (lhs: Point, rhs: Point) -> Point {
+        let x = lhs.x - rhs.x
+        let y = lhs.y - rhs.y
+        return Point(x: x, y: y)
+    }
 
 }
 
@@ -545,9 +432,4 @@ struct Rect {
         return origin.y + size.height
     }
 
-}
-
-private struct Spacing {
-    var horizontal: Int
-    var vertical: Int
 }
