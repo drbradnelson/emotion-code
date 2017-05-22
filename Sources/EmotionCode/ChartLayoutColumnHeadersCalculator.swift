@@ -1,7 +1,7 @@
 protocol ChartLayoutColumnHeadersCalculatorInterface: class {
 
-    associatedtype Header
     associatedtype Mode
+    associatedtype Header
 
     var columnHeaders: [Header] { get }
 

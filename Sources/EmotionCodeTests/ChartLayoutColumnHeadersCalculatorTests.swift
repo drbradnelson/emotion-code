@@ -6,6 +6,8 @@ private typealias Calculator = ChartLayoutColumnHeadersCalculator
 
 final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
+    // MARK: - Count
+
     func testCount1() {
         let calculator = Calculator(numberOfColumns: 1)
         XCTAssertEqual(calculator.columnHeaders.count, 1)
@@ -15,6 +17,8 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
         let calculator = Calculator(numberOfColumns: 2)
         XCTAssertEqual(calculator.columnHeaders.count, 2)
     }
+
+    // MARK: - Alpha
 
     func testAlphaModeAll1() {
         let calculator = Calculator(mode: .all, numberOfColumns: 1)
@@ -49,6 +53,8 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.columnHeaders[1].alpha, 0)
     }
 
+    // MARK: - Size
+
     func testSizes1() {
         let calculator = Calculator(numberOfColumns: 1, columnWidth: 2, columnHeaderHeight: 3)
         let expected = Size(width: 2, height: 3)
@@ -62,6 +68,8 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.columnHeaders[1].frame.size, expected)
     }
 
+    // MARK: - X offset
+
     func testX1() {
         let calculator = Calculator(numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 2)
@@ -72,6 +80,8 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 3)
         XCTAssertEqual(calculator.columnHeaders[1].frame.origin.x, 3 + 4 + 5)
     }
+
+    // MARK: - Y offset
 
     func testY1() {
         let calculator = Calculator(numberOfColumns: 1, initialPosition: Point(y: 2))
