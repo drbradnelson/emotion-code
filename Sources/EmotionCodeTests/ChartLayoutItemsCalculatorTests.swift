@@ -6,6 +6,18 @@ private typealias Calculator = ChartLayoutItemsCalculator
 
 final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
+    // MARK: - Count
+
+    func testCount1() {
+        let calculator = Calculator(itemsPerSection: [1])
+        XCTAssertEqual(calculator.items.count, 1)
+    }
+
+    func testCount2() {
+        let calculator = Calculator(itemsPerSection: [1, 2])
+        XCTAssertEqual(calculator.items.count, 1 + 2)
+    }
+
     // MARK: - Alpha
 
     func testAlphaWithModeAll1() {
