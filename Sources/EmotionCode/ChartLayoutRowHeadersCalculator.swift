@@ -1,27 +1,29 @@
 protocol ChartLayoutRowHeadersCalculatorInterface: class {
 
+    associatedtype Mode
     associatedtype Header
 
     var rowHeaders: [Header] { get }
 
-    init(numberOfRows: Int, alpha: Float, rowHeaderWidth: Int, rowHeight: Int, initialPosition: Point, verticalSectionSpacing: Int)
+    init(mode: Mode, numberOfRows: Int, rowHeaderWidth: Int, rowHeight: Int, initialPosition: Point, verticalSectionSpacing: Int)
 
 }
 
 final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInterface {
 
     typealias Header = ChartLayoutCore.Header
+    typealias Mode = ChartLayoutCore.Mode
 
+    private let mode: Mode
     private let numberOfRows: Int
-    private let alpha: Float
     private let rowHeaderWidth: Int
     private let rowHeight: Int
     private let initialPosition: Point
     private let verticalSectionSpacing: Int
 
-    init(numberOfRows: Int, alpha: Float, rowHeaderWidth: Int, rowHeight: Int, initialPosition: Point, verticalSectionSpacing: Int) {
+    init(mode: Mode, numberOfRows: Int, rowHeaderWidth: Int, rowHeight: Int, initialPosition: Point, verticalSectionSpacing: Int) {
+        self.mode = mode
         self.numberOfRows = numberOfRows
-        self.alpha = alpha
         self.rowHeaderWidth = rowHeaderWidth
         self.rowHeight = rowHeight
         self.initialPosition = initialPosition
@@ -32,6 +34,13 @@ final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInte
         let rowsRange = 0..<self.numberOfRows
         return rowsRange.map(self.header)
     }()
+
+    private var alpha: Float {
+        switch mode {
+        case .all: return 1
+        case .section, .emotion: return 0
+        }
+    }
 
     private var headerSize: Size {
         return Size(width: rowHeaderWidth, height: rowHeight)

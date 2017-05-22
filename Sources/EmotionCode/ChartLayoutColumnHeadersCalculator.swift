@@ -1,27 +1,29 @@
 protocol ChartLayoutColumnHeadersCalculatorInterface: class {
 
     associatedtype Header
+    associatedtype Mode
 
     var columnHeaders: [Header] { get }
 
-    init(numberOfColumns: Int, alpha: Float, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int)
+    init(mode: Mode, numberOfColumns: Int, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int)
 
 }
 
 final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculatorInterface {
 
     typealias Header = ChartLayoutCore.Header
+    typealias Mode = ChartLayoutCore.Mode
 
+    private let mode: Mode
     private let numberOfColumns: Int
-    private let alpha: Float
     private let columnWidth: Int
     private let columnHeaderHeight: Int
     private let initialPosition: Point
     private let horizontalSectionSpacing: Int
 
-    init(numberOfColumns: Int, alpha: Float, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int) {
+    init(mode: Mode, numberOfColumns: Int, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int) {
+        self.mode = mode
         self.numberOfColumns = numberOfColumns
-        self.alpha = alpha
         self.columnWidth = columnWidth
         self.columnHeaderHeight = columnHeaderHeight
         self.initialPosition = initialPosition
@@ -32,6 +34,13 @@ final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculat
         let columnsRange = 0..<self.numberOfColumns
         return columnsRange.map(self.header)
     }()
+
+    private var alpha: Float {
+        switch mode {
+        case .all: return 1
+        case .section, .emotion: return 0
+        }
+    }
 
     private var headerSize: Size {
         return Size(width: columnWidth, height: columnHeaderHeight)

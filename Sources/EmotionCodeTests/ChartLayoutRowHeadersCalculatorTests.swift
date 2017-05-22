@@ -16,15 +16,37 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.rowHeaders.count, 2)
     }
 
-    func testAlpha1() {
-        let calculator = Calculator(numberOfRows: 1, alpha: 0)
+    func testAlphaWithModeAll1() {
+        let calculator = Calculator(mode: .all, numberOfRows: 1)
+        XCTAssertEqual(calculator.rowHeaders[0].alpha, 1)
+    }
+
+    func testAlphaWithModeAll2() {
+        let calculator = Calculator(mode: .all, numberOfRows: 2)
+        XCTAssertEqual(calculator.rowHeaders[0].alpha, 1)
+        XCTAssertEqual(calculator.rowHeaders[1].alpha, 1)
+    }
+
+    func testAlphaWithModeSection1() {
+        let calculator = Calculator(mode: .section, numberOfRows: 1)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
     }
 
-    func testAlpha2() {
-        let calculator = Calculator(numberOfRows: 2, alpha: 1)
-        XCTAssertEqual(calculator.rowHeaders[0].alpha, 1)
-        XCTAssertEqual(calculator.rowHeaders[1].alpha, 1)
+    func testAlphaWithModeSection2() {
+        let calculator = Calculator(mode: .section, numberOfRows: 2)
+        XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
+        XCTAssertEqual(calculator.rowHeaders[1].alpha, 0)
+    }
+
+    func testAlphaWithModeEmotion1() {
+        let calculator = Calculator(mode: .emotion, numberOfRows: 1)
+        XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
+    }
+
+    func testAlphaWithModeEmotion2() {
+        let calculator = Calculator(mode: .emotion, numberOfRows: 2)
+        XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
+        XCTAssertEqual(calculator.rowHeaders[1].alpha, 0)
     }
 
     func testSizes1() {
@@ -66,16 +88,16 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
 
 private extension Calculator {
     convenience init(
+        mode: Mode = .all,
         numberOfRows: Int = 1,
-        alpha: Float = 1,
         initialPosition: Point = Point(x: 2, y: 3),
         rowHeaderWidth: Int = 4,
         rowHeight: Int = 5,
         verticalSectionSpacing: Int = 6
     ) {
         self.init(
+            mode: mode,
             numberOfRows: numberOfRows,
-            alpha: alpha,
             rowHeaderWidth: rowHeaderWidth,
             rowHeight: rowHeight,
             initialPosition: initialPosition,

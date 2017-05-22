@@ -55,15 +55,16 @@ final class ChartLayoutCore {
         let labelSizes: [IndexPath: Size]
     }
 
+    private let itemsPerSection: [Int]
+    private let numberOfColumns: Int
+    private let topContentInset: Int
+    private let bottomContentInset: Int
+
     private var mode: Mode {
         didSet {
             view = chartView()
         }
     }
-    private let itemsPerSection: [Int]
-    private let numberOfColumns: Int
-    private let topContentInset: Int
-    private let bottomContentInset: Int
     private var viewSize: Size {
         didSet {
             view = chartView()
@@ -117,13 +118,6 @@ final class ChartLayoutCore {
             width: viewSize.width,
             height: viewSize.height - topContentInset - bottomContentInset
         )
-    }
-
-    private var headerAlpha: Float {
-        switch mode {
-        case .all: return 1
-        case .section, .emotion: return 0
-        }
     }
 
     private var columnWidth: Int {
@@ -246,8 +240,8 @@ final class ChartLayoutCore {
             y: Parameters.contentPadding
         )
         let columnHeadersCalculator = ChartLayoutColumnHeadersCalculator(
+            mode: mode,
             numberOfColumns: numberOfColumns,
-            alpha: headerAlpha,
             columnWidth: columnWidth,
             columnHeaderHeight: Parameters.headerSize.height,
             initialPosition: columnHeadersPosition,
@@ -259,8 +253,8 @@ final class ChartLayoutCore {
             y: Parameters.contentPadding + Parameters.headerSize.height + sectionSpacing.height
         )
         let rowHeadersCalculator = ChartLayoutRowHeadersCalculator(
+            mode: mode,
             numberOfRows: rowsCount,
-            alpha: headerAlpha,
             rowHeaderWidth: Parameters.headerSize.width,
             rowHeight: rowHeight,
             initialPosition: rowHeadersPosition,

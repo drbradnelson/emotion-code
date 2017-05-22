@@ -16,15 +16,37 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.columnHeaders.count, 2)
     }
 
-    func testAlpha1() {
-        let calculator = Calculator(numberOfColumns: 1, alpha: 0)
+    func testAlphaModeAll1() {
+        let calculator = Calculator(mode: .all, numberOfColumns: 1)
+        XCTAssertEqual(calculator.columnHeaders[0].alpha, 1)
+    }
+
+    func testAlphaModeAll2() {
+        let calculator = Calculator(mode: .all, numberOfColumns: 2)
+        XCTAssertEqual(calculator.columnHeaders[0].alpha, 1)
+        XCTAssertEqual(calculator.columnHeaders[1].alpha, 1)
+    }
+
+    func testAlphaModeSection1() {
+        let calculator = Calculator(mode: .section, numberOfColumns: 1)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
     }
 
-    func testAlpha2() {
-        let calculator = Calculator(numberOfColumns: 2, alpha: 1)
-        XCTAssertEqual(calculator.columnHeaders[0].alpha, 1)
-        XCTAssertEqual(calculator.columnHeaders[1].alpha, 1)
+    func testAlphaModeSection2() {
+        let calculator = Calculator(mode: .section, numberOfColumns: 2)
+        XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
+        XCTAssertEqual(calculator.columnHeaders[1].alpha, 0)
+    }
+
+    func testAlphaModeEmotion1() {
+        let calculator = Calculator(mode: .emotion, numberOfColumns: 1)
+        XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
+    }
+
+    func testAlphaModeEmotion2() {
+        let calculator = Calculator(mode: .emotion, numberOfColumns: 2)
+        XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
+        XCTAssertEqual(calculator.columnHeaders[1].alpha, 0)
     }
 
     func testSizes1() {
@@ -66,16 +88,16 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
 private extension Calculator {
     convenience init(
+        mode: Mode = .all,
         numberOfColumns: Int = 1,
-        alpha: Float = 1,
         initialPosition: Point = Point(x: 2, y: 3),
         columnWidth: Int = 4,
         columnHeaderHeight: Int = 5,
         horizontalSectionSpacing: Int = 6
     ) {
         self.init(
+            mode: mode,
             numberOfColumns: numberOfColumns,
-            alpha: alpha,
             columnWidth: columnWidth,
             columnHeaderHeight: columnHeaderHeight,
             initialPosition: initialPosition,
