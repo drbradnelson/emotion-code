@@ -113,7 +113,3 @@ final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
     }
 
 }
-
-private extension Rect {
-    static let zero = Rect(origin: .zero, size: .zero)
-}
