@@ -35,7 +35,6 @@
 		915EEC421D460CE1005CC318 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC401D460CE1005CC318 /* TabBar.storyboard */; };
 		915EEC441D460CE1005CC318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC431D460CE1005CC318 /* Assets.xcassets */; };
 		915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EEC451D460CE1005CC318 /* LaunchScreen.storyboard */; };
-		916289E61E1D36680004D27E /* ChartLayoutProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916289E51E1D36680004D27E /* ChartLayoutProgramTests.swift */; };
 		916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BED5D1DED81C50048314E /* ChartLayout.swift */; };
 		91B88ACD1D58B8E600DFCDB2 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACC1D58B8E600DFCDB2 /* Chart.swift */; };
 		91B88ACF1D58B8EC00DFCDB2 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B88ACE1D58B8EC00DFCDB2 /* ChartController.swift */; };
@@ -121,7 +120,6 @@
 		915EEC431D460CE1005CC318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915EEC461D460CE1005CC318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915EEC481D460CE1005CC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		916289E51E1D36680004D27E /* ChartLayoutProgramTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayoutProgramTests.swift; sourceTree = "<group>"; };
 		916BED5D1DED81C50048314E /* ChartLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartLayout.swift; sourceTree = "<group>"; };
 		91A4303F1DD0DF08004D466E /* AudioBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioBar.framework; path = Carthage/Build/iOS/AudioBar.framework; sourceTree = "<group>"; };
 		91B88ACC1D58B8E600DFCDB2 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
@@ -340,7 +338,6 @@
 		B6B2736E1E05948E00771409 /* EmotionCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				916289E51E1D36680004D27E /* ChartLayoutProgramTests.swift */,
 				B64AA50E1EB3752400C3CCE1 /* ChartLayoutCoreTests.swift */,
 				B6A358711ED0A16100570106 /* Utilities.swift */,
 				B6B273711E05948E00771409 /* Info.plist */,
@@ -639,7 +636,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A358721ED0A16100570106 /* Utilities.swift in Sources */,
-				916289E61E1D36680004D27E /* ChartLayoutProgramTests.swift in Sources */,
 				B6C136F51EC4B99500E6F0BC /* ChartLayoutColumnHeadersCalculatorTests.swift in Sources */,
 				B6C136F91EC4DDB100E6F0BC /* ChartLayoutRowHeadersCalculatorTests.swift in Sources */,
 				B6C136FD1EC6063100E6F0BC /* ChartLayoutItemsCalculatorTests.swift in Sources */,
