@@ -8,46 +8,46 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
 
     // MARK: - Count
 
-    func testCount1() {
+    func testCountWith1Row() {
         let calculator = Calculator(numberOfRows: 1)
         XCTAssertEqual(calculator.rowHeaders.count, 1)
     }
 
-    func testCount2() {
+    func testCountWith2Rows() {
         let calculator = Calculator(numberOfRows: 2)
         XCTAssertEqual(calculator.rowHeaders.count, 2)
     }
 
     // MARK: - Alpha
 
-    func testAlphaWithModeAll1() {
+    func testAlphaWithModeAllWith1Row() {
         let calculator = Calculator(mode: .all, numberOfRows: 1)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 1)
     }
 
-    func testAlphaWithModeAll2() {
+    func testAlphaWithModeAllWith2Rows() {
         let calculator = Calculator(mode: .all, numberOfRows: 2)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 1)
         XCTAssertEqual(calculator.rowHeaders[1].alpha, 1)
     }
 
-    func testAlphaWithModeSection1() {
+    func testAlphaWithModeSectionAnd1Row() {
         let calculator = Calculator(mode: .section, numberOfRows: 1)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
     }
 
-    func testAlphaWithModeSection2() {
+    func testAlphaWithModeSectionAnd2Rows() {
         let calculator = Calculator(mode: .section, numberOfRows: 2)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
         XCTAssertEqual(calculator.rowHeaders[1].alpha, 0)
     }
 
-    func testAlphaWithModeEmotion1() {
+    func testAlphaWithModeEmotionAnd1Row() {
         let calculator = Calculator(mode: .emotion, numberOfRows: 1)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
     }
 
-    func testAlphaWithModeEmotion2() {
+    func testAlphaWithModeEmotionAnd2Rows() {
         let calculator = Calculator(mode: .emotion, numberOfRows: 2)
         XCTAssertEqual(calculator.rowHeaders[0].alpha, 0)
         XCTAssertEqual(calculator.rowHeaders[1].alpha, 0)
@@ -55,13 +55,13 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
 
     // MARK: - Size
 
-    func testSizes1() {
+    func testSizesWith1Row() {
         let calculator = Calculator(numberOfRows: 1, rowHeaderWidth: 2, rowHeight: 3)
         let expected = Size(width: 2, height: 3)
         XCTAssertEqual(calculator.rowHeaders[0].frame.size, expected)
     }
 
-    func testSizes2() {
+    func testSizesWith2Rows() {
         let calculator = Calculator(numberOfRows: 2, rowHeaderWidth: 3, rowHeight: 4)
         let expected = Size(width: 3, height: 4)
         XCTAssertEqual(calculator.rowHeaders[0].frame.size, expected)
@@ -70,12 +70,12 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
 
     // MARK: - X offset
 
-    func testX1() {
+    func testXWith1Row() {
         let calculator = Calculator(numberOfRows: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.rowHeaders[0].frame.origin.x, 2)
     }
 
-    func testX2() {
+    func testXWith2Rows() {
         let calculator = Calculator(numberOfRows: 2, initialPosition: Point(x: 3))
         XCTAssertEqual(calculator.rowHeaders[0].frame.origin.x, 3)
         XCTAssertEqual(calculator.rowHeaders[1].frame.origin.x, 3)
@@ -83,12 +83,12 @@ final class ChartLayoutRowHeadersCalculatorTests: XCTestCase {
 
     // MARK: - Y offset
 
-    func testY1() {
+    func testYWith1Row() {
         let calculator = Calculator(numberOfRows: 1, initialPosition: Point(y: 2))
         XCTAssertEqual(calculator.rowHeaders[0].frame.origin.y, 2)
     }
 
-    func testY2() {
+    func testYWith2Rows() {
         let calculator = Calculator(numberOfRows: 2, initialPosition: Point(y: 3), rowHeight: 4, verticalSectionSpacing: 5)
         XCTAssertEqual(calculator.rowHeaders[0].frame.origin.y, 3)
         XCTAssertEqual(calculator.rowHeaders[1].frame.origin.y, 3 + 4 + 5)

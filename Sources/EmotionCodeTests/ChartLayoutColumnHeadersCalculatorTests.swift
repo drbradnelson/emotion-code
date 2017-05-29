@@ -8,46 +8,46 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
     // MARK: - Count
 
-    func testCount1() {
+    func testCountWith1Column() {
         let calculator = Calculator(numberOfColumns: 1)
         XCTAssertEqual(calculator.columnHeaders.count, 1)
     }
 
-    func testCount2() {
+    func testCountWith2Columns() {
         let calculator = Calculator(numberOfColumns: 2)
         XCTAssertEqual(calculator.columnHeaders.count, 2)
     }
 
     // MARK: - Alpha
 
-    func testAlphaModeAll1() {
+    func testAlphaModeAllWith1Column() {
         let calculator = Calculator(mode: .all, numberOfColumns: 1)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 1)
     }
 
-    func testAlphaModeAll2() {
+    func testAlphaModeAllWith2Columns() {
         let calculator = Calculator(mode: .all, numberOfColumns: 2)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 1)
         XCTAssertEqual(calculator.columnHeaders[1].alpha, 1)
     }
 
-    func testAlphaModeSection1() {
+    func testAlphaModeSectionWith1Column() {
         let calculator = Calculator(mode: .section, numberOfColumns: 1)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
     }
 
-    func testAlphaModeSection2() {
+    func testAlphaModeSectionWith2Columns() {
         let calculator = Calculator(mode: .section, numberOfColumns: 2)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
         XCTAssertEqual(calculator.columnHeaders[1].alpha, 0)
     }
 
-    func testAlphaModeEmotion1() {
+    func testAlphaModeEmotionWith1Column() {
         let calculator = Calculator(mode: .emotion, numberOfColumns: 1)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
     }
 
-    func testAlphaModeEmotion2() {
+    func testAlphaModeEmotionWith2Columns() {
         let calculator = Calculator(mode: .emotion, numberOfColumns: 2)
         XCTAssertEqual(calculator.columnHeaders[0].alpha, 0)
         XCTAssertEqual(calculator.columnHeaders[1].alpha, 0)
@@ -55,13 +55,13 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
     // MARK: - Size
 
-    func testSizes1() {
+    func testSizesWith1Column() {
         let calculator = Calculator(numberOfColumns: 1, columnWidth: 2, columnHeaderHeight: 3)
         let expected = Size(width: 2, height: 3)
         XCTAssertEqual(calculator.columnHeaders[0].frame.size, expected)
     }
 
-    func testSizes2() {
+    func testSizesWith2Columns() {
         let calculator = Calculator(numberOfColumns: 2, columnWidth: 3, columnHeaderHeight: 4)
         let expected = Size(width: 3, height: 4)
         XCTAssertEqual(calculator.columnHeaders[0].frame.size, expected)
@@ -70,12 +70,12 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
     // MARK: - X offset
 
-    func testX1() {
+    func testXWith1Column() {
         let calculator = Calculator(numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 2)
     }
 
-    func testX2() {
+    func testXWith2Columns() {
         let calculator = Calculator(numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, horizontalSectionSpacing: 5)
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.x, 3)
         XCTAssertEqual(calculator.columnHeaders[1].frame.origin.x, 3 + 4 + 5)
@@ -83,12 +83,12 @@ final class ChartLayoutColumnHeadersCalculatorTests: XCTestCase {
 
     // MARK: - Y offset
 
-    func testY1() {
+    func testYWith1Column() {
         let calculator = Calculator(numberOfColumns: 1, initialPosition: Point(y: 2))
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.y, 2)
     }
 
-    func testY2() {
+    func testYWith2Columns() {
         let calculator = Calculator(numberOfColumns: 2, initialPosition: Point(y: 3))
         XCTAssertEqual(calculator.columnHeaders[0].frame.origin.y, 3)
         XCTAssertEqual(calculator.columnHeaders[1].frame.origin.y, 3)

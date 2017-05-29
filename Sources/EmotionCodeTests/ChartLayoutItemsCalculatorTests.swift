@@ -8,80 +8,80 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
     // MARK: - Count
 
-    func testCount1() {
+    func testCountWith1SectionAnd1Item() {
         let calculator = Calculator(itemsPerSection: [1])
         XCTAssertEqual(calculator.items.count, 1)
     }
 
-    func testCount2() {
+    func testCountWith2SectionsAnd3Items() {
         let calculator = Calculator(itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items.count, 1 + 2)
     }
 
     // MARK: - Alpha
 
-    func testAlphaWithModeAll1() {
+    func testAlphaWithModeAll() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
     }
 
-    func testAlphaWithModeAll2() {
+    func testAlphaWithModeAllAndMoreItems() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
-    func testAlphaWithModeSectionFocused1() {
+    func testAlphaWithModeSection0Focused() {
         let calculator = Calculator(mode: .section(0, isFocused: true), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 0)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 0)
     }
 
-    func testAlphaWithModeSectionFocused2() {
+    func testAlphaWithModeSection1Focused() {
         let calculator = Calculator(mode: .section(1, isFocused: true), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 0)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
-    func testAlphaWithModeSectionNotFocused1() {
+    func testAlphaWithModeSection0NotFocused() {
         let calculator = Calculator(mode: .section(0, isFocused: false), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
-    func testAlphaWithModeSectionNotFocused2() {
+    func testAlphaWithModeSection1NotFocused() {
         let calculator = Calculator(mode: .section(1, isFocused: false), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
-    func testAlphaWithModeEmotionFocused1() {
+    func testAlphaWithModeEmotionItem0Section0Focused() {
         let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0), isFocused: true), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 0)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 0)
     }
 
-    func testAlphaWithModeEmotionFocused2() {
+    func testAlphaWithModeEmotionItem1Section1Focused() {
         let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1), isFocused: true), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 0)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 0)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
-    func testAlphaWithModeEmotionNotFocused1() {
+    func testAlphaWithModeEmotionItem0Section0NotFocused() {
         let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0), isFocused: false), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.alpha, 1)
     }
 
-    func testAlphaWithModeEmotionNotFocused2() {
+    func testAlphaWithModeEmotionItem1Section1NotFocused() {
         let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1), isFocused: false), itemsPerSection: [1, 2])
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.alpha, 1)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.alpha, 1)
@@ -90,13 +90,13 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
     // MARK: - Size
 
-    func testSizeWithModeAll1() {
+    func testSizeWithModeAll() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1], columnWidth: 2, rowHeight: 3)
         let expected = Size(width: 2, height: 3)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
     }
 
-    func testSizeWithModeAll2() {
+    func testSizeWithModeAllAndMoreItems() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], columnWidth: 3, rowHeight: 10, itemSpacing: 4)
         let expected = Size(width: 3, height: (10 - 4) / 2)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
@@ -104,13 +104,13 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.size, expected)
     }
 
-    func testSizeWithModeSection1() {
+    func testSizeWithModeSection0() {
         let calculator = Calculator(mode: .section(0), itemsPerSection: [1], columnWidth: 2, rowHeight: 3)
         let expected = Size(width: 2, height: 3)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
     }
 
-    func testSizeWithModeSection2() {
+    func testSizeWithModeSection1() {
         let calculator = Calculator(mode: .section(1), itemsPerSection: [1, 2], columnWidth: 3, rowHeight: 10, itemSpacing: 4)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, Size(width: 3, height: 10))
         let expected = Size(width: 3, height: (10 - 4) / 2)
@@ -118,13 +118,13 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.size, expected)
     }
 
-    func testSizeWithModeEmotion1() {
+    func testSizeWithModeEmotionItem0Section0() {
         let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1], columnWidth: 2, rowHeight: 10)
         let expected = Size(width: 2, height: 10)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, expected)
     }
 
-    func testSizeWithModeEmotion2() {
+    func testSizeWithModeEmotionItem1Section1() {
         let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1)), itemsPerSection: [1, 2], columnWidth: 3, rowHeight: 10, itemSpacing: 4)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.size, Size(width: 3, height: 10))
         let expected = Size(width: 3, height: (10 - 4) / 2)
@@ -134,57 +134,57 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
     // MARK: - X offset
 
-    func testXWithModeAll1() {
+    func testXWithModeAll() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1], numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
     }
 
-    func testXWithModeAll2() {
+    func testXWithModeAllAndMoreItemsAnd1Column() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 2)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 2)
     }
 
-    func testXWithModeAll3() {
+    func testXWithModeAllAndMoreItemsAnd2Columns() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, sectionSpacing: Size(width: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 3)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 3 + 4 + 5)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 3 + 4 + 5)
     }
 
-    func testXWithModeSection1() {
+    func testXWithModeSection0() {
         let calculator = Calculator(mode: .section(0), itemsPerSection: [1], numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
     }
 
-    func testXWithModeSection2() {
+    func testXWithModeSection0AndMoreItems() {
         let calculator = Calculator(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 2)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 2)
     }
 
-    func testXWithModeSection3() {
+    func testXWithModeSection1AndMoreItems() {
         let calculator = Calculator(mode: .section(1), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, sectionSpacing: Size(width: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 3)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 3 + 4 + 5)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 3 + 4 + 5)
     }
 
-    func testXWithModeEmotion1() {
+    func testXWithModeEmotionItem0Section0() {
         let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1], numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
     }
 
-    func testXWithModeEmotion2() {
-        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
+    func testXWithModeEmotionItem0Section1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 1)), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(x: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 2)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 2)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.x, 2)
     }
 
-    func testXWithModeEmotion3() {
+    func testXWithModeEmotionItem1Section1() {
         let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1)), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(x: 3), columnWidth: 4, sectionSpacing: Size(width: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.x, 3)
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.x, 3 + 4 + 5)
@@ -193,12 +193,12 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
     // MARK: - Y offset
 
-    func testYWithModeAll1() {
+    func testYWithModeAll() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1], initialPosition: Point(y: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 2)
     }
 
-    func testYWithModeAll2() {
+    func testYWithModeAllAndMoreItemsAnd1Column() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
         let itemHeight = (10 - 4) / 2
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 3)
@@ -206,7 +206,7 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.y, 3 + 10 + 5 + itemHeight + 4)
     }
 
-    func testYWithModeAll3() {
+    func testYWithModeAllAndMoreItemsAnd2Columns() {
         let calculator = Calculator(mode: .all, itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
         let itemHeight = (10 - 4) / 2
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 3)
@@ -214,12 +214,12 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.y, 3 + itemHeight + 4)
     }
 
-    func testYWithModeSection1() {
+    func testYWithModeSection0() {
         let calculator = Calculator(mode: .section(0), itemsPerSection: [1], initialPosition: Point(y: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 2)
     }
 
-    func testYWithModeSection2() {
+    func testYWithModeSection0AndMoreItemsAnd1Column() {
         let calculator = Calculator(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 3)
         let itemHeight = (10 - 4) / 2
@@ -227,7 +227,7 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.y, 3 + 10 + 5 + itemHeight + 4)
     }
 
-    func testYWithModeSection3() {
+    func testYWithModeSection1AndMoreItemsAnd2Columns() {
         let calculator = Calculator(mode: .section(1), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 3)
         let itemHeight = (10 - 4) / 2
@@ -235,21 +235,21 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.y, 3 + itemHeight + 4)
     }
 
-    func testYWithModeEmotion1() {
-        let calculator = Calculator(mode: .section(0), itemsPerSection: [1], initialPosition: Point(y: 2))
+    func testYWithModeEmotionItem0Section0() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 0)), itemsPerSection: [1], initialPosition: Point(y: 2))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 2)
     }
 
-    func testYWithModeEmotion2() {
-        let calculator = Calculator(mode: .section(0), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
+    func testYWithModeEmotionItem0Section1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 0, section: 1)), itemsPerSection: [1, 2], numberOfColumns: 1, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 3)
         let itemHeight = (10 - 4) / 2
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.y, 3 + 10 + 5)
         XCTAssertEqual(calculator.items[.init(item: 1, section: 1)]!.frame.origin.y, 3 + 10 + 5 + itemHeight + 4)
     }
 
-    func testYWithModeEmotion3() {
-        let calculator = Calculator(mode: .section(1), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
+    func testYWithModeEmotionItem1Section1() {
+        let calculator = Calculator(mode: .emotion(.init(item: 1, section: 1)), itemsPerSection: [1, 2], numberOfColumns: 2, initialPosition: Point(y: 3), rowHeight: 10, itemSpacing: 4, sectionSpacing: Size(height: 5))
         XCTAssertEqual(calculator.items[.init(item: 0, section: 0)]!.frame.origin.y, 3)
         let itemHeight = (10 - 4) / 2
         XCTAssertEqual(calculator.items[.init(item: 0, section: 1)]!.frame.origin.y, 3)
