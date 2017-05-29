@@ -1,11 +1,8 @@
 protocol ChartLayoutItemsCalculatorInterface: class {
 
-    associatedtype Mode
-    associatedtype Item
+    var items: [IndexPath: ChartLayoutCore.Item] { get }
 
-    var items: [IndexPath: Item] { get }
-
-    init(mode: Mode, itemsPerSection: [Int], numberOfColumns: Int, columnWidth: Int, rowHeight: Int, initialPosition: Point, itemSpacing: Int, sectionSpacing: Size)
+    init(mode: ChartLayoutCore.Mode, itemsPerSection: [Int], numberOfColumns: Int, columnWidth: Int, rowHeight: Int, initialPosition: Point, itemSpacing: Int, sectionSpacing: Size)
 
 }
 

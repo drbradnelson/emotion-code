@@ -1,18 +1,15 @@
 protocol ChartLayoutRowHeadersCalculatorInterface: class {
 
-    associatedtype Mode
-    associatedtype Header
+    var rowHeaders: [ChartLayoutCore.Header] { get }
 
-    var rowHeaders: [Header] { get }
-
-    init(mode: Mode, numberOfRows: Int, rowHeaderWidth: Int, rowHeight: Int, initialPosition: Point, verticalSectionSpacing: Int)
+    init(mode: ChartLayoutCore.Mode, numberOfRows: Int, rowHeaderWidth: Int, rowHeight: Int, initialPosition: Point, verticalSectionSpacing: Int)
 
 }
 
 final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInterface {
 
-    typealias Header = ChartLayoutCore.Header
     typealias Mode = ChartLayoutCore.Mode
+    typealias Header = ChartLayoutCore.Header
 
     private let mode: Mode
     private let numberOfRows: Int
@@ -59,7 +56,7 @@ final class ChartLayoutRowHeadersCalculator: ChartLayoutRowHeadersCalculatorInte
 
     private func header(forRow row: Int) -> Header {
         let frame = self.frame(forRow: row)
-        return Header(frame: frame, alpha: alpha)
+        return Header.init(frame: frame, alpha: alpha)
     }
 
 }

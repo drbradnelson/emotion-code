@@ -14,10 +14,12 @@ extension Point {
     }
 }
 
-extension ChartLayoutCore.Mode {
+typealias Mode = ChartLayoutCore.Mode
 
-    static let section: ChartLayoutCore.Mode = .section(0, isFocused: false)
+extension Mode {
 
-    static let emotion: ChartLayoutCore.Mode = .emotion(.init(item: 0, section: 0), isFocused: false)
+    static let section: Mode = .section(0, isFocused: false)
+
+    static let emotion: Mode = .emotion(.init(item: 0, section: 0), isFocused: false)
 
 }

@@ -258,8 +258,6 @@ final class ChartLayoutItemsCalculatorTests: XCTestCase {
 
 }
 
-private typealias Mode = Calculator.Mode
-
 private extension Mode {
 
     static func section(_ section: Int) -> Mode {

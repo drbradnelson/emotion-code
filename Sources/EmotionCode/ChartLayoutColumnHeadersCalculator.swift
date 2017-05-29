@@ -1,18 +1,15 @@
 protocol ChartLayoutColumnHeadersCalculatorInterface: class {
 
-    associatedtype Mode
-    associatedtype Header
+    var columnHeaders: [ChartLayoutCore.Header] { get }
 
-    var columnHeaders: [Header] { get }
-
-    init(mode: Mode, numberOfColumns: Int, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int)
+    init(mode: ChartLayoutCore.Mode, numberOfColumns: Int, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int)
 
 }
 
 final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculatorInterface {
 
-    typealias Header = ChartLayoutCore.Header
     typealias Mode = ChartLayoutCore.Mode
+    typealias Header = ChartLayoutCore.Header
 
     private let mode: Mode
     private let numberOfColumns: Int
