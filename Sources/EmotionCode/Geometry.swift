@@ -37,5 +37,5 @@ struct Rect {
     var maxY: Int {
         return origin.y + size.height
     }
-    
+
 }
