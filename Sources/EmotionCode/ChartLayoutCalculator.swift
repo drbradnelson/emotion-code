@@ -1,5 +1,6 @@
 protocol ChartLayoutCalculatorInterface: class {
 
+    associatedtype Mode
     associatedtype Item
     associatedtype Header
 
@@ -8,6 +9,8 @@ protocol ChartLayoutCalculatorInterface: class {
     var columnHeaders: [IndexPath: Header] { get }
     var rowHeaders: [IndexPath: Header] { get }
     var labelSizes: [IndexPath: Size] { get }
+
+    init(mode: Mode, numberOfColumns: Int, itemsPerSection: [Int], viewSize: Size, topContentInset: Int, bottomContentInset: Int)
 
 }
 
@@ -44,6 +47,10 @@ final class ChartLayoutCalculator: ChartLayoutCalculatorInterface {
     private let topContentInset: Int
     private let bottomContentInset: Int
 
+    private var itemsCalculator: ChartLayoutItemsCalculatorInterface!
+    private var columnHeadersCalculator: ChartLayoutColumnHeadersCalculatorInterface!
+    private var rowHeadersCalculator: ChartLayoutRowHeadersCalculatorInterface!
+
     init(mode: Mode, numberOfColumns: Int, itemsPerSection: [Int], viewSize: Size, topContentInset: Int, bottomContentInset: Int) {
         self.mode = mode
         self.numberOfColumns = numberOfColumns
@@ -53,11 +60,93 @@ final class ChartLayoutCalculator: ChartLayoutCalculatorInterface {
         self.bottomContentInset = bottomContentInset
     }
 
-    var chartSize: Size = .zero
-    var items: [IndexPath: Item] = [:]
-    var columnHeaders: [IndexPath: Header] = [:]
-    var rowHeaders: [IndexPath: Header] = [:]
-    var labelSizes: [IndexPath: Size] = [:]
+    private func updateCalculators() {
+        itemsCalculator = ChartLayoutItemsCalculator(
+            mode: mode,
+            itemsPerSection: itemsPerSection,
+            numberOfColumns: numberOfColumns,
+            columnWidth: columnWidth,
+            rowHeight: rowHeight,
+            initialPosition: itemsPosition,
+            itemSpacing: itemSpacing,
+            sectionSpacing: sectionSpacing
+        )
+        columnHeadersCalculator = ChartLayoutColumnHeadersCalculator(
+            mode: mode,
+            numberOfColumns: numberOfColumns,
+            columnWidth: columnWidth,
+            columnHeaderHeight: Parameters.columnHeaderHeight,
+            initialPosition: columnHeadersPosition,
+            horizontalSectionSpacing: sectionSpacing.width
+        )
+        rowHeadersCalculator = ChartLayoutRowHeadersCalculator(
+            mode: mode,
+            numberOfRows: numberOfRows,
+            rowHeaderWidth: Parameters.rowHeaderWidth,
+            rowHeight: rowHeight,
+            initialPosition: rowHeadersPosition,
+            verticalSectionSpacing: sectionSpacing.height
+        )
+    }
+
+    private var contentOffset: Point? {
+        switch mode {
+        case .all:
+            return nil
+        case .section(let section, _):
+            let indexPath = IndexPath(item: 0, section: section)
+            let itemPosition = itemsCalculator.items[indexPath]!.frame.origin
+            let x = itemPosition.x - Parameters.contentPadding
+            let y = itemPosition.y - Parameters.contentPadding
+            return Point(x: x, y: y)
+        case .emotion(let indexPath, _):
+            let itemPosition = itemsCalculator.items[indexPath]!.frame.origin
+            let x = itemPosition.x - Parameters.contentPadding
+            let y = itemPosition.y - Parameters.contentPadding
+            return Point(x: x, y: y)
+        }
+    }
+
+    var chartSize: Size {
+        switch mode {
+        case .all:
+            if isCompact { return visibleViewSize }
+        case .section, .emotion:
+            return visibleViewSize
+        }
+
+        let lastColumnHeaderIndexPath = IndexPath(item: 0, section: numberOfColumns - 1)
+        let maxX = columnHeaders[lastColumnHeaderIndexPath]!.frame.maxX
+        let lastRowHeaderIndexPath = IndexPath(item: 0, section: numberOfRows - 1)
+        let maxY = rowHeaders[lastRowHeaderIndexPath]!.frame.maxY
+
+        let width = maxX + Parameters.contentPadding
+        let height = maxY + Parameters.contentPadding
+        return Size(width: width, height: height)
+    }
+
+    private(set) var items: [IndexPath: Item] = [:]
+    private(set) var columnHeaders: [IndexPath: Header] = [:]
+    private(set) var rowHeaders: [IndexPath: Header] = [:]
+    private(set) var labelSizes: [IndexPath: Size] = [:]
+
+    private var itemsPosition: Point {
+        let x = Parameters.contentPadding + Parameters.rowHeaderWidth + sectionSpacing.width
+        let y = Parameters.contentPadding + Parameters.columnHeaderHeight + sectionSpacing.height
+        return Point(x: x, y: y)
+    }
+
+    private var columnHeadersPosition: Point {
+        let x = Parameters.contentPadding + Parameters.rowHeaderWidth + sectionSpacing.width
+        let y = Parameters.contentPadding
+        return Point(x: x, y: y)
+    }
+
+    private var rowHeadersPosition: Point {
+        let x = Parameters.contentPadding
+        let y = Parameters.contentPadding + Parameters.columnHeaderHeight + sectionSpacing.height
+        return Point(x: x, y: y)
+    }
 
     private var numberOfRows: Int {
         return Int(round(Double(itemsPerSection.count) / Double(numberOfColumns)))

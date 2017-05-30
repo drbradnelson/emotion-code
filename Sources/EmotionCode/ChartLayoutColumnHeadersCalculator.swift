@@ -1,15 +1,15 @@
 protocol ChartLayoutColumnHeadersCalculatorInterface: class {
 
-    var columnHeaders: [ChartLayoutCore.Header] { get }
+    var columnHeaders: [ChartLayoutCalculator.Header] { get }
 
-    init(mode: ChartLayoutCore.Mode, numberOfColumns: Int, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int)
+    init(mode: ChartLayoutCalculator.Mode, numberOfColumns: Int, columnWidth: Int, columnHeaderHeight: Int, initialPosition: Point, horizontalSectionSpacing: Int)
 
 }
 
 final class ChartLayoutColumnHeadersCalculator: ChartLayoutColumnHeadersCalculatorInterface {
 
-    typealias Mode = ChartLayoutCore.Mode
-    typealias Header = ChartLayoutCore.Header
+    typealias Mode = ChartLayoutCalculator.Mode
+    typealias Header = ChartLayoutCalculator.Header
 
     private let mode: Mode
     private let numberOfColumns: Int

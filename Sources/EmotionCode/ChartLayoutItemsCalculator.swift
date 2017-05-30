@@ -1,15 +1,15 @@
 protocol ChartLayoutItemsCalculatorInterface: class {
 
-    var items: [IndexPath: ChartLayoutCore.Item] { get }
+    var items: [IndexPath: ChartLayoutCalculator.Item] { get }
 
-    init(mode: ChartLayoutCore.Mode, itemsPerSection: [Int], numberOfColumns: Int, columnWidth: Int, rowHeight: Int, initialPosition: Point, itemSpacing: Int, sectionSpacing: Size)
+    init(mode: ChartLayoutCalculator.Mode, itemsPerSection: [Int], numberOfColumns: Int, columnWidth: Int, rowHeight: Int, initialPosition: Point, itemSpacing: Int, sectionSpacing: Size)
 
 }
 
 final class ChartLayoutItemsCalculator: ChartLayoutItemsCalculatorInterface {
 
-    typealias Mode = ChartLayoutCore.Mode
-    typealias Item = ChartLayoutCore.Item
+    typealias Mode = ChartLayoutCalculator.Mode
+    typealias Item = ChartLayoutCalculator.Item
 
     private let mode: Mode
     private let itemsPerSection: [Int]

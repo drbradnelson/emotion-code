@@ -14,7 +14,7 @@ extension Point {
     }
 }
 
-typealias Mode = ChartLayoutCore.Mode
+typealias Mode = ChartLayoutCalculator.Mode
 
 extension Mode {
 

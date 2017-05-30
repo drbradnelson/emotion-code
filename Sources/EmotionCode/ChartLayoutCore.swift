@@ -17,12 +17,6 @@ protocol ChartLayoutCoreInterface: class {
 
 final class ChartLayoutCore {
 
-    enum Mode {
-        case all
-        case section(Int, isFocused: Bool)
-        case emotion(IndexPath, isFocused: Bool)
-    }
-
 //    private enum Failure: Error {
 //        case missingItems
 //        case invalidAmountOfItems
@@ -41,10 +35,8 @@ final class ChartLayoutCore {
         static let itemSpacing = 10
     }
 
-    struct Item {
-        let frame: Rect
-        let alpha: Float
-    }
+    typealias Mode = ChartLayoutCalculator.Mode
+    typealias Item = ChartLayoutCalculator.Item
     typealias Header = Item
 
     struct View {
