@@ -555,7 +555,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -ex\ntest $(swiftlint version) == \"0.18.1\"\nFLAGS=$(test $CONFIGURATION == \"Release\" && echo \"--strict\" || echo \"\")\nswiftlint lint $FLAGS\n";
+			shellScript = "set -ex\ntest $(swiftlint version) == \"0.19.0\"\nFLAGS=$(test $CONFIGURATION == \"Release\" && echo \"--strict\" || echo \"\")\nswiftlint lint $FLAGS\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D90B1D48A2F8009173A9 /* Run StoryboardLint */ = {
