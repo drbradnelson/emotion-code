@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Chat"; ObjectID = "0Kn-RD-MSg"; */
+"0Kn-RD-MSg.text" = "Charla";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "0i9-6g-Qic"; */
+"0i9-6g-Qic.text" = "Idioma";
+
+/* Class = "UILabel"; text = "FAQ"; ObjectID = "77V-Y6-bOA"; */
+"77V-Y6-bOA.text" = "FAQ";
+
+/* Class = "UINavigationItem"; title = "Support"; ObjectID = "LmA-8J-f5J"; */
+"LmA-8J-f5J.title" = "Apoyo";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "QVK-c3-3tF"; */
+"QVK-c3-3tF.text" = "English";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "bsf-52-VSt"; */
+"bsf-52-VSt.text" = "Idioma";
+
+/* Class = "UITabBarItem"; title = "Support"; ObjectID = "jFO-Qr-akh"; */
+"jFO-Qr-akh.title" = "Apoyo";
+
+/* Class = "UITableViewController"; title = "Set Language"; ObjectID = "r4X-gg-Mc7"; */
+"r4X-gg-Mc7.title" = "Elegir Idioma";

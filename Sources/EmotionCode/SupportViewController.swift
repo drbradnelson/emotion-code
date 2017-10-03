@@ -6,6 +6,7 @@ final class SupportViewController: UITableViewController {
         super.viewDidLoad()
         setUpNotifications()
         updateUsername()
+        updateCurrentLanguageLabel()
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -16,6 +17,8 @@ final class SupportViewController: UITableViewController {
             Hotline.sharedInstance().showFAQs(self)
         case "chatCell":
             Hotline.sharedInstance().showConversations(self)
+        case "setLangCell":
+            setLanguage()
         default:
             break
         }
@@ -26,6 +29,10 @@ final class SupportViewController: UITableViewController {
         let application = UIApplication.shared
         application.registerUserNotificationSettings(notificationSettings)
         application.registerForRemoteNotifications()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(updateCurrentLanguageLabel),
+                                               name: NSNotification.Name(LCLLanguageChangeNotification),
+                                               object: nil)
     }
 
     private func updateUsername() {
@@ -34,5 +41,15 @@ final class SupportViewController: UITableViewController {
         user.name = defaultName
         Hotline.sharedInstance().update(user)
     }
-
+    
+    private func setLanguage() {
+        performSegue(withIdentifier: "setLanguage", sender: nil)
+    }
+    
+    @IBOutlet weak var currentLangLabel: UILabel!
+    
+    func updateCurrentLanguageLabel() {
+        currentLangLabel.text = Localize.displayNameForLanguage(Localize.currentLanguage()).capitalized
+    }
+    
 }

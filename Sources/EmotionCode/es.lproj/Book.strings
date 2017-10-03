@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "COL-fh-394"; */
+"COL-fh-394.text" = "Subtitular";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "DAU-vF-QeD"; */
+"DAU-vF-QeD.title" = "Cancelar";
+
+/* Class = "UITabBarItem"; title = "Book"; ObjectID = "DvA-Rv-bTe"; */
+"DvA-Rv-bTe.title" = "Libro";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "eqF-QX-Xli"; */
+"eqF-QX-Xli.text" = "Título";
+
+/* Class = "UINavigationItem"; title = "Table of Contents"; ObjectID = "foR-ly-6qR"; */
+"foR-ly-6qR.title" = "Tabla de Contenido";
+
+/* Class = "UIButton"; normalTitle = "Chapter"; ObjectID = "hpy-SJ-jeB"; */
+"hpy-SJ-jeB.normalTitle" = "Capítulo";

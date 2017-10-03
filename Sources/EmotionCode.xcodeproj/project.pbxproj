@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035A52D31F8327A5000F72EB /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A52D21F8327A5000F72EB /* LanguageTableViewController.swift */; };
+		035A52D51F8327F6000F72EB /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A52D41F8327F6000F72EB /* Language.swift */; };
+		035A52D71F841B60000F72EB /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A52D61F841B60000F72EB /* Localize.swift */; };
+		035A52DE1F8422F3000F72EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 035A52DC1F8422F3000F72EB /* Localizable.strings */; };
+		035C84B81F83236100DB7E8B /* Hotline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C84B71F83236100DB7E8B /* Hotline.framework */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
 		0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B51D4E74E3002C98E7 /* Book.storyboard */; };
 		0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B81D4E7501002C98E7 /* Chart.storyboard */; };
@@ -80,6 +85,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035A52CF1F832629000F72EB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
+		035A52D21F8327A5000F72EB /* LanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
+		035A52D41F8327F6000F72EB /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		035A52D61F841B60000F72EB /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		035A52DD1F8422F3000F72EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		035A52E01F8422F9000F72EB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		035A52E21F842424000F72EB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/TabBar.strings; sourceTree = "<group>"; };
+		035C84B71F83236100DB7E8B /* Hotline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hotline.framework; path = Carthage/Build/iOS/Hotline.framework; sourceTree = "<group>"; };
+		0362D2841F84262100B6BBC6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Book.strings; sourceTree = "<group>"; };
+		0362D2861F84265200B6BBC6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Chart.strings; sourceTree = "<group>"; };
+		0362D2881F84266300B6BBC6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Support.strings; sourceTree = "<group>"; };
 		0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSegueController.swift; sourceTree = "<group>"; };
 		0F28D0B61D4E74E3002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Book.storyboard; sourceTree = "<group>"; };
 		0F28D0B91D4E7501002C98E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.storyboard; sourceTree = "<group>"; };
@@ -155,12 +171,13 @@
 				B6EE04771E39044400013226 /* AVFoundation.framework in Frameworks */,
 				B6EE04781E39044400013226 /* CoreData.framework in Frameworks */,
 				B6EE04791E39044400013226 /* CoreMedia.framework in Frameworks */,
+				035C84B81F83236100DB7E8B /* Hotline.framework in Frameworks */,
+				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 				B6EE047A1E39044400013226 /* Foundation.framework in Frameworks */,
 				B6EE047B1E39044400013226 /* ImageIO.framework in Frameworks */,
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
 				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
 				9111B55C1E7FCB5700CCBC5E /* libFDHotlineSDK.a in Frameworks */,
-				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +216,7 @@
 				0FA620E51D6D3AA900E48335 /* BookChapterListViewController.swift */,
 				913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */,
 				B6EE047E1E39046B00013226 /* SupportViewController.swift */,
+				035A52D21F8327A5000F72EB /* LanguageTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -273,9 +291,11 @@
 				0F28D0C01D4E7659002C98E7 /* Build */,
 				91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */,
 				B6C104ED1DE119FD00BB4796 /* String+Alphabet.swift */,
+				035A52D61F841B60000F72EB /* Localize.swift */,
 				915EEC431D460CE1005CC318 /* Assets.xcassets */,
 				910C68421D6AE193004E7E7F /* TabIcons.xcassets */,
 				915EEC481D460CE1005CC318 /* Info.plist */,
+				035A52DC1F8422F3000F72EB /* Localizable.strings */,
 			);
 			path = EmotionCode;
 			sourceTree = "<group>";
@@ -283,6 +303,7 @@
 		91A430431DD0DF0E004D466E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				035C84B71F83236100DB7E8B /* Hotline.framework */,
 				B6EE046D1E3903E000013226 /* HotlineIO */,
 				B6EE046E1E39044400013226 /* AudioToolbox.framework */,
 				B6EE046F1E39044400013226 /* AVFoundation.framework */,
@@ -342,6 +363,7 @@
 				E7ED2B5F1D52135600F85992 /* EmotionCodeChart.plist */,
 				0FF8F9E91D5ACFE4008666E8 /* Book.swift */,
 				0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */,
+				035A52D41F8327F6000F72EB /* Language.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -471,6 +493,7 @@
 				0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */,
 				915EEC471D460CE1005CC318 /* LaunchScreen.storyboard in Resources */,
 				910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */,
+				035A52DE1F8422F3000F72EB /* Localizable.strings in Resources */,
 				9111B5561E7FC5EA00CCBC5E /* HLLocalization.bundle in Resources */,
 				0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */,
 				0F28D0BD1D4E755B002C98E7 /* Support.storyboard in Resources */,
@@ -554,6 +577,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AudioBar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Elm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Hotline.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
@@ -587,8 +611,11 @@
 				0F4BA9C81D636765003CCFE9 /* BookPageViewController.swift in Sources */,
 				0FA620E41D6D3A4A00E48335 /* ChapterTableViewCell.swift in Sources */,
 				B6BF17B41DBA0E11008657DF /* ChartEmotionViewController.swift in Sources */,
+				035A52D31F8327A5000F72EB /* LanguageTableViewController.swift in Sources */,
 				0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */,
+				035A52D71F841B60000F72EB /* Localize.swift in Sources */,
 				B6DBAB5C1DCCC0F500E4BA4B /* ChartHeaderView.swift in Sources */,
+				035A52D51F8327F6000F72EB /* Language.swift in Sources */,
 				91DB87271DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift in Sources */,
 				916BED5E1DED81C50048314E /* ChartLayout.swift in Sources */,
 				915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */,
@@ -632,10 +659,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		035A52DC1F8422F3000F72EB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035A52DD1F8422F3000F72EB /* Base */,
+				035A52E01F8422F9000F72EB /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		0F28D0B51D4E74E3002C98E7 /* Book.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0F28D0B61D4E74E3002C98E7 /* Base */,
+				0362D2841F84262100B6BBC6 /* es */,
 			);
 			name = Book.storyboard;
 			sourceTree = "<group>";
@@ -644,6 +681,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F28D0B91D4E7501002C98E7 /* Base */,
+				0362D2861F84265200B6BBC6 /* es */,
 			);
 			name = Chart.storyboard;
 			sourceTree = "<group>";
@@ -652,6 +690,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F28D0BC1D4E755B002C98E7 /* Base */,
+				0362D2881F84266300B6BBC6 /* es */,
 			);
 			name = Support.storyboard;
 			sourceTree = "<group>";
@@ -660,6 +699,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F455F751E54C99C00A0D284 /* en */,
+				035A52CF1F832629000F72EB /* es */,
 			);
 			name = BookChapters.plist;
 			sourceTree = "<group>";
@@ -668,6 +708,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				915EEC411D460CE1005CC318 /* Base */,
+				035A52E21F842424000F72EB /* es */,
 			);
 			name = TabBar.storyboard;
 			sourceTree = "<group>";

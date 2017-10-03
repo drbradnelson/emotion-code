@@ -1,6 +1,5 @@
 import Foundation
 
-// swiftlint:disable mark
 // swiftlint:disable cyclomatic_complexity
 // swiftlint:disable type_body_length
 

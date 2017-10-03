@@ -1602,7 +1602,6 @@
 //}
 //
 //extension Point {
-//    // swiftlint:disable variable_name
 //    init(x: Int = 0, y: Int = 0) {
 //        self.x = x
 //        self.y = y

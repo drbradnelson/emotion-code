@@ -1,0 +1,9 @@
+
+/* Class = "UINavigationItem"; title = "Emotion Chart"; ObjectID = "Max-Y6-eov"; */
+"Max-Y6-eov.title" = "Emoción Cuadro";
+
+/* Class = "UILabel"; text = "Emotion"; ObjectID = "udn-n3-ix2"; */
+"udn-n3-ix2.text" = "Emoción";
+
+/* Class = "UITabBarItem"; title = "Chart"; ObjectID = "xSv-EC-Guf"; */
+"xSv-EC-Guf.title" = "Cuadro";
