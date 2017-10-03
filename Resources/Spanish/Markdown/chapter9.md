@@ -1,443 +1,451 @@
-*Animals can communicate quite well, And they do. And generally speaking, they are ignored.*
 
-*- Alice Walker*
+*LOS ANIMALES PUEDEN COMUNICARSE BASTANTE BIEN, Y LO HACEN.*
+*Y EN TÉRMINOS GENERALES, SON IGNORADOS.*
+*- ALICE WALKER*
 
+## EL CÓDIGO DE LA EMOCIÓN Y LOS ANIMALES
 
-## The Emotion Code and Animals
+Como cualquier amante de los animales podría decirte, los animales también tienen sentimientos. Es posible que no puedan hablar acerca de ellos, pero si observas su comportamiento y llegas a conocerlos, rápidamente serás capaz de reconocer sus sutiles cambios de emociones. Aún sin palabras, los animales expresan sus emociones claramente. Cuando ocurren acontecimientos emocionalmente terribles, los animales pueden sufrir de emociones atrapadas tanto como las personas.
 
-As any animal lover will tell you, animals have feelings, too. They may not be able to talk about them, but if you watch their behavior and get to know them, you will soon be able to recognize their subtle changes of emotion. Even without words, animals express their emotions clearly. When emotionally upsetting events occur, animals can suffer from trapped emotions just as people can.
+### Un caballo es un caballo, por supuesto
 
-### A Horse is a Horse, of Course…
+Mi primera experiencia tratando emociones atrapadas en animales ocurrió de alguna manera por accidente. Un día, recibí una llamada telefónica de una paciente llamada Linda, una entrenadora de San Juan Capistrano. Había venido a verme hacía un año por un caso de asma bastante grave con el que la ayudé; pero esta llamada era por algo completamente diferente.
 
-My first experience treating trapped emotions in animals occurred somewhat by accident. One day, I received a telephone call from a patient named Linda, a trainer from San Juan Capistrano. She had come to me a year before with a rather severe case of asthma that I’d helped her with, but this call was about something else entirely.
-
-“I have kind of a strange request and I’m wondering if you can you help me,” she said. “One of my horses, Ranger, is having a problem with frequent urination. I’ve had three veterinarians examine him, but none of them can find out what’s wrong. As far as they can tell, he’s perfectly healthy. But he’s causing a terrible problem – not just for me, but the adjacent stall owners and horses as well. I know that you occasionally work on animals, and I’d really appreciate it if you could come to the stables and see what you can do.”
-
-
-When Linda had come to my office for her own treatments we’d talked about our shared love of horses. I had grown up around horses in Montana and never missed an opportunity to ride. Linda had shown me photos of four or five beautiful horses she kept in her stables, but I’d never been to the stables to see them.
-
-The next day, Jean and I made the trip down to Linda’s stables. We walked into a large, rectangular building with a peaked roof that covered about forty horses’ stalls in two rows. As we arrived at Ranger’s stall, we could see immediately why Linda was so concerned about him. Unlike all the other neat, clean stalls we had seen in the building, this horse’s stall was a soggy mess, as he was having a urination problem.
-
-Linda brought Ranger outside so we could work on him on dry ground. Jean volunteered to act as surrogate, and put one hand on the horse, holding her other arm out for me to muscle test.
-
-We determined that there was something causing an imbalance in Ranger’s kidneys, but after testing him for a few minutes, I was at a loss as to what the source of the imbalance might be.
-
-“Why don’t you test to see if there’s a trapped emotion?” Jean said.
-
-I laughed out loud. “Test a horse for trapped emotions? That’s really funny…” I was born and raised in Montana, and had two different horses of my own while I was growing up. While I loved my horses and took good care of them, like most people, I never imagined that they might suffer from trapped emotions.
+“Tengo un tipo de pedido extraño y me pregunto si usted me puede ayudar”, dijo ella. “Uno de mis caballos, Ranger, está teniendo un problema urinario frecuente. Lo han examinado tres veterinarios distintos, pero ninguno de ellos puede descubrir qué es lo que está mal. Por lo que pueden decir, él está perfectamente saludable. Sin embargo, está causando un problema terrible, no sólo a mí sino a los propietarios de los establos adyacentes y a los caballos también. Sé que a veces usted trabaja con animales y realmente apreciaría si pudiera venir a los establos y ver qué puede hacer”.
 
 
-----------
+Cuando Linda vino a verme a mi consultorio para sus propios tratamientos, habíamos hablado de nuestro mutuo amor por los caballos. Yo había crecido rodeado de caballos en Montana y nunca me perdía una oportunidad de andar a caballo. Linda me había mostrado fotos de cuatro o cinco caballos hermosos que tenía en sus establos, pero yo nunca había ido allí a verlos.
+
+Al día siguiente, viajé con Jean a los establos de Linda. Entramos a un gran edificio rectangular con un techo muy alto que cubría alrededor de cuarenta compartimientos de caballos en dos filas. Cuando llegamos al compartimiento de Ranger inmediatamente pudimos ver por qué Linda estaba tan preocupada por él. A diferencia de los otros compartimientos prolijos y limpios que habíamos visto en el edificio, el de este caballo era un desorden empapado ya que estaba teniendo problemas al orinar.
 
 
-**Jean looked at me calmly and repeated, “Just test and see.” Jean is very intuitive, and she was probably sensing the truth about what was going on with Ranger.**
+Linda sacó a Ranger para que pudieramos tratarlo sobre el suelo seco. Jean se ofreció a actuar como sustituta y puso una mano sobre el caballo, sosteniendo su otro brazo extendido para que le pudiera hacer la prueba muscular.
+
+
+Determinamos que había algo que le estaba causando un desequilibrio en los riñones, pero después de realizarle la prueba por unos pocos minutos, no tenía idea de cuál podía ser la fuente del desequilibrio.
+
+“¿Por qué no compruebas si hay una emoción atrapada?”, dijo Jean.
+
+Me reí con ganas. “¿Realizarle la prueba a un caballo para ver si tiene emociones atrapadas? Eso sí que es gracioso” Nací y me crié en Montana y tuve dos caballos diferentes mientras crecía. Si bien amaba a mis caballos y los cuidaba muy bien, como casi todas las personas, nunca imaginé que podían llegar a sufrir de emociones atrapadas.
 
 
 ----------
 
 
-So I asked out loud, “Is this imbalance due to a trapped emotion?” and pressed down on Jean’s arm. The answer was “Yes.”
-
-As I went through the chart of emotions, we were surprised to find that the trapped emotion was “conflict.” By a process of elimination, we determined that Ranger felt conflicted in his relationship with another horse. Linda was able to confirm that a new horse had been brought into the stables in the past few months. Ranger and this new horse were at odds from the first day they met and occasionally had to be separated to prevent them from injuring one another. They had moved the new horse further away from Ranger’s stall, but the two horses still came into contact with each other almost daily, if only in passing.
-
-
-Further testing showed that this trapped emotion had become lodged in the right kidney, and was indeed the underlying cause of Ranger’s kidney imbalance.
-
-Once we had verified the trapped emotion, I released it by rolling a magnet down Ranger’s back. When I retested Ranger through Jean it was apparent that the trapped emotion had been released.
-
-From that moment on, Ranger began to recover. When I talked to Linda on the phone a few days later, she told me that his stall was dry for the first time in months. The problem never recurred.
-
-Although I rarely worked on animals, as my practice consisted almost entirely of people, this experience opened a whole new dimension for me, and it can for you, too.
-
-
-### Working on Animals
-
-Releasing trapped emotions from an animal is essentially no different than releasing trapped emotions from a human being. You will use the same Chart of Emotions that you are already familiar with. The only psychological hurdle you might have to overcome is that you will be speaking directly to the animal, or rather to the subconscious mind of the animal, instead of the subconscious mind of a person. Everything else is pretty much the same.
-
- 1. Since you will be using a surrogate to test the animal, perform a baseline test on the surrogate to make sure they are testable.
- 2. The surrogate will place one hand on the animal and hold their other arm outstretched, to be used for muscle testing. The tester will then make sure the animal and the surrogate are connected by asking the animal a simple question. For example, if you’re working on a horse and the horse’s name is “Buck”, you might ask the animal “Is your name Buck?”
- 3. Muscle test the surrogate, and when the surro-gate tests strong when congruent questions are directed to the animal, and weak when incongruent questions are directed to the animal, the connection is made.
-
-Once the energetic connection is established, you can test the surrogate for answers as if you were testing a human being. For all practical purposes, there is no difference.
-
-Your first experience testing an animal may really surprise you. To suddenly open a line of communication with an animal is a fascinating experience that is oftentimes quite moving.
-
-### Twiggs Gets Dognapped
-
-A little Lhasa Apso named Twiggs is a perfect example. His owners, Brett and Cathy, told me his story when they brought him in.
-
-A few months before, they had all been taking a walk together in the foothills near San Juan Capistrano. Twiggs, who was very inquisitive and loved to go exploring, had trotted off down the trail about 50 or 60 feet in front of them. Suddenly, there was a rustling of leaves and a coyote emerged from the brush along the trail. A heartbeat later, the coyote was running away with Twiggs in his jaws. Brett and Cathy barely had time to move before he was gone. They chased the coyote into the trees, but there was nothing they could do.
-
-
-Going back home, broken hearted, they resigned themselves to the loss of their dog. They were still grieving four days later, when Twiggs showed up on their doorstep. He stood there quivering, his hair all matted and bloody, glad to be home. They rushed him to the animal hospital, where the vet stitched up his wounds, gave him antibiotics, and saved his life.
-
-“It was like a miracle,” Cathy said, stroking Twiggs, as she held him snugly in her arms. “We were so relieved!”
-
-“So what seems to be the problem?” I asked.
-
-“He’s just not the same dog any more,” Brett explained. “He never barks or chases anything. He seems to have lost his interest in life.”
-
-“And he shakes all the time,” Cathy said, holding Twiggs up so I could see how much he was trembling.
-
-“The vet says it might be neurological damage,” Brett added. “He said there’s nothing he can do. It’s probably permanent.”
-
-Cathy set Twiggs down on the table, so I could examine him. I checked for misalignments in the spine. I found a few, as I had expected, and adjusted them.
-
-“The thing is,” Cathy said, “We’re wondering if we should put him down….”
-
-“His quality of life just isn’t very good any more,” Brett said. “He never barks or runs around like he used to. We have to carry him everywhere. His curiosity is gone. He just seems like he’s suffering all the time.”
-
-We all looked at Twiggs, sitting on the adjusting table, shivering, with a miserable, frightened look in his eyes.
-
-I could only imagine the terror he must have experienced when he was attacked and carried off, and decided it was likely he was suffering from a trapped emotion. After getting permission from Brett and Cathy, I explained surrogate testing and asked one of them to act as surrogate for Twiggs.
-
-When I asked if he had a trapped emotion, the answer was “Yes.” I assumed that the emotion would be fear or terror. As I narrowed the list of emotions, what turned up was surprising. The emotion that filled this little dog’s heart and soul at the time it was being carried off by the coyote wasn’t terror, or anything like that. It was sadness.
-
-
-As he was being carried off in the jaws of the coyote, all Twiggs could think about was that he was never going to see Brett and Cathy again, and the thought overwhelmed him with sadness.
-
-Once we identified the trapped emotion, I quickly released it with a magnet and the treatment was over.
-
-When I set Twiggs down on the floor, he took off like a speeding bullet! He ran down the hall and into the waiting room. When he had first come into that waiting room, in Cathy’s arms, he’d been shivering so hard, he hadn’t seemed to notice any of the people there. Now, he greeted each patient with several nice, healthy barks. Then he rushed down the hall and stuck his head into every room, barking at least once, before he finally ended up in front of Brett and Cathy, happily wagging his tail.
-
-
-It was an amazing, instantaneous transformation. We were all astonished and touched by this miraculous healing. According to his owners, Twiggs stopped shaking from that moment and his charming, inquisitive personality returned.
+**Jean me miró con calma y repitió: “Sólo realízale la prueba y fíjate”. Jean es muy intuitiva y probablemente estaba sintiendo la verdad de lo que le estaba sucediendo a Ranger.**
 
 
 ----------
 
 
-**The great thing about testing animals for trapped emotions is that what you see is what you get. Animals don’t pretend they’re feeling better just to make you happy. Often the effect is immediate, and quite profound.**
+Así que le pregunté en voz alta: “¿Este desequilibrio se debe a una emoción atrapada?” y presioné sobre el brazo de Jean. La respuesta fue “Sí”.
+
+Mientras hice un recorrido por el cuadro de emociones, nos sorprendimos al descubrir que la emoción atrapada era “conflicto”. Mediante un proceso de eliminación, determinamos que Ranger se sentía en conflicto por su relación con otro caballo. Linda pudo confirmar que en los últimos meses había llegado a los establos un caballo nuevo. Ranger y este caballo nuevo estaban enfrentados desde el primer día que se conocieron y, en ocasiones, tenían que ser separados para evitar que se lastimaran el uno al otro. Ellos habían trasladado al caballo nuevo lejos del compartimiento de Ranger, pero los dos caballos aún entraban en contacto con el otro casi diariamente, aunque sólo fuera de pasada.
 
 
-----------
+La realización de más pruebas mostró que esta emoción atrapada se había alojado en el riñón derecho y realmente era la causa subyacente del desequilibrio del riñón de Ranger.
+
+Una vez que hubimos verificado la emoción atrapada, la liberé haciendo rodar un imán hacia la parte inferior de la espalda de Ranger. Cuando le realicé a Ranger la prueba nuevamente a través de Jean era evidente que la emoción atrapada había sido liberada.
+
+A partir de ese momento, Ranger comenzó a recuperarse. Cuando hablé con Linda por teléfono unos días después, me dijo que su compartimiento estaba seco por primera vez en meses. El problema nunca se volvió a repetir.
 
 
-Twiggs seemed to know that we were trying to help him. And when he suddenly felt better, the change was obvious to everyone!
-
-### Brandy’s Naughty Behavior
-
-We dropped in to visit with some friends at their home one evening, when I was “greeted” by their dog Brandy in a very enthusiastic, but rather obscene way.
-
-“I’m so sorry!” Skip said. “Every time we have guests over, he rushes up and starts humping their leg! It’s really embarrassing, and there’s nothing we can do to get him to stop, so we finally have resorted to locking him outside when we have company. We didn’t realize you were going to stop by, otherwise he would have been locked out in the backyard.”
-
-As we sat with them our conversation quickly turned to other topics, but from where I was sitting I could see poor Brandy on the other side of the sliding glass door, looking forlorn.
-
-Changing the subject of our conversation back to Brandy, I told them that a trapped emotion could be the cause of his odd behavior. They hadn’t heard of anything like this before, but they trusted me and were willing to let me check Brandy.
+Aunque rara vez trabajé con animales, ya que mi práctica consistía casi completamente con personas, esta experiencia abrió una dimensión totalmente nueva para mí y puede serlo para ti también.
 
 
-It didn’t take long to determine that my hunch was right. Brandy’s trapped emotion was grief, and here is how it happened.
+### El tratamiento de animales
 
-The family had recently purchased a cabin in the mountains. At first, they’d taken Brandy with them in the backseat, but he couldn’t endure the long drive. He kept getting carsick and throwing up in the car. Soon they started leaving him behind. Brandy would get all excited, watching them pack up their gear, and then they’d drive away without him. Brandy was distraught, and didn’t understand why he was left behind when he was so excited to go and be with them.
+Liberar emociones atrapadas de un animal es esencialmente igual que liberar emociones atrapadas de un ser humano. Utilizarás el mismo Cuadro de Emociones con el que ya estás familiarizado. El único obstáculo psicológico que podrías tener que superar es que le estarás hablando directamente al animal o más bien al subconsciente del animal, en lugar de al subconsciente de una persona. Todo lo demás es casi lo mismo.
+
+ 1. Como estarás utilizando un sustituto para realizarle la prueba al animal, haz una prueba base sobre el sustituto para asegurarte de que puede ser examinado.
+ 2. El sustituto colocará una mano sobre el animal y mantendrá el otro brazo extendido para que sea utilizado en la prueba muscular. Luego, el examinador se asegurará de que el animal y el sustituto estén conectados haciéndole al animal una pregunta simple. Por ejemplo, si estás trabajando sobre un caballo y el nombre del mismo es “Buck”, le podrías preguntar al animal “¿ES tu nombre Buck?”
+ 3. Hazle la prueba muscular al sustituto, y cuando el resultado del mismo sea fuerte cuando preguntas congruentes sean dirigidas al animal y débil cuando pregun-tas incongruentes sean dirigidas al animal, la conexión está hecha.
+
+Una vez que se establece la conexión energética, puedes realizarle la prueba al sustituto para obtener respuestas al igual que si se lo estuvieses realizando a un ser humano. Para todos los fines prácticos, no hay diferencia.
+
+Tu primera experiencia realizándole la prueba a un animal podría sorprenderte. Abrir de repente una línea de comunicación con un animal es una experiencia fascinante que frecuentemente es conmovedora.
+
+### La captura de Twiggs
+
+Un pequeño Lhasa Apso llamado Twiggs es un ejemplo perfecto. Sus dueños, Brett y Cathy, me contaron su historia cuando lo trajeron.
+
+Unos meses antes, todos habían estado caminando juntos al pie de las colinas cerca de San Juan Capistrano. Twiggs, quien era muy inquieto y le encantaba ir a explorar, había trotado fuera del sendero alrededor de 50 o 60 pies en frente de ellos. De repente, se escuchó el susurro de unas hojas y un coyote apareció de la maleza en la carretera. Un instante después, apareció el coyote corriendo con Twiggs en sus mandíbulas. Brett y Cathy casi no tuvieron tiempo de moverse antes de que se lo llevara. Persiguieron al coyote por los árboles, pero no pudieron hacer nada.
 
 
-That’s when the trouble started. They had never had any trouble with Brandy before, but suddenly Brandy was different, and when a visitor would come to the house, Brandy would rush them and hump their leg, to everyone’s disgust. Apparently, he couldn’t express his grief any other way.
+De regreso a su hogar, con sus corazones destrozados, se resignaron a la pérdida de su perro. Todavía estaban de duelo cuando, cuatro días más tarde, Twiggs apareció en la puerta de su hogar. Estaba allí, tembloroso, con su pelo enmarañado y sangriento, encantado de estar en casa. Lo llevaron a la veterinaria de inmediato, donde el veterinario le cosió sus heridas, le dio antibióticos y salvó su vida.
 
 
-Once we cleared the trapped emotion, that behavior totally stopped. The family still didn’t take Brandy to the cabin, but at least he got to be in the house full-time again.
+“Fue como un milagro”, dijo Cathy, acariciando a Twiggs, mientras lo sostenía cómodamente entre sus brazos. “Nos sentimos muy aliviados”
+
+“¿Entonces cuál es el problema?”, pregunté.
+
+“Sólo que ya no es el mismo perro”, explicó Brett.
+
+“Nunca ladra ni persigue nada. Parece haber perdido su interés por la vida”.
+
+“Y tiembla todo el tiempo”, dijo Cathy, alzando a Twiggs para que yo pudiera ver lo mucho que estaba temblando.
+“El veterinario dice que podría tener un daño neurológico”, agregó Brett. “Dijo que no hay nada que pueda hacer. Probablemente sea permanente”.
+
+Cathy apoyó a Twiggs sobre la mesa para que lo pudiera examinar. Revisé si había desajustes en su columna. Encontré algunos, como yo esperaba, y los corregí.
+
+“El problema es”, dijo Cathy, “que nos estamos preguntando si lo deberíamos sacrificar”.
+
+“Su calidad de vida simplemente ya no es buena”, dijo Brett. “Nunca ladra o corre como solía hacerlo. Lo tenemos que llevar a todos lados. Su curiosidad desapareció. Simplemente parece como si estuviese sufriendo todo el tiempo”.
 
 
-### Boofy the Paranoid Cat
+Todos miramos a Twiggs, sentado en la camilla, temblando, con una mirada triste y asustada en sus ojos.
 
-The unique thing about this story is not so much what happened to her cat, but how a young woman discovered her own gift and found a new direction in her life.
+Sólo me pude imaginar el terror que debía haber experimentado cuando fue atacado, y decidí que era probable que estuviese sufriendo de una emoción atrapada. Después de obtener permiso de Brett y Cathy, les expliqué la prueba del sustituto y les pedí que alguno de ellos actuara como sustituto para Twiggs.
+
+Cuando pregunté si tenía una emoción atrapada, la respuesta fue “Sí”. Asumí que la emoción sería miedo o terror. Mientras reduje el listado de emociones, lo que surgió fue sorprendente. La emoción que llenó el corazón y el alma de este pequeño perro en el momento que el coyote se lo estaba llevando no era terror ni nada de eso, era tristeza.
+
+Mientras estaba en las mandíbulas del coyote, en todo lo que Twiggs pudo pensar fue en que nunca iba a volver a ver a Brett y a Cathy, y el pensamiento lo llenó de tristeza.
+
+Una vez que identifiqué la emoción atrapada, la liberé rápidamente con un imán y terminó el tratamiento.
+
+Cuando puse a Twiggs en el suelo, salió como una bala veloz, corrió por el pasillo y entró a la sala de espera. Cuando había entrado por primera vez en esa sala, en los brazos de Cathy, había estado temblando tanto que parecía que no había visto a ninguna de las personas que estaban allí. Ahora, saludaba a cada paciente con muchos ladridos agradables y saludables. Luego, corrió por el pasillo y metió su cabeza en cada habitación, ladrando al menos una vez, antes de que finalmente terminara frente a Brett y Cathy, moviendo felizmente su cola.
 
 
-> After my friend, Cyrena, and I finished Dr. Nelson’s two-day seminar
-> on trapped emotions, we were eager to try out our new knowledge. When
-> we got back to my house, we both spotted my cat asleep on the couch
-> and thought “Aha! Our first victim!”
+Fue una sorprendente transformación instantánea. Estábamos todos anonadados y conmovidos por esta sanación milagrosa. Según sus dueños, Twiggs dejó de temblar desde ese momento y su personalidad encantadora e inquisitiva regresó.
+
+
+Lo maravilloso acerca de realizarles la prueba buscando emociones atrapadas a los animales es que lo que ves es lo que hay. Los animales no pretenden sentirse mejor sólo para hacerte feliz. A menudo el efecto es inmediato y bastante profundo.
+
+Parece que Twiggs sabía que estábamos tratando de ayudarlo. Y cuando de repente se sintió mejor, el cambio fue obvio para todos.
+
+### El comportamiento travieso de Brandy
+
+Una noche pasamos a visitar a unos amigos por su casa. Su perro Brandy me saludó de una manera muy entusiasta pero bastante obscena.
+
+“¡Cuánto lo siento!”, dijo Skip. “Cada vez que tenemos visitas, se apresura y empieza a agarrarse de sus piernas. Es realmente vergonzoso y no hay nada que podamos hacer para que se detenga, entonces finalmente decidimos dejarlo afuera cuando tenemos visitas. No nos dimos cuenta de que iban a pasar por aquí, de lo contrario, lo hubiésemos encerrado en el jardín”.
+
+Cuando nos sentamos con ellos nuestra conversación cambió rápidamente a otros temas, pero desde donde estaba sentado podía a ver al pobre Brandy del otro lado del vidrio corredizo, con una mirada triste.
+
+Volviendo nuestra conversación a Brandy, les dije que una emoción atrapada podía ser la causa de su extraño comportamiento. No habían escuchado hablar de algo semejante anteriormente, pero confiaban en mí y estaban dispuestos a permitirme examinar a Brandy.
+
+No llevó mucho tiempo determinar que mi corazonada era cierta. La emoción atrapada de Brandy era la pena profunda, y , a continuación, se explica cómo sucedió.
+
+La familia había comprado recientemente una cabaña en las montañas. Al principio, llevaban a Brandy con ellos en el asiento trasero, pero no podía soportar el largo viaje. Se sentía continuamente mareado y vomitaba en el auto. Pronto comenzaron a dejarlo en casa. Brandy se entusiasmaba mucho mirando mientras empacaban sus cosas, y después, cuando se marchaban sin él, Brandy se angustiaba y no podía entender por qué lo dejaban de lado cuando deseaba tanto ir y estar con ellos.
+
+
+Ahí fue cuando comenzó el problema. No habían tenido ningún inconveniente con Brandy anteriormente, pero de repente él estaba diferente, y cuando un invitado llegaba a su hogar, se daba prisa y se agarraba de su pierna, para disgusto de todos. Aparentemente, no podía expresar su dolor de otra manera.
+
+Una vez que limpiamos esa emoción atrapada, ese comportamiento se detuvo totalmente. La familia aún no llevaba a Brandy a la cabaña, pero al menos ya podía estar dentro de la casa siempre otra vez.
+
+
+### Boofy el gato paranoico
+
+Lo extraordinario sobre esta historia no es tanto lo que le pasó a su gato sino la manera en la que una joven descubrió su propio don y encontró un nuevo rumbo en su vida.
+
+> Después de que mi amiga, Cyrena, y yo finalizamos el seminario de dos
+> días del Dr. Nelson acerca de las emociones atrapadas, estábamos
+> deseosas por probar nuestro nuevo conocimiento. Cuando regresamos a mi
+> casa, ambas encontramos a mi gato durmiendo sobre el sofá y pensamos:
+> “¡Ajá!, nuestra primera víctima”.
 > 
-> Boofy was a stray cat that adopted our family when he was about
-> one-year old. We had cared for him well and had even given him a
-> collar with a bell, so he wouldn’t get lost again. We tried for a
-> month to find his owners, but when we couldn’t, we decided to keep him
-> because he was so well-behaved.
+> Boofy era un gato callejero que nuestra familia adoptó cuando tenía
+> aproximadamente un año. Lo habíamos cuidado bien e incluso le habíamos
+> puesto un collar con un cascabel para que así no se volviera a perder.
+> Durante un mes, tratamos de encontrar a sus dueños, pero como no
+> pudimos, decidimos quedárnoslo porque se portaba muy bien.
 > 
-> Although he was always friendly with us, Boofy had a terrible fear of
-> strangers. Instead of rubbing up against their legs, looking for
-> attention, like most cats do, Boofy seemed to see all strangers as a
-> threat. If someone Boofy didn’t know came into the room, he would bolt
-> and run.
+> Aunque siempre era muy amigable con nosotros, Boofy tenía un miedo
+> terrible a los extraños. En lugar de frotarse contra sus piernas,
+> buscando atención, como hacen la mayoría de los gatos, parecía que
+> Boofy veía a todos los extraños como una amenaza. Si alguien que Boofy
+> no conocía entraba en la habitación, se ponía tieso y salía corriendo.
 > 
-> Using myself as a surrogate, I tested Boofy for trapped emotions. As
-> we suspected, the trapped emotion was fear. Once we cleared the
-> trapped emotion by running the Magboy down his back, Boofy rolled over to have us scratch his stomach, but nothing else particularly
-> happened.
+> Usándome a mí misma como un sustituto, le realicé la prueba a Boofy
+> buscando emociones atrapadas. Como sospechábamos, la emoción atrapada
+> era el miedo. Una vez que limpiamos la emoción atrapada pasando el
+> Magboy a lo largo de su espalda, Boofy se dio vuelta para que le
+> rascáramos su panza, pero no ocurrió nada más en particular.
 > 
-> But a few days later, when a visitor came over, we noticed that he
-> didn’t run. In fact, when any new person came into the room, Boofy now
-> acted like any other cat, sometimes going up to them for petting and
-> attention.
+> Unos días más tarde, cuando alguien vino a visitarnos, notamos que no
+> había salido corriendo. De hecho, cuando cualquier persona entraba en
+> la habitación ahora Boofy se comportaba como cualquier otro gato, a
+> veces trepándose a ellos buscando mimos y atención.
 > 
-> Thanks to Dr. Nelson’s training, I’ve found that I enjoy working with
-> animals. I’ve even discovered that I have a special ability for
-> working with them. Using self-testing, I can identify trapped emotions
-> quickly and clear them. I have my own pet therapy business now, and
-> have seen for myself the remarkable changes that come to animals using
-> the Emotion Code.
+> Gracias a la capacitación del Dr. Nelson, he descubierto que disfruto
+> trabajar con animales. He descubierto inclusive que tengo una
+> capacidad especial para trabajar con ellos. Utilizando el autoexamen,
+> puedo identificar las emociones atrapadas rápidamente y limpiarlas.
+> Ahora tengo mi propio negocio de terapia para mascotas y yo misma he
+> visto los cambios notables que se producen en los animales utilizando
+> el Código de la Emoción.
 > 
 > -Katrina B., Washington
 
-### Abandoned Puppies
+### Cachorros abandonados
 
-I received another touching letter from Katrina, who has become very proficient at using the Emotion Code with animals.
+Recibí otra carta conmovedora de Katrina, quien se ha vuelto muy competente en el uso del Código de la Emoción en animales.
 
-> Last year, I received a phone call from one of my friends asking if
-> they could borrow our boat. They had been at a private park by the
-> Stillaguamish River when they thought they heard whimpering puppies.
-> After looking around, they saw the puppies by the cliff across the
-> river, stranded on a small sandbar. My friend was afraid that the next
-> rainstorm would raise the river and drown the puppies, so she needed
-> my boat to rescue them. My brother Ben and I took our canoe to the
-> park and rescued the puppies. One was already dead, but we took the
-> other four home with us. They were beautiful black puppies with white
-> markings, a mixed breed of pit bull and German shepherd.
+> El año pasado, recibí una llamada telefónica de uno de mis amigos
+> preguntándome si podían tomar prestado nuestra lancha. Habían estado
+> en un parque privado sobre el río Stillaguamish cuando escucharon
+> cachorros lloriqueando. Después de mirar alrededor, vieron a los
+> cachorros sobre el acantilado del otro lado del río, hundidos en un
+> pequeño banco de arena. Mi amiga temía que la próxima tormenta hiciera
+> crecer el río y ahogara a los cachorros, entonces necesitaba mi bote
+> para rescatarlos.
 > 
-> One of them would not stop shivering, even when I wrapped it up in a
-> blanket and held it next to me. I knew it wasn’t cold, it was in
-> shock. But I got out my emotion chart and started testing for trapped
-> emotions, using myself as the surrogate. The puppy’s primary trapped
-> emotions were terror, shock, fear, betrayal and abandonment.
+> Mi hermano Ben y yo llevamos nuestra canoa al parque y rescatamos a
+> los cachorros. Uno ya había muerto, pero llevamos a los otros cuatro
+> con nosotros a casa. Eran unos hermosos cachorros negros con manchas
+> blancas, una mezcla de pit bull y pastor alemán.
 > 
-> As I worked with the puppy, asking questions about what had happened
-> and testing myself for the answers, I learned that the puppies had
-> been deliberately abandoned and left there to drown. It’s easy to
-> understand how upsetting that would be! I carefully cleared all of the
-> trapped emotions from the puppy and confirmed that they were gone.
+> Uno de ellos no podía dejar de temblar, incluso cuando lo arropé en
+> una manta y lo sostuve junto a mí. Sabía que no tenía frío, estaba en
+> shock. Pero saqué mi cuadro de las emociones y empecé a realizarle la
+> prueba buscando emociones atrapadas, utilizándome a mí misma como
+> sustituto. Las emociones atrapadas principales del cachorro eran
+> terror, conmoción, miedo, traición y abandono.
 > 
-> After less than a half-hour of work, the puppy had stopped shivering
-> and calmed down. Even though I was happy to keep holding him snugly in the blanket, he wanted to get up and play.
+> Mientras trabajaba con el cachorro, preguntando acerca de lo que le
+> había pasado y examinándome para obtener las respuestas, descubrí que
+> los cachorros habían sido abandonados deliberadamente y dejados allí
+> para que se ahogaran. Es fácil comprender lo terrible que eso sería.
+> Cuidadosamente limpié todas las emociones atrapadas del cachorro y
+> confirmé que se habían ido.
 > 
-> Knowing the trauma these puppies had been through, I cleared the
-> trapped emotions from the other puppies, too. I wanted to be sure to
-> give them a better start with the families that would adopt them when
-> we took them to the animal shelter. The pound had no problem finding
-> them good homes.
+> Después de menos de media hora de trabajo, el cachorro dejó de temblar
+> y se calmó. Aunque yo estaba feliz por seguir sosteniéndolo acurrucado
+> en la manta, quiso levantarse y jugar.
+> 
+> Sabiendo el trauma que habían atravesado estos cachorros, también
+> limpié las emociones atrapadas de los demás cachorros. Quería
+> asegurarme de darles un mejor comienzo con las familias que los
+> adoptarían cuando los lleváramos al refugio de animales. La perrera no
+> tuvo ningún problema para encontrarles buenos hogares.
 > 
 > -Katrina B.
 
-### A Horse’s Sorrow
+### La tristeza de un caballo
 
-After I’d worked on Ranger, word started getting around about my unusual approach to treating animals. An owner asked if I would come to look at her horse, Valiant, who was having difficulty with his gait, or the specific pattern of his leg movements.
+Después de haber tratado a Ranger, se corrió la voz acerca de mi enfoque inusual para el tratamiento de animales. Una dueña me preguntó si podía ir a ver a su caballo, Valiant, quien estaba teniendo dificultades con su modo de andar o un patrón de conducta específico en los movimientos de su pierna.
 
-Valiant was an elegant horse used in dressage, a particular kind of horse training in which the horse learns to follow very specific movements by the rider. With an abnormal gait, it’s impossible for a horse to work, so Valiant’s training had ground to a halt. A veterinarian had seen the horse, but could find nothing physically wrong, so Karla, the horse’s owner, turned to me for help.
+Valiant era un caballo elegante utilizado en la doma de caballos, un entrenamiento de caballos particular en el que el caballo aprende a seguir movimientos muy específicos por el jinete. Con un andar anormal, es imposible que un caballo pueda entrenar, entonces el entrenamiento de Valiant se había interrumpido. Un veterinario había visto al caballo, pero no pudo encontrar nada malo físicamente, entonces Karla, la dueña del caballo, recurrió a mí buscando ayuda.
 
-
-My arrival at the stables caused a bit of a stir. The owners, horse trainers and stable hands were curious to see this new technique that purportedly freed horses of their emotional baggage. A small crowd gathered around the stall as I worked. I asked for a volunteer to act as a surrogate and a rider named Melissa volunteered.
-
-
-As I tested Valiant through Melissa, I soon found the reason for his gait problem. There was a trapped emotion that was imbalancing his hind-quarters.
-Further testing revealed that the trapped emotion was sorrow.
+Mi llegada a los establos causó un poco de revuelo. Los propietarios, los entrenadores de caballos y los ayudantes del establo estaban curiosos de ver esta técnica nueva que supuestamente liberaba a los caballos de su bagaje emocional. Una pequeña multitud se reunió alrededor del establo mientras trabajaba. Pedí que alguien hiciera de sustituto y una jinete llamada Melissa se ofreció de voluntaria.
 
 
-“Is it sorrow about another horse?” I asked. Melissa’s arm went weak, which meant “No.”
+Mientras le realizaba la prueba a Valiant a través de Melissa, pronto encontré la razón del problema de su marcha. Había una emoción atrapada que estaba desequilibrando sus cuartos traseros.
 
-“Is it sorrow about a human being?” Her arm went weak again. “No.”
-
-“Is it sorrow about a dog?” “No.”
-
-“About a cat?” “No.”
-
-Knowing it would help to know the nature of the sorrow, but running out of possibilities, I kept at it. Seeing a squirrel nearby, I asked, “Is it sorrow about a squirrel?” “No.”
-
-“Is it sorrow about a bird?” At this point, Melissa’s arm tested strong, indicating a “Yes.”
-
-A horse feeling sorrow about a bird? This somehow struck me as being quite funny, and I started to laugh, along with everyone else. This was really unexpected.
-
-Suddenly, Karla, the horse’s owner, spoke up. “Wait a minute. I think I know what this is about.”
-
-I could see from the look on her face that she was serious. “Last week,” she said, “a baby bird fell out of its nest onto the road, right in front of Valiant’s stall. The baby bird struggled for its life for a time, but it ended up dying.”
-
-“Is this sorrow about the baby bird that died?” I asked Valiant through Melissa. The answer was “Yes.”
+Más pruebas revelaron que la emoción atrapada era la tristeza.
 
 
-----------
+“¿Esta tristeza es por otro caballo?” pregunté. El brazo de Melissa se volvió débil, lo que significaba que “No”.
 
+“¿Esta tristeza es por un ser humano?” Su brazo se volvió débil de nuevo. “No”.
 
-**Valiant must have seen the whole thing. As this baby bird struggled helplessly for its life and eventually died, Valiant was overwhelmed with sorrow, and a trapped emotion was formed, which was imbalancing his hind-quarters and affecting his gait.**
+“¿Esta tristeza es por un perro?” “No”.
+
+“¿Por un gato?” “No”.
+
+Sabiendo que me podría ayudar a saber la naturaleza de la tristeza, pero quedándome sin posibilidades, seguí insistiendo. Al ver una ardilla cerca, pregunté: “¿Esta tristeza es por una ardilla?” “No”.
+“¿Esta tristeza es por un pájaro?” En este momento, el brazo de Melissa dio un resultado fuerte, indicando un “Sí”.
+
+¿Un caballo sintiendo tristeza por un pájaro?” Esto de alguna manera me resultó bastante gracioso y empecé a reírme, junto con todos los demás. Esto era realmente inesperado.
+
+De repente, Karla, la dueña del caballo, habló. “Esperen un minuto. Creo saber de qué se trata esto”.
+
+Pude ver a través de la expresión de su cara que estaba hablando enserio. “La semana pasada”, ella dijo, “un pichón se cayó de su nido en la calle, justo en frente del compartimiento de Valiant. El pequeño pájaro luchó por su vida durante un tiempo, pero finalmente murió”.
+
+“¿Esta tristeza es acerca del pichón que murió?” le pregunté a Valiant a través de Melissa. La respuesta fue “Sí”.
 
 
 ----------
 
 
-Running a magnet down his back, I released the trapped emotion. Karla led him out of the stables and walked him. Lo and behold, Valiant’s gait problem was suddenly gone, along with his trapped emotion of sorrow about a little baby bird.
+**Valiant debe haber visto todo. Mientras este pichón luchaba en vano por su vida y eventualmente murió, Valiant sentía una tristeza incontenible, y se formó una emoción atrapada, la cual estaba desequilibrando sus cuartos traseros y afectando su andar.**
 
 
-### Amazing Horse Stories
+----------
+Deslizando un imán hacia abajo por su espalda, liberé la emoción atrapada. Karla lo condujo fuera del establo y lo hizo caminar. Y quién lo iba a decir, el problema del andar de Valiant de repente había desaparecido, junto con su emoción atrapada de tristeza por el pichón.
 
-Our children were taking riding lessons at a local equestrian park and we ended up treating the owner’s horses for trapped emotions. The owner tells the story here.
+### Historias asombrosas de caballos
 
+Nuestros hijos estaban tomando clases de equitación en un parque ecuestre local y terminamos tratando a los caballos del dueño buscando emociones atrapadas. A continuación el dueño cuenta la historia.
 
-> I have been involved with horse training and riding since I was
-> fourteen years old. I now own and operate an equestrian facility. I
-> regularly compete in National Reining Horse Association events around
-> the country with my horses.
+> He estado participando del entrenamiento de caballos y montando
+> caballos desde que tenía catorce años. Ahora soy propietario y trabajo
+> en una instalación ecuestre. Regularmente compito en eventos de la
+> National Reining Horse Association en todo el país con mis caballos.
 > 
-> I met Dr. Nelson and his wife, Jean a year or so ago, and have been
-> privileged to have the two of them work on some of my horses, with
-> amazing results, and I would like to share with you what I have seen.
+> Conocí al Dr. Nelson y a su esposa, Jean hace más o menos un año, y he
+> tenido el privilegio de que ambos tratasen algunos de mis caballos,
+> con resultados sorprendentes; y me gustaría compartir con ustedes lo
+> que he visto.
 > 
-> All my horses are quarter horses, and are considered working cattle
-> horses.
+> Todos mis caballos son de la raza “quarter horse” y se consideran
+> caballos de ganado equino.
 > 
-> One of my favorite horses is Newt. He is now 14 years old, and has
-> been retired for 5 years, which is very unusual for a horse, but Newt
-> has some problems. About 10 years ago, Newt slept on an anthill, and
-> was bitten repeatedly by ants in a large area of skin over his left
-> hind-quarter. Within a few days, all the hair fell out of that area,
-> and he never really recovered from it. Although the hair grew back, I
-> quit showing him about 6 or 7 years ago, as he just couldn’t perform
-> any more, and it was obvious to me that he was in pain. His energy
-> level was very low, and it seemed that he was suddenly old before his
-> time. Over the last five years he has been totally retired, but I have
-> been taking him out about twice a year to work him just a bit, just to
-> give him something to do.
+> Uno de mis caballos favoritos es Newt. Ahora tiene 14 años y ha estado
+> retirado por 5 años, lo cual es muy inusual para un caballo, pero Newt
+> tiene algunos problemas. Hace unos 10 años, Newt durmió sobre un
+> hormiguero y fue mordido en repetidas ocasiones por hormigas en una
+> gran área de la piel arriba de su cuarto trasero izquierdo. Al cabo de
+> unos pocos días, se le cayó todo el pelo de esa área y nunca se
+> recuperó realmente de ello. Aunque el pelo le creció nuevamente, dejé
+> de mostrarlo hace alrededor de 6 o 7, ya que simplemente no podía
+> actuar más, y era evidente para mí que estaba dolorido. Su nivel de
+> energía era muy bajo y parecía que de repente se había vuelto viejo
+> antes de tiempo. En los últimos cinco años, se ha retirado totalmente,
+> pero yo lo he estado sacando aproximadamente dos veces al año sólo
+> para hacerlo trabajar un poco, simplemente para darle algo que hacer.
 > 
-> Over the years I have had vets look at him, chiropractors, and even
-> tried shock therapy, but nothing worked at all. Newt is a very
-> valuable horse. Both of his grandparents were from DocBarr twice, from
-> both mother and father. DocBarr is a very famous quarter horse. His
-> mother’s lineage is in the top 5 reining and cow-horses in the
-> country. As Dr. Nelson and Jean worked on Newt, they told me that he
-> was suffering from trapped emotions. Specifically, he had lack of
-> control and nervousness from around age 2. This dated back to before I
-> had him, when he had been worked too hard and too aggressively by his
-> former owner/trainer. They said he had some sort of disconnection
-> going on in the left hindquarter, dating back to the ant bites as
-> well.
+> Durante estos años lo han visto varios veterinarios, quiroprácticos, e
+> incluso probamos con la terapia de shock, pero nada funcionó en
+> absoluto. Newt es un caballo muy valioso. Sus dos abuelos eran de
+> DocBarr por partida doble, tanto los maternos como los paternos.
+> DocBarr es un “quarter horse” muy famoso. El linaje de su madre está
+> dentro de los mejores 5 de los reining horses y cow-horses del país.
 > 
-> Since Dr. Nelson and his wife worked on him, (he had a total of one
-> treatment that lasted about 30 minutes) Newt is like a new horse. In
-> fact, it’s like he has suddenly gone back to where he was when he was
-> a four-year-old. I can now use him to rope cattle, which puts a lot of
-> strain on the horse’s back, with no problem. I can rein him and put
-> him through all his paces, and he performs at the top of his game.
-> It’s amazing to me how he acts now. He is full of energy, and wants to
-> play all the time. After being retired and unable to do much of
-> anything at all for many years, Newt is brand-new.
+> Mientras el Dr. Nelson y Jean trabajaban sobre Newt, me dijeron que
+> estaba sufriendo de emociones atrapadas. En concreto, tenía falta de
+> control y nerviosismo desde que tenía alrededor de 2 años. Esto se
+> remontaba a antes de que yo lo tuviera, cuando había sido puesto a
+> trabajar muy duro y muy agresivamente por su dueño anterior. Ellos
+> dijeron que tenía algún tipo de desconexión en su cuarto trasero
+> izquierdo, que se remontaba a las mordeduras de las hormigas también.
 > 
-> Another horse of mine I call Buck. He is probably the best horse I
-> have, and is a beautiful little buckskin quarter horse. I got him
-> three months ago. From the very beginning, he was suffering from a
-> severe lack of energy and trust, and had no desire to do anything. He
-> didn’t want to work. I happen to know how he was trained, and it was
-> way too aggressive, to put it kindly. My observation is that you can
-> get a horse to perform with that kind of harsh training for about a
-> year, and then you are all done, because the horse finally says, “You
-> can hurt me all you want, and I just don’t care anymore. I’m done.”
+> Desde que el Dr. Nelson y su esposa lo trataron (tuvo en total un
+> tratamiento que duró alrededor de 30 minutos) Newt es como un caballo
+> nuevo. De hecho, es como que si hubiese regresado de repente a donde
+> estaba cuando tenía cuatro años. Ahora lo puedo utilizar para atar el
+> ganado, lo que pone mucha tensión en la parte trasera del caballo, sin
+> ningún problema. Lo puedo frenar y ejercitarlo, y lo hace de la mejor
+> manera. Me sorprende ver cómo actúa ahora. Está lleno de energía y
+> quiere jugar todo el tiempo. Después de estar retirado e incapaz de
+> hacer poco y nada por muchos años, Newt está flamante.
 > 
-> Well, Buck had reached that point, and he was done. He hated his life,
-> hated his job, and hated people, because they had mistreated him so
-> much. Dr. Nelson and his wife checked him out, and found trapped
-> emotions of hatred at age 3 (he felt that the trainer hated him),
-> depression at age 3, and other emotions of overwhelmed, panic, and
-> feeling taken for granted.
 > 
-> Since then, Buck has changed in a big way. His cadence has changed, he
-> is much smoother to ride, and feels much more relaxed, which is how he
-> should feel to me when I ride him. In addition, he is no longer afraid
-> of people, and much less guarded. He is now a normal horse in all
-> those aspects, he loves to work now, and is full of energy. It’s
-> really amazing. He is like a new horse.
+> Otro de mis caballos se llama Buck. Probablemente es el mejor caballo
+> que tengo y es pequeño y un hermoso “buckskin quarter horse”. Lo tengo
+> desde hace tres meses. Desde el principio, estaba sufriendo de una
+> falta de energía y confianza severa, y no tenía deseos de hacer nada.
+> No quería trabajar. Resulta que me enteré cómo era entrenado y era de
+> una manera muy agresiva, por decirlo amablemente. Mi experiencia me
+> dice que puedes conseguir que un caballo actúe con ese tipo de
+> entrenamiento severo por un año aproximadamente, y después ya no hay
+> nada más que se pueda hacer, porque el caballo finalmente dice:
+> “Puedes lastimarme todo lo que quieras, a mi ya no me importa más.
+> Estoy agotado”.
 > 
-> Last month, I took Buck to the NHRA show, where he took 3rd out of 30
-> head in the stallion class event, and 3rd in the trainer horse event.
-> I am happy to say that he beat his old trainer’s best by five points
-> at this show. Training by instilling fear might work for a while, but
-> trust lasts forever.
+> Bueno, Buck había llegado a ese punto, y estaba agotado. Odiaba su
+> vida, odiaba su trabajo, y odiaba a la gente, porque lo había
+> maltratado demasiado. El Dr. Nelson y su esposa lo examinaron y le
+> encontraron emociones atrapadas de odio a los 3 años (él sentía que su
+> entrenador lo odiaba), depresión a los 3 y otras emociones
+> abrumadoras, de pánico y sentimientos dados por sentados.
 > 
-> I’m not sure how Dr. Nelson’s method works, but I am absolutely
-> convinced that trapped emotions are real. It is truly amazing to see
-> this process done and to see the results that are obtained. Without
-> Dr. Nelson knowing anything about a horse’s history, the emotions and
-> things that come up are exactly right on.
+> Desde entonces, Buck ha cambiado de una manera grandiosa. Su cadencia
+> ha cambiado, es mucho más suave de andar y se siente mucho más
+> relajado, que es como yo lo siento cuando lo hago andar. Además, ya no
+> le teme a las personas y está mucho menos vigilado. Ahora es un
+> caballo normal en todos esos aspectos, ahora ama trabajar y está lleno
+> de energía. Es realmente sorprendente. Es como un caballo nuevo.
 > 
-> I have seen this method work, and I can see and feel the results in my
-> horses. When I try to describe it to people they say it sounds like
-> Voodoo. All I know is, it works, and that’s all I care about.
+> El mes pasado, llevé a Buck a la exposición NHRA, donde salió 3ro de
+> 30 en el evento de clase semental y 3ro en el evento de entrenadores
+> de caballos. Estoy feliz de decir que superó el mejor resultado de su
+> antiguo entrenador por cinco puntos en esta exposición. Entrenar
+> infundiendo miedo puede que funcione por un tiempo, pero la confianza
+> dura para siempre. No estoy seguro de cómo funciona el método del
+> Dr.Nelson, pero estoy absolutamente convencido de que las emociones
+> atrapadas son reales. Es verdaderamente sorprendente ver cómo se
+> realiza este proceso y ver los resultados que se obtienen. Sin que el
+> Dr. Nelson supiera nada de la historia de un caballo, las emociones y
+> cosas que surgen son exactamente correctas.
+> 
+> He visto la eficacia de este método, y puedo ver y sentir los
+> resultados en mis caballos. Cuando trato de describírselo a la gente
+> dice que suena como si fuera Vudú. Sólo sé que funciona y eso es lo
+> único que me importa.
 > 
 > -Boyd Roundy, Utah
 
-### More Amazing Horse Stories
+### Más historias sorprendentes de caballos
 
-> My name is Debbie Spitzenpfeil. I am an FEI level Dressage Trainer and
-> Clinician, and I have trained in Germany with Olympic trainers. After
-> having a training barn in San Juan Capistrano, California for 17 years
-> with 23 horses from Training Level to Intermediare II, I am now
-> semi-retired in Oregon with my Holsteiner Stallion, Revelation. I
-> teach Dressage Clinics in Oregon, Colorado, and California as well as
-> judging shows in these states.
+> Mi nombre es Debbie Spitzenpfeil. Tengo una certificación FEI como
+> Entrenadora de Doma y Clínica, y he entrenado en Alemania con
+> entrenadores Olímpicos. Después de haber tenido una instalación de
+> entrenamiento en San Juan Capistrano, California durante 17 años con
+> 23 caballos desde el nivel básico al intermedio, ahora estoy casi
+> retirada en Oregón con mi semental “Holsteiner” llamado Revelation.
+> Enseño Doma Clínica en Oregón, Colorado y California así como juez de
+> shows en estos estados. Asistí al primer seminario sobre sanación
+> magnética que dio el Dr. Nelson, en San Diego, California, en julio de 1998. He utilizado sus métodos de eliminación de emociones atrapadas y los he encontrado invaluables para trabajar con caballos, así como con
+> personas, y tengo muchas historias sorprendentes que podría compartir,
+> pero a continuación hay un par que son increíbles.
 > 
-> I attended the first seminar on magnetic healing that Dr. Nelson held,
-> in San Diego, California, in July of 1998. I have used his methods of
-> clearing trapped emotions and have found them to be invaluable in
-> working with horses, as well as people, and I have many amazing
-> stories that I could share, but here are a couple of great ones.
+> Uno de los caballos que estaba entrenando hacía varios años cojeaba
+> varias veces al año. Lo llevamos a que lo revisaran tres veterinarios
+> distintos; lo llevamos a que le hicieran radiografías, quiropráctica y
+> acupuntura pero nada parecía funcionar. Era muy frustrante ya que
+> estábamos compitiendo con él y simplemente nunca sabíamos cuándo esa
+> cojera misteriosa se produciría. Cuando supe del Código de la Emoción
+> ya que había sido una paciente del Dr. Nelson por 10 años, y también
+> había ido a sus seminarios, comencé a utilizar el equilibrio
+> energético en los caballos a los que entrenaba.
 > 
-> One horse that was in training with me for several years would go lame
-> several times a year. We had three different vets look at him, x-rays,
-> chiropractic, and acupuncture done but nothing seemed to work during
-> these times. It was very frustrating since we were competing with him
-> and never knew just when this mysterious lameness would occur. When I
-> learned the Emotion Code through being a patient of Dr. Nelson’s for
-> 10 years, as well as going to his seminars, I began to use energetic
-> balancing on the horses I had in training with me.
+> Highlander renqueaba en el área de su corvejón derecho. Empecé a
+> limpiar su bagaje emocional. Tenía un muro del Corazón que tenía 29
+> tablones de espesor. Fui capaz de eliminar todos los Muros del Corazón
+> a través de la eliminación. Tenía problemas de abandono, ira y
+> resentimiento hacia su dueña, y una gran pena. Pude remontar esto a
+> cuando tenía 5 años y estaba siendo trasladado. Se había caído en el
+> tráiler. La dueña nunca se detuvo a socorrerlo y tuvo que yacer de esa
+> manera durante todo el viaje. Le pregunté a la dueña si esto había
+> ocurrido realmente y avergonzada admitió que sí. Simplemente no sabía
+> qué hacer, entonces manejó con él en el tráiler hasta que llegó a los
+> terrenos de la exposición. Highlander sabía que ella sabía, y sentía
+> mucho resentimiento hacia ella por ello. También sentía que ella lo
+> había abandonado.
 > 
-> Highlander would go lame in his right hock area. I began to clear his
-> emotional baggage. He had a Heart-Wall that was 29 stalls thick. I was
-> able to eliminate all of the Heart-Walls through clearing. He had
-> abandonment issues, anger and resentment at his owner, and major
-> grief. I was able to trace this back to when he was 5 years old and
-> was being trailered. He had fallen down in the trailer. The owner
-> never stopped to help him and he had to lie that way the entire trip.
-> I asked the owner if this had indeed happened and she ashamedly
-> admitted that it had. She simply did not know what to do, so drove
-> with him in the trailer until she got to the show grounds. Highlander
-> knew that she knew, and he resented her for it. He also felt abandoned
-> by her.
+> Después de elimar todas esas emociones, el caballo pasó de estar
+> totalmente cojo en el coverjón a estar completamente sano en 10
+> minutos. Permaneció saludable los 3 años siguientes mientras yo lo
+> entrenaba. Sólo lo tuve que volver a limpiar dos veces, y eso sucedió
+> cuando vio caballos que no querían ser cargados en el tráiler y creo
+> que recordó su dolor. Sin embargo, todavía permanecía sano y siguió
+> adelante y ganó varios Campeonatos.
 > 
-> After I was able to clear everything, he went from being totally lame
-> in the hock to being completely sound within 10 minutes. He remained
-> sound for the next 3 years while I had him in training. Only two times
-> did I have to clear him again, and that was when he saw horses that
-> didn’t want to load into a trailer and I think he recalled his grief.
-> But still he stayed sound and went on to win several Championships.
+> Otro caballo que estaba entrenando en una clínica vino cojo. Nunca
+> antes le había enseñado. Le pregunté a su dueño si le podía realizar
+> la prueba muscular para ver si era una renquera física o emocional.
+> Era una renquera emocional. Fui capaz de limpiarle sus problemas de
+> pena debido a la pérdida de otro caballo que había tenido que ser
+> sacrificado en el granero; estaba muy trieste por ese caballo y esta
+> emoción le causó cortocircuitos en muchos órganos así como en el
+> corazón. Me llevó alrededor de 10 minutos limpiarlo, después de los
+> cuales salió inmediatamente corriendo en un estado saludable. Continuó
+> estando sano durante muchas sesiones hasta que fue vendido a otra
+> casa.
 > 
-> Another horse I was training in a clinic came in lame. I had never
-> taught him before. I asked his owner if I could muscle test him to see
-> if this was a physical lameness or an emotional one. It was an
-> emotional lameness. I was able to clear his grief issues over the loss
-> of another horse that had to be put down in his barn. He was mourning
-> the horse and short-circuited in many organs as well as his heart. It
-> took me about 10 minutes to clear him, after which he immediately
-> trotted off sound. He continued to be sound for many more Clinics
-> until he was sold to another home.
+> He utilizado el Código de la Emoción en caballos que planeo vender
+> para ver si tienen cortocircuitos emocionales y si realmente se pueden
+> entrenar. Me ha ayudado enormemente en la elección de buenos caballos.
+> Siempre les estoy realizando la prueba muscular a mis caballos para
+> hacerles controles de su estado de salud. Creo que están físicamente
+> más saludables y más felices debido a los métodos del Dr. Nelson.
 > 
-> 
-> I have used the Emotion Code on horses I plan to purchase to see if
-> they have emotional short circuits and if they are indeed trainable.
-> It has helped me enormously in choosing good horses. I am always
-> muscle testing my horses to do check-ups on their health status. I
-> think they are physically healthier and happier because of Dr.
-> Nelson’s methods.
-> 
-> -Debbie Spitzenpfeil, Oregon
+> -Debbie Spitzenpfeil, Oregón.
 
-#### Conclusion
+#### Conclusión
 
-We populate this earth along with the animals, and many times we end up in the position of being their caretakers in a very personal way. They are our companions and our friends. We sometimes come to love them as if they were another member of our family, and this is as it should be.
+Poblamos esta tierra junto a los animales, y muchas veces terminamos en la posición de ser sus cuidadores de un modo muy personal. Son nuestros compañeros y nuestros amigos. A veces llegamos a amarlos como si fueran otro miembro de nuestra familia, y así es como debería ser.
 
 
 ----------
 
 
-**Like our family, it falls to us to make sure the animals in our care are fed and sheltered, and to do our best to keep them safe and healthy.**
+**Como nuestra familia, nos corresponde asegurarnos de que los animales que están bajo nuestro cuidado sean alimentados y protegidos, y dar lo mejor de nosotros para mantenerlos seguros y saludables.**
 
 
 ----------
 
 
-Keep an eye on the animals in your care. If something unsettling happens – like the baby bird dying right in front of Valiant – think about how your animal might feel. When an animal develops symptoms of any kind, whether they are physical or behavioral, they may reflect a trapped emotion. You now have the tools to help them on your own.
+No pierdas de vista a los animales que están a tu cuidado. Si sucede algo inquietante, como el pichón que murió justo en frente de Valiant, piensa en cómo tu animal se podría sentir. Cuando un animal desarrolla síntomas de cualquier tipo, ya sean físicos o de comportamiento, podrían reflejar una emoción atrapada, Ahora tienes las herramientas para ayudarlos tú mismo.
 
-
-Don’t be afraid to try. Just let your heart be full of love for the animal, have a prayer in your heart, have a clear intention to help them, believe that you can do it, and you will be successful.
+No tengas miedo de intentarlo. Sólo deja que tu corazón se llene de amor por el animal, ten una oración en tu corazón, ten una intención clara de ayudarlos, cree que puedes hacerlo y tendrás éxito.

@@ -1,436 +1,421 @@
-*Often the hands will solve a mystery that the intellect has struggled with in vain.*
-
-*-Carl Jung*
 
 
-## Surrogates, Proxies and Distance Healing
+*A MENUDO LAS MANOS RESOLVERÁN UN MISTERIO CON EL QUE EL INTELECTO HA LUCHADO EN VANO*
+*-CARL JUNG*
 
-Imagine being able to release trapped emotions on a loved one who is thousands of miles away.
+## SUSTITUTOS, REPRESENTANTES Y SANACIÓN A DISTANCIA
 
-Imagine being able to tap into the subconscious mind of someone who is in a coma or unconscious and needs your help. Imagine being able to test your pet for trapped emotions and improve his behavior. All this and more is possible through two expanded forms of muscle testing that I refer to as surrogate and proxy testing.
-
-
-Surrogate and proxy testing are probably the most useful adjuncts to muscle testing that have ever been discovered. I have taught many people to use these methods, and they have been able to use the Emotion Code in what would otherwise have been impossible circumstances.
-
-Although I have used surrogate and proxy testing for many years, I am continually impressed by how well they work. These forms of testing give you the ability to test otherwise untestable people, as well as to perform true distance healing.
+Imagina ser capaz de liberar las emociones atrapadas de un ser querido que está a miles de millas de distancia. Imagina ser capaz de entrar en el subconsciente de alguien que está en coma o inconsciente y necesita tu ayuda. Imagina ser capaz de examinar a tu mascota para encontrar emociones atrapadas y así mejorar su conducta. Todo esto y más es posible a través de dos formas extendidas de la prueba muscular a las que me refiero como prueba del sustituto y representante.
 
 
-----------
+La prueba del sustituto y la del representante son probablemente los dos complementos más útiles de la prueba muscular que jamás he descubierto. Le he enseñado a muchas personas a usar estos métodos y han podido utilizar el Código de la Emoción en circunstancias en las que de otra manera hubiera sido imposible.
+
+A pesar de haber usado la prueba del sustituto y la del representante por muchos años, me sigue impresionando lo bien que funcionan. Estas formas de prueba te dan la habilidad de examinar a personas que de otro modo no sería posible examinar, así como también realizar verdaderas sanaciones a distancia. Creo que estamos viviendo en una era en la que todo el conocimiento de la antiguedad está regresando a la Tierra y que el Código de la Emoción puede haber alguna vez formado parte de ese cuerpo de conocimiento.
 
 
-**I believe that we are living in an era when all the knowledge of past ages is coming back to the earth, and that the Emotion Code may once have formed part of that body of knowledge.**
+Mientras continuamos refinando nuestra comprensión acerca de cómo funciona el mundo, hemos hecho avances increíbles en varias áreas. Cosas que hubiesen sido inconcebibles en el pasado hoy son comunes para nosotros.
 
 
-----------
+Hace poco más de un siglo, si querías capturar la imagen de alguien, tenías que dibujarla o pintarla. Crear una versión a todo color, a menudo llevaba una gran cantidad de pintura y muchas horas de esfuerzo. Ahora todo lo que necesitas es una pequeña cámara digital y una fracción de segundo para presionar el obturador. Ir a visitar a un familiar a 100 millas de distancia solía ser una actividad de una semana entera. Ahora puedes ir y volver fácilmente en medio día.
+
+La tarea en cuestión siempre se hace más fácil cuando tienes las herramientas correctas. La prueba del sustituto y la del representante son herramientas poderosas que pueden utilizarse para liberar de manera efectiva emociones atrapadas independientemente de que la persona esté delante de ti o a miles de millas de distancia.
 
 
-As we continue to refine our understanding of how the world works, we have made incredible advances in many areas. Things that would have been inconceivable in the past are commonplace to us today.
+#### Dones del cielo
 
-Just over a century ago, if you wanted to capture a likeness of someone, you had to draw or paint it. To create a full-color rendering usually took lots of paint supplies and many hours of effort. Now all you need is a tiny digital camera and a split second to press the shutter. Going to visit a relative 100 miles away used to be a week-long activity. Now, you can easily get there and back in half a day.
-
-
-The task at hand is always made simpler when you have the right tools. Surrogate and proxy testing are powerful tools that can be used to effectively release trapped emotions regardless of whether that person is right in front of you or thousands of miles away.
-
-#### Gifts from Above
-
-I look on surrogate and proxy testing as gifts from above, gifts that allow us to get the job done even under trying circumstances.
-
-For example, suppose you have a young child with an anger problem and suspect that a trapped emotion is involved. How do you muscle test a young child?
-
-Suppose your husband who is overseas in the military is grieving over the loss of a comrade. How can you help him at such a distance?
-
-Your dog becomes lethargic after one of your children goes away to college. You suspect there may be a trapped emotion involved, but how can you be sure? Your pet may understand a lot of what you say, but will they know what it means to “resist” when you do a muscle test? If so, please call me!
+Veo la prueba del sustituto y la del representante como dones del cielo, dones que nos permiten lograr hacer un trabajo incluso bajo circunstancias duras. Por ejemplo, suponte que tienes un niño con un problema de enojo y sospechas que una emoción atrapada está involucrada. ¿Cómo practicas la prueba muscular a un niño?
 
 
-Surrogate and proxy testing allow you to use someone else as a substitute for the person (or animal) you’re trying to test. Surrogate testing is used to test a person who is physically present, while proxy testing allows you to find and release trapped emotions from a person who is not present, and who may indeed be literally *anywhere* in the world.
+Suponte que tu marido está en el extranjero en el ejército y está de duelo por la pérdida de un compañero. ¿Cómo puedes ayudarlo a semejante distancia?
+
+Tu perro se puso apático después de que uno de tus hijos se fue a la universidad. Supones que puede haber una emoción atrapada involucrada, pero ¿cómo puedes estar seguro? Tu mascota puede comprender mucho de lo que dices, pero ¿sabrá lo que significa “resistir” cuando le hagas la prueba muscular? Si es así, por favor, llámame.
 
 
-### Surrogate Testing
+La prueba del sustituto y la del representante te permiten utilizar a alguien más como sustituto de la persona (o animal) que estás tratando de examinar.
 
-The following analogy will help you to understand how surrogate testing works.
-
-Many small farms and ranches in America have low-voltage electrified cattle fences around their grazing areas. When a cow brushes up against the wire in an electrified fence, it receives a slight shock. These fences have proven to be simple, but effective at keeping cattle safely within their confines.
-
-Not long after the first electric cattle fence was installed, farm boys made an interesting discovery. If one boy took hold of the fence, it was a shocking experience. The mild jolt of electricity pouring through his body was intense, but not life-threatening. If the boy holding onto the fence grabbed hold of another boy, suddenly that boy would experience the shocking discomfort, and the boy touching the wire would feel... nothing. He would merely be acting as the transmitter of the electricity, like an extension cord.
+Ambos métodos son muy simples y requieren dos personas, más la persona (o el animal) a la que estés examinando. Estos dos métodos de pruebas difieren en que, mientras que la prueba del sustituto se utiliza para examinar a una persona a la que no es posible examinar pero que está físicamente presente, la prueba del representante te permite examinar a una persona que no está presente y que en realidad puede estar literalmente en *cualquier lugar* del mundo.
 
 
-It didn’t take long for this discovery to make its way around the farming communities. Just about anyone who grew up on a farm with an electric fence will tell you that they have tried this. I have spoken to people who remember being on the end of a long chain of people, and being continually shocked until they could get a hold of someone else to be on the end. It works.
+### La prueba del sustituto
 
-Surrogate testing works on a similar principle. You can think of the subject who is actually being tested as the “live wire.” They are the one with the electrical current you are trying to tap into. Because surrogate testing is always used on someone who is present, the surrogate simply touches the subject to make the connection. Then the testing is performed on the *surrogate*, rather than the subject.
+La siguiente analogía te ayudará a comprender cómo funciona la prueba del sustituto.
+
+Muchas granjas pequeñas y ranchos de América tienen cercas para el ganado electrificadas con bajo voltaje alrededor de sus áreas de pastoreo. Cuando una vaca roza el cable de una cerca electrificada, recibe una ligera descarga. Estas cercas han demostrado ser simples pero efectivas a la hora de mantener al ganado a salvo dentro de sus confines.
+
+
+No mucho después de que la primera cerca eléctrica para el ganado fue instalada, unos niños de granja hicieron un descubrimiento interesante. Si uno de los chicos agarraba la cerca, experimentaba la descarga. La leve sacudida de la electricidad atravesando su cuerpo era intensa, pero no corría riesgo su vida. Si el chico tomado de la cerca tomaba a otro chico, de repente este chico experimentaba el malestar de la descarga y el chico que estaba tocando el alambre no sentía nada; 
+estaba actuando meramente como el trasmisor de la electricidad, como un cable de extensión.
+
+El descubrimiento no demoró mucho en recorrer las comunidades agrícolas. Casi todos aquellos que crecieron en una granja con una cerca eléctrica te dirán que lo han intentado. He conversado con personas que recuerdan haber estado al final de una larga cadena de personas y recibir continuamente la descarga hasta que pudieran agarrar a alguien más para que estuviera al final. Funciona.
+
+
+La prueba del sustituto funciona sobre un principio similar. Puedes pensar acerca del sujeto que en realidad está siendo examinando como el “alambre en vivo”. Él es el que tiene la corriente eléctrica a la que estás tratando de acceder. Como la prueba del sustituto siempre se utiliza en alguien que está presente, el sustituto simplemente toca al sujeto para hacer la conexión. Luego la prueba se realiza sobre el sustituto, en vez de sobre el sujeto.
 
 
 ----------
 
 
-**Surrogate testing is the answer in any situation where a person is present physically, but is not testable.**
+**La prueba del sustituto es la respuesta en cualquier situación en la que una persona está físicamente presente, pero no se le puede practicar la prueba.**
 
 
 ----------
 
 
-Reasons that a person may be untestable might include the following:
+Las razones por las que una persona no se le podría practicar la prueba incluyen las siguientes:
 
- 1. Age, such as testing an infant, a small child or an elderly person.
- 2. Physical limitation such as injury, illness, pain, weakness, dehydration or neck misalignment.
- 3. Loss of consciousness such as sleep or being in comatose state.
- 4. Inability to reason due to mental retardation or if you are helping an animal.
+ 1. La edad, como ser, examinar a un bebé, un niño peque-ño o una persona mayor.
+ 2. Limitaciones físicas, como heridas, enfermedades, dolor, debilidad, deshidratación o cuello desalineado.
+ 3. Pérdida de la consciencia como el estar dormido o estar en estado comatoso.
+ 4. Imposibilidad de razonar debido a un retardo mental o si estás ayudando a un animal.
 
-Suppose you would like to test an infant. Anyone who is testable themselves, can act as the surrogate for the infant. In the case of a child, the surrogate could be the child’s mother or father or anyone that the child is comfortable with. Of course, if someone other than a parent is testing a child, they should be sure to obtain permission from the child’s parents before attempting to help them.
-
-
-----------
-
-
-**Anyone who is testable can act as surrogate for anyone else.**
+Suponte que quisieras examinar a un bebé. Cualquier persona que pueda ser examinada ella misma, puede actuar como sustituta del bebé. En caso de un niño, el sustituto podría ser su madre o padre o cualquier persona con la que el niño se sienta cómodo. Por supuesto, que si otra persona que no sea uno de sus padres está examinando al niño, deben asegurarse de obtener el permiso de sus padres antes de intentar ayudarlo.
 
 
 ----------
 
 
-I‘ve come to regard surrogate testing as an indispensable adjunct to muscle testing.
+**Cualquier persona que pueda ser examinada puede actuar como sustituta de cualquier otra.**
 
-If you are getting an inconsistent response while testing someone, my recommendation is to put a surrogate in between, and perform the testing on the surrogate. The answers will be the same, and you will often find that using a surrogate will make it easier to detect the answers you are seeking.
 
-You’ll find that certain people are somewhat easier to muscle test than others. For example, my wife Jean is very easy to test, and since we work together, I often use her as a surrogate.
+----------
 
-### How to Do Surrogate Testing
 
-The first step in doing surrogate testing is to make sure that the surrogate himself, is testable. Do this as we have previously discussed, by simply having the surrogate make a yes or no, true or false statement followed by a muscle test. Once you have a testable surrogate, proceed. Follow these steps:
+He llegado a considerar la prueba del sustituto como un complemento indispensable de la prueba muscular.
 
- 1. To make the connection, the surrogate simply touches or holds hands with the subject.
- 2. Have the subject say their name in the form of a statement, “My name is ____.” Muscle test the surrogate, who should test strong.
- 3. Next, have the subject make an incongruent statement by saying, “My name is____,” using any name that is not their own.
- 4. Muscle test the surrogate. The surrogate should test weak at this point. If not, repeat step three until they do. Once the surrogate tests weak when the subject makes an incongruent statement, the connection has been made and testing may proceed.
+Si obtienes una respuesta inconsistente mientras examinas a alguien, mi recomendación es que pongas a un sustituto en el medio y realices la prueba con el sustituto. Las respuestas serán las mismas y a menudo encontrarás que la utilización de un sustituto te facilitará la detección de las respuestas que estás buscando.
 
-Within a few seconds after their initial physical contact, the surrogate and the subject will be connected and testing will be possible. Once this connection is made,
+Encontrarás que determinadas personas son de alguna manera más fáciles de examinar muscularmente que otras. Por ejemplo, mi esposa Jean es muy fácil de practicar la prueba y, como trabajamos juntos, a menudo la utilizo como sustituta.
+
+### Cómo hacer la prueba del sustituto
+
+El primer paso para hacer la prueba del sustituto es asegurarse de que el mismo sustituto sea apto para la prueba. Haz esto como ya lo hemos discutido, simplemente haz que el sustituto haga una declaración positiva o negativa, verdadera o falsa seguida de la prueba muscular. Una vez que tengas a un sustituto que pueda ser utilizado, procede. Sigue estos pasos:
+
+ 1. Para hacer la conexión, el sustituto simplemente toca o le da la mano al sujeto.
+ 2. Haz que el sujeto diga su nombre en forma de afir-mación: “Mi nombre es ______”. Realiza la prueba muscularmente al sustituto, que debería dar fuerte como resultado.
+ 3. Luego, haz que el sujeto haga una declaración in-congruente diciendo: “Mi nombre es __________”, usando cualquier nombre que no sea el suyo.
+ 4. Realiza la prueba muscularmente al sustituto. En este momento el sustituto debería dar débil como resultado. De no ser así, repite el paso tres hasta que así sea. Una vez que el sustituto da como resultado débil 
+cuando el sujeto hace una declaración incongruente, la conexión ha sido establecida y la prueba se puede llevar a cabo.
 
 ![](21.jpg) 
-`Tester	         Surrogat         Subject`
 
-you will ask questions of the subject or have the subject make the appropriate statements, but the muscle you’re testing belongs to the surrogate, not the subject.
+*Examinador	Sustituto	Sujeto*
 
-Go through the questions described in the previous chapters to identify and locate any trapped emotions. Any change in energy that occurs in the subject will immediately flow through to the surrogate and become apparent through testing. To release a trapped emotion, pass the magnet down the back of the subject, if possible. If for some reason this is not possible, passing the magnet down the back of the surrogate will also work, provided they are still connected energetically.
-
-
-The connection with surrogate testing is easy to break. The surrogate simply stops touching the subject.
-
-### Surrogate Testing Children
-
-Young children are not usually able to be muscle tested reliably. Surrogate testing provides a simple and efficient way to get the answers you need to help them. We can inherit trapped emotions, or we can form them during our time in the womb or during the birth process, and at any time thereafter.
+En unos pocos segundos después del contacto físico inicial, el sustituto y el sujeto estarán conectados y la prueba se podrá llevar a cabo. Una vez que esta conexión esté hecha, harás preguntas al sujeto o harás que el sujeto realice las declaraciones apropiadas, pero el músculo que estés practicando le pertenecerá al sustituto, no al sujeto.
 
 
-----------
+Repasa las preguntas descritas en los capítulos anteriores para identificar y ubicar cualquier emoción atrapada. Cualquier cambio en la energía que ocurra dentro del sujeto, fluirá inmediatamente a través del sustituto para hacerse evidente a través de la prueba. Para liberar una emoción atrapada, pasa el imán por la espalda del sujeto, si es posible. Si por algún motivo esto no es posible, también funcionará pasar el imán por la espalda del sustituto, siempre y cuando sigan conectados energéticamente.
 
+La conexión con la prueba del sustituto es fácil de romper. El sustituto simplemente deja de tocar al sujeto.
 
-**It’s not uncommon for children to be born with trapped emotions. While it is rare for a child to be born with a Heart-Wall, it does happen.**
+### La prueba del sustituto en niños
 
-
-----------
-
-
-Children are so precious! You can help them in many cases, simply by using a surrogate. The Emotion Code works the same way for children as it does for adults. Children that have stressful and difficult lives are certain to have trapped emotions, but any child can have trapped emotions, no matter how much love they receive or how favorable their home environment may be. 
+A menudo, no es posible practicar la prueba muscularmente a los niños pequeños de manera fiable. La prueba del sustituto provee una manera simple y 
 
 ![](22.jpg) 
-`Tester	         Surrogat         Subject`
 
-On the following pages is a dramatic story about how removing trapped emotions helped a very disadvantaged little girl in a very big way.
+*Examinador	Sujeto	Sustituto*
 
-### Julie’s Story
-
-Julie was a “crack baby.” At one day old she was placed into the custody of a foster family who hoped to adopt her. Her problems were certainly not over with. When I first saw her at age two and a half, she had been diagnosed with Cerebral Palsy, Mental Retardation, and severe Asthma. She was also suffering from Attention Deficit Hyperactivity Disorder. Her behavior was like that of a wild animal.
-
-
-She was in a state of extreme agitation at all times, and it seemed that she would have literally “climbed the walls” of my office if she could have. She could not play with toys or other children, and she could not sit still for a second. She could not speak at all. She had tantrums that would last for hours at a time. She had been hospitalized for her asthma seven times in the month before she was brought to our office, and had been on machines to help her breathe. Her foster mother was very patient with her, which I found very admirable.
+eficiente de obtener las respuestas que necesitas para ayudarlos. Podemos heredar emociones atrapadas, o podemos formarlas durante nuestro tiempo en el vientre materno o durante el nacimiento, o en cualquier momento posterior.
 
 
 ----------
 
 
-**By testing Julie through a surrogate, I was able to determine that she had a Heart-Wall, as well as other imbalances.**
+**No es raro que los niños nazcan con emociones atrapadas. A pesar de que es extraño que un niño nazca con un muro en el Corazón, también sucede.**
 
 
 ----------
 
 
-Here are the trapped emotions that were forming her Heart-Wall, which we were able to release, one trapped emotion per visit over a month’s time.
-
-#### Inherited Love Unreceived from Birth Mother
-
-“Love unreceived” is a fairly common emotion which occurs when someone feels unloved or when their love for another is rejected. Julie’s mother was suffering from a trapped emotion of love unreceived herself, and passed this on to Julie at the moment of conception.
-
-As a society our natural tendency is to judge people like Julie’s birth mother because of their addictions. We see the outward behavior and the poor choices that people like her make, and we tend to look down on them. But what we do not see is the invisible; the hurt, the sorrow and the grief that make up their own trapped emotions, their own Heart-Walls. Julie’s mother had such a burden.
+Los niños son valiosos. Puedes ayudarlos en muchos casos simplemente utilizando un sustituto. El Código de la Emoción funciona de la misma manera para los niños como para los adultos. Los niños que tienen vidas estresantes y difíciles están predispuestos a tener emociones atrapadas, pero cualquier niño puede tener emociones atrapadas, sin importar cuánto amor reciban o cuán favorable pueda ser el ambiente en su hogar.
 
 
-#### Inherited Hatred from Her Birth Father
+En las siguientes páginas, hay una dramática historia acerca de cómo ayudó de gran manera el quitarle las emociones atrapadas a una niña muy desfavorecida.
 
-We may never know what Julie’s birth father had been through in his life that created hatred for him. Julie never met her birth father, but she was definitely affected by his trapped emotion of hatred. When trapped emotional energies pass from generation to generation, they interfere with how we would otherwise live. Emotions drive us to make the choices that we make. Emotions cause us to treat others the way that we treat them. Is it possible that trapped emotions that are inherited and passed from one generation to the next are partially to blame for generational abuse and dysfunction?
+### La historia de Julie
 
-
-#### Grief and Anger from Her Birth Mother
-
-Both grief and anger had become trapped during the first trimester of Julie’s time in the womb. These two emotions were her birth-mother’s response to being pregnant and had become trapped in Julie. These were the answers I received as I surrogate-tested Julie.
-
-#### Grief, Disheartedness and Sorrow, Third Trimester
-
-It is not unusual for a child to develop trapped emotions from the deep feelings that their mother is experiencing while she is carrying them. I found trapped emotions of grief, disheartedness and sorrow, all emotions that her mother was feeling during the third trimester. Trapped emotions are most commonly produced in the third trimester, but can be created at any time during pregnancy.
+Julie era una bebé hija de una madre adicta al crack (crack, un tipo de droga). Al día de vida fue puesta bajo la custodia de una familia adoptiva que tenía la esperanza de adoptarla. Por cierto, sus problemas no habían terminado. Cuando la vi por primera vez a los dos años y medio de edad, le habían diagnosticado parálisis Cerebral, retardo mental y asma agudo. Además, padecía el frastorno de déficit de atención con hiperactividad. Su comportamiento era como el de un animal salvaje.
 
 
-#### Hopelessness From Her Mother at Birth
-
-Julie’s mother was apparently feeling the emotion of hopelessness while she was in labor. Julie was still in her mother’s body at this time, and within her mother’s energy field. As her mother’s body vibrated at the frequency of hopelessness, Julie began to resonate at that same frequency, and she was born with this trapped emotion.
-
-#### Unworthy and Self-Abuse at Age One
-
-The emotions of unworthy and self-abuse were created by Julie herself, because she had so much trapped emotional baggage compounded by toxicity from her mother’s drug abuse. Her foster mother told me that when she was around this age she used to bang her head against floors and walls.
+Estaba en un estado de agitación extrema todo el tiempo y parecía como si hubiese literalmente “trepado las paredes” de mi consultorio de haber podido. No podía jugar con juguetes u otros chicos y no podía sentarse y quedarse quieta por un segundo. No podía hablar para nada. Tenía berrinches que duraban horas cada vez. La habían internado por su asma siete veces ese mes antes de que la trajeran a mi consultorio y la habían conectado a máquinas para ayudarla a respirar. Su madre adoptiva era muy paciente con ella, lo que me pareció muy admirable.
 
 
-#### The Results
-
-After Julie’s third treatment she slept all night, and her breathing was no longer audible. By her fourth treatment her asthma symptoms were gone.
-
-Shortly after her asthma symptoms disappeared, Julie’s foster mother received a visit from her social worker. The social worker spent nearly two hours chatting with Julie’s foster mother and filling out adoption paperwork. During this entire time, Julie sat on the floor and played quietly with her toys, something that she had never been able to do before. The amazed social worker asked, “What kind of medication do you *have* her on?” Betty replied, “Well, she is off all her medication now.” Betty tells the story here in her own words.
+----------
 
 
+**Al examinar a Julie a través de un sustituto, pude determinar que tenía un muro en el Corazón, al igual que otros desequilibrios.**
 
-> We got Julie when she was a day old; she was a drug-exposed baby, and
-> we planned on adopting her. She was sick, and in and out of the
-> hospital at least 3 or 4 times a month with severe asthma, and was on
-> a machine to help her breath, on prednisone and 2 or 3 other asthma
-> medicines. She had cerebral palsy, and her behavior was just terrible.
+
+----------
+
+
+Aquí están las emociones atrapadas que conformaban el muro de su corazón, las cuales pudimos liberar, una emoción atrapada por visita a lo largo de un mes.
+
+#### El amor no recibido heredado de su madre biológica
+
+“El amor no recibido” es una emoción bastante común que ocurre cuando alguien no se siente amado o cuando su amor por otro es rechazado. La madre de Julie misma sufría de la emoción atrapada de amor no recibido y se la pasó a Julie en el momento en que la concibió.
+
+Como sociedad, nuestra tendencia natural es a juzgar a las personas como la madre biológica de Julie por sus adicciones. Miramos el comportamiento exterior y las elecciones pobres que la gente como ella toma y tendemos a menospreciarlos. Pero lo que no vemos es lo invisible; la pena, el dolor y la angustia que conforman sus propias emociones atrapadas, sus propios muros del corazón. La madre de Julie tenía semejante carga.
+
+#### El odio heredado de su padre biológico
+
+Puede ser que nunca sepamos lo que el padre biológico de Julie había atravesado en su vida que creó odio en él. Julie nunca conoció a su padre biológico, pero estaba definitivamente afectada por su emoción atrapada de odio. Cuando las energías emocionales atrapadas pasan de generación en generación, interfieren en la manera en que, de otro modo, viviríamos. Las emociones nos conducen a hacer las elecciones que hacemos. Las emociones nos llevan a tratar a los demás como los tratamos. ¿Es posible que las emociones atrapadas que son pasadas de una generación a la siguiente sean culpables en forma parcial del abuso generacional y de la disfunción?
+
+#### El dolor y la ira de su madre biológica
+
+Tanto el dolor como la ira habían quedado atrapados durante el primer trimestre del tiempo de Julie en el útero. Estas dos emociones eran la reacción de su madre biológica a estar embarazada y habían quedado atrapadas en Julie. Estas eran las respuestas que recibí mientras le realizaba la prueba del sustituto a Julie.
+
+#### Angustia, descorazonamiento y pesar en el tercer trimestre
+
+No es inusual que un niño desarrolle emociones atrapadas de los sentimientos profundos que su madre experimenta cuando está embarazada de él. Encontré emociones atrapadas de angustia, descorazonamiento y pesar, todas las emociones que su madre sentía durante el tercer trimestre. Las emociones atrapadas se producen más comúnmente en el tercer trimestre, pero pueden crearse en cualquier momento durante el embarazo.
+
+
+#### La desesperanza de su madre en el nacimiento
+
+La madre de Julie sentía aparentemente la emoción de desesperanza mientras estaba de parto. En ese momento, Julie todavía estaba dentro del cuerpo de su madre y dentro de su campo de energía. Cuando el cuerpo de su madre vibraba a la frecuencia de la desesperanza, Julie empezó a resonar a la misma frecuencia y nació con esta emoción atrapada.
+
+#### Indignidad y autolesión al Año de Edad
+
+Las emociones de indignidad y autolesión fueron creadas por Julie misma, debido a que tenía un bagaje emocional atrapado agravado por la toxicidad del abuso de drogas de su madre. Su madre adoptiva me dijo que cuando ella tenía alrededor de esta edad se solía golpear la cabeza contra los pisos y las paredes.
+
+#### Los resultados
+
+Después del tercer tratamiento de Julie, dormía toda la noche y su respiración ya no se oía. Hacia el cuarto tratamiento los síntomas de su asma desaparecieron.
+
+Poco tiempo después de que los síntomas de su asma desaparecieran, la madre adoptiva de Julie recibió la visita de la asistenta social. La asistenta social pasó alrededor de dos horas conversando con la madre adoptiva de Julie y completando el papeleo de adopción. Durante este tiempo completo, Julie se sentó en el piso y jugó tranquilamente con sus juguetes, algo que nunca había podido hacer antes. La trabajadora social asombrada preguntó: “¿Qué medicación le estás dando?”. Betty respondió: “Bueno, actualmente no está tomando ninguna medicación”. Betty cuenta aquí su historia con sus propias palabras.
+
+> Nos hicimos cargo de Julie cuando tenía un día de vida; era un bebé
+> expuesta a las drogas y planeamos adoptarla. Estaba enferma y la
+> llevábamos y traíamos del hospital por lo menos 3 o 4 veces al mes con
+> asma agudo, y estaba conectada a una máquina para ayudarla a respirar,
+> con prednisona y otros 2 o 3 medicamentos para el asma. Tenía
+> parálisis cerebral y su comportamiento era simplemente terrible.
 > 
-> We found Dr. Nelson for my mother, who was not doing well. And after
-> seeing how far along she came, we decided to bring Julie to him. She
-> has seen Dr. Nelson for 13 treatments, and when we came she was in the
-> hospital 7 times in December, and she was on a machine. It’s been 3
-> weeks since she has had any asthma medicine or the asthma machine or
-> anything. She is doing really well. She is walking much better, and
-> her bad behavior is almost gone.
+> Cuando encontramos al Dr. Nelson fue gracias a mi madre, quien no
+> sentía bien; después de ver lo lejos que había llegado, decidimos
+> llevarle a Julie. Ella ha visto al Dr. Nelson para 13 tratamientos y
+> cuando llegó, había estado en el hospital 7 veces en diciembre y
+> conectada a una máquina. Hace 3 semanas que no toma medicamentos para
+> el asma ni está conectada a la máquina para el asma ni nada. Está
+> realmente bien. Camina mucho mejor y su mal comportamiento casi ha
+> desaparecido.
 > 
-> She is talking now. When we started bringing her in, her speech was
-> not there. She’s talking, counting, and she is doing very, very well.
-> We are very pleased and very happy with the results so far. She is
-> just a different child. It was to the point that we didn’t know if we
-> were going to make it through a day with her or not between the asthma
-> and her fit-throwing; she could have fits that would last for 2 and a
-> half hours. Now she may get irritated but no fits, she might cry a
-> little bit, but that’s about it. We feel very happy and we feel very
-> good! - Betty R.
+> Ahora habla. Cuando empezamos a traerla, no podía hablar. Habla,
+> cuenta y le está yendo muy, muy bien. Estamos muy satisfechos y
+> felices con los resultados hasta ahora. Es simplemente una niña
+> diferente. Habíamos llegado a un punto en que no sabíamos si íbamos a
+> poder terminar el día con ella o no, entre su asma y sus ataques;
+> podía tener ataques que le duraban por dos horas y media. Ahora puede
+> irritarse pero no tener ataques, puede llegar a llorar un poco, pero
+> eso es todo. Estamos muy felices y nos sentimos muy bien. – Betty R.
 
-#### Gratifying Results
+#### Resultados gratificantes
 
-Julie continued to improve, and before long, Julie’s doctors informed Betty that they were withdrawing their diagnoses of cerebral palsy and mental retardation.
-
-Her erratic and uncontrollable behavior were gone, and Julie was like a new little girl.
-
-Our experience is that many behavioral and health issues that children have can be greatly improved or alleviated when the Emotion Code is employed.
-
-In Julie’s case, her health and mental development were greatly impacted as well. I can’t express how gratifying it can be to free little children from the grip of trapped negative energies that have the potential to ravage their young lives.
+Julie siguió mejorando y no mucho después, los médicos de Julie le informaron a Betty que estaban revisando el diagnóstico de parálisis cerebral y retardo mental. Su comportamiento errático e incontrolable había desaparecido y Julie era como una pequeña niña nueva.
 
 
-### Surrogate Testing Animals
+Nuestra experiencia es que muchas cuestiones de comportamiento y salud que tienen los chicos pueden ser mejoradas de gran manera o aliviadas cuando se emplea el Código de la Emoción.
 
-Surrogate testing is the perfect solution for animals. Many animals could probably be tested directly – if they could understand how to participate in the test! But it’s much more effective to enlist a surrogate on their behalf.
+En el caso de Julie, su desarrollo mental y de salud había tenido un gran impacto también. No puedo expresar lo gratificante que puede ser liberar a niños pequeños del apoderamiento de las energías negativas atrapadas que tienen el potencial de hacer estragos en sus jóvenes vidas.
 
+#### La prueba del sustituto en animales
 
-----------
-
-
-**Let’s say you want to test your horse. Simply ask the surrogate to touch the horse. Then direct your questions to the horse and test the surrogate to get the responses.**
+La prueba del sustituto es la perfecta solución para los animales. Muchos animales podrían examinarse directamente si pudiesen entender cómo participar en la prueba, pero es mucho más efectivo conseguir a un sustituto en su lugar.
 
 
-----------
+Digamos que quieres examinar a tu caballo. Simplemente pídele al sustituto que toque al caballo. Luego dirige tus preguntas al caballo y examina al sustituto para obtener las respuestas.
+
+Cuando examino animales, siempre le hablo al animal como si fuese un ser humano. Puede que los animales no entiendan las palabras, pero parecen conectarse con la intención emocional que transmiten nuestros pensamientos. Créeme, los animales entienden lo que estamos tratando de hacer por ellos. Su capacidad de comprender la intención humana puede a veces incluso exceder la nuestra.
 
 
-When I test animals, I always talk to the animal as if it were a human being. The animal may not understand the words, but they do seem to connect with the emotional intention that our thoughts convey. Believe me, animals understand what we’re trying to do for them. Their ability to understand human intention may even exceed our own at times.
+La prueba del sustituto funciona con gatos, perros y todo tipo de animales. Hay tantas historias sorprendentes acerca del uso del Código de la Emoción en animales que he dedicado el próximo capítulo al tema.
 
-Surrogate testing works with cats, dogs and all kinds of animals. There are so many remarkable stories about using the Emotion Code on animals that I’ve devoted the next chapter to the topic.
+#### Cómo examinar a personas que están inconscientes
 
-#### Testing People Who are Unconscious
-
-Surrogate testing also makes it possible to test someone who is unconscious, or even in a coma. Even if the person is unresponsive or unable to make verbal contact, their subconscious mind is still at work; it never sleeps. An unconscious person’s bodily functions are still working. They are still breathing. Their heart is still beating. Their subconscious mind is still alert to the environment and working to keep things on track. When you ask the mind-body a question, the subconscious mind will know the answer, but if the person is unconscious, they will not be able to actively participate in the test. So testing through a surrogate is the perfect solution.
+La prueba del sustituto también hace posible examinar a alguien que está inconsciente o incluso en coma. Incluso si la persona no puede dar respuesta o no es capaz de establecer contacto verbal, su subconsciente aún funciona; nunca duerme. Las funciones del cuerpo de una persona inconsciente siguen funcionando. Sigue respirando. Su corazón sigue latiendo. El subconsciente sigue alerta del ambiente y funcionando para mantener las cosas encaminadas. Cuando le haces una pregunta al cuerpo mental, el subconsciente sabrá la respuesta, pero si la persona está inconsciente, no podrá participar activamente en la prueba. Por consiguiente, examinar a través de un sustituto es la solución perfecta.
 
 
 ----------
 
 
-**Muscle testing should never be used in an emergency situation, when CPR would be a more appropriate response.**
+**La prueba muscular no debe ser usada nunca en una situación de emergencia, cuando el CPR (resucitación cardiopulmonar) sería una respuesta más apropiada.**
 
 
 ----------
 
 
-A few years ago my father suffered a massive brain aneurysm and fell into a coma. I was deeply concerned and eager to help him in any way I could. When Jean and I went to the hospital to see him, we found it impossible to get close enough to work on him directly, due to all the tubes and wires that surrounded him.
-
-I asked Jean to act as surrogate for my father. Even though he was in a coma, we were immediately able to tap into his subconscious mind and determine the things that we could do to help him the most, in addition to all that was already being done by the hospital staff. It was an unforgettable experience that made me grateful indeed, for the gift of surrogate testing.
+Hace unos años mi padre sufrió un aneurisma cerebral masivo y quedó en coma. Estaba profundamente preocupado y quería ayudarlo de cualquier manera posible. Cuando Jean y yo fuimos al hospital a verlo, encontramos que era imposible acercarse lo suficiente para trabajar sobre él directamente, debido a todos los tubos y cables que lo rodeaban.
 
 
-### Getting Permission
+Le pedí a Jean que actuara de sustituta por mi padre. A pesar de que estaba en coma, pudimos acceder inmediatamente a su subconsciente y determinar las cosas que podíamos hacer para ayudarlo lo más posible, a parte de todo lo que ya le estaba haciendo el personal del hospital. Fue una experiencia inolvidable que me hizo estar verdaderamente agradecido por el don de la prueba del sustituto.
 
-Just remember that you always need to obtain permission before you work on anyone, whether you are working on them directly, using surrogate testing or proxy testing. Here are some common-sense guidelines on who to obtain permission from in different scenarios.
+#### Obtención de permiso
 
-|  Subject	to	be	Tested |  Obtain	Permission	From  |
+Sólo recuerda que siempre necesitas obtener permiso antes de atender a alguien, ya sea que estés tratándolo directamente o usando la prueba del sustituto o el del representante. Aquí tienes algunas pautas de sentido común acerca de quién obtener permiso en diferentes escenarios.
+
+| Sujeto que va a  ser examinado |  De quién  obtener permiso | ---|
 |---|---|---|
-|   Conscious	Adult |  Subject  |
-|   Unconscious	Adult |  Subject’s	Closest	Adult	Relative  |
-| Minor  |   Minor’s	Parent	or	Guardian  |
-| Pet| Pet’s	Owner |
+|  Adulto consciente|  Sujeto   |
+|   Adulto  inconsciente |  Familiar adulto más cercano al sujeto | --- |
+| Menor  |   Padre o tutor del menor  |  --- |
+| Mascota  | Dueño de la mascota | --- |
 
-Surrogate testing is such a useful tool that I have found it indispensable in reaching the full potential of this work. It makes it simple and easy to work on pets, infants, small children, the unconscious, and those who are either too weak or in too much pain to be tested.
+La prueba del sustituto es una herramienta tan útil que me ha resultado indispensable para alcanzar el máximo potencial de este trabajo. Hace que, el trabajar con mascotas, bebés, niños pequeños, personas inconscientes o aquellos que están o muy débiles o con mucho dolor para ser examinados sea simple y fácil.
 
+### La prueba del representante
 
-
-### Proxy Testing
-
-When someone has been given authority to act for someone else, we commonly refer to the authorized person as a *proxy*. A proxy is someone who acts as a substitute. In proxy testing, the proxy temporarily “becomes” the person being tested. By voluntarily putting themselves into the position of standing in for someone else, a proxy can be tested as if they were the subject of the testing, allowing their body to be used to benefit the subject.
+Cuando se le ha otorgado a alguien autoridad para actuar por alguien, nos referimos a la persona autorizada como un representante. Un representante es alguien que actúa como un sustituto. En la prueba del representante, el representante “se convierte” de manera temporal en la persona que está siendo examinada. Al ponerse él mismo de manera voluntaria en la posición de sustituir a alguien más, un representante puede ser examinado como si fuese el sujeto de la prueba, permitiendo que su cuerpo sea usado para beneficiar al sujeto.
 
 
-Proxy testing is most useful when you want to help someone who is not present or who is inaccessible for some reason. When you release trapped emotions from someone at a distance, it is literally a form of *remote* or *distance* healing. Although remote healing has not been incorporated into Western Medicine, it has been practiced both anciently and in modern times by those who practice The Silva Method, Qigong, GungFu, Reiki and other respected techniques.
+
+La prueba del representante es más útil cuando quieres ayudar a alguien que no está presente, o que está inaccesible por algún motivo. Cuando liberas las emociones atrapadas de alguien a la distancia, es una forma literal de sanación remota o a distancia. A pesar de que la sanación remota ha sido incorporada en la Medicina Occidental, la han practicado tanto en la antigüedad como en los tiempos modernos aquellos que practican El método de Silva, Qigong, GungFu, Reiki y otras técnicas respetadas. 
+
+#### Sanar a Allison en Japón
+
+Una vez trabajé con un número de bailarinas de una escuela de danzas local cerca de mi consultorio. Allison, una de las bailarinas a las que había estado tratando, se fue a Japón a bailar con un grupo de Disneylandia. Un dia en la noche, recibí una llamada de la madre de Allison que estaba preocupada. “Dr. Nelson, tenemos un gran problema”, dijo. “Allison se ha lastimado la cadera y no puede bailar. Se supone que debe estar en un gran espectáculo mañana. ¿Hay algo que usted pueda hacer?”
 
 
-#### Healing Allison in Japan
+Le dije que quería hablar con Allison, así que me dio el número de su hotel en Japón. Cuando me comuniqué con ella, Allison describió el problema con su cadera y dijo que la había empezado a molestar ese día sin ningún motivo aparente y que tenía dificultad al caminar. Bailar al otro día estaba fuera de discusión.
 
-I once worked with a number of ballerinas from a local dance school near my practice. Allison, one of the dancers that I had been treating, went to Japan to dance with a group from Disneyland. Late one night, I got a phone call from Allison’s worried mother. “Doctor Nelson, we have a big problem,” she said. “Allison has hurt her hip and can’t dance. She is supposed to be in a big show tomorrow. Is there anything you can do?”
-
-I told her I’d like to speak to Allison, so she gave me the number of her hotel in Japan. When I reached her, Allison described the problem with her hip and said it had started bothering her that day for no apparent reason, and that she was having difficulty walking. Dancing the next day was out of the question.
-
-Having gotten permission from Allison’s mother and from Allison to test her, I asked Jean to act as proxy.
-
-
-----------
-
-
-**Although Allison was literally on the other side of the earth, we had no problem making the connection.**
+Habiendo obtenido permiso de la madre de Allison y de Allison para examinarla, le pedí a Jean que actuara de representante.
 
 
 ----------
 
 
-We chose to call Allison on the phone in this situation to get her input, but it’s important to note that proxy testing can be done without having the subject on the telephone while you are testing them. The energetic connection between the proxy and the subject is sufficient.
-
-
-Distance is no barrier to energy. Energy is truly everywhere, and fills the world, and indeed fills the immensity of space.
-
-There is as much energy in the air between objects as there is in the objects themselves. Since energy is continuous and everywhere-present, working on Allison presented no difficulty.
-
-We discovered that Allison had two trapped emotions lodged in the tissues of her hip. The trapped emotions had to do with loneliness and grief over her trip to Japan.
-
-“Do you feel that you don’t want to be in Japan?” I asked Allison on the phone.
-
-She grudgingly admitted it was true. “It’s exciting to be here and all,” she said, “but I’m very homesick. I miss my mom and my friends. I just really don’t want to be here, and I wish I could go home.”
-
-By running a magnet down Jean’s back, we released the two trapped emotions from Allison.
+**A pesar de que Allison estaba literalmente del otro lado de la tierra, no tuvimos problema para establecer la conexión.**
 
 
 ----------
 
 
-**Even though Allison was half-a-world away in Japan, the results were instantaneous.**
+Llamamos a Allison por teléfono en esta situación para tener su aporte, pero es importante saber que la prueba del representante se puede realizar sin tener al sujeto en el teléfono mientras lo examinas. La conexión energética entre el representante y el sujeto es suficiente.
+
+
+La distancia no es una barrera para la energía. La energía está verdaderamente en todos lados y llena al mundo y en realidad llena la inmensidad del espacio.
+
+Hay tanta energía en el aire entre los objetos como la hay en los objetos mismos. Como la energía es continua y está presente en todos lados, atender a Allison no presentó ninguna dificultad.
+
+Descubrimos que Allison tenía dos emociones atrapadas alojadas en los tejidos de su cadera. Las emociones atrapadas tenían que ver con su soledad y su angustia por su viaje a Japón.
+
+“¿Sientes que no quieres estar en Japón?”, le pregunté a Allison por teléfono.
+
+A regañadientes, admitió que era verdad. “Es fascinante estar aquí y todo los demás”, dijo, “pero extraño mucho a mi familia. Extraño a mi mami y a mis amigos. Simplemente no quiero estar aquí y ojalá me pudiera ir a casa”.
+
+Al pasar un imán por la espalda de Jean, liberamos las dos emociones atrapadas de Allison.
 
 
 ----------
 
 
-Before we hung up the phone with Allison, her hip pain was entirely gone. She went on stage the next day and danced without any problem.
+**A pesar de que Alison estaba a medio mundo de distancia en Japón, los resultados fueron instantáneos.**
 
-#### Dorene’s Remote Experience
 
-A patient named Dorene wanted to share this story about how remote healing was just as effective for her as being there in person.
+----------
 
-> I have seen Dr. Nelson intermittently over the last 10 years or so for
-> various problems. I had been suffering for several days with the
-> symptoms of a hiatal hernia, including heartburn and pain. I was
-> really miserable, and I wasn’t getting anything done.
+
+Antes de cortar la llamada con Allison, su dolor de cadera se había ido completamente. Subió al escenario al siguiente día y bailó sin ningún problema.
+
+#### La experiencia remota de Dorene
+
+Una paciente llamada Dorene quiso compartir esta historia acerca de cómo la sanación remota fue tan efectiva para ella como si hubiese estado en persona.
+
+> He visto al Dr. Nelson de manera intermitente en los últimos 10 años
+> más o menos por varios problemas. Había estado padeciendo por varios
+> días los síntomas de la hernia de hiato, incluyendo digestión lenta y
+> dolor. Estaba muy deprimida y no lograba que me hicieran nada.
 > 
-> My husband, Rick and I were sitting in our family room when Rick
-> decided to make a phone call to Dr. Nelson to see if there was
-> anything that he could do to help me. He found through testing that my
-> symptoms were being caused by a trapped emotion and he treated it. I
-> can honestly say that the relief was instantaneous as we were sitting
-> there and the symptoms completely left me before the phone
-> conversation was over. I highly recommend that people be open to this
-> type of treatment. There are wonderful discoveries available to us
-> today through remote treatments by those who are knowledgeable. 
-> -Dorene N.
+> Mi marido, Rick y yo estábamos sentados en nuestro salón cuando Rick
+> decidió hacerle una llamada al Dr. Nelson para ver si había algo que
+> él pudiera hacer para ayudarme. Encontró a través de la prueba que mis
+> síntomas estaban siendo causados por una emoción atrapada y la trató.
+> Puedo decir honestamente que el alivio fue instantáneo mientras
+> estábamos sentados allí y los síntomas se fueron de mí antes de que la
+> conversación terminara. Realmente recomiendo que la gente se abra a
+> este tipo de tratamiento. En la actualidad hay maravillosos
+> descubrimientos a nuestra disposición a través de tratamientos remotos
+> por parte de aquellos que son entendidos. -Dorene N.
 
-### How to Do Proxy Testing
+### Cómo hacer la prueba del representante
 
-Let’s talk about the actual steps involved in doing a proxy test.
+Hablemos de los pasos concretos para hacer la prueba del representante.
 
-Above all else, you must obtain permission from the subject who is going to be tested. It’s an invasion of privacy and is unethical to test someone without their permission.
+Antes que nada, debes obtener el permiso del sujeto al que se le va a realizar la prueba. Es una invasión a la privacidad y no es ético realizarle la prueba a alguien sin su permiso.
+
+Supongamos que Ryan Jones desea que se le realice la prueba y desea ser tratado. Él les ha dado su permiso a ti y a tu amiga Susan a hacerlo por medio de su representación ya que él está fuera de la ciudad. Susan se ha ofrecido como voluntaria para actuar en nombre de Ryan, por lo que estarás realizando la prueba sobre Susan.
+
+ 1.  Como en cualquier otro tipo de prueba muscular, debes asegurarte de que la persona que vaya a actuar como representante pueda ser examinada; entonces, en primer lugar, realiza un prueba base sobre el represent-ante para asegurarte de ello.
+ 2. Para establecer una conexión energética entre Susan y Ryan, haz que Susan diga la siguiente afirmación: “Mi nombre es Ryan Jones”. Ahora realiza una prueba muscular. Lo más probable es que esta afirmación obtenga una respuesta muscular débil en un primer momento. Pero la conexión ocurrirá si persistes un poco.
+ 3. Simplemente haz que el representante repita esta afirmación, (en este ejemplo, “Mi nombre es Ryan Jones”) un par de veces más, cada vez seguida de una prueba muscular. Cuanto más clara sea tu intención de conectar a Ryan y a Susan, más rápido ocurrirá la conex-ión. Generalmente, después de algunos intentos, se hará la conexión energética y la prueba muscular de repente se volverá fuerte.
+ 
+Para continuar con este ejemplo en particular, ahora la prueba de Susan dará fuerte como resultado cuando diga: “Mi nombre es Ryan Jones”. Si Susan dice la afirmación “Mi nombre es Susan” el resultado de la prueba será débil temporalmente. Susan ahora está actuando en nombre de Ryan. En este momento, todo lo que se examina con Susan como la representante, en realidad está siendo examinado Ryan, por más lejos que él pueda estar.
 
 
-Let’s say that Ryan Jones would like to be tested and treated. He has given his permission to you and your friend, Susan to do so by proxy, since he is out of town. Susan has volunteered to act as proxy for Ryan, so you will be doing the testing on Susan.
+Es importante entender que cuando sea hecha la conexión energética entre el representante y el sujeto, la conexión es muy real.
 
- 1. As in any other type of muscle testing, you must make sure that the person who will be acting as proxy is testable, so perform a baseline test on the proxy first to make sure.
- 2. To establish an energetic connection between Susan and Ryan, have Susan make the statement, “My name is Ryan Jones.” Now perform a muscle test. This statement will most likely elicit a weak muscle response at first. But the connection will occur if you persist a bit.
- 3. Simply have the proxy repeat this statement, (in this example, “My name is Ryan Jones”) a few more times, each time followed by a muscle test. The clearer your intention to connect Ryan and Susan, the faster it will happen. Generally within a few attempts, the energetic connection will be made, and the muscle test will suddenly become strong.
-
-To continue with this particular example, Susan will now test strong when she says, “My name is Ryan Jones.” If Susan makes the statement “My name is Susan” she will test weak temporarily. Susan is now acting on behalf of Ryan. At this point, everything that is tested on Susan as the proxy, is actually being tested on Ryan, however far away he may be.
-
-
-It’s important to understand that when this energetic connection is made between the proxy and the subject, the connection is very real.
-
-In some way that we do not understand, the needs of the proxy are entirely set aside temporarily in order to aid the subject.
+De alguna manera que no entendemos, las necesidades del representante son dejadas de lado temporalmente con el fin de ayudar al sujeto.
 
 ![](23.jpg) 
 
-Subjext   Proxy Tester
+*Sujeto	Representante	Examinador*
 
-Any question that you ask the proxy, you are now asking the subject. Any trapped emotion that you find by testing the proxy, you are actually finding in the body of the subject.
-
-Until the connection is broken, anything that you want to test on the subject, you will simply test on the proxy; the answers will be the same. In this same way, any correction that you want to make on the subject, or any trapped emotion that you want to release on the subject, you will simply perform on the proxy.
-
-As you can imagine, this is a very useful tool. It allows you to not only find out what trapped emotions are stuck inside the body of a remote person, but to release those emotions from afar – and often, relieve their symptoms immediately.
-
-After the connection is made, you can use the Emotion Code the same way it has been presented previously. Ask questions and identify any trapped emotions in the subject, by testing the proxy.
+Cualquier pregunta que le hagas al representante, ahora le estás preguntando al sujeto. Cualquier emoción atrapada que encuentres al realizarle la prueba al representante, la estás encontrando en realidad en el cuerpo del sujeto.
 
 
-----------
+Hasta que se rompa la conexión, cualquier cosa que desees examinar acerca del sujeto, simplemente lo estarás haciendo sobre el representante; las respuestas serán las mismas. De este mismo modo, cualquier corrección que quieras hacer sobre el sujeto o cualquier emoción atrapada que desees liberar del el sujeto, simplemente la estarás realizando sobre el representante.
+
+Como puedes imaginar, esta es una herramienta muy útil. No sólo te permite descubrir las emociones atrapadas atascadas en el interior del cuerpo de una persona a distancia sino también liberar aquellas emociones desde lejos, y a menudo, aliviar sus síntomas inmediatamente.
 
 
-**When you identify a trapped emotion by testing the proxy, you can release it just as you would if the subject were there with you. Simply use a magnet on the proxy. Remember that energy knows no barriers of distance. Your intention to heal and your belief that it can be done make it so.**
+Después de que se haga la conexión, puedes utilizar el Código de la Emoción del mismo modo que ha sido presentado anteriormente. Haz preguntas e identifica cualquier emoción atrapada en el sujeto, realizándole la prueba al representante.
 
 
 ----------
 
 
-#### Breaking the Connection
-
-Once you have completed this process, it is very important to “break the connection” between the proxy and the person being helped. If the connection is not broken, the proxy may actually begin to eventually experience the emotional state of the person they were acting as proxy for.
+**Cuando identificas una emoción atrapada realizándole la prueba al representante, la puedes liberar simplemente como si estuvieses con el sujeto. Sólo utiliza un imán sobre el representante. Recuerda que la energía no conoce de las barreras de la distancia. Tu intención de sanar y tu creencia de que puedes hacerlo hacen que así sea.**
 
 
-On one occasion, I had been using the Emotion Code to help a woman who lived in Cleveland. Her sister had been a patient of mine for some time at my clinic in California, and would act as proxy for her sister on occasion.
+----------
 
+#### Cómo romper la conexión
 
-I once made the mistake of not breaking the connection between the two of them at the end of a session. The next day my patient came back to the office and said, “Something is wrong. I feel like I’m turning into my sister. I’m feeling her emotions, I think. It’s weird. Could I still be connected to her?” I immediately realized my mistake, broke the connection, and she felt like herself again.
+Una vez que hayas completado este proceso es muy importante romper la conexión entre el representante y la persona que está siendo ayudada. Si no se rompe la conexión, a la larga el representante podría realmente empezar a experimentar el estado emocional de la persona por la que estaba actuando como representante.
+
+En una oportunidad, había estado usando el Código de la Emoción para ayudar a una mujer que vivía en Cleveland. Su hermana había sido mi paciente por un tiempo en mi clínica en California y de vez en cuando actuaba como representante de su hermana.
+
+Una vez cometí el error de no romper la conexión entre las dos al finalizar la sesión. Al día siguiente mi paciente regresó a mi oficina y dijo: “Algo está mal. Siento que me estoy convirtiendo en mi hermana. Creo que estoy sintiendo sus emociones. Es raro. ¿Podría todavía estar conectada a ella?” Inmediatamente me di cuenta de mi error, rompí la conexión y se sintió como ella misma nuevamente.
 
 
 ----------
 
 
-**When you are finished, thank the person who has acted as proxy. To break the connection, simply have the proxy state their own name and muscle test them until they test strong.**
+**Cuando hayas terminado, agradece a la persona que haya actuado como representante. Para romper la conexión, simplemente haz que el representante diga su propio nombre y realízale la prueba muscular hasta que el resultado sea fuerte.**
 
 
 ----------
 
+Por ejemplo, si el nombre del representante es Susan, haz que diga: “Mi nombre es Susan”. Si el resultado de la prueba es débil, ella todavía estará conectada al sujeto. En ese caso, simplemente pídele que repita la afirmación con su propio nombre hasta que el resultado sea fuerte. De esa manera es como sabes si se rompió la conexión. Es así de sencillo.
 
-For example, if the proxy’s own name is Susan, have her say, “My name is Susan.” If she tests weak, she is still connected to the subject. In that case simply ask her to repeat the statement with her own name in it until she tests strong. That’s how you know the connection is broken. It’s just that simple.
+#### Algo especial
 
-#### Something Special
+Siento que hay algo verdaderamente sagrado y especial acerca de la curación utilizando un representante. Es sorprendente la manera en la que la mente subconsciente del representante subordina al yo a favor del sujeto. El conocimiento de cómo hacer esto, tanto como de qué forma realizar la conexión a cualquier distancia, está integrado en todos nosotros.
 
-I feel that there is something truly sacred and special about healing using a proxy. The way that the subconscious mind of the proxy subordinates the self in favor of the subject is amazing. The knowledge of how to do this, as well as how to make the connection at any distance, is hard-wired into us all.
-
-I am always thrilled when I work with someone long distance by proxy and the subject finds an immediate improvement or release of symptoms. I hope you will give both surrogate and proxy testing a try. Anyone can do it, including you.
-
-Though I am confident that you can learn to do proxy testing with practice, I find that some of my readers are interested in having our help.
-
-If you are interested in having a certified practitioner help you you remotely using proxy testing, please visit either or both of these two links:
-
-Staff Practitioners: [HealersLibrary.com/services](http://HealersLibrary.com/services)
-
-Global Practitioners: [HealersLibrary.com/practitioners](http://HealersLibrary.com/practitioners)
-
-We have a growing number of practitioners around the world who spend their time releasing trapped emotions from their clients by proxy, which means they can work with you as well, no matter where you are on the planet. For more information about this topic, see page 369.
+Siempre me emociona cuando trabajo con alguien a distancia por medio de un representante y el sujeto encuentra una mejoría inmediata o libera los síntomas. Espero que pruebes tanto la prueba del sustituto como la del representante. Cualquier persona puede hacerlo, incluso tú.
 
 
-Surrogate testing is particularly useful when it comes to helping your pets. In the next chapter, you will hear a lot more about how amazing the Emotion Code can be when used on animals.
+Aunque estoy seguro de que puedes aprender a realizar la prueba del representante con la práctica, encuentro que algunos de mis lectores están interesados en obtener nuestra ayuda.
+
+Si estás interesado en que yo o mi personal te tratemos en forma remota utilizando la prueba del representante, por favor, visita uno o los dos de los siguientes sitios:
+
+Profesionales en plantilla:
+
+[DrBradleyNelson.com/es/servicios](http://www.drbradleynelson.com/es/servicios/)
+
+Profesionales globales:
+
+[DrBradleyNelson.om/es/profesionales](http://drbradleynelson.om/es/profesionales)
+
+Tenemos un número creciente de profesionales en el mundo que se dedican a liberar emociones atrapadas de sus clientes con la prueba del representante, lo cual significa que también te pueden ayudar a ti sin importar donde te encuentres en el planeta. En este sitio web podrás realizar preguntas acerca de tus problemas particulares, así como recibir más información acerca del proceso de recibir tratamiento a través de un representante.
+
+La prueba del sustituto es particularmente poderoso en el caso de ayudar a tus mascotas. En el próximo capítulo, leerás mucho más acerca de lo impresionante que puede ser el Código de la Emoción cuando se utiliza en animales.

@@ -1,572 +1,451 @@
-# Part III   
-# Using the Emotion Code
 
+# PARTE III 
+# CÓMO UTILIZAR EL CÓDIGO DE LA EMOCIÓN
 
-*Is the Human brain, at some primal level a wondrous computer linked with a universal energy field, that knows far more than it knows it knows?*
+*¿ES LA MENTE HUMANA, EN UN NIVEL PRIMARIO UNA MARAVILLOSA COMPUTADORA CONECTADA CON UN CAMPO ENERGÉTICO UNIVERSAL, QUE SABE MUCHO MÁS QUE LO QUE SABE QUE SABE?*
+*- E. WHALEN*
 
-*-  E. Whalen*
+## CÓMO OBTENER RESPUESTAS DE LA MENTE INTERIOR
 
+En el capítulo dos aprendiste a usar la prueba del balanceo para conectarte con tu subconsciente. Para algunas personas, la prueba del balanceo funciona tan bien y se aprende tan fácilmente que se convierte en el único método de prueba que emplean y no hay nada de malo en ello. Pero en este capítulo, aprenderás otro número de métodos de pruebas, así puedes tener una variedad entre las que escoger.
 
-## Getting Answers From The Inner Mind
+### La prueba muscular
 
-In chapter two, you learned to use the Sway Test to connect with your subconscious mind. For some people, the Sway Test works so well and is so easily learned that it becomes the only testing method that they employ, and there is nothing wrong with that. But in this chapter, you will learn a number of other methods of testing, so you can have a variety from which to choose.
+El método más ampliamente utilizado y aceptado para acceder al sistema interno computarizado del cuerpo es conocido de maneras varias como la prueba muscular, prueba kinestésica o simplemente como kinesiología.
 
-### Muscle Testing
-
-The most widely used and accepted method of accessing the internal computer system of the body is known variously as muscle testing, kinesthetic testing, or simply as kinesiology.
-
-Although some people have never heard of it, muscle testing is not new. Doctors have been using it since the 1940s to evaluate muscle strength and assess the extent of an injury. Today physicians and others who specialize in the mechanics of body movement know that muscle testing has many more applications than doctors first believed. People are sometimes skeptical about whether it will work, but once they’ve seen the results for themselves, they can’t help but be amazed.
-
+A pesar de que algunas personas nunca han escuchado acerca de ella, la prueba muscular no es nueva. Los médicos la han estado utilizando desde los años 40 para evaluar la fuerza de los músculos y calcular el alcance de una herida. Hoy en día, los médicos y otros que se especializan en la mecánica del movimiento del cuerpo saben que la prueba muscular tiene muchas más aplicaciones de las que los médicos creían al principio. Las personas a veces son escépticas acerca de si funciona o no, pero una vez que han visto los resultados por ellas mismas, no pueden evitar asombrarse.
 ___
-**Muscle testing can tell us about the overall health and balance of our bodies.**
-___
-It can help identify vulnerable areas before sickness and disease take hold. It gives us a direct way to ask the body what’s bothering it and, once we’ve treated the problem, it can tell us whether we’ve corrected the problem or not. It can tell us if trapped emotions are present in the body and let us know the moment they’ve been released. So it’s no wonder that people are astounded when they see how well it works.
-
-
-#### Holly and Her Near- Drowning
-
-To illustrate this, let me share with you a letter I received a number of years ago from a young woman named Holly. Her Aunt Gwen has been one of my students for many years and uses muscle testing very effectively to release trapped emotions. When she was first learning the Emotion Code, she practiced it on Holly.
-
-
-> My Aunt Gwen came to Utah in the summer of 1999, praising a new
-> technique she had learned. By using muscle testing, she was able to
-> ask the body questions regarding emotions that had become ‘trapped’ in
-> the body, and the body would respond to the yes or no questions
-> effectively. She wanted to help as many people as she could with this
-> new method, and to become proficient in the technique. I grudgingly
-> agreed to be one of her ‘victims.’
-> 
-> I recall standing in the room with my arm outstretched, thinking,
-> ‘This is so-o-o-o hokey!’
-> 
-> Then my aunt found the first trapped emotion in me: Terror.
-> 
-> I shrugged my shoulders. ‘I don’t have anything to be terrified of…’
-> 
-> ‘Shall we ask what age it comes from?’ Aunt Gwen asked.
-> 
-> Again I shrugged my shoulders. ‘Sure. I guess.’
-> 
-> She questioned my body, and my arm seemed to strengthen or weaken
-> depending on what she was asking me. My arm was strong when she asked my body if this happened when I was around four years old. ‘Does
-> anything come to mind from that age?’ she asked.
-> 
-> Immediately, I recalled my tiny, helpless fingers sliding from a metal
-> railing and my body slipping into water above my head. My sister came
-> and rescued me and I remembered clinging to her and repeating ‘Thank
-> you! Thank you!’ over and over again.
-> 
-> ‘Yeah… I said,’ reluctantly. ‘I almost drowned when I was four years
-> old.’
-> 
-> Aunt Gwen checked to see if this was the source of my terror. It was.
-> She ran a magnet down my back to release the trapped emotion and that was it. So, so simple.
-> 
-> I walked away thinking, ‘That was cool, but now what? What did that do
-> for me?’
-> 
-> I will tell you what it did for me….
-> 
-> I was finishing up a very poor swim season with my three oldest
-> children. I considered it a total waste of money because the children
-> had fought me constantly, whining the whole time.
-> 
-> That summer, I hated swim lessons. I found myself getting anxious
-> every time a lesson was going to start and if there was a reasonable
-> excuse to miss the lessons altogether, we would.
-> 
-> Then Aunt Gwen worked on me. The swim season ended. I didn’t think
-> much more about it. But I started to feel a mysterious and subtle
-> change within myself that I couldn’t explain.
-> 
-> The following year, we tried swim lessons again. I was suddenly very
-> much aware of a difference. Without that terrifying memory from my
-> childhood, I wasn’t anxious around the water.
-> 
-> In fact, I enjoyed going to the pool. I used the time to catch up on
-> my reading while the children took their lessons.
-> 
-> What amazed me even more, was the change in my children.
-> 
-> Some people may say it was because they were now a year older and so
-> they weren’t as frightened of swimming. But I would have to disagree.
-> By clearing a very real emotion that was stuck within me, I know I not
-> only freed myself, but I freed my children as well. 
-> - Holly B.
-
-___
-**Muscle testing provides a real window into what is going on in the mindbody. Using muscle testing, we can literally gain access to our body’s internal computer system and find out where the imbalances are.**
+**La prueba muscular nos puede decir la salud total y el equilibrio de nuestros cuerpos.**
 ___
 
-I refer to it as *asking the body* what it knows. I’ve used it for many years in my practice because it leads directly to the root of the problem very quickly. The body-computer always knows, because it is linked into what is often called Universal Consciousness – the database of all that is.
+Puede ayudar a identificar áreas vulnerables antes de que las dolencias y las enfermedades se apoderen. Nos brinda una forma directa de preguntarle al cuerpo qué lo está molestando y, una vez que hemos tratado el problema, nos puede decir si hemos corregido el problema o no. Nos puede decir si hay emociones atrapadas presentes en el cuerpo y hacernos saber el momento en que han sido liberadas. Entonces no es extraño que las personas se queden atónitas cuando ven lo bien que funciona.
 
-No matter how many times I demonstrate it, people are always impressed by how immediate and accurate muscle testing is. They’re amazed by how much their inner mind knows, and how ready it is to give them the information they ask for.
+#### Holly y cómo estuvo a punto de ahogarse
 
-### Your Body Knows Best
+Para ilustrar esto, permíteme compartir contigo una carta que recibí hace varios años de una joven llamada Holly. Su Tía Gwen ha sido una de mis alumnas por muchos años y utiliza la prueba muscular de manera muy efectiva para liberar emociones atrapadas. Al principio, cuando ella estaba aprendiendo el Código de la Emoción, lo practicó en Holly.
 
-When it comes to our health, what our bodies can reveal to us is vastly more significant than what we ever know in our conscious minds. During my years in practice, I grew to appreciate the subconscious intelligence of my patients, which nearly always knew what was wrong and what the body needed.
+>*Mi Tía Gwen vino a Utah en el verano de 1999, alabando una nueva técnica que había aprendido. Utilizando la prueba muscular, ella podía preguntarle al cuerpo acerca de las emociones que habían quedado “atrapadas” en él y el cuerpo respondía afirmativa o negativamente de manera efectiva. Ella quería ayudar a tantas personas como pudiera con este nuevo método y dominar la técnica. De mala gana, acepté ser una de sus “víctimas”.*
 
-Think about it. Our bodies are tuned into the systems that keep our eyes blinking and our lungs expanding with air. Our subconscious minds are constantly monitoring the white blood cells in our veins and the beating of our hearts. Thankfully, those systems are unconscious to us. But it’s only logical that our internal computer would be perfectly aware of exactly what’s happening inside of us on every level, all the time.
+>*Recuerdo estar de pie en la habitación, con mi brazo extendido, pensando: “Esto es una tontería”*
 
-Not only that, but our bodies can tell us exactly what’s good for us and what isn’t. We even have a physical response when we tell the truth or a lie. The muscles are instantly weakened when we lie. They stay strong when we tell the truth. 
+>*Luego, mi tía encontró la primera emoción atrapada en mí: Terror.*
 
-We can’t fool our bodies. Our subconscious minds know in an instant, without a doubt, whether we are being true or false – whether we are acting with integrity – in our thoughts, our statements, our actions and our health.
+>*Me encogí de hombros. “No tengo nada de lo cual estar aterrada…”.*
 
+>*“¿Te parece si preguntamos desde qué edad viene?, preguntó la Tía Gwen.*
 
-In order to keep us healthy and alive, our bodies use skills that far exceed anything we’re consciously aware of. To prove it, psychiatrist Dr. David Hawkins used to offer the 1000 or more people who attended his lectures a vivid demonstration.
+>*Me encogí de hombros de nuevo. “Claro que sí. Digo yo”.*
 
-#### Inner Knowing
+>*Ella interrogó a mi cuerpo y mi brazo parecía fortalecerse o debilitarse de acuerdo con lo que me preguntaba. Mi brazo se puso fuerte cuando le preguntó a mi cuerpo si esto pasó cuando yo tenía alrededor de cuatro años de edad.*
 
-His staff would pass out sealed, unmarked envelopes to every person in the audience. Each sealed envelope contained a powdery substance. In half of the envelopes, that powder was an artificial sweetener. In the other half, it was organic Vitamin C.
+>*¿Te viene algo a la mente de esa edad?, me preguntó.*
 
-Dr. Hawkins would then ask everyone in the audience to pair up and use a simple muscle testing technique. One person would hold the unmarked envelope over their heart while their partner tested their muscle strength. They would make note of whether the muscle was strong or weak, then they would switch roles and compare. Sometimes the muscles would test weak and sometimes they’d test strong.
+>*Inmediatamente, recordé a mis dedos pequeños e indefensos deslizándose por una verja de metal y mi cuerpo resbalándose adentro del agua que tapaba mi cabeza. Mi hermana vino y me rescató y recuerdo aferrarme a ella y repetir: “¡Gracias! ¡Gracias!” una y otra vez.*
 
+>*“Sí…dije”, a regañadientes. “Casi me ahogo cuando tenía cuatro años de edad”.*
 
-Once everyone had completed the simple test, they would open the envelopes to see whether they were holding the artificial sweetener or the Vitamin C.
+>*La Tía Gwen chequeó para ver si esta era la fuente de mi terror. Eso era. Pasó un imán por mi espalda para liberar la emoción atrapada y eso fue todo. Tan, tan simple.*
 
-Every single time the muscles went weak, the person was holding the artificial sweetener. When the muscles tested strong, they were invariably holding an envelope containing Vitamin C. These results were always consistent, and in my own lectures I have found them to be quite repeatable.[^1]
+>*Me fui pensando: “Eso estuvo bueno, pero ¿ahora qué? ¿Qué fue lo que eso hizo por mí?*
 
+>*Te contaré lo que hizo por mí…me….*
 
-We all know that organic Vitamin C is better for us than an artificial sweetener, but the fact that the human body on some deeper level knows what is inside a sealed envelope is truly astounding.
+>*Estaba terminando una temporada de natación muy pobre con mis tres hijos mayores. Lo consideraba un total desperdicio de dinero debido a que los chicos habían estado en contra de manera constante, quejándose todo el tiempo.*
 
-Dr. Hawkins explains it in this way:
+>*Aquel verano, odié las clases de natación. Me encontré a mí misma poniéndome nerviosa cada vez que una clase estaba por empezar y si había alguna excusa razonable para perder la clase todos juntos, lo hacíamos.*
 
-> The individual human mind is like a computer terminal connected to a
-> giant database. The database is human consciousness itself, of which
-> our own consciousness is merely an individual expression, but with its
-> roots in the common consciousness of all mankind.
-> 
-> This database is the realm of genius; because to be human is to
-> participate in the database, everyone by virtue of his birth has
-> access to genius. The unlimited information contained in the database
-> has now been shown to be readily available to anyone in a few seconds,
-> at any time and in any place. This is indeed an astonishing discovery,
-> bearing the power to change lives, both individually and collectively,
-> to a degree never yet anticipated. [^2]
+>*Luego, la Tía Gwen trabajó en mí. La temporada de natación terminó. No pensé mucho más acerca del tema. Pero empecé a sentir un misterioso y sutil cambio dentro de mí que no podía explicar.*
 
+>*Al año siguiente, intentamos tomar clases de natación nuevamente. De repente, estaba mucho más al tanto de la diferencia. Sin ese recuerdo aterrador de mi niñez, no estaba nerviosa cerca del agua.*
 
-### Testing Other People
+>*De hecho, disfrutaba yendo a la piscina. Utilizaba el tiempo para ponerme al día con mi lectura mientras los chicos tomaban su clase.*
 
-Muscle testing can also be used to find out what is going on in someone else’s body. You can do that either by testing the person directly or by using what is known as surrogate or proxy testing. We will talk about those testing methods in chapter 8.
+>*Lo que me asombró aún más fue el cambio en mis hijos.*
+
+>*Algunas personas pueden decir que fue porque ahora eran un año mayor, entonces no le tenían tanto miedo a nadar. Pero yo no estuve de acuerdo. Al quitarme una emoción tan real que estaba atascada dentro de mí, sé que no sólo me liberé a mí misma, sino que además también liberé a mis hijos. - Holly B.*
+
 ___
-**Thousands of vitalistic physicians and practitioners use muscle testing to help their patients on a daily basis.**
+**La prueba muscular provee una ventana real entorno a lo que está sucediendo en el cuerpo mental. Utilizando la prueba muscular, podemos literalmente tener acceso al sistema interno computarizado de nuestro cuerpo y encontrar dónde están los desequilibrios.**
 ___
 
-You can easily learn it and use it to help yourself, your friends and your loved ones to identify and release trapped emotions using the Emotion Code.
+Yo me refiero a él como “el preguntarle al cuerpo” lo que sabe. Lo he utilizado por muchos años en mi práctica porque conduce directamente a la raíz del problema de manera muy rápida. La computadora del cuerpo siempre sabe por qué está conectada a lo que a menudo se llama la Conciencia Universal – la base de datos de todo lo que existe.
 
-Here are a few of the easiest and most common methods of muscle testing someone else:
+No importa cuántas veces yo lo demuestre, las personas siempre se impresionan con la inmediatez y precisión de la prueba muscular. Quedan asombrados con todo lo que su mente interior sabe y cuán preparada está para brindarles la información que ellos le piden.
 
-#### The Basic Arm Test (to test another person)
+### Tu cuerpo tiene más conocimiento
 
-First of all, ask the person you wish to test if they have pain in either shoulder. If they do, don’t use that arm as it may aggravate their condition. If they have trouble in both shoulders or if they are too young, too weak, or too ill to be tested, you should find a different way to test them using one of the testing methods outlined in this chapter, or you can use a surrogate person to test them (see chapter 8).
+Cuando se trata de nuestra salud, lo que nuestros cuerpos pueden revelarnos es bastamente más significativo que lo que alguna vez supimos en nuestra mente consciente. Durante años en la práctica, aprendí a apreciar la inteligencia subconsciente de mis pacientes, la cual casi siempre sabía lo que andaba mal y lo que el cuerpo necesitaba.
+
+Piensa en esto. Nuestros cuerpos están en sintonía con los sistemas que mantienen nuestros ojos parpadeantes y nuestros pulmones expandidos con el aire. Nuestros subconscientes están vigilando de manera constante los glóbulos blancos en nuestras venas y los latidos de nuestros corazones. Menos mal que estos sistemas son inconscientes para nosotros. Pero sería simplemente lógico que nuestra computadora interna esté perfectamente al tanto de qué es lo que pasa exactamente dentro nuestro a cada nivel, todo el tiempo.
+
+No sólo eso, sino que nuestros cuerpos pueden decirnos qué es bueno para nosotros y qué no lo es. Incluso tenemos una respuesta física cuando decimos la verdad o mentimos. Los músculos se debilitan de manera instantánea cuando mentimos. Permanecen fuertes cuando decimos la verdad.
+
+No podemos engañar a nuestros cuerpos. Nuestros subconscientes saben al instante, sin duda, si estamos siendo verdaderos o falsos en nuestros pensamientos, nuestras afirmaciones, nuestras acciones y nuestra salud.
+
+Para mantenernos saludables y vivos, nuestros cuerpos utilizan habilidades que exceden en gran medida cualquier cosa de la que estemos al tanto de manera consciente. Para demostrarlo, el psiquiatra Dr. David Hawkins solía ofrecer a las 1000 o más personas que concurrían a sus conferencias una demostración vívida.
+
+#### Conocimiento interior
+
+Su equipo pasaba sobres cerrados y sin marcas a cada persona de la audiencia. Cada sobre cerrado contenía una sustancia en polvo. En la mitad de los sobres, ese polvo era un endulzante artificial. En la otra mitad, era vitamina C orgánica.
+
+Luego, el Dr. Hawkins le pedía a toda la audiencia que se pusieran en pares y utilizaran una simple técnica muscular de prueba. Una persona sostenía el sobre sin marcas por encima de su corazón mientras su compañero comprobaba la fuerza de su músculo. Tomaban nota de si el músculo era fuerte o débil y después intercambiaban los roles y comparaban. A veces los músculos resultaban débiles y a veces fuertes.
+
+Una vez que todos habían completado la simple prueba, abrían los sobres para ver si estaban sosteniendo el endulzante artificial o la vitamina C.
+
+Cada vez que los músculos se debilitaban, la persona estaba sosteniendo el endulzante artificial. Cuando los músculos se fortalecían, estaba sostenido invariablemente un sobre que contenía vitamina C. Estos resultados eran siempre consistentes y en mis propias conferencias los he encontrado bastante repetidos.[^1]
+___
+**Todos sabemos que la vitamina C orgánica es mejor para nosotros que un endulzante artificial, pero el hecho de que el cuerpo humano en algún nivel más profundo sepa qué es lo que se encuentra dentro de un sobre cerrado es verdaderamente increíble.**
+___
+
+El Dr. Hawkins lo explicó de esta manera:
+
+>*La mente humana individual es como una terminal computarizada conectada a una base de datos gigante. La base de datos es la misma consciencia humana de la cual nuestra propia consciencia es una mera expresión individual, pero con sus raíces en la consciencia común a toda la humanidad.*
+
+>*Esta base de datos es el reino de la genialidad puesto que ser humano es participar en la base de datos; todos en virtud de su nacimiento tienen acceso a la genialidad. En la actualidad, se ha demostrado que la información ilimitada contenida en la base de datos está preparada y disponible para cualquiera en unos segundos, en cualquier momento y en cualquier lugar. Esto es, de verdad, un descubrimiento sorprendente, teniendo el poder de cambiar vidas tanto individual como colectivamente, a un nivel nunca antes anticipado.[^2]*
+
+### Cómo examinar a otras personas
+
+La prueba muscular también puede usarse para descubrir qué es lo que está sucediendo en el cuerpo de otra persona. Puedes hacerlo o bien haciendo la prueba a la persona de manera directa, o bien utilizando lo que se conoce como sustituto o prueba como representante. Hablaremos acerca de esos métodos de pruebas en el capítulo 8.
+___
+**Miles de médicos seguidores del vitalismo y médicos generales utilizan la prueba muscular para ayudar a sus pacientes diariamente.**
+___
+
+Puedes aprenderlo fácilmente y utilizarlo para ayudarte a ti mismo, a tus amigos y a tus seres queridos a identificar y liberar las emociones atrapadas a través del Código de la Emoción.
+
+A continuación se explican algunos de los métodos más fáciles y comunes para probar muscularmente a otros:
+
+#### La prueba básica del brazo (para hacer la prueba a otra persona)
+
+Antes de nada, dile a la persona que deseas hacerle la prueba para saber si tiene dolor en alguno de los hombros. Si tiene dolor, no uses ese brazo puesto que puede agravar su condición. Si tiene problema en ambos brazos, o si es demasiado joven, o está demasiado débil o enfermo para hacerle la prueba, deberías buscar una forma diferente de prueba utilizando unos de los métodos de prueba explicados en este capítulo (ve el capítulo 8).
 
 ![](6.jpg) 
-`Finger Positioning for Basic Arm Test`
 
- 1. Ask the subject you wish to test to stand up and hold one arm out directly in front of them, horizontal to the floor. They should not make a tight fist, but let their hand remain relaxed.
- 2. Place the first two fingers of one hand lightly on their arm, just above the wrist as shown.
- 3. Place your free hand on their opposite shoulder to support them.
- 4. Tell the subject “I’m going to have you make a statement, and then I’m going to press down on your arm. I want you to resist me by holding your arm right where it is; try to prevent me from pushing your arm down.”
- 5. Have the subject state their name. If the subject’s name is Kim, for example, he or she would say, “My name is Kim.”
- 6. Perform the muscle test by smoothly and steadily increasing the pressure downward on the subjects’ arm, going from no pressure to a fairly firm pressure within about 3 seconds.
+*Colocación de los Dedos para el Test Básico del Brazo*
 
-A person’s arm can rapidly become tired if you overdo the amount of force you use. Remember that muscle testing does not require brute force.
+1. Dile al sujeto que quieres practicar que se ponga de pie y mantenga un brazo extendido hacia el frente, horizontal al piso. No debe mantener el puño apretado sino dejar la mano relajada.
+2. Coloca los dos primeros dedos de una mano suavemente sobre su brazo, justo sobre la muñeca como se muestra.
+3. Ubica tu mano libre en el hombro opuesto para apoyarlo.
+4. Dile al sujeto “Te voy a decir una afirmación para que tú la digas y después voy a presionar tu brazo. Quiero que lo resistas manteniendo tu brazo en el mismo lugar donde está; trata de evitar que yo empuje tu brazo hacia abajo”.
+5. Haz que el sujeto afirme su nombre. Si el nombre del sujeto es Kim, por ejemplo, él o ella dirá: “Mi nombre es Kim”.
+6. Realiza la prueba muscular incrementando de mane-ra suave y constante la presión de su brazo hacia abajo, yendo desde nada de presión hasta una presión bastante firme en alrededor de 3 segundos.
+7. La articulación del hombro debe permanecer “trabada” contra tu firme presión hacia abajo y no debe ceder.
 
-If the statement they just made is true, you should feel that the arm is “locked” against your downward pressure. If the statement is false, you should feel their arm begin to give way under your smoothly increasing pressure.
+El brazo de una persona puede cansarse rápidamente si aplicas demasiada fuerza. Recuerda que la prueba muscular no requiere fuerza bruta.
 
+Si la afirmación que acaba de hacer es verdadera, debes sentir que su brazo está “trabado” contra la presión que ejerces hacia abajo. Si la afirmación es falsa, debes sentir que su brazo empieza a ceder bajo el suave incremento de tu presión.
 ___
-**You should always use the minimum force needed to perceive whether the arm is staying locked or not. That is what you are looking for.**
+**Siempre debes utilizar el mínimo de fuerza requerida para percibir si el brazo permanece trabado o no. Eso es lo que tú estás buscando.**
 ___
-Now repeat the test, but have the subject make a statement that is obviously false by using a name that is not their own. Immediately perform the muscle test again, and you should notice the arm is weaker, since the statement just made is incongruent with truth, and the subject’s subconscious mind knows it.
 
-#### Tips on the Basic Arm Test
+Ahora, repite la prueba pero haz que el sujeto haga una afirmación que es obviamente falsa utilizando un nombre que no sea el suyo propio. Inmediatamente, realiza la prueba muscular de nuevo y debes notar que el brazo está más débil, puesto que la afirmación recién hecha es incongruente con la verdad y el subconsciente del sujeto lo sabe.
 
-Here are some tips that will help you to improve and become proficient at muscle testing.
+#### Consejos acerca de la prueba básica del brazo
 
- 1. Don’t use too much force, only what you need to get your answer. Think finesse, not force.
- 2. Smoothly increase the force from zero to firm over about three seconds.
- 3. Keep your fingers in the correct position. If you place your fingers on the bones of their wrist, their arm will weaken because the body will attempt to protect the wrist bones. You want your fingers to be just above the wrist bones. Your fingers should be placed just above the bony prominence that can be found on the back of your hand on the little finger side, just above the wrist. (See photo)
- 4. Remember that the person you are testing has to be willing to be tested. If their attitude is cynical or skeptical, it will be harder for you to test them. Don’t waste your time with people that don’t want to be helped, or that are not open to being helped. Life is too short.
- 5. You can experiment with various arm positions to see what works best for you and whomever you are working on. Another option is for them to hold their arm out to the side rather than straight out in front of them.
+A continuación se mencionan algunos consejos que te ayudarán a mejorar y dominar la prueba muscular.
 
-### Testing Yourself
+1. No utilices demasiada fuerza, sólo la que necesitas para obtener la respuesta. Piensa en suavidad, no en fuerza.
+2. Suavemente, incrementa la fuerza de cero a firme por tres segundos.
+3. Mantén tus dedos en la posición correcta. Si pones tus dedos sobre los huesos de su muñeca, su brazo se debilitará porque el cuerpo tratará de proteger a los hue-sos de la muñeca. Tus dedos deben estar por encima de los huesos de la muñeca. Tus dedos deben estar ubicados justo arriba de la prominencia ósea que se encuentra en la parte de atrás de tu mano del lado del dedo meñique, justo arriba de la muñeca. (Ve la foto)
+4. Recuerda que la persona a la que estás haciendo la prueba debe estar dispuesta a pasar por esa prueba. Si su actitud es cínica o escéptica, será más difícil para ti practicarle la prueba. No pierdas el tiempo con personas que no quieren ser ayudadas o que no están abiertas a ser ayudadas. La vida es muy corta.
+5. Puedes experimentar con varias posiciones de brazos para ver cuál funciona mejor para ti y para la persona con quien estés trabajando. Otra opción es que la persona mantenga su brazo extendido hacia el costado en vez de extendido hacia el frente.
 
-Now let’s take a look at some ways of using your own muscles to get answers.
+### Cómo hacerte la prueba a ti mismo
 
-As you try out these methods, it’s easiest to make statements that you already know to be true or false. That way you can know with certainty if it is working for you.
+Ahora echémosle un vistazo a algunas formas de usar tus propios músculos para obtener respuestas.
 
-In chapter two you learned to do the Sway Test by saying the words “unconditional love” or “hatred.” Those words are very powerful and will elicit a definite response from the body.
+Al probar estos métodos, es más fácil hacer afirmaciones que ya sabes que son verdaderas o falsas, de esa manera puedes saber con certeza si funciona contigo.
+
+En el capítulo dos aprendiste a hacer la prueba de balanceo diciendo las palabras “amor incondicional” u “odio”. Esas palabras son muy poderosas y obtendrán una respuesta definitiva de tu cuerpo.
 ___
-**“Unconditional love” will make you sway forward, and will make any muscle test strong. “Hatred” has just the opposite effect and will weaken you.**
+**“Amor incondicional” te hará balancear hacia adelante y hará que cualquier prueba muscular te fortalezca. “Odio” tiene exactamente el efecto opuesto y te debilitará.**
 ___
-The words “yes” and “no” will have similar effects. The word “yes” is positive. If you make a statement that is true or positive, you will test strong, or you will sway forward. “No” is a negative word. If you make a statement that is untrue or negative, you will be weak, or sway backward.
 
+Las palabras “sí” y “no” tendrán los mismos efectos. La palabra “sí” es positiva. Si haces una afirmación que es verdadera o positiva, te fortalecerás o te balancearás hacia adelante. “No” es una palabra negativa. Si haces una afirmación que no es cierta o negativa, te debilitarás o te balancearás hacia atrás.
 
-Self-testing methods are more subjective than any of the other methods we have discussed, and are therefore a bit more challenging to learn. I have found that children can learn these methods without any trouble in most cases, but sometimes adults take a bit longer. Some self-testing methods seem to naturally work better for some people than others. Try them out and see what you like. To become proficient at any of these self-testing methods takes time and practice. The main challenge is learning to allow your conscious control to recede a bit into the background, so your body can respond as it will.
+Los métodos de examinarse a uno mismo son más subjetivos que cualquiera de los otros métodos que hemos discutido y es por ello que constituyen un desafío a la hora de aprenderlos. He descubierto que los niños pueden aprender estos métodos sin problemas en la mayoría de los casos, pero a veces a los adultos les lleva un poco más de tiempo. Algunos métodos de examinarse a uno mismo parecen funcionar naturalmente mejor para algunas personas que para otras. Pruébalos y ve cuál te gusta. Dominar cualquiera de estos métodos requiere tiempo y práctica. El mayor desafío es aprender a que tu control consciente pase a un segundo plano para que así tu cuerpo pueda responder a su manera.
 
+¿Has usado alguna vez un potenciómetro {regulador de electricidad}? Debes tener uno en alguna pared en tu casa, pero si no, probablemente hayas utilizado uno antes. Al girar la perilla de un potenciómetro, puedes elegir exactamente cuánta electricidad recibe un foco de luz y por consiguiente, cuánto brillo tiene. A excepción de la prueba de balanceo, la clave de todos los métodos de examinarse a uno mismo es encontrar la fuerza muscular precisa al poner el dedo con el que vas a ejercer resistencia.
 
-Have you ever used a dimmer switch? You might have one on a wall in your home, but if not, you have probably used one before. By turning the knob on a dimmer switch, you can choose exactly how much electricity a light fixture is getting, and therefore how bright it is. With the exception of the Sway Test, the key to all self-testing methods is finding the precise muscle strength setting in your resistance finger.
+#### El método de una sola mano
 
-#### Hand Solo Method
+Este método parece algo gracioso pero en realidad es bastante fácil de usar y se puede hacer con una mano, de hecho, personalmente es mi favorito.
 
-This method looks a little funny but is actually quite easy to use and can be done with one hand. It happens to be my personal favorite.
+Usarás dos dedos de la misma mano. Para la mayoría de las personas, el dedo índice y el dedo medio funcionan de manera excelente, pero si por algún motivo no lo hacen, entonces intenta con el dedo medio y el anular.
 
-You will use two fingers of the same hand. For most people, the forefinger and middle finger work just fine, but if for some reason they don’t, then try the middle finger and the ring finger.
+Básicamente, uno de los dedos asumirá el rol del brazo a ser probado (llamaremos a este el dedo de resistencia) y el otro dedo ejercerá una muy suave presión hacia abajo para realizar la prueba (llamaremos a este el dedo examinador).
 
-Essentially, one finger will assume the role of the arm being tested, (we’ll call this the resistance finger) and
+![](/7.jpg) 
 
-![](7.jpg) 
+Primero, decide qué dedos se sentirán más cómodos al poner uno encima del otro; cuanto mejor se sienta, más probabilidades hay de que funcione,
 
-the other finger acts to apply very slight downward pressure to perform the testing (we’ll call this the testing finger).
+Ahora, pon tu atención en el dedo que va a ser presionado hacia abajo (el dedo de resistencia).
 
-First of all, decide what two fingers feel comfortable when one finger is placed atop the other. Whatever feels best will probably work.
+Como si subieras un potenciómetro al máximo, sube la rigidez muscular de este dedo en particular al máximo, así queda tan fuerte como puedas.
 
-Now place your attention on the finger that is going to be pressed down upon (the resistance finger).
+Mientras mantienes la fuerza en el dedo de resistencia, presiónalo suavemente hacia abajo con el dedo examinador. Verás que no ocurre nada; el dedo de resistencia no bajará. Eso está bien.
 
-Like turning up a dimmer switch all the way, turn up the muscle tightness in this particular finger all the way, so it is as strong as you can make it.
+Ahora, como bajando un potenciómetro casi al mínimo, baja el tono muscular o rigidez del dedo de resistencia, así está sólo lo suficientemente fuerte como para extenderse, en posición de línea recta.
 
-While maintaining this strength in the resistance finger, press down gently with the testing finger. You will find that nothing happens; the resistance finger will not depress. That’s fine.
+Ahora, mientras mantienes este bajo nivel de fuerza en el dedo de resistencia, presiónalo suavemente hacia abajo con el dedo examinador. Verás que el dedo de resistencia baja fácilmente. Nuevamente, eso está bien.
 
-Now, like turning down a dimmer switch almost all the way, turn down the muscle tone or tightness to the resistance finger, so it is just strong enough to hold its straight-out, straight-line position.
+Por el momento. A continuación se explica lo que es más importante que comprendas.
 
-Now, while maintaining this low level of strength in the resistance finger, press down gently with the testing finger. You will find that the resistance finger depresses easily. Again, that’s fine.
+El auto examen funciona algo diferente a los otros tipos de pruebas que hemos aprendido. La diferencia esencial es que tienes que descubrir tu propia versión del “potenciómetro”. En otras palabras, tienes que aprender la intensidad de la fuerza del dedo de resistencia para que la congruencia dé como resultado fuerte y, por el contrario,la incongruencia débil. ¿Listo? Aquí tienes cómo comprenderlo. No es difícil.
 
-So far, so good. Here is the important thing to understand.
+Empieza por concentrar la fuerza muscular en el dedo de resistencia en un 100%. Sutil y fuerte. Ahora, simplemente di la palabra “no”, o puedes decir “odio” y presiona hacia abajo con el dedo examinador. Debes notar, con la fuerza del dedo de resistencia concentrada al máximo, que aún diciendo una palabra negativa, tu dedo no bajará.
 
+Ah. Pero ahora intentemos concentrar la fuerza estableciendo la resistencia un poco hacia atrás y repite la palabra negativa “no” u “odio” (una de estas dos palabras funcionará, pero para mantener la consistencia elige una y quédate con ella mientras aprendes esto).
 
-Self-testing works a little differently than the other types of testing we have learned. The essential difference is that you have to discover your own “dimmer-switch” setting. In other words, you have to learn how strong to make your resistance finger so that congruency will test strong, yet incongruence will test weak. Ready? Here is how to figure it out. It’s not hard.
+Ahora presiona el dedo de resistencia hacia abajo y ve qué pasa. ¿Nada? No hay problema.
 
-Start by dialing up the muscle strength to your resistance finger to 100%. Nice and strong. Now, simply say the word “no”, or you can say, “hatred” and press down with your testing finger. You should notice, with the strength of the resistance finger dialed up all the way, that even when you are saying a negative word, your finger will not depress.
+Trata de establecer el tono muscular sobre el dedo de resistencia un poco más atrás y repite la palabra negativa, luego, haz la prueba nuevamente.
 
+Y así sucesivamente. En algún punto, encontrarás un potenciómetro / un marco de la fuerza muscular para tu dedo de resistencia que es justo lo suficientemente débil como para ceder bajo la presión del dedo examinador cuado tú digas una de estas palabras negativas. En cuanto suceda esto, utiliza ese marco de fuerza en el dedo de resistencia y di algo positivo como “sí” o “amor” e inmediatamente haz la prueba de nuevo. Debería dar como resultado fuerte.
 
-Ah. But now let’s try dialing the strength setting on the resistance back a bit. And repeat the negative word, either “no” or “hatred” (either of these words will work, but for the sake of consistency pick one and stay with it while you are learning this). Now press down on the resistance finger, and see what happens. Nothing? No problem.
+La clave completa de este método de autoexamen es comprender la intensidad de la fuerza que necesitas poner en el dedo de resistencia para que éste permanezca fuerte con una palabra positiva como amor y se debilite con una negativa como odio. Eso es todo acerca del mismo, de verdad.
 
-
-Try setting the muscle tone on the resistance finger back a bit more, and repeat the negative word, then test again.
-
-And so on. At some point, you will find a dimmer-switch/muscle strength setting for your resistance finger that is just weak enough that it will give way under the pressure of the testing finger when you say one of these negative words. As soon as this happens, use that strength setting in the resistance finger and say something positive, such as “yes” or “love”, and immediately test again. It should test strong.
-
-The whole key to this method of self-testing is to figure out how strong you need to make your resistance finger so that it will stay strong on a positive word like love, and go weak on a negative word like hatred. That is all there is to it, really.
-
-
-Some people can pick up self-testing very easily. The most difficult thing about this type of testing is its subjective nature.
+Algunas personas pueden aprender el autoexamen muy fácilmente. Lo más difícil acerca de este tipo de prueba es su naturaleza subjetiva.
 ___
-**The human tendency is to question every answer you get when you are testing yourself, but you need to simply trust yourself and trust your subconscious mind, where the answers are coming from.**
+**La tendencia humana es a cuestionar cada respuesta que obtienes cuando te estás haciendo la prueba a ti mismo, pero tú simplemente necesitas confiar en ti mismo y en tu subconsciente, de donde provienen las respuestas.**
 ___
-I have found self-testing to be invaluable. It takes practice, and may seem impossible at first, but if you will stay with it, I think you will find it to be invaluable as well.
 
+He descubierto que el autoexamen es invalorable. Requiere práctica y puede parecer imposible al principio; pero si te quedas con él, creo que también lo encontrarás invalorable.
 
-#### Falling Log Method
+### El método del tronco caído
 
-If you were to use the Hand Solo method of self-testing, but with two hands instead of one, it would look like this next method.
+Si utilizaras el método de autoexamen de una sola mano, pero con dos manos en vez de una, se vería como el siguiente método.
 
-If you are right-handed, make a fist with your left hand, and extend your left forefinger straight out. This finger will be your resistance finger, or the finger that will be tested.
+Si eres diestro, pon tu mano izquierda en forma de puño y extiende hacia delante tu dedo índice izquierdo. Este dedo será tu dedo de resistencia o el dedo en que se hará la prueba.
 
-Place your right hand over your fist and grip it firmly, placing the last joint of your right pinky finger atop your out-stretched left forefinger in whatever position feels comfortable. If you are left-handed, just reverse your hand positions.
+on tu mano derecha sobre el puño y agárralo de manera firme, ubicando la última articulación de tu meñique derecho sobre tu dedo índice izquierdo extendido en cualquier posición que te sea cómoda. Si eres zurdo, simplemente revierte las posiciones de tus manos.
 
-![](8.jpg) 
+![](/8.jpg) 
 
-Now that you have your fingers positioned correctly, you can follow the same pattern that I gave you in the Hand Solo explanation. For your convenience, I will give you those same instructions right here:
+Ahora que tienes tus dedos posicionados de manera correcta, puedes seguir el mismo patrón que te di en la explicación del de una sola mano. Para tu conveniencia, te daré esas mismas instrucciones aquí mismo:
 
-Start by dialing up the muscle strength to your resistance finger to 100%. Nice and strong. Now, simply say the word “no”, or you can say, “hatred” and press down with your testing finger. You should notice, with the strength of the resistance finger dialed up all the way, that even when you are saying a negative word, your finger will not depress.
+Empieza por concentrar la fuerza muscular en tu dedo de resistencia en un 100%. Sutil y fuerte. Ahora, simplemente di la palabra “no”, o puedes decir “odio” y presiona hacia abajo con tu dedo examinador. Debes notar, con la fuerza del dedo de resistencia concentrada al máximo, que aún diciendo una palabra negativa, tu dedo no bajará.
 
+Ahora intentemos concentrar la fuerza estableciendo la resistencia un poco hacia atrás. Ahora repite la palabra negativa “no” u “odio”. Trata de establecer el tono muscular sobre el dedo de resistencia un poco más atrás y repite la palabra negativa, luego, practica nuevamente.
 
-Now let’s try dialing the strength setting on the resistance back a bit. Now repeat the negative word, either “no” or “hatred.” Try setting the muscle tone on the resistance finger back a bit more, and repeat the negative word, then test again.
+En algún momento encontrarás un potenciómetro / un marco de la fuerza muscular para tu dedo de resistencia que es justo lo suficientemente débil como para ceder bajo la presión del dedo examinador cuado tú digas una de estas palabras negativas. En cuanto ocurra esto, utiliza ese marco de fuerza en el dedo de resistencia y di algo positivo como “sí” o “amor”, e inmediatamente haz la prueba de nuevo. Debería dar como resultado fuerte.
 
-At some point as you continue this process, you will find a dimmer-switch/muscle strength setting for your resistance finger that is just weak enough, and it will give way under the pressure of the testing finger when you say one of these negative words. As soon as this happens, use that strength setting in the resistance finger and say something positive, such as “yes” or “love”, and immediately test again. It should test strong.
+#### El método del hueco
 
-#### Hole - In - One Method
+![](/9.jpg) 
 
-![](9.jpg) 
+Con una mano, haz el signo del OK, tocando la punta de tu dedo pulgar con la punta de tu índice. Luego desliza el pulgar y los primeros dos dedos de tu mano opuesta dentro del anillo. Los dedos dentro del anillo serán los dedos examinadores. Los dedos que conforman el anillo serán los dedos de resistencia. Siguiendo el procedimiento que ya he explicado en los dos métodos anteriores, trata de variar la cantidad de resistencia en el anillo al decir algo negativo o incongruente. Mientras haces la afirmación utiliza los dedos dentro del anillo para presionar hacia afuera. Trata de presionar lo suficientemente fuerte como para desarmar el anillo. Cuando encuentras el marco de fortaleza que te da debilidad en una afirmación negativa o incongruente, y que no obstante permanece fuerte en una afirmación positiva o congruente, lo has logrado.
 
-With one hand, make an OK sign, by touching the tip of your thumb to the tip of your forefinger. Then slide the thumb and the first two fingers of your opposite hand into that ring. The fingers inside the ring will be the testing fingers. The fingers that are forming the ring will be the resistance fingers.
+#### El método de los anillos enlazados
 
-Following the procedure I have outlined in the previous two methods, try varying the amount of resistance in the ring, while saying something negative or incongruent. As you make the statement, use the fingers inside the ring to press outward. Try to press hard enough to pull the ring apart. Resist that pressure with the fingers making the ring. When you find the strength setting that gives you weakness on a negative or incongruent statement, and yet remains strong on a positive or congruent statement, you are there.
-
-
-#### Linked Rings Method
-
-Make a ring with the thumb and middle finger on one hand. Now, make a ring with the thumb and middle finger of the other hand, joining the hands together like two links in a chain. The thumb and forefinger that are forming one of the rings will be the resistance fingers.
+Haz un anillo con el pulgar y el dedo medio de una mano. Ahora, haz un anillo con el pulgar y el dedo medio de la otra mano, uniendo las manos como dos eslabones de una cadena. El pulgar y el dedo medio que forman uno de los anillos serán los dedos de resistencia.
 
 ![](10.jpg) 
 
-Once again, try varying the amount of resistance in the rings, while saying something negative or incongruent. As you make the statement, try to pull the rings apart. Remember that you are simply attempting to find the strength setting that allows the rings to pull apart on a negative or incongruent statement, and remain linked on a positive or congruent statement.
+Una vez más, trata de variar la cantidad de resistencia en los anillos, mientras dices algo negativo o incongruente. Al hacer la afirmación, trata de separar los anillos. Recuerda que simplemente estás tratando de encontrar el marco de fortaleza que permite a los anillos separarse en una afirmación negativa o incongruente y permanecer unidos en una afirmación positiva o congruente.
 
-#### Finding One That Works for You
+#### Cómo encontrar uno que funcione para ti
 
-I have found that around 80% of the people in my live seminars will have immediate success using at least one of the self-testing methods I have described in this chapter. My advice to you is to simply practice.
+He encontrado que alrededor del 80% de las personas en mis seminarios en vivo tendrán éxito inmediato utilizando al menos uno de los métodos de autoexamen que he descrito en este capítulo. Mi sugerencia para ti es que simplemente practiques.
+
+¡No te desanimes! Mientras que algunas personas parecen aprender estos métodos de autoexamen de manera instantánea, la mayoría de las personas tienen que practicar. Sólo mantente con él por un tiempo, y como el andar en bicicleta, se convertirá en un acto reflejo en poco tiempo.
+
+Si uno de estos métodos es más cómodo o lo sientes más natural, practícalo.
+
+Sólo utilizando palabras que son claramente positivas o negativas como sí/no o amor/odio mientras estés aprendiendo, podrás refinar esta habilidad mucho más rápidamente. Aprender el autoexamen es opcional al uso del Código de la Emoción, pero el dominio de cualquier método de autoexamen puede facilitarte y hacer las cosas más eficientes.
+
+Por supuesto que el método de autoexamen más simple es la prueba de balanceo, el cual requiere muy poca práctica para la mayoría de las personas. Las únicas desventajas de la prueba de balanceo son que debes estar de pie para usarlo y que lleva un poco más de tiempo que los otros métodos de autoexamen, puesto que debes darle tiempo al cuerpo para balancearse sin forzarlo.
+
+Cuando logré dominar el autoexamen vi las ventajas de inmediato. Ya no necesité más a otra persona para que me ayudara a hacer la prueba a los pacientes que eran temporalmente no aptos para practicarles la prueba. Ahora los podía examinar haciéndome la prueba a mí mismo. También podía averiguar si yo mismo tenía emociones atrapadas u otros desequilibrios y corregirlos yo mismo. El autoexamen me dio una forma simple, efectiva y rápida de alcanzar las respuestas que estaba buscando.
+
+#### Si duele, detente
+
+Si alguno de estas pruebas empieza a causar incluso la más pequeña molestia, cambia a una prueba diferente. La molestia o el dolor es un signo de que estás usando demasiada fuerza, y si continúas a pesar de la molestia, puedes lastimarte o inflamar los tejidos.
+
+De manera ideal, deberías utilizar la menor cantidad de fuerza muscular necesaria para llevar a cabo cualquier forma de prueba muscular. Cuando aprendí estos métodos por primera vez, utilizaba un marco de fuerza muy alto y como resultado, me quedaban los dedos doloridos. Al final, descubrí que podía utilizar un marco de fuerza muscular que era suficiente como para levantar mi dedo de resistencia. Estos métodos de autoexamen funcionarán a diferentes fuerzas de resistencia, pero cuanto más alta sea la resistencia, más te cansará hacer la prueba y más probabilidad tendrán tus dedos de quedar doloridos. Si experimentas alguna molestia al llevar a cabo cualquiera de estas pruebas, detente. Elige un método distinto de prueba hasta que el dolor desaparezca y trata de utilizar menos resistencia.
+
+#### Ruedines de seguridad e intuición
+
+Si utilizas el Código de la Emoción por mucho tiempo, puedes empezar a notar un fenómeno extraño. Una fracción de segundo antes de obtener la respuesta a través de la prueba muscular, la respuesta puede aparecer de manera repentina en tu mente, como una suave voz que te susurra. Al principio, puede ser tan suave que podrías pasarla por alto.
+
+Puede ser que no estés acostumbrado a escuchar esta suave voz, pero te encontrarás a ti mismo diciendo: “Sabía que esa era la respuesta”. En cuanto comiences a hacer la prueba, simplemente lo sentirás y lo sabrás. Este conocimiento intuitivo fluye hacia ti desde la base de datos universal de la consciencia, desde el mar de la inteligencia y la energía que nos rodea a todos.
 ___
-**Don’t give up! While some people seem to pick up these self-testing methods instantly, most people have to practice. Just stick with it for a while, and like riding a bike, it will become second nature to you before long.**
-___
-
-If one of these testing methods is more comfortable or feels more natural to you, practice it.
-
-By only using words that are clearly positive or negative such as yes/no or love/hate while you are learning, you’ll be able to refine this skill much more quickly. Learning self-testing is optional to using the Emotion Code, but mastery of any self-testing method can make things easier and more efficient for you.
-
-Of course, the simplest self-testing method is the Sway Test, which takes very little practice for most people. The only drawbacks to the Sway Test are that you must be standing to use it, and that it takes a bit more time than the other self-testing methods, as you need to allow the body time to sway without forcing it.
-
-When I became proficient at self-testing I saw the advantages immediately. I no longer needed another person to help me test patients who were temporarily untestable. I could test them on myself now. I could also check myself for trapped emotions and other imbalances and correct them myself. Self-testing gave me a very rapid, effective and simple way to get to the answers I was looking for.
-
-
-#### If It Hurts, Stop!
-
-If any of these tests begin to cause even the slightest discomfort, switch to a different test. Discomfort or pain is a sign that you are using too much force, and if you continue in spite of the discomfort, you could injure yourself or create inflammation in the tissues.
-
-Ideally you should use the least amount of muscle strength necessary to perform any form of muscle testing. When I was learning these methods for the first time, I used too high a strength setting, and the result was sore fingers. I eventually found that I could use a muscle strength setting that was barely enough to hold up my resistance finger. These self-testing methods will work at different resistance strengths, but the higher the resistance, the more tiring the testing will be for you, and the more likely your fingers will become sore. If you experience discomfort in performing any of these tests, stop. Choose a different method of testing until the soreness goes away, and try using less resistance.
-
-
-#### Training Wheels and Intuition
-
-If you use the Emotion Code for very long, you may begin to notice an odd phenomenon. A split-second before you get an answer through muscle testing, the answer may suddenly appear in your mind, like a quiet little voice whispering to you. At first, it might be so quiet that you might overlook it.
-
-
-You may not be used to listening to this little voice, but you may find yourself saying, “I knew that was the answer.” Just as you are beginning to do the test, you’ll just feel it and know. This intuitive knowledge flows into you from the universal database of consciousness, from the sea of intelligence and energy that surrounds us all.
-
-___
-**Muscle testing is like training-wheels for your intuition.**
-
-___
-As you become more adept at listening to your intuition, you will find that you can know what the answer is in this way. You can feel it. The more heed you give to these subtle promptings, the better you will get at knowing the answers to your questions.
-
-### Nonverbal Communication
-
-The communication that takes place between you as the healer and your subject does not necessarily have to be verbal. I stumbled across this phenomenon myself many years ago. I was used to using leg-length testing as my primary method of evaluating patients, and I had used it successfully for many years. Leg-length testing takes a bit more time to learn and master, so I will not be teaching it here, but it can be learned by going to [HealersLibrary.com](http://HealersLibrary.com/freetrial).
-
-Leg-length testing is really just another form of muscle testing, but the answers are given by the body through changes in the leg-length instead of changes in muscle strength. I quickly learned that the body would give me answers just as easily using this form of testing as with any other form. It became my primary method of getting answers from my patient’s bodies. In fact, for many years the very first thing that I did with most patients was to have them lie face down and simply ask their body for a “yes” or a “no” answer, which the body would give through changes in the leg-length. The legs would be even in length for “yes” and uneven for “no.” It always worked for me, without any trouble, but one day something interesting happened.
-
-
-I had been working on a patient for a few minutes, and his treatment was drawing to a close. I looked down and checked his leg-length, and it was perfectly balanced. I looked up at his back, and idly turned my attention to his *right* kidney. I thought about his right kidney for a moment. Then I looked down and checked his leg length again. Suddenly his leg-length was dramatically different. I relaxed my grip, looked up and thought about his *left* kidney this time. I rechecked his leg-length, and his legs were balanced.
-
-I again thought about his *right* kidney for a moment, rechecked, and the leg-length difference was obvious. I was amazed! As you might imagine, this patient did have something going on in his right kidney. In fact, it turned out that he had a trapped emotion embedded in that area of his body, imbalancing his right kidney. Immediately after releasing this trapped emotion, I could no longer get his leg length to change by merely contemplating his right kidney, since the reason for the kidney imbalance was gone.
-
-
-This experience was a bit of an epiphany for me, and I immediately put this knowledge to use. From that point on, it became standard procedure for me to ask questions of the body silently. The results were the same as before. The only difference was that I was now merely thinking the questions that before I had been thinking *and* vocalizing.
-
-I never had any problem with this kind of testing for many years. It seemed to me that there was a full and complete communication link between my patients and myself that was entirely nonverbal.
+**La prueba muscular es como ruedines de seguridad para tu intuición.**
 ___
 
-**I found that any question I could ask out loud could be asked silently with no difference in the result.**
+Mientras te haces más experto en escuchar a tu intuición, descubrirás que de esta manera puedes saber cuál es la respuesta. Lo puedes sentir. Cuanta más atención le prestas a estas insinuaciones sutiles, mejor conocerás las respuestas a tus preguntas.
 
----
+### Comunicación sin palabras
 
-By the way, nonverbal communication works with all forms of testing, from the Sway Test to the Basic Arm Test, to every other method I have ever seen.
+La comunicación que se establece entre tú como sanador y el sujeto no tiene que ser verbal necesariamente. Yo mismo di con este fenómeno hace muchos años. Yo estaba acostumbrado a utilizar la prueba del largo de las piernas como mi método primario para evaluar pacientes y lo había usado de manera exitosa por muchos años. Aprender y dominar la técnica de la prueba del largo de las piernas lleva un poco más de tiempo, por lo que no lo enseñaré aquí, pero se puede aprender a través de *[HealersLibrary.com/es.](http://HealersLibrary.com/freetrial)*
 
-The person being tested can simply think their statement, and the result will be the same as if they had vocalized the question. By the same token, the person doing the testing can simply think the question they want to ask the subject, and the result will be as if they had vocalized the question.
+La prueba del largo de las piernas es en realidad sólo otra forma de prueba muscular, pero las respuestas son dadas por el cuerpo a través de cambios en el largo de las piernas en vez de cambios en la fortaleza muscular. Rápidamente, aprendí que el cuerpo me daría respuestas de la misma manera simple utilizando esta forma de prueba que con cualquier otra forma. Se convirtió en mi método primario para obtener respuestas de los cuerpos de mis pacientes. De hecho, por muchos años la primera cosa que hice con la mayoría de los pacientes fue pedirles que se acostaran boca abajo y simplemente pedirles a sus cuerpos una respuesta de “sí” o “no”, la cual el cuerpo daría a través de cambios en el largo de sus piernas. Las piernas quedarían parejas en largo para el “sí” y disparejas para el “no”. Siempre funcionó para mí, sin ningún problema, hasta que un día ocurrió algo interesante.
 
+Yo había estado asistiendo a un paciente por algunos minutos y su tratamiento estaba llegando a su fin. Bajé la mirada y verifiqué el largo de sus piernas, el cual estaba perfectamente equilibrado. Volví la mirada hacia su espalda y sin darme cuenta puse mi atención en su riñón derecho. Pensé en su riñón derecho por un momento. Luego bajé la mirada y verifiqué el largo de sus piernas nuevamente. De repente, el largo de sus piernas era dramáticamente diferente. Relajé la forma en que lo tomaba, volví la mirada y esta vez pensé en su riñón izquierdo. Verifiqué nuevamente el largo de sus piernas y estaban equilibradas.
 
-I never had any problem with this kind of nonverbal testing until one particular patient helped me to learn an important lesson.
+Nuevamente pensé en su riñón derecho por un momento, verifiqué de nuevo y el largo de las piernas era obviamente distinto. Estaba asombrado. Como te puedes imaginar, a este paciente realmente algo le estaba sucediendo en su riñón derecho. De hecho, resultó que tenía una emoción atrapada arraigada en esa área del cuerpo desequilibrando su riñón derecho. De inmediato, después de liberar esa emoción atrapada, ya no pude lograr cambiar el largo de sus piernas con el mero hecho de contemplar su riñón derecho debido a que el motivo del desequilibrio del riñón se había ido.
 
-#### The Clown from Hell
+Esta experiencia fue como una epifanía para mí y de inmediato puse este conocimiento en uso. Desde ese momento, se convirtió en un procedimiento estándar para mí hacerle preguntas al cuerpo de manera silenciosa. Los resultados eran los mismos que antes. La única diferencia era que simplemente estaba pensando las preguntas que antes había estado pensando y vocalizando.
 
-Bill had come to me for treatment of his low back pain a few months before. He was doing very well, and on this particular day he had come in for a routine check up. He lay face down on my adjusting table and I performed a leg-length test on him. I directed my thoughts toward his body and thought, “Give me a Yes answer.” I checked his leg length. It was balanced. Then I thought, “Give me a No answer.” I checked his leg length again, but to my surprise, there was no change. This was very odd. I had been using this type of testing for over a decade, but I had never seen this happen. His leg length should have changed, but it didn’t. I couldn’t understand why it wasn’t working.
+Por muchos años, nunca tuve ningún tipo de problema con este tipo de prueba. Me parecía que había un vínculo de comunicación pleno y completo entre mis pacientes y yo mismo que era totalmente sin palabras.
+___
+**Descubrí que cualquier pregunta que pudiera hacer en voz alta, podía ser hecha de manera silenciosa sin ninguna diferencia en el resultado.**
+___
 
+Por cierto, la comunicación sin palabras funciona con todas las formas de prueba, desde la prueba de balanceo hasta la prueba básica del brazo, hasta cualquier otro método que alguna vez haya hecho.
 
-I repeated the procedure several times with no change. Puzzled, I looked up from his feet for a moment and noticed what was on his back. He was wearing a white T-shirt, and on the back was a shockingly evil image of a clown face, with fangs dripping blood.
+La persona que está siendo examinada puede simplemente pensar su afirmación y el resultado será el mismo como si hubiese vocalizado la pregunta. Del mismo modo, la persona que está haciendo la prueba puede simplemente pensar la pregunta que le quiere hacer al sujeto y el resultado será el mismo como si hubiese vocalizado la pregunta.
 
-On a hunch, I got a piece of paper and covered the image with it. Then I retested his leg length, and suddenly the testing worked as it should. I was frankly amazed. I uncovered the image, tried the testing again, and… nothing. I covered the image with the paper again, and he was testable. So far, not a word had passed between the two of us since I had begun testing.
+Nunca tuve ningún problema con este tipo de prueba sin palabras hasta que un paciente en particular me ayudó a aprender una lección importante.
 
-After removing and replacing the paper a few more times, each time confirming the result, I finally told him what was going on. I said, “I think that the clown picture on the back of your t-shirt is affecting you negatively and that you might want to think about getting rid of it.” He never returned to my office after that.
+#### El payaso del infierno
 
+Bill había venido a verme para tratarse su dolor de lumbalgia hacia unos meses. Le estaba yendo muy bien y ese día en particular había venido para hacerse un control de rutina. Se acostó boca abajo sobre mi camilla y le realicé la prueba de longitud de la pierna. Dirigí mis pensamientos hacia su cuerpo y pensé: “Dame un Sí como respuesta”. Controlé la longitud de su pierna. Estaba equilibrada. Luego, pensé: “Dame un No como respuesta”. Controlé su pierna; pero para mi sorpresa, no había ningún cambio. Esto era muy extraño. Había estado usando este tipo de prueba por más de una década, pero nunca había visto que algo así sucediera. La longitud de su pierna tendría que haber cambiado, pero no fue así. No entendía por qué no estaba funcionando.
 
-----------
+Repetí el procedimiento varias veces sin ningún cambio. Perplejo, miré hacia arriba desde sus pies por un momento y noté lo que estaba en su espalda. Él llevaba puesta una camiseta blanca y en la parte trasera tenía una imagen terriblemente maligna de la cara de un payaso con colmillos goteando sangre.
 
-**Everything that exists radiates vibrational energy that has an ultimate effect on our own energy field, whether good or bad.**
+Por una corazonada, tomé un pedazo de papel y con él cubrí la imagen. Luego, realicé la prueba de la longitud de su pierna nuevamente; y de repente, la prueba funcionó tal como debía. Yo estaba francamente asombrado. Destapé la imagen, realicé la prueba una vez más, y…nada. Cubrí la imagen con el papel nuevamente y la prueba funcionó. Hasta el momento, no habíamos intercambiado palabra desde que yo había comenzado la prueba.
 
+Después de quitar y colocar de nuevo el papel unas veces más, cada vez confirmaba el resultado, finalmente le dije lo que estaba sucediendo. Le dije: “Creo que la imagen del payaso que tiene tu camiseta en la parte de atrás te está afectando negativamente y creo también que deberías considerar deshacerte de ella”. Nunca regresó a mi oficina después de eso.
+___
+**Todo lo que existe irradia energía vibracional que tiene un efecto final en nuestro propio campo de energía, ya sea bueno o malo.**
+___
 
-----------
+Algunas cosas tendrán un efecto vibracional más positivo y otras tendrán uno más negativo. Por ejemplo, si miras una imagen de Adolfo Hitler, posiblemente el resultado de la prueba dará que estás débil o te balancearás hacia atrás, alejándote de su imagen y de toda la negatividad que esta connota. Si miras una imagen de la Madre Teresa es muy probable que el resultado de la prueba sea que estás fuerte o que te balancees hacia delante, hacia toda la positividad de su energía. Si miras fijamente una pintura de un hermoso paisaje, la energía vibracional positiva irradiada por la pintura tendrá un efecto positivo en ti. Por otro lado, una pintura de una escena de la degradación y el mal vibrará a una frecuencia mucho más baja y a tu cuerpo le resultará repulsiva. Considero que son los propios objetos que irradian estas frecuencias, positivas o negativas. Nuestros valores personales y asociaciones mentales también tienen su rol.
 
-
-Some things will have a more positive vibrational effect, and others will have a more negative one. For example, if you look at a picture of Adolf Hitler, you will probably test weak or sway backward, away from his image and all the negativity that it connotes. If you look at a picture of Mother Teresa, you will very likely test strong, or sway toward her picture, toward all of the positivity of her energy. If you gaze upon a painting of a beautiful countryside, the positive vibrational energy radiated by the painting will have a positive effect on you. On the other hand, a painting of a scene of degradation and evil will vibrate at a much lower frequency, and your body will find it repulsive. I believe that it is the objects themselves that radiate these frequencies, positive or negative. Our personal values and mental associations play a part as well.
-
-Here’s a test that you can take that will show you how negativity and positivity affect your energy. Take a look at this simple figure.
+La siguiente es una prueba que puedes realizar, la cual te mostrará cómo la negatividad o la positividad afectan tu energía. Echa un vistazo a esta figura simple.
 
 ![](11.jpg) 
 
-If you hold it one way, it’s a positive, smiling face. If you turn it upside down, it becomes a negative, frowning face. If you fix your gaze upon the picture when it is right side up, you will find that you will sway toward it or test strong. If you turn it upside down, you will sway away from it or test weak. Don’t take my word for it. Give it a try and see for yourself.
+Si la miras de un lado, es un rostro positivo y sonriente. Si le das vuelta, se convierte en un rostro negativo con el ceño fruncido. Si fijas tu mirada en la figura cuando está hacia arriba, notarás que te balancearás hacia ella o el resultado de la prueba dará que estás fuerte. Si le das vuelta, te balancearás alejándote de ella o el resultado de la prueba dará que estás débil. No confíes en mi palabra. Pruébalo y compruébalo tú mismo.
 
+### Solución de problemas
 
-### Troubleshooting
+#### De repente los resultados muestran que el sujeto está débil de manera constante
 
-#### Your Subject Suddenly Tests Consistently Weak
+La mente realiza un trabajo asombroso guardando un registro de las cosas y, por lo general, serás capaz de eliminar las emociones atrapadas sin que la mente se tome un descanso. Pero de vez en cuando, el cerebro se abruma con los miles de fragmentos de información interconectada y con las conexiones y reconexiones que se deben realizar después de que se libera una emoción atrapada.
 
-The mind does an amazing job keeping track of things, and usually you will be able to clear trapped emotions without the mind needing to take a break. But once in a while, the brain becomes overwhelmed with the myriad bits of interconnected data and the connections and reconnections that need to be made after a trapped emotion is released.
+Este resultado es un fenómeno que denomino “sobrecarga”, que hará que el resultado de la prueba de una persona sea débil sin importar lo que tú hagas. Es una condición temporal y, por lo general, dura menos de 30 segundos.
 
+En raras ocasiones, (con emociones atrapadas más severas, por lo general) he visto pacientes entrar con sobrecarga y permanecer en este estado durante horas hasta por un día entero. Muy a menudo, si le das alsujeto un minuto más o menos, su cerebro terminará de procesar y se le podrá realizar la prueba nuevamente.
 
-----------
+A modo de explicación, imagina la siguiente situación. Te encuentras sentado en tu automóvil en el medio de la noche. Los faros están encendidos. El motor está apagado. El auto no arranca. Giras la llave para encenderlo y el motor hace RRRRrrrr RRRRrrrr RRRRrrrr una y otra vez. Notas que mientras haces funcionar al motor, las luces están tenues. Esto es similar a lo que está ocurriendo en el cuerpo durante la sobrecarga. Como a la mente se la está haciendo funcionar intensamente, procesando lo que acabas de hacer, disminuye la cantidad de energía disponible para la prueba muscular.
 
+#### Los resultados muestran que el sujeto está fuerte sin importar qué
 
-**This result is a phenomenon I call “overload”, which will make a person test weak no matter what you do. It is a temporary condition, and usually lasts less than 30 seconds.**
+Si estás tratando de trabajar con una persona cuyo resultado de la prueba da fuerte sin importar lo que hagas, ten en cuenta que a esta persona puede que no se le pueda realizar una prueba actualmente. En mi experiencia, se considera que alrededor de una en cincuenta personas no está, temporalmente en condiciones de ser examinada; es decir, se mantendrá fuerte sin importar cuán incongruentes o falsas sean sus afirmaciones. Sin embargo, no es un problema serio ni es permanente.
+___
+**He descubierto que esto generalmente se debe a una o dos cosas. O están deshidratados, o uno o más huesos en sus cuellos están desalineados.**
+___
 
+Cuando alguien está deshidratado, esto afecta directamente su fuerza muscular y su conductividad eléctrica. Hazle beber un vaso de agua; después, intenta nuevamente. A veces es todo lo que se necesita. Tú también puedes beber un poco de agua; si estás deshidratado la prueba se verá afectada de la misma manera.
 
-----------
+Si necesitan un ajuste en el cuello, la mala alineación de los huesos puede estar creando interferencia en el sistema nervioso, inhibiendo las conexiones nerviosas y deshaciendo los mensajes a sus músculos. En ese caso, deberían ver a su quiropráctico para un ajuste, después del cual se le debería poder realizar la prueba.
 
+Por favor, ten en cuenta que siempre es posible examinar a una persona que no esté en condiciones haciendo la prueba en ti mismo si tienes experiencia en ello. También puedes abordar este problema utilizando una prueba con un sustituto, el que debatiremos más detalladamente en el capítulo 8. En lugar de examinar al individuo directamente, la prueba con un sustituto te permite examinar a una tercera persona y aún aprovechar el subconsciente del sujeto para obtener las respuestas deseadas.
+___
+**Si alguien está decidido a que no se le realice la prueba muscular, por lo genera lo logrará.**
+___
 
-On rare occasions, (with more severe trapped emotions, typically) I have seen patients go into overload and stay in this state for hours to an entire day. More often, if you just give your subject a minute or so, their brain will finish processing, and they will become testable again.
+Esto significa que deliberadamente no está cooperando y que no quiere que la prueba funcione. Tiene sus propios asuntos. Si ese es el caso, no es un candidato ideal para el Código de la Emoción. De vez en cuando, me encuentro con personas que ya han decidido que la prueba muscular no funciona. ¿Y sabes? No funciona en ellos. Se aseguran de ello.
 
+Como has visto, estas pruebas no son sobre la fuerza física pura. He visto casos en los que el músculo de una persona se debilitó tanto que literalmente no pudo resistir la mínima presión hacia abajo; sin embargo; esto no es siempre así. Muy a menudo, lo que detectarás es un cambio ligero en la fuerza muscular, la diferencia entre que el músculo esté “trabado” o “blando”.
 
-By way of explanation, imagine the following scenario. You find yourself sitting in your car in the middle of the night. The headlights are on. The engine is off. The car won’t start. You turn the key to start the car, and the engine turns over and over, RRRRrrrrr RRRRrrrr RRRRrrrr. You notice that as the engine turns over, the headlights dim. This is similar to what is occurring in the body during overload. As the mind is furiously turning over, processing what you have just done, the amount of energy available for muscle testing is diminished.
+La prueba muscular funciona en casi todas las personas, la mayoría de las veces. Pero otras cosas pueden entrar en juego. A veces no funciona porque simplemente no se sienten cómodos por alguna razón. O piensan que es malo. O están a la defensiva, asustados por si se revela algo de ellos. Por ejemplo, he descubierto que a veces las personas no están en condiciones de ser examinadas en frente de otras; sin embargo, son perfectamente viables cuando no están más delante del público.
 
-#### Your Subject Tests Strong No Matter What
+#### Siempre obtén permiso
 
-If you are trying to work with a person that tests strong no matter what you do, consider that this person may be untestable at present. In my experience, about one in fifty people are considered to be temporarily untestable; that is, they will stay strong no matter how incongruent or untrue their statement. It is not a serious problem, however, nor is it permanent.
+Siempre explica lo que vas a hacer antes de hacerlo. Si vas a presionar sobre su brazo para realizarle la prueba, explica el procedimiento previamente y obtén su permiso.
 
+Es posible examinar a otras personas a través del autoexamen sin que ellos lo sepan, lo cual está mal.
+___
+**Es fundamental pedir permiso a la persona que vas a realizarle la prueba y es fundamental que cumplas con sus deseos.**
+___
 
-----------
+Realizarle pruebas a las personas sin su permiso o contra sus deseos es una verdadera invasión de su intimidad y simplemente es un gran error. No es ético. No lo hagas
 
+Nunca examines o atiendas a un menor sin el permiso de su padre o tutor
 
-**I’ve found that this is usually due to one of two things. Either they are dehydrated or one or more bones in their neck is out of alignment.**
+#### La prueba muscular no es una lotería
 
+La prueba muscular es un don de Dios para permitirnos ayudarnos los unos a los otros. No se debe utilizar para determinar cuáles son los números ganadores de la lotería, no se debe utilizar para preguntar si deberías aceptar un trabajo, etc. Preguntar cualquier tipo de cosa que no esté relacionada con la salud, de todas formas, según mi experiencia, probablemente no funcionará. Puedes preguntar acerca del presente, pero no trates de ver el futuro ya que la prueba muscular no es para ese fin y los resultados serían poco fiables. Este tipo de prueba es para el presente y se aplica a lo que está sucediendo ahora, en el presente, y también determina las emociones atrapadas del pasado.
 
-----------
+#### No utilices la prueba para tomar grandes decisiones
 
+Deberás confiar en mí esta vez. De acuerdo a mi experiencia, me ha quedado claro que la prueba es un don de Dios que tiene un propósito específico, pero que ese fin es limitado. Puedes hacer la prueba muscular para cada decisión que tomes, pero no lograrás nada más que volverte neurótico, según mi opinión. Utiliza la prueba muscular para encontrar emociones atrapadas y para ayudarte a ti mismo y a otros a estar y permanecer bien físicamente y nada más.
 
-When someone is dehydrated, it directly affects their muscle strength and their electrical conductivity. Have them drink a glass of water, then try again. Sometimes, that’s all it takes. You may also drink some water; if you are dehydrated the testing will be affected in the same way.
+#### Permítete ser guiado
 
+No seas tan orgulloso como para pedirle ayuda Dios. Él ya sabe las respuestas que estás buscando y quiere ayudarte, pero tienes que preguntar. Esto me recuerda el famoso cuadro de Cristo, en el que está de pie frente a la puerta de una casa, llamando a la puerta. Lo extraño es que la puerta no tiene picaporte del lado de afuera. Él no abrirá la puerta. Tú tienes que hacerlo. Y créeme cuando te digo que cuando hago una oración en silencio cada vez que examino a alguien y le pido a Dios que me ayude cada vez Él siempre lo hace. Inténtalo
 
-If they need a neck adjustment, misaligned bones may be creating interference in the nervous system, inhibiting the nerve connections and throwing off the messages to their muscles. In that case, they should see their chiropractor for an adjustment, after which they should be testable.
+#### Sé paciente contigo mismo
 
-Please note that it is always possible to test an untestable person by testing on yourself if you are practiced at it. You can also work around this problem by using surrogate testing, which we’ll discuss in more detail in chapter 8. Instead of testing the subject directly, surrogate testing allows you to test a third person and still tap into the subconscious of the subject to get the desired answers.
+Algunas personas captan estas habilidades muy fácilmente mientras que a otras les lleva más tiempo. Te prometo que si perseveras, te resultará fácil y te abrirá un mundo entero de sanación.
+____
+**La primera vez que alguien te mire a los ojos y te agradezca con lágrimas en los ojos lo que has hecho por él, entenderás a lo que me refiero.**
+____
 
+No hay nada más adictivo que ese sentimiento de ayudar a las personas; es el más grande y no ocurre siempre, pero sucederá si simplemente en tu corazón deseas ayudar a cuántas personas puedas.
 
-----------
+#### Establece un punto de partida
 
+Debido a que las personas son tan diferentes, es fundamental establecer un punto de partida con cada persona para que sepas cómo se siente la congruencia o incongruencia en su caso.
 
-**If someone is determined not to be muscle tested, they will usually succeed.**
+La manera más sencilla de realizarlo es hacerlos decir una afirmación verdadera conocida y después una falsa, por ejemplo, decir su propio nombre y a continuación, decir su nombre como el nombre de otra persona; o hacerlos decir una palabra positiva como “sí” o “amor” seguida de una palabra negativa como “no” u “odio”.
 
+#### Revisa tu trabajo
 
-----------
+Si durante una prueba obtengo un músculo fuerte o un músculo débil tres veces seguidas o más, me gusta hacer nuevamente la prueba del punto de partida para asegurarme si la persona todavía está en condiciones de ser examinada.
 
+Si tu prueba te está llevando más tiempo que el habitual, es una buena idea revisar tu punto de partida periódicamente para asegurarte que vas por el buen camino. A veces las personas entran en sobrecarga mientras las estás examinando y en ese caso obtendrás debilidad en cada prueba que realices hasta que hayan acabado el proceso. Es una buena práctica realizarles una prueba sobre una palabra negativa si continuas obteniendo respuestas fuertes y viceversa.
 
-But that means they’re deliberately being uncooperative and don’t want the testing to work. They’ve got their own agenda. If that’s the case they’re not an ideal candidate for the Emotion Code. Now and then, I’ve run into people who have already made up their minds that muscle testing doesn’t work. And wouldn’t you know it? It doesn’t work on them! They make sure of that.
+#### Ten cuidado con los pensamientos errantes
 
+Es posible influir en el resultado de las pruebas por lo que estás pensando. Si no me crees, sólo mira lo que sucede cuando le realizas la prueba muscular a alguien mientras piensas en algo negativo o peyorativo acerca de ellos. Estarán débiles. Es realmente importante mantenerse concentrado.
 
-As you’ve seen, these tests are not about sheer physical force. I have seen cases where a person’s muscle went so weak that they literally could not resist the slightest downward pressure, but that’s not usually the case. More often, what you will detect is a slight change in muscle strength, the difference between the muscle being ‘locked’ or ‘mushy’.
+Si estás teniendo pensamientos negativos acerca de la persona a la que le estás realizando la prueba, incluso si esa persona eres tú,los músculos los pueden captar fácilmente y se pueden debilitar.
 
+Las intenciones positivas y la claridad son importantes para obtener pruebas precisas. No te compliques, concéntrate en la declaración que ha sido recién dicha y mantén otros pensamientos fuera de tu mente. Indícale a la persona a la que le estés realizando la prueba que haga lo mismo.
 
-Muscle testing works on most of the people, most of the time. But other things can come into play. Sometimes it doesn’t work because they’re just not comfortable for some reason. Or they think it’s hokey. Or they’re defensive, afraid that something might be revealed about them. For example, I have found that sometimes people will be untestable in front of a group of people, yet become perfectly testable when they are no longer in front of an audience.
+Permite que el amor llene tu corazón por la persona que estás tratando de ayudar. Ten un deseo sincero de ayudarla. Confía en que puedes hacerlo y agradece a Dios que lo estás haciendo. Eso es todo.
 
-#### Always Get Permission
+#### No diagnostiques a menos que seas médico
 
-Always explain what you are going to do before you do it. If you are going to be pressing down on their arm to test them, explain the procedure beforehand and get their permission.
+Si eres médico, diagnosticar gente es lo que haces. Pero si no eres médico, nunca diagnostiques a nadie, ya que se esto considera como la práctica de la medicina sin licencia y es ilegal. Sé consciente de lo que la gente te está diciendo y si están teniendo síntomas que te parecen totalmente inusuales, recomiéndales que busquen la atención médica adecuada.
 
-It is possible to test other people through self-testing without their knowing it, and this is wrong.
+#### No te preocupes por los no creyentes
 
+No todas las personas están abiertas a aprender acerca de métodos nuevos de sanidad como El Código de la Emoción. Puede ser que algunos de los integrantes de tu familia piensen que estás loco o que tu perro te abandone. No dejes que estas cosas te molesten. El sanador más grande de la historia fue Jesús y muy pocos le creían, entonces estás en buena compañía.
 
-----------
+#### ¿A quién o qué estamos preguntando cuando realizamos la prueba?
 
+Le estamos hablando al subconsciente. Creo que no hay diferencia entre esto y el espíritu o inteligencia superior en todos nosotros. De alguna manera esta parte de nosotros está vinculada a la inteligencia de Dios y el Universo, y de alguna forma la prueba muscular interviene en esto.
 
-**It is critical to ask permission of the person you are going to test, and it is critical that you honor their wishes.**
+#### El velo de la memoria
 
+Cuando estás ayudando a alguien, en realidad estás ayudando a un ser con una naturaleza doble que tiene un cuerpo físico y un espíritu. Creo que cuando venimos a este mundo hay un velo colocado sobre nuestras mentes y entonces no tenemos recuerdos de nuestra previa existencia. Llegamos con una amnesia total.
 
-----------
+Permíteme compartir contigo una experiencia personal sobre este concepto.
 
+Un día al sentarme en silencio a meditar, tuve una visión espiritual profunda.
 
-Testing people without their permission or against their wishes is a true invasion of their privacy and is just plain wrong. It’s unethical. Don’t do it!
+El velo de la memoria que nos divide de nuestra existencia antes de que vengamos aquí a esta tierra de repente se rompió. Cada partícula de mi ser se llenó instantáneamente de un sentimiento inmenso e indescriptiblemente poderoso de añoranza. Añoranza por regresar a mi casa celestial, mi verdadero hogar, aquel del que vine. Esta sensación imposiblemente intensa sólo duró unos pocos segundos y después desapareció, dejándome tambaleante de sobrecogimiento.
 
-Never test or work on a minor without the permission of their parent or guardian!
+En el transcurso de los años de mi vida, he experimentado ese sentimiento que llamamos añoranza en varias ocasiones; pero la nostalgia que experimenté en esta revelación espiritual estaba mucho más allá de cualquier cosa que incluso pueda describirte.
 
-#### Muscle Testing is Not for Winning the Lotto
+Gracias a esta experiencia me di cuenta de que este velo del olvido es algo bueno. Si no lo tuviéramos para bloquearnos de los recuerdos de nuestro pasado glorioso cuando vivíamos con nuestro Padre Celestial, estoy convencido de que no seríamos capaces de soportar esta vida terrenal por cinco minutos.
+___
+**A través de esta experiencia me di cuenta de que realmente somos extranjeros aquí; que “nubes de gloria venimos de Dios, quien es nuestro hogar”.**
+___
 
-Muscle testing is a gift from God, to allow us to help each other. It is not to be used to test for the winning lotto numbers, it is not to be used to ask if you should take that job, etc. Asking about anything unrelated to health probably won’t work anyway, in my experience. You can ask about the present, but do not try to see the future, as muscle testing is not for that purpose and the results would be unreliable at best. This kind of testing is for the present, and applies to what is happening now, in the present, as well as determining trapped emotions from the past.
+La tierra no es nuestro hogar realmente; somos residentes aquí, enviados aquí para elegir entre el bien y el mal; enviados aquí para adquirir fe y para ganar la experiencia de vivir en nuestros cuerpos físicos. Somos enviados aquí para aprender a amar y servirnos los unos a los otros. Haciéndolo, servimos a Dios.
 
+En cierto nivel, tu espíritu está en contacto con cosas que están más allá de la comprensión de tu mente consciente. Pero tu espíritu puede hablarte a través de tu cuerpo físico. La prueba muscular es el conducto que te permite acceder a ese conocimiento.
 
-#### Do Not Use Testing to Make Big Decisions
+Creo que siempre hemos existido y que ese conocimiento más profundo reside en el fondo de nuestras mentes más de lo que podemos saber conscientemente.
 
-You will have to trust me on this one. Speaking from experience, it has become clear to me that testing is a gift from God that has a specific purpose, but that purpose is limited. You can muscle test every decision you make, but you won’t get anything but neurotic, in my opinion. Use muscle testing to find trapped emotions and to help yourself and others to get and stay physically well and leave it at that.
+¿No es fantástico que todo lo que tenemos que hacer sea preguntar?
 
+[^1]: David R. Hawkins, Power vs. Force: the hidden determinants of human behavior,
 
-#### Allow Yourself to be Guided
-
-Don’t be too proud to ask God for help. He already knows the answers you are looking for, and he wants to help you, but you have to ask. I am reminded of the famous painting of Christ, where he is standing at the front door of a home, knocking. The funny thing is, the front door has no doorknob on the outside. He won’t open the door. You have to do it. And believe me when I tell you that I utter a silent prayer every single time I test anyone, and I ask God to help me, every single time, and He always does. Try it!
-
-#### Be Patient With Yourself
-
-Some people grasp these skills very easily while others take more time. I promise you that if you will persevere, it will become easy for you, and it will open a whole world of healing to you.
-
-
-----------
-
-
-**The first time someone looks into your eyes and thanks you with tears in their eyes for what you have done for them, you will understand what I mean.**
-
-
-----------
-
-
-There is nothing more addicting than that feeling of helping people. It’s the greatest! And it doesn’t happen every time, but it will happen if you just have it in your heart to help as many people as you can.
-
-#### Establish a Baseline
-
-Because people are so different, it’s crucial to establish a baseline with every person so that you know what congruency or incongruence feels like in their particular case.
-
-The simplest way to do this is to have them make a known true statement, then a known false statement, such as stating their name as their own name, then stating their name as the name of someone else, or have them say a positive word such as “yes” or “love”, followed by a negative word such as “no” or “hate”.
-
-#### Check Your Work
-
-If during testing I get a strong muscle or a weak muscle three or more times in a row, I like to re-do the baseline test to make sure the person is still testable.
-
-If your testing is taking more time than usual, it’s a good idea to check your baseline periodically to make sure you are on track. Sometimes people can go into overload while you’re testing them, and in that case, you would get weakness on every test you perform until they are done processing. It’s good practice to test them on a negative word if you keep getting strong responses, and vice versa.
-
-
-#### Watch Out for Wandering Thoughts
-
-It is possible to influence the outcome of testing by what you are thinking. If you don’t believe me, just see what happens when you muscle test someone while thinking something negative or derogatory about them. They will be weak. It is really important to stay focused.
-
-
-If you are holding negative thoughts in your head about the person you’re testing – even if that person is you – the muscles can easily pick that up and go weak.
-
-Positive intentions and clarity are very important to getting accurate tests. Keep it simple, focus on the statement that has just been made, and keep other houghts out of your mind. Instruct the person you are testing to do the same.
-
-Allow love to fill your heart for the person you are trying to help. Have a sincere desire to help them. Believe that you can do it and be grateful to God that you are ***doing*** it. That’s all it takes.
-
-#### Don’t Diagnose Unless You Are a Doctor
-
-If you are a doctor, diagnosing people is what you do. But if you are not a doctor, never diagnose anyone, as that is known as practicing medicine without a license, and is illegal. Be aware of what people are telling you, and if they are having symptoms that seem at all unusual to you, recommend to them that they seek adequate medical attention.
-
-
-#### Don’t Worry About Non - believers
-
-Not everyone is open to learning about new methods of healing such as the Emotion Code. You may have family members who think you are off your nut, or your dog may leave you. Don’t let these things bother you. The greatest healer in history was Jesus, and very few believed him, so you are in good company.
-
-#### Who or What Are We Asking When We Test?
-
-We’re talking to the subconscious mind. The way I look at it, there is no difference between this and the spirit or higher intelligence in all of us. Somehow this part of us is linked to the intelligence of God and the Universe, and somehow muscle testing seems to tap into these as well.
-
-### The Veil of Memory
-
-When you work on someone, you are really working on a dual-natured being that has a physical body and a spirit. I believe that when we come into this world there’s a veil placed over our minds, so we have no memory of our previous existence. We arrive with complete amnesia.
-
-
-Allow me to share with you a very personal experience about this concept.
-
-One day as I sat quietly in meditation I had a profound spiritual insight.
-
-The veil of memory that divides us from our existence before we came here to this earth was suddenly broken for me. Every particle of my being was instantaneously filled with an overwhelming and indescribably powerful feeling of *homesickness*. Homesickness to be back in my heavenly home, my *real home* where I came from. This impossibly intense feeling only lasted for a few seconds, and then was gone, leaving me reeling with awe.
-
-I’ve experienced over the years of my life that feeling that we call homesickness on a number of occasions, but the homesickness I experienced in this spiritual revelation was far beyond anything that I can even describe to you.
-
-I realized from this experience that this veil of forgetfulness is a good thing. If we didn’t have it to block us from the memories of our glorious past when we lived with our Heavenly Father, I’m convinced we would not be able to endure this earth life for five minutes.
-
-
-----------
-
-
-**I realized from this experience that we truly are strangers here; that “trailing clouds of glory do we come from God, who is our home.”**
-
-
-----------
-
-
-The earth is not really our home; we are sojourners here, sent here to choose between good and evil; sent here to gain faith and to gain the experience of living in physical bodies. We are sent here to learn to love and serve one another. By doing so, we serve God.
-
-At some level, your spirit is in touch with things that are beyond the comprehension of your conscious mind. But your spirit can speak to you through your physical body. Muscle testing is the conduit that enables you to tap into that knowledge.
-
-I believe that we have always existed, and that more profound knowledge lies deep within our minds than we can consciously know.
-
-Isn’t it great that all we have to do is ask?
-
-
-
-[^1]: David R. Hawkins, Power vs. Force: the hidden determinants of human behavior, (Carlsbad, CA: Hay House, Inc. 1995), 59.
-
+(Carlsbad, CA: Hay House, Inc. 1995), 59.
 [^2]: Ibid, 34.

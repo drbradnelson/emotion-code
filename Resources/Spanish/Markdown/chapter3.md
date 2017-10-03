@@ -1,410 +1,331 @@
-# Part II 
-
-# The Energetic World
 
 
-*Our birth is but a sleep and a forgetting: the soul that rises with us, our life’s star, hath had elsewhere its setting, and cometh from afar. Not in entire forgetfulness, and not in utter nakedness, but trailing clouds of glory do we come from God, who is our home.*
-*- William Wordsworth*
+
+# PARTE II
 
 
-## Mysteries of the Ancient Energy Healers   
+# EL MUNDO ENERGÉTICO
+
+*NUESTRO NACIMIENTO NO ES SINO UN SUEÑO Y UN OLVIDO:EL ALMA QUE CON UNO SE DESPIERTA, LA ESTRELLA DE NUESTRA VIDA, HA TENIDO SU LUGAR EN OTRA PARTE, Y VIENE DESDE LEJOS. NO EN UN OLVIDO ABSOLUTO NI EN COMPLETA DESNUDEZ, SINO DIBUJANDO NUBES DE GLORIA DE DIOS, DONDE ESTÁ NUESTRA MORADA.*
+*- WILLIAM WORDSWORTH*
+
+## MISTERIOS DE LOS ANTIGUOS CURANDEROS FR ENERGIA
 
 
-In 1939, a Russian electrical technician named Semyon Kirlian discovered what is now known as Kirlian photography.[^1] Kirlian photography uses pulsed, high voltage frequencies to take pictures of the radiating energy fields that surround all living things. The technique is also referred to as Gas Discharge Visualization, or GDV.
+En 1939, un técnico eléctrico ruso llamado Semyon Kirlian descubrió lo que actualmente se conoce como la fotografía Kirlian.[^1] La fotografía Kirlian utiliza frecuencias de pulsaciones de alta tensión para tomar fotografías de los campos de energía radiante que rodean a todos los seres vivos. La técnica también se conoce como Visualización de Descarga de Gas (Gas Discharge Visualization) o GDV.
 
-Russian scientists have performed a significant amount of research using Kirlian photography over the last 65 years, and have found that all things exhibit the characteristics of an energy field, although living things have a much more vibrant energy field than inanimate objects.[^2]
+En los últimos 65 años, los científicos rusos han realizado una cantidad significativa de investigaciones mediante la fotografía Kirlian; y han descubierto que todas las cosas ponen de manifiesto características de un campo de energía. Aunque las cosas vivientes tienen un campo de energía más vibrante que los objetos inanimados.[^2] Quizás las imágenes de Kirlian más llamativas son aquellas de hojas que han sido cortadas a la mitad, y aún así muestran los campos de energía completos intactos de las hojas enteras.[^3] ¿Es posible que estas imágenes de Kirlian estén en realidad revelando la naturaleza espiritual interior de las cosas?
 
+![](4.jpg)
+*Fotografia de Kirlian de una Hoja Cortada*
 
-![](4.jpg) 
-`Kirlian photo of cut leaf`
+La existencia del “Campo Energético Humano” ha sido un principio básico de las artes de sanación desde hace mucho tiempo. Los hindúes comprendían la fuerza vital vivificadora que impregna y da vida a todas las cosas como Prana, una creencia que se remonta a los 5.000 años. Los chinos pensaban que esta energía se llamaba Chi, una creencia de que si el Chi es desequilibrado en un individuo, el resultado es la mala salud.
 
-Perhaps the most striking Kirlian images are those of leaves which have been cut in half, yet still show the complete, intact energy fields of the whole leaves.[^3]  Is it possible that these Kirlian images are actually revealing the inner, spiritual nature of things?
-The existence of the “Human Energy Field” has been a basic tenet of the healing arts for a very long time. The Hindus understood the vital, life-giving force which permeates and gives life to all things to be *Prana*, an understanding going back 5,000 years. The Chinese taught that this energy is called *Chi*, and understood that if the Chi is imbalanced within an individual, the result is poor health.             
+A lo largo de la historia, tantas como 97 culturas diferentes y separadas creían en el campo energético humano.
+
+Las emociones atrapadas distorsionan y bloquean el flujo de esta energía y el Código de la Emoción es una forma sencilla de traer esta energía a un estado equilibrado.
+
+### El espíritu y el templo
+
+Creo que el campo energético humano es esencialmente el espíritu que existe dentro de cada uno de nosotros. Considero que si pudieran de alguna manera arrancar mágicamente sus espíritus de sus cuerpos y ponerlos uno al lado del otro para compararlos, la semejanza los sorprendería.
+
+Muchas de las experiencias cercanas a la muerte que han sido grabadas revelan que las personas que han “muerto” en realidad sólo han dejado sus cuerpos por un tiempo. A veces ni siquiera se dan cuenta que han muerto hasta que miran hacia abajo y ven su cuerpo físico acostado allí mientras que revolotean por encima de él. Las personas como estas han sabido por experiencia propia que son sus cuerpos físicos. En cambio, su cuerpo es más que nada un templo que alberga su ser espiritual.
+
+Una vez tuve una experiencia que nunca olvidaré, ya que me enseñó la verdad de este concepto. Cuando ejercía regularmente veía muchos pacientes en condiciones difíciles y crónicas. Tenía el hábito de ofrecer una oración a Dios en silencio para que me guiara antes de cada tratamiento; y llegué a apreciar Su ayuda en muchas ocasiones cuando mi propio conocimiento era insuficiente.
+
+Un día, después de ofrecer en silencio una oración pidiendo ayuda, mi atención se dirigió aºun paciente que estaba acostado sobre una camilla delante de mí. En ese momento, desde el cielo se me dio un don de entendimiento. Percibí que estaba de pie en presencia de un templo sagrado; el templo del cuerpo. Me llené del sentimiento más profundo de admiración y reverencia. Esta percepción inspiradora reveló la verdad acerca del cuerpo en un nivel mucho más alto de comprensión que nunca antes había tenido.
+
+Esta experiencia espiritual cambió la manera en la que veo a las personas. Siempre he sentido mucho amor y respeto por la humanidad, pero ahora me doy cuenta de que la verdad de nuestra existencia es más profunda y sagrada de lo que imaginamos. Somos verdaderos seres espirituales que tenemos una experiencia física aquí en la Tierra.
+
+### Cómo afectan tus pensamientos a otros
+
+Tus pensamientos se originan de tu inteligencia espiritual y tienen un efecto profundo en aquellos que te rodean. Tus pensamientos son energía y están continuamente radiando desde tu cuerpo, sin límites.
+
+La energía de tus pensamientos y sentimientos ejerce un efecto sutil en el resto de las personas, así como otras formas de vida. Estamos constantemente en contacto con los demás, nos demos cuenta o no, ya que toda la energía es continua y conectada.
+
+Una paciente llamada Linda vino a verme. Padecía el Síndrome de Fatiga Crónica. Me expresó que los síntomas de su enfermedad comenzaron antes de que ella empezara a compartir una parte de la oficina con una mujer muy negativa. Esta mujer estaba constantemente quejándose de todo. Linda sentía que la energía de esta mujer había provocado la espiral descendente en su salud.
+
+### Los pensamientos son cosas
+
+Los sanadores antiguos tenían un entendimiento profundo del poder del pensamiento. En mis seminarios utilizo una prueba simple para ilustrar cómo los pensamientos pueden tener un efecto poderoso sobre la mente y el cuerpo de otra persona, incluso a la distancia.
+
+Tengo un voluntario de pie en el frente de la sala dándole la espalda a la audiencia. Realizo una rápida prueba muscular para asegurarme de que se puede probar; le hago decir “amor”; y a continuación, presiono suavemente pero con firmeza sobre su brazo extendido. Esto debería dar una fuerte respuesta del músculo y él debería ser capaz de resistir mi presión hacia abajo sin ningún problema. Luego, le hago decir “odio” y nuevamente presiono sobre su brazo, que ahora está debilitado, haciendo que no pueda resistirlo.
+
+Una vez que me aseguro de que estamos listos para la demostración, le solicito al voluntario que mantenga sus ojos cerrados y su mente clara. Me aseguro de mantener yo también mi mente clara para no interferir en la demostración. Después le indico a la audiencia que cuando dé la señal poniendo mis pulgares hacia arriba detrás de su espalda, tienen que enviarle silenciosamente al voluntario pensamientos positivos, como por ejemplo “Te amo” o “Eres maravilloso”. Le digo a la audiencia que cuando dé la señal poniendo mis pulgares hacia abajo detrás de su espalda, tienen que tener pensamientos negativos hacia el voluntario, como por ejemplo “Te odio” o “Eres asqueroso”.
+
+Con mi señal de pulgares hacia arriba, la audiencia comienza a enviar pensamientos positivos hacia él y yo presiono suavemente hacia abajo sobre su brazo estirado. Me quedo en silencio durante la demostración para demostrarle a toda la audiencia que es su energía de pensamiento únicamente la que está creando el efecto. Sin excepción, el brazo de la persona está siempre fuerte.
+
+Luego, doy la señal de pulgares hacia abajo y la audiencia comienza a enviarle al voluntario pensamientos negativos. Presiono sobre su brazo de nuevo; pero en lugar de ser fuerte, su brazo está siempre débil. Recuerda que durante este proceso, él no se da cuenta conscientemente de qué señales le estoy dando a la audiencia. No sólo que le está dando la espalda sino que mi comunicación con la audiencia no es vocal, las señales que hago con mis manos son detrás de su espalda y sus ojos están cerrados.
+
+Esta simple prueba ha dado constantemente resultados fiables durante todos mis años enseñando seminarios. Funciona porque estamos hechos de energía y los pensamientos son energía también. Cuando la energía de pensamiento de otros pasa a través de tu ser energético siempre debe haber un efecto, ya sea positivo o negativo. En este caso, los pensamientos negativos de la audiencia acerca del voluntario lo debilitan de forma demostrable. Sus pensamientos positivos lo fortalecen. Esta prueba fascinante e incluso sencilla tiene algunas implicaciones bastante profundas.
+
+Por supuesto, tus propios pensamientos tendrán el efecto más drástico e inmediato sobre el estado de tu propio campo de energía. El cambio de tu pensamiento de positivo a negativo cambiará inmediatamente tu energía vibracional de positiva a negativa. Inevitablemente, esto producirá resultados negativos; el más obvio e inmediato de ellos es un debilitamiento generalizado del cuerpo. Podrás imaginar cómo los pensamientos negativos afectan a tu cuerpo debilitando los órganos y tejidos de tu cuerpo, y cómo continuar en este estado puede ser peligroso para tu salud y tu bienestar.
+
+Tu subconsciente está al tanto de los pensamientos negativos que podrían estar perjudicándote, ya sea que se trate de tus propios pensamientos o no. A menudo, tu mente consciente es lenta para detectar energías negativas si no puedes ver prueba de ellas, como expresiones faciales, lenguaje corporal o comunicación verbal. Esta “prueba” es la que te han enseñado a buscar desde que eras pequeño.
+
+Creo que todos nosotros hemos sido de alguna manera insensibilizados, entonces la mayoría de nosotros no somos capaces de detectar conscientemente la energía que no podemos ver.
 ___
-**Throughout history, as many as 97 diverse and separate cultures had a belief in the human energy field.**
-___
-Trapped emotions distort and block the flow of this energy, and the Emotion Code is one simple way to bring this energy back to a more balanced state.
-
-
-### The Spirit and the Temple
-
-I believe the human energy field is essentially the spirit that exists within each of us. I believe that if you could somehow magically pull your spirit out of your body and stand them alongside each other for comparison, the likeness would surprise you.
-
-Many of the near-death experiences that have been recorded reveal that people who have “died” have actually just left their bodies for a time. Sometimes they don’t even realize that they have died until they look down and see their physical body lying there as they hover above it. Individuals such as these have come to know by their own experience that they are not their physical body. Instead, their body is more like a temple that houses their spirit-self.
-
-I had an experience once that I will never forget, as it taught me the truth of this concept. When I was in practice I regularly saw many patients with difficult and chronic conditions. I was in the habit of saying a short and silent prayer to God for guidance before each treatment, and I came to appreciate His help on many occasions when my own knowledge proved inadequate.
-
-One day, after uttering a silent prayer for help, I turned my attention to the patient lying on the table before me. At that moment, I was given a gift of understanding from above. I perceived that I was standing in the presence of a sacred temple; the temple of the body. I was filled with the deepest sense of awe and reverence. This inspired perception revealed the truth about the body on a much higher level of understanding than I’d ever had before.
-
-This spiritual experience changed how I see people. I have always had a lot of love and respect for mankind, but now I realize that the truth of our existence is more profound and sacred than we imagine. We truly are spiritual beings, having a physical experience here on this earth.
-
-
-### How Your Thoughts Affect Others
-
-Your thoughts originate from your spirit intelligence and can have a profound effect on those around you. Your thoughts are energy, and are continually radiating from your body, without limits.
-___
-**The energy of your thoughts and feelings exerts a subtle effect on other people as well as other forms of life. We are constantly making contact with others whether we realize it or not, since all energy is continuous and connected.**
-___
-
-A patient named Linda came to me suffering from Chronic Fatigue Syndrome. She expressed to me that the symptoms of her illness started after she began sharing a cubicle with a very negative woman at her office. This woman was constantly seething about one thing or another. Linda felt that this woman’s
-negative energy had triggered the downward spiral of her health.
-
-### Thoughts are Things
-
-Ancient healers had a profound understanding of the power of thought. In my seminars I use a simple test to illustrate how thoughts can have a powerful effect on another person’s mind and body, even at a distance.
-
-I have a volunteer stand at the front of the room with his back to the audience. I perform a quick baseline muscle test to make sure he is testable, by having him say “love”, and then pressing down gently but firmly on his outstretched arm. This should give a strong muscle response, and he should be able to resist my downward pressure without any trouble. Then I have him say “hate”, and again I press down on his arm, which now is weakened, making him unable to resist.
-
-
-After making sure we are ready for the demonstration, I instruct the volunteer to keep his eyes closed and his mind clear. I make sure to keep my mind clear as well, so I won’t interfere with the demonstration. I then instruct the audience that when I give the thumbs-up signal behind his back, they are to silently send positive thoughts to the volunteer, such as “I love you”, or “You are wonderful.” I tell the audience that when I give the thumbs down signal behind his back, they are to think negative thoughts about the volunteer, such as “I hate you”, or “You are disgusting.”
-At my thumbs-up signal, the audience begins sending positive thoughts toward him, and I gently push down on his outstretched arm. I remain silent during the demonstration to illustrate to everyone in the audience that it is their thought energy alone that is creating the effect. Without exception, the subject’s arm is always strong.
-
-Then I give the thumbs-down signal and the audience begins sending negative thoughts to the volunteer. I press down on his arm again, but instead of being strong, his arm is invariably weak. Remember that during this process, he is not consciously aware of what signals I am giving the audience. He not only has his back to them, but my communication with the audience is non-vocal, my hand signals to them are given behind his back, and his eyes are closed.
-
-
-This simple test has given consistently reliable results during all my years of teaching seminars. It works because we are made of energy, and thoughts are energy, too. When thought energy from others passes through your energetic being, there must always be an effect, either positive or negative. In this case, the audience’s negative thoughts about the volunteer weaken him demonstrably. Their positive thoughts strengthen him. This fascinating, yet simple test has some rather profound implications.
-
-
-Of course, your own thoughts will have the most drastic and immediate effect on the state of your own energy field. Shifting your thinking from positive to negative will immediately shift your vibrational energy from positive to negative. This will inevitably produce negative results, the most obvious and immediate of which is a generalized weakening of the body. You might imagine how negative thoughts have a weakening affect on your body’s organs and tissues, and how continuing in this state might be dangerous to your health and well-being.
-
-
-Your subconscious mind is aware of negative thoughts that might be harming you, whether they are your own thoughts or not. Often your conscious mind is slow to detect negative energies if you cannot see proof of them, like facial expressions, body language or verbal communication. This “proof ” is what you have been taught to look for since you were a little child.
-
-I think we have all been somewhat desensitized, and so most of us are unable to consciously detect energy that we cannot see.
-___
-**We have been bombarded with information since the day we were born about what the world is supposed to be like.**
+**Nos han bombardeado con información desde el día que nacimos acerca de cómo se supone que es el mundo.**
 ___
 
-We are fed perspectives, opinions, prejudices, traditions, theories, facts, and doctrines. We hope that what we have learned is based in truth. We go to school to learn the “facts” about nature, science and the history of the world. By the time we reach adulthood, our ideas about the world are essentially in place. 
+Somos perspectivas, opiniones, prejuicios, tradiciones, teorías, hechos y doctrinas inducidas. Esperamos que lo que hemos aprendido esté basado en la verdad. Vamos a la escuela a aprender los “hechos” sobre la naturaleza, la ciencia y la historia del mundo. En el momento que llegamos a la madurez, nuestras ideas acerca del mundo están esencialmente en su lugar.
 
-When new information comes along, it is only natural that our minds are slow to accept and understand things that don’t fit with previously learned information. It might be hard to accept if the new information requires us to make some changes in our thinking, especially if it goes against what we’ve been taught.
+Cuando llega nueva información es simplemente natural que nuestras mentes sean lentas para aceptar y entender las cosas que no encajan con la información adquirida previamente. Esto podría ser difícil de aceptar si la nueva información requiere que hagamos algunos cambios en nuestra manera de pensar, sobre todo si va en contra de lo que nos han enseñado.
 
-### The Nature of Things
+### La naturaleza de la cosas
 
-Most of us never learned that everything around us is made of energy, vibrating at different levels, making things look different, taste different, smell different, and feel different. We live in what I like to call a “Lego” universe. In case you have been living in a cave, (or perhaps have no experience with children) Legos are little plastic building blocks that come in various colors, shapes and sizes. Anyone who has been to a Legoland theme park can tell you that these little plastic building blocks can be used to build anything from elephants to skyscrapers.
+La mayoría de nosotros nunca se enteró de que todo lo que nos rodea está hecho de energía, vibrando en diferentes niveles, haciendo que las cosas parezcan diferentes, que tengan diferentes sabores y olores, y se sientan de manera diferente. Vivimos en lo que me gusta llamar un universo “Lego”. En caso de que hayas estado viviendo en una cueva (o quizás no tengas experiencia con niños) los Legos son pequeños ladrillos de plástico que vienen en diferentes colores, tamaños y formas. Todos aquellos que hayan ido alguna vez al parque temático Legoland pueden decirte que estos pequeños ladrillos pueden ser utilizados para armar desde elefantes hasta rascacielos.
 
+Nuestro universo también está hecho de pequeños ladrillos llamados partículas subatómicas. En realidad, no son partículas pero puedes imaginártelas como unidades de energía infinitamente pequeñas. Si pones suficiente cantidad de estas energías pequeñas juntas, obtienes un átomo. Como los Legos, diferentes disposiciones de estas energías pequeñas producirán átomos de elementos distintos, como el hidrógeno, el carbono, el titanio, etc. Insisto, como los Legos, varios átomos pueden ser colocados para hacer moléculas que llamamos proteínas, grasas, hidratos de carbono, y así sucesivamente. Al final, todas las cosas que vemos alrededor de nosotros y literalmente todo lo que existe, ya sea vegetal, animal, mineral, gas, líquido, sólido o cualquier otra cosa, están hechas de estos pequeños ladrillos, los cuales están hechos de energía.
 
-Our universe is also made of little building blocks called subatomic particles. They are actually not particles at all, but you can think of them as infinitesimally small units of vibrating energy. If you put enough of these little energies together, you have an atom. Like Legos, differing arrangements of these little energies will produce atoms of different elements, such as hydrogen, carbon, titanium and so on. Again, like Legos, various atoms can be arranged to make molecules that we call proteins, fats, carbohydrates, and so on. Ultimately, all the things we see around us and literally everything that exists, whether plant, animal, mineral, gas, liquid, solid or anything else, is made of these little building blocks, and they are made of energy.
+### El misterioso mundo cuántico
 
-### The Mysterious Quantum World
+Las partículas subatómicas no son realmente partículas; son en cambio un “quántum” o cantidad de algo que es bastante indefinible. La física cuántica o el estudio de estas unidades más pequeñas de energía comenzó con Albert Einstein y sus contemporáneos. Estos científicos brillantes elaboraron algunos experimentos muy ingeniosos en un intento por descubrir más acerca de la naturaleza de estas energías. Uno de los aspectos más sorprendentes de la investigación cuántica revela que las energías se comportan de diferentes maneras dependiendo de lo que el observador está esperando ver. Muchos físicos creen que la única explicación de estos comportamientos misterios es que las energías dentro del átomo son inteligentes en algún pequeño grado.[^4]
 
-Subatomic particles are not really particles; they are instead a “quantum”, or a quantity of something that is quite indefinable. Quantum physics, or the study of these smallest units of energy, was started by Albert Einstein and his contemporaries. These brilliant scientists devised some very ingenious experiments in an attempt to discover more about the nature of these energies. One of the most startling aspects of quantum research reveals that these energies behave in different ways depending on what the observer is expecting to see. Many physicists believe that the only explanation for these mysterious behaviors is that the energies within the atom are themselves *intelligent* to some small degree. [^4]
+n un experimento famoso, los científicos dividieron un átomo, enviando dos de sus partículas (o energías) que viajan en direcciones distintas casi a la velocidad de la luz. Una vez que las partículas habían viajado una distancia determinada en direcciones diferentes, una de las partículas pasó a través de un campo magnético potente que cambió la dirección de su viaje. En el mismo instante, su partícula hermana cambió también su dirección, precisamente en el mismo ángulo.
 
-In one famous experiment, scientists split an atom, sending two of its particles (or energies) traveling in different directions at nearly the speed of light. After the particles had journeyed a certain distance in different directions, one of the particles passed through a powerful magnetic field which changed its direction of travel. At the same instant, its sister particle changed direction too‑ at precisely the same angle. Though a considerable distance separated them, the two particles were still mysteriously connected. What happened to one instantly affected the other, with no regard to distance or separation. How do you think this could be? How could these little energies perform such a feat of apparently instantaneous communication if they were so far apart? [^5]
+Aunque una distancia considerable las separaba, las dos partículas estaban todavía misteriosamente conectadas. Lo que le pasaba a una, instantáneamente afectaba a la otra a pesar de la distancia o la separación. ¿Cómo crees que esto pudo ser posible? ¿Cómo pudieron estas energías pequeñas realizar semejante hazaña de aparentemente comunicación instantánea si estaban tan separadas?[^5]
 
-No one really knows for certain, at least not yet. However, quantum physics has shown this phenomenon over and over again. Making a change in one particle will cause an instantaneous and equivalent change in a connected particle, no matter how far away it is. It appears that distance is no barrier to the connectedness of their energy. Remember, everything is connected to everything else![^6]
+Nadie lo sabe realmente con certeza, al menos no todavía. Sin embargo, la física cuántica ha demostrado este fenómeno una y otra vez. El cambio en una partícula, causará un cambio instantáneo y equivalente en una partícula conectada, no importa cuán lejos esté. Parece que la distancia no es un obstáculo para la conectividad de su energía. Recuerda, ¡todo está conectado con todo lo demás![^6]
 
+#### Recordando a los Kamizakes
 
-#### Remembering the Kamikazes
+Sin embargo, este fenómeno inexplicable no se limita al comportamiento de las partículas subatómicas individuales. Se ha demostrado que esta extraña conectividad se produce en las células del cuerpo humano.
 
-This inexplicable phenomenon is not restricted to the behavior of individual subatomic particles, however. This strange connectedness has been shown to occur in the cells in the human body.
+En un estudio muy conocido, los glóbulos blancos de la sangre fueron extraídos de una persona y colocados en una placa de Preti. Los glóbulos blancos son responsables de buscar y destruir bacterias extrañas, toxinas y otros invasores. El individuo fue conectado a los electrodos para medir la actividad eléctrica de su cuerpo. Sus glóbulos blancos fueron también ubicados en un dispositivo altamente sensible que fue capaz de medir su actividad eléctrica. Mediciones exactas del nivel de actividad eléctrica fueron tomadas tanto del paciente como de sus glóbulos blancos.
 
-In one well-known study, white blood cells were taken from a subject and placed in a Petri dish. White blood cells are responsible for seeking out and destroying foreign bacteria, toxins, and other invaders. The subject was hooked up to electrodes to measure the electrical activity of his body. His white blood cells were also placed in a highly sensitive device that was able to measure their electrical activity. Exact measurements were taken of the electrical activity level of both the patient and his white cells.
+Uno de los hombres en el estudio ha servido a la Armada durante la Segunda Guerra Mundial en un portaaviones estacionado en el Pacífico. Mientras estaba allí, pilotos suicidas kamikaze japoneses habían atacado. El hombre estaba aterrado, y más de una vez, estaba seguro de que iba a morir.
 
-One of the men in the study had served in the Navy during World War II on an aircraft carrier stationed in the Pacific. While he was there, Japanese kamikaze suicide pilots had attacked. The man was terrified, and more than once, he was sure he was going to die.
+Después de haber sido conectado a los electrodos, se le mostraron unas secuencias de escenas de pilotos kamikaze cayendo en picado y atacando portaaviones durante la guerra. Si bien era un acontecimiento que había ocurrido hacía mucho tiempo, su cuerpo no lo había olvidado. La ansiedad aguda que de repente sintió se puso de manifiesto inmediatamente en la lectura de los electrodos sobre su cuerpo.
 
-After he was hooked up to the electrodes, he was shown newsreel footage of kamikaze pilots diving and attacking aircraft carriers during the war. While it was a long-ago event, his body had not forgotten it. The sudden acute anxiety that he felt showed immediately on the readout from the electrodes on his body.
+Esto no es lo sorprendente, sino que los investigadores estaban asombrados al ver que sus glóbulos blancos al otro lado de la sala mostraban exactamente el mismo resultado en la lectura. Ambas lecturas eran esencialmente iguales. Las corrientes eléctricas de las células eran de repente tan irregulares como las corrientes en su cuerpo. Apagaron el proyector y la actividad eléctrica tanto en el hombre como en sus células de sangre del otro lado de la sala volvieron a la normalidad.
 
-This comes as no real surprise. But the researchers were amazed to see that his white blood cells on the other side of the room showed exactly the same burst on the readout. Both readouts were essentially identical. The electrical currents of the cells were suddenly just as erratic as the currents in his body. They turned off the projector, and the electrical activity in both the man and his blood cells across the room returned to normal.
+Los científicos a penas podían creerlo. Repitieron la prueba una cantidad de veces, cada vez con resultados similares. Simplemente para saber qué podría suceder, se repitió la prueba una vez más pero la distancia entre el paciente y sus glóbulos blancos aumentó. De hecho, el dispositivo de medición que contenía los glóbulos blancos que aún vivían fue llevado a otro laboratorio a un número de kilómetros de distancia y se repitió la prueba.
 
-The scientists could hardly believe it. They repeated the test a number of times, with similar results each time. Just to see what would happen, the test was repeated again but the distance between the patient and his white blood cells was increased. In fact, the measuring device containing the still-living white blood cells was driven to another laboratory a number of miles away, and the test was repeated.
+Guardando registros precisos de los tiempos y de las actividades eléctricas del hombre en la sala y de sus células a muchos kilómetros de distancia, se repite el experimento una y otra vez. Se le mostraron al hombre las imágenes de los kamizakes y después se le permitió que se relajara. A continuación, se le mostraron las escenas nuevamente y le permitieron que se relajara. La actividad eléctrica en las lecturas del hombre y aquellas de los glóbulos blancos vivientes a muchos kilómetros de distancia coincidían todo el tiempo.
 
-Keeping precise records of the times and electrical activities of the man in the room and his cells several miles away, they repeated the experiment again and again. The man was shown the kamikaze clips, then allowed to relax. Then he was shown the newsreels again and allowed to relax. The electrical activity on the man’s readouts and those of his living blood cells several miles away matched every time.
+Los resultados de esta prueba fueron en contra de todo lo que se les había enseñado a estos científicos. Pregúntale a cualquiera si un hombre que se disgusta mirando una película puede hacer que sus células de la sangre actúen de manera molesta a muchos kilómetros de distancia y seguramente se burlarán de ti. Suena imposible, pero ocurrió realmente.[^7]
 
-The results of this test went against everything these scientists had been taught. Ask anyone whether a man who gets upset watching a movie can make his blood cells act upset – many miles away – and you’ll probably be laughed at. It sounds impossible, yet it really happened.[^7]
+### El universo inteligente
 
+También han pasado cosas más sorprendentes que esta. Parecen absolutamente milagrosas porque no las entendemos. De hecho, aún ahora ahora estamos empezando a entender la misteriosa naturaleza de la energía, cómo funciona y cómo se puede aprovechar.
 
-###The Intelligent Universe
-
-Other things even more amazing than this have happened as well. They seem absolutely miraculous because we don’t understand them. In fact, we are just now beginning to understand the mysterious nature of energy, how it works and how it can be harnessed.
-
-I believe that one of the greatest secrets of the universe is just now beginning to be unveiled.
+Creo que uno de los más grandes secretos del universo está empezando a ser descubierto exactamente ahora.
 ___
- **This great secret has to do with the modern discovery of the intelligent nature of subatomic particles, or the intelligent nature of energy.**
- ___
-
-Imagine for a moment that what quantum physicists are saying is actually true. Imagine for a moment that the universe in which we live is entirely made of energies that are themselves somehow intelligent.
-
-Think about this. The chair you are sitting in right now is made of energy. That energy is intelligent. Your chair can’t “think”, but on some level, your chair is composed of countless little energies that are doing precisely what they are supposed to do to keep your chair in one piece, helping to make your experience in this world what it is.
-
-Max Planck, one of the greatest minds of the 20th century, considered the father of Quantum Theory, made the following statement when he was awarded the Nobel prize for physics:
-
-> As a man who has devoted his whole life to the most clear headed
-> science, to the study of matter, I can tell you as a result of my
-> research about atoms this much: There is no matter as such. All matter
-> originates and exists only by virtue of a force which brings the
-> particle of an atom to vibration and holds this most minute solar
-> system of the atom together. We must assume behind this force the
-> existence of a conscious and intelligent mind. This mind is the matrix
-> of all matter.
-
-#### The Power of Intention
-
-Your intention is really just another form of energy. I like to think of it as a directed form of thought energy.
-___
-**Because energy is intelligent, it actually has the ability to *obey*, or *cooperate* with your intention.**
+**Este gran secreto tiene que ver con el moderno descubrimiento de la naturaleza inteligente de las partículas subatómicas o la naturaleza inteligente de la energía.**
 ___
 
-Ancient healers demonstrated an understanding of this concept, that the universe is filled with and made of intelligent energy, which is able to respond to intention.
+Imagina por un momento que lo que dicen los físicos cuánticos en realidad es cierto. Imagina por un momento que el universo en el que vivimos está completamente hecho de energías que son en sí mismas de alguna manera inteligentes.
 
-Jesus Christ is still known as the greatest healer of all time, as he routinely healed the blind and crippled, and even raised the dead. His first miracle, though not about healing, dramatically demonstrates the concept of intelligent energy.
+Piensa en esto. La silla en la que estás sentado en este mismo momento está hecha de energía. Esa energía es inteligente. Tu silla no puede “pensar”, pero en cierto nivel, tu silla está compuesta por incontables energías pequeñas que están haciendo precisamente lo que se supone que tienen que hacer para mantener tu silla en una pieza, ayudando a que tu experiencia en este mundo sea lo que es.
 
-Jesus was with his disciples at a wedding where the host ran out of wine, a terrible faux pas in those days. Jesus directed the servants to fill some large vessels with water, which he then turned to wine to the astonishment of all those present. I believe that Jesus simply told the water to become wine, and it simply obeyed his word. But I believe it worked because the water itself was intelligent, and therefore able to obey Christ’s command (John 2:1-11, KJV).
+Max Planck, una de las mentes más brillantes del siglo XX, considerado el padre de la Teoría Cuántica, hizo la siguiente afirmación cuando le entregaron el Premio Nobel de Física:
 
+>*Como hombre que ha dedicado su vida entera a la más clara ciencia de cabecera, al estudio de la materia, lo que sí puedo decirles como resultado de mi investigación acerca de los átomos es que: No existe la materia como tal. Toda la materia se origina y existe sólo en virtud de una fuerza que hace vibrar la partícula de un átomo y mantiene unido a este muy diminuto sistema solar del átomo. Debemos suponer que detrás de esta fuerza existe una mente consciente e inteligente. Esta mente es la matriz de toda la materia.*
 
-#### Feel Like Walking on Water?
+#### El poder de la intención
 
-Another example from the Bible is a story involving the apostle Peter. Jesus had sent his apostles to cross the sea while he went up on a mountain to pray. The apostles were on their ship, in the midst of a stormy sea, when in the early hours of the morning they saw a figure walking toward them on the water. The apostles were terrified, and thought it was a ghost. When they realized it was their master, Peter cried out to Him, “Lord, if it be thou, bid me come unto thee on the water.” Jesus said, “Come.” Peter got out of the boat and began walking on the water toward Jesus. He was walking on water! But when he looked around and realized how unnatural it was to be doing what he was doing, and how bad the storm was, he began to fear, and immediately started to sink. Peter cried out, “Lord save me!” Jesus reached out and caught him. Jesus said, “Oh thou of little faith, wherefore didst thou doubt?” (Matt 14:22-31, KJV).
+Tu intención es simplemente otra forma de energía. Me gusta imaginarla como una forma dirigida de la energía del pensamiento.
 
+Debido a que la energía es inteligente, ésta realmente tiene la habilidad de obedecer o cooperar con tu intención.
 
-Peter started out with faith, the belief that he could walk on water. His faith and intention were so powerful that he was actually able to do it. The intelligences of the water simply responded to his belief, to his intention, in a very immediate way, and the normal state of things instantly changed to support his intention. The moment Peter began to fear, his clear intention and faith in his own ability to walk on water began to diminish. As his faith diminished, his clear intention vanished, and he began to sink, because the universe had to respond to his new state of mind.
+Los antiguos sanadores demostraron una interpretación de este concepto: el universo está lleno y hecho de energía inteligente capaz de responder a la intención.
 
-You see, Peter began to sink because he began to doubt, to fear. Doubt and fear are the opposites of faith, and they cannot coexist.
+Jesucristo es aún hoy conocido como el sanador más grande de todos los tiempos porque él sanaba continuamente a los ciegos y lisiados, e incluso levantaba a los muertos. Su primer milagro, a pesar de no ser de sanación, demuestra de manera drástica el concepto de energía inteligente.
+
+Jesús estaba con sus discípulos en una boda en la que el anfitrión se quedó sin vino, una terrible metida de pata en aquellos días. Jesús ordenó a los sirvientes que llenaran grandes vasijas de agua, a la cual después transformó en vino para asombro de todos aquellos presentes. Yo creo que Jesús simplemente le dijo al agua que se convirtiera en vino y ella simplemente obedeció su palabra. Sin embargo, creo que funcionó porque el agua misma era inteligente y por ello capaz de obedecer las órdenes de Cristo ( Juan 2:1 – 11 nueva versión King James).
+
+#### ¿Te sientes como si caminaras sobre agua?
+
+Otro ejemplo de la Biblia es una historia que involucra al apóstol Pedro. Jesús había mandado a sus apóstoles a que cruzaran el mar mientras él subía a una montaña a orar. Los apóstoles estaban en su barca, en el medio de un mar tormentoso cuando en las primeras horas de la mañana vieron una figura caminando hacia ellos sobre el agua. Los apóstoles estaban aterrados y pensaron que era un fantasma. Cuando se dieron cuenta de que era su maestro, Pedro le gritó: “Señor, si eres tú, manda que yo vaya a ti sobre las aguas”. Jesús dijo:
+
+“Ven”. Pedro salió de la barca y comenzó a caminar sobre el agua hacia Jesús. ¡Estaba caminando sobre el agua! Pero cuando miró a su alrededor y vio cuán antinatural era estar haciendo lo que estaba haciendo y cuán fuerte era la tormenta, comenzó a temer e inmediatamente empezó a hundirse. Pedro le gritó: “¡Señor, sálvame!”. Jesús extendió su mano y lo agarró. Jesús dijo: “¡Hombre de poca fe! ¿Por qué dudaste?”. (Mateo 14:22 – 31 nueva versión King James)
+
+Pedro comenzó con fe la creencia de que podría caminar sobre el agua. Su fe y su intención eran tan poderosas que en realidad fue capaz de hacerlo. Las inteligencias del agua simplemente respondieron a su creencia y su intención de una manera inmediata y el estado normal de las cosas cambió instantáneamente para apoyar su intención. En el momento en que Pedro empezó a temer, su clara intención y fe en su propia habilidad de caminar sobre el agua empezaron a disminuir. Cuando su fe disminuyó, su clara intención se disipó y comenzó a hundirse porque el universo tenía que responder a su nuevo estado de ánimo.
+
+Ya ves, Pedro comenzó a hundirse porque comenzó a dudar, a temer. La duda y el miedo son opuestos a la fe y no pueden coexistir.
 ___
-**The universe supports your beliefs about yourself, too. If you think you can’t, the universe will support that belief, and you will not succeed.**
-___
-
-On the other hand, if you think you can, the universe will support that belief, and you will be empowered.
-
-### Walking on Air
-
-About two months after the death of my father, I had a very unusual dream. It was profound to me, and I took it as a message from God. I dreamed that I was walking down a hallway in a university or a college. The hallway was filled with busy people on their own errands. There were people all around me, but there was something very unusual happening to me. I was literally walking on air, about an inch off the floor. The feeling was absolutely incredible. I tried walking faster, then slower, to see if it would change my altitude. It didn’t change, I was still walking about an inch off the floor, and the feeling was indescribable!
-
-
-No one around me seemed to notice this, as they were intent on what they were doing. I thought to myself, “If I can walk an inch off the ground, I’ll bet I can walk a foot off the ground.” As soon as I thought this, it was done! I was walking a foot off the ground! I looked behind me at that point, and saw a group of small children, whose eyes were fastened upon me. They were also walking a foot off the ground, just like me, although no one else seemed to notice what was happening.
-
-
-I continued walking, and found I could gain altitude as I desired, and before long, my head was nearly touching the ceiling.
-
-At this point, I noticed that everyone had stopped what they were doing and had turned their faces up toward me. They were questioning me, saying, “How are you doing that? How can you possibly be doing what you’re doing?”
-
-The answer I gave them was a message from God to me, and now is a message from God to you.
-
-I said to them, “It’s easy! All you have to do is *believe* you can do it, and be grateful to God that you are *doing* it!”
-
-Then I looked further down the hallway, and saw several large glass doors that led outside. There were beautiful green rolling hills, more campus buildings, and a vast open sky. I thought to myself, “When I get beyond those doors, I will be able to fly!”
-
-It was at that moment I awakened. Still in a dreamlike state, I realized clearly what the dream meant. The fact that I could walk on air meant that I could do whatever I believed I could do, as long as I was grateful to God that I was doing it. The children symbolized the simple, pure faith of minds unfettered by a lifetime of learned limitations. The doors had a dual meaning. They symbolized the limits that we place on ourselves in this mortal life, and they also symbolized death. Part of the message was that my father was beyond those doors, and that he could fly, with no earthly limits to his abilities.
-
-If we express this dream in the form of a mathematical equation, it would look like this:
-
-> **Your Belief That You Can Do It**
-> 
-> **+ Your Gratitude To God That You Are Doing It**
-> 
-> **= The Results You Want To Obtain**
-
-Would we ever begin anything if we did not believe we could do it? No. Belief is essential to all we do, and is the necessary first step.
-
-Gratitude is an essential part of this equation, and I can’t overemphasize the importance of the word *doing*. In other words, your gratitude to God that you are *doing* it is significant, because it is to God that we owe everything that we have and are, and it is to Him that we owe every opportunity that lies is in our path. If you have a goal that you want to achieve, imagine how grateful you would feel if you had already achieved it; if you can feel it and expect that it will be, it will be.
-
-As you learn to cultivate gratitude to God for what you already have, your faith and belief will increase, for you will draw yourself closer to that very source of power from which all things flow.
-___
-**You will soon find yourself doing the very thing that was once only a dream.**
+**El universo también apoya tus creencias acerca de ti mismo. Si tú piensas que no puedes, el universo apoyará esa creencia y no trascenderás.**
 ___
 
-When your heart is full of gratitude, do you think it is possible to feel doubt or fear? I don’t think so. To be a healer, you must not entertain thoughts of doubt; you must leave your fears behind. Your heart must be filled with love and gratitude.
+Por otro lado, si piensas que puedes, el universo apoyará esa creencia y te atribuirá poderes.
 
-Try this with the Emotion Code; it’s easy. All you have to do is believe and be grateful, and you will be able to do it. I mean this very literally!
+### Caminando en el aire
 
-### Messages from Water
+Alrededor de dos meses después de la muerte de mi padre, tuve un sueño muy inusual. Fue muy profundo para mí y lo tomé como un mensaje de Dios. Soñé que estaba caminando por el pasillo de una universidad o facultad. El pasillo estaba lleno de gente ocupada en sus propios asuntos. Había mucha gente a mi alrededor pero había algo fuera de lo normal que me estaba sucediendo. Estaba literalmente caminando en el aire, aproximadamente a una pulgada del piso. La sensación era absolutamente increíble. Traté de caminar más rápido, después más lento, para ver si cambiaba mi altura. No cambió, seguía caminando a una pulgada del piso y ¡la sensación era indescriptible!
 
-A Japanese scientist, Masaru Emoto, has made a wonderful contribution to our understanding of the energetic world around us. His book, entitled *The Hidden Messages in Water*, details Mr. Emoto’s research into the crystalline structure of water. Mr. Emoto and his colleagues found that water droplets would form widely different crystalline patterns or “snowflakes” after being exposed to different kinds of music and then frozen. Exposure to acid rock music, for example, would result in a very disrupted crystal, while a Mozart symphony would result in a beautifully formed crystal.
+Nadie a mi alrededor parecía notar esto, puesto que estaban concentrados en lo que estaban haciendo. Yo pensé para mí: “Si puedo caminar a una pulgada del suelo, apuesto a que puedo caminar a un pie del suelo”. Ni bien pensé eso, ¡ocurrió! ¡Estaba caminando a un pie de distancia del suelo! En ese punto, miré detrás de mí y vi a un grupo de niños con los ojos pegados en mí. Ellos también estaban caminando a un pie del suelo, como yo, a pesar de que nadie más parecía notar lo que estaba ocurriendo.
 
-Taking their research further showed that by writing different words or phrases onto a piece of paper, and then taping the paper to a vial of water and leaving it overnight, different crystalline structures would result.
+Continué caminando y descubrí que podía cobrar altura como yo lo deseaba, y no mucho después, mi cabeza estaba casi tocando el techo.
+
+En ese momento, me di cuenta de que todos habían parado lo que estaban haciendo y giraron sus rostros hacia mí. Me interrogaban, diciéndome: “¿Cómo haces eso? ¿Cómo es posible que estés haciendo lo que estás haciendo?”
+
+La respuesta que yo les di fue un mensaje de Dios para mí, y que ahora es un mensaje de Dios para ti.
+
+Les dije: “¡Es fácil! ¡Todo lo que tienen que hacer es creer que pueden hacerlo y agradecerle a Dios que lo están haciendo!”.
+
+Luego miré más hacia delante en el pasillo y vi varias puertas de vidrio que conducían hacia fuera. Había hermosas colinas verdes, más instalaciones del campus y un vasto cielo abierto. Pensé para mí: “¡Cuando pase al otro lado de aquellas puertas, podré volar!”.
+
+Fue en ese momento que me desperté. Todavía en estado de entresueño, me di cuenta claramente lo que significaba el sueño. El hecho de que yo pudiera caminar en el aire significaba que yo podía hacer todo aquello que yo creyera posible, siempre y cuando estuviera agradecido a Dios de que lo estaba haciendo. Los niños simbolizaban lo simple, la fe pura de las mentes no restringidas por una vida de limitaciones adquiridas. Las puertas tenían un significado dual. Simbolizaban los límites que nos imponemos a nosotros mismos en esta vida mortal y también significaban la muerte. Parte del mensaje era que mi padre estaba detrás de aquellas puertas y que él podía volar sin límites terrenales a sus habilidades.
+
+Si expresamos este sueño en forma de una ecuación matemática, se vería así:
+
+>**TU CREENCIA DE QUE PUEDES HACERLO**
+
+>**+TU GRATITUD HACIA DIOS DE QUE LO ESTÁS HACIENDO**
+
+>**=LOS RESULTADOS QUE TÚ QUIERES OBTENER**
+
+¿Empezaríamos alguna vez algo si no creyéramos que podríamos hacerlo? No. La creencia es esencial para todo lo que hacemos y es el primer paso necesario.
+
+La gratitud es una parte esencial de esta ecuación y no puedo enfatizar lo suficiente la importancia de la palabra haciendo. En otras palabras, tu gratitud a Dios de que lo estás haciendo es significativa porque es a Dios a quien le debemos todo lo que tenemos y somos, y es a Él a quien le debemos cada oportunidad que aparece en nuestro camino. Si tienes una meta que quieres alcanzar, imagina cuán agradecido estarías si ya la hubieses alcanzado; si lo puedes sentir y esperas que así sea, así será.
+
+Cuando aprendes a cultivar la gratitud hacia Dios por lo que ya tienes, tu fe y tu creencia aumentarán, por lo que tú mismo te acercarás a esa fuente de fuerza de la que todas las cosas fluyen.
 ___
-**The phrase “I love you” would invariably result in a symmetrical, well-shaped and beautiful ice crystal, while the phrase “I hate you” would result in a very asymmetrical and disrupted crystal.**
-___
-The most intensely beautiful ice crystals of all were formed when water was exposed overnight to the phrase “Love and Gratitude.”[^8]
-
-Remember that your body is over 70% water. Can you see how important it is to maintain thoughts of positivity instead of negativity? Imagine how your life would be if you filled yourself with thoughts of love and gratitude on a continual basis. Imagine how people would be drawn to you. Imagine what your life could be like. I believe this is how our lives are actually intended to be!
-
-
-I have read many experiences written by people who died and went to the “other side”, temporarily. I have noticed that in their near-death experiences, these people were never asked what kind of car they drove on earth, or how big their bank account was. Instead, they are very often asked “How much love were you able to develop for your fellow beings?” and “How much knowledge were you able to gain on earth?”
-
-Life is about having joy. It’s about increasing our ability to give and receive love and it’s about gaining all the knowledge we can. It’s also about serving others, feeling grateful for all we have, and learning to create the life we want.
-
-
-Trapped emotions make it more difficult for us to experience these joys and tend to short-circuit us both physically and emotionally.
-
-### The Human Energy Field
-
-A few decades ago, scientific thought denied the existence of any sort of human energy field. Since that time, scientists have completely changed their minds. They now know with absolute certainty that an energy field exists. As new technology has come along, they’ve been able to test it and find out for certain. For example, one device, called the SQUID magnetometer, can detect the tiny magnetic fields created by the biochemical and physiological activities of the body.
-
-
-Using this device, scientists have learned that all of the tissues and organs in the body produce specific, magnetic vibrations. They call them biomagnetic fields.[^9] This is fairly new information, not widespread knowledge yet.
-___
-**Although not all medical doctors are aware of this, it has been determined that the biomagnetic fields in the space around the body give a more accurate reading of the patient’s health than traditional electrical measurements, like EEG’s and EKG’s.**
-___
-In fact, scientists now know that the heart’s electromagnetic field is so powerful that you can take an accurate EKG reading three feet away from the body.
-
-The reading can be taken from any point on the body and any point in the electromagnetic field, because the field itself contains the information in a three-dimensional, or holographic way.[^10]
-
-Today’s doctors know what they were taught by their professors, who learned from their professors before them, and so on. Western medicine is empirical. It’s based on observation. If something can’t be observed, it can’t be verified. If it can’t be verified, then it isn’t true.
-
-Despite its drawbacks, doctors who follow the model of western medicine have often been behind some of the most brilliant medical advances in history. They excel at developing important methods of precision testing, breakthrough surgical procedures and advanced technology. This model has tremendous assets, but it has its disadvantages as well.
-
-As far back as the 1940’s, Dr. Harold Saxon Burr, a distinguished medical researcher at Yale, insisted that pathology could be detected in the energy field of the body long before physical symptoms began to emerge. Although he didn’t have the skills or techniques to do it himself, Burr proposed that diseases could be prevented by adjusting or manipulating the energy field.[^11] His medical colleagues thought his ideas seemed unlikely and farfetched, probably because they were not taught that this could be a possibility when they were in medical school.
-
-
-The importance of the energy field is still not taken into account in traditional Western medical practices, and thus, the patient often suffers needlessly due to lack of proper attention to the underlying causes of their illness.
-
-
-Recently, however, many non-traditional healing practices have gone from being ridiculed to being respected. This is partially because technology has improved and scientists have been able to test more accurately, and partially because these alternative healing methods actually do work.
-
-Now mainstream science is even beginning to acknowledge the existence of the energy meridians used by ancient Chinese medical doctors for thousands of years. Acupuncture in particular is being recognized for its energetic healing power, even if it is not fully understood by the medical community. Chiropractic adjustments, which remove nerve interference, are also being proven in clinical trials to have long-lasting and significant benefits, something that chiropractic doctors and patients have known for over 100 years.
-
-
-Abundant evidence exists to prove that the human body is an energetic, vibrant, emotional, and spiritual entity. The old mechanistic approach proves to be more and more limited and simplistic as we learn about the nature of energy and of the universe, and how everything is in constant communication with everything else. As Simon Mitchell points out in his book,  *Don’t Get Cancer*:
-
-> A philosophy of medicine that is over-reliant on logic and limited
-> mainly to drugs and surgery is fundamentally flawed. Acts of logic
-> always rely on analysis, that is, breaking down a ‘whole’ into its
-> constituent parts, and examining each minutely. Reductionist
-> approaches fail to see the connectivity and relatedness of all things.
-> As a result this philosophy is offering us ‘cures’ which are often as
-> dangerous and destructive as the disease itself.
-
-Today, we are at a turning point in medical history. With the discoveries of quantum physics and molecular biology proving that everything is energy and that it is all related, a door has been opened.
-
-Scientific research is constantly being conducted, and continues to confirm over and over again that we are beings of energy, and that there is an intelligent force at work in the universe.
-
-Research will continue to push back the boundaries on what we know about the human energy field. As it does so, I am convinced that the energetic basis of human thought will become more clearly understood, and that the phenomenon of trapped emotions will eventually be recognized by the scientific community for the damage they cause.
-
-
-As technology continues to advance, scientists and doctors will inevitably realize how important it is to keep the body in a state of balance. The magnetic and energetic healing techniques that alternative practitioners already use will hopefully be integrated into conventional medicine to provide the best, most thorough, and most gentle healing. There is much to be learned by studying the energy of the human body, and we are the ones to gain from it. Remember that not so long ago, scientists didn’t recognize that the human body had an energy field, much less that our very health depended on it!
-
-
-All methods of healing are valid and have their place. In the future, I see a world where the best of all possible approaches will combine to the benefit of mankind.
-
-#### Quick Fixes
-
-I saw first-hand during my years in practice that the body has a built-in ability to heal itself, another evidence of the body’s innate intelligence. The body sometimes needs help to restore itself to a state of balance. This help may consist of removing trapped emotions, detoxification, receiving chiropractic adjustments and proper nutrition, and more. Healing is a process, and it takes time.
-
-
-But waiting for the body to heal itself naturally can try our patience. We usually want a quick fix. We don’t want to wait; we want it now. We are conditioned by endless advertising to think that if we take a pill our problem will be solved. While some prescription medications do address the cause of illness, most only cover up the symptoms. They usually do such a wonderful job at masking our symptoms that we may think our problem is gone, when it is merely being chemically suppressed.
-
-___
-**Remember that symptoms are the body’s way of telling you that something is wrong. They are a warning signal that you need to change  something, or that your body needs some help.**
+**Pronto te encontrarás haciendo esa cosa en particular que alguna vez fue sólo un sueño.**
 ___
 
-Masking symptoms with medications can be a bit like putting a piece of duct tape over that annoying oil light in your car that turned on recently. You may cover it up for awhile, but eventually your car will stop running.
+Cuando tu corazón está lleno de gratitud, ¿piensas que es posible sentir dudas o miedo? Yo no lo creo. Para ser un sanador, no debes albergar pensamientos de duda; debes dejar tus miedos atrás. Tu corazón debe estar lleno de amor y gratitud.
 
-The pharmaceutical companies would have you believe that the best way to get well is to take their products. For example, heavy advertising in the media helped to create a tremendous market for anti-depressants. While they have helped some people, like all drugs, they have side-effects. In fact, read this excerpt from an official FDA press release, dated October 14, 2004: [^12]
+Intenta esto con el Código de la Emoción; es fácil. Todo lo que tienes que hacer es creer y ser agradecido y serás capaz de hacerlo. ¡Lo digo en serio muy literalmente!
 
-> The Food and Drug Administration (FDA) today issued a Public Health
-> Advisory announcing a multi-pronged strategy to warn the public about
-> the increased risk of suicidal thoughts and behavior (“suicidality”)
-> in children and adolescents being treated with antidepressant
-> medications…
+### Mensajes del agua
 
-The release of trapped emotions have consistently helped patients to overcome depression. Read this testimonial from a former patient of mine who was suffering from severe depression.
+Un científico japonés, Masaru Emoto, ha hecho una maravillosa contribución a nuestra comprensión del mundo energético que nos rodea. Su libro, titulado The Hidden Messages in Water (Los mensajes ocultos en el agua), detalla la investigación del Sr. Emoto acerca de la estructura cristalina del agua. El Sr. Emoto y sus colegas encontraron que las gotitas de agua formaban dibujos cristalinos muy diferentes o “copos de nieve” después de ser expuestas a diferentes tipos de música y después congeladas. La exposición al rock ácido resultó en un cristal muy desbaratado, mientras una sinfonía de Mozart resultó en un cristal formado de manera hermosa.
 
-> I had gotten to the point where I was exceedingly suicidal. Everyday I
-> would wake up and have to decide, ‘Do I live or die today?’ I was
-> stuck because part of my belief system was that my life was not mine
-> to take. That had been a mantra already for several years, and yet I
-> no longer wanted to live. And I happened to show up at one of Dr.
-> Nelson’s seminars where he talks about emotions. And at that time he
-> didn’t talk about them a whole lot, and I spoke to him after he was
-> finished speaking, and said ‘You mentioned the emotions but you didn’t
-> do anything or talk about it; I need help… I don’t want to live, yet I
-> know that there are some people in this life who are happy, and there
-> are people in this life who are functioning very well. I’m not, and I
-> want to be. Can you do something?’ And in that moment he cleared
-> something regarding my lack of joy, and I could literally feel in the
-> moment that he did that, all of this energy coming back to me. I
-> actually did not sleep almost the whole night; I was so pumped and so
-> energized after that. Since then, we have done a lot of work, mostly
-> in the clearing of trapped emotions, and other work as well, but this
-> emotional work is so powerful and so key. I am a different person than
-> I was a year and a half ago. I no longer have the panic attacks; I no
-> longer have the night terrors I used to have. I am a different person.
-> I’m alive, I embrace life, and I love life. Thanks - Karen B.
+Pasos posteriores de su investigación demostraron que la escritura de diferentes palabras o frases en un pedazo de papel, y después encintado a un frasco con agua y dejado toda la noche, resultó en diferentes estructuras cristalinas.
+___
+**La frase “Te amo” resultó invariablemente en un hermoso cristal de hielo simétrico y bien formado; mientras que la frase “Te odio” resultó en un cristal muy asimétrico y desbaratado.**
+___
 
-If we have pain, we may need pain medication to be able to deal with it. I’m grateful we have it, and as I said before, all healing approaches are valid. Medications can be perfectly appropriate in the short-term, as they work to relieve symptoms, but they sometimes do more harm than good.
+De todos, los cristales más intensamente hermosos se formaron cuando el agua fue expuesta toda la noche a la frase “Amor y Gratitud”[^8]
 
-Witness the following article from USA Today, dated December 20, 2006:
-Non-prescription pain relievers used by millions of U.S. consumers need stronger health warnings regarding liver or stomach risk, the Food and Drug Administration said Tuesday.
+Recuerda que tu cuerpo es más de un 70% agua. ¿Puedes ver cuán importante es mantener pensamientos positivos en vez de negativos? Imagina cómo sería tu vida si te llenaras de pensamientos de amor y gratitud de manera regular. Imagina cómo las personas serían atraídas por ti. Imagina cómo sería tu vida. ¡Creo que nuestras vidas están pensadas para esto!
 
- The drugs include some of the most commonly taken in the USA — aspirin, ibuprofen and acetaminophen — and will affect such household brands as Motrin, Advil, Aleve and Tylenol.
+He leído muchas experiencias escritas por personas que murieron y fueron al “otro lado” de manera temporal. He notado que en sus experiencias cerca de la muerte, nunca se les preguntó a estas personas qué tipo de auto manejaban sobre la tierra o cuán grande era su cuenta bancaria, al contrario, a menudo se les pregunta “¿Cuánto amor fueron capaces de dar a sus compañeros de existencia?” y “¿Cuánto conocimiento fueron capaces de adquirir en la tierra?”.
 
-The FDA proposes that:
+La vida se trata de tener alegría. Se trata de incrementar nuestra habilidad de dar y recibir amor y se trata de adquirir todo el conocimiento que podamos. Todo se trata de servir a los demás, sentir gratitud por todo lo que tenemos y aprender a crear la vida que queremos.
 
-> Products with acetaminophen, such as Tylenol, include warnings for
-> liver toxicity, particularly when used in high doses, with other
-> acetaminophen products or with three or more drinks of alcohol a day.
-> 
-> Over-the-counter NSAIDs (short for non-steroidal anti-inflammatory
-> drugs) include warnings for stomach bleeding in people over 60; those
-> who have had ulcers, take a blood thinner or more than one NSAID; or
-> those who take them with alcohol or longer than directed.
-> 
-> Attention focused on their risks in 2004 when prescription NSAID Vioxx
-> was withdrawn because of heart attack and stroke risk. Last year, the
-> FDA sought a warning on prescription NSAID Celebrex for cardiovascular
-> and stomach risks. An FDA advisory panel in 2002 said over-the-counter
-> NSAIDs should have stronger warnings about stomach bleeding. [^13]
+Las emociones atrapadas nos impiuden experimentar estas alegrías y tienden a causarnos cortocircuitos tanto física como emocionalmente.
 
-Here is another testimonial from a former patient who suffered from chronic pain for four years after falling 2 stories onto a boulder and breaking her back:
+### El campo energético humano
 
->  I consulted Dr. Nelson because I had broken my back a few years back
-> and had never gotten over the pain despite several types of physical
-> therapy and exercise programs. During my first adjustment, I realized
-> that Dr. Nelson was a true healer; I could just feel it. Almost all of
-> my adjustments included “emotional releases” from energy blockages in
-> my body, (unresolved traumatic events live in the energy system of the
-> body and cause blockages in the energy flow). At first I did not
-> notice any change, but gradually my pain began to decrease! With Dr.
-> Nelson’s help I discovered that emotions very deep within me were
-> causing the majority of my pain...My body had so much pain stored
-> inside from so very long ago, and Dr. Nelson was able to “talk” to my
-> body to help me release it. What a remarkable process to experience
-> each appointment’s release and the corresponding decrease in pain.
-> Today for the first time in 4 years I am able to work part‑time, but
-> most important of all, I feel a great healing in my physical and
-> emotional body and have learned the invaluable fact of how these two
-> are so integrally related. Thank you, Dr. Nelson!!!
-> 
-> In love and light - Linda P.
+Hace algunas décadas, el pensamiento científico negaba la existencia de cualquier tipo de campo energético humano. Desde ese entonces, los científicos han cambiado de opinión completamente. Ahora saben con absoluta certeza que existe un campo de energía. Como la nueva tecnología ha avanzado, han podido probarlo y encontrarlo con seguridad. Por ejemplo, un dispositivo llamado el magnetómetro SQUID, puede detectar los pequeños campos magnéticos creados por las actividades bioquímicas y fisiológicas del cuerpo.
+
+Utilizando este dispositivo, los científicos han aprendido que todos los tejidos y órganos del cuerpo producen vibraciones magnéticas específicas. Los llaman campos biomagnéticos.[^9] Esta es información bastante nueva, un conocimiento no muy difundido todavía.
+___
+**A pesar de que no todos los médicos están al tanto de esto, se ha determinado que los campos biomagnéticos en el espacio que rodea el cuerpo hacen una lectura más precisa acerca de la salud del paciente que las medidas eléctricas tradicionales, como los EEG (electroencefalogramas) y los EKG (electrocardiogramas).**
+___
+
+De hecho, los científicos ahora saben que el campo electromagnético del corazón es tan poderoso que tú puedes hacer una lectura precisa del EKG (electrocardiograma) a tres pies de distancia del cuerpo.
+
+La lectura se puede hacer desde cualquier punto del cuerpo y cualquier punto del campo electromagnético, puesto que el campo mismo contiene la información en tres dimensiones o forma holográfica.[^10]
+
+Los médicos de hoy en día saben lo que les enseñaron sus profesores, quienes aprendieron de sus profesores antes que ellos y así sucesivamente. La medicina occidental es empírica. Está basada en la observación. Si algo no puede ser observado, no puede ser verificado. Si no puede ser verificado, entonces no es verdadero.
+
+A pesar de sus desventajas, los médicos que siguen el modelo de la medicina occidental a menudo han estado retrasados en cuanto a los avances médicos más brillantes de la historia. Se destacan en el desarrollo de importantes métodos de pruebas de precisión, procedimientos quirúrgicos avanzados y tecnología avanzada. Este modelo tiene muchos aciertos pero también tiene sus desventajas.
+
+Allá por los años ’40, el Dr. Harold Saxon Burr, un distinguido investigador médico de Yale, insistió en que la patología podía ser detectada en el campo de energía del cuerpo mucho antes que los síntomas físicos comenzaran a emerger. A pesar de no tener las habilidades o técnicas para hacerlo él mismo, Burr propuso que las enfermedades podían prevenirse ajustando o manipulando el campo de energía.[^11] Sus colegas médicos pensaban que sus ideas parecían poco probables y rebuscadas, probablemente porque cuando estaban en la facultad de medicina no les enseñaron que esto podía ser posible.
+
+La importancia del campo de energía no es todavía tomada en cuenta en las prácticas médicas tradicionales occidentales, es por ello que el paciente a menudo sufre de manera innecesaria, debido a la falta de una atención propicia de las causas subyacentes de su enfermedad.
+
+Recientemente, sin embargo, muchas prácticas de sanación no tradicionales han pasado de ser ridiculizadas a ser respetadas. Esto se debe parcialmente a que la tecnología ha mejorado y los científicos han podido experimentar de manera más precisa, y en parte porque estos métodos alternativos de sanación realmente funcionan.
+
+Actualmente, la ciencia dominante está incluso comenzando a reconocer la existencia de los meridianos de energía utilizados por los antiguos médicos chinos por miles de años. La acupuntura en particular está siendo reconocida por su poder energético de sanación, aunque no sea completamente entendida por la comunidad médica. Ajustes quiroprácticos, los cuales eliminan la interferencia nerviosa, están también demostrando tener beneficios significativos y duraderos en tratamientos clínicos, algo que los médicos quiroprácticos y los pacientes han sabido por más de 100 años.
+
+Existe abundante evidencia para demostrar que el cuerpo humano es una entidad energética, vibrante, emocional y espiritual. El antiguo enfoque mecanicista demuestra ser más y más limitado y simplista a medida que aprendemos acerca de la naturaleza de la energía y del universo, y cómo todo está en permanente comunicación con todo lo demás. Como destaca Simon Mitchell en su libro Don’t Get Cancer (No tenga cáncer):
+
+>Una filosofía de la medicina que es dependiente al máximo en la lógica pero que está limitada por laos medicamentos y la cirugía es fundamentalmente defectuosa. Los actos de la lógica siempre se basan en el análisis, es decir, desglosan un “todo” en sus partes constitutivas y examinan a cada una de manera minuciosa. Los enfoques reduccionistas no ven la conectividad y el parentesco de todas las cosas. Como resultado esta filosofía nos ofrece “sanaciones” que a menudo son tan peligrosas y destructivas como la enfermedad misma.
+
+Hoy en día estamos en un punto de inflexión en la historia de la medicina. Una puerta se ha abierto gracias a los descubrimientos de la física cuántica y la biología molecular que demuestran que todo es energía y que todo está relacionado.
+
+Se está llevando a cabo la investigación científica y esta continúa confirmando una y otra vez que somos seres de energía y que hay una fuerza inteligente en funcionamiento con el universo.
+
+La investigación continuará recorriendo los límites de lo que sabemos acerca del campo energético humano. Mientras lo hace, estoy convencido de que la base energética del pensamiento humano va a ser más claramente comprendida y que, al final, el fenómeno de las emociones atrapadas será reconocido por la comunidad científica por el daño que causa.
+
+Mientras la tecnología siga avanzando, los científicos y los médicos se darán cuenta de manera inevitable de lo importante que es mantener el cuerpo en un estado de equilibrio. Las técnicas de sanación energéticas y magnéticas que los médicos alternativos ya utilizan serán integradas de manera esperanzadora a la medicina convencional para brindar la mejor, más completa y cuidadosa sanación. Hay mucho por aprender a través del estudio de la energía del cuerpo humano y nosotros somos los que nos vamos a beneficiar con ello. Recuerda que no hace mucho tiempo, los científicos no reconocían que el cuerpo humano tenía un campo de energía, ¡y mucho menos que nuestra salud dependía de él!
+
+Todos los métodos de sanación son válidos y tienen su lugar. En el futuro, vislumbro un mundo donde lo mejor de todos los enfoques posibles se combinará para beneficio de la humanidad.
+
+#### Arreglos rápidos
+
+Vi de primera mano durante mis años de práctica que el cuerpo tiene incorporada la habilidad de sanarse a sí mismo, otra evidencia de la inteligencia innata del cuerpo. El cuerpo a veces necesita ayuda para restituirse a un estado de equilibrio. Esta ayuda puede consistir en la eliminación de emociones atrapadas, desintoxicación, el recibimiento de ajustes quiroprácticos, una nutrición adecuada y más. La sanación es un proceso y lleva tiempo.
+
+Sin embargo, esperar que el cuerpo se cure a sí mismo de manera natural puede poner a prueba nuestra paciencia. Usualmente, queremos un arreglo rápido. No queremos esperar, lo queremos ahora. Estamos condicionados por infinidad de publicidades a pensar que si tomamos una pastilla nuestro problema estará resuelto. Mientras que algunas medicinas por receta médica tratan la causa de la enfermedad, la mayoría simplemente cubre los síntomas. A menudo realizan un trabajo tan maravilloso en enmascarar nuestros síntomas que podemos pensar que nuestro problema se ha ido, cuando a penas está químicamente inhibido.
+___
+**Recuerda que los síntomas son la manera que tiene el cuerpo de decirte que algo anda mal. Son una señal de alerta de que tú necesitas cambiar algo o que tu cuerpo necesita ayuda.**
+___
+
+Enmascarar los síntomas con medicinas puede ser un poco como poner un pedazo de cinta adhesiva plateada sobre esa molesta luz del aceite de tu auto que se acaba de encender. La puedes tapar por un rato pero a la larga tu auto dejará de andar.
+
+Las empresas farmacéuticas te harán creer que la mejor manera de ponerte bien es tomando sus productos. Por ejemplo, gran cantidad de publicidad en los medios ayudó a crear un mercado tremendo para los antidepresivos. Mientras que estos han ayudado a muchas personas, como todos los medicamentos, también tienen efectos colaterales. De hecho, lee este pasaje de una nota de prensa oficial de la FDA (Administración de Alimentos y Drogas de los Estados Unidos), fechada el 14 de octubre de 2004[^12]
+
+>La Administración de Alimentos y Drogas (FDA) publicó hoy un Aviso de Salud Pública anunciando una estrategia multi-direccional para advertir al público acerca del incremento en el riesgo de comportamientos y pensamientos suicidas (“tendencias suicidas”) en niños y adolescentes bajo tratamiento con medicamentos antidrepresivos…
+
+La liberación de emociones atrapadas ha ayudado a los pacientes de manera consistente a superar la depresión. Lee este testimonio de un antiguo paciente mío que sufría de depresión aguda.
+
+>*Yo había llegado al punto en el que estaba sumamente suicida. Cada día me despertaba y tenía que decidir: “¿Vivo o muero hoy?” Estaba atascada porque parte de mis creencias de que mi vida no era mía como para tomarla. Ese había sido un mantra por varios años y por eso ya no quería vivir más. Fui a uno de los seminarios del Dr. Nelson donde él hablaba acerca de las emociones. Y en ese momento no habló demasiado acerca de ellas, y yo me dirigí a él cuando terminó y le dije: “Usted mencionó las emociones pero no hizo ni dijo nada acerca de eso; necesito ayuda…No quiero vivir; sin embargo, sé que hay algunas personas en esta vida que son felices y hay personas en esta vida que funcionan muy bien. Yo no lo soy y quiero serlo. ¿Puede hacer algo? Y en ese momento él despejó algo acerca de mi falta de alegría y pude en ese momento sentir literalmente que lo hizo: toda esa energía volviendo a mí. En realidad no dormí en casi toda la noche, estaba tan movilizada y energizada después de eso. Desde entonces, hemos hecho mucho trabajo especialmente en el despeje de emociones atrapadas y otro trabajo también, pero este trabajo emocional es tan poderoso y tan clave. Soy una persona diferente a la que era hace un año y medio. Ya no tengo los ataques de pánico ni los terrores nocturnos que solía tener. Soy una persona distinta. Estoy viva, acepto y amo la vida.*
+
+>*Gracias – Karen B.*
+
+Si tenemos dolor, podemos necesitar medicinas para el dolor para poder tratarlo. Estoy agradecido de que las tenemos, y como dije antes, todos los enfoques de sanación son válidos. Las medicinas pueden ser perfectamente apropiadas a corto plazo ya que funcionan para aliviar los síntomas, pero muchas veces hacen más daño que bien.
+
+Observa el siguiente artículo de USA Today, fechado el 20 de diciembre de 2006:
+
+>Los analgésicos de venta libre utilizados por millones de consumidores de los Estados Unidos requieren una mayor advertencia para la salud en torno al riesgo hepático y gástrico, dijo la Food and Drug Administration (Administración de Alimentos y Drogas) el martes.
+
+>Los medicamentos incluyen algunos de los más comúnmente tomados en los Estados Unidos- aspirina, ibuprofeno y paracetamol – y afectarán a determinadas marcas locales como Motrin, Advil, Aleve y Tylenol.
+
+La FDA (Administración de Alimentos y Drogas) propone que:
+
+>Los productos con paracetamol, como el Tylenol, incluyan advertencias por su toxicidad hepática; particularmente cuando sean utilizados en altas dosis, con otros productos con paracetamol o con tres o más copas de alcohol por día.
+
+>Las AINEs (forma corta de medicamentos antiinflamatorios sin esteroides) de venta bajo receta incluyan advertencias de sangrado gástrico para personas mayores de 60 años, aquellos que han tenido úlceras, toman anticoagulantes o más de una AINE
+
+>(medicamento antiinflamatorio sin esteroides), o para aquellos que los toman con alcohol o directamente en seco.
+
+>La atención se focalizó en el riesgo de las mismos en 2004 cuando la prescripción de la AINE (medicamento antiinflamatorio sin esteroides) Vioxx fue retirado de la venta debido a ataques al corazón o riesgo de derrame cerebral. El año pasado, la FDA (Administración de Alimentos y Drogas) fue en pos de una advertencia en la prescripción de la AINE Celebrex por riesgos cardiovasculares y gástricos. En 2002, una comisión consultiva de la FDA (Administración de Alimentos y Drogas) dijo que los AINEs de venta bajo receta deberían tener advertencias más fuertes acerca del sangrado gástrico[^13]
+
+Este es otro testimonio de una antigua paciente que sufrió de dolor crónico por cuatro años después de haber caído de 2 pisos sobre una roca y quebrarse la espalda: 
+
+>Consulté al Dr. Nelson porque me había roto la espalda unos años antes y nunca me había recuperado del dolor, a pesar de numerosos tipos de terapia física y programas de ejercicio. Durante mi primer ajuste, me di cuenta de que el Dr. Nelson era un verdadero sanador; simplemente podía sentirlo. Casi todos mis ajustes incluyeron “liberaciones emocionales” de bloqueos de energía en mi cuerpo, (acontecimientos traumáticos no resueltos viven en el sistema de energía del cuerpo y causan bloqueos en la circulación de la energía). Al principio no noté ningún cambio, pero gradualmente ¡mi dolor empezó a decrecer! Con la ayuda del Dr. Nelson descubrí que las emociones profundas muy dentro de mí estaban causando la mayor parte de mi dolor…Mi cuerpo tuvo mucho dolor almacenado dentro durante mucho tiempo y el Dr. Nelson pudo “hablar” con mi cuerpo para ayudarme a liberarlo. Qué extraordinario proceso el de experimentar la liberación en cada consulta y su correspondiente disminución de dolor. Hoy por primera vez en 4 años puedo trabajar media jornada, pero sobre todo, siento una gran sanación en mi cuerpo físico y emocional, y he aprendido el invaluable hecho de que estos dos están íntegramente relacionados.
+>¡¡¡Gracias, Dr. Nelson!!!
+
+#### Cómo llegar a la causa
+
+Si la causa esencial de tu enfermedad no es tratada, tendrás la enfermedad hasta que tu cuerpo sea capaz de sanarse a sí mismo. He visto muchos casos en los que el paciente tomaba medicinas para su problema por años y, tan pronto como dejaban la medicina, su problema volvía a pleno desarrollo porque la causa subyacente aún seguía creando la enfermedad. La causa subyacente debe ser revertida o tu problema no desaparecerá y tú deberás o bien permanecer con el dolor o tomando medicinas para siempre.
+
+La mayoría de nosotros nunca aprendimos que podíamos tener acceso a la energía de nuestro cuerpo, para ver qué es lo que anda mal y poder arreglarlo. Pero vivimos en una época extraordinaria en la que el conocimiento de todos los tiempos está siendo revelado sin medida a favor de la humanidad.
+
+Los imanes son una de las modalidades de sanación más antiguas sobre la tierra y son una parte esencial del Código de la Emoción. Averigua porqué en el próximo capítulo.
 
 
-#### Getting to the Cause
-
-If the essential cause of your illness is not dealt with, you will have the illness until your body is able to heal itself. I have seen many cases where the patient was on medication for their problem for years, and as soon as they went off the medication, their problem came back full swing because the underlying cause was still creating the illness. The underlying cause must be reversed or your problem will not go away and you must either remain in pain or on drugs forever.
-
-
-Most of us never learned that we could access the energy of our bodies, to learn what is wrong and how to fix it. But we live in a remarkable time, when knowledge of all the ages is being poured out upon mankind beyond measure.
-
-
-Ancient healing philosophies were full of truth and deep insights into our energetic nature, and the validity of these approaches is now being recognized once again.
-
-
-Magnets are one of the most ancient healing modalities on earth, and are an integral part of the Emotion Code. Find out why in the next chapter.
-
-[^1]: John Iovine, *Kirlian Photography: A Hands-on Guide* (Victoria, Australia: Images Publishing, 2000), 24. 
+[^1]: John Iovine, Kirlian photography: a hands-on guide (Victoria, Australia: Images Publishing, 2000), 24.
 
 [^2]: Ioivine, 25
 
-[^3]:“Fotograferingsteknik som visar en aura runt föremålen. Uppfanns av ryssen Semyon Kirlian.”
-<http://paranormal.se/topic/kirlianfotografi.html> 
+[^3]: “Fotograferingsteknik som visar en aura runt föremålen. Uppfanns av ryssen Semyon Kirlian”. <http://paranormal.se/topic/kirlianfotografi.html>
 
-[^4]: Jerry D. Wheatley, *The Nature of Consciousness*, (Phoenix, AZ: Research Scien-tific Press), 668. 
+[^4]: Jerry D. Wheatley, The Nature of Consciousness, (Phoenix, AZ: Research Scien-tific Press), 668.
 
-[^5]: Dr. Lee Warren, B.A., D.D., *Connectedness Part 1*, <http://www.plim.org/Connectedness.htm> 
+[^5]: Dr. Lee Warren, B.A., D.D., Connectedness Part 1, <http://www.plim.org/Connectedness.htm>
 
-[^6]: P.C.W. Davies, Julian R. Brown, *The Ghost in the Atom: A Discussion of the Mys-teries of Quantum Physics* (Cambridge, UK: Cambridge University Press, 1999), . 
+[^6]: P.C.W. Davies, Julian R. Brown, The Ghost in the Atom: A Discussion of the Mys-teries of Quantum Physics (Cambridge, UK: Cambridge University Press, 1999), .
 
-[^7]: Deepak Chopra televised lecture, April 2004. 
+[^7]: Deepak Chopra televised lecture, April 2004.
 
-[^8]: Masaru Emoto, David A. Thayne, *The Hidden Messages in Water,* (Hillsboro, OR: Beyond Words Publishing, Inc., 2001) 64. 
+[^8]: Masaru Emoto, David A. Thayne, The Hidden Messages in Water, (Hillsboro, OR: Beyond Words Publishing, Inc., 2001) 64.
 
-[^9]: Walter Lubeck, Frank Petter, William Rand, *The Spirit of Reiki*, (Twin Lakes, WI, Lotus Press, 2001), 72. 
+[^9]: Walter Lubeck, Frank Petter, William Rand, The Spirit of Reiki, (Twin Lakes, WI, Lotus Press, 2001), 72.
 
-[^10]: Doc Lew Childre, Howard Martin and Donna Beech, *The HeartMath Solution*, (New York, NY: Harper Collins Publishers, Inc. 1999) 260. 
+[^10]: Doc Lew Childre, Howard Martin and Donna Beech, The HeartMath Solution, (New York, NY: Harper Collins Publishers, Inc. 1999) 260.
 
-[^11]: Robert C. Fulford, D.O., *Touch of Life: Aligning Body, Mind, and Spirit to Honor the Healer Within* (New York, NY: Pocket Books, 1996) 25. 
+[^11]: Robert C. Fulford, D.O., Touch of Life: Aligning Body, Mind, and Spirit to Honor the Healer Within (New York, NY: Pocket Books, 1996) 25.
 
-[^12]: “FDA Launches a Multi-Pronged Strategy to Strengthen Safeguards for Children Treated With Antidepressant Medications,” Oct. 15, 2004 <http://www.fda.gov/bbs/topics/news/2004/new01124.html> 
+[^12]: “FDA Launches a Multi-Pronged Strategy to Strengthen Safeguards for Children Treated With Antidepressant Medications”, Oct. 15, 2004 <http://www.fda.gov/bbs/topics/news/2004/new01124.html>
 
-[^13]: Julie Schmit, Julie Appleby, “FDA calls for pain reliever warning”, USA Today 20 Dec. 2006, national ed.: A.1. 
+[^13]: Julie Schmit, Julie Appleby, “FDA calls for pain reliever warning”, USA Today 20 Dec. 2006, national ed.: A.1.
+
+
+
+

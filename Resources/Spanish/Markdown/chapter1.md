@@ -1,332 +1,265 @@
-# Part I 
-
-# Trapped Emotions
-
-*Truth is stranger than fiction, but this is because fiction is obliged to stick to probability; truth is not.*
-*-  Mark Twain*
-
-## Trapped Emotions: The Invisible Epidemic
 
 
-Where would you be without your emotions? If the sum total of all your experiences makes up the tapestry of your life, it is the emotions you have experienced that give that tapestry its color.
+# PRIMERA PARTE 
 
-Our emotions really do give color to our lives. Try to imagine for a moment a world where no emotions could occur. No joy would be possible. No feelings of happiness, bliss, charity or kindness. No love would be felt, no positive emotions of any kind.
+# EMOCIONES ATRAPADAS
 
-On this imaginary emotionless planet, there would be no negative emotions either. No sorrow, no anger, no feelings of depression, and no grief. To live on such a planet would be to merely exist. With no ability to feel emotions of any kind, life would be reduced to a gray, mechanical ritual from cradle to grave. Be grateful that you can feel emotions!
+*La verdad es más extraña que la ficción, pero esto es porque la ficción está obligada a atenerse a la probabilidad; la verdad no. - Mark Twain*
 
-But are there emotions you have experienced that you would rather not have felt? If you are like most people, your life has had its darker times. You have probably experienced moments of anxiety, as well as other times of grief, anger, frustration, and fear. You may have experienced periods of sorrow, as well as depression, low self-esteem, hopelessness, or any of a wide variety of negative emotions.
+## EMOCIONES ATRAPADAS:LA EPIDEMIA INVISIBLE
 
-What you may not realize is that some of the negative emotions you’ve experienced, even though you may have felt them long ago, may still be creating problems for you in subtle, yet very damaging ways. The Emotion Code is about finding those old emotions and releasing them forever.
+¿Dónde estarías sin tus emociones? Si la suma total de todas tus experiencias conforma el tapiz de tu vida, son las emociones que has experimentado las que dan color a ese tapiz.
 
+Nuestras emociones realmente dan color a nuestras vidas. Trata de imaginarte por un momento un mundo donde las emociones no pudieran existir. La alegría no sería posible ni ningún sentimiento de felicidad, dicha, caridad o amabilidad. El amor no podría sentirse, ni tampoco emociones positivas de ningún tipo.
 
-----------
+En este planeta imaginario sin emociones, tampoco existirían las emociones negativas. Ninguna pena, ni ira, ni sentimientos de depresión ni dolor. Vivir en semejante planeta implicaría solamente existir. Sin la habilidad de sentir emociones de ningún tipo, la vida quedaría reducida a un ritual mecánico poco prometedor durante toda la existencia ¡Agradece que puedes sentir emociones!
 
+Pero, ¿existen emociones que has experimentado que preferirías no haber sentido? Si eres como la mayoría de las personas, tu vida ha tenido sus momentos oscuros. Probablemente has experimentado momentos de ansiedad, angustia, ira, frustración y miedo. Puede ser que hayas experimentado períodos de dolor, así como de depresión, baja autoestima, desesperanza o cualquier otra dentro de una gran variedad de emociones negativas.
 
-**Much of our suffering is due to negative emotional energies that have become ‘trapped’ within us. The Emotion Code is a simple and powerful method of finding and releasing these trapped energies.**
+Lo que puede ser que no te des cuenta es que algunas de las emociones negativas que has experimentado, a pesar de que las puedas haber sentido hace mucho tiempo, pueden aún estar creándote problemas sutilmente, no obstante de maneras muy dañinas.
+____________
+**Mucho de nuestro sufrimiento se debe a energías emocionales negativas que han quedado “atrapadas” dentro de nosotros. El Código de la Emoción es un método simple y poderoso para encontrar y liberar esas energías atrapadas.** 
+____________
+Muchas personas han descubierto que cuando ellas mismas se liberan de sus emociones atrapadas, son capaces de vivir vidas más saludables y felices. Una sola emoción atrapada puede crear tanto problemas físicos como emocionales.
 
+Los siguientes ejemplos de la vida real ilustran cómo la liberación de la energía emocional atrapada, utilizando El Código de la Emoción, puede resultar en mejoras asombrosas y repentinas en el bienestar físico y emocional:
 
-----------
+>*El dolor debilitante de cadera de Alison la abandonó instantáneamente y ella pudo bailar en su funciónaquella noche…*
 
+>*Los constantes sentimientos de depresión suicida de Linda desaparecieron…*
 
-Many people have found that when they free themselves of their trapped emotions they are able to live healthier and happier lives. A single trapped emotion can create both physical and emotional problems.
+>*La ansiedad crónica de Jennifer se fue y sintió la total seguridad que ella siempre había añorado…*
 
-The following real-life examples illustrate how releasing trapped emotional energy using the Emotion Code can result in astonishing and sudden improvements in physical and emotional wellness:
+>*Laurie anunció que por primera vez en su vida pudo sentir el amor de Dios en ella…*
 
-> Allison’s debilitating hip pain left her instantly, and she was able to dance in her performance that night…
-> 
-> Linda’s constant feelings of suicidal depression went away…
-> 
-> Jennifer’s chronic anxiety was gone, and she now felt the total confidence she’d been longing for…
-> 
-> Laurie reported that for the first time in her life, she could feel God’s love for her...
-> 
-> Sheryl was finally able to shed her anger for her ex-husband, and
-> create a wonderful, loving relationship with a new man…
-> 
-> Julia aced her court reporting test, after failing several times…
-> 
-> Larry’s foot pain disappeared along with his limp…
-> 
-> Connie’s allergies disappeared…
-> 
-> Neil’s 2 year-long feeling of resentment for his boss vanished…
-> 
-> Yolaunda finally lost the weight she’d been struggling to lose for years…
-> 
-> Joan’s bulimia was gone within a week…
-> 
-> Tom’s vision improved…
-> 
-> Jim’s shoulder pain disappeared…
-> 
-> Mindy’s carpal tunnel syndrome went away…
-> 
-> Sandy’s knee pain, which she had seen three other doctors for, was
-> gone in moments…
-> 
-> Carol’s night terrors, which had plagued her for over 30 years, were gone  within a week, and did not return…
+>*Sheryl pudo finalmente deshacerse del enojo con su exmarido y crear una maravillosa relación amorosa con un nuevo hombre…*
 
+>*Julia se lució en el examen de registro para convertirse en miembro del tribunal de registro de los juicios de la Corte, después de haber reprobado varias veces…*
 
-I was present at each of these events and many others like them. In many years of practice and teaching, I have seen countless seemingly miraculous healings such as these, all as a result of simply releasing trapped emotions using the Emotion Code.
+>*El dolor de pie de Larry desapareció junto con su renquera…*
 
-My purpose in writing this book is to teach you how to find and remove trapped emotions from yourself and from others.
+>*Las alergias de Connie desaparecieron…*
+
+>*Los dos años de resentimiento de Neil por su jefe se disiparon…*
+
+>*Youlanda finalmente perdió el peso que había estado luchando por perder durante años…*
+
+>*La bulimia de Joan se fue en una semana…*
+
+>*La visión de Tom mejoró…*
+
+>*El dolor de hombro de Jim desapareció…*
+
+>*El síndrome del túnel carpiano de Mindy se resolvió…*
+
+>*El dolor de rodilla de Sandy, por el cual ya había recurrido a otros tres médicos, se fue en instantes…*
+
+>*Los miedos nocturnos de Carol que la habían invadido por más de 30 años, se fueron en una semana y no regresaron…*
+
+Estuve presente en cada uno de estos casos y en muchos otros como ellos. En muchos años de práctica y enseñanza he visto innumerables sanidades aparentemente milagrosas como estas, todas como resultado de la simple liberación de emociones atrapadas utilizando El Código de la Emoción.
+
+Mi propósito al escribir este libro es enseñar a encontrar y quitar emociones atrapadas en ti y en los demás.
+______
+**Si eres médico o pescador, ama de casa o adolescente, tú puedes aprender El Código de la Emoción. Es simple.** 
+______
+Todos pueden aprender cómo liberarse de los efectos realmente dañinos de las emociones atrapadas.
+
+### **¿Qué es una emoción atrapada?**
+
+Mientras vives a través de los días y años de tu vida, estás continuamente experimentando emociones de algún tipo u otro. La vida puede ser difícil y las emociones a veces pueden ser abrumadoras. Todos nosotros experimentamos extremos emocionales negativos por momentos. La mayoría de nosotros preferiría olvidar algunos de estos desafíos, pero desafortunadamente, la influencia de estos acontecimientos puede quedarse con nosotros en la forma de emociones atrapadas.
+
+A veces, por motivos que aún no comprendemos, las emociones no se procesan completamente. En estos casos, en vez de simplemente experimentar la emoción y después avanzar, la energía de la emoción queda de alguna manera “atrapada” dentro del cuerpo físico.
+
+Entonces, en vez de dejar tu momento de enojo atrás, o un período temporal de pena o depresión, esta energía emocional negativa puede permanecer dentro de tu cuerpo causando un significativo estrés físico y emocional. La mayoría de las personas se asombran al descubrir que su “bagaje emocional” es más literal de lo que habían imaginado. En efecto, las emociones atrapadas consisten en energías bien definidas que
+tienen una figura y una forma. A pesar de no ser visibles, son muy reales. 
+
+#### El resentimiento de Neil
+
+En esta historia, un profesor canadiense comparte cómo una situación difícil devino en una emoción atrapada que permaneció con él, impactando en su vida de manera negativa
+
+>*Hace algunos años, cuando yo enseñaba en la escuela, la directora y yo simplemente no nos llevábamos para nada bien. Peleamos casi desde el primer día por un tema u otro. Ella era extremadamente despiadada, vengativa y me humillaba en todas las maneras, figuras y formas.*
+
+>*Finalmente, alrededor de enero del año escolar, me alejé. Vi a mi médico y me tomé una licencia por estrés. Él me dijo: “Tómese algún tiempo y recupérese”; y eso hice por alrededor de tres meses, y al finalizar los tres meses volví al plantel del colegio con el alta médica, pero bajo la condición de mi médico de que no volviese a pasar por la misma situación con esta directora tan desagradable.*
+
+>*De todas maneras, los sentimientos que la rodeaban a ella y toda aquella situación nunca se irían. Brotaban a menudo y yo cavilaba sobre la situación; y sentía cómo subía mi presión arterial, y cómo el enojo y el resentimiento se fortalecían dentro de mí por la manera en la que había sido tratado y por el hecho de que ella nunca tomaba ninguna medida disciplinaria a pesar de tener una historia de ser algo siniestra, por decirlo de alguna manera, con aquellos profesores que estaban en desacuerdo con su visión acerca de la autoridad.*
+
+>*De todos modos, esto continuó por dos años. Yo no podía dormir en la noche debido a que estaba tan resentido por todos aquellos sentimientos negativos que acarreaba. Fuimos de visita al sur de California y a ver al Dr. Brad Nelson a su clínica. Él deslizó un imán hacia arriba y hacia abajo por mi espalda y liberó ese sentimiento de resentimiento y cuando lo hizo yo sentí – y realmente lo sentí – que algo me abandonó. Desde ese momento en adelante, a pesar de que aún no me gusta esa mujer, ya no tengo los sentimientos negativos ni la presión arterial alta, ni el enojo, ni el resentimiento que me habían poseído por varios años. Esa es la historia de un bloqueo emocional que desapareció con estos principios y El Código de la Emoción que enseña el Dr. Brad.*
+>*Neil B., Alberta, Canadá*
+
+### Tu futuro tomado de rehén
+
+¿Sientes a menudo que estás peleando contra el peso de algo pero no puedes decir concretamente qué es? Tal vez tu vida no esté resultando como lo habías esperado.
+Tal vez tus intentos por formar relaciones duraderas nunca parecen funcionar. Puede ser que desees que algunos acontecimientos del pasado nunca hubiesen ocurrido pero te sientes impotente para superarlos. Incluso puedes tener un sentimiento inquietante de
+que tu presente está siendo tomado de rehén por tu pasado de cierta manera vaga e indefinible.
+
+#### El autosabotaje de Jennifer
+
+La experiencia de Jennifer es un buen ejemplo de cómo las emociones atrapadas se pueden interponer en tu camino. Ella era una amiga cercana de mi hija, una estudiante universitaria amante de la diversión y con un futuro brillante. De camino a su hogar en el verano, ella pasó a visitar a nuestra familia. Su vida universitaria iba bien, pero expresó la preocupación de que ciertos acontecimientos de su pasado le seguían afectando y se preguntaba si estaría sufriendo de emociones atrapadas.
+
+Ella me contó que había estado involucrada en una relación tumultuosa con un joven el año anterior. Jennifer dijo que desde el fracaso de aquella tormentosa relación, ella sentía la espina de la inseguridad cada vez que conocía a alguien nuevo y tenía un infundado miedo a una relación a largo pla  zo que no podía vencer. Me dijo que parecía sabotear, sin intención, cada relación potencial; examiné y descubrí que, en efecto, había al menos una emoción atrapada que agravaba su problema.
+
+Decidí ayudarla a aprender a tratarse ella misma, así ella podría continuar liberando sus emociones atrapadas sin mi asistencia, ya que vivía a cierta distancia. Ella aprendió rápida y fácilmente El Código de la Emoción y prosiguió hasta encontrar varias emociones atrapadas en su cuerpo, la más notable: la emoción de inseguridad creativa. Esta emoción en particular surge por una falta de confianza en torno a la creación de cosas: desde pintar un cuadro, empezar en un nuevo trabajo o adentrarse en una nueva relación, etc. Jennifer había experimentado esa emoción en su anterior relación y ésta había quedado atrapada dentro de ella. Ella pudo liberarse de la inseguridad creativa así como también de algunas otras emociones atrapadas en su cuerpo en unos minutos, y después continuó de camino a su casa.
+
+Unos días después, llamó diciendo que sentía una diferencia asombrosa. Dijo que sentía una notable mejoría en su habilidad para articular sus pensamientos y expresarse en compañía de un joven en particular con el que estaba saliendo. Previamente, ella se había sentido intimidada y tímida frente a él, pero después de liberar sus emociones atrapadas se sintió muy relajada y confiada. Meses más tarde, continuó viendo la relación crecer. Estaba segura de que ella hubiera saboteado la relación si no hubiese liberado sus emociones atrapadas.
+
+Deshacerte de tus emociones atrapadas puede ayudarte a vencer los obstáculos de tu pasado y puede brindarle una nueva vida a tu matrimonio, familia y otras relaciones personales.
+
+La liberación de tus emociones atrapadas puede hacerte sentir más seguro y motivado y puede liberarte para crear las relaciones, la carrera y la vida que siempre has deseado.
+
+Es frecuente que las personas se sientan de alguna manera cargadas por sus emociones pasadas, pero no parecen saber cómo recuperarse de ellas. Algunas buscan ayuda a través de la psicoterapia tradicional, pero ésta no trata directamente las emociones atrapadas
+sino típicamente sus síntomas.
+
+Muchas personas fracasan en desarrollarse conforme a su habilidad y tienen dificultad para hacer que su vida funcione como debería. A menudo, la causa subyacente de su frustración es una emoción atrapada de un acontecimiento del pasado que puede ser que no se den cuenta que está saboteando sus esfuerzos. La siguiente historia es un ejemplo perfecto de cómo sucede esto.
+
+#### Julia, la taquígrafa de la corte
+
+Julia iba a la facultad para convertirse en miembro del tribunal que lleva el registro de de los juicios de la corte y estaba entusiasmada con las perspectivas futuras de su trabajo. Los miembros de este tribunal aprenden a escribir en una máquina fonética especializada y deben teclear muy rápido y a la perfección para registrar todo lo dicho en la sala del tribunal. A Julia le iba bien en clase, pero cada vez que tenía que tomar un examen donde sentía verdadera presión, no lo pasaba. Estaba muy preocupada puesto que había suspendido el examen 3 veces y temía que este próximo examen fuera su última oportunidad de aprobar.
+
+La examiné para ver si había alguna emoción atrapada que pudiese estar influenciando su comportamiento a la hora de tomar su examen y la respuesta que dio su cuerpo fue “Sí”. En su caso, la emoción atrapada era el desaliento. Cuando ella tenía 15 años de edad había atravesado un momento difícil cuando sus padres se divorciaron. Ella había experimentado un desaliento abrumador que había quedado atrapado en su cuerpo. A la hora de su examen, con la presión encima, la emoción atrapada de desaliento saboteaba su desempeño. Liberamos el desaliento atrapado y se presentó a su próximo examen sintiéndose relajada y confiada, y obtuvo un resultado casi perfecto.
+
+Julia no tenía ni idea de que el divorcio de sus padres y sus antiguos sentimientos en torno al mismo podrían estar afectándola de manera negativa en el presente.
+
+Del mismo modo en que los efectos del viento pueden percibirse en vez de verse, las emociones atrapadas son invisibles; no obstante, pueden ejercer una poderosa influencia sobre ti.
+
+En mi experiencia, un porcentaje significativo de las enfermedades físicas, las dificultades emocionales y el autosabotaje son causados en efecto por estas energías invisibles.
+
+El Código de la Emoción te ayudará a reivindicar tu vida, gozar de mejor salud y por último, quedar libre de las insidiosas y sutiles fuerzas que las emociones atrapadas están ejerciendo sobre ti.
+
+### El daño que causan las emociones atrapadas
+
+Las emociones atrapadas pueden hacer que hagas suposiciones incorrectas, reacciones de manera exagerada frente a comentarios inocentes, malinterpretes una conducta y causes un cortocircuito en tus relaciones. Aún peor, las emociones pueden crear depresión, ansiedad y otros sentimientos indeseables que tú parecieras no poder resolver. Pueden interferir en el funcionamiento correcto de los órganos y tejidos de tu cuerpo, causando estragos en tu salud física, causando dolor, fatiga y enfermedad. Sin embargo, no importa cuán grande sea tu sufrimiento, la energía invisible de las emociones atrapadas quedará sin ser diagnosticada por la medicina convencional, aún siendo un factor de causa mayor en tus dificultades físicas y emocionales.
+
+Para eliminar cualquier tipo de problema que tenga que ver con tu salud o bienestar, las causas subyacentes del problema deben ser tratadas. Hay numerosos medicamentos potentes que pueden aliviar los síntomas de la enfermedad; pero cuando el medicamento desaparece, los síntomas a menudo regresan, debido a que las causas subyacentes de la enfermedad no han sido tratadas.
+
+Es importante que reconozcas y quites tus propias emociones atrapadas antes de que causen más daño. Puedes vivir una vida mucho mejor al deshacerte de ellas.
+
+Este libro revela la verdad: que las emociones atrapadas son una significativa pero oculta causa de mucho sufrimiento y enfermedad, tanto emocional como física en su naturaleza.
+
+#### ¿El tiempo sana todas las heridas? Tal vez no…
+
+Probablemente hayas escuchado decir que el tiempo sana todas las heridas, pero esto no es necesariamente cierto. Puedes pensar que has dejado atrás todo el dolor emocional de relaciones anteriores y tal vez hayas hecho terapia para poder tratarlo. Puede parecer que todo ha quedado atrás, pero tu cuerpo puede literalmente estar habitado por las energías invisibles de viejas emociones. Éstas son heridas que el tiempo solo no puede ni va a poder sanar. Éstas pueden ocasionar que actúes y sientas de manera diferente en tus relaciones actuales y hasta incluso pueden provocar que tú las sabotees.
+
+Cuando una emoción atrapada es liberada, una carga es literalmente sacada. De hecho, la gente a menudo experimenta una sensación de levedad en torno a la liberación de la emoción atrapada. Encontrar y liberar aquellas energías negativas atrapadas pueden causar literalmente cambios en cómo te sientes y comportas, en las elecciones que haces y en los resultados que obtienes.
+
+El Código de la Emoción se trata de retirar el bagaje emocional para que tú puedas ser quien realmente eres en tu interior. Tú no eres tu bagaje emocional pero a veces tus emociones atrapadas pueden desviarte u ocasionar que transites caminos que preferirías no tomar. Las emociones atrapadas pueden apartarte de vivir la vida vibrante y saludable para la que estás hecho.
+
+### Las emociones atrapadas y el dolor físico
+
+Sumado al obvio dolor emocional, millones de personas sufren de dolores y molestias. Muchas veces existen energías emocionales atrapadas invisibles que contribuyen o generan dolor físico.
+
+El próximo ejemplo ilustra cómo las emociones atrapadas pueden ejercer una influencia asombrosamente poderosa sobre el cuerpo físico.
+
+#### El corazón roto de Debbie
+
+Debbie había sido mi paciente por un año más o menos, cuando un día entró a mi consultorio quejándose de lo que ella pensaba podría ser un ataque al corazón. Tenía dolor de pecho y dificultad para respirar; su brazo izquierdo estaba completamente entumecido al igual que el lado izquierdo de su cara. Ella dijo que había ido empeorando de forma gradual a lo largo de 24 horas. Inmediatamente la recosté y alerté a mi equipo de que podríamos necesitar asistencia médica. Después de examinar sus signos vitales y encontrarlos normales, examiné su cuerpo para ver si esos síntomas estaban siendo causados por una emoción atrapada. La respuesta dada por su cuerpo fue “Sí”.
+
+Continué examinando a Debbie y rápidamente determiné que la emoción atrapada era pena. Una mayor evaluación reveló que esta emoción había quedado atrapada en su cuerpo hacía tres años. En ese momento ella estalló en llanto y exclamó “¡Pensé que ya lo había tratado todo en terapia! ¡No puedo creer que haya aparecido ahora! Le pregunté “¿Puedes compartir lo que pasó?”
+
+Ella contestó que tres años antes su marido había tenido una aventura amorosa. La noticia fue devastadora para ella. Destrozó su matrimonio y echó por tierra su vida por un tiempo pero gradualmente lo fue aceptando. Derramó muchas lágrimas, pasó un año haciendo terapia, se volvió a casar y siguió adelante, o al menos eso pensó.
+
+Debbie expresó su asombro al ver que su pena del pasado aún la seguía afectando y de una manera tan dramática. ¿Cómo podía ser que este acontecimiento fuera la fuente de su dolor físico cuando había hecho lo posible por tratarlo? Ella había hecho todas las cosas que nos dicen que hagamos. Había llorado y expresado sus sentimientos, buscó el consuelo de sus amigos y el consejo de un terapeuta. Se abrió al diálogo con su marido y aceptó su divorcio. No había sido fácil y ella había hecho un avance importantísimo. En su mente, ella lo había tratado y lo había dejado atrás.
+____
+**Lo que no vio es lo que ninguno de nosotros puede ver. Había un efecto físico de su experiencia que era silencioso e invisible hasta que ella empezó a manifestar síntomas del mismo. Ella había tratado sus problemas de todas las maneras pero no éste. Ella sufría de una emoción atrapada.**
+____
+
+Yo liberé de su cuerpo la pena atrapada y en segundos la sensibilidad volvió a su brazo y a su cara. De repente, pudo respirar libremente y el dolor de pecho y la pesadez se fueron. Dejó mi consultorio momentos después, sintiéndose completamente bien.
+
+La abrumadora pena que ella había sentido durante aquellos primeros días de su ruptura había quedado literalmente atrapada en su cuerpo físico. El alivio instantáneo de sus síntomas físicos fue asombroso para mí. Quedé preguntándome acerca del mecanismo que estaba en funcionamiento aquí. ¿Cómo podía una sola emoción atrapada causar síntomas físicos tan extremos?
+
+La experiencia de Debbie es un dramático ejemplo de cómo las emociones atrapadas pueden afectarnos físicamente y cómo la terapia tradicional no puede ni intenta eliminarlas, a pesar de que la terapia tradicional seguramente tiene su lugar. Las típicas emociones atrapadas no suelen causar síntomas tan intensos como los que experimentó Debbie. La mayoría son más sutiles, no obstante, ejercen una influencia desequilibrante tanto en la mente como en el cuerpo.
+
+#### La madre de Sharon era una molestia
+
+Una paciente llamada Sharon vino a mi consultorio un día quejándose de un dolor en el abdomen. Me dijo que sentía como si el dolor viniera de su ovario derecho. La examiné para ver si la causa del dolor se debía a una emoción atrapada y descubrí que sí.
+
+Exámenes posteriores revelaron que la emoción exacta era la frustración, que tenía que ver con su madre y que había quedado atrapada en su cuerpo tres días antes. En el momento en el que llegué a esta conclusión, se disgustó bastante y dijo entre dientes enojada “¡Ay, mi madre! Ella me llamó hace tres días y me apabulló con todo esto. Desearía que desapareciera de mi vida y me dejara en paz!”
+
+Liberé de su cuerpo la frustración atrapada y el dolor se disipó instantáneamente. Sharon estaba asombrada y casi no podía creer que el dolor se había ido completa y repentinamente. Incluso era más asombroso para Sharon el hecho de que su intensa frustración con su madre era la causa aparente del dolor físico que había estado padeciendo en los últimos tres días.
+
+Las emociones atrapadas pueden incluso crear desequilibrios musculares que conducen al mal funcionamiento de las articulaciones y a la eventual degeneración de las articulaciones y la artritis. He visto cientos de casos en los que un agudo dolor físico dejó
+el cuerpo de manera instantánea tras la liberación de una emoción atrapada.
+
+#### Las rodillas en mal estado de Jim
+
+La eliminación de emociones atrapadas puede a menudo aliviar el dolor y el sufrimiento, incluso en casos en los que sería considerado imposible por la medicina convencional. Esta es una carta que recibí de un antiguo paciente cuyo caso se amolda a esta descripción.
+
+>*Yo fui su paciente por algunos años y sepa que tenía muchos problemas físicos con mis piernas, rodillas y espalda cuando di con usted. Pude tolerar los efectos colaterales de los varios suplementos que usted me prescribió para limpiar mi sistema y después, a través de sus habilidades para liberar los resentimientos, ira y miedo a los que estaba aferrado, pudimos alcanzar una posición física en la que mis rodillas dejaron de doler (el médico que reemplazó mis caderas me había dicho que mis rodillas debían ser reemplazadas porque también estaban desgastadas). Pude caminar, subir escaleras, etc. libre de dolor por primera vez en años. Hasta la fecha, estoy básicamente activo y sin dolor. Esto no implica que la artritis no entre en juego mientras envejezca, pero las desgastadas rodillas aún siguen funcionando bien y por ello estoy agradecido. Le deseo lo mejor con su libro y ruego que pueda abrir la puerta a otros hacia una vida saludable.*
+
+>*Mantenga la fe, Jim H.*
+
+La gente a menudo soporta su dolor y termina simplemente “conviviendo con él”, especialmente cuando no puede encontrar una solución o una razón. El dolor es la manera del cuerpo de avisarte que hay un problema: es una señal de alerta.
+____
+**En mi experiencia de trabajo con personas con dolor, he observado que las emociones atrapadas son en efecto las que crean el dolor al menos el 50% de las veces.**
+____
+
+#### Sujetada con un alf iler al pasado
+
+Estaba una vez dando un taller en Las Vegas cuando tuve una experiencia interesante. Pedí un voluntario y una joven de apenas veinte años salió de entre la audiencia. Le pregunté si tenía alguna queja física en particular y dijo que no, que ella era saludable y que no tenía problemas.
+
+Examiné sus músculos para ver si tenía alguna emoción atrapada y sí, tenía. La emoción era la falta de apoyo, el cual es un sentimiento similar a sentirse solo y sin ninguna ayuda cuando realmente la necesitas.
+
+A través del examen muscular le pregunté a su cuerpo cuándo había quedado atrapada esta emoción.Pregunté: “¿Esta emoción quedó atrapada en los últimos cinco años?”. “No”. “¿Quedó atrapada entre los diez y los veinte años de edad?”. “No”. “¿Quedó atrapada entre el nacimiento y los diez años de edad?” “Sí”. “¿Quedó atrapada en los primeros cinco años de tu vida?” “Sí”. “¿Quedó atrapada en el primer año de vida?” “Sí”. “¿Ocurrió después del primer año de vida?” “No”. Le pregunté si ella tenía idea de qué podría tratarse esto y dijo que no con su cabeza.
+
+Resulta que esta joven había venido al taller con su madre y ellas habían estado sentadas juntas en la audiencia. En ese momento, miré a la audiencia y noté que su madre se veía muy incómoda.
+
+Se tapaba la boca con su mano y se le veía o bien temerosa o muy avergonzada, no podía decir cuál de las dos. Le pregunté si ella sabía lo que podría haber pasado ya que su hija era muy joven para recordarlo.
+
+Con voz dolida y avergonzada explicó: “Bueno, cuando Jessica era bebé yo usaba pañales de tela, los cuales ajustaba con alfileres de gancho. Hubo una ocasión particular en la que me da vergüenza decir que la prendí a su pañal por accidente. Ella lloraba y lloraba pero yo no me di cuenta que estaba prendida a su pañal hasta que la volví a cambiar. No puedo creer que esto aparezca ahora. Yo me sentí tan horrible por ello y todavía me siento así. “
+
+Me dirigí a Jessica y le pregunté: “¿De esto se trata la emoción atrapada?” Presioné su brazo y éste estaba muy fuerte indicando que ese era el caso en efecto. Liberé la energía emocional atrapada rodando por su espalda tres veces un “MagCreator”, un dispositivo de
+masaje magnético hecho por la empresa Nikken; y ella se sentó nuevamente. Alrededor de dos semanas más tarde, recibí el siguiente correo electrónico:
+
+>*Hola Dr. Brad:*
+*Cuando usted estuvo en Las Vegas, le quitó a mi hija Jessica una emoción que estaba atrapada desde su infancia. Jessica ha sufrido de dolor de cadera y rodilla desde alrededor de los 12 años…y ha ido empeorando con el crecimiento. Desde que usted le quitó esa emoción atrapada de sentimiento de falta de apoyo (hace alrededor de 1 semana y ½ ), ella no ha tenido dolor ni constricción en sus caderas o rodillas. Nunca ha estado más de uno o dos días sin dolor, y debido a que había empeorado estaba empezando a afectar su forma de caminar. Está extasiada y ahora está experimentando un “nuevo” sentimiento de dicha interna. Ella le envía las gracias de corazón.*
+
+>*Jessica dijo que se sienta libre de compartir su historia… ¡Ella desde luego se la está contando a todo el mundo en Las Vegas!*
+
+>*¡Gracias! – Maureen C.*
+
+Este es otro ejemplo de una emoción atrapada que causa dolor físico. El acontecimiento que produjo la emoción atrapada ocurrió cuando Jessica era un bebé y ella no tenía un recuerdo consciente del mismo. Si no la hubiésemos liberado, creo que Jessica podría haber quedado eventualmente discapacitada y la verdadera causa de su discapacidad – su emoción atrapada – hubiera permanecido sin ser descubierta
+
+Por supuesto que no todo el dolor físico es causado por emociones atrapadas. Pero, ¿a caso no es interesante contemplar que ellas pueden ocasionar o contribuir al dolor físico?
+
+He llegado a comprender que las emociones atrapadas parecen estar involucradas, en mayor o menor medida, en casi todas las enfermedades con las que me he encontrado. ¿Cómo puede ser posible?
+
+### Las emociones atrapadas y la enfermedad
+
+La idea más antigua en el arte de la sanación es que la enfermedad es causada por un desequilibrio en el cuerpo. Las emociones atrapadas son tal vez el tipo más común de desequilibrio del que sufren los seres humanos. Yo creo que las emociones atrapadas pueden estar implicadas en casi todas las enfermedades, directa o indirectamente.
+
+Debido a que las emociones atrapadas son casi universales, porque siempre generan distorsión en el campo energético del cuerpo y porque son completamente invisibles, pueden causar una increíble amplia variedad de problemas físicos sin ser desenmascaradas.
 ___
-**Whether you are a doctor or a fisherman, a housewife or a teenager, you can learn the Emotion Code. It’s simple.**
-___
-
-Anyone can learn how to be free from the very real and damaging effects of trapped emotions.
-
-### What is a Trapped Emotion?
-
-As you live through the days and years of your life you are continually experiencing emotions of one sort or another. Life can be difficult and emotions can sometimes feel overwhelming. All of us experience negative emotional extremes at times. Most of us would rather forget some of these challenges, but unfortunately, the influence of these events can stay with us in the form of trapped emotions.
-
-Sometimes, for reasons that we do not yet understand, emotions do not process completely. In these cases, instead of simply experiencing the emotion and then moving on, the energy of the emotion somehow becomes “trapped” within the physical body.
-
-So instead of moving beyond your angry moment, or a temporary bout with grief or depression, this negative emotional energy can remain within your body, potentially causing significant physical and emotional stress.
-
-Most people are amazed to find out that their “emotional baggage” is more literal than they had imagined. Trapped emotions actually consist of well-defined energies that have a shape and form. Although they are not visible, they are very real.
-
-#### Neil’s Resentment
-
-In this story, a Canadian teacher shares how a difficult situation resulted in a trapped emotion that stayed with him, impacting his life in a negative way.
-
-> A number of years ago when I was teaching school, the principal and I
-> just did not get along well at all. We fought almost from day one over
-> one topic or another. She was extremely vicious, vindictive, and
-> emasculating in every way, shape and form. Finally, about January of
-> the school year, I bailed out. I saw my doctor, and went on stress
-> leave. He said, ‘Take some time off and regroup and recuperate.’ So I
-> did that for about three months, and at the end of three months I went
-> back to the school board with a clean bill of health, but with a
-> proviso from the doctor that I was not to be put back into the same
-> situation with this rather nasty principal.
-> 
-> Anyway, the feelings surrounding her and that whole situation would
-> never leave. They would well up often, and I would ruminate on the
-> situation, thinking about it, and I would feel my blood pressure
-> rising, and I would feel the anger and resentment building up within
-> me about the way I had been treated, and the fact that she never had
-> any disciplinary measures even though she had a history of being
-> rather sinister, if you will, to teachers who disagreed with her
-> approach to principalship.
-> 
-> Anyway, this went on for 2 years. I couldn’t sleep at night because
-> I’d be so bent out of shape from all the negative feelings I was
-> carrying. We were visiting Southern California and went and saw Dr.
-> Brad Nelson and went to his clinic, and he rolled a magnet up and down
-> my back, and released this feeling of resentment, and when he did so,
-> I felt, I actually felt, something leave me. And from that point
-> forward, even though I still don’t like the woman, I don’t have the
-> negative feelings and the rising blood pressure, the anger, the
-> resentment, which had possessed me for several years. So, that’s the
-> story of an emotional blockage gone, with these principles and the
-> Emotion Code that Dr. Brad teaches.
-> 
-> Neil B., Alberta, Canada
-
-
-### Your Future Held Hostage
-
-Do you ever feel that you are struggling under the weight of something that you can’t quite put your finger on? Perhaps your life is not turning out how you had hoped. Perhaps your attempts to form lasting relationships never seem to work out. You may wish that certain events in your past had never occurred but feel powerless to move beyond them. You may even have an uneasy feeling that your present is being held hostage by your past in some vague and indefinable way.
-
-#### Jennifer’s Self-Sabotage
-
-Jennifer’s experience is a good example of how trapped emotions can get in your way. She was my daughter’s close friend, a fun-loving college student with a bright future. On her way home for the summer, she stopped by to visit our family. Her college life was going well, but she expressed concern that events from her past still troubled her, and she wondered if she was suffering from trapped emotions.
-
-She told me she’d been involved in a tumultuous relationship with a young man the year before. Jennifer said that since the failure of that stormy relationship, she felt the sting of insecurity every time she met someone new, and had an unfounded fear of commitment that she couldn’t overcome. She told me that she seemed to unintentionally sabotage every potential relationship that she began. I tested her and discovered that there was indeed, at least one trapped emotion that was contributing to her problem.
-
-I decided to help her learn to treat herself, so she could continue to release her own trapped emotions without my assistance, since she lived some distance away. She quickly and easily learned the Emotion Code and proceeded to find several trapped emotions in her body, most notably the emotion of creative insecurity. This particular emotion arises from a lack of confidence about creating things; from painting a picture, starting a new job, or entering into a new relationship, etc. Jennifer had experienced this emotion in her prior relationship, and it had become trapped within her. She was able to release the creative insecurity as well as a few other trapped emotions from her body within a few minutes, and then continue her drive home.
-
-A few days later she called, exclaiming that she felt an amazing difference. She said that she felt a noticeable improvement in her ability to articulate her thoughts and express herself in the company of a particular young man that she was dating. Previously she had felt intimidated and shy around him, but after releasing her trapped emotions she felt very at ease and confident. Months later, she continued to watch the relationship grow. She felt certain that she would have sabotaged it if she had not released her trapped emotions.
-___
-**Getting rid of your trapped emotions can help you to overcome the obstacles of your past and can bring new life to your marriage, family, and other personal relationships.**
-___
-
-Freeing yourself from your trapped emotions can make you feel more secure and motivated, and can liberate you to create the relationships, career, and life that you always wanted.
-
-People frequently sense that they are somehow burdened by their past emotions, but they don’t seem to know how to get over them. Some seek help through traditional psychotherapy, which does not directly address trapped emotions, but typically addresses their symptoms.
-
-Many people fail to perform up to their ability and have difficulty making their life work as they should. Oftentimes, the underlying cause of their frustration is a trapped emotion from a past event that they may not realize is sabotaging their efforts. The next story is a perfect example of how this can happen.
-
-#### Julia the Court Recorder
-
-Julia was going to school to become a court recorder, and was excited about her future job prospects. Court recorders learn to type on a specialized phonetic machine, and have to type very rapidly and accurately to record everything said in the courtroom. Julia did fine in class, but whenever she had to take an examination where the pressure was really on, she would fail. She was very worried, as she had failed the test 3 times, and was afraid that this next examination would be her last chance to pass.
-
-I tested her to see if there was a trapped emotion that might be influencing her behavior in the testing situation, and the answer her body gave was “Yes.” In her case, the trapped emotion was discouragement. When she was 15 years old she had gone through a difficult time when her parents were divorcing. She had experienced overwhelming discouragement which had become trapped in her body. In the testing situation, with the pressure on, the trapped emotion of discouragement would sabotage her performance. We released the trapped discouragement, and she sailed through her next test feeling relaxed and confident, and received a nearly perfect score.
-
-Julia had no idea that her parents’ divorce and her old feelings about it could be affecting her negatively in the present.
-
-In the same way that the effects of the wind are felt rather than seen, trapped emotions are invisible, yet can exert a powerful influence upon you.
-___
-**It is my experience that a significant percentage of physical illness, emotional difficulty and self-sabotage are actually caused by these unseen energies.**
-___
-The Emotion Code will help you reclaim your life, enjoy better health, and finally be free from the insidious and subtle forces that trapped emotions are exerting upon you.
-
-### The Damage Trapped Emotions Cause
-
-Trapped emotions can cause you to make the wrong assumptions, overreact to innocent remarks, misinterpret behavior and short-circuit your relationships. Even worse, trapped emotions can create depression, anxiety and other unwanted feelings that you can’t seem to shake. They can interfere with proper function of your body’s organs and tissues, wreaking havoc with your physical health, causing pain, fatigue and illness. Yet, no matter how great your suffering may be, the invisible energy of trapped emotions will remain undiagnosed by conventional medicine, even though they may be a major causative factor in your physical and emotional difficulties.
-
-To eliminate any kind of problem that has to do with your health or well-being, the underlying causes of the problem must be addressed. There are many powerful drugs that can relieve the symptoms of disease. But when the drug wears off, the symptoms often return, because the underlying causes of the disease have not been dealt with.
-
-It is important for you to recognize and remove your own trapped emotions before they cause more damage. You can live a much better life by getting rid of them.
-
-This book proclaims the truth, that trapped emotions are a significant yet hidden cause of much illness and suffering, both emotional and physical in nature.
-
-#### Times Heals All Wounds? Perhaps Not…
-
-You’ve probably heard it said that time heals all wounds, but this is not necessarily true. You may think you have let go of all your emotional pain from prior relationships, and maybe you’ve had therapy to deal with it. It may seem like it’s all behind you now, but your body can literally be inhabited by the invisible energies of old emotions. These are wounds that time alone cannot and will not heal. They can cause you to act and feel differently in your current relationships and may even cause you to sabotage them.
-
-When a trapped emotion is released, a burden is literally lifted. In fact, people often experience a feeling of lightness upon the release of a trapped emotion.
-
-Finding and releasing those trapped negative energies can literally make changes in how you feel and behave, in the choices that you make, and in the results that you get.
-
-The Emotion Code is about clearing away the baggage, so that you can be who you really are inside. You are not your emotional baggage, but sometimes your trapped emotions can derail you, or cause you to travel on paths you’d rather not take. Trapped emotions can keep you from living the vibrant, healthy life you are meant to live.
-
-### Trapped Emotions and Physical Pain
-
-In addition to obvious emotional pain, millions of people are suffering from physical aches and pains. Many times there are unseen trapped emotional energies that contribute to or create physical pain.
-
-The next example illustrates how trapped emotions can exert an astonishingly powerful influence over the physical body.
-
-#### Debbie’s Broken Heart
-
-Debbie had been a patient of mine for a year or so, when one day she came into my office complaining of what she thought might be a heart attack. She had chest pain and difficulty breathing; her left arm was completely numb, as was the left side of her face. She said it had been gradually getting worse for about 24 hours. I immediately had her lie down and put my staff on alert that we may need medical assistance. After checking her vital signs and finding them to be normal, I tested her body to see if these symptoms were being caused by a trapped emotion. The answer her body gave was “Yes.”
-
-I continued to test Debbie, and quickly determined that the trapped emotion was heartache. A little more testing revealed that this emotion had become trapped in her body three years earlier. At this point she burst into tears and exclaimed, “I thought I’d dealt with all that in therapy! I can’t believe that is showing up now!” I asked, “Can you share what happened?”
-
-She replied that three years before, her husband had an affair. The news was devastating to her. It destroyed her marriage and wrecked her life for a while, but she gradually came to terms with it. She cried a lot of tears, spent a year in therapy, got remarried, and moved on-or so she thought.
-
-Debbie expressed surprise that her past heartache was still affecting her, and in such a dramatic way. How could this event be the source of her physical pain when she’d gone to such lengths to deal with it already? She had done all the things we’re told to do. She’d cried and expressed her feelings, sought the comfort of friends and the advice of therapists, opened up a dialogue with her husband and reconciled with her divorce. It had not been easy and she’d made a lot of important progress. In her mind she’d dealt with it and put it behind her.
-___
-**What she didn’t see is what none of us can see. There was a physical effect from her experience that was silent and invisible until she began to manifest symptoms from it. She had dealt with her troubles in every way but this. She was suffering from a trapped emotion.**
-___
-
-I released the trapped heartache from her body, and within seconds the feeling came back into her arm and into her face. Suddenly she could breathe freely and the chest pain and heaviness were gone. She left the office shortly after, feeling completely fine.
-
-The overwhelming heartache that she had felt during those early days of her breakup had literally become trapped in her physical body. The instantaneous relief of her physical symptoms was astounding to me. I was left to ponder on the mechanism that was at work here. How could a single trapped emotion cause such extreme physical symptoms?
-
-Debbie’s experience is a dramatic example of how trapped emotions can affect us physically, and how traditional therapy cannot and does not attempt to remove them, although traditional therapy certainly has its place. Typically trapped emotions will not cause symptoms as intense as the ones that Debbie experienced. Most are more subtle, yet exert an imbalancing influence on both mind and body.
-
-#### Sharon’s Mother was a Pain
-
-A patient named Sharon came to my office one day complaining of pain in her abdomen. She told me that the pain felt like it was coming from her right ovary. I tested her to see if the cause of her pain was due to a trapped emotion, and found that it was.
-
-Further testing revealed that the exact emotion was frustration, that it had to do with her mother, and that it had become trapped in her body three days earlier. The moment I arrived at this determination, she became quite upset and angrily hissed, “Oh, my mother! She called me three days ago, and dumped all of this stuff on me! I wish she would just get out of my life, and leave me alone!”
-
-I released the trapped frustration from her body and the pain instantly vanished. Sharon was amazed, and could hardly believe that the pain was entirely and suddenly gone. Even more amazing to Sharon was the fact that her intense frustration with her mother was the apparent cause of the physical pain she had been suffering from for the last three days.
-
-Trapped emotions can even create muscular imbalances that lead to joint malfunction and eventual joint degeneration and arthritis. I have seen hundreds of cases where acute physical pain instantly left the body upon the release of a trapped emotion.
-
-#### Jim’s Bad Knees
-
-Removing trapped emotions can often relieve pain and suffering, even in cases that would be considered hopeless by conventional medicine. This is a letter I received from a former patient whose case certainly fits this description.
-
-> I was your patient for a few years and know that I had many physical
-> problems with my legs, knees and back when I came to you. I was able
-> to withstand the side effects of the various supplements you
-> prescribed to cleanse my system and then through your abilities to
-> release the resentments, anger and fear that I was hanging on to, we
-> were able to achieve a physical position where my knees stopped
-> hurting (I had been told by my doctor that replaced my hips that my
-> knees needed replacing because they were worn out also) and I was able
-> to walk, climb stairs, etc. pain-free for the first time in years. To
-> this day I am basically active and pain-free. This is not to say that
-> arthritis doesn’t come into play as I continue to grow older, but the
-> worn-out knees are still working fine and for that I am grateful. I
-> wish you the best with your book and pray that it can open the door
-> for others to a healthy life.
-> 
-> Keep the faith, Jim H.
-
-People often put up with their pain, and end up simply “living with it”, especially when they cannot find a solution or a reason for it. Pain is the body’s way of telling you there is a problem; it’s a warning sign.
-
-
-----------
-
-
-**In my experience working with people in pain, I’ve observed that trapped emotions are actually creating the pain at least 50% of the time.**
-
-
-----------
-
-
-#### Pinned to the Past
-
-I was teaching a workshop once in Las Vegas when I had an interesting experience. I asked for a volunteer, and a young woman in her early twenties came up out of the audience. I asked her if she had any particular physical complaints, and she said no, that she was healthy, and had no problems.
-
-
-I muscle tested her to see if she had a trapped emotion, and she did. The emotion was unsupported, which is a feeling similar to being all alone, and without help when you really need it.
-
-Through muscle testing I asked her body when this emotion had become trapped. I asked, “Did this emotion become trapped within the last five years?” “No.” “Did this emotion become trapped between ages ten and twenty?” “No.” “Did this emotion become trapped between ages birth to ten?” “Yes.” “Did this emotion become trapped in the first five years of your life?” “Yes.” “Did this emotion become trapped in the first year of your life?” “Yes.” “Did this emotion occur after one year of age?” “No.” I asked her if she had any idea what this might be about, and she shook her head no.
-
-It just so happened that this young woman had arrived at the workshop with her mother and they had been sitting together in the audience. At this point, I looked out at the audience and noticed that her mother looked very uncomfortable.
-
-Her hand was covering her mouth and she looked either frightened or very embarrassed, I couldn’t tell which. I asked her if she knew what might have happened, since her daughter was too young to remember.
-
-In a very pained and embarrassed voice she explained, “Well, when Jessica was a baby I used cloth diapers, which I would close with safety pins. There was one particular occasion where I’m ashamed to say that I accidently pinned her to her diaper. She cried and cried, but I didn’t realize that she was pinned to her diaper until I changed her again. I can’t believe this is showing up now and I felt so horrible about this and I still do.”
-
-I turned to Jessica and asked, “Is that what this trapped emotion is about?” I pressed down on her arm and it was very strong, indicating that this was indeed the case. I released the trapped emotional energy by rolling three times down her back with a magnet, and she sat down again. About two weeks later I received the following e-mail:
-
-> Hi Dr. Brad,
-> 
-> When you were in Las Vegas, you cleared a trapped emotion for my
-> daughter, Jessica, stemming from infancy. Jessica has suffered from
-> hip and knee pain since about the age of 12 years...it has gotten
-> worse as she got older. Since you worked on clearing her trapped
-> emotion of feeling unsupported (about 1 1/2 weeks ago), she has had no
-> pain or constriction in her hips and knees. She has never gone more
-> than a day or two without pain, and because it was worsening, it was
-> beginning to affect her gait. She is ecstatic, and now is experiencing
-> a “new” sense of inner joy. She sends her heartfelt thanks.
-> 
-> Jessica said feel free to share her story....she is certainly telling
-> everyone in Las Vegas about it!
-> 
-> Thank you! - Maureen C.
-
-
-Here is another example of a trapped emotion creating physical pain. The event that caused the trapped emotion happened when Jessica was a baby, and she had no conscious memory of it. Had we not released it, I believe that Jessica may have eventually become disabled, and the true cause of her disability – her trapped emotion – would have remained undiscovered.
-
-Of course, not all physical pain is caused by trapped emotions. But isn’t it interesting to contemplate that they can cause or contribute to physical pain?
-I have come to understand that trapped emotions seem to be involved, to one degree or another, in nearly every illness I have encountered. How is this possible?
-
-### Trapped Emotions and Disease
-
-The most ancient idea in the art of healing is that disease is caused by imbalance in the body. Trapped emotions are perhaps the most common type of imbalance that human beings suffer from. I believe that trapped emotions can be implicated in nearly all diseases, either directly or indirectly.
-
-Because trapped emotions are nearly universal, and because they always create distortion in the energy field of the body, and because they are completely invisible, they can cause an incredibly wide variety of physical problems without being unmasked.
-___
-**Trapped emotions are truly epidemic, and are the insidious, invisible cause of much suffering and illness, both physical and emotional in nature.**
+**Las emociones atrapadas son verdaderamente epidémicas y son la causa invisible e insidiosa de mucho sufrimiento y enfermedad, tanto de naturaleza física como emocional.**
 ___
 
-Trapped emotions lower immune function and make the body more vulnerable to disease. They can distort body tissues, block the flow of energy, and prevent normal function of organs and glands.
+Las emociones atrapadas debilitan el funcionamiento inmune y dejan al cuerpo más vulnerable a la enfermedad. Pueden deformar los tejidos del cuerpo, bloquear el flujo de energía e impedir el funcionamiento normal de los órganos y las glándulas.
 
-On the following page is a list of conditions and diseases that my patients came to me with, where trapped emotions appeared as a contributing factor, and many times as the entire cause of the condition.
+En la siguiente página hay una lista de condiciones y enfermedades con las que mis pacientes vinieron a mí, en donde las emociones atrapadas aparecieron como un factor de contribución y muchas veces como la única causa de la condición.
 
 |   |    |   |    |
 |---|---|---|---|
-|Acid Reflux |Diabetes|Learning Disabilities|
-| ADD/ADHD | Dyslexia |  Low Back Pain |
-| Allergies | Eye Pain | Hypothyroidism |
-|Abdominal Pain |Fibromyalgia | Lupus|
-| Asthma |Frigidity | Migraines |
-| Back Pain | Headaches | Multiple Sclerosis | 
-|Bell’s Palsy |Heartburn (GERD) | Neck pain | 
-|Cancer | Hip Pain | Night Terrors|
-|Carpal Tunnel | Hypoglycemia | Panic Attacks |
-|Chest Pain | Impotency | Parkinson’s disease |
-|Chronic Fatigue | Infertility | Phobias| 
-|Chron’s Disease | Insomnia | Shoulder pain |
-|Colitis | Irritable Bowel (IBS) | Sinus problems| |Constipation | Joint Pain | Tennis Elbow | 
-|Depression | Knee Pain | Vertigo |
+|Ref lujo|Diabetes|Dif icultades de aprendizaje
+|ADD / ADHD |Dislexia |Dolor de cintura
+|Alergias |Dolor de ojos |Hipotiroidismo
+|Dolor abdominal |Fibromialgia |Lupus
+|Asma |Frigidez |Migrañas
+|Dolor de espalda |Dolor de cabeza |Esclerosis múltiple
+|Parálisis de Bell |Acidez (GERB) |Dolor de cuello
+|Cáncer |Dolor de cadera |Miedos nocturnos
+|Túnel Carpiano |Hypoglucemia |Ataques de pánico
+|Dolor de pecho |Impotencia |Mal de Parkinson
+|Fatiga crónica |Infertilidad |Fobias
+|Enfermedad de Crohn |Insomnio |Dolor de hombro
+|Colitis |Colon irritable |Problemas en los senos nasales
+|Constipación |Dolor articular |Codo de tenista
+|Depresión |Dolor de rodilla |Vér tigo
 |   |  |   |   |
 
-I am not saying that releasing trapped emotions is a cure-all. The Emotion Code should not be used by itself in attempting to address any major disease or medical condition, but rather, it should be looked upon as an adjunctive therapy. When trapped emotions are contributing to physical illness, removing them can only help. 
+No estoy diciendo que la liberación de las emociones atrapadas sea una cura para todo. El Código de la Emoción no debería ser usado en sí mismo para intentar tratar alguna enfermedad mayor o condición médica, sino que debería ser considerado como una terapia complementaria. Cuando las emociones atrapadas contribuyen a la enfermedad física, el removerlas sólo puede ayudar.
 
-The Emotion Code is easy to use and precise. Sometimes the release of a trapped emotion will bring about an instantaneous and dramatic effect, but most of the time the effects are more subtle, yet they always seem to bring a greater sense of contentment and peace, whether they are immediate or gradual. 
+El Código de la Emoción es preciso y fácil de usar. A veces la liberación de una emoción atrapada traerá aparejado un efecto drástico instantáneo; pero la mayoría de las veces los efectos son más sutiles; no obstante, siempre parecen brindar una mayor sensación de satisfacción y paz, ya sea inmediata o gradual.
 
-If you are like many of the people who have come to my seminars over the years, using the Emotion Code will bring a new joy and freedom to your life.
-It will give you a greater feeling of serenity because you will be freeing yourself from your old emotional baggage. The results can bring balance, a new inner calm and profound healing where nothing else has before.
+Si eres como muchas de las personas que han venido a mis seminarios por años, utilizar el Código de la Emoción traerá una nueva dicha y libertad a tu vida. 
 
+Te dará una mayor sensación de serenidad debido a que tú estarás librándote de tu antiguo bagaje emocional. Los resultados pueden brindar equilibrio, una nueva calma interior y una profunda sanación donde nada antes lo ha hecho.
 
 

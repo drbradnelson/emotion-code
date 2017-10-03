@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Title</key>
-		<string>Title</string>
+		<string>Titulo</string>
 		<key>Filename</key>
 		<string>title</string>
 		<key>Audio</key>
@@ -12,7 +12,7 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Dedication</string>
+		<string>Dedicatoria</string>
 		<key>Filename</key>
 		<string>dedication</string>
 		<key>Audio</key>
@@ -20,7 +20,7 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>A Note to Readers</string>
+		<string>Nota a los Lectores</string>
 		<key>Filename</key>
 		<string>note-to-readers</string>
 		<key>Audio</key>
@@ -28,15 +28,15 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Acknowledgements</string>
+		<string>Agradecimientos</string>
 		<key>Filename</key>
 		<string>acknowledgements</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 1</string>
+		<string>Capítulo 1</string>
 		<key>Subtitle</key>
-		<string>Trapped Emotions: The Invisible Epidemic</string>
+		<string>Emociones Atrapadas - la Epidemia Invisible</string>
 		<key>Filename</key>
 		<string>chapter1</string>
 		<key>Audio</key>
@@ -44,9 +44,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 2</string>
+		<string>Capítulo 2</string>
 		<key>Subtitle</key>
-		<string>The Secret World of Trapped Emotions</string>
+		<string>El Mundo Secreto de las Emociones Atrapadas</string>
 		<key>Filename</key>
 		<string>chapter2</string>
 		<key>Audio</key>
@@ -54,9 +54,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 3</string>
+		<string>Capítulo 3</string>
 		<key>Subtitle</key>
-		<string>Mysteries of the Ancient Energy Healers</string>
+		<string>Misterios de los Antiguos</string>
 		<key>Filename</key>
 		<string>chapter3</string>
 		<key>Audio</key>
@@ -64,9 +64,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 4</string>
+		<string>Capítulo 4</string>
 		<key>Subtitle</key>
-		<string>Healing With Magnets</string>
+		<string>Sanación con Imanes</string>
 		<key>Filename</key>
 		<string>chapter4</string>
 		<key>Audio</key>
@@ -74,9 +74,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 5</string>
+		<string>Capítulo 5</string>
 		<key>Subtitle</key>
-		<string>Getting Answers From The Inner Mind</string>
+		<string>Como Utilizar el Código de la Emoción</string>
 		<key>Filename</key>
 		<string>chapter5</string>
 		<key>Audio</key>
@@ -84,9 +84,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 6</string>
+		<string>Capítulo 6</string>
 		<key>Subtitle</key>
-		<string>Releasing Trapped Emotions</string>
+		<string>Cómo Liberar Emociones Atrapadas</string>
 		<key>Filename</key>
 		<string>chapter6</string>
 		<key>Audio</key>
@@ -94,9 +94,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 7</string>
+		<string>Capítulo 7</string>
 		<key>Subtitle</key>
-		<string>The Walls Around Our Hearts</string>
+		<string>Los Muros Alrededor de Nuestros Corazones</string>
 		<key>Filename</key>
 		<string>chapter7</string>
 		<key>Audio</key>
@@ -104,9 +104,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 8</string>
+		<string>Capítulo 8</string>
 		<key>Subtitle</key>
-		<string>Surrogates, Proxies and Distance Healing</string>
+		<string>Sustitutos, Representantes y Sanacion a Distancia</string>
 		<key>Filename</key>
 		<string>chapter8</string>
 		<key>Audio</key>
@@ -114,9 +114,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 9</string>
+		<string>Capítulo 9</string>
 		<key>Subtitle</key>
-		<string>The Emotion Code and Animals</string>
+		<string>El Código de le Emoción y Los Animales</string>
 		<key>Filename</key>
 		<string>chapter9</string>
 		<key>Audio</key>
@@ -124,9 +124,9 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Chapter 10</string>
+		<string>Capítulo 10</string>
 		<key>Subtitle</key>
-		<string>Life Without Trapped Emotions</string>
+		<string>La Vida Sin Emociones Atrapadas</string>
 		<key>Filename</key>
 		<string>chapter10</string>
 		<key>Audio</key>
@@ -134,7 +134,7 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>About the Author</string>
+		<string>Acerca del Autor</string>
 		<key>Filename</key>
 		<string>about-author</string>
 	</dict>

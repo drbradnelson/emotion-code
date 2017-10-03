@@ -3,4 +3,6 @@
 
 #import "Hotline.h"
 
+#import "NSBundle+Language.h"
+
 #endif /* EmotionCode_Bridging_Header_h */

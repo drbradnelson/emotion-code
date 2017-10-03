@@ -1,26 +1,25 @@
-## Acknowledgements
+##AGRADECIMIENTOS
 
+Mi expreso agradecimiento es para aquellos que han ayudado en la creación de este trabajo.
 
-My express thanks go out to those who have helped in the creation of this work.
+ A mis pacientes, por permitirme ser su amigo y médico, y por permitirme compartir sus historias.
 
-To my patients, for allowing me to be their friend and doctor, and for allowing me to share their stories.
+ A mi hermano Greg, por iniciarme en la sanación magnética y en una nueva manera de ver las cosas.
 
-To my brother Greg, for introducing me to magnetic healing and to a new way of seeing things.
+ A mi hermano Bruce, por enseñarme acerca del poder de la intención y el poder de la caridad.
 
-To my brother Bruce, for teaching me about the power of intention and the power of charity.
+ A mis hermanas Michele and Noelle, por su aliento positivo y amor.
 
-To my sisters Michele and Noelle, for their positive encouragement and love.
+ A Donna Beech por escucharme por horas hasta el final, por organizar mi material y ayudarme a comenzar.
 
-To Donna Beech for listening to me for hours on end, and for organizing my material and helping me to get started.
+ A Jean y Natalie Nelson y Ryan Muirhead por su excelente ayuda en la edición y la fotografía.
 
-To Jean and Natalie Nelson and Ryan Muirhead for their excellent help with editing and photography.
+ A Kristi, Natalie, Jean, Rhett, Ian, Elizabeth, Angela, Noelle and Cierra por modelar, y a Drew y Joseph por sus ideas y su positivo aporte.
 
-To Kristi, Natalie, Jean, Rhett, Ian, Elisabeth, Angela, Noelle and Cierra for modeling, and to Drew and Joseph for their ideas and positive input.
+ A Joseph, por su aporte artístico y creatividad, y a Drew por tanto apoyo y ayuda.
 
-To Joseph, for his artistic input and creativity, and to Drew for being so supportive and helpful.
+ A Isamu Masuda, por su sueño de sanar al mundo y por crear las herramientas magnéticas para ese propósito.
 
-To Isamu Masuda, for his dream of healing the world and for creating the magnetic tools to do just that.
+ A mi esposa Jean, por estar a mi lado en las buenas y en las malas, por ser mi inspiración, mi ayudante y mi mejor amiga.
 
-To my wife Jean, for sticking with me through thick and thin, for being my inspiration, my helper and my best friend.
-
-Finally, to God for answering my prayers, for blessing me with the gifts I would need to accomplish this work, for making me an instrument of healing, and for guiding my life all along the way.
+ Finalmente, a Dios por responder a mis oraciones, por bendecirme con los dones que necesitaba para realizar este trabajo, por hacerme un instrum ento de sanación y por guiar mi vida a lo largo del camino.

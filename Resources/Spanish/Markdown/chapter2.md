@@ -1,607 +1,566 @@
-*The doctor of the future will give no medicine, but will interest his patients in the care of the human frame, in diet, and in the cause and prevention of disease.*
+
+*EL MÉDICO DEL FUTURO NO DARÁ MEDICINAS, SINO QUE HARÁ QUE SUS PACIENTES SE INTERESEN POR EL CUIDADO DE LA ESTRUCTURA HUMANA, LA DIETA, Y LA CAUSA Y LA PREVENCIÓN DE LAS ENFERMEDADES.*
 *- Thomas A. Edison*
 
+## EL MUNDO SECRETO DE LAS EMOCIONES ATRAPADAS
 
-## The Secret World of Trapped Emotions
+   A esta altura, seguramente te estarás preguntando si tú mismo tienes alguna emoción atrapada y cuál podría ser. A continuación hay una lista de circunstancias que a menudo resultan en emociones atrapadas:
 
-By now, you are probably wondering whether you have any trapped emotions yourself, and what they might be. Here is a list of circumstances that often result in trapped emotions:
+ - Pérdida de un ser querido
+ - Divorcio o problemas de relación
+ - Dificultades económicas
+ - Estrés laboral o del hogar
+ - Aborto espontáneo o aborto
+ - Trauma físico
+ - Lucha física o emocional
+ - Abuso físico, mental, verbal o sexual
+ - Conversaciones negativas de uno mismo
+ - Creencias negativas acerca de tí mismo u otros
+ - Estrés a largo plazo
+ - Rechazo
+ - Internalización de sentimientos
+ - Sentimentios de inferioridad
+ - Falta de atención o abandono
+ 
+Esta lista bajo ninguna circunstancia incluye todo. La única manera de saber si tienes emociones atrapadas es preguntarle al subconsciente. Esto se puede hacer de una forma bastante fácil pero primero se requiere una pequeña explicación.
 
- - Loss of a loved one
- - Divorce or relationship problems
- - Financial hardship
- - Home or work stress
- - Miscarriage or Abortion
- - Physical trauma
- - Physical or Emotional Combat
- - Physical, mental, verbal or sexual abuse
- - Negative self-talk
- - Negative beliefs about yourself or others
- - Long-term stress
- - Rejection
- - Physical illness
- - Feelings of inferiority
- - Internalization of feelings
- - Neglect or abandonment
+### Mente consciente versus subconsciente
 
-This list is by no means all-inclusive. The only way to know whether you have trapped emotions is to ask the subconscious mind. This can be done quite easily, but first a little explanation is in order.
+Primero, discutamos la diferencia entre la mente consciente y el subconsciente.
 
-### Conscious versus Subconscious
+A continuación hay una forma muy simple de verlo. Se ha dicho muchas veces que nosotros los humanos usamos solamente alrededor del 10% de nuestro cerebro. Lo que esto realmente quiere decir es que nuestra mente consciente requiere alrededor del 10% de los recursos de nuestro cerebro. En otras palabras, pensar, desplazarse, hacer elecciones, planificar, ver, escuchar, saborear, tocar y oler son actividades conscientes y requieren el 10% del poder de procesamiento de nuestro cerebro.
 
-First, let’s discuss the difference between the conscious and the subconscious mind.
+Si esto es cierto, ¿qué hace el otro 90% del cerebro? Si la mente consciente requiere el 10% de nuestro cerebro, podemos referirnos al otro 90% como el subconsciente.
 
-Here is a simple way to look at it. It has been said many times that we humans use only about 10% of our brain. What is really meant by this is that the conscious mind needs about 10% of our brain’s resources. In other words, thinking, moving about, making choices, planning, seeing, hearing, tasting, touching, and smelling are all conscious activities, and take up 10% of the processing power of our brain.
+Esta silenciosa e inconsciente mayor parte del cerebro está constantemente ocupada almacenando información y manteniendo en funcionamiento los sistemas del cuerpo de manera eficiente. También es importante comprender que el subconsciente ejerce una invisible pero profunda influencia sobre las cosas que hacemos y cómo nos comportamos y sentimos.
 
-If this is true, what is the other 90% of the brain doing? If the conscious mind takes up 10% of your brain, we can refer to the other 90% as the subconscious mind. This silent and unconscious majority of the brain is constantly busy storing information and keeping your body systems running efficiently. It is also important to understand that the subconscious mind exerts an unseen, yet profound influence over the things we do, and how we behave and feel.
-
-Most people give little thought to their subconscious minds. But imagine for a moment having to take over the functions that your subconscious mind performs. Imagine the difficulty of instructing your digestive system how to digest your lunch, or telling your cells how to create enzymes and proteins. Imagine if you had to worry about keeping your heart beating or keeping air moving in and out of your lungs every moment of every day. And you think you have a full schedule now!
+La mayoría de las personas piensan poco en su subconsciente; pero imagina por un instante tener que asumir las funciones que tu subconsciente desempeña. Imagina la dificultad de ordenarle a tu sistema digestivo cómo digerir tu almuerzo, o decirle a tus células cómo producir enzimas o proteínas. Imagina si tuvieras que preocuparte por mantener a tu corazón latiendo o mantener el aire entrando y saliendo de tus pulmones a cada momento de cada día. ¡Y piensas que ahora tienes una agenda muy ocupada!
 ___
-**Like a computer, your subconscious mind is capable of storing vast amounts of information.**
-___
-
-Brain surgery is often done while the patient is conscious. The brain has no pain-sensing nerves, and surgeons take advantage of this fact to get feedback from their patients while their brains are being delicately probed during surgery.
-
-Dr. Wilder Penfield discovered that under certain circumstances people who are undergoing brain surgery will have memories return to them when a certain area of the brain is stimulated. For example, the surgeon might touch an area of the brain with his electrode and the alert patient suddenly will remember a scene, a smell, or a sound from a particular moment in their life.[^1]
-
-Often these flashes of memory are about events or scenes that would be unremembered under normal circumstances. If the same area of the brain is touched again with an electrode in the same precise spot, the same memory will be reexperienced.
-
-If you are like me, sometimes it seems difficult to remember what happened yesterday. I believe, however, that your subconscious mind is an amazing recording device.
-___
-**I believe that everything you’ve ever done in your entire life has been logged in your subconscious mind.**
+**Como una computadora, tu subconsciente es capaz de almacenar vastas cantidades de información.**
 ___
 
-Every face you’ve ever seen in a crowd, every smell, every voice, every song, every taste, every touch and every sensation you have ever experienced has been recorded by your subconscious.
+Las neurocirugías se realizan a menudo cuando el paciente está consciente. El cerebro no tiene nervios sensibles al dolor y los cirujanos toman ventaja de este hecho para obtener respuesta de sus pacientes mientras los cerebros están siendo sondados delicadamente durante una cirugía.
 
-Every virus, bacteria or fungus that has ever invaded your body, all your injuries, all your thoughts and feelings, and the entire history of every cell in your body has all been archived. Your subconscious is also aware of any trapped emotions that your body may be harboring, and it also knows exactly what effect these trapped emotions are having on your physical, emotional and mental well-being. All of this and more is tucked away in the subconscious mind.
+El Dr. Wilder Penfield descubrió que bajo determinadas circunstancias las personas que son sometidas a una neurocirugía tendrán recuerdos que regresarán a ellos cuando una determinada área del cerebro sea estimulada. Por ejemplo, el cirujano podría tocar un área del cerebro con su electrodo y el paciente en alerta de repente recordará una escena, un aroma o un sonido de algún momento en particular de su vida.[^1]
 
-#### The Computer- Mind
+A menudo estos flashes de memoria se tratan de acontecimientos o escenas que no serían recordados bajo circunstancias normales. Si la misma área del cerebro es tocada nuevamente por un electrodo en el mismo punto preciso, el mismo recuerdo será reexperimentado.
 
-Your subconscious is also aware of exactly what your body needs in order to get well. But how can you get to this information?
-
-I began asking myself that same question when I was in chiropractic school. I learned that the brain is essentially a computer, the most powerful computer in the known universe. This made me wonder if healers would ever be able to tap into the immense power of the brain, to find critical information about what was wrong with their patients.
-
-During my years of practice, I learned that it is actually possible to retrieve information from the subconscious, using a form of kinesiology, or muscle testing. First developed by Dr. George Goodheart in the 1960s as a way to correct structural imbalance in the skeleton, muscle testing is now widely accepted. While many physicians world-wide use muscle testing procedures to correct spinal misalignments and other imbalances, the fact that muscle testing can be used to get information directly from the subconscious mind is less recognized. [^2]
-
-### Talking to the Body
-
-The ability to open a line of communication with a patient’s subconscious mind through muscle testing became a powerful tool for me. It enabled me to know what a patient needed in order to get well, as quickly as possible. I came to trust the body’s wisdom implicitly and to have great faith in the body’s innate ability to communicate that wisdom to me, through muscle testing. Many years of teaching seminars to both lay-people and doctors taught me that anyone can do it. Anyone can learn to get answers from the body, and anyone can take the necessary steps to help the body heal. You don’t have to be a doctor; you just have to be willing to learn.
-
-I have been driven for many years to share this marvelous knowledge with the world. It took much prayer and effort to refine and simplify the Emotion Code, and now it is simple enough that anyone can learn it. You will soon have all the knowledge you need to begin using this method on yourself to remove trapped emotional energies from your body.
-
-#### Negative versus Positive Stimuli
-
-Before I can teach you how to get information from your subconscious mind, you must understand one basic principle. This is that all organisms, no matter how primitive, will respond to positive or negative stimuli. For example, plants grow towards sunlight and away from darkness. An amoeba in an aquarium will move towards light and away from darkness. If a drop of poison is placed into that same aquarium, the amoeba will move away from that poison and head toward cleaner water.
-
-On a subconscious level, the human body is no different.
+Si tú eres como yo, a veces se hace difícil recordar qué pasó en el día de ayer. Sin embargo, yo creo que tu subconsciente es un fascinante dispositivo de grabación.
 ___
-**Your body will normally be drawn toward positive things or thoughts and repelled by negative things or ideas.**
+**Yo creo que todo lo que has hecho en tu vida entera ha sido registrado en tu subconsciente.**
 ___
 
-In fact, this has been going on all your life, without your even being aware of it. If you will allow yourself to quiet your conscious mind and tune in to your body, you will learn that your subconscious is quite able to communicate with you.
+Cada rostro que has visto en una multitud, cada aroma, cada voz, cada canción, cada sabor, cada toque y cada sensación que alguna vez experimentaste ha sido registrado por tu subconsciente.
 
-Are you ready to let your subconscious mind speak to you?
+Cada virus, bacteria u hongo que alguna vez haya invadido tu cuerpo, todas tus heridas, todos tus pensamientos y sentimientos y la historia completa de cada célula de tu cuerpo, todo ha sido archivado.
 
-### The Sway Test
+Tu subconsciente está también al tanto de cualquiera de las emociones atrapadas que tu cuerpo pueda estar albergando; también sabe exactamente qué efecto tienen estas emociones atrapadas en tu bienestar físico, emocional y mental. Todo esto y mucho más está guardado en tu subconsciente.
 
-The simplest method I know of to get answers from your subconscious mind is called the Sway Test. You will learn other methods of muscle testing later on in this book, but the Sway Test is extremely simple to learn and does not require the assistance of anyone else, and so can be used when you are alone.
+#### La mente - computadora
 
-To try the Sway Test, assume a standing position and make sure you are comfortable. The room should be quiet and free of distractions, including music and television. It will be easiest for you to learn if you are alone or with someone who is learning along with you.
+Tu subconsciente también está al tanto de exactamente lo que necesita tu cuerpo para estar bien. ¿Pero cómo puedes acceder a esta información?
 
-Here’s what to do:
+Empecé a hacerme la misma pregunta cuando estaba en una escuela quiropráctica. Aprendí que el cerebro es esencialmente una computadora, la más poderosa computadora en el universo conocido. Esto me hizo dudar si los sanadores podrían alguna vez explotar el inmenso poder del cerebro para encontrar información crítica acerca de qué era lo que andaba mal en sus pacientes.
 
-Stand with your feet shoulder width apart so that you are comfortably balanced.
+Durante mis años de práctica, aprendí que en realidad es posible recuperar información del subconsciente usando un tipo de kinesiología o examen muscular. Primero fue desarrollado por el Dr. George Goodheart en los años ’60 como una forma de corregir el desequilibrio estructural en el esqueleto; hoy por hoy el examen muscular es ampliamente aceptado. Mientras muchos médicos de todo el mundo utilizan los procedimientos del examen muscular para corregir desajustes de la columna vertebral y otros desequilibrios, el hecho de que el examen muscular pueda ser usado para obtener información directamente del subconsciente es menos reconocido.[^2]
 
-Stand still, with your hands by your sides.
+### Cómo hablarle al cuerpo
 
-Let go of all your worries and relax your body completely. Close your eyes if you are comfortable doing so.
+La habilidad de abrir una línea de comunicación con el subconsciente de un paciente a través del examen muscular se convirtió para mí en una poderosa herramienta. Me permitió conocer qué necesitaba un paciente para ponerse bien, tan rápido como fuera posible. Llegué a confiar en la sabiduría del cuerpo de manera implícita y a tener mucha fe en la habilidad innata del cuerpo de comunicarme esa sabiduría a través del examen muscular. Muchos años de dar seminarios tanto a no profesionales como médicos, me enseñaron que cualquiera puede hacerlo. Cualquier persona puede aprender a obtener respuestas del cuerpo y cualquiera puede seguir los pasos necesarios para ayudar a sanar el cuerpo. No es necesario que seas médico, sólo tienes que querer aprender.
+
+Por muchos años, he sido invitado a compartir este maravilloso conocimiento con el mundo. Refinar y simplificar el Código de la Emoción llevó muchas oraciones y esfuerzo, pero ahora es lo suficientemente simple para que cualquiera pueda aprenderlo. Pronto tendrás todo el conocimiento que necesitas para empezar a utilizar este método en ti mismo para eliminar las energías emocionales atrapadas en tu cuerpo.
+
+#### Estímulos negativos versus positivos
+
+Antes de que pueda enseñarte cómo obtener información de tu subconsciente, debes comprender un principio básico. Este es que todos los organismos, no importa cuán primitivos sean, responderán a estímulos positivos o negativos. Por ejemplo, las plantas crecen en dirección a la luz solar y se apartan de la oscuridad. Una ameba en un acuario se moverá hacia la luz apartándose de la oscuridad. Si se pone una gota de veneno en ese mismo acuario, la ameba se alejará del veneno y se dirigirá hacia el agua más limpia.
+
+En un nivel subconsciente, el cuerpo humano no es diferente.
+___
+**Tu cuerpo será normalmente atraído por cosas o pensamientos positivos y rechazará cosas o ideas negativas.**
+___
+
+De hecho, esto ha sido así a lo largo de toda tu vida, sin que ni siquiera estuvieras al tanto de ello. Si te permites apaciguar tu mente consciente y sintonizas con tu cuerpo, aprenderás que tu subconsciente es bastante capaz de comunicarse contigo.
+
+¿Estás preparado para dejar que tu subconsciente hable contigo?
+
+### La prueba de balanceo
+
+El método más simple que conozco para obtener respuestas de tu subconsciente se llama la prueba de balanceo. Más adelante aprenderás otros métodos de examen muscular en este libro, pero la prueba de balanceo es extremadamente simple de aprender y no requiere la ayuda de nadie más, por lo que se puede usar cuando estás solo.
+
+El método más simple que conozco para obtener respuestas de tu subconsciente se llama la prueba de balanceo. Más adelante aprenderás otros métodos de examen muscular en este libro, pero la prueba de balanceo es extremadamente simple de aprender y no requiere la ayuda de nadie más, por lo que se puede usar cuando estás solo.que esté aprendiendo junto contigo.
+
+Esto es lo que hay que hacer:
+
+Permanece de pie con tus pies separados del ancho de los hombros para estar en equilibrio de manera cómoda.
+
+Quédate quieto con las manos a los costados.
 
 ![](1.jpg) 
-`Swaying Forward`
+*Balanceo hacia adelante*
 
-Within a few seconds you will notice that it is actually impossible to stand perfectly still.
+Olvida todas tus preocupaciones y relaja tu cuerpo completamente. Cierra tus ojos si te sientes cómodo haciéndolo.
 
-Your body will continually shift its position very slightly in different directions as your muscles work to maintain your standing posture. You will notice that these movements are very slight, and are not under your conscious control.
-When you make a positive, true or congruent statement, your should begin to sway noticeably forward, usually within less than ten seconds. When you make an incongruent or untrue statement your body should sway backwards within the same time frame.
+En  pocos  segundos  notarás  que es	casi	imposible	permanecer completamente quieto. Tu cuerpo cambiará su posición continuamente de manera suave en diferentes direcciones, mientras tus músculos trabajan para mantener tu posición vertical. Notarás que estos movimientos son muy suaves y que no están bajo tu control consciente.
 
-I believe this phenomenon occurs because of how you are used to perceiving the world around you. In spite of the fact that your environment surrounds you completely at all times, on all sides, you are used to only dealing with what is directly in front of you at any given time. When you drive a car, when you walk, when you eat, when you work at your desk, you are constantly dealing with the world in front of you, not the world behind you or to the sides of you. When you make any kind of a statement, your body perceives that thought as if it were like anything else it has to deal with, like a file on your desk or food on your plate. Essentially, you can think of the statement you make as being right in front of you, ready to be dealt with and processed.
+Cuando hagas una afirmación positiva, verdadera o congruente tu cuerpo debería comenzar a balancearse hacia adelante notablemente, usualmente en menos de diez segundos. Cuando hagas una afirmación incongruente o falsa debería balancearse hacia atrás dentro de la misma estructura.
 
-When you are ready, simply state the words “unconditional love.” Keep this phrase in your mind, and try to feel the feelings that are connected with this phrase. In a few moments, you should notice your body sway forward. Like a plant growing toward the light, your body will gently sway toward the positive energy of that thought. The movement of your body toward this thought may be more sudden than gradual in some cases, and may surprise you!
+Creo que este fenómeno ocurre por cómo estás acostumbrado a percibir el mundo alrededor tuyo. A pesar de que tu medio ambiente te rodea completamente en todo momento, por todos lados, tú estás acostumbrado a tratar sólo con lo que está inmediatamente en frente tuyo en cualquier momento dado. Cuando conduces un auto, cuando hablas, cuando comes, cuando trabajas en tu escritorio, estás tratando de manera constante con el mundo que está enfrente tuya, no con el mundo detrás de ti o a los costados. Cuando tú haces cualquier tipo de afirmación, tu cuerpo percibe ese pensamiento como cualquier otra cosa con la que tiene que tratar, como un archivo en tu escritorio o la comida en tu plato. Esencialmente, puedes pensar en la afirmación que haces como si estuviese justo delante de ti, lista para ser tratada o procesada.
 
-Now clear your mind, and say the word “hatred.” Try to feel the feelings that are connected with this thought. Just as any organism will automatically move away from a poisonous or harmful substance, your body should move away from the thought of “hatred.” You should notice that your body, within ten seconds or so, will begin to sway backward. It is very important that you don’t try to force your body to sway either forward or backward. Simply allow your body to sway on its own. You are giving your subconscious mind its first opportunity to speak to you in this very direct way, and it must be done gently for the best result. Don’t force it. It will become easier with practice.
+Cuando estés listo, simplemente afirma las palabras “amor incondicional”. Mantén esta frase en tu mente y trata de sentir los sentimientos que están conectados con esta frase. En pocos instantes, tú deberías notar que tu cuerpo se balancea hacia adelante. Como una planta creciendo en dirección a la luz, tu cuerpo se balanceará de manera suave hacia la energía positiva de ese pensamiento. El movimiento de tu cuerpo hacia ese pensamiento puede ser más brusco que gradual en algunos casos y ¡puede sorprenderte hora deja tu mente en blanco y di la palabra “odio”. Trata de sentir los sentimientos que están conectados a este sentimiento. Como cualquier organismo que se aleja de manera automática de una sustancia envenenada o dañina, tu cuerpo debería alejarse del pensamiento de “odio”. Podrás notar que tu cuerpo, en diez segundos más o menos, va a empezar a balancearse hacia atrás. Es muy importante que no trates de forzar tu cuerpo para que se balancee hacia adelante o atrás. Simplemente, deja que tu cuerpo se balancee solo. Le estás dando a tu subconsciente su primera oportunidad de hablarte de esta manera directa y debe ser hecho de manera suave para mejores resultados. No lo fuerces. Se hará más fácil con la práctica.
 
-Now try making a statement that you know to be true. State your name out loud, saying, “My name is ________.” If your name is Alex for example, you would say, “My name is Alex.” Your subconscious mind knows what is congruent or true. When you make a true statement, you’ll feel your body begin to gently sway forward, because your body is drawn towards positivity, congruency and truth.
+Ahora trata de hacer una afirmación que sepas que es verdadera. Afirma tu nombre en voz alta diciendo: “Mi nombre es _______________”. Si tu nombre es Alex por ejemplo, dirías: “Mi nombre es Alex”. Tu subconsciente sabe qué es congruente o verdadero. Cuando haces una afirmación verdadera, sentirás que tu cuerpo empieza a balancearse de manera suave hacia adelante porque es atraído hacia la positividad, congruencia y verdad.
 
 ![](2.jpg) 
-`Swaying Backward`
+*Balanceo hacia atrás*
 
-Now you can try an untrue or incongruent statement. If your name is Alex for example, you might say, “My name is Chris”, or “My name is Kim.” As long as you choose a name that is not your own, your subconscious mind will know that this statement is incongruent or untrue. Once you have made this statement, if you keep your mind clear of other thoughts, you should feel your body begin to sway backwards within a few seconds. This is because your body is not only repelled by negative thoughts such as “hatred”, but incongruence and falsity are also repulsive to the mind and body.
+Ahora puedes intentarlo con una afirmación falsa o incongruente. Si tu nombre es Alex por ejemplo, podrías decir: “Mi nombre es Chris” o “Mi nombre es Kim”. Siempre y cuando elijas un nombre que no sea el tuyo, tu subconsciente sabrá que esta afirmación es incongruente o falsa. Una vez que hayas hecho esta afirmación, si dejas tu mente en blanco sin otros pensamientos, deberías sentir que tu cuerpo empieza a balancearse hacia atrás en pocos segundos. Esto es así porque tu cuerpo no sólo repele pensamientos negativos como el “odio”, sino que además la incongruencia y la falsedad le son repulsivas a la mente y al cuerpo.
 
-#### Keep Your Mind Clear
+#### Mantén tu mente en blanco
 
-Make sure you keep your mind clear of other thoughts after making your statement. If your thoughts are wandering, it will be difficult for your subconscious mind to determine exactly what it is you are after. What if, for example, you make a positive or true statement, but then immediately begin thinking about the argument you had with your spouse last night? You will probably sway backwards, because the memory of that event is negative, and your body will naturally want to move away from it.
+Asegúrate de mantener tu mente en blanco sin otros pensamientos después de hacer tu afirmación. Si tus pensamientos están deambulando, será difícil para tu subconsciente determinar lo que tú estás buscando.
 
-It is important to have patience with yourself. When you are first learning this method, it may take a little longer than expected for your body to sway. Don’t get discouraged if this happens.
+¿Qué pasa si, por ejemplo, haces una afirmación positiva o verdadera, pero inmediatamente después comienzas a pensar en la discusión que tuviste anoche con tu cónyuge? Probablemente te balancearás hacia atrás porque el recuerdo de ese acontecimiento es negativo y tu cuerpo querrá naturalmente alejarse de él.
 
-Your body’s response time will shorten significantly the more you practice. The most challenging aspect of this form of testing for many people is that it requires them to give up control for a few moments, and allow their body to do what it wants to do. For some, giving up control is not easy. Nevertheless, this is a simple skill to learn, and it shouldn’t take you very long to become proficient.
+Es importante tener paciencia contigo mismo. Cuando aprendes este método al principio, puede llevarte más tiempo de lo esperado para que tu cuerpo se balancee. No te desalientes si esto ocurre.
 
-The main thing is to stay focused on whatever statement or thought you are putting out. Just keep your mind calm and allow your subconscious to communicate with you through the mechanism of your physical body.
+El tiempo de respuesta de tu cuerpo se acortará de manera significativa cuanto más practiques. Para muchas personas el aspecto más desafiante de esta forma de prueba es que requiere que ellos pierdan el control por algunos instantes y permitan que su cuerpo haga lo que quiere hacer. Para algunos, perder el control no es fácil. De todos modos, esta es una habilidad simple de aprender y el convertirte en experto no debería llevarte mucho tiempo.
 
-If for any reason, you are not physically able to perform this test, don’t worry. There are several other options that I will outline for you in chapter five.
+Lo más importante es permanecer enfocado en la afirmación o pensamiento que sea que hayas producido. Sólo mantén tu mente en calma y permite que tu subconsciente se comunique contigo a través del mecanismo de tu cuerpo físico.
 
-### Do You Have a Trapped Emotion?
+Si por algún motivo no estás físicamente apto para llevar a cabo esta prueba, no te preocupes. Hay muchas otras opciones que se te explicarán en el capítulo cinco.
 
-As soon as you think you have the hang of it, you are ready to put the Sway Test to good use. Make this statement, “I have a trapped emotion.” Your body will most likely sway forward, giving you an affirmative answer that you have at least one trapped emotion. If your body sways backward, don’t assume that you are free of trapped emotions just yet. This may mean that your trapped emotions are buried a bit deeper and might take a little more effort to uncover, but it’s not a problem. I will discuss how to find and release this type of trapped emotion later on.
+###¿Tienes una emoción atrapada?
 
-#### What Trapped Emotions Are Made Of
+Tan pronto como creas que le has entendido, estás listo para poner la prueba del balanceo en buen uso. Haz esta afirmación: “Yo tengo una emoción atrapada”. Tu cuerpo se balanceará muy probablemente hacia adelante, dándote una respuesta afirmativa de que tienes al menos una emoción atrapada. Si tu cuerpo se balancea hacia atrás, no te creas que estás libre de emociones atrapadas todavía. Esto puede significar que tus emociones atrapadas están enterradas un poco más profundo y descubrirlas puede llevar un poco más de tiempo, pero eso no supone un problema; explicaré cómo encontrar y liberar este tipo de emoción atrapada más adelante.
 
-Everything in the universe is made of energy, whether that energy manifests in physical form or remains invisible. It is the particular arrangement of these energies, and their specific rates of vibration, that determine how they will appear to us. At the most basic level, everything that exists is made of the same stuff – energy. Not only are you made of energy, but other forms of energy are passing through your body at this very moment. Energy that we cannot see is all around us in the form of radio waves, x-rays, infrared, thought waves and emotions.
+####De qué están hechas las emociones atrapadas
+
+En el universo todo está hecho de energía, aunque esta energía se manifieste de forma física o permanezca invisible. Es la particular disposición de estas energías y sus frecuencias específicas de vibración las que determinan cómo ellas van a manifestarse en nosotros. En el nivel básico, todo lo que existe está hecho de la misma cosa: energía. No sólo tú estás hecho de energía, sino que otras formas de energía están atravesando tu cuerpo en este preciso momento. La energía que no podemos ver está a nuestro alrededor en forma de ondas de radio, rayos X, infrarrojo, ondas de pensamiento y emociones.
 ___
-**We are like fish swimming in a sea of energy. Energy is the material from which all things are made; it is in all things and through all things, and fills the interspaces of the universe.**
-___
-
-We can feel energy when it is in the form of emotions, and if negative emotional energies become trapped within us, they may adversely affect us. Trapped emotions are made of energy, just as energy makes up our bodies and everything else in the universe.
-
-#### Where Our Emotions Come From
-
-Thousands of years ago, ancient physicians were astute observers of the human body. They found that people whose lives were dominated by a certain emotion would have corresponding physical ailments. For example, people whose lives were ruled by anger seemed to suffer from liver and gall bladder trouble. People who spent their lives feeling grief would often suffer from lung or colon trouble. Fearful people seemed to have kidney and bladder problems.
-
-Eventually, a correlation was made between the emotions we experience and the various organs of the body. It was believed that the organs themselves actually produced the emotions that people felt.
-
-In other words, if you are feeling the emotion of fear, your kidneys or bladder are creating that particular energy or vibration. If you are feeling grief, it is being produced by your lungs or your colon, and so on.
-
-Of course, we now know that certain areas of the brain are activated when we feel certain emotions. We also know that there is a biochemical component to the emotions that we feel. Dr. Candace Pert, in her book *Molecules of Emotion* clearly explains this biochemical side of our nature, which is perfectly valid. [^3]
-___
-**There is an energetic side to our nature as well, and there is an energetic component to our emotions that is only now beginning to be explored and correlated by modern science.**
+**Somos como peces nadando en un mar de energía. La energía es el material del que todas las cosas están hechas; está en todas las cosas y a través de todas las cosas y llena los interespacios del universo.**
 ___
 
-After much experience gained from clinical practice, I am convinced that the organs in the body really do produce the emotions we experience. The ancient physicians were right. If you’re feeling an emotion of anger, it’s not coming entirely from your brain; it’s actually emanating from your liver or gall bladder. If you are feeling the emotion of betrayal, the emotion is emanating from your heart or your small intestine.
+Podemos sentir la energía cuando se presenta en forma de emociones. Si energías emocionales negativas quedan atrapadas en nosotros, pueden afectarnos de manera desfavorable. Las emociones atrapadas están hechas de energía, al igual que la energía conforma nuestros cuerpos y todo lo demás en el universo.
 
-Remember that we used to think the body and the mind were separate and distinct, but their dividing line has now blurred to the point where we don’t know where the influence of one begins and the other ends.
+####El origen de nuestras emociones
+
+Hace miles de años, los antiguos médicos eran astutos observadores del cuerpo humano. Descubrieron que aquellas personas, cuyas vidas estaban dominadas por una emoción en particular, tendrían dolencias correspondientes. Por ejemplo, las personas cuyas vidas estaban regidas por la ira parecían sufrir de problemas de hígado y vesícula. Las personas que pasaban sus vidas sintiendo angustia sufrían a menudo de problemas de pulmón y colon. Las personas temerosas parecían tener problemas de riñón y vejiga.
+
+Eventualmente, se hizo una correlación entre las emociones que experimentamos y varios órganos de nuestro cuerpo. Se creía que los mismos órganos eran los que en realidad producían las emociones que las personas sentían.
+
+En otras palabras, si sientes la emoción de miedo, tus riñones o vejiga están creando esa energía particular o vibración. Si sientes angustia, esta es producida por tus pulmones o tu colon, y así sucesivamente.
+
+Por supuesto, ahora sabemos que ciertas áreas del cerebro se activan cuando sentimos determinadas emociones. También sabemos que hay un componente bioquímico de las emociones que sentimos. La doctora Candace Pert, en su libro Molecules of Emotion (Las Moléculas de la Emoción) explica claramente este plano bioquímico de nuestra naturaleza, el cual es perfectamente válido.[^3]
 ___
-**Your *entire* body is intelligent, not just your brain. Your organs are separate intelligences within your body that perform certain functions and produce specific emotions or feelings.**
-___
-
-People are usually surprised to learn that the various organs in our bodies produce the emotions that we feel. Yet there are correlations to this principle in life that are quite distinct, although they escape the attention of most physicians.
-
-#### Did Trapped Emotions Kill Dana Reeve?
-
-We all remember the tragic injury that rendered actor Christopher Reeve a quadriplegic. We were touched by the unfailing devotion of his wife, Dana, and were shocked and saddened when she died. It was only ten months after her husband’s death that she announced to the world that she had lung cancer, and seven months later she died at age 44.
-
-Dana Reeve was a non-smoker who died of lung cancer, and although conventional wisdom holds that her death was due to second-hand smoke, I believe otherwise. The lungs produce the emotion we call grief, and an over-abundance of grief will certainly lead to the creation of trapped emotions, often affecting the parent organ. Dana certainly had reasons to grieve, and I believe that trapped emotions, grief among others, were at least partly responsible for her death, and perhaps entirely responsible.
-
-#### The Angry Drunk
-
-Another example can be found in the way that alcohol affects people. We all know that people who become alcoholics often die of liver disease. But we also know that many people who drink can become quite angry and violent when under the influence. Alcohol is broken down and processed by the liver, and too much alcohol over-stimulates the liver. When you over-stimulate or overload an organ, it will produce more of the emotion that it is designed to produce. The liver produces feelings of anger. This is the mechanism that is often at work when drinking results in violence.
-
-If you have an organ that is diseased, overstimulated, or imbalanced in some way, the emotions related to that organ will often be heightened.
-
-Trapped emotions are always found to have emanated from a particular organ, no matter where that trapped emotion lodges in the body. For example, a trapped emotion of anger may have originally emanated from your liver, but it may become lodged literally anywhere in your body.
-
-Correlations between the organs and our emotions are both fascinating and important to understanding how our bodies really work. It all goes back to the ancient art of energy healing.
-
-### Energy Medicine
-
-Energy healing is one of the oldest practices known in the world today. Since 4000 B.C., healers have understood that our health greatly depends on the quality of energy that flows through and makes up our bodies. In Chinese medicine, that energy is called “Qi” or “Chi.” In Ancient Indian or Ayurvedic medicine, this energy is called “Prana.” Imbalances of this part of our existence may deeply affect our physical and mental health.
-
-We can compare this energy to electricity. We can’t see electricity, but we can feel it. Electricity is colorless and odorless. It’s invisible, yet it certainly is real. If you’ve ever stuck your finger in a light socket or been shocked getting the toast out of a toaster, then you’ll know what I mean. You may not be able to see it, but it’s definitely there!
-
-As human beings, we are used to perceiving things in a way that conforms to our belief systems. We form our beliefs about the physical world at an early age. We learn that if we fall off the monkey bars at school, we will meet the ground with a painful thud, yet we could never imagine that both the ground and the monkey bars, as solid as they seem to us, are actually made of vibrating energies. We may like to think that the world around us is exactly as we are used to seeing it, but Einstein, Tesla and others have shown us that the universe is really much more complex and wonderful than we ever could possibly have imagined.
-
-#### The Quantum World
-
-You must remember that old saying, “I know it like the back of my hand…” But how well do you really know the back of your hand?
-
-Take a look at it. Your eyes see the surface of your skin with its wrinkles, fingernails and little hairs. You know exactly how the back of your hand looks from that perspective. But if you magnify your hand under a microscope, you won’t see the same skin and creases you’ve become so familiar with. Instead, you might think you are looking at the surface of a strange planet, covered with hills and valleys.
-
-Turn up the power on your microscope, magnifying your skin 20,000 times, and you’ll see a field of swarming cells. Magnify it a lot more and you’ll see molecules. Magnify those molecules and you’ll see the atoms that make up those molecules. Magnify those atoms and you’ll see the subatomic energy clouds that make up those atoms- the electrons, the protons, the neutrons and other subatomic particles. It’s still the back of your hand, but it looks nothing like the hand you know.
-
-If you glance at it now, your hand looks solid. Slap it down on the table and it makes a nice, substantial thud. Your hand may seem solid, but there’s actually a lot of empty space there. At the subatomic level, there are vast distances between each spinning electron. Atoms are 99.99999999% empty space. Your hand is 99.99999999% empty space! If you could remove all the empty space from the atoms in your hand, it would become so small you would need a microscope to see it! It would virtually disappear, although it would still weigh the same and contain the same number of atoms.
-
-It might take a moment to comprehend this idea. Your hand seems solid, but it is made of dynamic energy, in constant vibration. In fact, physicists now understand that the so-called “subatomic particles” which make up the atom are not really particles at all. They measure the contents of the atom in “energy units” instead, because it’s so much more accurate. [^4]
-
-#### Thoughts are Energy
-
-Like everything else in the universe, the thoughts that you create are made of energy.
-___
-**Thought-energy has no boundary. Your thoughts are not confined to a certain volume and location like your physical body.**
+**También hay un plano energético en nuestra naturaleza y hay un componente energético en nuestras emociones que aún ahora está siendo explorado y correlacionado por la ciencia moderna.**
 ___
 
-While we like to think that all of our unspoken thoughts are private and that they are confined to our own heads, it’s not true.
+Después de mucha experiencia ganada de la práctica clínica, estoy convencido de que los órganos del cuerpo realmente producen las emociones que experimentamos. Los antiguos médicos tenían razón. Si estás sintiendo una emoción de ira, no viene de forma entera de tu cerebro sino que en efecto emana de tu hígado o vesícula. Si estás sintiendo la emoción de traición, la emoción emana de tu corazón o tu intestino delgado.
 
-Each of us is like a radio station, constantly broadcasting the energy of our thoughts, which emanate from us and fill the immensity of space, touching all those around us for good or ill.
-
-This doesn’t mean that we can read other people’s minds, but the energy of other people’s thoughts are detected to some degree on a subconscious level. Try staring intently at the back of someone’s head in a crowd, and inevitably they will turn and look right at you before long. Lots of us have had this experience, and if you haven’t, try it. It works every time!
-
-
-#### We are all Connected
-
-The reality is, the entire human family is connected energetically. When people are suffering and dying on the other side of the earth, we feel their distant cries and anguish on a subconscious level and we are darkened by it. When something tragic happens in the world, the whole world feels it subconsciously, and is affected by it. On the other hand, when wonderful things happen in the world, we all are brightened together.
-
-The connectedness that we all have will often manifest as subtle thoughts that float up from the subconscious level to our conscious minds.
-
-This energy connection seems strongest between a mother and her children. Mothers often seem to be able to sense when one of their children is in trouble. We call this mother’s intuition, and my own mother was an expert at it. Our connection to our own mothers is perhaps strongest because of the spiritual umbilical that binds us to them.
-
-The most powerful example of this energetic connection occurred to one of my patients a number of years ago. She was sitting at home one night, watching television with her husband. Suddenly, she began experiencing severe, hammering pains throughout her body which inexplicably moved from one area to another. The violence of this sudden attack was terrifying, and when it was over she was greatly relieved, but exhausted and frightened. She had never experienced anything like this before, and had no idea what had suddenly gone wrong in her body. Her attempts to explain this bizarre and excruciating attack baffled everyone, including her doctors.
-
-Three days later, she got a phone call from her son, who was working in the Philippines. He called her from his hospital bed and told her that he had been severely beaten by the local police a few days before. When they compared the time of his beating to the time of her experience, they were one and the same. Somehow, she was connected enough to her son to literally “feel his pain.” Talk about mother’s intuition! 
-
-#### Thoughts are Powerful
-
-Your thoughts are immensely powerful. Whenever you say what you’re thinking or write something down, you’re using the energy of your thoughts to affect the world around you. It is through thought, belief and intention that all things happen.
-
-Reputable laboratory experiments have repeatedly shown that thoughts can directly influence the rate of growth in plants, fungi, and bacteria. William Tiller, a physicist at Stanford University, has shown that thoughts can affect electronic instruments.[^5]
+Recuerda que solíamos pensar que el cuerpo y la mente estaban separados y eran distintos, pero su línea divisoria se ha borrado a tal punto que no sabemos dónde empieza la influencia de una y dónde termina la otra.
 ___
-**Studies have proven that when the energy of thought is directed intentionally, it can impact someone else, regardless of whether they are nearby or all the way around the world.**
+**Tu cuerpo entero es inteligente, no sólo tu mente. Tus órganos son diferentes inteligencias dentro de tu cuerpo que desempeñan determinadas funciones y producen emociones específicas y sentimientos.**
 ___
 
-Depending on whether the person focusing the thought uses calming or activating imagery, for instance, they can create a greater sense of relaxation or anxiety in the targeted person. The effect is so distinctive that it can be measured in a laboratory by galvanic skin response, a highly sensitive method of measuring electrical changes in the skin. [^6]
+La gente a menudo se sorprende al aprender que varios órganos de nuestros cuerpos producen las emociones que sentimos. Sin embargo, hay correlaciones con este principio en la vida que son bastante claras, a pesar de que escapan a la atención de la mayoría de los médicos.
 
-Imagine how your own thoughts affect you. Everyone has some kind of internal conversation at times. What do you say to yourself? Many people criticize themselves far more often than they praise themselves. Negative self-talk may be hurting you more than you realize.
+#### ¿Mataron las emociones atrapadas a Dana Reeve?
 
-What about other people around you? Do you ever wonder if others can sense how you feel about them? Other people’s subconscious minds are continually detecting the vibrations of your thoughts. Have you ever had a moment with a friend, where he or she blurted out just what you were thinking? Have you ever instinctively known who was about to call you, before the phone even rang? These are not coincidences, they are evidences of the power of thought energy.
+Todos recordamos la trágica lesión que dejó cuadriplégico al actor Christopher Reeve. Fuimos tocados por la devoción inagotable de su esposa Dana y nos horrorizamos y entristecimos cuando ella murió. Fue sólo diez meses después de la muerte de su esposo que ella anunció al mundo que sufría de cáncer de pulmón, y siete meses después falleció a los 44 años de edad.
 
+Dana Reeve era una no fumadora que murió de cáncer de pulmón y, a pesar de que la sabiduría convencional sostiene que su muerte se produjo por ser fumadora pasiva, yo creo otra cosa. Los pulmones producen la emoción que llamamos angustia y la sobreabundancia de angustia conducirá seguramente a la creación de emociones atrapadas que afectan a menudo el órgano de donde nacen. Dana seguramente tenía motivos para angustiarse, y creo yo, que las emociones atrapadas, la angustia entre otras, fueron al menos parcialmente responsables de su muerte y tal vez responsables en forma completa.
 
-Finding trapped emotions using the Emotion Code is along the same lines as detecting the vibration of another person’s thoughts or feelings. The difference is that you can ask the body, and actually get definitive answers, instead of guessing. Then you can release the trapped emotions for good, and know with certainty that they are permanently gone.
+#### El ebrio enojado
 
+Otro ejemplo, se puede encontrar en la forma en que el alcohol afecta a las personas. Todos sabemos que la gente que es alcohólica a menudo muere por enfermedades hepáticas. Pero también sabemos que muchas personas que beben se pueden poner bastante iracundas o violentas bajo los efectos del alcohol. El alcohol es desglosado y procesado por el hígado y demasiado alcohol estimula en exceso al hígado. Cuando estimulas o cargas un órgano en exceso, éste producirá más de la emoción para la que está diseñado que produzca. El hígado produce el sentimiento de ira. Este es el mecanismo que a menudo está en funcionamiento cuando el beber resulta en violencia.
 
-#### Serendipity vs Precision
+Si tienes un órgano que está enfermo, estimulado en exceso o desequilibrado de alguna manera, las emociones relacionadas con ese órgano a menudo serán agudizadas.
 
-Any alternative health care practitioner can tell you that almost everyone carries around old emotional energies from their past. Our physical bodies hold onto trapped emotions, and doctors and body workers are aware of this because often a simple touch can bring out a flood of emotions and memories in a patient. At one time or another, nearly every practitioner I know – from chiropractors to energy workers to massage therapists – has had the experience of provoking an unexpected emotional release in a patient, as the body let go of the energy it had been holding on to. Releasing those trapped emotions can result in profound and immediate healing. While any emotional release that occurs in this serendipitous way is welcome, this is usually not the intention of the therapist, and any emotional release that occurs is only accidental.
+Siempre se encuentra que las emociones atrapadas han emanado de un órgano en particular, sin importar en qué parte del cuerpo esa emoción se aloje. Por ejemplo, una emoción atrapada de ira puede emanar originalmente del hígado pero puede alojarse literalmente en cualquier parte de tu cuerpo.
 
-The Emotion Code approach, however, is much more deliberate. I sometimes think of it as “emotional surgery” because we are searching out the trapped emotions with a clear intention of removing them. Nothing is left to chance. Trapped emotions are potentially so destructive that you need to find them and get them out of your body, and then confirm that they have been released. The Emotion Code helps you do exactly that in a precise and simple way.
+Las correlaciones entre los órganos y nuestras emociones son tanto fascinantes como importantes para comprender cómo funcionan realmente nuestros cuerpos. Todo tiene que ver con el antiguo arte de la sanación energénita.
 
+### La medicina energética
 
-### Trapped Emotions and Children
+La sanación energética es una de las prácticas más antiguas conocidas en el mundo hoy en día. Desde el 4000 A.C., los sanadores han comprendido que nuestra salud depende en gran manera de la calidad de energía que circula y conforma nuestros cuerpos. En la medicina china, esa energía se llama “Qi” o “Chi”. En la antigua India o Medicina Ayurvédica esta energía es llamada “Prana”. Los desequilibrios de esta parte de nuestra existencia pueden afectar profundamente nuestra salud física y mental.
 
-I have twin boys who are, at the time of this writing, eighteen years old. One of my early experiences with trapped emotions happened with my son, Rhett when he was a toddler. Rhett and Drew are fraternal twins, and are about as different as two boys can be. Drew was always very affectionate with both my wife and me. Rhett was very affectionate with my wife Jean, but developed some sort of hang-up about me around age three. When I would try to hug him or be close to him or snuggle with him he would push me away and say “Bad doctor! Away!” At first we thought he was just passing through some kind of stage. We assumed that he would grow out of it, but his negative feelings toward me persisted for over a year. It was a source of heartache and frustration to me. I didn’t understand why my little boy felt this way about me.
+Podemos comparar esta energía con la electricidad. No podemos ver la electricidad pero sí podemos sentirla. La electricidad es incolora e inodora; es invisible pero en realidad existe. Si alguna vez has puesto los dedos en un enchufe o has sufrido un shock por sacar la tostada de la tostadora, entonces sabes a lo que me refiero. Puede ser que no la veas, pero definitivamente está ahí.
 
-One evening, Jean and I were sitting and talking together. Rhett was sitting on Jean’s lap. I opened my arms to him to give him a hug. He gave me the same reaction as before, pushing me away and saying “Bad doctor! Away!” This time I really felt the hurt. I could feel the heartache welling up within my chest, and I felt like I was going to cry. My wife said, “You know, maybe he has a trapped emotion.”
+Como seres humanos estamos acostumbrados a percibir las cosas de una manera de acuerdo a nuestros sistemas de creencias. Formamos nuestras creencias acerca del mundo físico a una edad temprana. Sabemos que si nos caemos de la estructura de barras para juegos infantiles de la escuela nos daremos un gran golpe contra el suelo; sin embargo, nunca podríamos imaginar que tanto el suelo como la estructura, por mucho que nos parezcan sólidas están hechas de energías vibrantes. Puede que prefiramos pensar que el mundo que nos rodea es exactamente como estamos acostumbrados a verlo, pero Einstein, Tesla y otros nos han demostrado que el universo es en realidad mucho más complejo y maravilloso de lo que jamás hayamos podido imaginar.
 
-Up until this point we had only treated adults for trapped emotions. We decided to check him and see. Using the Emotion Code we found that he did have a trapped emotion. The emotion was grief. But it wasn’t his grief about me, it was actually my grief about him. In other words, at some point he perceived that I had grief about him. He felt that grief strongly enough that it created a trapped emotion in his body. Testing showed that this emotion became trapped when my oldest daughter and I had an argument that Rhett was witness to. Even though I was not grieved about him, he perceived the grief I was experiencing about her, and applied it to himself.
+#### El mundo cuántico
 
-We released the trapped grief, and to my amazement he walked right over to me and put his arms around me. As I cried and held my little boy, I was astonished and excited at the same time. If my son could be changed so instantaneously by simply removing a trapped emotion, then how many other children could be helped?
+Seguro que recuerdas aquel viejo dicho que dice: “Lo conozco como la palma de mi mano”. Pero, ¿en qué medida conoces la palma de tu mano?
 
-#### The Pilot ’s Daughter
+Échale un vistazo. Tus ojos ven la superficie de tu piel con sus arrugas, uñas y pequeños pelitos. Sabes exactamente cómo se ve la palma de tu mano desde esa perspectiva. Pero si magnificas tu mano bajo un microscopio ya no verás la misma piel y arrugas con las que estabas familiarizado. En cambio, podrías pensar que estás mirando la superficie de un planeta extraño cubierto de colinas y valles.
 
-The next day in my clinic I was talking with a patient about what had happened with Rhett. She said, “You know, I think my little girl might have a trapped emotion. My husband is an airline pilot. Every week he’s gone for several days in a row, and when he comes back, our six-year-old daughter will run and hide from him. She just won’t have anything to do with him when he comes home from his trips, and it breaks his heart.”
+Sube la potencia de tu microscopio, aumentando el tamaño de tu piel 20.000 veces, y verás un campo lleno de células. Auméntalo mucho más y verás moléculas. Aumenta esas moléculas y verás los átomos que conforman esas moléculas. Aumenta esos átomos y verás las nubes de energía subatómica que conforman esos átomos: los electrones, protones, neutrones y otras partículas subatómicas. Sigue siendo la palma de tu mano pero no se parece en nada a la mano que tú conoces.
 
-She brought her daughter into the office the following day. I found that she did have a trapped emotion about her father. In this case, the trapped emotion was sorrow. It was her own sorrow about her father leaving and being gone for long periods of time. At some point, this sorrow was so strong that it imbalanced her body, and the emotion became trapped. This emotional energy was exerting a very strong subconscious affect and was influencing her behavior towards him. We released the emotion, and they went home.
+Si la miras ahora, tu mano se ve sólida. Golpéala sobre la mesa y hace un ruido firme y sólido. Tu mano puede parecer sólida pero hay un montón de espacio vacío en ella. A nivel subatómico, hay grandes distancias entre cada electrón en movimiento. Los átomos son 99, 99999999% espacio vacío. Tu mano es 99,99999999% espacio vacío. Si pudieras quitar todo el espacio vacío de entre los átomos de tu mano, se quedaría tan pequeña que necesitarías un microscopio para verla; virtualmente desaparecería, a pesar de que seguiría pesando lo mismo y contendría el mismo número de átomos.
 
-The following week the mother returned to the office and said, “Doctor Nelson, your emotional treatment really works. My husband was gone when I came in and had my daughter treated. A few days ago my husband came home from overseas, and when he opened the door our little girl ran and jumped into his arms. She has never done that, ever! He is thrilled! Thank you so much.”
+Comprender esta idea podría llevarte un rato. Tu mano parece sólida pero está compuesta por energía dinámica en constante vibración. De hecho, hoy por hoy los médicos entienden que las llamadas “partículas subatómicas” que conforman el átomo no son verdaderas partículas para nada. En cambio, miden los contenidos del átomo en “unidades de energía” porque es mucho más preciso.[^4]
 
-#### Drew and His Traumatic Delivery
+Los pensamientos son energía
 
-By the time our twin boys were four years old, Rhett was very articulate and talkative. Drew was just the opposite, so much so that my wife and I began to grow concerned. At four years old, Drew still wasn’t speaking in sentences. He rarely said a word and when he started to speak he’d often put his hand over his mouth, as though he were afraid to say anything.
-
-He seemed fearful in general. When we went to the neighborhood pool, Rhett jumped right in, but Drew stood at the edge, looking anxious. He was very cautious about trying new things. He was also claustrophobic. If he went outside to play and the door closed behind him, he would panic and scream.
-
-Psychological testing showed that Drew had a high IQ, but was not developing at the same pace as the norm for other kids his age. Hearing tests showed that his hearing was normal. There seemed to be no explanation for what was going on with Drew.
-
-After our experience with Rhett, we decided to see if Drew might have trapped emotions, not realizing that they were the actual cause of his troubles.
-
-As we tested him, we quickly found a number of trapped emotions that were the result of traumatic things that had happened on the day that he was born and shortly thereafter.
-
-Jean’s labor and delivery had been very long, lasting twenty-two hours total. Rhett was born first. He looked beautiful and content and immediately went to sleep. Drew was born 14 minutes later and emerged blue and limp, looking really rough. A team of doctors circled around him immediately. They weren’t sure he would make it. His situation was critical.
-
-He pulled through, but the next 10 days or so continued to be very traumatic. We had taken both of the boys home when they were a couple of days old but Drew had to be readmitted to the hospital for testing to see what was wrong. He was unable to keep any breast milk down and was rapidly loosing weight. We were told that he had picked up a life-threatening infection during his first few days. The doctors had to do a spinal tap on his tiny body, and administer antibiotics intravenously to save his life.
-
-Against our wishes, Jean and I were ordered out of the room as this procedure was begun. We were unable to comfort him in any way, and could only listen helplessly as Drew screamed in terror while they repeatedly tried to insert the needles into his tiny veins and into his spine.
-
-We didn’t dwell on Drew’s traumatic experiences ourselves, and we never discussed these events with him as a child. It was very upsetting for us to even think about it. Four years later, as far as we knew, he had no memory of these events, but he did have a lot of fear, about a lot of things.
-
-One by one, we found and released the trapped emotions that related to these traumatic events. We were amazed by what Drew had perceived as an infant, and how deeply it had scarred him emotionally. He probably expected that coming into the world would be wonderful. Instead he came into an incredibly painful situation that he could scarcely cope with. It was like being born into hell. As you might imagine, he had trapped emotions of fear, terror and abandonment. Undoubtedly, these were the exact feelings he’d had during the emergency room procedures that we all found so difficult to endure.
-
-
-Drew had also developed a trapped emotion of panic while he was in the womb waiting in line behind his reluctant brother, who was in no hurry to emerge from his dark and comfortable home. This trapped emotion of panic proved to be the reason behind his claustrophobia.
-
-
-In addition, he had a trapped emotion of anger that he had *inherited* from his grandfather. It was actually this inherited anger that was making him reluctant to talk. He was afraid that he would hurt someone with his words, which explained why he would always cover his mouth when he would speak. We released all of these trapped emotions and retired for the night.
-
-The next morning at breakfast, we couldn’t believe the difference! Drew was like a little chatterbox. Suddenly and for the first time in his life, he was speaking in complete sentences. Without the trapped emotions keeping him attached to the traumas of the past, he was able to let go of his fears. His claustrophobia vanished, along with his fearful attitude. He was free to become bright, happy, and inquisitive.
-
-
-### Trapped Emotions are Common
-
-It isn’t really possible to tell by looking at someone if they have trapped emotions, but nearly everyone does. During my years in practice, it was rare that I treated a patient who had no discernible trapped emotions. I remember one patient in particular who fell into this category. This man spent a lot of time in meditation, and struck me as being a calm, kind and unflappable sort of person who was very much in control of his emotions. Did I say “in control of his emotions?” We will talk more about that very subject in chapter ten, in terms of avoiding trapped emotions in the future.
-
+Al igual que todos lo demás en el universo, los pensamientos que tú creas están hechos de energía.
 ___
-**The vast majority of us do have trapped emotions, simply because of what we have been through and who we are at this point in our journey.**
+**La energía-pensamiento no tiene límite. Tus pensamientos no están confinados a un cierto volumen y ubicación como tu cuerpo físico.**
 ___
 
-Often, when someone has been through a traumatic or intensely emotional event – such as a car accident, an argument or a divorce – they will have trapped emotional energy about it. However, not every emotional event will create a trapped emotion. The body is designed to deal with emotional energy in the normal course of events. So when an emotion becomes trapped, it’s partly because of extenuating circumstances – such as when we have lowered resistance or when we are overly tired or otherwise off-balance. When our bodies are not at their best we are more vulnerable to developing trapped emotions.
+Mientras nos gusta pensar que todos nuestros pensamientos no dichos, son privados y que están confinados a nuestras propias cabezas, esto no es verdad.
 
-### The Resonance of Trapped Emotions
+Cada uno de nosotros es como una estación de radio, emitiendo de manera constante la energía de nuestros pensamientos que emana de nosotros y llena la inmensidad del espacio, tocando a todos aquellos a nuestro alrededor para bien o para mal.
 
-Each trapped emotion resides in a specific location in the body, vibrating at its own particular frequency. Before long, that vibration will cause surrounding tissues to vibrate at that same frequency. We call this phenomenon *resonance*.
+Esto no significa que podamos leer la mente de otras personas, pero la energía de los pensamientos de otras personas es detectada hasta cierto punto a nivel subconsciente. Trata de fijar la mirada atentamente en la nuca de alguien en una multitud e inevitablemente se dará la vuelta y no tardará mucho en mirarte directamente a ti. Muchos de nosotros hemos tenido esta experiencia y si tú no la has tenido, inténtalo. Siempre funciona.
 
-In my seminars, I use tuning forks to demonstrate how powerfully our universe responds to resonance. One of my tuning forks vibrates at 512 Hz. The sound it makes is very high-pitched. The tines of the other tuning fork are a different size. That fork vibrates at 128 HZ and makes a much lower sound.
+#### Todos estamos conectados
 
-If you were to place any number of different-sized tuning forks in a room, and strike one of them, all the other tuning forks of that particular frequency would start humming faintly. If you stop the sound coming from the tuning fork you struck, all the others will keep vibrating. It’s not because of some natural affinity between tuning forks. This is the way our universe works.
+La realidad es que la familia humana entera está conectada energéticamente. Cuando las personas sufren y mueren al otro lado del planeta, sentimos a nivel subconsciente sus gritos y agonía distantes, y esto nos oscurece. Cuando algo trágico ocurre en el mundo, el mundo entero lo percibe subconscientemente y se ve afectado por ello. Por otro lado, cuando cosas maravillosas ocurren nos dan luz a todos.
 
-  ![](3.jpg)  
-`Tuning Forks`
+La conectividad que todos tenemos a menudo se manifiesta como sutiles pensamientos que salen a flote del nivel subconsciente a nuestras mentes conscientes.
 
-If you strike a tuning fork and place it against a pane of glass, the glass will begin to vibrate at the same frequency. That’s because the tuning fork forces the energies that make up the glass into motion – in sync with its own vibration. When you have a trapped emotion it’s a bit like having a tuning fork in your body that is continually vibrating at the specific frequency of a negative emotion. Unfortunately this may bring more of this particular emotion into your life.
+Esta conexión de energía parece más fuerte entre madre e hijo. Las madres a menudo parecen poder presentir cuando uno de sus hijos está en problemas. A esto lo llamamos intuición materna y mi propia madre era una experta en eso. La conexión con nuestras propias madres es tal vez aun más fuerte debido al cordón umbilical espiritual que nos une a ellas.
 
-Have you ever seen someone who’s agitated infect a roomful of people with that same emotion? Maybe you’re calmly waiting in a doctor’s office with several other people who are quietly reading magazines, when an upset patient comes in. He paces around the room, picking up magazines, then putting them back down. He speaks to the receptionist in an irritated tone. His body language gives his mood away. But it’s the invisible effect that’s most powerful.
+El ejemplo más poderoso de esta conexión energética le ocurrió a una de mis pacientes hace unos años. Una noche, ella estaba sentada en su casa mirando televisión con su marido. De repente, empezó a experimentar severos dolores como golpes en todo su cuerpo que inexplicablemente se movían de un área a otra. La violencia de este ataque repentino fue aterradora y cuando terminó se sintió sumamente aliviada pero exhausta y atemorizada. Nunca antes había experimentado algo semejante y no tenía ni idea de qué había ido mal de repente en su cuerpo. Sus intentos por explicar este ataque tan raro e intenso desconcertaron a todo el mundo, incluyendo a sus médicos.
 
-That patient is sending a strong, agitated vibration out into the room. Some of the cells in your body and those of the receptionist and the other patients will literally start vibrating at that frequency. Before long, everyone’s feeling a little agitated. It changes the mood of the room. People start feeling differently and reacting differently. The agitated patient has not only attracted more agitation into his own life. He’s actually generated it in the people around him as well.
+Tres días más tarde, recibió una llamada de su hijo, quien estaba trabajando en las Filipinas. Él la llamó desde la cama del hospital y le contó que había sido seriamente golpeado por la policía local unos días antes. Cuando compararon el momento de su golpiza con el de su experiencia, era el mismo. De alguna manera, ella estaba lo suficientemente conectada con su hijo como para literalmente “sentir su dolor”. Esto sí que es intuición materna.
 
-#### Negative Vibrations
+#### Los pensamientos son poderosos
 
-If you have a trapped emotion, you will attract more of that emotion into your life. You will also tend to feel that emotion more readily and more often than you otherwise would.
+Tus pensamientos son inmensamente poderosos. Cada vez que dices lo que piensas o escribes algo, utilizas la energía de tus pensamientos para afectar al mundo que te rodea. Las cosas ocurren a través del pensamiento, la creencia y la intención.
 
-You can think of a trapped emotion as being like a ball of energy, because that is exactly what it is. They have a size and a shape, even though they are invisible and are made only of energy. They usually seem to vary in size from that of an orange to that of a melon.
+Serios experimentos de laboratorio han demostrado de manera repetida que los pensamientos pueden influenciar directamente la tasa de crecimiento en plantas, hongos, y bacterias. William Tiller, un médico de la Universidad de Stanford, ha demostrado que los pensamientos pueden afectar instrumentos electrónicos.[^5]
+___
+**Algunos estudios han demostrado que cuando la energía es dirigida intencionalmente, puede impactar en otros, sin importar si están cerca o en algún lugar alrededor del mundo.**
 ___
 
-**Trapped emotional energy will always lodge somewhere in the physical body, and the body tissues that lie within that sphere will tend to fall into resonance with the vibrational energy of the trapped emotion. In other words, those tissues will actually be experiencing that emotional vibration on a continual basis.**
+Dependiendo de si la persona que está enfocando el pensamiento usa imágenes calmas o activadoras, por ejemplo, puede crear una mayor sensación de relajación o ansiedad en la persona que es su objetivo. El efecto es tan distintivo que se puede medir en un laboratorio a través de la respuesta galvánica de piel, un método altamente sensible que mide los cambios eléctricos en la piel.[^6]
+
+Imagina cómo tus propios pensamientos te afectan a ti. Todo el mundo tiene algún tipo de conversación interna algunas veces. ¿Qué te dices a ti mismo? Muchas personas se critican a sí mismas mucho más a menudo que lo que se alaban. El diálogo negativo puede estar dañándote más de lo que te das cuenta.
+
+¿Qué pasa con las personas a tu alrededor? ¿Alguna vez te preguntaste si los otros pueden percibir lo que sientes por ellos? Los subconscientes de los demás están continuamente detectando las vibraciones de tus pensamientos. ¿Alguna vez te pasó con un amigo, que él o ella dijo exactamente lo que tú estabas pensando? ¿Alguna vez supiste instintivamente quién te estaba por llamar, antes de que el teléfono sonara? Éstas no son coincidencias, sino las evidencias de la potencia de la energía del pensamiento.
+
+El descubrimiento de emociones atrapadas utilizando el Código de la Emoción se encuentra en línea con la detección de la vibración de los pensamientos o sentimientos de otra persona. La diferencia es que le puedes preguntar al cuerpo y realmente obtener respuestas definitivas, en vez de suposiciones. Luego, puedes liberar las emociones atrapadas para siempre y saber con seguridad que han desaparecido de manera permanente.
+
+#### Serendipia vs . Precisión
+
+Cualquier profesional del cuidado alternativo de la salud puede decirte que casi todos llevan a cuestas antiguas energías emocionales de su pasado. Nuestros cuerpos físicos conservan emociones atrapadas y los médicos y aquellos que tratan el cuerpo están al tanto de esto porque a menudo un simple toque puede sacar una avalancha de emociones y recuerdos en un paciente. En algún momento o en otro, prácticamente todos los profesionales que conozco, desde quiroprácticos, pasando por trabajadores de la energía y masajistas, han tenido la experiencia de provocar en un paciente una inesperada liberación emocional, en el momento en que el cuerpo soltó la energía que había estado conservando. La liberación de esas emociones atrapadas puede resultar en una profunda e inmediata sanación. Mientras que cualquier liberación emocional que ocurre de esta manera imprevista es bienvenida, ésta no es en general la intención del terapeuta, y cualquier liberación emocional ocurrida es simplemente accidental.
+
+El enfoque del Código de la Emoción, sin embargo, es mucho más deliberado. A veces pienso en ello como “una cirugía emocional” porque buscamos emociones atrapadas con la clara intención de eliminarlas. No se deja nada a la suerte. Las emociones atrapadas son potencialmente tan destructivas que necesitas hallarlas y quitarlas de tu cuerpo, y después confirmar que han sido liberadas. El Código de la Emoción te ayuda a hacer exactamente eso de manera simple y precisa.
+
+### Las emociones atrapadas y los niños
+
+Tengo dos gemelos que, al momento de la escritura de este texto, tienen dieciocho años. Una de mis más tempranas experiencias con las emociones atrapadas ocurrió con mi hijo Rhett cuando era pequeño. Rhett y Drew son gemelos y son tan diferentes como pueden serlo dos varones. Drew fue siempre muy afectuoso tanto con mi esposa como conmigo. Rhett era muy afectuoso con mi esposa Jean pero desarrolló cierto rechazo con respecto a mí, más o menos a los tres años. Cuando yo trataba de abrazarlo o acercarme a él o arrimarme, él se escapaba y me decía: “¡Doctor malo! ¡Aléjate!”. Al principio pensamos que simplemente estaba atravesando algún tipo de período. Supusimos que con el correr del tiempo se desharía de sus sentimientos negativos hacia mí pero los mismos persistieron por más de un año. Era una fuente de pena y frustración para mí. No entendía por qué mi pequeño hijo sentía eso por mí.
+
+Una tarde, Jean y yo estábamos sentados y conversando juntos. Rhett estaba sentado en la falda de Jean. Abrí mis abrazos para darle un abrazo. Él reaccionó de la misma manera que antes, rechazándome y diciéndome: “¡Doctor malo! ¡Aléjate!”. Esta vez realmente me sentí dolido. Pude sentir la pena emanando de mi pecho y sentí como si fuese a llorar. Mi esposa dijo: “Ya sabes, tal vez tenga una emoción atrapada”.
+
+Hasta ese momento sólo habíamos tratado por emociones atrapadas a adultos. Decidimos examinarlo y ver. Utilizando el Código de la Emoción encontramos que sí tenía una emoción atrapada. La emoción era angustia; pero no era su angustia por mí, sino en realidad mi angustia por él. En otras palabras, en algún punto él percibió que yo sentía angustia por él. Él sentía esa angustia lo suficientemente fuerte como para crear una emoción atrapada en su cuerpo. El examen nos mostró que esta emoción quedó atrapada cuando mi hija mayor y yo tuvimos una discusión de la que Rhett fue testigo. A pesar de que yo no estaba nfadado con él, percibió la angustia que yo estaba experimentando por ella y él se la aplicó a sí mismo.
+
+Liberamos la angustia atrapada y, para mi sorpresa, él caminó hacia mí y puso sus brazos alrededor mío. Mientras lloraba y sostenía a mi pequeño, yo estaba asombrado y entusiasmado al mismo tiempo. Si mi hijo pudo cambiar de manera tan instantánea con simplemente eliminar una emoción atrapada, entonces ¿a cuántos niños se les podría ayudar?
+
+#### La hija del piloto
+
+Al día siguiente en mi clínica, yo estaba hablando con una paciente acerca de lo que había sucedido con Rhett. Ella dijo: “Usted sabe, me parece que mi pequeña podría tener una emoción atrapada. Mi esposo es piloto de una aerolínea. Todas las semanas se va por varios días seguidos y cuando vuelve nuestra hija de seis años de edad corre y se esconde de él. Ella no quiere hacer nada con él cuando él vuelve a casa de sus viajes y esto le rompe el corazón”.
+
+Al siguiente día, trajo a su hija a mi consultorio. Encontré que sí tenía una emoción atrapada por su padre. En este caso, la emoción atrapada era dolor. Era su propio dolor por las idas y ausencias de su padre por largos períodos de tiempo. En algún punto, este dolor fue tan fuerte que desequilibró su cuerpo y la emoción quedó atrapada. Esta energía emocional estaba ejerciendo un fuerte efecto subconsciente y estaba influyendo su conducta hacia él. Liberamos la emoción y ellas se fueron a su casa.
+
+La semana siguiente, la madre regresó al consultorio y dijo: “Doctor Nelson, su tratamiento emocional verdaderamente funciona. Mi marido se había ido cuando yo vine aquí y mi hija recibió el tratamiento. Hace unos días mi marido volvió a casa del extranjero y cuando abrió la puerta nuestra pequeña corrió y saltó en sus brazos. ¡Ella nunca ha hecho eso, jamás! ¡Él está contentísimo! Muchas gracias”.
+
+#### Drew y su parto traumático
+
+Cuando nuestors gemelos tenían cuatro años de edad, Rhett se podía expresar muy bien y era conversador. Drew era exactamente lo opuesto, a tal punto que mi esposa y yo comenzamos a preocuparnos. A los cuatro años, Drew todavía no decía oraciones. Rara vez decía una palabra y cuando empezaba a hablar a menudo se tapaba la boca con su mano, como si tuviese temor de decir algo.
+
+Parecía temeroso en general. Cuando íbamos a la piscina del barrio, Rhett se zambullía pero Drew se quedaba en el borde, mirando ansioso. Era muy cauteloso al probar cosas nuevas. Además, era claustrofóbico. Si salía a jugar y la puerta se cerraba detrás de él, entraba en pánico y gritaba.
+
+Los exámenes psicológicos mostraron que Drew tenía un alto Coeficiente Intelectual, pero se estaba desarrollando al mismo ritmo que lo normal para otros chicos de su edad. Los exámenes de audición mostraron que la suya era normal. Parecía no haber explicación para lo que estaba pasando con Drew.
+
+Después de nuestra experiencia con Rhett, decidimos ver si Drew tenía emociones atrapadas, sin darnos cuenta de que ellas eran la causa real de sus problemas.
+
+Cuando lo examinamos, en seguida encontramos un número de emociones atrapadas que eran el resultado de cosas traumáticas que habían ocurrido el día que él nació y poco tiempo después.
+
+El parto de Jean había sido muy largo; duró veintidós horas en total. Rhett nació primero. Se veía hermoso y contento e inmediatamente se quedó dormido. Drew nació 14 minutos más tarde y salió cianótico y sin fuerzas, viéndose verdaderamente no muy bien. Un equipo médico lo rodeó inmediatamente. No estaban muy seguros de que él pudiera sobrevivir. Su situación era crítica.
+
+Se recuperó pero los siguientes 10 días más o menos continuaron siendo muy traumáticos. Nos habíamos llevado a los dos niños a casa cuando tenían algunos días pero Drew tuvo que ser internado en el hospital nuevamente para examinar qué era lo que andaba mal. No podía retener nada de la leche materna y estaba perdiendo peso rápidamente. Nos dijeron que había contraído una infección que ponía en riesgo su vida durante sus primeros días. Los médicos tuvieron que hacerle una punción lumbar en su pequeño cuerpecito y suministrarle antibióticos intravenosos para salvarle la vida.
+
+Contrario a nuestros deseos, a Jean y a mí nos ordenaron que saliéramos de la habitación cuando este procedimiento comenzó. No pudimos consolarlo de ninguna manera y sólo pudimos escuchar, sin poder hacer nada, cómo Drew gritaba aterrado, mientras ellos intentaban de manera reiterada insertarle las agujas en sus pequeñas venas y su columna vertebral.
+
+Nosotros mismos no hicimos hincapié en las experiencias traumáticas de Drew y nunca hablamos de estos acontecimientos con él de pequeño. Era muy triste para nosotros el simple hecho de pensar en ello. Cuatro años más tarde, por lo que sabemos, él no tenía recuerdo de estos acontecimientos pero sí tenía mucho temor a muchas cosas.
+
+Una por una, encontramos y liberamos las emociones atrapadas que estaban relacionadas con estos acontecimientos traumáticos. Nosotros estábamos asombrados por lo que Drew había percibido siendo un reción nacido y la profundidad en la que lo había marcado emocionalmente. Él probablemente esperaba que la llegada a este mundo fuera maravillosa. En cambio, se encontró en una situación increíblemente dolorosa que apenas pudo sobrellevar. Fue como haber nacido en el infierno. Como te podrás imaginar, tenía emociones atrapadas de miedo, temor y abandono. Sin duda, estos eran los sentimientos exactos que él había tenido durante los procedimientos en la sala de emergencias que fueron tan difíciles de soportar para todos.
+
+Drew también había desarrollado la emoción atrapada de pánico en el útero mientras esperaba su turno detrás de su renuente hermano, quien no tenía apuro por salir de su oscuro y cómodo hogar. Esta emoción atrapada de pánico demostró ser la razón detrás de su fobia.
+
+Además, tenía una emoción atrapada de ira que había heredado de su abuelo. Fue en realidad esta ira heredada la que lo hacía reacio a hablar. Tenía miedo de herir a alguien con sus palabras, lo cual explicaba por qué siempre se tapaba la boca cuando hablaba. Liberamos todas estas emociones atrapadas y nos retiramos por esa noche.
+
+¡A la mañana siguiente en el desayuno, no podíamos creer la diferencia! Drew era como un pequeño parlanchín. De repente y por primera vez en su vida, estaba diciendo oraciones completas. Sin las emociones atrapadas que lo mantenían atado a los traumas del pasado, pudo soltar sus miedos. Su claustrofobia desapareció junto con su actitud temerosa. Estaba libre para convertirse en vivaracho, alegre y curioso.
+
+### Las emociones atrapadas son comunes
+
+No es posible saber al mirar a alguien si tiene emociones atrapadas, pero casi todas las personas las tienen. Durante mis años de trabajo, era raro que tratara a un paciente que tuviera emociones atrapadas no discernibles. Recuerdo un paciente en particular que entraba en esta categoría. Este hombre pasaba mucho tiempo meditando y me impactó por ser una persona calmada, amable e imperturbable que tenía mucho control de sus emociones. ¿Dije “en control de sus emociones”? Hablaremos más sobre este tema en el capítulo diez, a fin de evitar emociones atrapadas en el futuro.
+___
+**La gran mayoría de nosotros tenemos emociones atrapadas, simplemente por lo que hemos atravesado y por lo que somos en este momento en nuestra travesía.**
 ___
 
+A menudo, cuando alguien ha atravesado un acontecimiento traumático o intensamente emocional, como un accidente de auto, una pelea o un divorcio, tendrá energía emocional atrapada a causa de ello. Sin embargo, no todas los acontecimientos emocionales crearán una emoción atrapada. El cuerpo está diseñado para enfrentar la energía emocional en el curso normal de los acontecimientos. Entonces, cuando una emoción queda atrapada, es en parte debido a circunstancias extenuantes, por ejemplo, cuando hemos bajado la resistencia o cuando estamos demasiado cansados o inestables. Cuando nuestros cuerpos no están en su mejor momento somos más vulnerables a desarrollar emociones atrapadas.
 
-Suppose you have a trapped emotion of anger. You’ve carried it around for years, not even knowing it was there. As a result, whenever you come into a situation where you *could* become angry, it’s much more likely that you *will* become angry, because in a fascinating and literal way, part of you is *already* angry.
+### La resonancia de las emociones atrapadas
 
-If part of your body is *already* vibrating at the frequency of anger due to a trapped emotion, it is much easier for your entire being to fall into resonance with anger when something happens that *could* elicit an angry response from you.
+Cada emoción se encuentra atrapada en una ubicación específica en el cuerpo, vibrando en su propia frecuencia. En poco tiempo, esa vibración causará que los tejidos circundantes vibren en esa misma frecuencia. A este fenómeno lo llamamos *resonancia*.
 
+En mis seminarios utilizo diapasones para demostrar de la manera poderosa que nuestro universo responde a la resonancia. Uno de mis diapasones vibra a 512 H2. El sonido que hace es muy agudo. Los dientes del otro diapasón son de un tamaño diferente. Ese diapasón vibra a 128 H2 y hace un sonido mucho más bajo.
 
-Sometimes people don’t understand why they get ticked off so easily, or why they can’t shake certain emotions. It’s often because the very emotion they are struggling with is trapped within them, from a past experience they may scarcely remember.
+Si colocaras en una habitación una cantidad cualquiera de diapasones de tamaños diferentes y golpearas uno de ellos, los otros diapasones de esa frecuencia particular empezarían a vibrar ligeramente. Si detienes el sonido proveniente del diapasón que golpeaste, todos los otros continuarán vibrando. No es por ninguna afinidad natural entre los diapasones. Esta es la manera en la que funciona nuestro universo.
 
-This is why, when trapped emotions are released, the effect is incomparable to any other form of therapy. Often, the emotion and behavior that has been so difficult to shake, is simply gone.
+ ![](3.jpg) 
+  
+*Diapasones*
 
-It can seem almost too simple to believe, but once you experience it yourself, you will understand. Until you release your own trapped emotions, you will continue to labor under their weight.
+Si golpeas un diapasón y lo colocas contra un panel de vidrio, el vidrio comenzará a vibrar en la misma frecuencia. Esto se debe a que el diapasón fuerza las energías que ponen al vidrio en movimiento, en sincronización con su propia vibración. Cuando tienes una emoción atrapada de alguna manera, es como tener un diapasón en tu cuerpo que está vibrando continuamente en la frecuencia específica de una emoción negativa. Desafortunadamente, esto puede traer a tu vida más de esta emoción particular.
 
-#### Lori and the Cheerleader
+¿Alguna vez has visto a alguien nervioso contagiar la misma emoción a toda una sala llena de gente? Quizás tú estás esperando tranquilamente en un consultorio médico junto a varias personas que están leyendo tranquilamente unas revistas, cuando entra un paciente molesto. Comienza a caminar alrededor de la sala recogiendo revistas, después dejándolas nuevamente en su lugar. Habla con la recepcionista en un tono irritado. Su lenguaje corporal pone su ánimo de manifiesto. Pero el efecto invisible es el más poderoso.
 
-I have seen this phenomenon on countless occasions, but one particular patient’s experience will help to illustrate this. Lori had a trapped emotion of resentment. When I traced the original occurrence of this emotion back in time, I found that it had become trapped in high school, and that it was actually her resentment for another female. At this point, Lori said, “Well, of course. I know exactly what this is about.” She explained that there was a particular girl on the cheerleading squad that she just could not stand. For whatever reasons, she felt a lot of resentment for this girl during their high school years. The resentment never really went away, since it had become trapped in Lori’s body.
+#### Vibraciones negativas
 
+Si tienes una emoción atrapada, atraerás más de esa emoción a tu vida. Además tenderás a sentir esa emoción más fácilmente y más frecuentemente que si lo hicieras de otro modo.
 
-Lori said, “You know, I still have so much resentment for her. It’s kind of weird, I guess. I’m forty-three years old now. High school was a long time ago. You’d think I would have forgotten all about her, but it’s like I can’t let go of it. I haven’t even seen her since high school, but whenever I think of her, I can just feel this resentment welling up inside of me, and I feel all that resentment for her all over again.”
-
-
-I explained to Lori how a trapped emotion can make it much harder for us to let go of things we would rather forget. Using a magnet, we released the trapped emotion in a few seconds, and she left the office. I saw Lori again a few days later, and she exclaimed, “Dr. Nelson, it worked! Last night I was talking with an old girlfriend, and that girl’s name came up. For the first time since high school, I felt nothing! Normally, I would have felt that resentment for her, but I felt nothing! That is so great. Thanks!”
-
-
-#### Kirk’s Life - long Anger Problem
-
-Kirk was an angry man. He came to me when he was in his late seventies for treatment of his back pain. It quickly became obvious that there was something else bothering him. He snapped at my office staff, and tended to be curt with me as well. He was dismissive with his wife, who was nothing but supportive and kind to him. At first I attributed his behavior to the fact that he was in pain. As his back began to improve, however, his behavior did not. I decided to check him for trapped emotions, and found anger, bitterness, anxiety, resentment, frustration and fear, many of which dated back to childhood.
-
+Puedes imaginarte a una emoción atrapada como si fuese una pelota de energía porque eso es exactamente lo que es. Tienen un tamaño y una forma aunque son invisibles y hechas sólo de energía. Por lo general, parecen variar en tamaño, desde el de una naranja hasta el de un melón.
 ___
-**The end result of releasing these emotions was that Kirk became a changed man. He is now a sweet and doting husband, more concerned about his wife than his own aches and pains.**
+**La energía emocional atrapada siempre se alojará en algún lugar en el cuerpo físico y los tejidos del cuerpo que se encuentran dentro de esa esfera tenderán a entrar en resonancia con la energía vibracional de la emoción atrapada. En otras palabras, aquellos tejidos estarán en realidad experimentando continuamente esa vibración emocional.**
 ___
 
-He used to complain constantly about everything, and now he turns his interest to others, usually has a smile on his face and complains very little. The transformation has been remarkable to everyone that knows him. If only his trapped emotions could have been released early in his life, he might have had a different kind of life.
+Supongamos que tienes una emoción atrapada de ira. La has llevado contigo por años, sin saber siquiera que estaba allí. Como resultado, cada vez que te encuentres en una situación donde podrías enojarte es mucho más probable que te enojes porque de una manera fascinante y literal una parte tuya ya está enojada.
 
+Si parte de tu cuerpo ya está vibrando en la frecuencia de la ira debido a una emoción atrapada, es mucho más fácil para todo tu ser entrar en resonancia con la ira cuando algo que sucede puede provocar en ti una respuesta de enojo.
 
-Kirk was always free to choose his emotional state, but his trapped emotions made it easier for him to fall into resonance with them than to go against the current. Parts of his body were angry, bitter, anxious, resentful, frustrated and fearful. That’s what he was up against every waking moment of his life, until we released those energies.
+A veces las personas no entienden por qué se fastidian con tanta facilidad o por qué no pueden librarse de determinadas emociones. Esto se debe a menudo porque esa misma emoción contra la que ellos están luchando está atrapada dentro de ellos, desde una experiencia pasada que apenas podrían recordar.
 
-#### The Effect of an Imbalance
+Por esta razón, cuando se liberan las emociones atrapadas, el efecto es incomparable con cualquier otra forma de terapia. Frecuentemente, la emoción y el comportamiento que ha sido tan difícil de liberar, simplemente desaparecen.
 
-It all comes back to the quantum nature of the body itself. When we get up every morning, we expect to see our bodies looking the same they did yesterday and the day before. They seem solid and predictable enough. We never glance in the mirror while we’re trying to get dressed only to see swirling clouds of energy where our arms and legs used to be. But that’s exactly what we are.
+Puede parecer casi demasiado simple de creer, pero una vez que lo experimentes lo entenderás. Hasta que liberes tus propias energías atrapadas, continuarás trabajando bajo su peso.
 
+#### Lori y la animadora
+
+He visto este fenómeno en innumerables ocasiones pero la experiencia de una paciente en particular ayudará a ilustrarlo. Lori tenía una emoción atrapada de resentimiento. Cuando hice un seguimiento en el tiempo de cuándo había ocurrido originalmente, descubrí que había quedado atrapada en la escuela secundaria y que era en realidad su resentimiento hacia otra mujer. En ese momento, Lori dijo: “Bueno, por supuesto. Sé exactamente de qué se trata esto”. Explicó que había una joven en particular en el equipo de animadoras que simplemente no toleraba. Por las razones que fueran, sintió mucho resentimiento hacia esta joven durante sus años en la escuela secundaria. El resentimiento realmente nunca se fue ya que se había quedado atrapado en el cuerpo de Lori.
+
+Lori dijo: “Sabes, todavía siento mucho resentimiento hacia ella”. Es algo raro, supongo. Actualmente tengo 43 años. La escuela secundaria fue hace mucho tiempo.
+
+Pensarás que me tendría que haber olvidado de ella pero es como que no puedo soltarla. No la he vuelto a ver desde la escuela secundaria pero cada vez que pienso en ella simplemente puedo sentir ese resentimiento invadiéndome y siento todo ese resentimiento hacia ella nuevamente”.
+
+Le expliqué a Lori cómo una emoción atrapada puede hacer que nos resulte mucho más difícil dejar atrás cosas que preferiríamos olvidar. Utilizando un imán, liberamos la emoción atrapada en unos pocos segundos y ella se fue del consultorio. Volví a ver a Lori después de unos días y exclamó: ¡Dr. Nelson, funcionó! Anoche yo estaba hablando con una vieja amiga y surgió el nombre de esa joven. Por primera vez desde la escuela secundaria ¡no sentí nada! Normalmente hubiera sentido ese resentimiento hacia ella ¡pero no sentí nada! Esto es grandioso. ¡Gracias!”
+
+#### El problema de enojo de Kirk de toda la vida
+
+Kirk era un hombre malhumorado. Vino a verme cuando tenía casi ochenta años para tratarse por su dolor de espalda. Pronto fue evidente que había algo más que lo estaba molestando. Le hablaba bruscamente al personal de mi consultorio y solía ser cortante conmigo también. Era desdeñoso con su esposa, quien siempre lo apoyaba y era muy buena con él. En un principio, atribuí su comportamiento al hecho de que sentía dolor. Su espalda comenzó a mejorar; sin embargo, su comportamiento no. Decidí comprobar si tenía emociones atrapadas y encontré enojo, amargura, ansiedad, resentimiento, frustración y miedo, muchas de ellas provenían de su infancia.
 ___
-**No matter how it may seem to you, your body is actually a collection of energies, flying in close formation.**
-___
-
-
-When you introduce the negative vibration of a trapped emotion into that formation, you alter the normal vibrational rate of the whole.
-
-You won’t necessarily feel it and you definitely can’t tell the difference by looking, but there are other ways to tell.
-
-Remember the tuning fork effect. When your body is hosting a trapped emotion, it will attract other emotions that vibrate at the same frequency. If the emotion is fear, for instance, you will become more easily frightened. The longer that energy resides inside your body, the more you’ll get used to feeling it. Over time, you’ll start thinking you’re just a fearful person, because you seem to be afraid so much of the time. In reality, because part of your body actually exists within this particular trapped emotional energy or literal “ball of fear”, you are set up for failure. Part of your body is already feeling that emotion on a continual basis so you will much more readily fall into a state of fear when a fearful situation presents itself. In other words, since part of your body is already resonating at the frequency of fear, it’s a small step for your entire body to fall into resonance.
-
-#### Where Trapped Emotions Lodge
-
-People often ask me why an emotion gets trapped in one area of the body and not another. I often find that trapped emotions lodge in an area that’s vulnerable because of a genetic susceptibility, an injury or nutritional deficiency that weakens or imbalances the energy of the body in that area.
-
-
-Sometimes there’s a metaphor at work as well. This makes sense when you realize that our subconscious minds govern our bodies and our dreams.
-___
-**Symbols and metaphors are the language of the subconscious mind, so it’s very natural for trapped emotions to lodge in an area that has symbolic significance.**
+**El resultado final de liberar esas emociones fue que Kirk se convirtió en un hombre nuevo. Actualmente, es un marido dulce que adora a su esposa y se preocupa más por ella que por sus propias molestias y dolores.**
 ___
 
-For example, let’s say you’re experiencing grief for a friend who has had a miscarriage. Instead of experiencing the emotion and leaving it behind, the emotion becomes trapped. It wouldn’t be surprising for that trapped emotion to lodge in your womb or breast – the nourishing organs of creation. Or suppose you’re experiencing one of those difficult periods in life where a series of things seem to go wrong. You feel frustrated and overwhelmed, as if you’re carrying the weight of the world on your shoulders. In that case, a trapped emotion may lodge in one of your shoulders. The reality is that any emotion can get stuck anywhere in the body.
+El solía quejarse constantemente de todo y ahora se interesa por los demás; por lo general, tiene una sonrisa en su rostro y se queja muy poco. La transformación ha sido apreciada por todos aquellos que lo conocen. Si tan sólo sus emociones atrapadas pudieran haber sido liberadas anteriormente en su vida, él podría haber tenido una vida diferente.
 
-If you don’t notice the imbalance, it can go on for years. Eventually, it may cause real problems with your health, both mental and physical.
+Kirk siempre tuvo la libertad de elegir su estado emocional; pero sus emociones atrapadas le hacían más fácil entrar en resonancia con ellas que ir contra la corriente. Partes de su cuerpo estaban enojadas, amargadas, resentidas, frustradas y temerosas. Con eso se enfrentaba en cada momento de su vida hasta que liberamos esas energías.
 
-### The Dual Nature of Trapped Emotions
+#### El efecto de un desequilibrio
 
-Trapped emotions affect you in two distinct ways, mentally and physically. Let’s talk about how they affect you mentally first. They will cause you to feel an exaggerated emotional response. Let’s first examine some real-life situations where trapped emotions were exerting an obvious mental affect.
-
-
-#### Marie and Her Trauma
-
-One of the most dramatic examples of this occurred with Marie, a beautiful and kind-hearted patient in her fifties. A year before she came to me, her only son had been brutally murdered. As you might imagine, the death of her son was a horrible blow to Marie. To make matters worse, the trial of her son’s murderer kept getting delayed in the courts, so she couldn’t put it behind her.
-
-She was having a difficult time dealing with life when she first came to see me. In the year since her son’s murder, she’d been completely caught up in her grief and loss. When we tested her for trapped emotions, we found one after another related to her son and his death. We released them. After that, Marie was free. She went back to being the well-balanced person she always was. Even though she misses her son and will always feel his absence, she’s one of the happiest, most well-balanced people I know.
-
-
-Her trapped emotions were throwing her off-balance by sustaining a negative vibration. Once we eliminated them, she was able to deal with her loss in a healthier way.
-
-
-#### Sarah and the JFK Assassination
-
-I will never forget Sarah, a 71 year old woman who came to me for treatment. I began to ask her subconscious mind through muscle testing what she needed. We found that she had a trapped emotion of sadness.
-
-While your conscious mind may not remember things very well, your subconscious mind remembers everything that has ever happened to you. Of course, it also knows about each trapped emotion in detail. It knows when the trapped emotion occurred, what the precise emotion was, who was involved, and more.
-
-As I questioned Sarah’s subconscious mind about this trapped emotion, I tried to determine when it had occurred. It turned out that the emotion of sadness had become trapped in Sarah’s body in 1963.
-
-On a hunch, I asked, “Is this sadness about the assassination of John F. Kennedy?” The answer her body gave through muscle testing was “Yes.” The moment we arrived at this, she burst into tears. As her tears flowed, she said, “Oh, yes, that affected me so deeply. And then when President Kennedy’s son, John, Jr., died in that plane crash a few years ago, it brought it all back to me. I couldn’t do anything but cry for days.”
-
-
-If you’re old enough to remember that day in November 1963, you’ll recall how shocking and sad it was. On that day, Sarah’s whole being was filled with sadness. The emotion was overwhelming. It was too intense to be processed by her physical body, and as a result, it became trapped.
-
-
-### Trapped Emotions Affect Us Emotionally
-
-Trapped emotions generate a specific energetic vibration. They’re also associated in our minds with specific kinds of events. In Sarah’s case, the emotion of sadness – resonating at its own particular frequency – was specifically connected in her mindbody to the sudden death of a Kennedy. When John Kennedy Jr. was tragically killed, her natural sadness for that event was amplified by the trapped emotion already stuck inside her. Part of her body, where the energy of this emotion was lodged, was already functioning as best it could, immersed for nearly forty years in the sadness of JFK’s death.
-
-When she got the news of John Kennedy Junior’s death, her entire body fell into resonance with the emotion that was trapped. The result was that, instead of crying a little and moving on, Sarah cried for days, and the pain of that day in November 1963, came back to her full-force. In fact, that pain had never really left her at all. In a literal and fascinating way, part of her body had never stopped feeling that deep sadness.
-
-
-This is a perfect example of how a trapped emotion can persist for many years and cause you to experience similar emotions in an exaggerated way.
+Todo gira entorno a la naturaleza cuántica del cuerpo mismo. Cuando nos levantamos cada mañana esperamos ver nuestros cuerpos tal como lo hicimos ayer o el día anterior. Parecen ser lo suficientemente sólidos y predecibles. Nunca le echamos un vistazo al espejo mientras nos estamos vistiendo sólo para ver remolimos de nubes de energía donde solían estar nuestros brazos y piernas. Pero eso es exactamente lo que somos.
 ___
-**When trapped emotions are never released, you may feel that pain and heightened response for the rest of your life. It’s so unnecessary, because your trapped emotions can easily be gotten rid of.**
+**No importa cómo pueda parecerte, tu cuerpo es en realidad una colección de energías, volando en estrecha formación.**
 ___
 
-#### The Rest of the Story
+Cuando introduces la vibración negativa de una emoción atrapada en esa formación, alteras el ritmo vibracional normal de la totalidad.
 
-Before I released her sadness, I decided to ask where this emotion had been residing in her body for almost four decades. What tissues in her body had been laboring within the sphere of this deep sadness all those years? What was the effect upon those tissues? The subconscious mind knows these answers full well, and finding out is as easy as asking. The answer shocked both of us.
+No lo sentirás necesariamente; y definitivamente no puedes notar las diferencias con sólo mirar, pero hay otras formas de verlas.
 
-Muscle testing showed that the trapped emotion of sadness was lodged in the area of her left breast.
+Recuerda el efecto del diapasón. Cuando tu cuerpo tiene alojada una emoción atrapada, atraerá otras emociones que vibran en la misma frecuencia. Si la emoción es el miedo, por ejemplo, te asustarás más fácilmente. Cuanto más tiempo resida esa energía dentro de tu cuerpo, más te acostumbrarás a sentirla. Con el paso del tiempo, empezarás a pensar que eres simplemente una persona temerosa porque pareces tener miedo casi en todo momento. En realidad, debido a que parte de tu cuerpo de hecho existe dentro de esta energía emocional atrapada particular o, literalmente, de la “bola de miedo”, te predispones para el fracaso. Parte de tu cuerpo ya está sintiendo esa emoción continuamente, entonces caerás con más facilidad en un estado de miedo cuando se presente una situación de miedo. En otras palabras, como parte de tu cuerpo ya está resonando a la frecuencia del miedo, tu cuerpo entrará en resonancia con mayor facilidad.
+
+#### Ubicación de las emociones atrapadas
+
+A menudo la gente me pregunta por qué una emoción queda atrapada en un área del cuerpo y no en otra. Generalmente, descubro que las emociones atrapadas se alojan en un área que es vulnerable a causa de una susceptibilidad genética, una lesión o una deficiencia nutricional que debilita o desequilibra la energía del cuerpo en esa zona.
+
+A veces hay una metáfora que también influye. Esto cobra sentido cuando te das cuenta de que nuestras mentes subconscientes rigen nuestros cuerpos y nuestros sueños.
 ___
-**Sarah and I stared at each other for a moment in wonder. She was a survivor of breast cancer. Four years before, her left breast had been removed in a surgical mastectomy.**
-___
-
-This trapped emotional energy had become lodged in her left breast, where it remained. Why her left breast and not some other area of the body? Perhaps she had a greater vulnerability in her left breast due to a low-grade infection, a prior injury, or some other imbalance.
-
-
-My own feeling is that it became trapped in these tissues – that lay so close to her heart – because of her love for President John F. Kennedy.
-
-Whatever the reason for its location, the trapped emotion stayed in her body as the years went by. It caused a constant low-level irritation in her tissues, and this may have been a contributing factor to the cancer. The signs were not recognized soon enough, and ultimately her left breast had to be removed to save her life, but the sadness remained. Releasing that trapped sadness from her body helped her to heal emotionally. I only wish I could have discovered it years earlier, which might have helped her avoid a lot of pain and suffering, and might have even helped her avoid breast cancer.
-
-### The Physical Effects of Trapped Emotions
-
-Tissues that are continually being distorted by a trapped emotion will eventually suffer the effects of it.
-
-If you take a magnet and hold it close to an older tube-type television screen or computer monitor, you will see a very visible distortion of the picture. This is because the magnetic field is interfering with the normal flow of electrons within the screen. If you get the magnet too close, or if you leave the magnet there long enough, it will create a permanent distortion and even ruin the screen. Trapped emotions affect the body in a similar way. After all, the body is energy, and so are trapped emotions. But trapped emotions are a *negative* energy, and distort the body’s tissues, just as the magnet distorts the picture on the TV screen. Distort the body tissues long-term, and pain and malfunction will be the result. This is why the release of a trapped emotion will often cause immediate relief of discomfort and other symptoms, and possibly the reversal of some diseases.
-
-I think that this is very fertile ground for further research, which could yield profound insight into the disease process.
-
-It is my experience that trapped emotions can exert an astonishing influence over the tissues of the body. What happens when those tissues are continually irritated over time? The first symptom is often pain or subtle malfunction which can be difficult to detect. If tissues are irritated over a long period of time, the tissue may eventually enter into a state of *metaplasia*, or change. In other words, the specific type of cell begins to revert back to a more primitive cell. The next step is malignancy, or cancer.
-
-
-While there are a variety of things that are thought to cause cancer, I believe firmly that trapped emotions are a contributing factor to the disease process, as I believe they are to many, if not most other diseases.
-___
-**Every cancer patient I treated was found to have trapped emotions embedded in the malignant tissues.**
+**Los símbolos y las metáforas son el lenguaje de la mente subconsciente, por lo que es muy natural que las emociones atrapadas se alojen en un área que tenga una importancia simbólica.**
 ___
 
+Por ejemplo, supongamos que estás sintiendo dolor por una amiga que ha tenido un aborto involuntario. En lugar de experimentar la emoción y dejarla atrás, ésta queda atrapada. No sería sorprendente que esa emoción atrapada se aloje en tu vientre o pecho, es decir, los órganos vitales de la creación. O imaginemos que estás atravesando por unos de esos períodos difíciles en la vida cuando una serie de cosas parece resultar mal. Te sientes frustrado y abrumado, como si estuvieras cargando el peso del mundo en tus hombros. En ese caso, una emoción atrapada puede alojarse en uno de tus hombros. La realidad es que cualquier emoción puede quedarse atascada en cualquier lugar de tu cuerpo.
 
-It is possible that some of these energies may have been attracted to the area precisely because the tissues were in a severe state of imbalance. While this is possible and even likely as the disease progresses, trapped emotions are, in my opinion, an underlying cause of cancer. It is vital that these trapped emotions be removed. Even though they may have already contributed to the cancer, once removed, they cannot cause any further damage in the years to come.
+Si no notas el desequilibrio, puede continuar por años. Finalmente, puede causarte verdaderos problemas en tu salud, tanto mentales como físicos.
 
-#### Rochelle’s Lung Cancer
+#### La doble naturaleza de las emociones atrapadas
 
-When Rochelle first came to me for treatment, she had a cancer the size of a baseball in her lung. She was going through chemotherapy when we met. I asked her body if there were trapped emotions in this malignant lung tissue and the response was “Yes.”
+Las emociones atrapadas te afectan de dos maneras distintas: mental y físicamente. En primer lugar, hablemos de qué manera te afectan mentalmente. Causarán que sientas una respuesta emocional exagerada. Primero examinemos algunas situaciones de la vida real donde las emociones atrapadas tuvieron un efecto mental obvio.
 
-The trapped emotions in Rochelle’s tumor dated back many years, to a time when she was a young woman. She is Filipino, and had married an American sailor stationed in the Philippines. After they had a child together, Rochelle’s husband was away at sea for six months or more at a time. She’d expected his frequent absences and had come to terms with the separation in her conscious mind, but raising a child by herself was difficult and lonely. Consciously, Rochelle believed she was fine with his absence. But her body revealed that the emotions of resentment, frustration and abandonment had become trapped inside of her during this period.
+#### Marie y su trauma
 
+Uno de los ejemplos más dramáticos de esto ocurrió con Marie, una paciente hermosa y bondadosa de 50 años. Hace un año ella vino a verme; su único hijo había sido asesinado brutalmente. Como podrás imaginar, la muerte de su hijo fue un golpe horrible para Marie. Aun peor, el juicio al asesino de su hijo continuaba retrasándose en los tribunales por lo que no podía superarlo.
 
-“No, no,” Rochelle insisted. “I never felt that way. I knew Danny would be gone and it was fine with me. I was OK on my own.” And yet, after I’d run the magnet down her back, Rochelle sat up and shook her head. “You know, it’s the funniest thing,” she said. “I feel so much lighter, like a weight has been lifted from my chest.”
+Ella estaba atravesando por un momento difícil de su vida cuando vino a verme por primera vez. En el año transcurrido desde el asesinato de su hijo, había quedado completamente atrapada en su dolor y en su pérdida. Cuando le hicimos la prueba de las emociones atrapadas encontramos una tras otra relacionadas a su hijo y su muerte. Las liberamos. Luego, Marie estaba liberada. Volvió a ser la persona tan equilibrada que siempre fue. Aunque extraña a su hijo y siempre sentirá su ausencia, ella es una de las personas más felices y equilibradas que conozco.
 
+Sus emociones atrapadas la hacían perder su equilibrio por mantener una vibración negativa. Una vez que las eliminamos, fue capaz de hacerle frente a su pérdida de una manera más saludable.
 
-Since she had to drive 90 minutes each way to my clinic, I only saw Rochelle three times, but it was enough for me to release all the trapped emotions that showed up in the area of her tumor. About five weeks later, she showed up at my office ecstatic over the good news. Her doctors had taken a new x-ray and the tumor was completely gone from her lung.
+#### Sarah y el asesinato de JFK
 
-Could the trapped emotions have been a significant contributing factor in the creation of this cancer? I believe that the answer is yes.
+Nunca olvidaré a Sarah, una mujer de 71 años que vino a verme para hacerse un tratamiento. Comencé a preguntarle a su subconsciente qué necesitaba a través de la prueba muscular. Encontramos que tenía una emoción atrapada de tristeza.
 
-Of course, I can’t prove that the release of the trapped emotions eliminated the tumor, since Rochelle was also undergoing chemotherapy. But by removing the emotions that were lodged in her chest, we may have made the chemotherapy more effective, and their removal may have given her body the edge it needed to heal. I hope to live long enough to see a day when all patients will be treated with the best of all methods like this.
+Si bien tu mente consciente puede que no recuerde las cosas muy bien, tu subconsciente recuerda todo lo que te ha ocurrido alguna vez. Por supuesto, también sabe en detalle acerca de cada emoción atrapada.
 
+Sabe cuándo ocurrió la emoción atrapada, cuál era esa emoción, quién estaba involucrado y mucho más.
 
-#### Jean’s Painful Ovary
+Mientras le hacía preguntas al subconsciente de Sarah sobre esta emoción atrapada, trataba de determinar cuándo había ocurrido. Resultó que la emoción de tristeza había quedado atrapada en el cuerpo de Sarah en 1963.
 
-One of the things about trapped emotions that surprised me the most was their ability to cause physical pain. The very first experience that I had with this phenomenon was quite dramatic. My wife, Jean suddenly began experiencing acute and severe pain in her left lower abdomen. Muscle testing showed that the pain was coming from her left ovary, and that the cause was emotional. As rapidly as I could, I began to identify the emotion responsible. To my surprise, I ended up finding not one but six different emotions. As you will learn later on, we release trapped emotions one at a time. Sometimes, more than one trapped emotion will be found nested in the same area, such as in this case. With the exception of the last emotion, all of them had to do with tragic or upsetting events that had occurred in the lives of women that were close to Jean. I released each trapped emotion as it was identified.
+Por una corazonada, le pregunté: ¿Esta tristeza es acerca del asesinato de John F. Kennedy?” la respuesta que dio su cuerpo a través de la prueba muscular fue “Sí”. Cuando llegamos a ese momento, ella comenzó a llorar. Mientras sus lágrimas caían dijo, “Oh, sí, eso me afectó profundamente. Y cuando el hijo del Presidente Kennedy, John Jr., murió en un accidente de avión hace unos años, me trajo todo a la memoria. No pude hacer nada más que llorar por días”.
 
+Si tienes edad suficiente para recordar ese día de noviembre de 1963, te acordarás lo chocante y triste que fue. Ese día, todo el ser de Sarah se llenó de tristeza. La emoción fue inmensa. Era demasiado intensa para ser procesada por su cuerpo físico, y como resultado quedó atrapada.
+
+### Las emociones atrapadas nos afectan emocionalmente
+
+Las emociones atrapadas generan una vibración energética específica. Además, están asociadas en nuestras mentes con tipos de acontecimientos específicos. En el caso de Sarah, la emoción de tristeza, que resonaba en su propia frecuencia particular, estaba conectada específicamente en su cuerpo mental con la muerte de Kennedy. Cuando John Kenny Jr. murió trágicamente, su tristeza natural por ese acontecimiento se amplificó por la emoción atrapada que ya estaba atascada en ella. Parte de su cuerpo, donde estaba alojada la energía de esta emoción, ya estaba funcionando lo mejor que podía, inmersa casi por cuarenta años en la tristeza de la muerte de JFK.
+
+Cuando ella se enteró de la muerte de John Kennedy Junior, su cuerpo entero entró en resonancia con la emoción que estaba atrapada. El resultado fue ese, en lugar de llorar un poco y seguir adelante, Sarah lloró muchos días, y el dolor de ese día de noviembre de 1963 volvió con toda su fuerza. De hecho, ese dolor en realidad nunca la había abandonado. De una manera literal y fascinante, parte de su cuerpo no había dejado de sentir esa tristeza profunda.
+
+Este es un ejemplo perfecto de cómo una emoción atrapada puede persistir durante muchos años y provocar que experimentes emociones similares de una manera exagerada.
 ___
-**Amazingly, her pain level decreased instantly and noticeably with each trapped emotion that I released. After clearing five trapped emotions, her pain level was a fraction of what it had been only moments before.**
-___
-
-
-Her body indicated that there was one more trapped emotion. Testing quickly revealed that an emotion of feeling *worthless* had become trapped when Jean was in kindergarten.
-
-The year was 1960. It was an election year, and the contest was between Richard M. Nixon and John F. Kennedy. Jean’s teacher informed her that a boy and a girl from the school had been chosen to be interviewed by the local newspaper about the upcoming presidential election, and that she was one of those chosen. She was told that she would be asked some questions about the candidates, particularly who she would vote for if she could.
-
-
-She was excited, and the big day soon came. She was ushered into a room at the school that had been prepared for the interview. There were two chairs set up right in front, one for each child. The interviewer began asking questions of the little boy first, while flash bulbs popped as his picture was taken. Although her picture was taken, for some reason, no questions were asked of Jean at all. She was ignored almost completely, with the exception of being told how to pose for the photo. Suddenly the interview was over. As she was ushered back to her classroom she felt confused. Gradually it began to dawn on her how unimportant she must be.
-
-___
-**She began to feel worthless, and she felt the emotion strongly enough that it became trapped in her physical body.**
-___
-
-Emotions are energy, and the specific vibration of an emotion determines precisely which emotion it is. A trapped emotion is like a little ball of energy which will always “land” or become lodged somewhere in the physical body. For some reason, this trapped emotion of worthlessness lodged in Jean’s left ovary, where it remained for thirty years.
-
-
-When we released this last trapped emotion, the remnants of her pain were instantaneously gone. She got up off the floor and we looked at each other in mutual amazement at what we had just experienced. Jean has never had a recurrence of pain in that area. I can’t help but wonder what the consequences to her health might have been if we had not released those energies from her ovary.
-
-#### Jack’s Tennis Elbow
-
-Another example of how trapped emotions can cause physical pain came from a patient of mine named Jack. He was 42 years old when he came to me for treatment of his excruciating tennis elbow, which he’d been suffering from for months. The discomfort in his right forearm had become so great that he could no longer even turn the key to start his car without terrible pain. I began treating him with a traditional chiropractic approach of spinal and extremity adjustments and physical therapy. After working on him for about a week, I didn’t see much improvement and that surprised me. Tennis elbow is an ailment that is normally treated very successfully with chiropractic care.
-
-I was frustrated with Jack’s lack of improvement. This was in the early days of my work with trapped emotions, and I hadn’t yet thought to ask his subconscious if emotions had anything to do with his problem. I was just beginning to understand how powerful trapped emotions can be, and how they can cause many different kinds of symptoms. I knew they could cause physical pain, but I also knew that tennis elbow was an inflammatory condition that I had treated successfully before. However, since I was having no results with the traditional approach, I decided to ask Jack’s subconscious if trapped emotions were an underlying cause of his tennis elbow. I was a bit surprised when his body answered, “Yes.”
-
-#### High School Girls
-
-Using the Emotion Code, we identified the first emotion. According to his body, the trapped emotion was *inferiority*. It had become trapped in his body during high school, and had to do with a certain girl he’d liked. I released it, and Jack was surprised by the immediate effect this had on his arm. Suddenly his elbow pain had decreased noticeably. I asked again if there were any trapped emotions that we could release. His body answered “Yes”, so I began asking what the next emotion was, when it had become trapped, and if it had to do with anyone in particular. This trapped emotion was also from Jack’s high school days, and was the result of a less than satisfactory relationship – with a different girl this time. The trapped emotion was *nervousness*. When we released it, Jack’s elbow pain lessened even more significantly. We continued this process until we had removed a total of five trapped emotions.
-
-
-They were all from high school, and each emotion involved a different girl. His wife, who was there with him during his treatment seemed amused.
-
-As we released each trapped emotion, the discomfort level in Jack’s forearm noticeably decreased. The moment we released the last emotion, his pain was completely gone! He turned his arm this way and that. He imitated turning the key in his car. There was no pain whatsoever.
-
-He had suddenly regained his full range of motion in his elbow joint, and I could reproduce no pain by pressing my fingers into the muscles of his forearm, which previously had been very painful to the touch. This result was astounding to all of us that were witness to it.
-
-
-Jack was a tennis player during high school, but hadn’t picked up a racket in years. Trapped emotions tend to gravitate toward weaker areas of the body, where there is extra stress, an injury or an infection, or some other imbalance. All of these particular trapped emotions lodged in the tissues of Jack’s forearm. I believe this is because during high school, his forearm was being repeatedly stressed and even injured to a degree. At the same time, he was experiencing emotional distress and picking up trapped emotions from his failing attempts at romance. Remember that a trapped emotion will always land somewhere, likely at the weakest link in the body’s chain.
-
-
-I still think if I hadn’t been there and seen it for myself, I wouldn’t believe it.
-___
-**Within a matter of a few minutes, Jack’s pain went from crippling to non-existent.**
+**Si las emociones atrapadas nunca se liberan, puede que sientas ese dolor y esa respuesta acentuada por el resto de tu vida. Es tan innecesario porque puedes librarte de tus emociones atrapadas fácilmente.**
 ___
 
-I was once again amazed that emotions could somehow directly cause such dramatic physical pain. Nevertheless, I had just seen it with my own eyes. As I continued to use the Emotion Code on my patients, I was amazed by how many conditions were actually being caused in whole or in part by trapped emotions, and by how destructive they were to my patients’ health.
+#### El resto de la historia
 
-Powerful healing occurs when trapped emotions are finally released. Who knows how much pain, unhappiness and chronic illness could be completely avoided by eliminating trapped emotions! I quickly learned that some of the feelings trapped within my patients’ bodies had been there for much longer than I would have thought possible. It made me sad to think that, at some level, these patients had been suffering constantly for all those years, from something that is so easy to get rid of.
+Antes de que liberara su tristeza, decidí preguntar dónde había estado alojada en su cuerpo esta emoción por casi cuatro décadas. ¿Qué tejidos de su cuerpo habían estado funcionando dentro de la esfera de su tristeza profunda todos esos años? ¿Cuál fue el efecto sobre esos tejidos? El subconsciente sabe estas respuestas por completo y averiguarlas es tan fácil como preguntar. La respuesta nos impresionó a ambos.
 
-
-### Phobias
-
-A phobia is defined as an irrational, persistent fear of certain activities, persons, objects or situations. I have found that trapped emotions are a significant cause of phobias, perhaps the only cause. The subconscious mind knows what the underlying cause of the phobia is, and each phobia has one or more trapped emotions that are the cause.
-
-
-#### The Airplane Picture Phobia
-
-It is possible to have a phobia about literally anything. For example, I once treated a woman who had a rather odd phobia. She could not look upon a picture of an aircraft in a magazine or see one on television without having a severe panic attack. If a jet flew overhead, she had to keep her eyes on the ground. If she looked up at the plane, she would have an attack.
+La prueba muscular demostró que la emoción atrapada de tristeza estaba alojada en el área de su pecho izquierdo.
 ___
-**I asked her subconscious mind through muscle testing if there was a trapped emotion that was causing her phobia. The answer was, “Yes.” Through further testing I was able to determine what had happened.**
+**Sarah y yo nos miramos fijamente por un momento, maravillados. Ella era una sobreviviente de cáncer de mama. Hacía cuatro años que le habían extraído su mama izquierda en una mastectomía quirúrgica.**
 ___
 
+Esta energía emocional atrapada se había alojado en su pecho izquierdo y permaneció allí. ¿Por qué su pecho izquierdo y no cualquier otra área del cuerpo? Quizás tenía una mayor vulnerabilidad en su pecho izquierdo debido a una infección menor, una lesión previa o algún otro desequilibrio.
 
-A number of years earlier she had been reading a magazine article about the crash of a passenger jet. The article was accompanied by a photograph of the jet taken just before impact.
+Mi propia sensación es que quedó atrapada en estos tejidos que yacían tan cerca de su corazón por su amor al Presidente John F. Kennedy.
 
-As she read this article, she was overcome with emotion. She identified strongly with the terrified passengers, and a trapped emotion was created. I released the emotion, and the phobia was instantly gone. She was able to look at airplanes both in photographs and in the sky immediately without any trouble, and her phobia did not return.
+Sea cual sea la razón de su ubicación, la emoción atrapada permaneció en su cuerpo a medida que pasaron los años, lo cual causaba una constante irritación menor en sus tejidos y este podría haber sido un factor que contribuyó al cáncer. Los signos no fueron reconocidos a tiempo y finalmente tuvieron que extraerle su mama izquierda para salvar su vida, pero la tristeza permaneció. El haber liberado esa tristeza atrapada de su cuerpo la ayudó a sanarse emocionalmente. Sólo deseo haberlo podido descubrir años antes, lo que podría haberla ayudado a evitar mucho dolor y sufrimiento, e incluso podría haberla ayudado a evitar el cáncer de mama.
+
+### Los efectos físicos de las emociones atrapadas
+
+Los tejidos que están continuamente distorsionados por una emoción atrapada eventualmente sufrirán los efectos de ello.
+
+Si tomas un imán y lo mantienes cerca de una antigua pantalla de televisión con tubo o un monitor de computadora, verás una distorsión de la imagen muy visible. Esto se debe a que el campo magnético está interfiriendo con el flujo normal de los electrones dentro de la pantalla. Si acercas el imán demasiado cerca o si lo dejas allí por mucho tiempo, creará una distorsión permanente e incluso arruinará la pantalla. Después de todo, el cuerpo es energía y también lo son las emociones atrapadas. Pero las emociones atrapadas son una energía negativa y distorsionan los tejidos del cuerpo tal como el imán distorsiona la imagen en la pantalla del televisor. La deformación de los tejidos del cuerpo a largo plazo, el dolor y el mal funcionamiento será el resultado. Esta es la razón por la que la liberación de una emoción atrapada a menudo causará un alivio del malestar inmediato y otros síntomas, y posiblemente la reversión de algunas enfermedades.
+
+Creo que esto es un terreno muy fértil para investigaciones futuras que podrían producir una profunda comprensión del proceso de las enfermedades.
+
+Según mi experiencia, las emociones atrapadas pueden ejercer una influencia sorprendente sobre los tejidos del cuerpo. ¿Qué ocurre cuando esos tejidos son continuamente irritados con el tiempo? El primer síntoma es a menudo dolor o un mal funcionamiento sutil que puede ser difícil de detectar. Si los tejidos son irritados por un largo período de tiempo, el tejido puede eventualmente entrar en un estado de metaplasía o cambiar. En otras palabras, el tipo específico de célula comienza a convertirse en una célula más primitiva. El próximo paso es la malignidad o el cáncer.
+
+Si bien hay una variedad de cosas que se cree que causan el cáncer, creo firmemente que las emociones atrapadas son un factor que contribuye al proceso de las enfermedades, ya que creo que lo son para muchas sino para casi todas las otras enfermedades.
+___
+**Cada paciente con cáncer que atendí resultó tener emociones atrapadas arraigadas en los tejidos malignos.**
+___
+
+Es posible que algunas de estas energías puedan haber sido atraídas al área precisamente porque los tejidos estaban en un estado severo de desequilibrio. Si bien esto es posible e incluso probable a medida que la enfermedad avanza, las emociones atrapadas son, en mi opinión, una causa subyacente del cáncer. Es de vital importancia que estas emociones atrapadas sean eliminadas. Aunque puede que ya hayan contribuido al cáncer, una vez eliminadas, no pueden causar más daños en los próximos años.
+
+#### El cáncer de pulmón de Rochelle
+
+Cuando Rochelle vino a verme por primera vez para recibir tratamiento, ella tenía un cáncer del tamaño de una pelota de béisbol en su pulmón. Estaba haciéndose quimioterapia cuando nos conocimos. Le pregunté a su cuerpo si había emociones atrapadas en este tejido pulmonar maligno y la respuesta fue “Sí”.
+
+Las emociones atrapadas en el tumor de Rochelle se remontaban a hace muchos años, a un tiempo cuando ella era joven. Ella es filipina y se había casado con un marinero americano instalado en las Filipinas. Después de haber tenido un hijo juntos, el marido de Rochelle se fue al mar por seis meses o más. Ella había previsto sus ausencias frecuentes y había aceptado la separación en su mente consciente, pero criar un hijo sola era difícil y solitario. Conscientemente, Rochelle creía que ella estaba bien con su ausencia, pero su cuerpo reveló que esas emociones de resentimiento, frustración y abandono habían quedado atrapadas dentro de ella durante este período.
+
+“No, no”, insistió Rochelle. “Nunca me sentí de esa manera. Sabía que Danny se iría y yo no tenía ningún problema con eso. Me sentía BIEN sola”. Y, sin embargo, después de que le pasara el imán por su espalda, Rochelle se incorporó y sacudió su cabeza. “Sabes, esto es de lo más extraño”, ella dijo. “Me siento mucho más liviana, como si se hubiera levantado un peso de mi pecho”.
+
+Como ella tenía que manejar 90 minutos de ida y de vuelta para llegar a mi clínica, sólo vi a Rochelle tres veces, pero fueron suficientes como para que le pudiera liberar todas las emociones atrapadas que aparecieron en el área de su tumor. Aproximadamente cinco semanas más tarde, apareció en mi consultorio contentísima por las buenas noticias. Sus médicos le habían tomado una nueva radiografía y el tumor se había ido completamente de su pulmón.
+
+¿Las emociones atrapadas podrían haber sido un importante factor de contribución para la creación de este cáncer? Creo que la respuesta es que sí.
+
+Por supuesto, no puedo demostrar que la liberación de las emociones atrapadas eliminó el tumor ya que Rochelle también se sometía a quimioterapia. Sin embargo, mediante la eliminación de las emociones que estaban alojadas en su pecho, es posible que hayamos hecho más eficaz a la quimioterapia y que su eliminación le haya dado a su cuerpo el arranque que necesitaba para sanar. Espero vivir lo suficiente como para ver el día en que todos los pacientes sean tratados con el mejor de todos los métodos como este.
+
+#### El doloroso ovario de Jean
+
+Una de las cosas que más me sorprendieron acerca de las emociones atrapadas fue su capacidad de causar dolor físico. La primera experiencia que tuve con este fenómeno fue bastante dramática. Mi esposa, Jean, de repente comenzó a sentir un dolor agudo y severo en su abdomen inferior izquierdo. La prueba muscular demostró que el dolor provenía de su ovario izquierdo y que su causa era emocional. Tan rápido como pude, comencé a identificar la emoción responsable. Para mi sorpresa, terminé encontrando no una sino seis emociones diferentes. Como sabrás después, liberamos las emociones una a la vez. A veces, se encontrará más de una emoción anidada en la misma área, como por ejemplo en este caso. Exceptuando a la última emoción, todas tenían que ver con acontecimientos trágicos o perturbadores que habían ocurrido en las vidas de mujeres que estaban cerca de Jean. Liberé cada emoción atrapada a medida que cada una de ellas era identificada.
+___
+**Sorprendentemente, el nivel de su dolor disminuyó al instante y notablemente a medida que liberaba cada emoción atrapada. Después de limpiar cinco emociones atrapadas, el nivel de su dolor era una fracción de lo que había sido tan sólo momentos antes.**
+___
+
+Su cuerpo indicaba que había una emoción atrapada más. La prueba rápidamente reveló que una emoción de haberse sentido despreciada había quedado atrapada cuando Jean estaba en el jardín de infantes.
+
+Era el año 1960, un año de elecciones. La elección era entre Richard M. Nixon y John F. Kennedy. La maestra de Jean le informó que un niño y una niña de la escuela habían sido elegidos para ser entrevistados por el periódico local acerca de las elecciones presidenciales próximas y que ella era una de las elegidas. Le dijeron que le iban a hacer algunas preguntas sobre los candidatos, en particular, a quién votaría si pudiera.
+
+Estaba tan entusiasmada y el gran día llegó pronto. La hicieron pasar a una habitación en la escuela que estaba preparada para la entrevista. Había dos sillas enfrentadas, una para cada niño. El entrevistador comenzó a hacerle preguntas al niño pequeño en primer lugar, mientras que destellaban flashes cuando le sacaban su foto. Aunque también le sacaron una foto a Jean, por alguna razón, a ella no le hicieron ninguna pregunta.
+
+Fue ignorada casi por completo, con la excepción de que se le dijo cómo posar para la foto. De repente, la entrevista finalizó. Mientras la llevaban al aula nuevamente se sintió confundida. Poco a poco, cayó en la cuenta de lo poco importante que ella debía ser.
+___
+**Ella empezó a sentirse inútil y sintió esa emoción lo suficientemente fuerte como para que quedara atrapada en su cuerpo físico.**
+___
+
+Las emociones son energía y la vibración específica de una emoción determina con precisión qué emoción es. Una emoción atrapada es como una pequeña pelota de energía que siempre “caerá” o se alojará en algún lugar en el cuerpo físico. Por alguna razón, esta emoción atrapada de inutilidad se alojó en el ovario izquierdo de Jean, donde permaneció durante treinta años.
+
+Cuando liberamos esta última emoción atrapada, los restos de su dolor desaparecieron instantáneamente. Ella se levantó del piso y nosotros nos miramos el uno al otro en mutuo asombro por lo que habíamos acabado de experimentar. Jean nunca ha vuelto a tener una reaparición de dolor en esa zona. No puedo evitar preguntarme cuáles habrían sido las consecuencias en su salud si no hubiésemos liberado esas energías de su ovario.
+
+#### El Codo de Tenista de Jack
+
+Otro ejemplo de cómo las emociones atrapadas pueden causar daño físico proviene de un paciente mío llamado Jack. Él tenía 42 años cuando vino a verme para tratarse su terrible codo de tenista, por el que había estado sufriendo durante meses. El malestar en su antebrazo derecho se había hecho tan grande que ya no podía ni siquiera girar la llave para encender su auto sin que esto le causara un dolor terrible. Lo empecé a tratar con un enfoque de quiropráctica tradicional de los ajustes de la columna vertebral y las extremidades y con terapia física. Después de trabajar en él durante una semana aproximadamente, no vi demasiadas mejorías, lo cual me sorprendió. El codo de tenista es una enfermedad que normalmente se trata con gran éxito con cuidado quiropráctico.
+
+Yo me sentía frustrado por la falta de mejoría de Jack. Esto sucedió en los primeros días de mi trabajo con las emociones atrapadas y todavía no había pensado en preguntarle a su subconsciente si las emociones tenían algo que ver con su problema. Recién comenzaba a entender lo poderosas que las emociones atrapadas pueden ser y cómo pueden causar diferentes tipos de síntomas. Sabía que podían causar dolor físico pero también sabía que el codo de tenista era una condición inflamatoria que había tratado con éxito anteriormente. Sin embargo, como no estaba obteniendo resultados con el enfoque tradicional, decidí preguntarle al subconsciente de Jack si las emociones atrapadas eran una causa subyacente de su codo de tenista. Me sorprendió un poco que su cuerpo contestara: “Sí”.
+
+#### Las Jóvenes de la Escuela Secundaria
+
+Utilizando el Código de la Emoción, identificamos la primera emoción. De acuerdo a su cuerpo, la emoción atrapada era la inferioridad. Había quedado atrapada en su cuerpo durante la escuela secundaria y tenía que ver con una jovencita en particular que a él le gustaba. La liberé y Jack se sorprendió por el efecto inmediato que esto tuvo en su brazo. De repente, el dolor en su codo había disminuido notablemente. Pregunté de nuevo si había alguna emoción atrapada que podía liberar. Su cuerpo contesto: “Sí”, entonces comencé a preguntar cuál era la próxima emoción, cuándo había quedado atrapada y si tenía que ver con alguien en particular. Esta emoción atrapada provenía también de la época cuando Jack iba a la escuela secundaria; y fue el resultado de una relación poco satisfactoria –con una joven diferente esta vez. La emoción atrapada era el nerviosismo. Cuando la liberamos el dolor del codo de Jack disminuyó aún más significativamente. Continuamos este proceso hasta que eliminamos cinco emociones atrapadas en total.
+
+Todas provenían de la escuela secundaria y cada emoción estaba asociada con una joven diferente. A su esposa, que estaba allí con él durante su tratamiento, parecía darle gracia.
+
+A medida que liberamos cada emoción atrapada, el nivel de malestar en el antebrazo de Jack disminuía notablemente. En el momento que liberamos a la última emoción, ¡su dolor se fue completamente! Giró su brazo hacia un lado y hacia el otro. Imitó girar la llave en su auto. No había dolor alguno.
+
+De repente había recuperado todo su rango de movimiento en la articulación de su codo y no pude provocarle dolor presionando mis dedos en los músculos de su antebrazo, lo cual anteriormente había sido muy doloroso al tacto. Este resultado fue sorprendente para todos los que estábamos siendo testigos de él.
+
+Jack había jugado al tenis durante la escuela secundaria pero hacía años que no agarraba una raqueta. Las emociones atrapadas tienden a gravitar hacia las zonas más débiles del cuerpo, donde hay estrés extra, una lesión o una infección, o algún otro desequilibrio. Todas estas emociones atrapadas particulares se alojaron en los tejidos del antebrazo de Jack. Creo que esto se debe a que durante la escuela secundaria su antebrazo fue estresado en repetidas ocasiones e incluso lesionado hasta cierto punto. Al mismo tiempo, él estaba experimentando angustia emocional y recogiendo emociones atrapadas de sus intentos fallidos en el romance. Recuerda que una emoción atrapada siempre recaerá en algún lugar, probablemente en el eslabón más débil en la cadena del cuerpo.
+
+Todavía pienso que si no hubiese estado allí viéndolo por mí mismo, no lo hubiese creído.
+___
+**En cuestión de unos minutos, el dolor de Jack pasó de ser atroz a inexistente.**
+___
+
+Una vez más me sorprendió que las emociones puedan de alguna manera causar directamente un dolor físico grande. Sin embargo, recién lo había visto con mis propios ojos. A medida que continué utilizando el Código de la Emoción en mis pacientes, me asombraron cuántas condiciones estaban en realidad siendo causadas en su totalidad o en parte por las emociones atrapadas; y por lo destructivas que fueron en la salud de mis pacientes.
+
+La sanación poderosa ocurre cuando las emociones atrapadas son finalmente liberadas. ¡Quién sabe cuánto dolor, infelicidad y enfermedad crónica puede evitarse completamente eliminando a las emociones atrapadas! Rápidamente aprendí que algunos de los sentimientos atrapados en los cuerpos de mis pacientes habían estado allí mucho más tiempo del que yo hubiera creído posible. Me ponía triste pensar que en algún punto estos pacientes habían estado sufriendo constantemente durante todos esos años, de algo de lo que uno puede deshacerse fácilmente.
+
+### Fobias
+
+e define fobia a un temor irracional y persistente a determinadas actividades, personas, objetos o situaciones. Descubrí que las emociones atrapadas son una causa importante de las fobias, quizás la única causa. El subconsciente sabe cuál es la causa subyacente de la fobia y cada fobia tiene una o más emociones atrapadas que la causan.
+
+### La Fobia a la Imagen del Avión
+
+Es posible tenerle fobia a cualquier cosa literalmente. Por ejemplo, una vez atendí a una mujer que tenía una fobia bastante rara. No podía mirar una imagen de un avión en una revista o ver una en la televisión sin tener un ataque de pánico grave. Si un avión volaba por encima de ella, tenía que mantener la vista al suelo. Si miraba hacia arriba y veía el avión, podía llegar a tener un ataque de pánico.
+___
+**La pregunté a su subconsciente por medio de la prueba muscular si había una emoción atrapada que le estaba causando su fobia. La respuesta fue: “Sí”. Mediante pruebas posteriores pude determinar lo que había sucedido.**
+___
+
+Unos años atrás ella había estado leyendo un artículo en una revista acerca de un accidente de avión con pasajeros. El artículo estaba acompañado con una foto del avión justo antes del impacto.
+
+Mientras leía ese artículo, la invadió una emoción profunda. Se identificó mucho con los pasajeros aterrorizados y se creó una emoción atrapada. Liberé la emoción y la fobia se fue instantáneamente. Pudo mirar aviones tanto en fotografías como en el cielo inmediatamente sin ningún problema y su fobia no volvió.
+
+### Miedos Nocturnos
+
+En otro caso, una paciente de 42 años llamada Carol había sufrido miedos nocturnos casi toda su vida. ¡Sus gritos de terror podían despertar a su marido y a sus hijos por lo menos tres noches cada semana! Los miedos nocturnos difieren de las pesadillas ya que estos no parecen ser causados por un sueño específico. En cambio, se siente una emoción específica y muy aterradora mientras la víctima está dormida.
+
+Sus miedos nocturnos habían sido un gran problema casi toda su vida. Se había roto tanto clavículas como varias costillas y hasta tuvo una prolongada fractura de cráneo debido a sus intentos agitados por escapar de su estado de sueño aterrador.
+
+Su subconsciente respondió afirmativamente a mi simple pregunta: “¿Hay una emoción atrapada que está causando tus miedos nocturnos? Otras pruebas futuras revelaron que emociones de pánico, terror y miedo habían quedado atrapadas en su cuerpo cuando tenía cinco años, durante un período corto en el cual tenía una pesadilla recurrente. La pesadilla finalmente se fue pero permanecieron las emociones atrapadas.
+
+El resultado de liberar estas emociones atrapadas fue que en una semana los miedos nocturnos desaparecieron para siempre y no volvieron.
+
+### ¿Puedes permitirte mantenerlas guardadas?
+
+Creo que eliminar las emociones atrapadas es vital para tu calidad de vida. Eliminarlas podría prevenir que finalmente ocurran innumerables y variados problemas. Espero que estés empezando a entender cómo el eliminar tus emociones atrapadas puede darte alivio de síntomas mentales y físicos que pudieras estar padeciendo actualmente.
+
+Liberando tus emociones atrapadas, estarás eliminando las nubes de energía negativa no deseada que estén dificultando la función normal de tus tejidos; y estarás ayudando a mantener el libre flujo de energía y, por lo tanto, ayudando a tu cuerpo a que pueda sanar él mismo.
+
+Tu mente volverá a un estado más natural también, sin el dramatismo, dolor y peso de tus antiguas emociones impidiéndote progresar en tu vida.
+
+A continuación, compartiré algunos secretos asombrosos que antiguos médicos sabían acerca del campo energético humano, el cual ha sido descubierto recientemente.
 
 
-### Night Terrors
+[^1]: *Jefferson Lewis, Something Hidden: A Biography of Wilder Penfield (Goodread Biographies), (Halifax, Nova Scotia: Formac Publishing Com-pany Ltd., 1951), 198.*
 
-In another case, a 42 year-old patient named Carol had suffered from night terrors nearly all her life. Her screams of terror would awaken her husband and children at least three nights every week! Night terrors differ from nightmares in that they don’t seem to be caused by a specific dream. Instead, a specific and very frightening emotion is felt while the victim is asleep.
+[^2]:*Robert Frost, Applied Kinesiology: A Training Manual and Reference Book of Basic Principles and Practice, (Berkeley, CA: North Atlantic Books, 2002), 4.*
 
-Her night terrors had been a major problem for most of her life. She had broken both collar bones, multiple ribs and had even sustained a skull fracture due to her flailing attempts to escape her terrorizing dream-state.
+[^3]: *Candace B. Pert, Molecules of Emotion: why you feel the way you feel, (New York: Touchstone Press, 1997)*
 
+[^4]: *Isaac Asimov, Atom: Journey across the subatomic cosmos (New York: Penguin Books USA Inc., 1992), 56.*
 
-Her subconscious mind responded affirmatively to my simple question, “Is there a trapped emotion that is causing your night terrors?” A little further testing revealed that emotions of panic, terror and fear had become trapped in her body when she was five years old, during a short period when she was experiencing a recurring nightmare. The nightmare was long since gone, but the trapped emotions remained.
+[^5]: *William A. Tiller, Walter E. Dibble, Jr. and Michael J. Kohane, Conscious acts of creation: the emergence of a new physics (Walnut Creek, CA: Pavior Publishing, 2001),1.*
 
-
-The result of releasing these trapped emotions was that within one week the night terrors were gone for good, and did not return.
-
-### Can You Afford to Keep Them?
-
-I believe that removing trapped emotions is vital to your quality of life. Removing them may prevent many different problems from eventually occurring. Hopefully you are beginning to understand how releasing your trapped emotions can give you relief from mental and physical symptoms you may be suffering from now.
-
-
-By releasing your trapped emotions, you will be removing the unwanted negative energy-clouds that are hampering the normal function of your tissues, and you will be helping to re-establish the free flow of energy, thus helping your body to heal itself.
-
-Your mind will return to a more natural state as well, without the drama, pain and weight of your old emotions blocking you from progressing in your life.
-
-Next, I will share some amazing secrets that ancient physicians knew about the human energy field that have just recently been rediscovered.
-
-
-
-[^1]: Jefferson Lewis, Something Hidden: A Biography of Wilder Penfield (Goodread Biographies), (Halifax, Nova Scotia: Formac Publishing Company Ltd., 1951), 198.
-
-[^2]: Robert Frost, Applied Kinesiology: A Training Manual and Reference Book of Basic Principles and Practice, (Berkeley, CA: North Atlantic Books, 2002), 4.
-
-[^3]: Candace B. Pert, Molecules of Emotion: Why You Feel the Way You Feel, (New York: Touchstone Press, 1997)
-
-[^4]: Isaac Asimov, Atom: Journey Across the Subatomic Cosmos (New York: Penguin Books USA Inc., 1992), 56.
-
-[^5]: William A. Tiller, Walter E. Dibble, Jr. and Michael J. Kohane, Conscious Acts of Creation: The Emergence of a New Physics (Walnut Creek, CA: Pavior Publishing, 2001),1.
-
-
-[^6]:  William A. Tiller, Science and Human Transformation: Subtle Energies, Intention-ality and Consciousness (Walnut Creek, CA: Pavior Publishing, 1997), 14.
+[^6]: *William A. Tiller, Science and Human Transformation: Subtle Energies, Intention-ality and Consciousness (Walnut Creek, CA: Pavior Publishing, 1997), 14.*

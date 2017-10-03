@@ -1,3 +1,4 @@
-"Chart" = "Chart";
-"Book" = "Book";
-"Support" = "Support";
+"Need to Close App Title" = "Necesidad de cerrar la aplicación";
+"Need to Close App Message" = "Para cambiar el idioma, primero debes cerrar la aplicación y reiniciarla.";
+"Cancel" = "Cancelar";
+"Close App" = "Cerrar la Aplicación";

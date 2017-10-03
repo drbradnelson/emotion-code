@@ -1,133 +1,131 @@
-## About the Author
 
 
-
-Dr. Bradley Nelson graduated with honors from Life Chiropractic College West, in San Lorenzo, California in 1988. He has lectured internationally on the natural healing of chronic illness, and was in private practice until 2004, successfully treating patients from across the US and Canada who were suffering from Chronic Fatigue Syndrome, Fibromyalgia and a wide variety of other chronic ailments. A holistic chiropractic physician and medical intuitive, Dr. Nelson is one of the world’s foremost experts in the emerging fields of bioenergetic medicine and energy psychology.
-
-
-Widely renowned as a speaker and a gifted teacher, he is now making his teachings available online at [HealersLibrary.com](http://HealersLibrary.com/freetrial), a membership site providing 24/7 access to Dr. Nelson’s acclaimed Emotion Code Seminar instructional videos, webinars, television and radio interviews, books, certification materials and more.
+## ACERCA DEL AUTOR
 
 
-Dr. Nelson is married and is the father of seven children. He lives with his family in Southern Utah.
+Dr. Bradley Nelson es el desarrollador de la forma más avanzada de medicina energética en el planeta. Médico quiropráctico holístico y medico intuitivo, el Dr. Nelson es uno de los principales expertos del mundo en los campos emergentes de la Medicina Bioenergética y Psicología Energética.
+
+Su libro más vendido, “ El Código de la Emoción “ , está ayudando a la gente de todo el mundo a mejorar sus vidas al liberarse de su equipaje emocional.
+
+El Dr. Nelson se graduó con honores de Life Chiropractic College West, en San Lorenzo, California en 1988. Como médico holístico, el Dr. Nelson se especializa en ayudar a aquellos que sufren de Síndrome de Fatiga Crónica y
+Fibromialgia y a tratado pacientes con éxito en todo Estados Unidos y Canadá hasta su retiro en el 2004.
+
+Durante las últimas dos décadas, el Dr. Nelson ha dado conferencias a nivel internacional sobre la curación de las enfermedades crónicas e incurables trabajando con la energía y restableciendo el equilibrio y la salud con los los 6 elementos claves del cuerpo. En el 2009 se enfoca en desarrollar el trabajo de su vida, un sencillo pero potente sistema de auto- estudio conocido como “ The Body Code”
+(El Código del Cuerpo) que enseña a los estudiantes cómo equilibrar el cuerpo en estas 6 áreas claves. El Código del Cuerpo está siendo utilizado con éxito por los médicos y laicos por igual para mejorar la salud de miles de personas en todo el mundo.
+
+El Dr. Nelson es un orador popular y aclamado internacionalmente en el circulo de seminarios internaciones ahora viaja a muchos países alrededor del mundo, enseñando el Seminario “ El Código de la Emoción “. Ha sido invitado a innumerables programas de radio y televisión y ha presentado su mensaje de curación a millones de personas alrededor del mundo.
+
+El Dr. Nelson y su equipo manejan una red de profesionales de el Código de la Emoción así como de el Código del Cuerpo que se extiende por todo el mundo. Debido a que todos los métodos del Dr. Nelson se pueden hacer a distancia, la mayoría de estos profesionales han encontrado una nueva libertad y abundancia en sus vidas , trabajando con sus clientes por teléfono o internet.
+
+El Dr. Nelson está casado y es padre de siete hijos. Vive con su familia en el sur de Utah.
 
 ### HealersLibrary.com
 
-My goal is to provide the knowledge that will help empower you to become a healer. I believe this is your birthright; to know how to help yourself and your loved ones to shed their emotional baggage and their heart-walls, that all might live up to their full potential.
-
-I have created HealersLibrary.com for the express purpose of making these powerful natural healing techniques and supplements available to everyone. Stop by and see how easy it is to be a member of this online educational library where you can:
-
- - Watch The Emotion Code Seminar online
- -  Access videos, books, CDs, tools and supplements
- - Ask questions and interact with other students
- - View our schedule of live & online events
- - Order more copies of The Emotion Code
- - Find out about how to be come a Certified Practitioner
- -  Purchase remote sessions
- - Watch live webinars on The Emotion Code
-
-I’m so excited about HealersLibrary.com that I want to give you the opportunity to try it out for 30 days at no charge. You can immediately start watching the Emotion Code Seminar videos, connect with others, and start taking advantage of all the site has to offer by visiting this link: [HealersLibrary.com/freetrial](http://www.healerslibrary.com/freetrial) 
-
-### Seminars
-
-I’d like your group or organization to be successful! Imagine what it would be like to have your entire team free of their Heart-Walls and other trapped emotions that are interfering with your success! We are available to teach the Emotion Code to your sales team, leadership and management on request. Just send an email to: [Seminars@HealersLibrary.com](mailto:Seminars@HealersLibrary.com?subject=Emotion%20Code%20Seminar%20Question)
-
-### Interested in Teaching?
-
-We are looking for people who are interested in helping us to teach The Emotion Code to the world. If you are interested in becoming one of our certified instructors, please visit this page: [HealersLibrary.com/instructors](http://HealersLibrary.com/instructors)
-
-### Healing Tools
-
-I have found that trapped emotions can be released by using magnets of all types and strengths, as well as zero-point energy devices. Simply sliding your fingertips over the governing meridian will release a trapped emotion, since the body has it’s own energy field. Nevertheless, there are healing tools available that not only work well with The Emotion Code, but are very beneficial in other ways as well, and as long you are using The Emotion Code to help people, you may want to consider the following tools:
-
-### Nikken Magnets
-
-Personally, I prefer to use the magnets manufactured by the Japanese company, Nikken, Inc., because they are specifically designed for use on the body, and are very comfortable to use. The magnets that I use to release trapped emotions are designed to roll down the back, are easy to hold, and as they spin, they produce a larger magnetic field.
-
-I still use them whenever I can. I have found numerous applications for them (for example, to reduce discomfort, where a refrigerator magnet would not have the same effect). I believe that the Nikken magnets are well worth the modest investment required.
-
-Many years of clinical research in Japan has gone into the design and creation of Nikken’s magnets, and they work very well. In fact, all the stories in this book that involve the use of magnets to release trapped emotions are referring to Nikken magnets.
-
-The two specific magnets that I recommend for practicing The Emotion Code are both made by Nikken. They are the MagBoy, a small, hand-held magnet that can easily roll over the governing meridian, and the MagCreator, a larger, beautifully designed massage tool made with heavy-duty roller bearings, built to last. Either one of these is ideal.
-
-If you’d like more information on any of the Nikken[^1] products go to: [HealersLibrary.com/nikken](http://HealersLibrary.com/nikken)
-
-### Zero Point Energy Devices
-
-Another very exciting new technology that is now available is called “zero-point” energy. Zero-point energy is the energy that surrounds and is between all the atoms and subatomic particles of the universe. Indeed, zero-point energy fills the immensity of space. Your body, like everything else that exists, is filled with this particular kind of energy.
-
-![](24.jpg) 
-
-It seems that certain crystals, when pressurized and treated in a particular way, resonate very powerfully with the frequency of zero-point energy.
-
-I have used zero-point devices with great success. Not only are the zero-point wands easy to use and very effective for releasing trapped emotions, they often have an astonishing ability to reduce discomfort and restore balance and function to imbalanced tissues.
-
-I have witnessed enough success A Zero-Point Wand    stories to know for myself that this is a very exciting technology that releases trapped emotions fully as well as any magnet, and often works to release discomfort and improve healing in many cases. For more information about zero-point energy products, please visit:
-
-[HealersLibrary.com/zeropoint](http://HealersLibrary.com/zeropoint)
-
-### The Body Code
-
-The Emotion Code is part of a larger body of work that I call the Body Code System. During my years in practice I developed a very simple, yet comprehensive method of addressing any and all imbalances that a person might have. This system worked extremely well for me, even with the most difficult cases. Using The Body Code, it is possible to tap into the subconscious mind to find and fix nearly any kind of imbalance, whatever it might be. I had always had a vague plan to teach this system to doctors at some undefined future day. A few years ago, however, I awoke one morning with the very clear instruction that I must take everything I had learned about healing and create a self-study course, so that this knowledge could be had by everyone, everywhere.
-
-![](25.jpg) 
-
-The Body Code System - A Comprehensive Self-Study Course
-
-It took a year for me to create the Body Code System, but it is now available. I believe it is without doubt the most comprehensive self-study course on energy healing that has ever been devised, and consists of 18 DVDs, 2 manuals, an interactive mind-map for your computer, and more. For more information, please visit: [BodyCodeHealing.com](http://BodyCodeHealing.com/)
+Nuestro objetivo es proporcionar los conocimientos que ayudarán a otorgarle poder a las personas para convertirse en sanadores. Creemos que este es un derecho inalienable de todos; saber cómo ayudarse a sí mismos y a sus seres queridos a sanar y que pueden vivir su potencial a plenitud.
 
 
-### Get Certified!
-
-We offer certification in both The Emotion Code and The Body Code for individuals that are interested in helping others as a career.[^2] Please note that certification in The Emotion Code is a prerequisite for becoming a certified Body Code practitioner. There is a growing need for certified practitioners worldwide, and you may be able to help us fill that need. For more information please visit this link: [HealersLibrary.com/certification](http://HealersLibrary.com/certification)
-
-### Need Help?
-
-If you are interested in having a Certified Practitioner release your trapped emotions and/or Heart-Wall by proxy or in person, we have a growing family of people who can help.
+Healers Library (la Biblioteca de los Sanadores) se está creando con el propósito expreso de poner a disposición de todos las poderosas técnicas naturales de sanación y suplementos adicionales. Por favor, visítanos y ve lo simple que es hacerse miembro de esta biblioteca educacional en línea donde puedes ver videos, comprar libros, CDs, herramientas y suplementos, hacer preguntas e interactuar con otros estudiantes de las artes curativas.
 
 
-### Staff Practitioners
+Visítanos en:
 
-We have a select group of staff practitioners that are available to work with you. You can make an immediate appointment online at a time that is convenient for you, and your appointment will take place over the telephone. The most popular appointment offered is the “Emotion Code/Body Code Session via Telephone” in which your Certified Body Code Practitioner will address as many imbalances as your body allows, including Trapped Emotions (usually 5-8 imbalances). This is usually a 20 minute appointment which is done by proxy, over the telephone. For more information or to make an appointment visit: [HealersLibrary.com/services](http://HealersLibrary.com/services)
+[HealersLibrary.com/es](https://www.healerslibrary.com/es/)
 
-### Global Practitioner Map
+### Seminarios
 
-At HealersLibrary.com we have a global list of Certified Emotion Code and Body Code Practitioners that will be happy to help you lose your emotional baggage and get your life back in balance. If you are looking for someone in your local area, our Global Practitioner Map makes it easy to find just the right person for you.[^3] Simply browse the list and choose a practitioner at this link: [HealersLibrary.com/practitioners](http://HealersLibrary.com/practitioners)
+¡Nos gustaría que tu grupo u organización sea exitosa! El Dr. Nelson y sus asociados están disponibles para enseñarle el Código de la Emoción a tu equipo de ventas, distribuidores, líderes y gerencia bajo pedido. Por favor, envía un correo electrónico con tu pedido a:
 
-### Facebook & Twitter
+[DrBradleyNelson.com/es/solicitar-seminarios](http://www.drbradleynelson.com/es/solicitar-seminarios/)
 
-Please join us on Facebook at [HealersLibrary.com/facebook](http://HealersLibrary.com/facebook)
+Si estás interesado en asistir a un seminario, ve nuestro calendario de seminarios en línea en:
 
-To follow The Emotion Code on Twitter, visit this link: http://twitter.com/#!/TheEmotionCode
+[DrBradleyNelson.com/es/eventos](http://www.drbradleynelson.com/es/eventos)
 
-To receive Twitter posts on your cell phone, text “follow TheEmotionCode” (leaving out the quotatation marks) to 40404 in the United States.
+### Interesado en la Enseñanza?
+
+Estamos buscando personas que estén interesadas en ayudarnos a enseñar El Código de la Emoción en el mundo. Si usted está interesado en convertirse en uno de nuestros instructores certificados, visite la página:
+
+[DrBradleyNelson.com/es/instructores](http://www.drbradleynelson.com/es/instructores)
+
+### Herramientas de Sanación
+
+He encontrado que las emociones atrapadas pueden ser liberadas mediante el uso de imanes de todo tipo y potencia, así como los productos de cero energía. Basta con deslizar los dedos sobre el Meridiano Gobernante para liberar una emoción atrapada, ya que el cuerpo tiene su propio campo de energía. Sin embargo, existen herramientas de sanación disponibles que no sólo funcionan bien con el Código de la Emoción, pero que ademas son muy beneficiosos en otras cosas también y mientras usted está usando el Código de la Emoción para ayudar a las personas, es posible que desee considerar las siguientes herramientas:
+
+### Imanes Nikken
+
+El uso de imanes Nikken es altamente recomendado por el Dr. Nelson en su trabajo de sanación utilizando el Código de la Emoción.
+
+> Personalmente, prefiero utilizar los imanes fabricados por la empresa
+> japonesa, Nikken, Inc., porque son diseñados específicamente para el
+> uso con el cuerpo y son muy cómodos de usar. Los imanes que utilizo
+> para liberar emociones atrapadas están diseñados para rodar por la
+> espalda, son fáciles de sostener, y como giran producen un campo
+> magnético mayor.
+> 
+> Se han realizado muchas investigaciones acerca de sus beneficios y yo
+> los utilizo cada vez que puedo. Les he encontrado numerosos usos (por
+> ejemplo, como borradores de dolor en donde un imán de refrigerador no
+> tendría el mismo efecto). Considero que los imanes Nikken bien valen
+> la inversión que requieren.
+
+Muchos años de investigación clínica en Japón fueron dedicados al diseño y creación de los imanes de Nikken, y funcionan muy bien. Los dos imanes específicos que el Dr. Nelson recomienda para practicar El Código de la Emoción están diseñados por Nikken. Ellos son el MagBoy (su nombre puede variar dependiendo de la región en donde se vendan) un pequeño imán de mano que puede rodar sobre el meridiano gobernante fácilmente, y el MagCreator, una herramienta para masajes más grande, hermosamente diseñada con pesados rodillos hechos para durar. Cualquiera de estos es ideal. Nikken es hoy en día la empresa número uno de bienestar en el mundo, con muchos productos de alta tecnología desde colchones magnéticos y purificadores de aire y agua, hasta productos de vanguardia y productos nutricionales que pueden crear un “Hogar de Bienestar” verdadero para ti. Si deseas más información acerca de cualquiera de los productos Nikken y cómo adquirirlos, ve a:
+
+[DrBradleyNelson.com/es/imanes](http://www.drbradleynelson.com/es/productos/imanes/)
+
+### Necesita Ayuda?
+
+Si estás interesado en que Dr. Nelson y/o su equipo le realicen un tratamiento a distancia utilizando la prueba del representante, por favor, visite:
+
+[DrBradleyNelson.com/es/servicios](http://www.drbradleynelson.com/es/servicios/)
+
+En este sitio web podrás contestar nuestras preguntas acerca de tus problemas particulares y averiguar cómo recibir tratamiento por medio de un representante nuestro.
 
 
-### Bulk Ordering/Book Customization
+#### El Código de Cuerpo
 
-To contact the author or to request information regarding bulk rate book purchasing or book customization for your corporation or group, please contact: [Orders@HealersLibrary.com](mailto:Orders@HealersLibrary.com?subject=Question%20Re%20Bulk%20Ordering/Customization) or write to us at:
+El El Código de la Emoción es parte de un sistema más amplio de trabajo al que yo llamo el Sistema del Código del Cuerpo. Durante mis años de práctica he desarrollado un método muy simple, pero completo de como abordar todas y cada uno de los desequilibrios que una persona puede tener. Este sistema funcionó muy bien para mí, incluso en los casos más difíciles. Usando el Código del Cuerpo, es posible accesar a la mente subconsciente para encontrar y solucionar cualquier tipo de desequilibrio, lo que sea.
 
-Wellness Unmasked Publishing
-
-HealersLibrary.com
-
-450 Hillside Drive Bldg A 225
-
-Mesquite, NV 89027
-
-### Got a Question?
-
-If you have a question about The Emotion Code, chances are it has already been asked and answered. Please visit our knowledgebase at: [HealersLibrary.com/support](http://HealersLibrary.com/support) where you can see the questions other have asked, as well as asking any question you may have that not yet been answered.
+Siempre había tenido un vago plan para enseñar este sistema a los médicos, algún día en un futuro indefinido. Hace unos años, sin embargo, me desperté una mañana con la instrucción muy clara de que tenia que tomar todo lo que había aprendido acerca de la sanacion y crear un curso de auto-estudio, de manera que este conocimiento podría ser aprendido por todos en todas partes.
 
 
-### Important Addresses:
-
-General Help: [CustomerService@HealersLibrary.com](mailto:CustomerService@HealersLibrary.com?subject=Help%20Request)
-
-To contact Dr. Nelson regarding media appearances, please email: [PR@HealersLibrary.com](mailto:PR@HealersLibrary.com?subject=Media%20Question)
-
-[^1]:The statements contained in this book do not express the views of Nikken and have not been approved by Nikken. Nikken does not market it’s products for medical use and the products are not intended to treat, heal or cure any disease or disorder.
-
-[^2]: The information contained in these materials is intended for personal use and not for the practice of any healing art, except where permitted by law. No representation contained in these materials is intended as medical advice and should not be used for diagnosis or medical treatment. 
+Me tomó un año el crear el Sistema de El Código del Cuerpo, pero ahora ya está disponible. Creo que es sin duda el curso de auto-estudio más amplio sobre la energía curativa que se ha diseñado nunca, y consta de 18 DVDs, 2 manuales, un mapa mental interactivos para su equipo electrónico.
 
 
-[^3]: Please note that not all practitioners offer in-person sessions
+Para obtener más información, visite: 
+
+[BodyCodeHealing.com/es](BodyCodeHealing.com/es)
+
+#### Obtenga su certificación!
+
+Vamos a hacer la certificación en línea en un futuro próximo, tanto en el Código de la Emoción como en el El Código del Cuerpo para las personas que están interesados en ayudar a los demás como profesionales. Tenga en cuenta que la certificación en el Código de la Emoción es un requisito previo para convertirse en un profesional de El Código del Cuerpo certificado.
+
+Hay una creciente necesidad de profesionales certificados en todo el mundo y es posible que pueda Ud. ayudar a llenar esa necesidad. Para obtener más información, por favor visite este enlace: 
+
+[DrBradleyNelson.com/es/certificacion](http://www.drbradleynelson.com/es/codigo-de-la-emocion/certificacion/)
+
+### Comparte tus historias
+
+Queremos escuchar acerca de tus éxitos utilizando El Código de la Emoción. Si deseas compartirlos, por favor, envía tu historia por correo electrónico a:
+
+[DrbradleyNelson.com/es/tu-historia](http://www.drbradleynelson.com/es/tu-historia/)
+
+
+### Para encargar “El Código de la Emoción”
+
+Para hacer un pedido de “El Código de la Emoción”, visita nuestro sitio web en:
+
+[DrBradleyNelson.com/es/productos](http://www.drbradleynelson.com/es/productos/)
+
+#### Facebook
+
+Lo invitamos a ser parte de nuestra comunidad en Facebook aquí:
+
+[Facebook.com/elcodigodelaemocion](https://www.facebook.com/Elcodigodelaemocion/)
+
+#### ¿Tienes una pregunta?
+
+Si usted tiene alguna duda sobre el Código de la Emoción, quizás ya tengamos la respuesta en nuestra base de preguntas y respuestas la cual puede revisar aqui:
+
+[HealersLibrary.com/es/support](https://www.healerslibrary.com/forums/topic/support-group/)
+
+donde puedes ver las preguntas que otros han hecho, así como hacer cualquier pregunta que pueda tener y que aún no ha sido contestada.

@@ -31,7 +31,7 @@ final class SupportViewController: UITableViewController {
         application.registerForRemoteNotifications()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(updateCurrentLanguageLabel),
-                                               name: NSNotification.Name(LCLLanguageChangeNotification),
+                                               name: languageChangeNotification,
                                                object: nil)
     }
 
@@ -41,15 +41,14 @@ final class SupportViewController: UITableViewController {
         user.name = defaultName
         Hotline.sharedInstance().update(user)
     }
-    
+
     private func setLanguage() {
         performSegue(withIdentifier: "setLanguage", sender: nil)
     }
-    
+
     @IBOutlet weak var currentLangLabel: UILabel!
-    
+
     func updateCurrentLanguageLabel() {
-        currentLangLabel.text = Localize.displayNameForLanguage(Localize.currentLanguage()).capitalized
+        currentLangLabel.text = currentLanguage.rawValue
     }
-    
 }

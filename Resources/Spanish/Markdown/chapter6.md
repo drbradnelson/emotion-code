@@ -1,576 +1,425 @@
-*Faith is to believe what we do not see; and the reward of this faith is to see what we believe.*
 
-*- Saint Augustine*
+*LA FE ES CREER LO QUE NO VEMOS; Y LA RECOMPENSA DE ESTA FE ES VER LO QUE CREEMOS*
+*-SAN AGUSTÍN*
 
+## CÓMO LIBERAR EMOCIONES ATRAPADAS
 
-## Releasing Trapped Emotions
+Ahora que has tenido una oportunidad de aprender y practicar la prueba muscular es tiempo de aprender la parte del Código de la Emoción que se ocupa de encontrar y liberar emociones atrapadas, tanto de ti mismo como de los demás.
 
-Now that you’ve had an opportunity to learn about and practice muscle testing, it’s time to learn the part of the Emotion Code that deals with finding and releasing trapped emotions, both from yourself and from others.
+Notarás que este proceso es simple y lógico. Una vez que hayas pasado por él un par de veces serás más eficiente. Con la práctica, la mayor parte de las personas pueden encontrar y liberar una emoción atrapada en menos de un minuto o dos.
 
-You will find that this process is simple and logical. Once you have been through it a few times, you will become more efficient. With practice, most people can find and release a trapped emotion in less than a minute or two.
+En primer lugar, asegúrate de que tú (y tu pareja, en caso de que sea pertinente) estés cómodo en tu entorno. Es mejor apagar la música y la televisión ya que pueden distraerte y pueden tener efectos energéticos negativos o positivos.
 
-
-First of all, make sure that you (and your partner, if applicable) are comfortable in your environment. It’s best to turn off music and television, as they can be distracting and can have negative or positive energetic effects of their own.
-
-The Emotion Code process can be visualized using the graphic image below.
+El proceso del Código de la Emoción puede visualizarse utilizando el siguiente gráfico.
 
 ![](12.jpg) 
 
-### Step 1: Obtain Permission
+### Paso 1: Obtener permiso
 
-*If you’re working on yourself, you already have permission, so go to the next step.*
+*Si vas a tratarte a ti mismo ya tienes permiso; entonces, ve al paso siguiente.*
 
-If you are going to be working with another person, make sure that you get permission to actually test them and get information from their body. You might ask, “Can I have your permission to test you for trapped emotions?” Don’t muscle test this response. Let your partner give you their verbal okay, or at least nod their assent.
+Si vas a tratar a otra persona, asegúrate de obtener permiso para realmente realizarle la prueba y obtener información de su cuerpo. Podrías preguntar: “¿Me das permiso para realizarte la prueba de las emociones atrapadas?” No obtengas esta respuestamediante la prueba muscular. Deja que tu pareja te dé su consentimiento verbal o al menos asienta con su cabeza.
 
-Once you both feel comfortable and are relaxed, you can begin.
+Una vez que ambos se sientan cómodos y relajados puedes comenzar.
 
-### Step 2: Establish a Baseline
+### Paso 2: Establecer un punto de partida
 
-Before you begin to ask about trapped emotions, your first task is to establish a baseline for testing. Choose the muscle testing method that you are most comfortable using. You need to determine if your subject is testable. If they make a congruent or true statement, are they strong? If they make an incongruent or false statement, are they weak?
+Antes de comenzar a preguntar acerca de las emociones atrapadas, tu primera tarea es establecer un punto de partida para realizar la prueba. Elige el método de la prueba muscular que te resulte más cómodo. Necesitas determinar si el sujeto es viable para hacer la prueba o no. Si él dice una afirmación congruente y verdadera, ¿es fuerte? Si dice una afirmación incongruente o falsa, ¿es débil?
 
+Además, como cada persona es única, la prueba muscular puede resultar un poco diferente de acuerdo a la persona a la que le realices la prueba. La obtención de una clara respuesta muscular fuerte y débil de tu pareja te hará saber inmediatamente simplemente cómo es la prueba muscular de esta persona en particular tanto en estados fuertes como débiles.
 
-In addition, since every person is unique, muscle testing will feel slightly different for each person you test. Getting a definite strong and weak muscle response from your partner will immediately let you know just what this particular person’s muscle test feels like in both strong and weak states.
+Quizás el método más obvio y ampliamente utilizado para establecer un punto de partida es simplemente hacer que tu pareja diga fuerte su propio nombre: “Mi nombre es__________”.
 
+Una vez que haya dicho esta afirmación congruente y verdadera el resultado de la prueba debería ser fuerte.
 
-Perhaps the most obvious and widely used method of establishing a baseline is to simply have your partner state their own name by saying out loud, “My name is _____.”
+Ahora haz que tu pareja diga fuerte una afirmación falsa: “Mi nombre es_____________”, completando el espacio con un nombre que no sea el propio. El resultado debería ser debilidad muscular.
 
-Once they have made this congruent or true statement, they should test strong.
+Por supuesto, hacer que tu pareja diga las palabras sí o no, amor u odio, también funcionará para establecer un punto de partida.
 
-Now have your partner make a false statement by saying out loud, “My name is  _______  ”, filling in the blank with any name that is not their own. The result should be muscle weakness.
+#### Si tu pareja no está en condiciones de ser examinada
 
-Of course, having your partner state the words yes or no, love or hate, will also work for establishing a baseline.
+Recuerda que parte de la razón para establecer un punto de partida es determinar si a la persona que vas a tratar en realidad se le puede hacer la prueba. Si su brazo permanece fuerte o débil, no importa que afirmación diga, no es viable en ese momento. En este caso, tienes ciertas opciones.
 
+Si tú o tu pareja están algo deshidratados esto hará que realizar la prueba sea más difícil, sino imposible.
 
-#### If Your Partner is Untestable
+La deshidratación leve es bastante común y se puede remediar fácilmente. Dale un vaso de agua, toma un vaso tú también e inténtalo nuevamente. Si esto no ayuda, es probable que tu pareja tenga una vértebra desalineada en su cuello. Puedes utilizar una prueba con un sustituto para realizarle la prueba o lo puedes examinar en ti mismo hasta que un quiropráctico le realice un ajuste.
 
-Remember that part of the reason for establishing a baseline is to determine if the person you are working with is currently *testable*. If their arm stays strong or weak, no matter what statement they make, they are untestable at present. In this case, you have certain options.
+Algunas personas no son candidatas para la prueba porque tienen un deterioro o limitación física y la prueba con sustituto es la mejor opción para ayudarlos también. Para información más detallada acerca de la prueba con sustituto, ve el capítulo 8.
 
+### Paso 3: Comprobar si existe una emoción atrapada
 
-If either you or your partner is somewhat dehydrated it will make testing more difficult, if not impossible.
+Haz que la persona a la que le estás realizando la prueba diga la siguiente afirmación: “Tengo una emoción atrapada que puede liberarse ahora”.
 
-Mild dehydration is quite common and is easily remedied. Give them a glass of water, drink a glass yourself and try again. If this doesn’t help, your partner likely has a misaligned vertebra in their neck. You can use a surrogate to test them, or you can test them on yourself until they can get an adjustment from their chiropractor.
+Realiza una prueba para obtener la respuesta mediante cualquier método que hayas elegido. A continuación aparece una tabla de los métodos y resultados posibles.
 
-
-Some people are untestable because they have a physical impairment or limitation, and surrogate testing is the best option for helping them as well. For more detailed information on surrogate testing, see chapter 8.
-
-### Step 3: See if a Trapped Emotion Exists
-
-Have the person being tested make this statement: “I have a trapped emotion that can be released now.”
-
-Test for the response by whatever method you have chosen. Here is a table of the possible methods and possible results.
-
-| Te s t  | Ye s  | N o  |
+|  Pr u e b a  |  Sí   |  No
 |---|---|---|
-| All Muscle Tests  |  Strength |  Weakness |
-| Sway Test  |  Forward |  Back |
+|Todas las pruebas musculares   |Fuerza     |Debilidad
+|Prueba de balanceo    |Adelante    |Atrás
 
+Si la respuesta del cuerpo es No, hay tres posibilidades distintas:
 
-If the body’s answer is No, there are three distinct possibilities.
+1. La primera posibilidad es que el sujeto no tenga nin-guna emoción atrapada. Esto es poco probable ya que casi todos las tenemos.
+2. La segunda posibilidad podría ser que el sujeto tenga una emoción atrapada pero por alguna razón su mente subconsciente no quiere liberarla ahora. Esta fue la afirmación: “tengo una emoción atrapada que puede lib-erarse ahora”. El sujeto puede estar dispuesto pero tal vez su subconsciente no lo está. Esta situación puede cambiar y la respuesta puede ser diferente más adelante.
+3. La tercera posibilidad es que el sujeto tenga una pared en el corazón. Si este es el caso, el cuerpo puede decir que no tiene ninguna emoción atrapada cuando en realidad no es así. Una pared en el corazón tiene el efecto de hacer que resulte más difícil encontrar las emociones atrapadas. Para evitar confusiones voy a dedicar todo el capítulo próximo a las paredes en el Corazón. Mi re-comendación es que sigas adelante y leas este capítulo ahora, incluso si la respuesta que obtienes sea no, ya que de todas formas necesitarás saber el procedimiento.
 
- 1. The first possibility is that the subject doesn’t have any trapped emotions at all. This is very unlikely, since nearly everyone has them.
- 2. The second possibility may be that the subject *has* a trapped emotion, but for some reason their subconscious mind does not want to *release* it right now. This was the statement: “I have a trapped emotion that can be released *now*.” The subject may be willing, but their subconscious mind may not be. This situation can change, and the answer may be different later on.
- 3. The third possibility is that the subject has a *Heart-Wall*. If this is the case, the body may say that it doesn’t have any trapped emotions, when in reality it does. The Heart-Wall has the effect of making all trapped emotions a little harder to find. To avoid confusion, I am going to devote the entire next chapter to the Heart-Wall. My recommenda-tion is to go ahead and read through this chapter now, even if the answer you got is no, as you will need to know the procedure anyway.
+Si la respuesta es sí, puedes continuar con el próximo paso.
 
-If the answer is yes, you can proceed to the next step.
+### Paso 4: Determinar qué emoción es
 
-### Step 4: Determine Which Emotion It Is
+Si la respuesta es sí, hay una emoción atrapada que liberar. El paso siguiente es aprender más sobre esta emoción. ¿Qué emoción es? ¿Es enojo? ¿Es pena? ¿Es frustración o depresión? o ¿es alguna otra emoción? ¿Cuándo quedó atrapada esta emoción? ¿Qué acontecimiento la creó?
+___
+**A través de un proceso de deducción simple, la puedes descartar muy rápido.**
+___
 
-If the answer is yes, there is a trapped emotion to be released. The next step is to learn more about this emotion. What emotion is this? Is it anger? Is it sorrow? Is it frustration or depression, or some other emotion? When did this emotion become trapped? What event created this?
+El “Cuadro de las emociones” que se muestra en la página siguiente está diseñado para hacer que tu tarea resulte más fácil.
 
+Miremos este cuadro. Observa que cada fila contiene emociones específicas producidas por uno o dos órganos. Por ejemplo, la Fila 1 enumera las emociones producidas por el corazón o el intestino delgado.
 
-----------
-
-
-**Through a simple process of deduction, you can narrow it down very quickly.**
-
-
-----------
-
-
-The “Chart of Emotions” shown on the next page is designed to make your task even easier.
-
-Let’s take a look at this chart. Notice that each row contains specific emotions produced by one of two organs. For example, Row 1 lists the emotions produced by the Heart or Small Intestine. As you may recall, all emotions emanate from the organs, and these two organs produce the same emotions in the body. All the other organs listed on the chart produce the emotions in their respective rows. For our purposes, it doesn’t matter which organ a trapped emotion originally emanated from, as long as we can identify the emotion and release it.
-
-After you’ve been through this process a few times, it will become quite rapid and simple. You will be amazed to see how quickly you can discover for yourself exactly
+Como puedes recordar, todas las emociones emanan de los órganos y estos dos órganos producen las mismas emociones en el cuerpo. Todos los demás órganos enumerados en el cuadro producen las emociones en sus filas respectivas. Para nuestros propósitos, no importa de qué órgano emanó originalmente una emoción atrapada mientras que podamos identificar la emoción y liberarla.
 
 ![](13.jpg) 
 
-which trapped emotion you are seeking. Remember that the subconscious mind knows all along what the trapped emotion is. The testing you are doing is simply to determine what the subconscious mind already knows.
+Después de que hayas pasado por este proceso un par de veces, será bastante rápido y simple. Te sorprenderás al ver cuán rápido puedes descubrir por ti mismo exactamente qué emoción atrapada estás buscando. Recuerda que el subconsciente siempre sabe cuál es la emoción atrapada. La prueba que estás haciendo es simplemente para determinar lo que el subconsciente ya sabe.
 
+De hecho, el subconsciente de la persona a la que estás tratando puede de alguna manera “ver” el cuadro de las emociones sin haberlo visto físicamente alguna vez. Es mejor, de hecho, si la persona que estás tratando no puede ver la lista de emociones mientras que la estás tratando. De lo contrario, podría “elegir” una emoción para volverse débil o fuerte, pensando que te está ayudando, cuando sólo está distorsionando la prueba. Si le quieres mostrar el cuadro de las mociones una vez al comienzo de la sesión, está bien. E incluso si nunca ha visto el cuadro, su subconsciente lo “leerá” simplemente bien porque su subconsciente está vinculado a la consciencia universal. Inténtalo y compruébalo.
 
-In fact, the subconscious mind of the person you are working on can somehow “see” the chart of emotions without their ever having seen it physically! It’s best, in fact, if the person you are working on cannot see the emotion list while you are working on them. Otherwise, they may “choose” an emotion to go weak or strong on, thinking they are helping you out, when they are just skewing the testing. If you want to show them the chart of emotions once at the beginning of a session, that’s okay. And even if they have never seen the chart themselves, their subconscious mind will “read” the chart just fine, because their subconscious mind is linked into universal consciousness. Try it and see.
+#### Cómo encontrar la columna correcta
 
+Comienza el proceso del cuestionamiento preguntando: “¿Está esta emoción atrapada enumerada en la Columna A?” y luego, realiza la prueba. Si la respuesta es “Sí”, podrías preguntar: “¿Está esta emoción atrapada en la Columna B?” para obtener un “No” como respuesta y verificar su exactitud.
 
+Buscarás solamente una emoción atrapada al mismo tiempo y esta sólo puede estar en una de las dos columnas. Por lo que sólo una de estas preguntas puede ser cierta.
 
-#### Finding the Correct Column
+Si el cuerpo da una respuesta conflictiva como decir que la emoción atrapada está tanto en la columna A como en la columna B, simplemente no estás obteniendo una buena respuesta. Respira profundamente, enfócate nuevamente, llena tu corazón de amor por la persona que estás tratando de ayudar, (tú mismo, si te estás tratando a ti mismo) ofrece una oración en silencio a Dios para que te ayude, cree que puedes obtener una respuesta precisa, agradece que la respuesta esté allí para encontrarla e inténtalo de nuevo. Ten en cuenta que si la emoción exacta no está enumerada en este cuadro, el subconsciente de la persona que estás tratando elegirá la emoción que esté más cercana a la que está atrapada y como resultado este cuadro debería ser todo lo que necesitas.
 
-Begin the process of questioning by asking, “Is this trapped emotion listed in Column A?” and then perform the test. If the answer is “Yes”, you might want to ask, “Is this trapped emotion in Column B?” to get a “No” answer and check your accuracy.
+#### Cómo encontrar la fila correcta
 
-You will always only be searching for one trapped emotion at a time, and it can only be in one of the two columns. As a result, only one of these questions can possibly be true.
+Una vez que hayas determinado en qué columna está la emoción atrapada, has reducido la lista a la mitad. Ahora determinemos en qué fila está.
 
-If the body gives a conflicting response such as telling you that the trapped emotion is in both column A and column B, you are just not getting a good answer. Take a deep breath, get refocused, fill your heart with love for the person you are trying to help, (yourself, if you are working on yourself ) say a silent prayer to God for help, believe you can get an accurate response, be grateful that the answer is there to find, and try again. Note that if the exact emotion is not listed on this chart, the subconscious mind of the person you are working on will choose the emotion that is closest to the one that is trapped, and as a result this chart should be all you will need.
+Podríamos simplemente comenzar desde la parte superior y preguntar fila por fila, pero para hacerlo más rápido, he numerado las filas del uno al seis. Entonces, en lugar de preguntar por cada fila, podemos eliminar algunas filas de inmediato.
 
-#### Finding the Correct Row
+Pregunta: “¿Está la emoción atrapada en una fila de número impar?” Si la respuesta es no, entonces sabrás que debe estar en la fila dos, cuatro o seis. Si la respuesta es sí, sabrás que está en una fila de número impar. Para explicación, vamos a suponer que la emoción está en una fila de número impar, ya sea uno, tres o cinco. Lo próximo que tendremos que determinar es en qué fila está la emoción atrapada.
 
-Once you have determined which column the trapped emotion is in, you have narrowed the list by half. Now let’s determine which row it’s in.
- 
-We could simply start at the top and ask one row at a time, but to speed it up, I have numbered the rows one through six. So, instead of asking about each row, we can eliminate some rows right away.
+Haz esta pregunta: “¿La emoción atrapada está en la fila 1? Si la respuesta es no, haz la misma pregunta acerca de la fila tres y de la cinco si lo necesitas.
 
-Ask, “Is the trapped emotion in an odd-numbered row?” If the answer is no, then you know that it must be in row two, four or six. If the answer is yes, you know it is in an odd-numbered row. For the purpose of our explanation here, we will assume that the emotion is in an odd numbered row, either one, three or five. The next thing we must determine is which row the trapped emotion is listed in.
+### Cómo encontrar la emoción correcta
 
-Ask this question: “Is this trapped emotion listed in row one?” If the answer is no, ask the same question about row three, and row five if you need to.
+Una vez que hayas identificado la fila correcta, como ya has identificado la columna, ahora has reducido la lista de emociones a cinco posibilidades.
 
-### Finding the Correct Emotion
-
-Once you have identified the correct row, since you already have identified the column, you now have narrowed the list of emotions to five possibilities.
-
-Let’s say for example you have determined that the trapped emotion is in column A row 5. Let’s take a look at that particular cell in the table.
+Digamos que por ejemplo, has determinado que la emoción atrapada está en la columna A fila 5. Veamos esa celda particular en la tabla.
 
 ![](14.jpg) 
 
-Again, the *subconscious* mind of the person you are testing knows precisely which one of these trapped emotions you are after.
+Una vez más, el *subconsciente* de la persona a la que le estás realizando la prueba sabe precisamente cuál de estas emociones atrapadas estás buscando.
 
+Al determinar exactamente cuál es la emoción a través de la prueba muscular, traes el conocimiento de esta emoción atrapada a la consciencia de la mente consciente del sujeto.
 
-----------
+Este es un paso necesario e indispensable hacia la liberación de la emoción. Es importante que la emoción atrapada encuentre expresión a fin de ser liberada. Identificándola y llevándola a la consciencia, estamos validando la emoción aproximándonos a la situación que la creó.
+___
+**Le estamos dando a la emoción atrapada una voz y permitiendo que se escuche, en un sentido. Si no hacemos esto, la emoción atrapada continuará haciendo sentir su presencia creando un dolor físico y/o una disfunción emocional.**
+___
 
+Para descubrir exactamente qué emoción ha quedado atrapada, todo lo que necesitas hacer es preguntar.
 
-**By determining through muscle testing exactly which emotion it is, you bring the knowledge of this trapped emotion to the awareness of your subject’s conscious mind.**
+Por ejemplo, en este caso podrías comenzar preguntando “¿Esta emoción atrapada es la culpa?” y luego, realizar la prueba muscular. La respuesta va a ser sí o no.
 
+Haz la prueba con cada emoción, una a la vez, de esta misma manera hasta que te sientas convencido de que has llegado a la emoción correcta. Si la primera en la lista te da un sí como respuesta, sería bueno de tu parte que comprobaras tu trabajo probando la emoción siguiente en la lista, la cual debería darte un no como respuesta. Recuerda, estás probando una emoción a la vez, no más, y sólo una a la vez debería ser positiva.
 
-----------
+Es importante ser claro acerca de lo que preguntas. Tu intención y las palabras que estás diciendo necesitan estar en sintonía. Esto es algo de lo que debes ser consciente para no confundir al subconsciente.
 
+Por otra parte, desecha cualquier ansiedad que puedas tener acerca de este proceso. La ansiedad es una forma de miedo, y la fe y el miedo no pueden coexistir.
 
-This is a necessary and indispensable step towards releasing the emotion. It’s important for the trapped emotion to find *expression* in order to be released. By identifying it and bringing it to consciousness, we are validating the emotion and bringing a degree of closure to the situation that created it.
+#### Cómo preguntar
 
+Es mejor enmarcar las cosas en la forma de una afirmación o una pregunta. Para ilustrar lo que quiero decir, imagina que la emoción atrapada es el pavor. En este caso, podrías decir “esta emoción atrapada es pavor” y obtendrías un sí como respuesta.
 
-----------
+Si lo pones en forma de pregunta y preguntas: “¿Es esta emoción atrapada el pavor?” obtendrías un sí como respuesta.
 
+Ambas formas de preguntar son equivalentes y cada forma de expresión te dará la misma respuesta del cuerpo.
 
-**We are giving the trapped emotion a voice, and allowing it to be heard, in a sense. If we *don’t* do this, the trapped emotion will continue to make its presence felt by creating physical pain and/or emotional dysfunction.**
+Si reduces la lista y dices la palabra “pavor”, sin el formato de afirmación o pregunta, podrías obtener una respuesta confusa El cuerpo podría balancearse hacia atrás o dar como resultado débil cuando sólo dices “pavor”, incluso en una situación donde el pavor es la emoción precisa que está atrapada. Si sólo dices la palabra, el subconsciente puede que no te lea correctamente y puede que simplemente responda a la energía negativa de la palabra misma.
 
+#### Una vez que se identifica la emoción atrapada
 
-----------
+Una vez que hayas identificado la emoción atrapada, ¡felicitaciones! Has aprendido una parte muy importante del Código de la Emoción. Ahora se te ha presentado un aspecto completamente distinto de tu consciencia, y ahora estás aprendiendo a acceder a la inteligencia de tu propio espíritu, una habilidad que te servirá si continúas desarrollándola.
 
+Cómo indagar más a fondo
 
-In order to find out exactly which emotion has become trapped, all you need to do is ask.
+A veces el subconsciente tiene más información que quiere sacar al nivel consciente. Al llegar a este punto es conveniente preguntar “¿Hay algo más que necesitamos saber en cuanto a esta emoción atrapada?” Si la respuesta es no, libera la emoción. Si la respuesta es sí, indaga un poco más a fondo. Involucrar a la mente consciente en el proceso es útil y puede ayudar al sujeto a entender la importancia de la emoción que va a ser liberada.
 
-For example, in this case you could begin by asking “Is this trapped emotion blaming?” and then perform a muscle test. The answer will be either yes or no.
+Recuerda que el subconsciente sabe todo lo relacionado con esa emoción atrapada, incluso cuándo quedó atrapada en el cuerpo, quién estaba involucrado, dónde está alojada exactamente esta energía y cómo está afectando a tu cuerpo físico y a tu mente.
 
-Test each emotion one at a time in this same way until you feel confident that you have arrived at the correct emotion. If the very first emotion on the list is giving you a yes answer, you would be wise to check your work by testing the next emotion on the list, which should give you a no answer. Remember, you are testing for one emotion at a time, no more, and only one should be positive at a time.
+Si el subconsciente quiere traer a la consciencia más aspectos de la emoción atrapada, te recomiendo que primero averigues cuándo esta quedó atrapada en primer lugar. A veces esto lleva a revelaciones sorprendentes sobre el pasado y a menudo descubre el suceso que causó la emoción atrapada.
 
+####¿Cuándo quedó atrapada?
 
-It is important to be clear about what you are asking. Your intention and the words that you are saying need to be in synch. This is something to be aware of, so that you don’t confuse the subconscious mind.
+Preguntar *cuándo* esta emoción en particular quedó atrapada es un buen punto para comenzar a indagar más a fondo. Hay muchas maneras de realizar preguntas deductivas para obtener esta información, y si tienes una corazonada, síguela.
 
-In addition, cast away any anxiety you may have about this process. Anxiety is a form of fear, and faith and fear cannot coexist!
+Por ejemplo, si encontrar una emoción atrapada te trae a la mente un acontecimiento determinado de la vida del sujeto, probablemente quedó atrapada por ese acontecimiento. Para averiguarlo, pregunta simplemente si el acontecimiento que tu pareja tiene en mente es el mismo que ayudó a crear la emoción atrapada. Tu pareja no tiene que compartir nada contigo de la experiencia si no quiere. Sólo tiene que pensar sobre el acontecimiento por un momento y luego, necesitas realizarle la prueba muscular después de preguntar si ese acontecimiento ayudó a crear la emoción atrapada.
+___
+**Esta es una de las cosas bellas del Código de la Emoción. Los asuntos íntimos de las personas pueden permanecer privados.**
+___
 
-#### How to Ask
+Nunca tienen que explicar o vocalizar la circunstancia o el acontecimiento que creó la emoción atrapada. Esto le permite a las personas tratar temas privados dolorosos o embarazosos y aún liberar las emociones que acompañan estos acontecimientos. Pueden compartir lo que elijan, ya sea mucho o poco.
 
-It’s best to frame things in the form of a statement or a question. To illustrate what I mean, imagine that the trapped emotion is dread. In this case, you could say “This trapped emotion is dread.” and you would get a yes answer.
+Si ningún acontecimiento en particular acerca de la emoción viene a la mente de tu pareja, puedes utilizar el proceso de deducción para determinar cuándo ocurrió la emoción atrapada. Descubrir cuándo sucedió ayuda a averiguar por qué ocurrió.
 
+Del mismo modo que dividimos el Cuadro de las Emociones en columnas y filas para facilitar una búsqueda más rápida, puedes dividir la vida en diferentes períodos para localizar más fácilmente el año en que se originó la emoción atrapada.
 
-If you put it in the form of a question and ask, “Is this trapped emotion dread?” you would also get a yes answer.
+No hay una manera correcta o incorrecta de determinar cuándo una emoción quedó atrapada. Simplemente preguntas y lo reduces a un año o acontecimiento determinado. Una forma de hacerlo es simplemente dividir en dos el período de años del sujeto y ver si la emoción atrapada ocurrió antes de la mitad de su vida o después. Si tiene cuarenta años, por ejemplo, podrías preguntar: “¿Esta emoción quedó atrapada antes de los veinte años de edad?” Si la respuesta es que sí, la puedes reducir aún más del mismo modo.
 
-Both of these ways of asking are equivalent, and each form of phrasing will give you the same body response.
+Podrías preguntar: “¿Quedó esta emoción atrapada en los primeros diez años de tu (mi) vida?”
 
-If you just went down the list and stated the word “dread,” without formatting it as either a statement or a question, you may get a confused answer. The body may sway backward or test weak when you just say, “dread”, even in a situation where dread is the precise emotion that is trapped. If you just throw the word out there, the subconscious mind may not be reading you correctly and may simply respond to the negative energy of the word itself.
+Si la respuesta es afirmativa, la puedes reducir aún más preguntando:
 
+“¿Esta emoción quedó atrapada en los primeros cinco años de tu (mi) vida?”
 
-#### Once the Trapped Emotion is Identified
+Si la respuesta es que sí, puedes continuar perfeccionando la respuesta preguntando si la emoción quedó atrapada en el primer año, en el segundo, en el tercero y así sucesivamente.
 
-Once you have identified the trapped emotion, congratulations! You have learned a very significant part of the Emotion Code. You have now been introduced to an entirely different aspect of your awareness, and you are now learning to tap into your own spirit intelligence, an ability that will serve you well if you continue to develop it.
+He descubierto que el cuerpo por lo general es preciso dentro de un año más o un año menos cuando se identifica el período de tiempo de una emoción atrapada de esta manera. En otras palabras, si obtienes como respuesta que una emoción atrapada determinada ocurrió a los 17 años de edad, puede que en realidad haya ocurrido a los 16 o a los 18, pero probablemente fue a los 17.
 
+En el momento en que una emoción atrapada se está creando tu edad en particular aparentemente no es tan importante. El cuerpo mental no correlaciona emociones atrapadas con la edad cronológica tanto como las correlaciona con acontecimientos específicos, instancias o circunstancias.
 
-### Digging Deeper
+Supongamos que un acontecimiento emocional que ocurrió un mes después de tu graduación de la universidad resultó en una emoción atrapada. Tenías 23 años en ese momento. La prueba muscular puede producir una respuesta de 22, 23 o 24 años de edad de cuándo se produjo esta emoción atrapada, la cual podría estar dentro del año habitual, más o menos. Si preguntaras si esta emoción atrapada sucedió antes de la graduación o después de la graduación, obtendrías una respuesta más precisa. De esta manera, podrías ser capaz de llegar a un tiempo de ocurrencia más preciso.
+___
+**Es una buena práctica preguntar periódicamente: “¿Necesitamos saber más acerca de esta emoción?” Cuando has llevado a la consciencia la información suficiente acerca de la emoción atrapada, el cuerpo mental te hará saber que ya has terminado y que puede ser liberada.**
+___
 
-Sometimes the subconscious mind has more information it wants to push up to the conscious level before being willing to release the emotion. At this point it is a good idea to ask, “Is there more that we need to know about this trapped emotion?” If the answer is no, go ahead and release the emotion. If the answer is yes, dig a little deeper.
+Una vez que determines exactamente cuándo ocurrió la emoción, el sujeto probablemente sabrá qué acontecimiento ayudó a que se creara y de qué se trata la misma.
 
+A veces determinar el periodo de tiempo en el que ocurrió una emoción atrapada puede resultar en una comprensión más profunda tanto de qué fue lo que sucedió como la manera en la que la emoción atrapada está afectando a tu cuerpo mental. A continuación e relata el caso de una mujer que desarrolló una emoción atrapada durante un tiempo estresante que más adelante resultó en migrañas.
 
-Engaging the conscious mind in the process is useful, and can help the subject to grasp the relevance of the emotion that’s about to be released.
+#### Las migrañas de Nancy
 
-Remember that the subconscious mind knows all there is to know about this trapped emotion, including when it first became trapped in the body, who was involved, exactly where this energy is lodged and how it is affecting both the physical body and the mind.
+>*Siempre tenía dolores fuertes de cabeza y de cuello, e incluso me habían empezado a dar inyecciones de cortisona en la parte posterior de la cabeza y cuello. Cuando usted me dijo que podría tener una emoción atrapada que me estaba causando esto, no tenía ni idea de lo que me estaba hablando. Le empezó a hacer preguntas a mi cuerpo como si algo me hubiese sucedido en 1994. Lo redujo a una emoción de desesperanza en el mes de enero de 1994.*
 
-If the subconscious mind wants to have more about the trapped emotion brought to conscious awareness, I recommend that you first try to find out when the it originally became trapped. Sometimes this leads to surprising revelations about the past, and will often uncover the event that created the trapped emotion.
+>*Luego comencé a pensar: “Cielos, ese fue el momento en el que nació Shawn cuando al haberme puesto de parto a las 33 semanas”. Él estuvo en el hospital por 21 días con un pulmón colapsado. Después de que me hizo el tratamiento me sentí mucho mejor y se lo agradezco.*
 
-#### When Did it Become Trapped?
+>*Qué milagro. Dije que ud. sabía que tenía todo esto bloqueado en la parte posterior de la cabeza porque en ese momento casi perdimos a Shawn. Pero si lo ve, sabrá que él es realmente mi milagro.*
 
-Asking *when* this particular emotion became trapped is a good place to begin digging deeper. There are many ways of asking deductive questions to get to this information, and if you have a hunch, follow it.
+>*-Nancy P.*
 
-For example, if finding a trapped emotion brings to mind a certain event from the subject‘s life, it probably became trapped because of that event. To find out, simply ask if the event that your partner has in mind is the same event that helped to create the trapped emotion. Your partner does not need to share anything about the experience with you if they don’t wish to. They just need to think about the event for a moment, and then you need to muscle test them after asking if that event helped to create the trapped emotion.
+#### ¿De quién era esa emoción?
 
+A veces ayuda entender quién estuvo involucrado en la creación de una emoción atrapada. Por ejemplo, supongamos que le das mucha importancia a las huellas de una emoción atrapada que ocurrió durante los años de tu escuela secundaria. La emoción es amargura. Pero no puedes recordar nada que podría haber creado esta emoción.
 
-----------
+Podrías preguntar: “¿Fue mi amargura?” Si la respuesta es que sí, puedes preguntar si la amargura era hacia una persona. Si lo fue, puedes preguntar: ¿Fue un hombre?, ¿Fue una mujer?, ¿Fue un amigo?, ¿Fue un familiar?, ¿Fue tu hermano?, ¿Fue Joe? Utiliza este proceso para reducir las posibilidades.
 
+Si fue tu propia amargura pero no era acerca de una persona, puedes preguntar si la amargura fue acerca de una situación. Luego puedes reducir el alcance de las preguntas para averiguar qué situación era, cuándo ocurrió, etc.
+___
+**Las emociones raramente ocurren de manera aislada. Por lo general, involucran a otra persona; pero pueden ser acerca de una situación relacionada con el hogar, la escuela, el trabajo, las finanzas, las relaciones, etc.**
+___
 
-**This is one of the nice things about the Emotion Code. People’s private matters can remain private.**
+Si realizas la prueba para ver si fue tu amargura y la respuesta es no, entonces pregunta si fue que adquiriste la amargura de otra persona. A veces adoptamos los sentimientos de otras personas y esa energía puede convertirse en nuestra carga extra. Una madre puede estar sintiendo amargura y su hijo podría tomar parte de esa energía; o un amigo podría estar atravesando un episodio difícil y tu empatía por su situación podría crear una emoción atrapada en ti.
 
+Si dejas en silencio a tu mente por un momento o dos y especialmente si le pides ayuda a Dios para descubrirla, lo harás. Confía en mí. Recuerda: “Pide y recibirás; llama y se te abrirá”.
 
-----------
+#### ¿Dónde está alojada la emoción?
 
+Otra cosa fascinante a determinar es dónde está alojada exactamente la emoción atrapada. Recuerda que la emoción atrapada siempre tendrá una ubicación física en el cuerpo. Descubrir la ubicación de la emoción atrapada es opcional, pero ubicarla puede ser divertido y también muy esclarecedor.
+___
+**Las emociones atrapadas se pueden presentar en cualquier lugar en el cuerpo, independientemente del órgano en el que se originaron.**
+___
 
-They never have to explain or vocalize the circumstance or event that created the trapped emotion. This allows people to work on very private issues that are potentially painful or embarrassing to talk about and still release the emotions that are attached to these events. They can share us much or as little as they choose to.
+Recuerda que una emoción atrapada es una pelota de energía, generalmente variando su tamaño desde una naranja a un melón. Para determinar la ubicación exacta de esta pelota de energía utiliza el proceso de deducción.
 
-If no particular event comes to your partner’s mind regarding the emotion, you can use the process of deduction to determine *when* the trapped emotion occurred. Finding out when it occurred often helps in uncovering *why* it occurred.
+Pregunta: “¿Está esta emoción atrapada atascada en el lado derecho del cuerpo?” Si no, pregunta: “¿Está esta emoción atrapada atascada en el lado izquierdo del cuerpo?” Cada vez que preguntes realiza la prueba muscular que elijas para ver cuál es la respuesta del cuerpo.
 
-In the same way that we divided the Chart of Emotions into columns and rows to facilitate faster searching, you can divide a lifetime into different spans to more easily locate the year a trapped emotion originated.
+Si ambas de estas respuestas son negativas, pregunta: ¿Está esta emoción atrapada atascada en la línea media del cuerpo?”
 
-There is no right or wrong way to determine when an emotion became trapped. You simply ask, and narrow it down to a certain year or event. One way to do it is to simply divide your subject’s span of years in two, and see if the trapped emotion occurred before the midpoint of their life, or after. If they are forty years old, for example, you might ask, “Did this emotion become trapped before age twenty?” If the answer is yes, you can narrow it down further in this same way.
+A continuación, pregunta si la emoción atrapada está por encima, por debajo o a la altura de la cintura. En poco tiempo habrás identificado un área general donde está alojada la energía emocional.
 
+Puedes obtener respuestas más específicas simplemente si continúas preguntándole al cuerpo. Es fácil y resulta más fácil aún con la práctica.
 
+No pases por alto tu propia habilidad de discernir dónde está atrapada la emoción. Si tan sólo escuchas a tu intuición por un momento acerca de la ubicación de la emoción atrapada, una impresión puede venir a tu mente. Comprueba esa ubicación en primer lugar y te sorprenderás por la frecuencia en la que es correcta, lo que permite ahorrar tiempo y esfuerzo.
 
-You might ask, “Did this emotion become trapped within the first ten years of your (my) life?”
+Una vez que hayas encontrado la ubicación de la emoción atrapada, piensa sobre algún síntoma que podría estar presente en esa parte del cuerpo. Si hay un dolor en el área de una emoción atrapada, puede desaparecer o disiparse de repente cuando se libera.
 
-If the answer is yes, you can break it down even further, by asking:
+#### Recordando las emociones atrapadas
 
-“Did this emotion become trapped in the first five years of your (my) life?”
+A veces no tendrás idea todavía de cuál fue el acontecimiento que provocó la creación de una emoción atrapada. Muy a menudo, las emociones atrapadas pueden ser creadas por circunstancias que se olvidan rápidamente.
 
-If the answer is yes, you can continue to refine the answer by asking if the emotion became trapped in the first year, second year, third year and so on.
+Di, por ejemplo, que un día todo parece simplemente resultar mal. Tal vez fuiste a cenar antes de ver un espectáculo y el servicio era muy malo. Sabías que llegarías tarde al espectáculo y te disgustas. Cuando finalmente llega la cuenta, tu tarjeta de crédito estaba excedida y eliges sentirte enojado o humillado, o ambas cosas. Podemos sentirnos bastante molestos por momentos cuando las cosas no salen bien. Las emociones intensas que podemos llegar a sentir en una ocasión como esta pueden llegar a dejarnos con una emoción atrapada o dos. Sin embargo, un año más tarde, puede que te resulte difícil recordar esta situación, especialmente si elegiste no pensar demasiado en esa mala experiencia. Si han pasado un par de años, la emoción atrapada todavía estará allí, pero recordar la situación conscientemente ahora podría llegar a ser muy difícil.
+___
+**A veces las emociones atrapadas se crean durante un acontecimiento que fue de carácter transitorio en su naturaleza y el acontecimiento en sí se pierde para siempre para tu memoria consciente.**
+___
 
-I have found that the body is usually accurate within a year plus or minus when identifying the time frame of a trapped emotion in this way. In other words, if you get the answer that a certain trapped emotion occurred at age 17, it could actually have been at age 16 or age 18, but it probably was at age 17.
+Incluso si no recuerdas de inmediato de qué trataba una determinada emoción atrapada, según mi experiencia, aproximadamente el 50% de las veces lo recordarás en el lapso de un par de días. Normalmente, al día siguiente o durante la noche, estarás haciendo algo no relacionado en absoluto con el acontecimiento, cuando el mismo de repente aparecerá en tu mente. Recordarás qué sucedió porque tu subconsciente estaba buscando, trabajando a toda máquina tratando de resolverlo y sacarlo a relucir de tu banco de memoria.
 
-At the moment a trapped emotion is being created your particular age is apparently not all that important. The mindbody doesn’t correlate trapped emotions with chronological age so much as it correlates them with specific events, occurrences or circumstances.
+No hay límite en el número de veces que puedes preguntar: “¿Necesitas saber más acerca de esta emoción atrapada?”. Una vez que obtengas un no como respuesta ya sabes todo lo que necesitas saber acerca de ella y la puedes liberar.
 
-Let’s say an emotional event that occurred a month after you graduated from college resulted in a trapped emotion. You happened to be 23 years old at the time. Muscle testing may produce an answer of 22, 23 or 24 years old for when this trapped emotion occurred, which would be within the usual year, plus or minus. If you were to ask if this trapped emotion occurred before graduation, or after graduation, you would get a more precise answer. In this way, you would be able to arrive at a more accurate time of occurrence.
+Ya sea que recuerdes o no lo que sucedió y lo qué creó tu, eso no es fundamental para la liberación de la energía emocional. Podría ser interesante descubrirlo e incluso podría llegarse a tener una idea al hacerlo, pero identificar qué emoción está atrapada y llevarla a la mente consciente es todo lo que se necesita antes de liberarla. El próximo paso será decirte exactamente *cómo* liberarla.
 
+#### Cómo liberar una emoción en ti
 
-----------
+ara liberar una emoción atrapada en ti, coloca el imán entre tus cejas sobre tu piel. Mientras continúas respirando (no contengas tu respiración) hazlo rodar o desliza el imán hasta el medio de tu frente, por encima de la parte superior de tu cabeza y hacia abajo a la parte posterior de tu cuello hasta donde puedas llegar cómodamente, tres veces.
 
+Puedes pasar tu imán por encima de cualquier parte del Meridiano Gobernante con la intención de liberar la energía atrapada que está en tu cuerpo. Si tienes mucho cabello y no puedes pasar por encima de tu cabello sin echarlo todo a perder, simplemente utiliza tu imán sobre tu frente tan lejos como puedas. Es así de sencillo. Sólo recuerda hacerlo tres veces y mantenerte concentrado en tu intención de liberar la emoción atrapada.
 
-**It’s good practice to periodically ask, “Do we need to know more about this emotion?” When you’ve brought enough information about the trapped emotion to consciousness, the mindbody will let you know you’re done, and it can be released.**
-
-
-----------
-
-
-Once you’ve determined exactly when the emotion occurred, your subject will probably know what event helped create it and what it was about.
-
-Sometimes, determining the time frame when a trapped emotion occurred can result in a more profound understanding of what happened, as well as how the trapped emotion is affecting the mindbody. Here is an account of a woman who developed a trapped emotion during a stressful time, which led to migraine headaches later on.
-
-
-#### Nancy’s Migraines
-
-> I was always getting very bad headaches and bad neck aches, and I had
-> even started getting cortisone shots in the back of my head and neck.
-> When you said that I might have a trapped emotion that was causing
-> this, I had no clue what you were talking about. You started asking my
-> body questions like something happened to me in 1994. You narrowed it
-> down to an emotion of hopelessness in the month of January, 1994.
-> 
-> Then I started thinking, ‘Oh my gosh, this is the time Shawn was born
-> when I went into labor at 33 weeks.’ He was in the Hospital for 21
-> days with a collapsed lung.  After you treated me I feel so much
-> better, and I thank you for that.
-> 
-> What a miracle. I said that you knew I had all this block in the back
-> of my head because we almost lost Shawn during this time.  But if you
-> see him, you will know he is truly my miracle.
-> 
->  Nancy P.
-
-#### Whose Emotion Was This?
-
-Sometimes it can help to understand who was involved in the creation of a trapped emotion. For example, let’s say you are hot on the trail of a trapped emotion that occurred during your high school years. The emotion is bitterness. But you can’t remember anything that might have created this emotion.
-
-
-You might ask, “Was this *my* bitterness?” If the answer is yes, you can ask if the bitterness was toward a person. If it was, you might ask if it was a male? Was it a female? Was it a friend? Was it a family member? Was it your brother? Was it Joe? Use the process of deduction to narrow down the possibilities.
-
-If it was your own bitterness but it was not about a person, you can ask if the bitterness was about a situation. Then narrow your scope of questions to figure out what the situation was, when it occurred, etc.
-
-
-----------
-
-
-**Emotions rarely occur in a vacuum. They usually involve another person, but can be about a situation regarding home, school, work, finances, relationships, etc.**
-
-
-----------
-
-
-If you test to see if it was *your* bitterness and the answer is no, then ask if it was someone else’s bitterness that you *absorbed* from them. We do take on other people’s feelings sometimes, and that energy can become our extra baggage. A mother can be feeling bitterness and her child might pick up some of that energy, or a friend might be going through a difficult episode, and your empathy for her situation may create a trapped emotion for you. In my experience, if an emotion was absorbed from another person, the subconscious mind will always want that fact to be brought to consciousness before the trapped emotion is released.
-
-If you silence your mind for a moment or two, and especially if you ask God for His help to figure it out, you will. Trust me on this. Remember, “Ask, and ye shall receive; knock, and it shall be opened unto you.”
-
-#### Where is the Emotion Lodged?
-
-Another fascinating thing to determine is exactly where the trapped emotion is lodged. Remember that a trapped emotion will always have a physical location in the body. Figuring out where a trapped emotion is located is optional, but locating it can be fun as well as very enlightening.
-
-
-----------
-
-
-**Trapped emotions can lodge anywhere in the body, regardless of what organ they originated from.**
-
-
-----------
-
-
-Remember that a trapped emotion is a ball of energy, usually ranging in size from an orange to a cantaloupe. To determine the exact location of this energy ball, use the process of deduction.
-
-Ask, “Is this trapped emotion stuck in the right side of the body?” If not, ask, “Is this trapped emotion stuck in the left side of the body?” Each time you ask, perform the muscle test of your choice to see what the body’s answer is.
-
-If both of these answers are negative, ask, “Is this trapped emotion stuck in the midline of the body?”
-
-Next, ask if the trapped emotion is above, below or at the waistline. Before long you will have identified a general area where the emotional energy is lodged.
-
-You can get more specific by simply continuing to query the body. It’s easy, and gets even easier with practice.
-
-Don’t discount your own ability to discern where the emotion is trapped. If you simply listen to your intuition for a moment about the location of the trapped emotion, an impression may come into your mind. Check that location first, and you will be surprised at how often it is correct, saving you time and effort.
-
-
-Once you have found the location of the trapped emotion, think about any symptoms that may be present in that part of the body. If there is pain in the area of the trapped emotion, it may suddenly disappear or dissipate when it is released.
-
-
-#### Remembering the Trapped Emotion
-
-Sometimes, you will still not have any idea what event led to the creation of a trapped emotion. Quite often, trapped emotions can be created by circumstances that are quickly forgotten.
-
-Say for example, that one day everything just seemed to go wrong. Perhaps you went to dinner before seeing a show, and the service was terrible. You knew you were going to be late for the show, and you became upset. When the bill finally arrived, your credit card was maxed out, and you chose to feel very angry or humiliated, or both. We can become pretty upset at times when things aren’t going our way. The intense emotions we may be feeling on an occasion like this may leave us with a trapped emotion or two. But a year later, you may be hard pressed to remember this event, particularly if you chose not to dwell on the bad experience. If a number of years have gone by, the trapped emotion will still be there, but consciously recalling the event may now become very difficult.
-
-
-----------
-
-
-**Sometimes trapped emotions are created during an event that was transitory in nature, and the event itself is lost forever to your conscious memory.**
-
-
-----------
-
-
-Even if you don’t remember immediately what a given trapped emotion was about, my experience has been that approximately 50% of the time you will remember within the next couple of days. Typically, the following day or during the night, you will be doing something totally unrelated, when the event will suddenly pop into your mind. You will remember what happened, because your subconscious mind was searching, working overtime trying to figure it out and dredge it up out of your memory bank.
-
-There is no limit to how many times you can ask, “Do we need to know more about this trapped emotion?” Once you get a no answer, you know everything you need to know about it and you can release it.
-
-Whether or not you actually remember what occurred and what created your trapped emotion is not critical to the releasing of the emotional energy. It can be interesting to figure it out, and there may even be some insight to be gained by doing so, but identifying which emotion is trapped and bringing it to conscious awareness is all that is necessary before releasing it. The next step will tell you exactly *how* to release it.
-
-### Releasing an Emotion from Yourself
-
-
+#### Cómo liberar una emoción en otra persona
 
 ![](15.jpg) 
-`The Governing Meridian`
 
-To release a trapped emotion from yourself, place your magnet between your eyebrows on your skin. While you continue to breathe (don’t hold your breath) roll or slide the magnet up the middle of your forehead, over the top of your head, and down the back of your neck as far as you can comfortably reach, three times.
+*El Meridiano Gobernante*
 
-You can run your magnet over any part of the Governing Meridian with the intention of releasing the trapped energy that is in your body. If you have “big hair” and you can’t go over your hair without messing it up, just use your magnet on your forehead as far as you can. It’s that easy. Just remember to do it three times, and to stay focused on your intention to let the trapped emotion go.
+Para liberar una emoción atrapada en otra persona, coloca el imán sobre su espalda en la base de su cuello. Indica a tu pareja que inhale y exhale mientras ruedas o deslizas el imán desde la base de su cuello hacia la parte baja de la espalda o simplemente más allá, tres veces. Cada vez que alcances la parte inferior de una pasada, levanta el imán de su espalda y colócalo nuevamente en la base del cuello.
 
-### Releasing an Emotion from Another Person
+Cada pasada transfiere energía magnética en el Meridiano Gobernante. Esta energía magnética magnifica y lleva tu intención a todos los demás meridianos, llenando tu cuerpo con esa intención y pensamiento. El resultado es que en esas tres pasadas, se libera la emoción atrapada para siempre. Es así de simple.
+
+### Cómo confirmar la liberación
 
 ![](16.jpg) 
-`The Governing Meridian`
 
-To release a trapped emotion from another person, place your magnet on their back at the base of their neck. Instruct your partner to continue to breathe in and
+*El Meridiano Gobernante*
 
-out while you roll or slide the magnet from the base of their neck to their low back or just beyond, three times. Each time you reach the bottom of a stroke, lift the magnet off their back and replace it at the base of the neck.
+Para confirmar que la emoción ha sido liberada, simplemente pregunta: “¿Liberamos (liberé) esa emoción atrapada?” la respuesta debería ser que sí. Si es así, has terminado con esa emoción atrapada y puedes ahora averiguar si hay otra emoción atrapada que liberar, si lo deseas.
 
+Si tu prueba muestra que la emoción no fue liberada, simplemente aplica nuevamente la energía magnética tres veces como anteriormente, pero esta vez, ten un poco más de amor en tu corazón hacia la persona que estás tratando, ya seas tú mismo o sobre tu pareja, cree que puedes liberar esta emoción y permítete sentir gratitud hacia Dios porque está siendo liberada.
+___
+**Recuerda que todas las cosas se logran por medio de la fe y la creencia, y si tienes un poco de fe, verás suceder cosas grandiosas.**
+___
 
-Each stroke transfers magnetic energy into the Governing Meridian. This magnetic energy magnifies and carries your intention into all the other meridians, filling the body with that intention and thought. The result is that within three strokes, the trapped emotion is released, forever. It’s just that simple.
+Recuerda las palabras de Jesús:
 
-### Confirming the Release
+>*“porque de cierto os digo que si tuviereis fe como un grano de mostaza, diréis a este monte: Pásate de aquí allá, y se pasará; y nada os será imposible” (Mateo 17:20)*
 
-To confirm that the emotion has been released, simply ask, “Did (I) we successfully release that trapped emotion?” The answer should be yes. If so, you are done with that trapped emotion, and you can now check to see if there is another trapped emotion to be released, if you wish.
+#### La eliminación es permanente
 
+Uno de los aspectos más buenos del Código de la Emoción es que las emociones atrapadas, una vez que son liberadas, se van para siempre. En todos los años que hemos trabajado con pacientes en la práctica y en los seminarios, nunca hemos visto que una emoción que fue liberada regrese.
 
-If your test shows that the emotion was not released, simply reapply the magnetic energy three times as before. But this time, have a little more love in your heart for who you are working on, whether yourself or your partner, believe that you can release this emotion, and allow yourself to feel gratitude to God that it is being released.
+Por otro lado, es posible que las personas tengan más de una incidencia de una emoción particular alojada en su cuerpo. En este caso, podrías liberar la misma emoción del sujeto muchas veces, pero cada emoción será una energía atrapada separada y distinta, generalmente como resultado de acontecimientos emocionales diferentes en su pasado. También es posible que una persona tenga varias emociones distintas que quedaron todas atrapadas por el mismo acontecimiento.
 
+### Cómo tratar asuntos específicos
 
-----------
+Si estás luchando con un problema específico en tu vida, es importante determinar si las emociones atrapadas pueden estar jugando un papel invisible.
 
+Podrías sospechar que tienes una emoción atrapada, pero no aparece cuando formulas la pregunta general: “¿Tengo una emoción atrapada que puedo liberar ahora?”. A veces es necesario abordar las emociones atrapadas más directamente para que se revelen.
 
-**Remember that all things are accomplished by faith and belief, and if you have a little faith, you’ll see great things happen.**
+He aquí algunos ejemplos de problemas comunes junto con maneras de preguntar. Esta lista podría seguir y seguir, pero esto te dará una idea de cómo puedes preguntar acerca de tus propios problemas específicos.
 
+>*“¿Tengo una emoción atrapada que me está impidiendo perder peso?*
 
-----------
+>*“¿Hay una emoción atrapada que está causando inflamación en mis tejidos?”*
 
+>*“¿Tengo una emoción atrapada que me está imposibilitando ganar más dinero?”*
 
-Remember the words of Jesus:
+>*“¿Hay una emoción atrapada que me está impidiendo vender más aparatos?”*
 
-> “…verily I say unto you, If ye have faith as a grain of mustard seed,
-> ye shall say unto this mountain, Remove hence to yonder place; and it
-> shall remove; and nothing shall be impossible unto you.” (Matt: 17-20)
+>*“¿Hay una emoción atrapada que está contribuyendo a mi dolor (de espalda, cuello, hombro, rodilla, etc.)?*
 
-#### It ’s Permanent
+>*“¿Tengo una emoción atrapada que está causando que me sienta (deprimido, irascible, enojado, etc.)?”*
 
-One of the most beautiful aspects of the Emotion Code is that trapped emotions, once released, are gone forever. In all the years that we have worked with patients in practice and at seminars, we have never seen a trapped emotion that was released ever return.
+>*“¿Tengo una emoción atrapada acerca de mi (marido, esposa, hijo, hija, jefe, etc.)?”*
 
-On the other hand, it is possible for people to have more than one occurrence of a particular emotion lodged in their body. In this case, you might release the same emotion from your subject several times, but each emotion will be a separate and distinct trapped energy, usually resulting from different emotional events in their past. It’s also possible for a person to have several distinctly different emotions that all became trapped from the same event.
+>*“¿Hay una emoción atrapada que está interfiriendo en el logro de mis metas?”*
 
+>*“¿Hay una emoción atrapada que está haciendo que me sea más difícil dejar de (beber, fumar, utilizar drogas, pornografía, etc.)?”*
 
-### Dealing With Specific Issues
+>*“¿Tengo una emoción atrapada acerca de (nombre un acontecimiento específico)?”*
 
-If you are struggling with a specific problem in your life, it’s important to determine if trapped emotions may be playing an unseen role.
+Si la respuesta a una pregunta directa como estas es afirmativa, la mente subconsciente ha identificado la emoción. Luego, deberías continuar preguntando en qué columna está esa emoción atrapada, siguiendo el proceso como he esbozado anteriormente en este capítulo, como se muestra en el cuadro de **la página 240.**
 
-You might suspect that you have a trapped emotion, but it doesn’t show up when you ask the general question, “Do I have a trapped emotion that I can release now?” Trapped emotions sometimes need to be addressed more directly for them to unveil themselves.
+Recuerda que puede haber más de una emoción contribuyendo en una cuestión en particular. Además, las emociones atrapadas a menudo saldrán en capas. Si liberas una emoción atrapada que tiene que ver con un tema específico hoy, otra emoción acerca de ese mismo tema puede que no se muestre hasta más tarde. Si estás tratando de superar una cuestión específica, es una buena idea volver a repasar de vez en cuando ese tema otra vez para encontrar emociones atrapadas.
 
-Here are some examples of common problems, along with ways to ask. This list could go on and on, but this will give you an idea of how you can ask about your own specific problems.
+#### Emociones anidadas
 
-> “Do I have a trapped emotion that is preventing me from losing
-> weight?”
-> 
-> “Is there a trapped emotion that is causing inflammation in my
-> tissues?”
-> 
-> “Do I have a trapped emotion that is blocking me from making more
-> money?”
-> 
-> “Is there a trapped emotion that is preventing me from selling more
-> widgets?”
-> 
-> “Is there a trapped emotion that is contributing to my (back, neck,
-> shoulder, knee, etc.) pain?
-> 
-> “Do I have a trapped emotion that is causing me to be (depressed,
-> short-tempered, angry, etc.)?”
-> 
-> “Do I have a trapped emotion about my (husband, wife, son, daughter,
-> boss, etc.)?”
-> 
-> “Is there a trapped emotion that is interfering with the achievement
-> of my goals?”
-> 
-> “Is there a trapped emotion that is making it more difficult for me to
-> quit (drinking, smoking, using drugs, pornography, etc.)?”
-> 
-> “Do I have a trapped emotion about (name specific event)?”
+No es raro encontrar varias emociones atrapadas alojadas juntas en un área particular del cuerpo, un fenómeno al que denomino “Anidación”. A veces encontrarás un nivel significativo de molestia en el sujeto cuando está ocurriendo la anidación. Tener varias emociones atrapadas en un área parece crear un nivel mayor de distorsión de tejidos y dolor. Es interesante observar que mientras se descubren y liberan las emociones atrapadas anidadas utilizando el Código de la Emoción, el nivel de molestia a menudo disminuye notablemente a medida que se libera cada una. Para historias que ilustran la anidación, ve “El doloroso ovario de Jean” en la página 79 y “El Codo de tenista de Jack” en la página 81.
 
-If the answer to a direct question like these is yes, the subconscious mind has identified the emotion. You would then continue by asking which column this trapped emotion is in, following the process as I have outlined previously in this chapter, and as shown on the flowchart on page 222.
+### Cómo procesar la liberación
 
-Remember that there may be more than one emotion contributing to any given issue. In addition, trapped emotions will often come off in layers. If you release a trapped emotion that has to do with a specific issue today, another emotion about that same issue may not show up until later. If you are attempting to overcome a specific issue, it’s a good idea to recheck that issue for trapped emotions from time to time.
+Mientras el cuerpo mental procesa la emoción que ha sido liberada, los síntomas de este proceso pueden surgir. Una vez que una emoción atrapada ha sido llevada a la consciencia y ha sido liberada magnéticamente como se describió anteriormente, en ese momento comienza un proceso de sanación.
+___
+**Durante el proceso de sanación una persona puede experimentar ecos de la emoción que ha sido liberada. No es raro que las personas tengan altibajos de humor durante este período.**
+___
 
+El cuerpo suele estar dispuesto a liberar al menos una emoción antes de querer tener tiempo para el proceso. Por otro lado, a veces el cuerpo liberará un grupo de emociones simultáneamente. Recuerda confiar en la sabiduría del cuerpo implícitamente y nunca la fuerces, sino sé amable con el cuerpo, permitiéndole el tiempo que necesita para procesar y sanar.
 
-#### Nested Emotions
+Si después de liberar una emoción atrapada, el cuerpo no libera otra, le puedes preguntar cuándo estará listo para liberar la siguiente preguntando: “¿Podré (podrás) liberar otra emoción atrapada__________?”, completando el espacio con palabras como “en 10 minutos”, “en 2 horas”, “esta tarde”, “mañana”, y así sucesivamente. Si se requiere el procesamiento, típicamente suele durar desde unas pocas horas a unos pocos días.
 
-It’s not unusual to find several trapped emotions lodged together in a particular area of the body, a phenomenon I refer to as “Nesting.” You will sometimes find a significant level of discomfort in your subject when nesting is going on. Having multiple trapped emotions in one area seems to create a greater level of tissue distortion and pain. It is interesting to observe that as nesting trapped emotions are discovered and released using the Emotion Code, the level of discomfort often diminishes noticeably as each one is released. For stories that illustrate nesting, see “Jean’s Painful Ovary” on page 73, and “Jack’s Tennis Elbow” on page 75.
+#### Sé consciente de procesar los altibajos
 
+Es muy importante permitirle a la persona con la que estás trabajando que sepa que puede llegar a experimentar algunos ligeros altibajos al procesar la liberación de una emoción atrapada. Si le informas acerca de esta posibilidad de antemano y realmente ocurre, no es una sorpresa. Si un procesamiento notable ocurre, tales como llorar o sueños vívidos, y no le has dicho que lo podía llegar a experimentar, puede terminar pensando que la liberación de su emoción atrapada le ha hecho sesntir peor, no mejor.
 
-### Processing the Release
+El procesamiento ocurre cada vez que se libera una emoción atrapada, pero los altibajos ocurren notablemente alrededor del 30% de las veces. A menudo el cuerpo mental es capaz de procesar la liberación de una emoción atrapada de una sola vez; después de todo, es una computadora que hace mas de una tarea a la vez. Sin embargo, a veces sólo le toma algún tiempo al cuerpo mental sanarse de una emoción atrapada y tomar el control de este nuevo estado de las cosas.
 
-As the mindbody processes the emotion that has been released, symptoms of this processing can arise. Once a trapped emotion has been brought to the awareness of the conscious mind, and has been released magnetically as described, at that point a healing process begins.
+Mientras que una persona está procesando la liberación de una emoción atrapada o más, no está limitada de ningún modo para llevar a cabo sus actividades normales.
 
+### Emociones atrapadas antes de nacer
 
-----------
+A veces encontrarás que una emoción atrapada no sucedió a ninguna edad desde el nacimiento en adelante. Las emociones atrapadas también ocurren en el útero. En tal caso, puedes preguntar:
 
+“¿Quedó esta emoción atrapada en el útero?”
 
-**During this healing process a person may experience echoes of the emotion that has been released. It is not unusual for people to feel a bit emotionally up and down during this period of time.**
+“¿Quedó esta emoción atrapada durante el primer trimestre?”
 
-----------
+“¿Quedó esta emoción atrapada durante el segundo trimestre?”
 
+“¿Quedó esta emoción atrapada durante el tercer trimestre?”
+___
+**Según mi experiencia, las emociones atrapadas generalmente se desarrollan durante el tercer trimestre, y por lo general, son emociones que la madre del sujeto estaba experimentando.**
+___
 
-The body will usually be willing to release at least one emotion before wanting to take time out to process. On the other hand, sometimes the body will release one emotion after another, and do the processing for a group of emotions simultaneously. Remember to trust the wisdom of the body implicitly, and never force it, but be gentle with the body, allowing it the time it needs to process and heal.
+En otras palabras, supongamos que una mujer en su segundo o tercer trimestre de embarazo está experimentando la emoción de una profunda pena. Todo su ser está vibrando con esta energía emocional y el bebé comienza a resonar con esa emoción. Como resultado, el feto puede contraer una emoción atrapada de su madre.
 
+Nunca he visto una ocasión donde la emoción atrapada haya sido creada por el feto mismo, pero no importa si la emoción fue generada por el feto o el cuerpo de la madre. Puede ser liberada de la misma manera en ambos casos, aplicando el imán tres veces al meridiano gobernante como se ha descrito anteriormente.
 
-If after releasing a trapped emotion, the body will not release another, you can ask when it will be ready to release the next one, by asking “Will I (you) be able to release another trapped emotion ____?” filling in the blank with words like “in 10 minutes”, “in 2 hours”, “this afternoon”, “tomorrow”, and so on. If processing is called for, it typically lasts from a few hours to a few days.
+### Emociones atrapadas heredadas
 
-#### Be Aware of Processing Ups and Downs
+De la misma manera que puedes heredar tu color de ojos o la forma de tu nariz de tu padre o madre o de otros antepasados, también puedes heredar emociones atrapadas de ellos. Una emoción atrapada heredada es diferente de una emoción atrapada prenatal o de cualquier otro tipo de emoción atrapada.
 
-It’s very important to let the person you are working with know that they may experience some slight emotional ups and downs from processing the release of a trapped emotion. If you let them know about this possibility in advance, and it actually occurs, it is expected. If some noticeable processing does occur, such as crying or vivid dreams, and you haven’t told them that they might experience it, they may end up thinking that the release of their trapped emotion has made them worse, not better.
+En el caso de una emoción atrapada heredada, en realidad recibes en la energía de la emoción en el momento de la concepción del espermatozoide o del óvulo.
 
-Processing takes place every time a trapped emotion is released, but noticeable ups and downs occur about 30% of the time. Often the mind-body is capable of processing the release of a trapped emotion without breaking stride; it is a multi-tasking computer, after all. But sometimes, it just takes some time for the mind-body to heal from a trapped emotion, and to get a handle on this new state of affairs.
+Cuando el espermatozoide y el óvulo se unen, uno de ellos ya está llevando un pasajero de más en forma de alguna energía emocional adicional. El óvulo ahora fecundado comienza el proceso de división y todo lo que existe en el óvulo original se duplica en ese momento. Mientras el óvulo fecundado se divide, este exceso de energía emocional se duplica también.
 
+Por supuesto que puedes preguntar: “¿Hay una emoción heredada que podemos liberar ahora?” para descubrir la existencia de este tipo de emoción atrapada. Pero en la mayoría de los casos, te encontrarás con emociones heredadas mientras que piensas que es una emoción atrapada normal.
 
-While a person is processing the release of one or more trapped emotions, they are not restricted in any way from their normal activities.
+#### Cómo se descubren las emociones heredadas
 
-###  Prenatal Trapped Emotions
+De acuerdo a nuestra experiencia, el cuerpo mental te conducirá a la columna y fila correcta donde está la emoción heredada, pero no te dará una respuesta afirmativa de ninguna de las cinco emociones que aparecen en esa celda, a menos que precedas la emoción con la palabra *heredada*.
 
-Sometimes you will find that a trapped emotion did not occur at any age from birth onward. Trapped emotions can also occur in the womb. In this case, you can ask:
+Por ejemplo, supongamos que has identificado que la emoción atrapada que estás tratando de liberar está en la columna B, fila 2. Has probado cada una de las emociones que aparecen en esa celda, pero la respuesta no es para cada emoción. Si esto sucede, sólo pregunta “¿Es esta una emoción atrapada heredada?”
 
-“Did this emotion become trapped in the womb?”
+Si obtienes un sí como respuesta, simplemente repasa las emociones otra vez preguntando: “¿Es esta _________heredada”? completando el espacio con cada emoción que aparece hasta que encuentres la emoción heredada correcta.
 
-“Did this emotion become trapped during the 1st trimester?”
+Una vez que hayas identificado la emoción heredada, puedes llegar a querer determinar de qué padre el sujeto recibió esta emoción atrapada. Para ahondar aún más, podrías preguntar si esta emoción atrapada se heredó de un abuelo o de un bisabuelo. Sin embargo, normalmente encontrarás que la mayor parte de las emociones atrapadas se habrán heredado de un padre, madre o de los abuelos.
 
+Una vez tuve un paciente cuyos antepasados eran esclavos de color. Determinamos que tenía una emoción heredada de desesperanza que se remontaba a varias generaciones. Las pruebas revelaron que esta desesperanza heredada había ocurrido originalmente a uno de sus antepasados en el 1700, muy posiblemente debido a su esclavitud.
 
-“Did this emotion become trapped during the 2nd trimester?”
+#### Cómo liberar una emoción heredada en ti mismo
 
+Para liberar una emoción heredada atrapada en ti mismo, coloca tu imán entre tus cejas sobre la piel y sigue el procedimiento ya descrito para liberar una emoción atrapada no heredada. La diferencia es simplemente que mientras continuas respirando (no contengas tu respiración) rueda o desliza el imán hasta la mitad de tu frente, por encima de la parte superior de la cabeza y hacia abajo hasta la parte posterior de tu cuello hasta donde alcances cómodamente DIEZ veces en lugar de sólo tres veces.
 
-“Did this emotion become trapped during the 3rd trimester?”
+#### Cómo liberar una emoción heredada en otro
 
+Para liberar una emoción heredada atrapada en otra persona coloca tu imán sobre su espalda en la base del cuello. Indícale a al sujeto pareja que continue inhalando y exhalando mientras ruedas o deslizas el imán desde la base de su cuello hasta su espalda o simplemente más allá, DIEZ veces en lugar de tres veces. Cada vez que llegas a la parte inferior de una pasada, levanta el imán de su espalda y colócalo nuevamente en la base de su cuello.
 
-----------
+### Emociones atrapadas antes de la concepción
 
+En raras ocasiones, he descubierto emociones atrapadas que realmente ocurrieron antes de la concepción, y no me estoy refiriendo a emociones heredadas. Creo que antes de la concepción nosotros existimos como entidades conscientes, pero estábamos sin cuerpos físicos. En lugar de ello, existíamos como seres espirituales. Podíamos pensar por nosotros mismos y éramos conscientes de nuestro próximo viaje a la tierra.
+___
+**Esto es casi de todo lo que tratan las emociones atrapadas; nuestra inminente estadía en la tierra.**
+___
 
-**In my experience, prenatal trapped emotions usually develop during the third trimester, and will usually be emotions that the subject’s mother was experiencing.**
+Parece que a veces, aunque es posible que nos alegremos de nuestra oportunidad de venir a la tierra, nos asustamos o nos sentimos consternados por el viaje que tenemos por delante.
 
+Dejar el lugar de belleza y amor, para venir aquí a esta tierra, con todos sus problemas, violencia y guerras puede llegar a marchitar incluso hasta el corazón más fuerte. Estas emociones atrapadas son raras, pero las he visto, y podrías verlas tú también. Se liberan como las demás emociones atrapadas, con tres pasadas del imán, una vez que son llevadas a la mente consciente.
 
-----------
+Al utilizar el Código de la Emoción para ayudarte y ayudar a otros, te alegrarás al ver el progreso que una persona puede hacer ya que se despoja de sus cargas una a una. Verás vidas cambiar, a personas sanarse y corazones conectarse.
 
+No te des por vencido. Toma algún tiempo dominar el Código de la Emoción. Confía en tus propias habilidades de sanación. Vale la pena el esfuerzo. Cree y agradece a Dios porque puedes hacer esto, y el resultado será tu recompensa por creer.
 
-In other words, let’s say a woman is in her second or third trimester of pregnancy, and is experiencing the emotion of grief. Her whole being is vibrating with this emotional energy, and the infant begins to resonate with that emotion. As a result, the fetus may get a trapped emotion from its mother.
+En el próximo capítulo aprenderás cómo las emociones atrapadas pueden crear un muro alrededor de tu corazón, bloqueando tu habilidad de dar y recibir amor.
 
-I have never seen an occasion where a trapped emotion was created by the fetus itself, but whether the emotion was generated by the fetus or by the mother’s body doesn’t matter. It can be released the same way in either case, by applying the magnet three times to the Governing Meridian as previously described.
+*Para tu comodidad, he incluido un diagrama de flujo y un cuadro de emociones en las dos hojas siguientes, que te deberían ayudar a recordar el proceso del Código de la Emoción y a hacer tu tarea más fácil mientras trabajas en ti mismo y los demás.*
 
-### Inherited Trapped Emotions
+*Si deseas descargar una copia para imprimir de las dos hojas siguientes, simplemente visita mi sitio web en:*
+*[DrBradleyNelson.com/es/diagrama](http://www.drbradleynelson.com/es/diagrama/)*
 
-In the same way that you can inherit your eye color or the shape of your nose from your father and mother and other ancestors, you can also inherit trapped emotions from them. An *inherited* trapped emotion is different from a *prenatal* trapped emotion, or from any other type of trapped emotion.
-
-
-----------
-
-
-**In the case of an inherited emotion, you actually receive the energy of the emotion at the moment of conception from the sperm or the egg.**
-
-
-----------
-
-
-When the sperm and egg unite, one of them is already carrying an extra passenger in the form of some emotional energy. The now-fertilized egg begins the process of division, and everything that exists in the original egg is now duplicated. As the fertilized egg divides this excess emotional energy is duplicated as well.
-
-
-You can certainly ask “Is there an inherited emotion that we can release now?” to uncover the existence of this type of trapped energy. But most often, you will stumble across inherited emotions while you are on the trail of what you think is a regular trapped emotion.
-
-#### How Inherited Emotions are Uncovered
-
-Our experience is that the mind-body will lead you to the correct column and row that an inherited emotion is in, but will not give you a yes answer on any of the five emotions that are listed in that cell, unless and until you preface the emotion with the word *inherited*.
-
-For example, say you have identified that the trapped emotion you are trying to release is in column B row 2. You have tested each of the emotions listed in that cell, but the response is no for each emotion. If this occurs, simply ask “Is this an inherited trapped emotion?” If you receive a yes answer in response, simply go through the emotions again by asking “Is this inherited ________?” filling in the blank with each emotion listed until you find the correct inherited emotion.
-
-Once you have identified the inherited emotion, you might want to determine which parent the subject received this trapped emotion from. To go even deeper, you might ask if this inherited emotion came from a grandparent or a great grandparent, etc. Typically, however, you will find that most inherited trapped emotions will have come from a father, mother or grandparents.
-
-
-My daughter Natalie was working on me remotely a couple of years ago and found an inherited trapped emotion of hopelessness. When she determined that this emotion dated back 22 generations to an Irish grandmother of mine on my father’s side, Natalie suddenly felt the presence of this very woman by her side; she could feel how desperate she was to have this emotion released from her posterity, and at the same time she could feel how grateful she was that this work was being done. I knew the moment this energy was released, because a background feeling of hopelessness that had been there all my life was suddenly gone. I never really knew that it was there, until the moment it was gone!
-
-When an inherited trapped emotion is released, it is released from all the ancestors that passed the emotional energy down the line, no matter how many generations back that may be. This is truly one of the most powerful aspects of The Emotion Code! I recommend that you hold a clear intention to release the inherited trapped emotion from every soul that is holding this energy, whether living or dead, since it is possible that the person you are working on may have passed this energy to their children. When you are finished, you can muscle test to see if the emotion was released from not only the subject, but from anyone else who may have inherited this energy.
-
-
-
-#### Releasing an Inherited Emotion from Yourself
-
-To release an inherited trapped emotion from yourself, place your magnet between your eyebrows on your skin and follow the procedure already described for releasing a non-inherited trapped emotion. The difference is simply that while you continue to breathe (don’t hold your breath) roll or slide the magnet up the middle of your forehead, over the top of your head, and down the back of your neck as far as you can comfortably reach, TEN times instead of only three times.
-
-#### Releasing an Inherited Emotion from Another
-
-To release an inherited trapped emotion from another person, place your magnet on their back at the base of their neck. Instruct your partner to continue to breathe in and out while you roll or slide the magnet from the base of their neck to their low back or just beyond, TEN times instead of three times. Each time you reach the bottom of a stroke, lift the magnet off their back and replace it at the base of the neck.
-
-
-### Pre-Conception Trapped Emotions
-
-On rare occasions, I have discovered trapped emotions that actually occurred prior to conception, and I am not referring to inherited emotions. I believe that prior to conception we existed as conscious entities, but we were without physical bodies. Instead, we existed as spirit-beings. We could think for ourselves, and we were aware of our coming journey to earth.
-
-
-----------
-
-
-**Most pre-conception trapped emotions are about our impending sojourn on earth.**
-
-
-----------
-
-
-It seems that sometimes, even though we may rejoice in our opportunity to come to the earth, we become frightened or dismayed by the journey ahead of us. To leave that place of beauty and love, to come here to this earth, with all its trouble, violence, and war might make even the stoutest heart wilt. Sometimes pre-conception trapped emotions have to do with some sort of grief or sadness about leaving our heavenly home. But I have also seen cases where trapped emotions were created by relationship problems from long ago. Preconception trapped emotions are somewhat unusual, but I have seen them, and you probably will, too. And although they are unusual and can often be quite powerful, they are released like other trapped emotions, with three swipes of the magnet, once they are brought to conscious awareness.
-
-
-As you use the Emotion Code to help yourself and others, you will find joy in seeing the progress that a person can make as they shed their burdens one by one. You will see lives changed, people healed, and hearts connected.
-
-
-Don’t give up! It takes some time to become proficient at the Emotion Code. Trust in your own healing abilities. It is well worth the effort. Believe and be grateful to God that you can do this, and the outcome will be your reward for believing.
-
-
-In the next chapter you will learn how trapped emotions can create a wall around your heart, blocking your ability to give and receive love.
-
-*For your convenience, if you’d like to download a fully printable copy of the two following pages, simply visit my website at:*
-
-[HealersLibrary.com/flowcharts](http://HealersLibrary.com/flowcharts)
-
-#### The Emotion CodeTM Flowchart
+#### El Diagrama de Flujo del Código de la Emoción
 
 ![](17.jpg) 
-`Follow this flowchart and the Chart of Emotions on the right to release trapped emotions.`
+
+*Sigue este diagrama de flujo y el Cuadro de Emociones a la derecha para liberar emociones atrapadas.*
 
 ![](18.jpg) 
+
