@@ -4,7 +4,6 @@ func setLanguage(lang: Language) {
     UserDefaults.standard.set([lang.code], forKey: "AppleLanguages")
     UserDefaults.standard.synchronize()
     NotificationCenter.default.post(name: languageChangeNotification, object: nil)
-    //Bundle.setLanguage(lang.code)
 }
 
 var currentLanguage: Language {
