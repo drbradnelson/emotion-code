@@ -48,7 +48,7 @@ final class SupportViewController: UITableViewController {
 
     @IBOutlet weak var currentLangLabel: UILabel!
 
-    func updateCurrentLanguageLabel() {
+    @objc func updateCurrentLanguageLabel() {
         currentLangLabel.text = currentLanguage.rawValue
     }
 }

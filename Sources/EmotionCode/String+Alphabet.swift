@@ -1,7 +1,7 @@
 extension String {
 
     static var alphabet: [String] {
-        return Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters).map { String($0) }
+        return Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ").map { String($0) }
     }
 
 }

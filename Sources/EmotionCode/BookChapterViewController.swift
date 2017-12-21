@@ -56,7 +56,7 @@ final class BookChapterViewController: UIViewController {
 
     // MARK: Preferred font size change
 
-    func preferredFontSizeDidChange(notification: Notification) {
+    @objc func preferredFontSizeDidChange(notification: Notification) {
         loadChapter()
     }
 

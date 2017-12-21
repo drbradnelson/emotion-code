@@ -12,6 +12,7 @@
 		035A52D71F841B60000F72EB /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A52D61F841B60000F72EB /* Localize.swift */; };
 		035A52DE1F8422F3000F72EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 035A52DC1F8422F3000F72EB /* Localizable.strings */; };
 		035C84B81F83236100DB7E8B /* Hotline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C84B71F83236100DB7E8B /* Hotline.framework */; };
+		03F66E521FEC5D24005BAC8B /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
 		0F283E401D6DF24E00A38B89 /* BookSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F283E3F1D6DF24E00A38B89 /* BookSegueController.swift */; };
 		0F28D0B71D4E74E3002C98E7 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B51D4E74E3002C98E7 /* Book.storyboard */; };
 		0F28D0BA1D4E7501002C98E7 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28D0B81D4E7501002C98E7 /* Chart.storyboard */; };
@@ -33,7 +34,6 @@
 		9111B55C1E7FCB5700CCBC5E /* libFDHotlineSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9111B55B1E7FCB5700CCBC5E /* libFDHotlineSDK.a */; };
 		911377741DFFF9C6008627F1 /* ChartLayoutCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutCore.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
-		913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A4303F1DD0DF08004D466E /* AudioBar.framework */; };
 		913A65E21E07F3FE00069B4E /* AudioBarContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E11E07F3FE00069B4E /* AudioBarContainerController.swift */; };
 		913A65E41E07FB3300069B4E /* BookContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913A65E31E07FB3300069B4E /* BookContainerViewController.swift */; };
 		915EEC3D1D460CE1005CC318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EEC3C1D460CE1005CC318 /* AppDelegate.swift */; };
@@ -172,7 +172,7 @@
 				B6EE04781E39044400013226 /* CoreData.framework in Frameworks */,
 				B6EE04791E39044400013226 /* CoreMedia.framework in Frameworks */,
 				035C84B81F83236100DB7E8B /* Hotline.framework in Frameworks */,
-				913A65DB1E07F2AE00069B4E /* AudioBar.framework in Frameworks */,
+				03F66E521FEC5D24005BAC8B /* AudioBar.framework in Frameworks */,
 				B6EE047A1E39044400013226 /* Foundation.framework in Frameworks */,
 				B6EE047B1E39044400013226 /* ImageIO.framework in Frameworks */,
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
@@ -435,12 +435,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = DiscoverHealing.com;
 				TargetAttributes = {
 					915EEC381D460CE1005CC318 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = CN6Q72T6YD;
+						DevelopmentTeam = 977T8AV26N;
 						LastSwiftMigration = 0900;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -453,12 +453,15 @@
 					};
 					91B94E651E57148A006680E7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CN6Q72T6YD;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 915EEC381D460CE1005CC318;
 					};
 					B6B2736C1E05948E00771409 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = FU4W8383YY;
+						DevelopmentTeam = 977T8AV26N;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 915EEC381D460CE1005CC318;
 					};
@@ -743,14 +746,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -797,14 +806,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -844,13 +859,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EmotionCode/EmotionCode.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = CN6Q72T6YD;
+				DEVELOPMENT_TEAM = 977T8AV26N;
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -861,12 +876,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EmotionCode/EmotionCode.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = CN6Q72T6YD;
+				DEVELOPMENT_TEAM = 977T8AV26N;
 				INFOPLIST_FILE = EmotionCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.discoverhealing.emotioncode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -874,13 +889,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = CN6Q72T6YD;
 				INFOPLIST_FILE = EmotionCodeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Enfluid.EmotionCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = EmotionCode;
 			};
 			name = Debug;
@@ -889,12 +906,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = CN6Q72T6YD;
 				INFOPLIST_FILE = EmotionCodeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Enfluid.EmotionCodeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = EmotionCode;
 			};
 			name = Release;
@@ -904,7 +923,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = FU4W8383YY;
+				DEVELOPMENT_TEAM = 977T8AV26N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -915,7 +934,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NasakinMaxim.EmotionCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmotionCode.app/EmotionCode";
 			};
 			name = Debug;
@@ -925,7 +945,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = FU4W8383YY;
+				DEVELOPMENT_TEAM = 977T8AV26N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -935,7 +955,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NasakinMaxim.EmotionCodeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmotionCode.app/EmotionCode";
 			};
 			name = Release;
