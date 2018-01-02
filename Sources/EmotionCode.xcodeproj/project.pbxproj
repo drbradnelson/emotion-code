@@ -26,6 +26,7 @@
 		0FCA26491E2951F3001C6E7E /* ConvertBook.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0FCA26481E2951F3001C6E7E /* ConvertBook.sh */; };
 		0FF8F9E41D5ACD2D008666E8 /* BookChapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E61D5ACD2D008666E8 /* BookChapters.plist */; };
 		0FF8F9EA1D5ACFE4008666E8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8F9E91D5ACFE4008666E8 /* Book.swift */; };
+		1A66A6C1028DA53F3923BE5F /* Pods_EmotionCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01490295A5A6B7682D0463F7 /* Pods_EmotionCode.framework */; };
 		910C68431D6AE193004E7E7F /* TabIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C68421D6AE193004E7E7F /* TabIcons.xcassets */; };
 		911377741DFFF9C6008627F1 /* ChartLayoutCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911377731DFFF9C6008627F1 /* ChartLayoutCore.swift */; };
 		91187B231D6776A00098A881 /* ChapterTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91187B221D6776A00098A881 /* ChapterTitleView.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01490295A5A6B7682D0463F7 /* Pods_EmotionCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmotionCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		035A52CF1F832629000F72EB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BookChapters.plist; sourceTree = "<group>"; };
 		035A52D21F8327A5000F72EB /* LanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
 		035A52D41F8327F6000F72EB /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		0FCA26481E2951F3001C6E7E /* ConvertBook.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ConvertBook.sh; sourceTree = "<group>"; };
 		0FF6418A1D5A725500EDF903 /* MarkupLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = MarkupLint.sh; sourceTree = "<group>"; };
 		0FF8F9E91D5ACFE4008666E8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		62CB69A02BEC3A1F32A659D7 /* Pods-EmotionCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmotionCode/Pods-EmotionCode.debug.xcconfig"; sourceTree = "<group>"; };
 		9105A61E1E4E66A9004F94E7 /* EmotionCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmotionCode.entitlements; sourceTree = "<group>"; };
 		910C68421D6AE193004E7E7F /* TabIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcons.xcassets; sourceTree = "<group>"; };
 		9111B56B1E7FD35B00CCBC5E /* EmotionCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmotionCode-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -129,6 +132,7 @@
 		91B94E6A1E57148A006680E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91DB87261DCB3ABC00ED09C2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		91F66B5A1DED907A003B58F1 /* ChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
+		B5BD5BC9FF233059C6273EAC /* Pods-EmotionCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmotionCode/Pods-EmotionCode.release.xcconfig"; sourceTree = "<group>"; };
 		B65C13F41DB0F518008B4A77 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		B65C13F61DB0F572008B4A77 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		B65C13F81DB10EDD008B4A77 /* ChartSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSectionViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				B6EE047B1E39044400013226 /* ImageIO.framework in Frameworks */,
 				B6EE047C1E39044400013226 /* Security.framework in Frameworks */,
 				B6EE047D1E39044400013226 /* SystemConfiguration.framework in Frameworks */,
+				1A66A6C1028DA53F3923BE5F /* Pods_EmotionCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +257,7 @@
 				91B94E671E57148A006680E7 /* EmotionCodeUITests */,
 				91A430431DD0DF0E004D466E /* Frameworks */,
 				915EEC3A1D460CE1005CC318 /* Products */,
+				E4966FDA92013AD3E25C8FAA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +306,7 @@
 				B6EE04741E39044400013226 /* Security.framework */,
 				B6EE04751E39044400013226 /* SystemConfiguration.framework */,
 				91A4303F1DD0DF08004D466E /* AudioBar.framework */,
+				01490295A5A6B7682D0463F7 /* Pods_EmotionCode.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,6 +338,15 @@
 			path = EmotionCodeTests;
 			sourceTree = "<group>";
 		};
+		E4966FDA92013AD3E25C8FAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62CB69A02BEC3A1F32A659D7 /* Pods-EmotionCode.debug.xcconfig */,
+				B5BD5BC9FF233059C6273EAC /* Pods-EmotionCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E7BF74B01D4F607300AF6198 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +366,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 915EEC561D460CE1005CC318 /* Build configuration list for PBXNativeTarget "EmotionCode" */;
 			buildPhases = (
+				A885AFB5436100ACBE6C752D /* [CP] Check Pods Manifest.lock */,
 				9141D9081D48A256009173A9 /* Run SwiftLint */,
 				9141D90B1D48A2F8009173A9 /* Run StoryboardLint */,
 				0FF641891D5A6A3100EDF903 /* Run ConvertBook */,
@@ -357,6 +374,8 @@
 				915EEC361D460CE1005CC318 /* Frameworks */,
 				915EEC371D460CE1005CC318 /* Resources */,
 				91C655AF1E1AE14D008D1F21 /* Copy Frameworks */,
+				1C170EBB882B01132786CDFC /* [CP] Embed Pods Frameworks */,
+				0C319C72323CF47D5D495C7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,6 +519,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C319C72323CF47D5D495C7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EmotionCode/Pods-EmotionCode-resources.sh",
+				"${PODS_ROOT}/HotlineSDK/HotlineSDK/HLResources.bundle",
+				"${PODS_ROOT}/HotlineSDK/HotlineSDK/KonotorModels.bundle",
+				"${PODS_ROOT}/HotlineSDK/HotlineSDK/HLLocalization.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmotionCode/Pods-EmotionCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0FF641891D5A6A3100EDF903 /* Run ConvertBook */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +552,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PROJECT_NAME\"/ConvertBook.sh";
+			showEnvVarsInLog = 0;
+		};
+		1C170EBB882B01132786CDFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmotionCode/Pods-EmotionCode-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9141D9081D48A256009173A9 /* Run SwiftLint */ = {
@@ -560,6 +614,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks";
+		};
+		A885AFB5436100ACBE6C752D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmotionCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -826,6 +898,7 @@
 		};
 		915EEC571D460CE1005CC318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CB69A02BEC3A1F32A659D7 /* Pods-EmotionCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -846,6 +919,7 @@
 		};
 		915EEC581D460CE1005CC318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BD5BC9FF233059C6273EAC /* Pods-EmotionCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
