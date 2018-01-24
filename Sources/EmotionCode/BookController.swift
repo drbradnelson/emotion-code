@@ -9,7 +9,10 @@ final class BookController {
     // MARK: Book parser
 
     private static func bookAtURL(_ URL: Foundation.URL) -> Book {
-        guard let bookArray = NSArray(contentsOf: URL) as? [[String: String]] else {
+        guard let bookDict = NSDictionary(contentsOf: URL) as? [String: AnyObject] else {
+            preconditionFailure("Unable to load book file")
+        }
+        guard let bookArray = bookDict[BookController.bookChaptersKey] as? [[String: String]] else {
             preconditionFailure("Unable to load book file")
         }
         return bookWith(array: bookArray)
@@ -53,10 +56,21 @@ final class BookController {
 
     private static let bookResource = "BookChapters"
     private static let bookResourceExtension = "plist"
+    private static let bookChaptersKey = "Chapters"
+    private static let bookAudioPathKey = "Audio Path"
 
     // MARK: Audio URL
 
-    private static let audioPath = "https://media.discoverhealing.com/en/The_Emotion_Code_Audiobook"
+    //private static let audioPath = "https://media.discoverhealing.com/en/The_Emotion_Code_Audiobook"
+    private static var audioPath: String {
+        guard let bookDict = NSDictionary(contentsOf: BookController.bookURL) as? [String: AnyObject] else {
+            preconditionFailure("Unable to load book file")
+        }
+        guard let audioPath = bookDict[BookController.bookAudioPathKey] as? String else {
+            preconditionFailure("Unable to locate audio path")
+        }
+        return audioPath
+    }
     private static let audioFileExtension = "mp3"
 
     // MARK: Book chapter query

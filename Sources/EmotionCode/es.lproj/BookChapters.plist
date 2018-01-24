@@ -1,142 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<dict>
-		<key>Title</key>
-		<string>Titulo</string>
-		<key>Filename</key>
-		<string>title</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+0.1+Title+Page</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Dedicatoria</string>
-		<key>Filename</key>
-		<string>dedication</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+0.2+Dedication</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Nota a los Lectores</string>
-		<key>Filename</key>
-		<string>note-to-readers</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+0.3+Note+to+Listeners</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Agradecimientos</string>
-		<key>Filename</key>
-		<string>acknowledgements</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 1</string>
-		<key>Subtitle</key>
-		<string>Emociones Atrapadas - la Epidemia Invisible</string>
-		<key>Filename</key>
-		<string>chapter1</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+1</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 2</string>
-		<key>Subtitle</key>
-		<string>El Mundo Secreto de las Emociones Atrapadas</string>
-		<key>Filename</key>
-		<string>chapter2</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+2</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 3</string>
-		<key>Subtitle</key>
-		<string>Misterios de los Antiguos</string>
-		<key>Filename</key>
-		<string>chapter3</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+3</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 4</string>
-		<key>Subtitle</key>
-		<string>Sanación con Imanes</string>
-		<key>Filename</key>
-		<string>chapter4</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+4</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 5</string>
-		<key>Subtitle</key>
-		<string>Como Utilizar el Código de la Emoción</string>
-		<key>Filename</key>
-		<string>chapter5</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+5</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 6</string>
-		<key>Subtitle</key>
-		<string>Cómo Liberar Emociones Atrapadas</string>
-		<key>Filename</key>
-		<string>chapter6</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+6</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 7</string>
-		<key>Subtitle</key>
-		<string>Los Muros Alrededor de Nuestros Corazones</string>
-		<key>Filename</key>
-		<string>chapter7</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+7</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 8</string>
-		<key>Subtitle</key>
-		<string>Sustitutos, Representantes y Sanacion a Distancia</string>
-		<key>Filename</key>
-		<string>chapter8</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+8</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 9</string>
-		<key>Subtitle</key>
-		<string>El Código de le Emoción y Los Animales</string>
-		<key>Filename</key>
-		<string>chapter9</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+9</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Capítulo 10</string>
-		<key>Subtitle</key>
-		<string>La Vida Sin Emociones Atrapadas</string>
-		<key>Filename</key>
-		<string>chapter10</string>
-		<key>Audio</key>
-		<string>The+Emotion+Code+Ch+10</string>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Acerca del Autor</string>
-		<key>Filename</key>
-		<string>about-author</string>
-	</dict>
-</array>
+<dict>
+	<key>Audio Path</key>
+	<string>https://media.discoverhealing.com/es/The_Emotion_Code_Audiobook</string>
+	<key>Chapters</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Titulo</string>
+			<key>Filename</key>
+			<string>title</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+0.1+Title+Page</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Dedicatoria</string>
+			<key>Filename</key>
+			<string>dedication</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+0.2+Dedication</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Nota a los Lectores</string>
+			<key>Filename</key>
+			<string>note-to-readers</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+0.3+Note+to+Listeners</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Agradecimientos</string>
+			<key>Filename</key>
+			<string>acknowledgements</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 1</string>
+			<key>Subtitle</key>
+			<string>Emociones Atrapadas - la Epidemia Invisible</string>
+			<key>Filename</key>
+			<string>chapter1</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+1</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 2</string>
+			<key>Subtitle</key>
+			<string>El Mundo Secreto de las Emociones Atrapadas</string>
+			<key>Filename</key>
+			<string>chapter2</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+2</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 3</string>
+			<key>Subtitle</key>
+			<string>Misterios de los Antiguos</string>
+			<key>Filename</key>
+			<string>chapter3</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+3</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 4</string>
+			<key>Subtitle</key>
+			<string>Sanación con Imanes</string>
+			<key>Filename</key>
+			<string>chapter4</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+4</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 5</string>
+			<key>Subtitle</key>
+			<string>Como Utilizar el Código de la Emoción</string>
+			<key>Filename</key>
+			<string>chapter5</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+5</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 6</string>
+			<key>Subtitle</key>
+			<string>Cómo Liberar Emociones Atrapadas</string>
+			<key>Filename</key>
+			<string>chapter6</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+6</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 7</string>
+			<key>Subtitle</key>
+			<string>Los Muros Alrededor de Nuestros Corazones</string>
+			<key>Filename</key>
+			<string>chapter7</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+7</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 8</string>
+			<key>Subtitle</key>
+			<string>Sustitutos, Representantes y Sanacion a Distancia</string>
+			<key>Filename</key>
+			<string>chapter8</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+8</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 9</string>
+			<key>Subtitle</key>
+			<string>El Código de le Emoción y Los Animales</string>
+			<key>Filename</key>
+			<string>chapter9</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+9</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Capítulo 10</string>
+			<key>Subtitle</key>
+			<string>La Vida Sin Emociones Atrapadas</string>
+			<key>Filename</key>
+			<string>chapter10</string>
+			<key>Audio</key>
+			<string>The+Emotion+Code+Ch+10</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Acerca del Autor</string>
+			<key>Filename</key>
+			<string>about-author</string>
+		</dict>
+	</array>
+</dict>
 </plist>
